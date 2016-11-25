@@ -1,0 +1,61 @@
+<view class="container">
+    <scroll-view style="height:{{windowHeight}}px" scroll-y="true" bindscrolltolower="scrolltolower">
+        <!--发布者头像--> 
+        <import src="../../templates/userview"/>
+        <template is="userview" data="{{...userInfo, left}}"></template>
+        <!--发布的内容-->
+        <view class="contentview" style="padding:0 {{left}}rpx;">
+            <view class="descriptionview">{{description}}</view>
+        </view>
+        <!--标签信息-->
+        <block wx:if="{{tags.length!=0}}">
+            <import src="../../templates/tagsview"/>
+            <template is="tagsview" data="{{tags, left}}"></template>
+        </block>
+        <!--地理位置，查看次数信息-->
+        <view class="otherinfoview"  style="padding: {{tags.length==0?37:0}}rpx {{left}}rpx 37rpx {{left}}rpx">
+            <view>
+                <image class="iconview" src="../../resource/images/location-icon-blue.png"></image>
+                <text class="otherlabel">{{city}}</text>
+            </view>
+            <view>
+                <image class="iconview" src="../../resource/images/view-icon-blue.png"></image>
+                <text class="otherlabel">{{readTimes}}</text>
+            </view>
+            <view>
+                <image class="iconview" src="../../resource/images/time-icon-blue.png"></image>
+                <text class="otherlabel">{{date}}</text>
+            </view>
+        </view>
+        <!--如果有图片-->
+        <block wx:if="{{images.length > 0}}">
+            <import src="../../templates/imagesview"/>
+            <template is="imagesview" data="{{images, left}}"></template>
+        </block>
+        <!--点赞用户-->
+        <block wx:if="{{showLikers}}">
+            <import src="../../templates/likersview"/>
+            <template is="likersview" data="{{likers, top, left}}"></template>
+        </block>
+        <!--如果有申请人-->
+        <!--wx:if="{{winnerInfo}}"-->
+        <block>
+            <import src="../../templates/winnerview"/>
+            <template is="winnerview" data="{{...winnerInfo, left}}"></template>
+        </block>
+        <!--如果申请-->
+        <!--<block wx:if="{{applicationCount > 0}}" wx:key="*this">
+            <view style="padding: {{top}}rpx {{left}}rpx {{top}}rpx {{left}}rpx; background-color:white; font-size:14px; margin-top:{{top}}rpx;">
+            申请人({{applicationCount}})
+            </view>
+            <block wx:for="{{applicantors}}" wx:key="applicantor">
+                <import src="../../templates/applicantorview"/>
+                <template is="applicantorview" data="{{...item, top, left}}"></template>
+            </block>
+        </block>
+        <block wx:if="{{applicationCount > 0}}" wx:key="*this">
+        <import src="../../templates/loadingmoreview.wxml"/>
+        <template is="loadingmoreview" data="{{hasMore}}"></template>
+      </block>-->
+    </scroll-view>
+</view>

@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="congratulation">    
+    恭喜{{userInfo}}通关24点数学巧算游戏  
+  </view>
+  <view class="score-box">
+    您的总成绩是
+    <text class="total">{{totalscore}}</text>
+    分
+  </view>
+   <view class="page-bottom">        
+        <button class="page-btn" bindtap="reStart">重新开始</button>
+    </view>
+</view>

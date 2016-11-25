@@ -1,0 +1,28 @@
+<!-- 列表 -->
+<loading hidden="{{!loading}}">
+	加载ing
+</loading>
+
+<view class="page-header">
+	<text class="page-header-title">{{title}}</text>
+</view>
+
+<view>
+
+	<view class="show_img">
+		<image class="img" src="{{img}}{{show.img}}"></image>
+	</view>
+
+	<view class="page-header">
+		<text class="page-header-title">{{show.name}}</text>
+	</view>
+
+	<view class="help_text">
+		{{help}}
+	</view>
+
+	<view class="msg">
+		<text>{{show.message}}</text>
+	</view>
+	
+</view>

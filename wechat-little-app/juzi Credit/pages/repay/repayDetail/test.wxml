@@ -1,0 +1,22 @@
+
+  <!--菜单栏点击部分-->
+
+  <view class="menu">
+
+        <view class="menu-main" bindtap="tapMenu">
+            <text>{{name}}</text>
+            <image class="menu-main-arrow {{opened ? 'open' : 'close'}}" src="../../../images/arrowright.png"></image>
+        </view>
+      
+        <!--下来收缩的部分-->
+        <view class="menu-list {{opened ? 'open' : 'close'}}">
+            c
+        </view>
+  </view>
+   
+
+
+
+
+
+      

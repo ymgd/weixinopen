@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/description/description",
+    "pages/description/detail/detail",
+    "pages/nav/nav",
+    "pages/talk/talk",
+    "pages/recovery/recovery",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "navigationBarTitleText": "卡车之家解读新GB1589",
+    "navigationBarBackgroundColor":"#ec5b3c",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#F5F5F5",
+    "backgroundTextStyle":"light",
+    "enablePullDownRefresh":false
+  },
+  "tabBar": {
+    "color":"#999",
+    "selectedColor":"#ec5b3c",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "position":"bottom",
+    "list": [
+            {
+              "pagePath": "pages/index/index",
+              "text": "首页",
+              "iconPath":"images/shouye.png",
+              "selectedIconPath":"images/shouye-selected.png"
+            },
+            {
+              "pagePath": "pages/talk/talk",
+              "text": "讨论",
+              "iconPath":"images/taolun.png",
+              "selectedIconPath":"images/taolun-selected.png"
+            },
+            {
+              "pagePath": "pages/description/description",
+              "text": "解读",
+              "iconPath":"images/jietu.png",
+              "selectedIconPath":"images/jietu-selected.png"
+            },
+            {
+              "pagePath": "pages/nav/nav",
+              "text": "目录",
+              "iconPath":"images/mulu.png",
+              "selectedIconPath":"images/mulu-selected.png"
+            },
+            {
+              "pagePath":"pages/recovery/recovery",
+              "text":"回顾",
+              "iconPath":"images/huigu.png",
+              "selectedIconPath":"images/huigu-selected.png"
+            }
+        ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

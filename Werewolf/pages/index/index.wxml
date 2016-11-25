@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="setting">
+    <image class="logo" src="{{logo}}"></image>
+    <form action="">
+      <picker range="{{array}}" value="{{index}}" bindchange="gameNumberChange">
+        <text class="picker">选择游戏人数:</text>
+        <text wx:if="{{array[index] < 10}}">{{" " + array[index]}}</text>
+        <text wx:else>{{array[index]}}</text>
+      </picker>
+      <view class="role-config" wx:for="{{config}}">
+        <image class="role-logo" src="{{item.role.logo}}"></image>
+        {{item.role.name}} x {{item.count}}
+      </view>
+    </form>
+  </view>
+  <button type="primary" bindtap="startGame">开始游戏</button>
+</view>

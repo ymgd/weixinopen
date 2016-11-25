@@ -1,0 +1,25 @@
+.container {
+    background: #ffffff;
+    padding:30rpx;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 30rpx;
+}
+
+.item {
+    margin-bottom: 30rpx;
+}
+
+.big-rect {
+    width: 686rpx;
+    height: 449rpx;
+}
+
+.loading {
+    width: 40rpx;
+    height: 40rpx;
+}

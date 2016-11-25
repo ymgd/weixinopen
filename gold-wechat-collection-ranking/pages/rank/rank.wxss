@@ -1,0 +1,70 @@
+.rank-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.rank-type {
+    flex: 1;
+    font-size: 28rpx;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10rpx;
+    transition: border .3s;
+}
+
+.rank-type.true {
+    border-bottom-color: #3cc51f;
+}
+
+.rank {
+    margin: 50rpx 10rpx;
+    flex-direction: row;
+    height: 50px;
+    font-size: 32rpx;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 30rpx;
+}
+
+.rank-num {
+    float: left;
+    width: 20px;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: #3cc51f;
+}
+
+.user-avatar-container {
+    margin-left: 10px;
+    float: left;
+    width: 50px;
+    height: 40px;
+}
+
+.user-avatar-container image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-meta {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ddd;
+}
+
+.user-name {
+    color: #333;
+}
+
+.user-job {
+    margin-left: 10rpx;
+    font-size: 28rpx;
+}
+
+.rank-meta {
+    color: #ddd;
+    font-size: 28rpx;
+}

@@ -1,0 +1,12 @@
+<view class="attention">
+  <block wx:for="{{attention}}">
+    <view class="attention-item">
+      <image src="{{item.imgUrl}}" mode="aspectFill" class="attention-image"></image>
+      <view class="attention-info">
+        <view class="attention-name">{{item.name}}</view>
+        <view class="attention-desc">{{item.desc}}</view>
+        <view bindtap="unsubscribeEvent" data-idx="{{index}}" class="attention-btn">取消关注</view>
+      </view>
+    </view>
+  </block>
+</view>

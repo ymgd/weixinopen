@@ -1,0 +1,64 @@
+<!--editor.wxml-->
+<view class="container">
+    <view class="bg-box">
+        <view class="bg-box-img">
+            <image class="bg-img" src="{{background}}" mode="aspectFit" ></image>
+        </view>
+    </view>
+    <view class="tool">
+        <view class="tool-left">
+            <!--<view class="layer-content-input">-->
+                <input class="layer-input-input"  value="{{word_mix}}" bindinput="inputChange"  />
+            <!--</view>-->
+                
+        </view>
+        <!--<view>
+            <label>文字颜色</label><label class="color">#ffffff</label>
+            <label>背景颜色</label><label class="color">#ffffff</label>
+            <label>背景透明度</label><label class="color">60%</label>
+            
+        </view>-->
+        <view class="tool-right">
+            <view class="section section_gap">
+                <text class="section_title">文字大小</text>
+                <view class="body-view">
+                    <slider bindchange="size_sliderchange" value="47" min="8" max="96" show-value/>
+                </view>
+                </view>
+
+                <view class="section section_gap">
+                <text class="section_title">X坐标</text>
+                <view class="body-view">
+                    <slider bindchange="x_sliderchange" value="195" min="0" max="500"  show-value/>
+                </view>
+                </view>
+                <view class="section section_gap">
+                <text class="section_title">Y坐标</text>
+                <view class="body-view">
+                    <slider bindchange="y_sliderchange" value="425"  min="0" max="500" show-value/>
+                </view>
+            </view>
+        </view>
+    </view>
+     
+    
+    <view class="editor-btn">
+    <!--<button catchtap="editorSuccess">一键编辑 </button>-->
+        <button class="" bindtap="editorCreate"> 一键生成 </button>
+    </view>
+
+    <view id="input_view" style="position:absolute;left:{{offsetLeft}};top:{{offsetTop}};" >
+    <!--输入的字-->
+        <view style="font-size:{{font_size}};">{{word_mix}}</view>
+        <!--<input  id="myInput" bindchange="word_Change" value="{{word_mix}}"   />-->
+    </view>
+    <modal title="你的表情" class="modal" hidden="{{express_ModalHidden}}"
+        confirm-text="收藏" bindconfirm="modalShare"  
+        cancel-text="重新编辑"  bindcancel="modalReEditor"
+        >
+        <view >
+            <image class="modal-express" src="{{express_mix}}" mode="aspectFit" ></image>
+        </view>
+    </modal>
+
+</view>

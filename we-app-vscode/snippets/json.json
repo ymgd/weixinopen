@@ -1,0 +1,73 @@
+{
+    "page": {
+        "prefix": "wa-page",
+        "body": [
+            "{",
+            "\t\"navigationBarBackgroundColor\": \"#000000\",",
+            "\t\"navigationBarTextStyle\": \"white\",",
+            "\t\"navigationBarTitleText\": \"\",",
+            "\t\"backgroundColor\": \"#ffffff\",",
+            "\t\"backgroundTextStyle\": \"dark|light\",",
+            "\t\"enablePullDownRefresh\": false",
+            "}"
+        ]
+    },
+    "app-window": {
+        "prefix": "wa-app-window",
+        "body": [
+            "\"window\": {",
+            "\t\"navigationBarBackgroundColor\": \"#000000\",",
+            "\t\"navigationBarTextStyle\": \"white\",",
+            "\t\"navigationBarTitleText\": \"\",",
+            "\t\"backgroundColor\": \"#ffffff\",",
+            "\t\"backgroundTextStyle\": \"dark|light\",",
+            "\t\"enablePullDownRefresh\": false",
+            "},"
+        ]
+    },
+    "app-page": {
+        "prefix": "wa-app-page",
+        "body": [
+            "\"pages\": [",
+            "\t\"pages/index/index\"",
+            "]"
+        ]
+    },
+    "app-tab": {
+        "prefix": "wa-app-tab",
+        "body": [
+            "\"tabBar\": {",
+            "\t\"color\": \"\",",
+            "\t\"selectedColor\": \"\",",
+            "\t\"backgroundColor\": \"\",",
+            "\t\"position\": \"bottom\",",
+            "\t\"borderStyle\": \"black\",",
+            "\t\"list\": [",
+            "\t\t{",
+            "\t\t\t\"pagePath\": \"\",",
+            "\t\t\t\"text\": \"\",",
+            "\t\t\t\"iconPath\": \"\",",
+            "\t\t\t\"selectedIconPath\": \"\"",
+            "\t\t}",
+            "\t]",
+            "},"
+        ]
+    },
+    "app-network": {
+        "prefix": "wa-app-network",
+        "body": [
+            "\"networkTimeout\": {",
+            "\t\"request\": $0,",
+            "\t\"connectSocket\": $1,",
+            "\t\"uploadFile\": $2,",
+            "\t\"downloadFile\": $3",
+            "},"
+        ]
+    },
+    "app-debug": {
+        "prefix": "wa-app-debug",
+        "body": [
+            "\"debug\":false,"
+        ]
+    }
+}

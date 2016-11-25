@@ -1,0 +1,9 @@
+
+.countClick{
+    margin-top: 100rpx;
+    width: 200rpx;
+    height: 50rpx;
+    text-align: center;
+    font-size: 1em;
+    background-color: cadetblue;
+}

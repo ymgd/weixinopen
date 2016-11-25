@@ -1,0 +1,31 @@
+.video {
+  width: 100%;
+}
+.popText {
+  margin: 50rpx;
+}
+.danmu button {
+  width: 180rpx;
+  height: 70rpx;
+  font-size: 28rpx;
+}
+.danmu input {
+  height: 68rpx;
+  border: 1px solid #eee;
+  border-right: none;
+}
+.video-stream-box {
+  background-color: #eee;
+  column-count: 3;
+  column-gap: 15rpx;
+  column-width: 30%;
+}
+.video-stream  image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.video-stream text {
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 15rpx;
+}

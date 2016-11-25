@@ -1,0 +1,30 @@
+<view class="content">
+       <!--电影海报-->
+        <view class="">
+            <image src="{{movie.images.large}}" mode="aspectFit"></image>
+        </view>
+
+        <!--分隔线-->
+        <view class="hr"></view>
+
+        <!--标题-->
+        <view class="detail">
+            <text>{{movie.text}}</text>
+        </view>
+
+        <!--演员表-->
+        <view class="casts">
+            <block wx:for="{{movie.casts}}">
+            <image src="{{item.avatars.medium}}" mode="aspectFit"></image>
+            </block>
+        </view>
+
+        <!--分割线-->
+        <view class="hr"></view>
+
+        <!--电影简介-->
+        <view class="detail">
+          <text>{{movie.summary}}</text>
+        </view>
+
+</view>

@@ -1,0 +1,6 @@
+<view class="page">
+  <view class="page__bd" wx:for="{{ tempFilePaths }}">
+    <image style="width: 200px; height: 200px;background-color: #eeeeee;" 
+    mode="{{mode }}" src="{{item}}"></image>
+  </view>
+</view>

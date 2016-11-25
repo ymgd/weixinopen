@@ -1,0 +1,7 @@
+<template name="tagsview">
+<view class="tagsview">
+    <block wx:for="{{tags}}" style="padding: 24rpx {{left*0.5}}rpx;">
+        <view class="tagview" style="margin: {{left*0.5}}rpx">{{item.title}}</view>
+    </block>
+</view>
+</template>

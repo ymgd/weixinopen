@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="about">
+  <text>产品名称：天气预报</text>
+  <text>数据来源：和风天气</text>
+  <text>开发时间：2016年11月</text>
+  </view>
+  <view class="about aboutme">
+    <text class="title">作者</text>
+    <text>Gavin</text>
+    <text class="title">邮箱</text>
+    <text>gulei125@163.com</text>
+    <text class="title">博客</text>
+    <text>http://www.cnblogs.com/gulei/</text>
+    <text class="title">GitHub</text>
+    <text>https://github.com/gavin125</text>
+  </view>
+</view>

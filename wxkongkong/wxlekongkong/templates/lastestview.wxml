@@ -1,0 +1,16 @@
+<!--空空动态模板-->
+<!--adimage:物品图像地址，-->
+<template name="lastestview">
+<view class="lastestview" style="margin-top:{{vinteval}}rpx;" bindtap="clickOnLastestView">
+    <image class="adimage" src="{{display.content.image}}"></image>
+    <view class="adinfoview">
+        <view class="userinfoview">
+            <image class="avatar" src="{{display.content.user.avatar.square}}"></image>
+            <text class="name">{{display.content.user.nick}}</text>
+            <text class="extro">{{display.content.title}}</text>
+        </view>
+        <text class="content">{{display.content.content}}</text>
+    </view>
+    <image class="arrowimage" src="../../resource/images/icon_arrow.png"></image>
+</view>
+</template>

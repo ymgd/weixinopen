@@ -1,0 +1,15 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <form >
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入ip" />
+                </view>
+            </view>
+        </view>
+        <button class="weui-btn weui-btn_primary" type="primary" 
+         form-type="submit">保存</button>
+    </view>
+    </form>
+</view>

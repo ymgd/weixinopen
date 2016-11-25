@@ -1,0 +1,147 @@
+/**index.wxss**/
+text{
+    font-family: "微软雅黑";
+}
+.p_info {
+    height: 300rpx;
+    width: 100%;
+    float: left;
+    background: rgb(193,153,209);
+    padding: 31rpx 10rpx;
+    color: #fff;
+    border-left: 15rpx solid rgb(60,20,55);
+    border-right: 15rpx solid rgb(60,20,55);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    box-sizing:border-box;
+}
+.head{
+    height: 230rpx;
+    width: 230rpx;
+    border-radius: 5rpx;
+    margin: 0;
+    float: left;
+    border: 4rpx solid rgb(245,173,85);
+}
+.commonText{
+    float: left;
+    width: 50%;
+    padding-left: 10rpx;
+}
+.name{
+    margin: 0;
+    font-size: 40rpx;
+    color: rgb(60,20,55);
+    padding-bottom: 10rpx;
+}
+.nickname {
+    margin-bottom: 10rpx;
+    font-size: 20rpx;
+    font-weight: bold;
+    color: rgb(60,20,55);
+}
+.description {
+    font-size: 25rpx;
+    padding-bottom: 10rpx;
+}
+.contact {
+    font-size: 19rpx;
+    bottom: 170rpx;
+    font-weight: bold;
+    color: rgb(60,20,55);
+    position: absolute;
+    right: 20rpx;
+    width: auto;
+}
+.wxQR{
+    bottom: 31rpx;
+    height: 130rpx;
+    width: 130rpx;
+    position: absolute;
+    right: 20rpx;
+}
+/*个人信息 end*/
+.moments{
+    width: 750rpx;
+    height: auto;
+    margin-top: 300rpx;
+    margin-bottom: 180rpx;
+}
+.moment{
+    width: 700rpx;
+    height: 245rpx;
+    margin: 0 auto;
+    border-bottom: 4rpx solid rgb(193,153,209);
+    margin-bottom: 0;
+}
+.m_imgBox{
+    margin: 15rpx 0;
+    height: 200rpx;
+    width: 200rpx;
+    overflow: hidden;
+    border-radius: 200px;
+    float: left;
+}
+.m_img{
+    width: 300rpx;
+    height: 200rpx;
+}
+.m_cont{
+    height: 230rpx;
+    width: 460rpx;
+    padding-top: 15rpx;
+    padding-left: 30rpx;
+    color: #333;
+    float: left;
+    position: relative;
+}
+.m_nameBox{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10rpx;
+    overflow: hidden;
+}
+.m_name{
+    float: left;
+    font-size: 30rpx;
+    /*padding-bottom: 10rpx;*/
+}
+.m_time{
+    float: right;
+    font-size: 22rpx;
+    width: auto;
+}
+.m_Ename{
+    display: inline-block;
+    width: 460rpx;
+    font-size: 22rpx;
+}
+.m_description{
+    font-size: 20rpx;
+}
+.d_s_z{
+    height: 20rpx;
+    width: 200rpx;
+    color: #333;
+    position: absolute;
+    overflow: hidden;
+    bottom:15rpx;
+    right: 0rpx;
+}
+.m_block{
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+.icon_word{
+    font-size: 15rpx;
+    margin-left: 5rpx;
+    float: left;
+}
+.m_icon{
+    float: left;
+    height: 14rpx;
+    width: 15rpx;
+    padding-top: 5rpx;
+}

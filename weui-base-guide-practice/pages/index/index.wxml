@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="mc">
+    <view class="menu" wx:for="{{menu_list}}" wx:key="id" animation="{{menu.am_data}}" wx:for-item="menu">
+      <view id="{{menu.id}}" class="menu-item menu-item-inx {{menu.toggle_class}}" bindtap="toogleMenu">
+      <text>{{menu.name}}</text>
+      <image class="menu-icon" src="{{menu.icon.src}}" mode="{{menu.icon.mode}}"></image>
+      </view>
+      <view class="menu-item menu-sub-item msi-inx{{inx}}" wx:for="{{menu.sub_items}}" wx:key="name" wx:for-index="inx" animation="{{item.am_data}}">
+      <navigator url="{{item.nav_url}}?title={{item.name}}" hover-class="nav-hover">
+        <text>{{item.name}}</text>
+        <view class="menu-sub-item-icon"></view>
+      </navigator>
+      </view>  
+    </view>
+  </view>
+</view>

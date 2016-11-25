@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/friends/friends",
+    "pages/games/games"
+  ],
+  "window": {
+    "navigationBarTitleText": "演示小程序"
+  },
+  "debug": false
+}

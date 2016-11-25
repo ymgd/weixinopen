@@ -1,0 +1,46 @@
+@import "../../templates/userview.wxss";
+@import "../../templates/tagsview.wxss";
+@import "../../templates/imagesview.wxss";
+@import "../../templates/likersview.wxss";
+@import "../../templates/winnerview.wxss";
+/* loadingmoreview template style */
+@import "../../templates/loadingmoreview.wxss";
+
+.container .contentview
+{
+    background-color: white;
+}
+
+.container .contentview .descriptionview {
+    color: #333333;
+    font-size: 14px;
+    padding: 22rpx 0;
+    border-width: 1px 0 1px 0;
+    border-style: dashed;
+    border-color: #cccccc;
+}
+
+.container .otherinfoview {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.container .otherinfoview view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container .otherinfoview .iconview {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.container .otherinfoview .otherlabel {
+    color: #969696;
+    font-size: 12px;
+    margin-left: 12rpx;
+}

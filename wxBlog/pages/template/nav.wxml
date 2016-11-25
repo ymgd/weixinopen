@@ -1,0 +1,7 @@
+<template name="nav">
+  <view class="nav" style="background:{{color}}">
+    <block wx:for="{{navCont}}" wx:key="index">
+      <navigator url="{{item.url}}" class="navCont" style="border-bottom:{{item.border}}" hover-class="none">{{item.name}}</navigator>
+    </block>
+  </view>
+</template>

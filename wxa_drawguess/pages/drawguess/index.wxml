@@ -1,0 +1,39 @@
+<view class="section">
+<view class="flex-wrp">
+    <!--等待进入房间界面-->
+    <view class="wait_label" wx:if="{{waiting}}">
+
+    </view>
+    <!--画板界面-->
+    <view class="draw_label" wx:if="{{!waiting}}">
+        <canvas 
+        canvas-id="firstCanvas"
+        disable-scroll="true"
+        bindtouchstart="touchStart"
+        bindtouchmove="touchMove"
+        bindtouchend="touchEnd"
+        >
+        </canvas>
+    </view>
+    <!--玩家列表-->
+    <scroll-view class="scroll_user" scroll-x="true">
+            <view></view>
+            <view></view>
+    </scroll-view>
+    <!--聊天界面-->
+    <scroll-view class="scroll_chat" scroll-y="true">
+        <view wx:for="{{messages}}" wx:for-item="message" wx:key="id" id="{{message.id}}" class="message {{message.type}}">
+            <view wx:if="{{message.type == 'speak'}}" class="user-message {{message.isMe ? 'me' : 'other'}}">
+                <text>{{message.user.nickName}}:{{message.content}}</text>
+            </view>
+            <view wx:if="{{message.type == 'system'}}" class="system-message">
+                {{message.content}}
+            </view>
+        </view>
+    </scroll-view>
+    <!--输入框界面-->
+    <view class="foot_label">
+        <input placeholder=""/>
+    </view>
+</view>
+</view>

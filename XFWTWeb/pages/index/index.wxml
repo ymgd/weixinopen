@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="contain"> 
+ 
+
+<!--轮播图-->
+<swiper class="swiper" indicator-dots="true"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for-items="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image"/>
+                </swiper-item>
+            </block>
+        </swiper>
+
+
+        <!--标题分类-->
+    <view class="nav">
+
+    <block wx:for-items="{{navs}}"> 
+    <view class="boxView" data-type="{{item.text}}"> 
+      <image src="{{item.image}}"/>
+      <text>{{item.text}}</text>
+    </view>
+    </block>
+
+    </view>
+
+<!--推荐课程-->
+    <view class="recommendCourseView">
+   <text class="courseText">推荐课程</text> 
+   <text class="desText">学霸是怎样炼成的</text> 
+    </view>
+
+
+  <block wx:for-items="{{cell}}"> 
+
+    <!--课程cell-->
+     <view class="item" >
+
+<!--图片-->
+      <view  class="item-left"> 
+       <image class="courseImage" src="{{item.image}}" />
+      </view>
+
+<!--文字-->
+      <view class="item-right">
+     <view class="titleView">   <text class="titleText">{{item.title}}</text>   </view>
+     <view class="timeView">  <text class="timeText">{{item.time}}</text>  </view>
+      <view class="priceView"> <text class="gradeText">{{item.grade}}</text>  <text class="priceText">{{item.price}}</text> </view>
+       </view> 
+    
+     </view>
+
+  </block>
+
+
+
+
+</view>

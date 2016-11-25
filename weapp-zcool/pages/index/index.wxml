@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="index">
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="aspectFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="index-list">
+      <block wx:for="{{indexList}}">
+        <view class="acticle-item {{indexList.length - 1 == index ? 'no-bottom' : ''}}" data-idx="{{index}}" bindtap="showDetail">
+          <image src="{{item.imgUrl}}" class="acticle-image" mode="aspectFill"></image>
+          <view class="acticle-info">
+            <view class="acticle-title">{{item.title}}</view>
+            <view class="acticle-author">{{item.author}}</view>
+            <view class="acticle-look">
+              <image class="acticle-icons" src="/images/icons/icon-view.png"></image> {{item.look}}
+              <image class="acticle-icons ml10" src="/images/icons/icon-zan.png"></image> {{item.like}}
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+</view>

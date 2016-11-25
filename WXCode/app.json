@@ -1,0 +1,9 @@
+{
+    "pages":[
+        "pages/index/index",
+        "pages/song/song"
+    ],
+    "window":{
+        "navigationBarTitleText":"音乐在线"
+    }
+}

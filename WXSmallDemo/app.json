@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/apply/apply",
+    "pages/productInfo/productInfo",
+    "pages/personalCenter/personalCenter"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "借款申请",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "position":"bottom",
+    "borderStyle":"white",
+    "backgroundColor":"#f8f8f8",
+    "selectedColor":"#695f9b",
+    "list": [
+      {
+        "pagePath": "pages/productInfo/productInfo",
+        "text": "介绍",
+        "iconPath":"images/introduce.png",
+        "selectedIconPath":"images/introduceClick.png"
+      },
+      {
+        "pagePath": "pages/apply/apply",
+        "text": "借款",
+        "iconPath":"images/loan.png",
+        "selectedIconPath":"images/loanClick.png"
+      }, 
+      {
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "我的",
+        "iconPath":"images/person.png",
+        "selectedIconPath":"images/personClick.png"
+      }
+    ]
+  }
+}

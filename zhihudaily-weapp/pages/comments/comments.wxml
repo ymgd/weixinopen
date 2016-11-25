@@ -1,0 +1,40 @@
+<!--comments.wxml-->
+
+<!--引用模板comments.wxml文件-->
+<import src="../../components/comments/comments.wxml"/>
+
+<view class="container">
+    <!--长评-->
+    <view class="comment_counts">
+        {{longCommentCounts}}条长评轮
+    </view>
+    <view class="comments_list">
+        <block wx:for="{{longComments}}" wx:for-item="item">
+            <template is="comments_item" data="{{avatar:item.avatar,author:item.author,content:item.content,likes:item.likes}}"/>
+        </block>
+    </view>
+    <!--短评-->
+    <view>
+        <view class="comment_counts">
+            {{shortCommentCounts}}条短评轮
+        </view>
+        <view class="comments_list">
+            <block wx:for="{{shortComments}}" wx:for-item="item">
+                 <template is="comments_item" data="{{avatar:item.avatar,author:item.author,content:item.content,likes:item.likes}}"/>
+
+
+                <!--<view class="comments_item">
+                    <view class="fl_left avatar">
+                        <image class="userinfo_avatar" src="{{item.avatar}}"></image>
+                    </view>
+                    <view class="fl_left author_content">
+                        <view>{{item.author}}</view>
+                        <view>{{item.content}}</view>
+                    </view>
+                    <view class="clearfix"></view>
+                </view>-->
+            </block>
+          </view>
+    </view>
+
+</view>

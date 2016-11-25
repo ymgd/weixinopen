@@ -1,0 +1,8 @@
+.bdview{
+    width: 100%;
+    height: 100%;
+}
+.addcity{
+    margin-left: 500rpx;
+    width: 200rpx;
+}

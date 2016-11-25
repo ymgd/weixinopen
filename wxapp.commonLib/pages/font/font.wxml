@@ -1,0 +1,33 @@
+<view class="page">
+    <view class="container">
+        <text class="font-color-darkgray">我是深灰色字体</text>
+        <text class="font-color-gray">我是灰色字体</text>
+        <text class="font-color-lightgray">我是浅灰色字体</text>
+        <text class="font-color-blue">我是蓝色字体</text>
+        <text class="font-color-blue color-pressed">我是蓝色press状态</text>
+        <text class="font-color-blue color-disabled">我是蓝色disable状态</text>
+        <text class="font-color-red">我是红色字体</text>
+        <text class="font-color-red color-pressed">我是红色press状态</text>
+        <text class="font-color-red color-disabled">我是红色disable状态</text>
+        <text class="font-color-green">我是绿色字体</text>
+        <text class="font-color-green color-pressed">我是绿色字体</text>
+        <text class="font-color-green color-disabled">我是绿色字体</text>
+        
+        <text class="head-title">我是大标题</text>
+        <button class="page-button">我是按钮字号</button>
+        <text class="list-primary">我是列表及主内容</text>
+        <text class="list-secondary">我是列表副内容</text>
+        <text class="list-general-item">我是列表普通项</text>
+        
+        <text class="page-primary-content">我是界面主要内容</text>
+        <text class="page-primary-description">我是界面主要描述</text>
+        <text class="page-secondary-description">我是界面次要描述</text>
+
+        <text class="form-head">表单小标题</text>
+        
+        <text class="supplementary">我是辅助信息</text>
+        <text class="copyright-link">我是版权链接</text>
+        <text class="footnote">我是底部信息</text>
+
+    </view>
+</view>

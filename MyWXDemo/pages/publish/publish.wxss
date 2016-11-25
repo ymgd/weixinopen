@@ -1,0 +1,43 @@
+.section {
+  margin-bottom: 40px
+}
+.section_title {
+  margin-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.scroll-view-item {
+  height: 200px;
+}
+.btn-area {
+  width: 100%;
+  height: 40px;
+}
+.section_gap {
+  padding: 0 15px
+}
+.scection_gap .section_title {
+  padding-left: 0;
+  padding-right: 0
+}
+.scroll-view_H {
+  white-space: nowrap
+}
+.scroll-view-item_H {
+  display: inline-block;
+  width: 100%;
+  height: 200px
+}
+.bc_red {
+  background: red;
+}
+.bc_green {
+  background: green;
+}
+.bc_yellow {
+  background: yellow;
+}
+.bc_blue {
+  background: blue;
+}

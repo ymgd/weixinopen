@@ -1,0 +1,52 @@
+{
+    "name": "vscode-weapp-api",
+    "displayName": "vscode weapp api",
+    "description": "Wechat app api snippets for vscode",
+    "version": "0.1.8",
+    "publisher": "coderfee",
+    "icon": "images/weapp.png",
+    "license": "MIT LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/coderfe/vscode-weapp"
+    },
+    "author": {
+        "email": "codefee@outlook.com",
+        "name": "coderfee",
+        "url": "http://coderfe.cn"
+    },
+    "bugs": {
+        "url": "https://github.com/coderfe/vscode-weapp/issues",
+        "email": "coderfee@outlook.com"
+    },
+    "scripts": {
+        "patch": "vsce publish patch",
+        "minor": "vsce publish minor",
+        "major": "vsce publish major"
+    },
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Snippets",
+        "Other"
+    ],
+    "keywords": [
+        "weapp",
+        "wechat",
+        "weixin",
+        "微信api"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "json",
+                "path": "./snippets/json.json"
+            }
+        ]
+    }
+}

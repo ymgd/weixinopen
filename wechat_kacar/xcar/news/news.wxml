@@ -1,0 +1,41 @@
+<view>
+  <view class="top-tab flex-wrp flex-tab " >
+      <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+        {{itemName}}
+      </view>
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+
+  <view class="info_list">
+      <block wx:for="{{article}}">
+          <navigator url="../content/content?id={{item.art_id}}" hover-class="navigator-hover">
+            <view class="weui_cell">
+                <view class="weui_cell_hd"><image src="{{item.art_img}}"></image></view>
+                <view class="weui_cell_bd">
+                    <view class="weui_cell_bd_p"> {{item.title}} </view>
+                    <view class="weui_cell_bd_other">
+                      <text class="node-date">{{item.createtime}}</text>
+                      <text class="node-msg">{{item.comments}}</text>
+                      <text class="node-cat">{{item.type}}</text>
+                    </view>
+                </view>
+                <view class="with_arrow"></view>
+            </view>
+          </navigator>  
+      </block>
+    </view>
+</view>
+
+<loading hidden="{{hidden}}">
+  加载中...
+</loading>

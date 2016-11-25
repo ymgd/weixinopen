@@ -1,0 +1,15 @@
+<view class="container">
+	<scroll-view class="video-list" scroll-y="true">
+		<navigator class="video-item" wx:for="{{videos}}" url="../video/video?aid={{item.aid}}&fav={{item.favorites}}&coins={{item.coins}}&typename={{item.typename}}">
+			<image class="fav" src="{{item.pic}}"></image>
+			<view class="info">
+				<view class="title">{{item.title}}</view>
+				<view class="up">up主: {{item.author}}</view>
+				<view class="more">
+					<view class="play">播放: {{item.play}}</view>
+					<view class="coins">硬币: {{item.coins}}</view>
+				</view>
+			</view>
+		</navigator>
+	</scroll-view>
+</view>

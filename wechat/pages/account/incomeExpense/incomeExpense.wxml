@@ -1,0 +1,97 @@
+<view class="page">
+    <view class="page_body">
+        <view class="page_title">
+            <view class="page_bd_title">
+                <view bindtap="change" id="tab0" class="tab0 {{tab0Show ? 'tab_info_show' : ''}}">收支明细</view>
+                <view bindtap="change" id="tab1" class="tab1 {{tab1Show ? 'tab_info_show' : ''}}">充值记录</view>
+                <view bindtap="change" id="tab2" class="tab2 {{tab2Show ? 'tab_info_show' : ''}}">提现记录</view>
+            </view>
+        </view>
+        <view class="page_bd_con">
+            <view class="content {{tab0Show?'tab_con_show':'tab_con_hide'}}">
+                <view class="bd_title">
+                    <view class="left">交易用途/时间</view>
+                    <view class="center">金额(元)</view>
+                    <view class="right">可用余额(元)</view>
+                </view>
+
+                <view class="bd_content">
+                    <view class="left">
+                        <view>投资服务费</view>
+                        <view>2016-11-18</view>
+                    </view>
+                    <view class="center">-4.90</view>
+                    <view class="right">4089.08</view>
+                </view>
+
+                <view class="bd_content">
+                    <view class="left">
+                        <view>投资服务费</view>
+                        <view>2016-11-18</view>
+                    </view>
+                    <view class="center">-4.90</view>
+                    <view class="right">4089.08</view>
+                </view>
+
+            </view>
+
+            <view class="content {{tab1Show?'tab_con_show':'tab_con_hide'}}">
+                <view class="bd_int">共 <text>5</text> 笔充值记录，累计共 <text>16925.00</text> 元</view>
+                <view class="bd_title">
+                    <view class="left">充值时间</view>
+                    <view class="center">充值金额(元)</view>
+                    <view class="right">状态</view>
+                </view>
+                
+                <view class="bd_content">
+                    <view class="left">
+                        <view>2016-08-18</view>
+                        <view>09:50:45</view>
+                    </view>
+                    <view class="center">6030.00</view>
+                    <view class="right">成功</view>
+                </view>
+
+                <view class="bd_content">
+                    <view class="left">
+                        <view>2016-08-18</view>
+                        <view>09:50:45</view>
+                    </view>
+                    <view class="center">6030.00</view>
+                    <view class="right">成功</view>
+                </view>
+
+            </view>
+            <view class="content {{tab2Show?'tab_con_show':'tab_con_hide'}}">
+                <view class="bd_int">共 <text>1</text> 笔提现记录，累计共 <text>13269.00</text> 元</view>
+                <view class="bd_title">
+                    <view class="first">提现时间</view>
+                    <view class="second">提现金额(元)</view>
+                    <view class="third">手续费(元)</view>
+                    <view class="last">状态</view>
+                </view>
+                
+                <view class="bd_content">
+                    <view class="first">
+                        <view>2016-08-18</view>
+                        <view>09:50:45</view>
+                    </view>
+                    <view class="second">6030.00</view>
+                    <view class="third">3.00</view>
+                    <view class="last">成功</view>
+                </view>
+
+                <view class="bd_content">
+                    <view class="first">
+                        <view>2016-08-18</view>
+                        <view>09:50:45</view>
+                    </view>
+                    <view class="second">6030.00</view>
+                    <view class="third">3.00</view>
+                    <view class="last">成功</view>
+                </view>
+                
+            </view>
+        </view>
+    </view>
+</view>

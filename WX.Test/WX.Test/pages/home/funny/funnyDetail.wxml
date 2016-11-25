@@ -1,0 +1,29 @@
+<template name="commentTemplate">
+    <view class="userInfoAndLikeNum">
+        <image class="userIcon" src="{{user.profile_image}}"></image>
+        <text class="userName">{{user.username}}</text>
+        <view class="likeButton">
+            <image class="likeIcon" src="/resource/images/like.png"></image>
+            <text class="likeNum">{{like_count}}</text>
+        </view>
+    </view>
+    <view class="content">{{content}}</view>
+</template>
+
+
+<view class="container">
+    <view class="hotCommentContainer">
+        <view class="commentAlert">最热评论</view>
+        <view class="comment" wx:for="{{hotList}}">
+            <template is="commentTemplate" data="{{...item}}"/>
+        </view>
+    </view>
+    <view class="normalCommentContainer">
+        <view class="commentAlert">最新评论</view>
+         <view class="comment"  wx:for="{{normalList}}">
+            <template is="commentTemplate" data="{{...item}}"/>
+        </view>
+    </view>
+</view>
+
+

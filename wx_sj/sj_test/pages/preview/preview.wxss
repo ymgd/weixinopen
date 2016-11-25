@@ -1,0 +1,58 @@
+.preview{
+    float: left;
+    width: 750rpx;
+    height: 1000rpx;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+}
+
+.preview_img{
+    width: 730rpx;
+    height: 900rpx;
+    border-radius: 1rpx;
+}
+
+.description{
+    position: absolute;
+    width: 200rpx;
+    height: 100rpx;
+}
+
+.delete{
+    position: absolute;
+    left: 540rpx;
+    width: 200rpx;
+    height: 100rpx;
+}
+
+.text{
+    position: absolute;
+    left: 210rpx;
+    height: 100rpx;
+    width: 330rpx;
+    text-align: center;
+}
+
+.img_index{
+    color: #515151;
+    font-size: 40rpx;
+}
+
+.left{
+    float: left;
+    width: 150rpx;
+    height: 80rpx;
+    margin-top: 10rpx;
+    margin-left: 0
+}
+
+.right{
+    float: right;
+    width: 150rpx;
+    height: 80rpx;
+    margin-top: 10rpx;
+}
+
+.middle{
+    margin-top: 30rpx;
+}

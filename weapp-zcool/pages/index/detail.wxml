@@ -1,0 +1,7 @@
+<view class="detail">
+  <view class="detail-content">
+    <view class="detail-title">{{title}}</view>
+    <view class="detail-author">作者：{{author}}</view>
+    <image src="{{imgUrl}}" class="detail-image"></image>
+  </view>
+</view>

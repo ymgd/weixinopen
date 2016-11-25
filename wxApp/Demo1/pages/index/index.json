@@ -1,0 +1,11 @@
+{
+  "tabBar": {
+    "list": [{
+      "pagePath": "page/index/index",
+      "text": "首页s"
+    }, {
+      "pagePath": "page/logs/logs",
+      "text": "日志"
+    }]
+  }   
+}

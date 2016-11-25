@@ -1,0 +1,11 @@
+services:
+  wechat_app_session.wechat_session_auth_listener:
+      class: WechatApp\SessionBundle\EventListener\SessionAuthListener
+      arguments: ["@snc_redis.default", "@buzz", "%wechat_app_session.app_id%", "%wechat_app_session.app_secret%", "%wechat_app_session.key_prefix%", "%wechat_app_session.expires_in%"]
+      tags:
+        - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
+
+  wechat_app_session.wechat_session_auth_exception_listener:
+      class: WechatApp\SessionBundle\EventListener\SessionAuthExceptionListener
+      tags:
+        - { name: kernel.event_listener, event: kernel.exception }

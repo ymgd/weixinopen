@@ -1,0 +1,10 @@
+@import "../../../public/common_form.wxss";
+
+.add-icon {
+    margin-right: 30rpx;
+}
+
+.add-address {
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}

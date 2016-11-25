@@ -1,0 +1,11 @@
+<image 
+    src="{{splash.img}}" 
+    class="cover" 
+    mode="aspectFill"
+    style="opacity:{{opacity}}">
+</image>
+<view class="mask">
+    <image class="logo" src="../../images/logo.jpg"></image>
+    <text class="cover-author">{{splash.text}}</text>
+    <text class="app-author">Designed by wizardholy</text>
+</view>

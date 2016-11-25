@@ -1,0 +1,13 @@
+<import src="../../WxEmojiView/WxEmojiView.wxml"/>
+<view style="text-align: center;margin: 20px;background-color: #ddd;">wxEmojiView 静态图文</view>
+<template is="WxEmojiView" data="{{WxEmojiObjs}}"/>
+
+<view  style="text-align: center;margin: 20px;background-color: #ddd;">下面是WxEmojiTextarea 输入</view>
+<template is="WxEmojiTextarea" data="{{WxEmojiObjs}}" />
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="main">
+    <view class="content">
+    <view class="header item-row">
+      <text>图标</text>
+      <text>类型</text>
+      </view>
+      <view class="group">      
+        <view wx:for="{{icon_types}}" wx:for-item="type" class="item-row type-item">
+            <icon type="{{type}}" size="23" />
+            <text class='icon-type-info'>{{type}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+<view>

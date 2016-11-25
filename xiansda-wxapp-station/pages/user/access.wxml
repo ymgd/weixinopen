@@ -1,0 +1,11 @@
+<view class="page">
+  <view class="p40 text-center">
+  	<form bindsubmit="formSubmit">
+  	  <input name="station" class="p20 bg-soft mb20" placeholder="服务站ID" type="number" maxlength="4" auto-focus/>
+      <input name="access_code" class="p20 bg-soft mb30" placeholder="接入码" type="text"  maxlength="12"/>
+	  <view>
+	    <button formType="submit" type="primary">点击接入</button>
+	  </view>
+  	</form>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<!-- 搜索电影 -->
+
+<loading hidden="{{!loading}}">加载中...</loading>
+
+<!-- 搜索栏 -->
+<view class="page-header">
+    <input class="page-header-text" placeholder="输入搜索关键词" auto-focus bindChange="search"/>
+</view>
+
+<!-- 可滚动视图区域 -->
+<scroll-view scroll-y="true" class="page-body">
+    <!-- 页面链接 -->
+    <navigator url="../movie/movie?id={{item.id}}" wx:for="{{movies}}">
+        <view class="item">
+            <!-- 图片 -->
+            <image class="poster" src="{{item.images.small}}"></image>
+
+            <!-- 描述 -->
+            <view class="meta">
+                <text class="title">{{item.title}}</text>
+                <text class="sub-title">{{item.original_title}}({{item.year}})</text>
+                <view class="artists">
+                    <text wx:for="{{item.directors}}">{{item.name}}</text>
+                </view>
+            </view>
+
+            <!-- 评分 -->
+            <view class="rating">
+                <text>{{item.rating.average}}</text>
+            </view>
+        </view>
+    </navigator>
+</scroll-view>

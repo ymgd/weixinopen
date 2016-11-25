@@ -1,0 +1,27 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/about/about",
+        "pages/detail/detail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "BLOG",
+        "navigationBarTextStyle": "#fff"
+    },
+    "tabBar": {
+        "backgroundColor": "#000000",
+        "list": [{
+            "iconPath": "images/icon_home.png",
+            "selectedIconPath": "images/icon_home_HL.png",
+            "pagePath": "pages/index/index",
+            "text": "首页"
+        }, {
+            "iconPath": "images/icon_mine.png",
+            "selectedIconPath": "images/icon_mine_HL.png",
+            "pagePath": "pages/about/about",
+            "text": "我的"
+        }]
+    }
+}

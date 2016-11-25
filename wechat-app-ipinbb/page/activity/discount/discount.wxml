@@ -1,0 +1,36 @@
+<!-- banner start -->
+<view class="banner">
+    <image mode="aspectFit" src="{{bannerUrl}}"></image>
+</view>
+<!-- / banner end -->
+<view wx:for="{{lists}}" wx:key="">
+    <view class="marTop20 title">{{item.dateTime}}更新 <text>{{item.goodsSize}}件</text>商品</view>
+
+    <view class="marTop20 limited-box" wx:for="{{item.listItems}}" wx:key="">
+        <navigator class="limited-top" url="../../component/detail/detail?id={{item.goodsId}}&platformId={{item.platformId}}">
+            <view class="img-box">
+                <view class="seckill-tip">{{item.discount}}折</view>
+                <image src="{{item.imgUrl}}"></image>
+            </view>
+
+            <view class="limited-content">
+                <text class="limited-time">剩余时间：{{item.endTime}}天</text>
+                <view class="limited-tit">{{item.title}}</view>
+                <view class="limited-cont-btm">
+                    <text class="limited-group">{{item.groupSize}}</text>
+                    <text class="group-price">¥{{item.groupPrice}}</text>
+                    <text class="font14 odd-price">¥{{item.oddPrice}}</text>
+                </view>
+            </view>
+        </navigator>
+
+        <navigator class="limited-btm" url="">
+            <view class="fn-right">
+                <text>查看{{item.goodsFrom}}价：¥{{item.fromPrice}}</text>
+                <view class="icon-right iconfont icon-right"></view>
+            </view>
+
+            <text class="font14 text-color1">商品来源：{{item.goodsFrom}}</text>
+        </navigator>
+    </view>
+</view>

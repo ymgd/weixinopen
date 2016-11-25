@@ -1,0 +1,276 @@
+/**index.wxss**/
+@import 'animation.wxss';
+.head-nav {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+}
+
+.head-nav view {
+  font-size: 0.9rem;
+  line-height: 40px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-nav text {
+  font-weight: bold;
+}
+
+.type-selected {
+  font-size: 1.1rem !important;
+}
+
+.platform-nav-pic {
+  display: flex;
+  margin: 10px 0 15px 0;
+  justify-content: space-between;
+  padding: 0 0.56rem;
+}
+
+.platform-nav-pic-item {
+  width: 4.3rem;
+  height: 4.3rem;
+  background-color: red;
+  border-radius: 0.4rem;
+}
+
+.platform-nav {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.platform-nav-item {
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  line-height: 35px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-bar {
+  width: 17%;
+  border-bottom: 2px solid #000;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  /*transition: all linear 0.2s;*/
+}
+
+.nav-bar view {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #000;
+}
+
+.scorll {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.scorll scroll-view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.media {
+  width: 100%;
+}
+
+.hot-desc {
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
+
+.madia-area {
+  width: 100%;
+  position: relative;
+}
+
+video {
+  width: 100%;
+}
+
+.play-icon {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 50%;
+  left: 50%;
+  margin-top: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+.hot-author-info {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+/*.footer-nav {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+}*/
+
+/*订阅*/
+.sub-nav-item {
+  display: flex;
+  width: 3rem;
+  font-size: 0.8rem;
+  line-height: 35px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.sub-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-list-item .media {
+  width: 100%;
+}
+
+.sub-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.sub-detail .desc {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 20px 0 15px 0;
+}
+
+.sub-detail .sub-type {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.author {
+  display: flex;
+}
+
+.sub-avatar {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 0.7rem;
+  margin-right: 6px;
+}
+
+.author-name {
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.pub-time {
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+.sub-platform text {
+  font-size: 0.5rem;
+  margin-right: 5px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.sub-platform image {
+  width: 1rem;
+  height: 1rem;
+}
+
+/*专题*/
+.special-list-item {
+  height: 10.7rem;
+  position: relative;
+}
+
+.special-list-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.special-title {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  top: 3.5rem;
+  padding: 0 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/*loading*/
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.loading image {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -2rem;
+  margin-left: -2rem;
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  } to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+

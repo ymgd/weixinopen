@@ -1,0 +1,308 @@
+:root,
+html,
+body {
+  background: #ececec;
+  font-family: '微软雅黑';
+  line-height: 1;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  height: 0;
+  overflow: hidden;
+  display: table;
+}
+.tac{
+  text-align: center;
+}
+.bg {
+  background: #ececec;
+}
+
+.white {
+  background: white;
+}
+
+.container {
+  font-size: 10pt;
+  color: #353535;
+}
+
+.input {
+}
+
+.fixed-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;  
+  background: #fff;
+  border-top: 1px solid #fafafa;
+  padding: 20rpx;
+  z-index: 1000;
+
+}
+
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.color-1 {
+  color: #ffa404;
+}
+
+.fz-10 {
+  font-size: 10px;
+}
+
+.fz-12 {
+  font-size: 12px;
+}
+
+.m10 {
+  margin: 10pt;
+}
+
+.m20 {
+  margin: 20pt;
+}
+
+.m-l-5 {
+  margin-left: 5px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-t-20 {
+  margin-top: 20pt;
+}
+
+.p10 {
+  padding: 10pt;
+}
+
+.p20 {
+  padding: 20pt;
+}
+
+.block-1 {
+  padding: 0 30rpx;
+}
+
+.block-2 {
+  padding: 10rpx 30rpx;
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5rpx;
+  padding: 10rpx 10rpx;
+  font-size: 50rpx;
+  text-align: center;
+}
+
+.btn::hover {
+  opacity: 0.75;
+}
+
+.btn-0 {
+  border: 1px solid #ececec;
+}
+
+.btn-1 {
+  background: #5dc890;
+  color: #fff;
+}
+
+.btn-2 {
+  background: #ffa404;
+  color: #fff;
+}
+
+.vm {
+  vertical-align: middle;
+}
+
+.hide {
+  display: none;
+}
+
+/*区域*/
+.section {
+  margin: 15rpx 0;
+  background: #fff;
+  padding: 25rpx 30rpx;
+}
+
+.section-title {
+  padding: 5px;
+  font-size: 14px;
+  border-left: 5px solid #ffa404;
+}
+
+.gray {
+  color: #999;
+}
+
+/*list*/
+.menu {
+}
+
+.menu-item {
+  border-bottom: 1px solid #eee;
+  padding: 25rpx 0;
+}
+
+.menu-item:last-child {
+  border: none;
+}
+
+.menu-item:after {
+  content: '.';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  display: block;
+}
+
+.menu-icon {
+  float: left;
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  margin-right: 20rpx;
+  margin-top: 1px;
+}
+
+.menu-text {
+  vertical-align: middle;
+  font-size: 35rpx;
+  line-height: 50rpx;
+}
+
+/*list*/
+.list-box {
+  margin-top: 10px;
+}
+
+.list-item {
+  position: relative;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.list-item::last {
+  border: none;
+}
+
+.list-avatar {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.list-name {
+  height: 30px;
+  line-height: 30px;
+}
+
+.list-des {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.list-image {
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.list-address,
+.list-time {
+  min-height: 20px;
+  line-height: 16px;
+}
+
+.list-address {
+  color: #999;
+}
+
+.list-time {
+  color: #999;
+  margin-top: 5px;
+}
+
+.section-title {
+  padding: 5px;
+  font-size: 14px;
+  border-left: 5px solid #ffa404;
+}
+
+.list-icon {
+  float: left;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.list-icon-text {
+  margin-left: 20px;
+}
+
+.list-type {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background: #eee;
+  padding: 5px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.list-type-money {
+  background: #ffa404;
+  color: #fff;
+}
+
+.list-botton {
+  margin-top: 15rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: right;
+}
+
+.list-bottom-icon {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,7 @@
+/**index.wxss**/
+@import "css/header.wxss";
+@import "css/footer.wxss";
+@import "css/content.wxss";
+
+
+ 

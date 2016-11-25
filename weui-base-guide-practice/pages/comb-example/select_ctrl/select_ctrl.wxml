@@ -1,0 +1,94 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <form bindsubmit="formSubmit">
+            <view class="section-wrp form-header">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text class='tf-size-14'>日期地址选择</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>日期</text>
+                            </view>
+                            <view class="col col2">
+                                <view class="col-right">
+                                    <picker mode="date" bindchange="pickDate" start="{{datePicker.start}}" end="{{datePicker.end}}" name="date">
+                                        <view class="plh">
+                                            {{datePicker.current}}
+                                        </view>                                   
+                                    </picker>
+                                </view>
+                                <image class="col-icon" src="{{chevron_png.src}}" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>时间</text>
+                            </view>
+                            <view class="col col2">
+                                <view class="col-right">
+                                    <picker mode="time" bindchange="pickTime" start="{{timePicker.start}}" end="{{timePicker.end}}" name="time">
+                                        <view class="plh">
+                                            {{timePicker.current}}
+                                        </view>                                   
+                                    </picker>
+                                </view>
+                                <image class="col-icon" src="{{chevron_png.src}}" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                  <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>城市</text>
+                            </view>
+                            <view class="col col2">
+                                <view class="col-right">
+                                    <picker type='selector'>
+                                        <view class='plh'><text>详细信息</text></view>
+                                    </picker>
+                                </view>
+                                <image class="col-icon" src="{{chevron_png.src}}" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>城市</text>
+                            </view>
+                            <view class="col col2">
+                                <view class="col-right">
+                                    <picker type='selector'>
+                                        <view class='plh'><text>广东省，广州市，海珠区</text></view>
+                                    </picker>
+                                </view>
+                                <image class="col-icon" src="{{chevron_png.src}}" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section btn-area">
+                    <view class="section-row">
+                        <button type="primary" form-type='submit' disabled="{{button.disabled}}">{{button.content}}</button>
+                    </view>
+                </view>
+            </form>
+        </view>
+    </view>
+</view>

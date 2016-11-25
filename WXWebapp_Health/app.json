@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/board/board",
+    "pages/item/item",
+    "pages/list/list",
+    "pages/search/search",
+    "pages/detial/detial",
+		"pages/about/about"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#354951",
+    "navigationBarTitleText": "健康生活",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+	"color": "#dddddd",
+	"selectedColor": "#3cc51f",
+	"borderStyle": "",
+	"backgroundColor": "#ffffff",
+	"list": [{
+		"pagePath": "pages/board/board",
+		"iconPath": "images/home.png",
+		"selectedIconPath": "images/home-actived.png",
+		"text": "首页"
+	}, {
+		"pagePath": "pages/search/search",
+		"iconPath": "images/search.png",
+		"selectedIconPath": "images/search-actived.png",
+		"text": "搜索"
+	}, {
+		"pagePath": "pages/about/about",
+		"iconPath": "images/profile.png",
+		"selectedIconPath": "images/profile-actived.png",
+		"text": "关于"
+	}]
+  }
+}

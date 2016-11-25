@@ -1,0 +1,66 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: block;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 27rpx 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  overflow: visible;
+} 
+
+.section-group .section:last-child .section-wrp{
+    border-bottom: none;
+}
+
+.tf-size-20 {
+  font-size:40rpx;
+}
+
+.tf-size-18 {
+  font-size:36rpx;
+}
+
+.tf-size-17 {
+  font-size: 34rpx;
+}
+
+.tf-size-16 {
+  font-size: 32rpx;
+}
+
+.tf-size-14 {
+  font-size: 28rpx;
+}
+
+.tf-size-13 {
+  font-size:26rpx;
+}
+
+.tf-size-11 {
+  font-size:22rpx;
+}
+
+.img-sm {
+  width:32rpx;
+  height: 32rpx;
+}
+
+.sub {
+  color:#888888;
+}
+
+.link {
+    color:#576B95;
+}
+
+.no-border {
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+

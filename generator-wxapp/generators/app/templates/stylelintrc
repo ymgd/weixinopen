@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "property-no-unknown": [ true, {
+      "ignoreProperties": ["composes"]
+    }],
+    "unit-no-unknown": [ true, {
+      "ignoreUnits": ["rpx"]
+    }]
+  }
+}

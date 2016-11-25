@@ -1,0 +1,30 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">
+          <text>未读</text>
+          
+        </view>
+        <view class="page__title">
+          <text>已读</text>
+        </view>
+    </view>
+    
+    <view class="page__bd">
+        <view class="section">
+            
+            <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%" 
+            bindscrolltoupper="leftScroll" bindscrolltolower="rightScroll" scroll-into-view="{{toView}}">
+                <view id="green" class="scroll-view-item_H bc_green">
+                即将推出，敬请期待
+                </view>
+                <view id="red"  class="scroll-view-item_H bc_red">
+                即将推出，敬请期待
+                </view>
+                
+            </scroll-view>
+
+            
+        </view>
+        
+    </view>
+</view>

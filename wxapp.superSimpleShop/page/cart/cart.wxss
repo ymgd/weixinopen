@@ -1,0 +1,109 @@
+#action {
+    display: flex;
+    flex-direction: row;
+    width: 400rpx;
+    margin-right: 20rpx;
+    margin-left: auto;
+}
+
+#action button {
+    margin: 0 0 10rpx auto;
+    font-size: 30rpx;
+    /*height: 70rpx;*/
+}
+
+#carts {
+    display: flex;
+    flex-direction: column;
+}
+
+#carts .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #eee;
+    margin: 0 20rpx;
+    padding: 5rpx 0;
+}
+
+#carts .item-first {
+    border-top: 1rpx solid #eee;
+}
+
+#carts image {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+#carts text {
+    font-size: 30rpx;
+}
+
+#carts input {
+    border: 1rpx solid gray;
+    width: 150rpx;
+    /*font-size: 35rpx;*/
+    padding-left: 5rpx;
+}
+
+#carts input.input-disabled {
+    border: 1rpx solid #eee;
+    /*color: #eee;*/
+}
+
+#carts checkbox {
+    margin: auto 0 auto 10rpx;
+}
+
+#total-price {
+    margin: 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#pay button {
+    margin: 20rpx;
+    font-size: 30rpx;
+}
+
+.amountButtonLeft, .amountButtonRight {
+    width: 60rpx; 
+    height: 60rpx;
+    margin: 0;
+    padding: 0;
+    font-size: 30rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+.amountButtonLeft {
+    margin-right: 10rpx;
+}
+
+.amountButtonRight {
+    margin-left: 10rpx;
+}
+
+/*image.down-arrow {
+    transform: rotate(90deg);
+}
+
+image.up-arrow {
+    transform: rotate(-90deg);
+}
+
+#carts image.arrow {
+    width: 30rpx;
+    height: 30rpx;
+    padding: 5rpx;
+    border: 1px solid #ddd;
+    margin-right: 5rpx;
+}*/
+
+.hide {
+    display: none;
+}

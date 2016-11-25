@@ -1,0 +1,32 @@
+<template name="item">
+    <navigator url="../item/item?id={{item.id}}">
+        <view class="item">
+            <image class="poster" src="{{item.images.small}}" />
+            <view class="meta">
+                <text class="title"> {{item.title}}
+                </text>
+                <text class="sub-title"> {{item.original_title}} ({{item.year}})
+                </text>
+                <view class="artists">导演：
+                    <block wx:for="{{item.directors}}"> {{item.name}}
+                    </block>
+                </view>
+            </view>
+            <view class="rating">
+                <text> {{item.rating.average}}
+                </text>
+            </view>
+        </view>
+    </navigator>
+</template>
+<template name="movie-list">
+    <scroll-view scroll-y="true" class="list" bindscrolltolower="loadData">
+        <template is="item" data="{{item}}" wx:for="{{movies}}" />
+        <view class="tips">
+            <view wx:if="{{!hasMore}}">
+                <text>没有更多内容了</text>
+            </view>
+        </view>
+    </scroll-view>
+    <loading hidden="{{!loading}}">加载中...</loading>
+</template>

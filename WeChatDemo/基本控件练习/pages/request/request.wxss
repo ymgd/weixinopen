@@ -1,0 +1,7 @@
+.bd view{
+    width: 100%;
+}
+.imageCell{
+    width: 90%;
+    height: 300rpx;
+}

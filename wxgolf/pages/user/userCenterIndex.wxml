@@ -1,0 +1,24 @@
+<!--<view class="container">-->
+<view class="page-header"></view>
+<view>
+<view class="page-user-background-green">
+        <image class="page-user-background-green-image" mode="aspectFill" src="../../images/bg_user.png"></image>
+        <view class="page-user-user-avator">
+            <image class="page-user-user-avator-image" mode="aspectFill" src="../../images/user_icon.png"></image>
+        </view> 
+        <view class="page-user-login-view">
+            <label class="page-user-login">登录/注册</label>
+        </view>
+ </view> 
+ <view class="page-center-gray-line"></view>
+<scroll-view scroll-y="true" class="page-body">
+    <navigator wx:for="{{tableTitles}}">
+        <view class="item">
+          <image class="poster" src="{{item.icon}}"></image>
+          <text class="sub-title">{{item.title}}</text>
+        </view>
+    </navigator>
+</scroll-view> 
+</view>
+<!--</view>-->
+

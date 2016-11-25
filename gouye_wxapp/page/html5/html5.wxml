@@ -1,0 +1,28 @@
+<view class="container">
+
+    <view><text>活动简介</text></view>
+    <view>
+	    <text>
+            色达县城的海拔较高，气候严寒．年平均气温在0℃以下。色达县是一个比较一般的高原小镇，没有什么特别的地方。
+			说到色达，必须要提到的便是世界最大的藏传佛教学院——五明喇荣佛学院。
+			这里，也是我向往已久的地方，记得当我第一次在网络上看到别人拍摄的照片时便惊叹道世界上竟然还有这样的地方，
+			一个狭小的山谷里，满山遍野的小房子，在这里来自全世界的几万修行者汇集于此，潜心研究佛教，阵阵梵音越过山梁传向远方。。。    
+	        这里是修行者的极乐世界，在这里一切都显得那样的祥和、安宁，在这里似乎一切都受到了佛祖的加持 。
+	        色达县是个藏传佛教寺庙比较集中的地方，全部为红教（宁玛派）寺庙，除了著名的五明佛学院，还有花数千万元才最后完工的吉祥藏经院、
+	        歌乐沱乡的勒穷寺、甲学乡的拉则寺、纳折贡巴寺以及打龙寺、色拉寺、和3000多年前的石棺墓、塘亚沟、哈青沟古建筑遗迹等等，让人赞叹不已
+	    </text>
+	</view>  
+
+    <view>
+		<text>风景指数</text>
+		<image mode="{{aspectFit}}" src="http://www.movetechx.com/quye/static/images/icon/icon_star_green.png"></image>
+		<image mode="{{aspectFit}}" src="http://www.movetechx.com/quye/static/images/icon/icon_star_green.png"></image>
+		<image mode="{{aspectFit}}" src="http://www.movetechx.com/quye/static/images/icon/icon_star_green.png"></image>
+		<image mode="{{aspectFit}}" src="http://www.movetechx.com/quye/static/images/icon/icon_star_green.png"></image>
+		<image mode="{{aspectFit}}" src="http://www.movetechx.com/quye/static/images/icon/icon_star_green.png"></image>
+		
+		<text>难度指数</text>
+		<image mode="{{aspectFit}}" src="http://www.movetechx.com/quye/static/images/icon/icon_star_yellow.png"></image>
+		<image mode="{{aspectFit}}" src="http://www.movetechx.com/quye/static/images/icon/icon_star_yellow.png"></image>
+	</view>
+</view>    

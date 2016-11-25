@@ -1,0 +1,36 @@
+<view class="find">
+  <scroll-view scroll-x="true" class="tab-nav">
+    <view class="scroll-view-item {{active == 'all' ? 'tab-nav-active':''}}" data-type="all" bindtap="chageFindData">全部</view>
+    <view class="scroll-view-item {{active == 'pingmian' ? 'tab-nav-active':''}}" data-type="pingmian" bindtap="chageFindData">平面</view>
+    <view class="scroll-view-item {{active == 'ui' ? 'tab-nav-active':''}}" data-type="ui" bindtap="chageFindData">UI</view>
+    <view class="scroll-view-item {{active == 'wangye' ? 'tab-nav-active':''}}" data-type="wangye" bindtap="chageFindData">网页</view>
+    <view class="scroll-view-item {{active == 'chahua' ? 'tab-nav-active':''}}" data-type="chahua" bindtap="chageFindData">插画</view>
+    <view class="scroll-view-item {{active == 'dongman' ? 'tab-nav-active':''}}" data-type="dongman" bindtap="chageFindData">动漫</view>
+    <view class="scroll-view-item {{active == 'sheying' ? 'tab-nav-active':''}}" data-type="sheying" bindtap="chageFindData">摄影</view>
+    <view class="scroll-view-item {{active == 'sanwei' ? 'tab-nav-active':''}}" data-type="sanwei" bindtap="chageFindData">三维</view>
+  </scroll-view>
+
+  <scroll-view scroll-y="true" class="find-content" lower-threshold="50" bindscrolltolower="scrollToLower">
+    <block wx:for="{{findList}}">
+        <view class="find-list" data-idx="{{index}}" bindtap="showDetail">
+            <image src="{{item.imgUrl}}" class="find-image" mode="aspectFill"></image>
+            <view class="find-info">
+              <view class="find-title">{{item.title}}</view>
+              <view class="find-author">{{item.author}}</view>
+              <view class="find-number">
+                <image class="icon-look" src="/images/icons/icon-view.png"></image>{{item.look}}
+                <image class="icon-like ml20" src="/images/icons/icon-zan.png"></image>{{item.like}}
+              </view>
+            </view>
+        </view>
+    </block>
+    <view class="load-more" style="display: {{showLoadMore ? 'block':'none'}}">
+      <block wx:if="{{isMore}}">
+        <text>正在加载更多...</text>
+      </block>
+      <block wx:else>
+        <text>没有了</text>
+      </block>
+    </view>
+  </scroll-view>
+</view>

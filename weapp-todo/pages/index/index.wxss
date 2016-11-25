@@ -1,0 +1,49 @@
+/**index.wxss**/
+.user-info {
+  padding: 10px;
+  text-align: center;
+}
+.user-info wx-image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.section {
+  padding: 0 30rpx;
+}
+.section wx-input {
+  border: 1px solid #eeeeee;
+  padding:6px 20px;
+  margin-top: 20rpx;
+  background-color:#fff;
+  font-size: 36rpx;
+}
+.section .add {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 36rpx;
+  width: 60%;
+  margin: 20rpx auto;
+}
+.tab-wrapper {
+  margin-top: 30rpx;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+}
+.tab {
+  color: #888888;
+  flex: 1;
+  text-align: center;
+  line-height: 60rpx;
+}
+.tab-wrapper .no {
+  color: red;
+}
+.tab-wrapper .done {
+  color:#1AAD19;
+}
+.todo-list {
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 1px solid #eeeeee;
+}

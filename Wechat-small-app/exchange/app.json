@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/exchangeCal/exchangeCal",
+    "pages/currencyList/currencyList"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "汇率计算",
+    "navigationBarTextStyle":"black"
+  },
+  "debug": true
+}

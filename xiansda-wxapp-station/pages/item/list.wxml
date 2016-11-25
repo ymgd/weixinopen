@@ -1,0 +1,18 @@
+<!--list.wxml-->
+<view class="page">
+	<view class="pane">
+		<view class="section flex-row">
+			<text class="text-h1 flex-auto text-ls">产品代理</text>
+			<icon type="info_circle" size="32"/>		
+		</view>
+		<view class="section">
+			<text class="text-left text-h3 c-gray text-ls">我们平台为您提供了可靠，可追溯来源的产品。你可以从供应商中选择产品，并制定代理策略，发布到你的服务站点。所有关注此服务站的客户就能浏览到你发布的产品。</text>
+		</view>
+		
+		<view class="section">
+			<navigator url="../agent/suppliers">
+				<button type="primary">添加代理</button>	
+			</navigator>
+		</view>
+	</view>
+</view>

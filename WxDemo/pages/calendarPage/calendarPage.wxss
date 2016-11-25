@@ -1,0 +1,31 @@
+.calendar{
+    background-color: rgb(255, 190, 207);
+    margin: 44px 44px;
+}
+
+.clendar-week{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20px;
+    background-color: yellow;
+}
+
+.week-item{
+    line-height: 20px;
+    text-align: center;
+}
+
+.day-cell{
+    display:inline-block;
+    text-align: center;
+    background-color: rgb(255, 190, 207);
+}
+
+.innerDay-cell{
+    color: blue;
+}
+
+.outerDay-cell{
+    color: rgb(255, 190, 207);
+}

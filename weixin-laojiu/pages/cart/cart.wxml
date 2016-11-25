@@ -1,0 +1,34 @@
+<view class="cart" hidden="{{iscart}}">
+    <image src="/images/cart.png"/>
+    <view>购物车什么都没有，赶快去购物吧</view>
+</view>
+<view class="cartList" hidden="{{!iscart}}">
+    <view class="baoyou">全场满69元免邮费！</view>
+    <block wx:for="{{cart}}">
+        <view class="goods">
+            <navigator url="../detall/detall?id={{item.id}}&name={{item.name}}&price={{item.price}}&img={{item.imgUrl}}">
+                <image src="{{item.imgUrl}}" class="good-img"/>
+            </navigator>
+            <view class="good-cont">
+                <navigator class="goods-navigator" url="../detall/detall?id={{item.id}}&name={{item.name}}&price={{item.price}}&img={{item.imgUrl}}">
+                    <text class="good-name">{{item.name}}</text>
+                </navigator>
+                <view class="good-price">
+                    <text class="price">￥{{item.price}}</text>
+                    <view class="btn-box">
+                        <view class="btn">
+                            <button id="del{{index}}" type="default" size="mini" bindtap="delCount">-</button>
+                            <input  value="{{item.count}}"/>
+                            <button id="add{{index}}" type="default" size="mini" bindtap="addCount">+</button>
+                        </view>
+                        <image id="img{{index}}" src="/images/del2.png" bindtap="delGoods"/>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+    <view class="total">
+        <view class="total_text">合计：<text>￥{{total}}</text></view>
+        <button class="total_js" size="mini">去结算({{goodsCount}})</button>
+    </view>
+</view>

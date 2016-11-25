@@ -1,0 +1,2 @@
+@import "../../templates/lastestadcell.wxss";
+@import "../../templates/errorview.wxss";

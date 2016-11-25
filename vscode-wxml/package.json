@@ -1,0 +1,64 @@
+{
+    "name": "vscode-wxml",
+    "displayName": "vscode wxml",
+    "description": "Wechat wxml support/snippets for vscode",
+    "version": "0.1.7",
+    "icon": "images/weapp.png",
+    "publisher": "coderfee",
+    "author": {
+        "email": "codefee@outlook.com",
+        "name": "coderfee",
+        "url": "http://coderfe.cn"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/coderfe/vscode-wxml"
+    },
+    "bugs": {
+        "url": "https://github.com/coderfe/vscode-wxml/issues",
+        "email": "coderfee@outlook.com"
+    },
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages",
+        "Snippets",
+        "Other"
+    ],
+    "keywords": [
+        "weapp",
+        "wechat",
+        "weixin",
+        "微信",
+        "wxml"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "wxml",
+                "aliases": [
+                    "wxml",
+                    "wxml"
+                ],
+                "extensions": [
+                    ".wxml"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "wxml",
+                "scopeName": "text.html.wxml",
+                "path": "./syntaxes/wxml.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "wxml",
+                "path": "./snippets/wxml.json"
+            }
+        ]
+    }
+}

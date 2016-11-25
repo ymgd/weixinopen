@@ -1,0 +1,91 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+
+.c-fullwidth {
+  width: 100%;
+}
+.c-block {
+  display: block;
+}
+.page-container {
+    width: 100%;
+    height: 100%;
+}
+.icon-reward {
+  vertical-align: -4px;
+  width: 17px;
+  border: 0;
+  height: 17px;
+  background: url(http://i.pengxun.cn/static/vzan/web/index/images/post-big-pic-06.png) no-repeat 0 0;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 2px;
+}
+.icon-zhuan {
+    vertical-align: -4px;
+    width: 17px;
+    height: 17px;
+    background: url(http://i.pengxun.cn/static/vzan/web/index/images/icon1.png) no-repeat 34% 37%;
+    background-size: 735%;
+    margin-right: 2px;
+    display: inline-block;
+}
+.icon-ping {
+    vertical-align: -4px;
+    width: 17px;
+    height: 17px;
+    background: url(http://i.pengxun.cn/static/vzan/web/index/images/icon1.png) no-repeat 62% 37%;
+    background-size: 735%;
+    margin-right: 2px;
+    display: inline-block;
+}
+.icon-zan {
+    vertical-align: -3px;
+    width: 17px;
+    height: 17px;
+    background: url(http://i.pengxun.cn/static/vzan/web/index/images/icon1.png) no-repeat 34% 67%;
+    background-size: 735%;
+    margin-right: 2px;
+    display: inline-block;
+}
+.em {
+  color:#858585;
+  font-size:28.8rpx;
+  font-family: "Microsoft YaHei",Arial;
+  padding: 0 2px;
+}
+
+.fl{
+  float:left;
+  width: 14.28%;
+  padding: 5px;
+  text-align: center;
+}
+
+.qqface-img{
+    background: url(http://i.pengxun.cn/content/images/imgpost2/qqface.jpg) no-repeat left top;
+    background-size: 100%;
+    width: 29px;
+    height: 29px;
+}
+.post-qq-face{
+    width: 100%;
+    height: 185px;
+    padding: 10px;
+}
+
+view,scroll-view,swiper,swiper-item,icon,text,progress,button,checkbox-group,checkbox,form,input,label,picker,radio-group,radio,slider,switch,action-sheet,action-sheet-item,action-sheet-cancel,modal,toast,loading,navigator,audio,image,video,map,canvas {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

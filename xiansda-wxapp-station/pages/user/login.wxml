@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="page full-size flex-column">
+  <view class="pane-hero bg-soft userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="section">
+    <view class="text-center mb20">
+      <text class="text-h2 text-ls">{{welcome}}</text>
+    </view>
+    <view class="section" wx:if="{{retry}}">
+    	<button bindtap="login">重试</button>
+    </view>
+    <view wx:if="{{access}}">
+	    <view class="mb40">
+	  	  <text class="text-h3 text-ls">此小程序是作为鲜时达服务站的应用，不对普通消费者开放。如果您是服务站人员请使用接入码接入。</text>	
+	    </view>
+  	  <navigator url="../user/access">
+  	  	<button type="primary">使用接入码</button>	
+  	  </navigator>
+  	</view>
+  </view>
+  <view class="section">
+    <button bindtap="back">返回</button>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<view class="container doc">
+    <view class="main">
+        <view class="content">
+            <view class="a-title">
+                <text>{{article.title}}</text>
+            </view>
+            <view class="a-neck">
+                <view class="a-neck-text sub tf-size-14 ">
+                    <text>{{article.created_at}}</text>
+                    <text>{{article.author_name}}</text>
+                    <text class="link">{{article.author_source}}</text>
+                </view>
+                <view class="a-neck-img">
+                    <image src="{{article.neck_image}}" mode='aspectFit'></image>
+                </view>
+            </view>
+            <view class="a-body">
+                <view class="section"> 
+                    <text>{{article.sections[0]}}</text>
+                </view>
+                <view class="section"> 
+                    <text>{{article.sections[1]}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

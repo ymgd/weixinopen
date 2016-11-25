@@ -1,0 +1,21 @@
+<!--city.wxml-->
+<view class="container">
+  <view class="city">
+    <text>当前城市：{{cur_name}}</text>
+  </view>
+  <view class="citytable">
+    <block wx:for="{{citylist}}">
+      <view class="province" >{{item.pro}}<image class="arrow" src="../../images/arrowright.png"></image></view>
+      <view class="leadlist">
+        <block wx:for="{{item.larr}}">
+          <view class="leader">{{item.lea}}<image class="arrow" src="../../images/arrowright.png"></image></view>
+          <view class="citys">
+          <block wx:for="{{item.carr}}">
+            <text class="cityname" bindtap="selecttap" id="{{item.id}}">{{item.city}}</text>
+          </block>
+          </view>
+        </block>
+      </view>
+    </block>
+  </view>
+</view>

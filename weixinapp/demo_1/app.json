@@ -1,0 +1,24 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0000FF",
+    "navigationBarTitleText": "NavigationBar",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#1E90FF"
+  },
+  "tarBar":{
+    "list":[{
+        "pagePath":"page/index/index",
+        "text":"首页"
+      }, {
+        "pagePath":"page/logs/logs",
+        "text":"日志"
+      }]
+  },
+  "debug":true
+
+}

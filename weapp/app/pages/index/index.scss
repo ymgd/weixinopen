@@ -1,0 +1,31 @@
+.index_swiper {
+  height: 200px
+}
+.swiper-item{
+  display: block;
+  height: 200px;
+}
+
+.bc_1 {
+  background: red;
+}
+.bc_2 {
+  background: yellow
+}
+.bc_3 {
+  background: green
+}
+.bc_4 {
+  background: blue
+}
+.index-cates {
+  display: flex;
+  padding: 5px 10px;
+}
+.index-cates .single-cate {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: .8rem
+}

@@ -1,0 +1,40 @@
+.collection {
+    position: relative;
+    margin: 20rpx 20rpx;
+    height: 300rpx;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.collection-overlay {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-image: linear-gradient(hsla(0,0%,56%,.3),rgba(70,70,70,.6));
+    transition: background .3s;
+}
+
+.collection:hover .collection-overlay {
+    background-color: rgba(0,0,0,.3);
+}
+
+.collection-info {
+    position: absolute;
+    bottom: 55rpx;
+    left: 40rpx;
+}
+
+.collection-title {
+    display: block;
+}
+
+.collection-data {
+    display: block;
+    margin-top: 15rpx;
+    font-size: 28rpx;
+}
+
+.load-more {
+    margin: 20rpx 20rpx;
+}

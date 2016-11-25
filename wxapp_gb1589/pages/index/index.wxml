@@ -1,0 +1,23 @@
+<page>
+    <view class="home">
+        <swiper class="flipview" bindTouchmove="preventDefault"  indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}">
+          <block wx:for="{{swiper.items}}">
+            <swiper-item>
+              <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+              <text class="caption">{{item.text}}</text>
+              <text class="tabs">
+                  <text class="current">{{index+1}}</text>/{{swiperTotal}}
+              </text>
+            </swiper-item>
+          </block>
+        </swiper>
+        <view class="section">
+            <block wx:for="{{projects}}">
+                <navigator url="{{item.navToUrl}}" class="project-item-{{index}}">
+                    <text class="title">{{item.title}}</text>
+                    <text class="total">{{item.total}} {{item.text}}</text>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</page>

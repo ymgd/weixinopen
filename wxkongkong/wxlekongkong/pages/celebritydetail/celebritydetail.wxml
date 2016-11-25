@@ -1,0 +1,34 @@
+<view class="container">
+    <scroll-view style="height:{{windowHeight}}px" scroll-y="true" bindscrolltolower="scrolltolower">
+        <!--发布者头像--> 
+        <import src="../../templates/celebrityuserview"/>
+        <template is="celebrityuserview" data="{{...userInfo, left}}"></template>
+        <!--发布的内容-->
+        <view class="descriptionview">{{description}}</view>
+        <!--如果有图片-->
+        <block wx:if="{{images.length > 0}}">
+            <import src="../../templates/imagesview"/>
+            <template is="imagesview" data="{{images, left}}"></template>
+        </block>
+        <!--如果有申请人-->
+        <!--wx:if="{{winnerInfo}}"-->
+        <block>
+            <import src="../../templates/winnerview"/>
+            <template is="winnerview" data="{{...winnerInfo, left}}"></template>
+        </block>
+        <!--如果申请-->
+        <!--<block wx:if="{{applicationCount > 0}}" wx:key="*this">
+            <view style="padding: {{top}}rpx {{left}}rpx {{top}}rpx {{left}}rpx; background-color:white; font-size:14px; margin-top:{{top}}rpx;">
+            申请人({{applicationCount}})
+            </view>
+            <block wx:for="{{applicantors}}" wx:key="applicantor">
+                <import src="../../templates/applicantorview"/>
+                <template is="applicantorview" data="{{...item, top, left}}"></template>
+            </block>
+        </block>
+        <block wx:if="{{applicationCount > 0}}" wx:key="*this">
+        <import src="../../templates/loadingmoreview.wxml"/>
+        <template is="loadingmoreview" data="{{hasMore}}"></template>
+      </block>-->
+    </scroll-view>
+</view>

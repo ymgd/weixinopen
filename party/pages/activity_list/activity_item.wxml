@@ -1,0 +1,19 @@
+<template name='activity-item'>
+    <view class="activity-item" bindtap="viewDetail" data-id="{{poiActivity.id}}">
+        <view class="activity-image">
+            <image mode="scaleToFill" src="{{poiActivity.poster}}"/>
+        </view>
+        <view class="activity-info">
+            <view class="activity-title">
+                <text>{{poiActivity.title}}</text>
+            </view>
+            <view class="activity-msg">
+                <ul class="list-inline">
+                    <li>{{poiActivityCategoryList[poiActivityCategoryList.length-1].name}}</li>
+                    <li>{{poiActivity.address || '暂无地址'}}</li>
+                    <li>{{poiActivity.startTime}}</li>
+                </ul>
+            </view>
+        </view>
+    </view>
+</template>

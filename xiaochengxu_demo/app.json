@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/button/button",
+    "pages/checkbox/checkbox",
+    "pages/form/form",
+    "pages/input/input",
+    "pages/label/label",
+    "pages/picker/picker",
+    "pages/radio/radio",
+    "pages/slider/slider",
+    "pages/switch/switch",
+    "pages/textarea/textarea",
+    "pages/operate/operate",
+    "pages/navigator/navigator",
+    "pages/navigator/new",
+    "pages/navigator/redirect",
+    "pages/navbar/navbar",
+    "pages/mediaTest/mediaTest",
+    "pages/audio/audio",
+    "pages/image/image",
+    "pages/video/video",
+    "pages/other/other",
+    "pages/other/map/map",
+    "pages/other/canvas/canvas",
+    "pages/other/scrollView/scrollView",
+    "pages/other/swiper/swiper",
+    "pages/other/pullDownRefresh/pullDownRefresh",
+    "pages/api/api"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#ffffff",
+    "navigationBarTitleText": "小程序基础",
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "backgroundColor": "#000000",
+    "selectedColor": "#0165B0",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "基础组件"
+      },
+      {
+        "pagePath":"pages/navigator/navigator",
+        "text":"导航媒体"
+      },
+      {
+        "pagePath":"pages/other/other",
+        "text":"其它"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "API"
+      },   {
+        "pagePath": "pages/operate/operate",
+        "text": "示例"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+
+}

@@ -1,0 +1,13 @@
+
+<scroll-view scroll-y="true" class="page">
+    <view class="meta">
+        <image class="poster" src="{{book.images.large}}" background-size="cover"></image>
+        <text class="title">{{book.title}}</text>
+        <text class="info">作者：{{book.author}}</text>
+        <text class="info">出版社：{{book.publisher}}</text>
+        <text class="info">出版时间：{{book.pubdate}}</text>
+    </view>
+    <view class="summry">
+        <text class="intro">简介：{{book.summary}}</text>
+    </view>
+</scroll-view>

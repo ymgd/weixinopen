@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/me/me",
+    "pages/home/detail",
+    "pages/shopping/shopping",
+    "pages/home/meituan/meituan",
+    "pages/home/feedback/feedback",
+    "pages/home/funny/funny",
+    "pages/home/funny/funnyDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff000",
+    "navigationBarTitleText": "新闻",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#fff000",
+    "backgroundColor": "#ffeeee",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "我",
+      "iconPath": "resource/images/1.png",
+      "selectedIconPath": "resource/images/2.png"
+    },
+    {
+      "pagePath": "pages/shopping/shopping",
+      "text": "商城",
+      "iconPath": "resource/images/3.png",
+      "selectedIconPath": "resource/images/4.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "首页",
+      "iconPath": "resource/images/2.png",
+      "selectedIconPath": "resource/images/3.png"
+    }]
+  }
+}

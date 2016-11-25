@@ -1,0 +1,38 @@
+.car_iamge {
+  width:100%
+}
+
+.car_description {
+  font-size: 0.7em;
+  padding-left: 10px
+}
+
+.price_container {
+  padding-bottom: 14px
+}
+
+.car_price {
+  color: #FFB90F;
+  font-size: 0.7em;
+  margin-right: 13px;
+  padding-left: 10px
+}
+
+
+.guid_price {
+  color: #838B83;
+  font-size: 0.6em;
+  text-decoration:line-through
+}
+
+.split {
+  background-color: #EAEAEA;
+  height: 10px
+}
+
+.button {
+  color:#FFFFFF !important;
+  background-color:#FFB90F !important;
+  float: right;
+  margin-right: 3px;
+}

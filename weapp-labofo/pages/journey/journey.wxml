@@ -1,0 +1,19 @@
+<view class="index">
+    <view class="body">
+        <view class="widgets">
+            <loading hidden="{{hidden}}" bindchange="loadingChange">
+                加载中...
+            </loading>
+            <block wx:for-items="{{list}}" hidden="{{!hidden}}">
+                <view class="widgets__item">
+                    <view id="{{item.orderno}}" class="widgets__info widgets__info_show" bindtap="widgetsToggle">
+                        <text class="widgets__info-name">￥{{item.money}}</text>
+                        <text class="widgets__info-name">{{item.carno}}</text>
+                        <text class="widgets__info-name">{{item.time}}</text>
+                        <image class="widgets__info-img" src="/image/arrowright.png" mode="aspectFill" />
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

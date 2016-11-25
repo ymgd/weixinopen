@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/carDetail/carDetail",
+    "pages/logs/logs",
+    "pages/chooseCar/chooseCar",
+    "pages/news/news",
+    "pages/personCenter/personCenter"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#3A5FCD",
+    "navigationBarTitleText": "直销车",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "直销车",
+      "iconPath": "resources/images/sell_item_icon.png",
+      "selectedIconPath": "resources/images/sell_item_icon_selected.png"
+    }, {
+      "pagePath": "pages/chooseCar/chooseCar",
+      "text": "选车",
+      "iconPath": "resources/images/select_car_item_icon.png",
+      "selectedIconPath": "resources/images/select_car_item_icon_selected.png"
+    }, {
+      "pagePath": "pages/news/news",
+      "text": "资讯",
+      "iconPath": "resources/images/icon_news_notselected.png",
+      "selectedIconPath": "resources/images/icon_news_selected.png"
+    }, {
+      "pagePath": "pages/personCenter/personCenter",
+      "text": "我",
+      "iconPath": "resources/images/my_item_icon.png",
+      "selectedIconPath": "resources/images/my_item_icon_selected.png"
+    }],
+    "selectedColor": "#FFB90F"
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "downloadFile": 30000
+  },
+  "debug": true
+}

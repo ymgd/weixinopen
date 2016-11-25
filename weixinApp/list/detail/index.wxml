@@ -1,0 +1,4 @@
+<view class="center section">this is detail</view>
+<view class="section content">
+{{ title }}
+</view>

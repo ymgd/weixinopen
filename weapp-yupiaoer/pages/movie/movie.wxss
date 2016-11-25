@@ -1,0 +1,135 @@
+/*网页头部*/
+.header-bar{
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 2px;
+}
+/*网页头部 之 logo标志*/
+ .header-bar image{
+    width:65px;
+    height: 45px;
+}
+/*网页头部 之 地区*/
+.city{
+    color: #666;
+    line-height: 45px;
+    padding:0px 6px;
+    position: relative;
+    padding-right: 16px;
+}
+.city::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border: 2px solid #b3b3b3;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    margin-top: -6px;
+    transform: rotate(45deg);
+}
+/*网页头部 之 文字片*/
+.header-content{
+    flex:1;
+    color: #666;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.header-content text{
+    display: inline-block;
+    width: 50%;
+    height: 44px;
+    text-align: center;
+    box-sizing: border-box; 
+    position: relative;
+}
+.header-content text:first-child::after{
+    content: "";
+    position: absolute;
+    right: 0px;
+    top:50%;
+    margin-top: -6px;
+    width: 1px;
+    height: 18px;
+    background: rgba(221, 221, 221, .6);
+}
+.header-content text.active{
+     border-bottom: 2px solid #1296db;
+}
+
+/*幻灯片*/
+image{
+    width:100%
+}
+swiper{
+    margin-bottom: 20px;
+}
+
+/*电影资料*/
+.movieView{
+   width: 100%;
+   padding: 10px;
+   display: flex;              
+   flex-wrap: wrap;
+   cursor: pointer;
+   border-bottom: 1px solid #dbdbdb;
+   position: relative;
+}
+.movieView image{
+    width:65px;
+    height: 95px;
+}
+/*电影右边*/
+.movie-right{
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    padding: 6px 10px;
+    margin-right: 10px;
+}
+.movie-top,.movie-bottom{
+    position: relative;
+}
+.movie-top .right{
+    color: #cf616a;
+    position: absolute;
+    right: 0;
+    background: url(../../img/index.png) no-repeat left center;
+    background-size: 16px;
+    padding:3px 0px 0px 24px;
+}
+.movie-bottom{
+    margin-top: 10px;
+    font-size: 13px;
+    padding-right: 50px;
+}
+.movie-bottom .text1{
+    display: block;
+    color: #666;
+    font-weight: bold;
+    margin: 15px 0 6px;
+}
+.movie-bottom .actor{
+    color: #999;
+}
+.movie-bottom button{
+    position: absolute;
+    right: 0;
+    bottom:-6px;
+    line-height: 18px;
+    padding: 5px 8px;
+    color:  #1296db;
+    font-size: 13px;
+    border-radius: 2px;
+    border:1px solid  #1296db;
+}
+.show {
+    display: block;
+}
+.hide {
+    display:none;
+}

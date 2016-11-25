@@ -1,0 +1,48 @@
+{
+    "name": "we-app-vscode",
+    "displayName": "WeApp Snippets",
+    "description": "Snippets for WeApp development",
+    "version": "0.2.0",
+    "publisher": "emeryao",
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.6.0"
+    },
+    "galleryBanner": {
+        "color": "#09BB07",
+        "theme": "light"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/wxml.json"
+            },
+            {
+                "language": "wxml",
+                "path": "./snippets/wxml.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
+            },
+            {
+                "language": "json",
+                "path": "./snippets/json.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Emeryao/we-app-vscode.git"
+    },
+    "author": {
+        "name": "Emeryao",
+        "email": "luyao1206@live.cn",
+        "url": "https://github.com/Emeryao"
+    },
+    "license": "MIT"
+}

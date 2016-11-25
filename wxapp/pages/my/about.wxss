@@ -1,0 +1,23 @@
+:root,
+body,
+html {
+	background: #fff;
+	padding: 50rpx;
+}
+
+.title {
+	margin-top: 10rpx;
+	padding: 20rpx;
+	font-size: 35rpx;
+}
+
+.text {
+}
+
+.b-1{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding: 50rpx 0;
+}

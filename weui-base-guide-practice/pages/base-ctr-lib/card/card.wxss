@@ -1,0 +1,148 @@
+.container{
+  background-color: #f4f4f4;
+  height: 100%;
+  overflow: visible;
+}
+
+.main {
+    margin:0;
+    margin-top: 37rpx;
+}
+
+.row-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20rpx;
+    padding-left: 20rpx;
+}
+
+.row-main.top {
+    justify-content: center;
+    padding-top: 24rpx;
+    padding-bottom: 20rpx;
+}
+
+.row-main.list {
+    padding-top:11rpx;
+    padding-bottom: 11rpx;
+    font-size:32rpx;
+}
+
+.row-main.list text {
+    max-width: 500rpx;
+    word-wrap: break-word;
+}
+
+.row.split {
+    border-bottom: 2rpx solid #E5E5E5;
+}
+
+.section {
+    margin-bottom: 50rpx;
+    background-color: #ffffff;
+}
+
+
+.big-rect-img {
+    width:100%;
+    height: 356rpx;
+}
+
+.small-rect-img {
+    width: 104rpx;
+    height: 104rpx;
+}
+
+.row-chevron {
+    width: 16rpx;
+    height: 25rpx;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column;
+}
+
+.section .row:last-child {
+    border: none;
+}
+
+.sub {
+    font-size:26rpx;
+    color:#888888;
+}
+
+.flex-col .main-title {
+    margin-bottom: 25rpx;
+}
+
+.row.card1 {
+    padding-top:45rpx;
+    padding-bottom:45rpx;
+}
+
+.row.card2{
+    padding-top:45rpx;
+}
+
+.row.card-text-type {
+    padding-top: 38rpx;
+    padding-bottom: 38rpx;
+}
+
+
+.card-icon {
+    width: 84rpx;
+    height: 84rpx;
+}
+
+.flex-row {
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.little-title {
+    font-size:26rpx;
+    color:#555555;
+}
+
+.big-content {
+    font-size:50rpx;
+    margin-top: 16rpx;
+}
+
+.card-content {
+    margin-left: 30rpx;
+}
+
+.card-footer {
+    font-size:26rpx;
+    color:#888888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 144rpx;
+    line-height: 37rpx;
+    padding-top: 17rpx;
+    padding-bottom: 17rpx;
+    border-top: 2rpx dashed  #cfcfcf;
+    margin-top: 35rpx;
+    padding-right: 39rpx;
+}
+
+.card-text-icon-source-type {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 0;
+}
+
+.row.card-img-big-detail-type {
+    padding-top: 0;
+}
+
+.row-md {
+    height: 90rpx;
+}

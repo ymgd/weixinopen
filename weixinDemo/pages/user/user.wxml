@@ -1,0 +1,8 @@
+<view class="nav">
+    <view class="{{mmmm ==0 ? 'first' : ''}}" data-index='0' bindtap="switchover">
+        推荐
+        <view class="bottom {{nnnn ==0 ? 'firstview' : ''}}"></view>
+    </view>
+    <view class="{{mmmm ==1 ? 'first' : ''}}" data-index='1' bindtap="switchover">热门<view class="bottom {{nnnn ==1 ? 'firstview' : ''}}"></view></view>
+    <view class="{{mmmm ==2 ? 'first' : ''}}" data-index='2' bindtap="switchover">收藏<view class="bottom {{nnnn ==2 ? 'firstview' : ''}}"></view></view>
+</view>

@@ -1,0 +1,35 @@
+<view class="container">
+    <view class="calendar">
+        <view class="clendar-title">
+            <view class="pre-btn">
+            </view>
+        <view>
+        <view class="clendar-week">
+            <view class="week-item">一</view>
+            <view class="week-item">二</view>
+            <view class="week-item">三</view>
+            <view class="week-item">四</view>
+            <view class="week-item">五</view>
+            <view class="week-item">六</view>
+            <view class="week-item">日</view>
+        <view>
+        <block wx:for="{{dataForRenderMonth.cellArray}}">
+            <block wx:if="{{index < daysOfCurrentMonth.indexOfFirstDay}}">
+                <view class="day-cell outerDay-cell" 
+                      style="width:{{itemSize}}px; height:{{itemSize}}px; margin:{{margin}}px; line-height:{{itemSize}}px">-1
+                </view>
+            </block>
+            <block wx:if="{{index >= daysOfCurrentMonth.indexOfFirstDay + daysOfCurrentMonth.numberOfDays}}">
+                <view class="day-cell outerDay-cell" 
+                      style="width:{{itemSize}}px; height:{{itemSize}}px; margin:{{margin}}px; line-height:{{itemSize}}px">-1
+                </view>
+            </block>
+            <block wx:if="{{index >= daysOfCurrentMonth.indexOfFirstDay && index < daysOfCurrentMonth.indexOfFirstDay + daysOfCurrentMonth.numberOfDays}}">
+                <view class="day-cell innerDay-cell" 
+                      style="width: {{itemSize}}px; height: {{itemSize}}px; margin: {{margin}}px; line-height: {{itemSize}}px">
+                      {{index - daysOfCurrentMonth.indexOfFirstDay + 1}}
+                </view>
+            </block>
+        </block>
+    </view>
+</view>

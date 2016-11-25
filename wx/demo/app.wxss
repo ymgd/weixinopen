@@ -1,0 +1,74 @@
+/**app.wxss**/
+image{background: #f5f5f5;}
+input,.picker{border:solid 1px #eee;background: #fff;padding:0.3rem;margin-top:0.5rem;height:1.4rem;line-height: 1.4rem;}
+modal text{padding:6px 0 0 6px;}
+.clearfix:after{content: '';clear: both;display: block;height:1px;}
+page{background:#fafafa;font-size:14px;color:#666;line-height: 1.5;position: relative;min-height:100%;box-sizing:border-box;}
+
+/*宽度*/
+.w{width:680rpx;margin:0 auto;}
+.full{width:100%;}
+
+/*定位*/
+.pr{position: relative;}
+.pa{position: absolute;}
+
+/*文字超出省略*/
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+/*对齐*/
+.tl{text-align: left;}
+.tc{text-align: center;}
+.tr{text-align: right;}
+
+/*间距*/
+.mt5{margin-top: 5rpx;}
+.mt10{margin-top: 10rpx;}
+.mt15{margin-top: 15rpx;}
+.mt20{margin-top: 20rpx;}
+.mt25{margin-top: 25rpx;}
+.mt30{margin-top: 30rpx;}
+.mt35{margin-top: 35rpx;}
+.mt40{margin-top: 40rpx;}
+
+/*背景*/
+.bg_f{background: #fff}
+
+/*边框*/
+.border_t{border-top:solid 1px #eee;}
+.border_b{border-bottom: solid 1px #eee;}
+
+/*浮动*/
+.fl{float:left;}
+.fr{float:right;}
+
+/*弹性盒模型*/
+.box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flex1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    display: block;
+}
+
+/*footer*/
+.footer_box{height:60px;width:750rpx;line-height: 60px;margin-top:20rpx;}
+.footer{font-size: 12px;bottom:0;width:750rpx;}
+
+/*无结果提示*/
+.null{margin-top: 100rpx}
+.null .txt1{color:#000;font-size:38rpx;margin-top: 20rpx;}
+.null .txt2{font-size:30rpx;}

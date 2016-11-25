@@ -1,0 +1,31 @@
+
+<view class="container">
+  <view class="header">
+    <text>{{ subtitle }}</text>
+  </view>
+  <scroll-view scroll-y="true" class="list" bindscrolltolower="handleLoadMore">
+    <navigator url="../item/item?id={{ item.id }}" data="{{ item }}" wx:for="{{ movies }}">
+      <view class="item">
+        <image class="poster" src="{{ item.images.small }}"/>
+        <view class="meta">
+          <text class="title">{{ item.title }}</text>
+          <text class="sub-title">{{ item.original_title }} ({{ item.year }})</text>
+          <view class="artists">导演：<block wx:for="{{ item.directors }}"> {{ item.name }} </block></view>
+        </view>
+        <view class="rating">
+          <text>{{ item.rating.average }}</text>
+        </view>
+      </view>
+    </navigator>
+    <view class="tips">
+      <view wx:if="{{ hasMore }}">
+        <image src="/images/loading.gif" mode="aspectFill"/>
+        <text>玩了命的加载中...</text>
+      </view>
+      <view wx:else>
+        <text>没有更多内容了</text>
+      </view>
+    </view>
+  </scroll-view>
+  <loading hidden="{{ !loading }}">加载中...</loading>
+</view>

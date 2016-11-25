@@ -1,0 +1,7 @@
+<import src="../common/common.wxml" />
+<view class="container">
+    <view class="header">
+        <input placeholder="{{title}}" bindchange="search" />
+    </view>
+	<template is="movie-list" data="{{movies, loading, hasMore}}" />
+</view>

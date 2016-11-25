@@ -1,0 +1,110 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.game {
+  margin: 0 auto;
+  margin-top: 30rpx;
+  box-sizing: border-box;
+}
+.game-head {
+  display: flex;
+}
+.game-start, .game-score {
+  height: 70rpx;
+  color: #fff;
+  background-color: #ccc0b2;
+  text-align: center;
+  line-height: 70rpx;
+  border: 10rpx solid #b8af9e;
+  border-bottom: 0;
+}
+.game-start {
+  width: 140rpx;
+}
+.game-score {
+  width: 440rpx;
+  border-left: 0;
+}
+.game-body {
+  width: 610rpx;
+  height: 610rpx;
+  background-color: #b8af9e;
+  padding: 10rpx 0 0 10rpx;
+  box-sizing: border-box;
+}
+.game-row {
+  margin-bottom: 10rpx;
+  overflow: hidden;
+}
+.game-box {
+  float: left;
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 10rpx;
+  text-align: center;
+  line-height: 140rpx;
+  font-size: 65rpx;
+}
+.game-box-0 {
+  color: #ccc0b2;
+  background-color: #ccc0b2;
+}
+.game-box-2 {
+  color: #7c736a;
+  background-color: #eee4da;
+}
+.game-box-4 {
+  color: #7c736a;
+  background-color: #ece0c8;
+}
+.game-box-8 {
+  color: #f9f6f2;
+  background-color: #f2b179;
+}
+.game-box-16 {
+  color: #f9f6f2;
+  background-color: #f59563;
+}
+.game-box-32 {
+  color: #f9f6f2;
+  background-color: #f67c5f;
+}
+.game-box-64 {
+  color: #f9f6f2;
+  background-color: #f65e3b;
+}
+.game-box-128 {
+  color: #f9f6f2;
+  background-color: #edcf72;
+}
+.game-box-256 {
+  color: #f9f6f2;
+  background-color: #edcc61;
+}
+.game-box-512 {
+  color: #f9f6f2;
+  background-color: #edc850;
+}
+.game-box-1024 {
+  color: #f9f6f2;
+  background-color: #edc53f;
+}
+.game-box-2048 {
+  color: #f9f6f2;
+  background-color: #edc22e;
+}
+

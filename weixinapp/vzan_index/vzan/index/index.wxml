@@ -1,0 +1,56 @@
+<view class="body">
+    <view class="videowrap">
+
+        <view class="lss-radio-container">
+            <view class="lss-radio-info">
+                <button class="lss-radio-focus">关注</button>
+                <view class="lss-radio-logo">
+                    <image style="width:64px; height:64px;" src="http://oss.vzan.cc/image/jpg/2016/9/12/070256ae07119de6cc4f1aab9dffd43b0e6d90.jpg"></image>
+                </view>
+                <view class="lss-radio-desc">
+                    <text class="lss-radio-title">奇早囔潍坊（9.30）美女主播正在发红包</text>
+                    <text class="lss-radio-status">直播结束，欢迎收听回放</text>
+                </view>
+            </view>
+
+            <view class="lss-radio-operation">
+                <button class="lss-play i"></button>
+                <view id="lssTips " class="i">点击收听</view>
+                <view id="SongTime_current" class="i" style="visibility:visible;">00:00</view>
+                <view id="lss-timeline-wrap" class="i lss-timeline-wrap" style="visibility:visible;">
+                    <view class="i lss-timeline-loaded">
+                        <view class="span lss-time-current" style="width:20px;"></view>
+                        <view class="span lss-time-hand" style="left:20px;"></view>
+                    </view>
+                </view>
+                <view id="SongTime_total" class="i" style="visibility:visible;">01:04:52</view>
+                <view id="audioShang" class="i">
+                    <button class="i shangzhubo">赏</button>
+                </view>
+            </view>
+        </view>
+
+    <view class="outwrap">
+        <view class="infoWrap">
+            <view class="liveHeader">
+                <navication class="backtolive_btn">直播间</navication>
+            </view>
+
+            
+            <view class="danmu_bar on">
+                <view class="main">
+                    <view class="allcount">观看
+                    <view class="allcountbefore" ></view>
+                    <view style="display:inline-block">21716</view>
+                    </view>
+                </view>
+            </view>
+            <view class="clear"></view>
+        </view>
+        <!-- 直播 -->
+        <view class="bubble"><text class="bubble-content">欢迎进入直播间，请文明发言，营造和谐文明上网环境人人有责。</text></view>
+    </view>
+
+    </view>
+
+</view>

@@ -1,0 +1,211 @@
+.body {
+    width: 750rpx;
+    height:100%;
+    line-height: 1.6;
+    background:url("http://i.pengxun.cn/zhibo/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.videowrap {
+    width:750rpx;
+}
+.lss-radio-container {
+    margin: 24rpx;
+    margin-top: 24rpx;
+    background:linear-gradient(rgba(13, 31, 37, 0.5), rgba(7, 9, 13, 0.71));
+    height:312rpx;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.4);
+    border-radius: 8px;
+}
+.lss-radio-info {
+    height:216rpx;
+}
+.lss-radio-focus {
+    display: inline;
+    position: absolute;
+    top:60rpx;
+    right:24rpx;
+    color:#fff;
+    background-color:#00b3f6;
+    padding:12rpx 24rpx;
+    border-radius: 4rpx;
+    line-height: 1.6;
+
+    font-size:12px;
+}
+.lss-radio-logo {
+    float: left;
+    margin-top: 16px;
+    margin-left:16px;
+}
+.lss-radio-desc {
+    padding-top:15px;
+}
+.lss-radio-title {
+    display:block;
+    font-size:22px;
+    color:#fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:378rpx;
+    margin-left:90px;
+    font-family: "微软雅黑";
+}
+.lss-radio-status {
+    display: block;
+    font-size:14px;
+    color:#00b3f6;
+    margin-left:90px;
+    font-family: "微软雅黑";
+}
+.lss-radio-operation {
+    height:41px;
+    background:url("http://cdn.aodianyun.com/lss/lssradioplayer/img/ctrlBg.png");
+    color:#999;
+    position:relative;
+    background-image:none;
+    border-top: 0.2px solid #4C4C4C;
+}
+
+.lss-play {
+    width:24px;
+    height:30px;
+    background: url("http://cdn.aodianyun.com/lss/lssradioplayer/img/play.png");
+    float:left;
+    margin-left:16px;
+}
+.i {
+    margin-right:12rpx;
+    line-height: 30px;
+    margin-top:5px;
+    font-size:12px;
+    font-family: "微软雅黑";
+    color:#999;
+    display: block;
+    float:left;
+}
+.lss-timeline-wrap {
+    position:relative;
+    width: 250.4rpx;
+    padding-top:9px;
+    display: inline-block;
+    height:11.5px;
+}
+.lss-timeline-loaded {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #fffcf3;
+}
+.lss-time-current {
+    display: inline-block;
+    width:50px;
+    position: absolute;
+    height: 4px;
+    background-color: #00b5f9;
+}
+.lss-time-hand {
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color:#fffcf3;
+    margin-top: -3px;
+}
+.shangzhubo {
+    width:64.8rpx;
+    height: 64.8rpx;
+    display: inline-block;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 38.4rpx;
+    text-align: center;
+    line-height: 64.8rpx;
+    background-color: #f89633;
+    padding:0;
+    margin:0;
+}
+
+.outwrap {
+    width:100%;
+    position:absolute;
+    top:360rpx;
+    bottom:0;
+}
+.clear {
+    clear:both;
+}
+
+.liveHeader {
+    float:left;
+    padding:24rpx;
+}
+.backtolive_btn {
+    padding:9.6rpx 21.6rpx 9.6rpx 12rpx;
+    line-height: 48rpx;
+    color:#fff;
+    background:rgba(0, 0, 0, 0.5);
+    border-radius:36rpx;
+    font-family: "微软雅黑";
+    font-size:12px;
+    display:inline-block;
+}
+.backtolive_btn::before{
+    content:"";
+    width: 50rpx;
+    height: 50rpx;
+    background:url("http://i.pengxun.cn/zhibo/_bw/img/live_logo.png") no-repeat;
+    background-size: 1800rpx;
+    display: inline-block;
+    background-position: -1585rpx -1px;
+    vertical-align: top;
+}
+.danmu_bar {
+    float:right;
+    padding:24rpx;
+}
+.main {
+    position:relative;
+    display: inline-block;
+    right:24rpx;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:72rpx;
+}
+.allcount {
+    padding: 0 12rpx;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 57rpx;
+    color:#fff;
+    font-family: "微软雅黑";
+    font-size:12px;
+    max-width: 100%;
+}
+.allcountbefore {
+    display:inline-block;
+    width:50rpx;
+    height:50rpx;
+    margin:12rpx 0 0;
+    vertical-align: top;
+    background:url("http://i.pengxun.cn/zhibo/_bw/img/live_logo.png") no-repeat;
+    background-position:-768rpx -4px;
+    background-size: 1800rpx;
+}
+.bubble {
+    background:rgba(204, 204, 204, 0.5);
+    border-radius:5px;
+    display:inline-block;
+    padding:12rpx 24rpx;
+    margin:0 24rpx;
+}
+.bubble-content{
+    font-family:"微软雅黑";
+    font-size:12px;
+    font-weight:normal;
+    color:#fff;
+    text-align:left;
+    line-height:12px;
+}

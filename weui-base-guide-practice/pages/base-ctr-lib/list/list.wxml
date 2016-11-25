@@ -1,0 +1,270 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text class="sub">图文列表</text>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp nth-last">
+                        <view class="list-item-label">
+                            <image src="{{rectangle_png.src}}"></image>
+                        </view>
+                        <view class="list-item-content nth-last">
+                            <text class="title">标题</text>
+                            <text class="sub">{{content}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+              <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp list-section-wrp nth-last">
+                        <view class="list-item-label">
+                            <image src="{{rectangle_png.src}}"></image>
+                        </view>
+                        <view class="list-item-content">
+                            <text class="title">标题</text>
+                            <text class="sub">{{content}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text class="sub">文字列表</text>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp nth-last">
+                        <view class="list-item-content list-item-only-word">
+                            <text class="title">标题</text>
+                            <text class="sub">{{content}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp list-section-wrp nth-last">
+                        <view class="list-item-content list-item-only-word">
+                            <text class="title">标题</text>
+                            <text class="sub">{{content}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text class="sub">文字组合列表</text>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp">
+                        <view class="list-item-content list-item-only-word">
+                            <text class="title">标题一</text>
+                            <text class="sub">{{content}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp">
+                        <view class="list-item-content list-item-only-word">
+                            <text class="title">标题二</text>
+                            <text class="sub">{{content2}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp s-section-wrp more-section-wrp nth-last">
+                        <text class="more-link">查看更多</text>
+                        <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text class="sub">图文组合列表</text>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp nth-last">
+                        <view class="list-item-label">
+                            <image src="{{rectangle_png.src}}"></image>
+                        </view>
+                        <view class="list-item-content nth-last">
+                            <text class="title">标题一</text>
+                            <text class="sub">{{content}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp nth-last">
+                        <view class="list-item-label">
+                            <image src="{{rectangle_png.src}}"></image>
+                        </view>
+                        <view class="list-item-content nth-last">
+                            <text class="title">标题二</text>
+                            <text class="sub">{{content}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp">
+                        <view class="list-item-label">
+                            <image src="{{rectangle_png.src}}"></image>
+                        </view>
+                        <view class="list-item-content">
+                            <text class="title">标题三</text>
+                            <text class="sub">{{content}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp s-section-wrp more-section-wrp nth-last">
+                        <text class="more-link">查看更多</text>
+                        <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text class="sub">文字列表附来源</text>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp nth-last">
+                        <view class="list-item-content list-item-only-word">
+                            <text class="title">标题</text>
+                            <text class="sub">{{content}}</text>
+                            <view class="source-note">
+                                <text>文字来源</text>
+                                <text>时间</text>
+                                <text class="source-note-last">其他信息</text>
+                            </view>
+                        </view> 
+                    </view>
+                </view>
+                
+            </view>
+            <view class="section-group">
+                    <view class="section">
+                        <view class="section-wrp s-section-wrp">
+                            <text class="sub">分页加载列表</text>
+                        </view>
+                    </view>
+                    <view wx:for="{{pg_loading_list}}" class="section">
+                        <view class="section-wrp s-section-wrp pg-section-wrp">
+                            <text>{{item}}</text>
+                            <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                        </view>
+                    </view>
+                    <view class="section">
+                        <view class="section-wrp s-section-wrp pg-section-wrp loading-section-wrp nth-last">
+                            <view class="loading-bar">
+                                <image class="loading-icon" src="{{loading_png.src}}"></image>
+                                <text>加载中...</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp contact-section-wrp nth-last">
+                        <view class="contact-item-label">
+                            <image src="{{default_avatar1x_png.src}}"></image>
+                            <text class="title">联系人</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp contact-section-wrp large2 nth-last">
+                        <view class="contact-item-avatar">
+                            <image src="{{default_avatar2x_png.src}}"></image>
+                        </view>
+                        <view class="contact-item-info">
+                            <view class="contact-item-info-up">
+                                <text class="title">联系人名称</text>
+                                <text class="time">12:21</text>
+                            </view>
+                            <text class="summary">摘要信息</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp contact-section-wrp large3 nth-last">
+                        <view class="contact-item-avatar">
+                            <image src="{{default_avatar3x_png.src}}"></image>
+                        </view>
+                        <view class="contact-item-info">
+                            <view class="contact-item-info-titles">
+                                <text class="title">岚荨</text>
+                                <text class="sub-title">描述副标题</text>
+                            </view>
+                            <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-list-section-wrp nth-last">
+                        <text>单行列表</text>
+                        <text class="detail">详细信息</text>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text class="sub">左右文字组合列表</text>
+                    </view>
+                </view>
+                <view wx:for="{{[1,2,3]}}" class="section">
+                    <view class="section-wrp list-section-wrp lr-list-section-wrap">                   
+                        <text class="title">文字标题</text>
+                        <view class="assist">
+                            <text>内容</text>
+                            <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                        </view>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp lr-list-section-wrap">                   
+                        <text class="link-more">查看更多</text>
+                        <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text class="sub">单行文字列表</text>
+                    </view>
+                </view>
+                <view wx:for="{{[1,2,3]}}" class="section">
+                    <view class="section-wrp list-section-wrp lr-list-section-wrap">                   
+                        <text class="title">文字标题</text>                       
+                        <image class="section-chevron" src="{{chevron_png.src}}"></image>                       
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp list-section-wrp lr-list-section-wrap">                   
+                        <text class="link-more">查看更多</text>
+                        <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+            </view>
+    </view>
+</view>

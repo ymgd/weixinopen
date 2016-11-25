@@ -1,0 +1,29 @@
+<view class="container">
+    <block wx:if="{{isChoosing}}">
+        <view class="inner-container">
+            <view class="swiper-indicator">{{swiperCurrent}}/{{roles.length}}</view>
+            <swiper bindchange="swiperCurrentChange">
+                <block wx:for="{{roles}}">
+                    <swiper-item>
+                        <view class="item-container">
+                            <view class="side-space"></view>
+                            <image src="{{cover}}" class="cover"></image>
+                            <view class="side-space"></view>
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <button type="primary" bindtap="chooseRole">选择这张牌</button>
+    </block>
+    <block wx:else>
+        <view class="inner-container">
+            <view class="role-logo-container">
+                <image src="{{choosedRole.logo}}" class="role-logo" animation="{{roleLogoAnimationData}}"></image>
+            </view>
+            <view class="role-name">你的角色是: {{choosedRole.name}}</view>
+            <view class="role-description">{{choosedRole.description}}</view>
+        </view>
+        <button type="primary" bindtap="setReady">准备好了</button>
+    </block>
+</view>

@@ -1,0 +1,13 @@
+<!--tennis.wxml-->
+<view class="container">
+  <view class="group" style="width: 80%">
+    <view class="tennis-title">Done: {{pass}} of {{pass + notpass}} Failed: {{notpass}}</view>
+    <progress wx:if="{{persent==100}}"  class="tennis-progress" percent="100" active />
+    <progress wx:else color="red" class="tennis-progress" percent="100" active />
+    <view class="tennis-view" wx:for="{{resArray}}" >
+        <icon class="tennis-icon" type="success" size="20" wx:if="{{item.key}}"></icon>
+        <icon class="tennis-icon" type="warn" size="20" wx:else></icon>
+        <text class="tennis-text">{{item.value}}</text>
+    </view>
+  </view>
+</view>

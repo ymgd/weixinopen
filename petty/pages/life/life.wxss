@@ -1,0 +1,191 @@
+.container{
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+.topTitle{
+    font-size: 14px;
+    background: #fff;
+    color: #1aad19;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: #1aad19 1px solid;
+}
+.topTitle .cn, .topTitle .en{
+    display: block;
+    text-align: center;
+    line-height: 16px;
+}
+.topTitle .en{
+    font-size: 12px;
+}
+
+.lifeList{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.lift-item{
+    width: 100%;
+    overflow: hidden;
+    
+}
+.lift-item .item-header{
+    width: 100;
+    box-sizing: border-box;
+    padding: 0 10px;
+    clear: both;
+    overflow: hidden;
+}
+
+.lift-item .item-avater{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    float: left;
+}
+
+.lift-item .item-name{
+    float: left;
+    margin-left: 10px;
+    
+}
+
+.lift-item .item-name .username{
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+.lift-item .item-name .date{
+    font-size: 12px;
+    display: block;
+    color: #333;
+    margin-top: 10px;
+}
+
+.lifeList .item-text{
+    clear: borth;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 24px;
+}
+.lifeList .item-image{
+    width: 100%;
+    height: 200px;
+}
+
+.zan-number {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 14px;
+    height: 40px;
+    margin: 10px 0;
+}
+.zan-number .zanzan-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.zan-number .zan-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.zan-number .zan-text{
+    line-height: 40px;
+}
+
+.lift-item .shop-avater{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0 10px;
+}
+.link-shop{
+    clear: both;
+}
+
+.link-shop .shop-name{
+    float: left;
+    font-size: 12px;
+    width: 75%;
+}
+
+.link-shop .shop-name .name{
+    display: block;
+    line-height: 20px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.more{
+    font-size: 12px;
+    color: #1aad19;
+    border: 1px solid #1aad19;
+    text-align: center;
+    width: 94%;
+    margin: 15px auto 0 auto;
+    line-height: 24px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-top: 1px solid #1aad19;
+    clear: both;
+}
+
+.footer .btn{
+    font-size: 12px;
+}
+
+.footer .add{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 5px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.footer .add1{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 5px;
+    float: left;
+}
+
+.footer .add2{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 5px;
+    float: right;
+    margin-right: 10px;
+}
+
+.fouce{
+    font-size: 12px;
+    border: #1aad19 1px solid;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    float: right;
+    line-height: 20px;
+    margin-top: 8px;
+    color: #1aad19;
+}
+

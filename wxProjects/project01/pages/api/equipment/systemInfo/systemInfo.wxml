@@ -1,0 +1,20 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'wx.getSystemInfo',desc:'获取系统信息。'}}"/>
+
+        <view class="showLocation">
+            <text>手机型号：{{model}}</text>
+            <text>设备像素比：{{pixelRatio}}</text>
+            <text>窗口宽度：{{windowWidth}}</text>
+            <text>窗口高度：{{windowHeight}}</text>
+            <text>微信设置的语言：{{language}}</text>
+            <text>微信版本号：{{version}}</text>
+        </view>
+
+        <button type="primary" class="mt" bindtap="getSystemInfo"> 获取系统信息 </button>
+      
+    </view>
+</view>

@@ -1,0 +1,10 @@
+<view class="audio">
+    <input class="input" bindinput="inputfn" placeholder="请输入歌名"/>
+    <view class="list" wx:if="{{listDisplay}}">
+       <view wx:for="{{songs}}" wx:for-item="song" bindtab='lryfn'>
+            <navigator url="../detail/detail?id={{song.songid}}" hover-class="navigator-hover">
+                <text>{{song.songname}} - {{song.artistname}}</text>
+            </navigator>   
+        </view>
+    </view>
+</view>

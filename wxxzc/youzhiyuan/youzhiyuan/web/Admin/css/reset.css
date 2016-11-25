@@ -1,0 +1,27 @@
+@charset "utf-8";
+/************** css 样式重置  **********************/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre,
+dl, dt, dd, ul, ol, li, th, td, div, span, img,
+fieldset, lengend, button, input, select, textarea{margin: 0;padding: 0;}
+/* color & background */
+html{color:#000; background:#FFF;}
+/* font */
+body, button, input, select, textarea { /* for ie */
+font: 12px/18px Arial, Verdana, Microsoft YaHei;
+}
+/* fix center */
+html,body {height: 100%;margin: 0 auto;}
+/* h1~h6 */
+h1 {font-size: 18px;}
+h2 {font-size: 16px;}
+h3 {font-size: 14px;}
+h4, h5, h6 {font-size: 100%;}
+/* a */
+a { text-decoration: none;color:#333;}
+a:hover { text-decoration: underline; }
+/* list */
+ul,ol {list-style: none;}
+/* img border */
+fieldset,img{border: 0}
+/* table */
+table {border-collapse: collapse;border-spacing: 0;font:inherit;}

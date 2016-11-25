@@ -1,0 +1,91 @@
+.content {
+    width: 510rpx;
+    padding-top: 50rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.hot-item{
+    width: 750rpx;
+    border-top: 1rpx solid #ccc;
+    border-bottom: 1rpx solid #ccc;
+    display: flex;
+    background: #ffffff;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.hot-item image {
+    width: 200rpx;
+    height: 300rpx;
+}
+.title1 {
+    width: 450rpx;
+    height: 45rpx;
+    line-height: 45rpx;
+    padding-left: 10rpx;
+    font-family: "sans-serif";
+    font-size:35rpx;
+}
+.title {
+    width: 450rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    padding-left: 10rpx;
+    font-family: "sans-serif";
+    font-size:25rpx;
+    color: #ccc;
+}
+.aka {
+    line-height: 40rpx;
+    padding-left: 10rpx;
+    font-family: "sans-serif";
+    font-size:25rpx;
+    color: #ccc;
+}
+.image {
+    width: 200rpx;
+    height: 300rpx;
+    padding-left: 20rpx;
+    padding-top: 50rpx;
+}
+.title image {
+    width: 25rpx;
+    height: 25rpx;
+    padding-right: 10rpx;
+}
+.description {
+    width: 710rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: flex-start;
+    font-family: "sans-serif";
+    font-size:30rpx;
+    color: darkslategray;
+}
+.casts {
+    padding-left: 20rpx;
+    width: 730rpx;
+    height: 310rpx;
+}
+swiper-item {
+    display: flex;
+}
+.slide-image {
+    position:relative;
+    background: gradient(linear, 0% 20%, 0% 100%, from(#fff), to(#fff), color-stop(.2, #f2f2f2));
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.casts-name {
+    padding-left: 20rpx;
+    width: 500rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-family: "sans-serif";
+    font-size:30rpx;
+    color: darkslategray;
+}
+.works {
+    color: #ccc;
+}

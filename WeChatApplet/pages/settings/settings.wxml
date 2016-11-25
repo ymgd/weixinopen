@@ -1,0 +1,16 @@
+<view class="title">SDP服务器设置</view>
+<view>主机：</view>
+<input id="host" type="text" placeholder="{{ host?host:'输入主机名' }}" bindchange="bindKeyInput"/>
+<view>协议：</view>
+<input id="protocol" type="text" placeholder="{{ protocol?protocol:'http或https' }}" bindchange="bindKeyInput" />
+<view>端口：</view>
+<input id="port" type="number" placeholder="{{ port?port:'端口号' }}" bindchange="bindKeyInput" />
+<view>API密钥：</view>
+<input id="key" type="text" placeholder="{{ key?key:'输入API密钥'}}" bindchange="bindKeyInput"/>
+<button bindtap="bindSaveTap" style="width:98%;">保存</button>
+<view class="body-view">
+  <toast hidden="{{toastHidden}}" duration="3000" bindchange="toastChange">
+    {{message}}
+  </toast>
+</view>
+<!--TODO: add device and sdp details information here-->

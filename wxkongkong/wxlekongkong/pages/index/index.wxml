@@ -1,0 +1,47 @@
+<view class="container">
+  <block wx:if="{{loadingDataError}}">
+    <import src="../../templates/errorview.wxml"/>
+    <template is="errorview"></template>
+  </block>
+  <block wx:else>
+    <scroll-view style="width:100%; height:{{windowHeight}}px" scroll-y="true" bindscrolltolower="scrolltolower">
+      <!--顶部banner-->
+      <block wx:if="{{activityItems}}">
+        <view class="introbanner">
+          <image bindtap="clickOnBannerIntroView" mode="aspectFill" src="{{activityItems}}"></image>
+        </view>
+      </block>
+      <!--类别view-->
+      <block wx:if="{{categoryItems.length>0}}">
+        <import src="../../templates/categoryview.wxml"></import>
+        <template is="categoryview" data="{{items: categoryItems}}"></template>
+      </block>
+      <!--最新交易-->
+      <block wx:if="{{lastestItems}}">
+        <import src="../../templates/lastestview.wxml"/>
+        <template is="lastestview" data="{{...lastestItems, vinteval}}"></template>
+      </block>
+      <!--晒单专区-->
+      <view wx:if="{{topicItems}}" class="topicbanner" style="margin-top:{{vinteval}}rpx;">
+        <image mode="aspectFill" src="{{topicItems}}"></image>
+      </view>
+      <!--小空送-->
+      <block wx:if="{{celebrityItems}}">
+        <import src="../../templates/celebritybanner.wxml"/>
+        <template is="celebritybanner" data="{{items: celebrityItems.children, vinteval}}"></template>
+      </block>
+      <!--adview-->
+      <block wx:if="{{items.length>0}}">
+        <import src="../../templates/adview.wxml"/>
+        <block wx:for="{{items}}" wx:key="adview">
+          <template is="{{item.style}}" data="{{...item.content, index, vinteval}}"></template>
+        </block>
+      </block>
+      <!--首次加载转菊花-->
+      <block wx:if="{{!firstloadingData}}" wx:key="*this">
+        <import src="../../templates/loadingmoreview.wxml"/>
+        <template is="loadingmoreview" data="{{hasMore}}"></template>
+      </block>
+    </scroll-view>
+  </block>
+</view>

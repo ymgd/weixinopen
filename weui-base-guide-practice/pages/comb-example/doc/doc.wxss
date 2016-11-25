@@ -1,0 +1,28 @@
+.container.doc {
+    background: #ffffff;
+}
+
+.content {
+    font-size: 32rpx;
+    padding: 30rpx;
+}
+
+.pag {
+    margin: 40rpx 0;
+}
+
+.section {
+    margin: 20rpx 0;
+    line-height: 40rpx;
+}
+
+.a-title {
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.p-title {
+    font-size: 34rpx;
+    font-weight: bold;
+}
+

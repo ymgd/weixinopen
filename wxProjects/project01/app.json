@@ -1,0 +1,71 @@
+{
+
+"pages":[
+"pages/index/index",
+"pages/user/user",
+"pages/login/login",
+"pages/setManager/set",
+"pages/api/api",
+"pages/api/network/network",
+"pages/api/network/upload/upload",
+"pages/api/media/picture/picture",
+"pages/api/media/music/music",
+"pages/api/storage/storage",
+"pages/api/location/getLocation/getLocation",
+"pages/api/location/openLocation/openLocation",
+"pages/api/equipment/NetworkType/NetworkType",
+"pages/api/equipment/systemInfo/systemInfo",
+"pages/api/equipment/phoneCall/phoneCall",
+"pages/api/interface/showToast/showToast",
+"pages/api/interface/navigationBarTitle/navigationBarTitle",
+"pages/api/interface/navigate/navigate",
+"pages/api/interface/navigate/test",
+"pages/api/interface/animate/animate",
+"pages/api/interface/canvas/canvas",
+"pages/shoppingCart/shoppingCart",
+"pages/logistics/logistics",
+"pages/product/productList",
+"pages/logs/logs"
+
+],
+"window":{
+"backgroundTextStyle":"light",
+"navigationBarBackgroundColor": "#fff",
+"navigationBarTitleText": "测试小程序首页",
+"navigationBarTextStyle":"black"
+},
+"tabBar": {
+"color": "#666",
+"selectedColor": "#f40",
+"borderStyle": "black",
+"backgroundColor": "#ffffff",
+"list": [
+{
+"pagePath": "pages/index/index",
+"text": "首页",
+"iconPath":"images/shouye.png",
+"selectedIconPath":"images/shouye.png"
+}, {
+"pagePath": "pages/logistics/logistics",
+"text": "物流",
+"iconPath":"images/wuliu.png",
+"selectedIconPath":"images/wuliu.png"
+},{
+"pagePath": "pages/shoppingCart/shoppingCart",
+"text": "购物车",
+"iconPath":"images/gouwuche.png",
+"selectedIconPath":"images/gouwuche.png"
+}, {
+"pagePath": "pages/user/user",
+"text": "我的淘宝",
+"iconPath":"images/wodejuhuasuan.png",
+"selectedIconPath":"images/wodejuhuasuan.png"
+},
+{
+"pagePath": "pages/api/api",
+"text": "api",
+"iconPath":"images/api.png",
+"selectedIconPath":"images/api.png"
+}]
+}
+}

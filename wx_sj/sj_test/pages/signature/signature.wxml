@@ -1,0 +1,12 @@
+<!--<view class='top'>
+<button class='select_button'>{{selectInfo.signatureName}}</button>
+</view>-->
+
+
+<view class='middle'>
+<view class='type' wx:for='{{signatureInfo}}'>
+<button  class='type_button' hover-class='type_other_button'>{{item.signatureName}}</button>
+</view>
+
+
+</view>

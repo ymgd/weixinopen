@@ -1,0 +1,26 @@
+.btn_add_photo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid #999;
+
+	font-size: 14px;
+	padding: 0 8px;
+	line-height: 28px;
+	border-radius: 5px;
+}
+.text_add_photos {
+	color: black;
+	font-size: 16rpx;
+	text-align: center;
+	width: 350rpx;
+	line-height: 16rpx;
+}
+.scroll-page {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}

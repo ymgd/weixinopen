@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="game">
+    <view class="game-head">
+      <view class="game-start" bindtap="initGame">start</view>
+      <view class="game-score">score : {{ score }}</view>
+    </view>
+    <view class="game-body" bindtouchstart="slideStart" bindtouchmove="slideMove" bindtouchend="slideEnd">
+      <view class="game-row" wx:for="{{ boxes }}" wx:for-item="box">
+        <view class="game-box game-box-{{ num }}" wx:for="{{box}}" wx:for-item="num">
+          {{ num }}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

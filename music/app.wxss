@@ -1,0 +1,46 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: "微软雅黑"
+} 
+.nav{
+  display: -webkit-box;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.nav navigator{
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.nav navigator.active{
+  color: #3eb94e;
+  border-bottom: 4rpx solid #3eb94e;
+}
+
+.song_item{
+  display: block;
+  height: 120rpx;
+  padding-left: 80rpx;
+  background: url(/images/play.png) no-repeat 20rpx center;
+  background-size: 44rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.song_title{
+  display: block;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 34rpx;
+}
+.song_author{
+  display: block;
+  font-size: 24rpx;
+  color: #333;
+}

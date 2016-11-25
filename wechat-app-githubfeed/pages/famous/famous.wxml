@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="col famous">
+    <view class="col pickers">
+      <picker bindchange="handleLocationPickerChange" value="{{locationIndex}}" range="{{locationArray}}">
+        <view class="picker_text">
+          挑选地区：{{locationArray[locationIndex]}}
+        </view>
+      </picker>
+      <picker bindchange="handleLanguagePickerChange" value="{{languageIndex}}" range="{{languageArray}}">
+        <view class="picker_text">
+          挑选语言：{{languageArray[languageIndex]}}
+        </view>
+      </picker>
+    </view>
+    <scroll-view scroll-y="true" bindscrolltolower="loadMoreData">
+      <block wx:for="{{items}}" wx:key="famous">
+        <navigator url="../user/user?user_name={{item.login}}">
+          <view class="row user_item">
+            <image class="avatar" mode="aspectFit" src="{{item.avatar_url}}"></image>
+            <text class="col justify_center username">{{item.login}}</text>
+          </view>
+        </navigator>
+      </block>
+    </scroll-view>
+  </view>
+</view>

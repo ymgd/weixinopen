@@ -1,0 +1,21 @@
+<view class="box">
+    <view class="cont-left">
+        <view id="ishidden1" class="tab" catchtouchstart="tagList">一键选酒</view>
+        <view id="ishidden2" class="tab" catchtouchstart="tagList">白酒</view>
+        <view id="ishidden3" class="tab" catchtouchstart="tagList">葡萄酒</view>
+    </view>
+    <scroll-view scroll-y="true" class="cont-right">
+        <view style="display:{{ishidden1}}" class="right-xj" >
+            <block wx:for="{{goodslist}}">
+                <view class="goods">
+                    <image class="goods-img" src="{{item.imgUrl}}" mode="aspectFit"/>
+                    <view class="goods-name">{{item.name}}</view>
+                </view>
+            </block>
+        </view>
+        <view style="display:{{ishidden2}}" class="right-bj">
+            <image class="bj-titimg"  mode="aspectFit" src="http://www.laojiupd.com/mobile/themes/default/img/48098572d27e4ac3b5f5afac2d42cc66.jpg"/>
+        </view>
+        <view style="display:{{ishidden3}}" class="right-ptj">葡萄酒</view>
+    </scroll-view>
+</view>

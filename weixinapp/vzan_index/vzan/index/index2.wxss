@@ -1,0 +1,13 @@
+.gw-logo {
+    width:64px;
+    height:40px;
+    background: url(http://i.pengxun.cn/manager/content/images/ngw-01.jpg) no-repeat -5px -40px;
+}
+.gw-nav{
+    margin-left: 8px;
+    padding-top: 15px;
+    padding-right: 5px;
+}
+.fl {float:left}
+
+navigator {display: block; margin: 5px}

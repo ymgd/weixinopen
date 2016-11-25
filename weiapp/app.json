@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/init",
+    "pages/service/ecs",
+    "pages/service/ecs/zones",
+    "pages/service/ecs/detail",
+    "pages/service/cdn/index",
+    "pages/service/cdn/add",
+    "pages/service/cdn/detail",
+    "pages/service/cdn/addip",
+    "pages/service/rds"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "小茄子",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"#999999",
+    "selectedColor":"#000",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"img/index.png",
+        "selectedIconPath":"img/index_curr.png"
+      },
+      {
+        "pagePath":"pages/index/init",
+        "text":"配置",
+        "iconPath":"img/settings.png",
+        "selectedIconPath":"img/settings_curr.png"
+      }
+    ]
+  }
+}

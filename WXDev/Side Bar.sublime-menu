@@ -1,0 +1,19 @@
+[
+	{ "caption": "-", "id": "wxdev" },
+	{
+        "caption": "Create New WX Project",
+        "id": "new_wx_project",
+        "command": "new_wx_project",
+        "args": {
+            "dirs": []
+        }
+    },
+    {
+        "caption": "Create New WX Page",
+        "id": "new_wx_page",
+        "command": "new_wx_page",
+        "args": {
+            "dirs": []
+        }
+    }
+]

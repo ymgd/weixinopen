@@ -1,0 +1,11 @@
+<view class="container"> 
+    <view class="button-wrapper">
+   
+    <button type="default" bindtap="button1click"  size="default"  
+    loading="{{loadingstatus}}" > 点我
+    </button>
+     </view>
+<text class="countClick" id="text1">{{text}}
+</text>
+
+</view>

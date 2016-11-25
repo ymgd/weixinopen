@@ -1,0 +1,8 @@
+ <view class="jrm-flex-column jrm-w100p channel-bottom jrm-bg-fff">  
+   <view class="jrm-w100p channel-bottom-top">
+     <image class="channel-bottom-icon" src="./images/baina_icon@2x.png" background-size="cover"></image>
+     <image class="channel-bottom-icon" src="./images/sibaitiao@2x.png" background-size="cover"></image>
+     <image class="channel-bottom-icon" src="./images/baipai@2x.png" background-size="cover"></image>
+   </view>   
+   <text class="channel-bottom-bottom">618白条剁手攻略终极版，快快拿走</text>
+  </view>

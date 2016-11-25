@@ -1,0 +1,39 @@
+<!--index.wxml-->
+
+<view class="page gray-page-background">
+  <view class="center-head">
+        <text class="head-title">基本样式库菜单</text>
+    </view>
+
+  <view class="list">
+
+    <navigator url="../font/font" class="list-item with-space-around with-bottom-border">
+      <text>字体</text>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </navigator>
+
+    <navigator url="../selection/selection" class="list-item with-space-around with-bottom-border">
+      <text>选择</text>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </navigator>
+
+    <navigator url="../input/input" class="list-item with-space-around with-bottom-border">
+      <text>输入</text>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </navigator>
+
+    <navigator url="../list/list" class="list-item with-space-around">
+      <text>列表</text>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+  </navigator>
+  
+</view>
+

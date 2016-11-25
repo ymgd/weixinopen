@@ -1,0 +1,44 @@
+{
+  "name": "web-property",
+  "description": "A Vue.js project",
+  "author": "dingyiming <315129552@qq.com>",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --config build/dev.js --open --inline --hot --port 8000",
+    "build": "rm -rf dist && webpack --config build/prod.js --progress --hide-modules"
+  },
+  "dependencies": {
+    "axios": "^0.15.2",
+    "normalize.css": "^5.0.0",
+    "vue": "^2.0.5",
+    "vue-router": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "compression-webpack-plugin": "^0.3.1",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb-base": "^10.0.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-html": "^1.6.0",
+    "eslint-plugin-import": "^2.1.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.22.0",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "postcss-loader": "^0.13.0",
+    "precss": "^1.4.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue-loader": "^9.8.0",
+    "webpack": "2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.0",
+    "webpack-merge": "^0.14.1"
+  }
+}

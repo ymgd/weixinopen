@@ -1,0 +1,15 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'navigateTo、redirectTo、navigateBack',desc:'导航'}}"/>
+
+        <button type="primary" class="mt" bindtap="navigateTo"> 保留当前页面，跳转到应用内的某个页面 </button>
+
+        <button type="primary" class="mt" bindtap="redirectTo"> 关闭当前页面，跳转到应用内的某个页面</button>
+
+        <button type="primary" class="mt" bindtap="navigateBack">关闭当前页面，返回上一页面或多级页面</button>
+      
+    </view>
+</view>

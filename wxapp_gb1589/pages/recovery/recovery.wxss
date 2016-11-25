@@ -1,0 +1,19 @@
+.review-history-list view{
+    margin-bottom: 20rpx;
+}
+.review-history-list image{
+    width:100%;
+    height:320rpx;
+    vertical-align: top;
+}
+.review-history-list text{
+    display: block;
+    overflow: hidden;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+    color: #333;
+    padding:0 24rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+}

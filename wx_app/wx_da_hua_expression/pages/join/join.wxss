@@ -1,0 +1,48 @@
+
+.sample {
+    margin-top:18rpx;
+    margin-left:68rpx; 
+}
+
+.word{
+    width:100%;
+    margin-top:32rpx; 
+    margin-bottom:32rpx;
+    /*line-height:32rpx;*/
+    font-size: 32rpx;
+    text-align:center;
+    /*height:144rpx;*/
+}
+.word label{
+    padding: 12rpx; 
+}
+.sample image{
+    width:192rpx;
+    height:144rpx;
+}
+.sample .math{
+    width:18rpx;
+    height:144rpx;
+}
+
+.py {
+    margin-top:18rpx;
+    margin-left:32rpx; 
+}
+.py image{
+    width:320rpx;
+    height:240rpx;
+}
+.py .math{
+    width:32rpx;
+    height:240rpx;
+}
+
+.reasult {
+    margin-top:18rpx;
+    margin-left:215rpx; 
+}
+.reasult image{
+    width:320rpx;
+    height:240rpx;
+}

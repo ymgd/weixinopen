@@ -1,0 +1,13 @@
+<view class="container">
+<scroll-view scroll-y="true" class="show-area" style="height:{{scrollHeight}}px;">
+    <image bindtap="addAndSavePhoto" style="width:{{imageWidth}}rpx;height:{{imageHeight}}rpx;" mode="aspectFill" class="plus-image" src="../../image/plus.png" />
+    <view class="photo-list" wx:for="{{photoList}}" wx:key="*this" wx:for-item="imageSrc">
+        <image bindtap="previewPhoto" data-image-src="{{imageSrc}}" style="width:{{imageWidth}}rpx;height:{{imageHeight}}rpx;" mode="aspectFill" src="{{imageSrc}}"/>
+    </view>  
+</scroll-view> 
+<view class="op-area">
+    <button bindtap="twoColomn">两列</button>
+    <button bindtap="threeColomn">三列</button>
+    <button bindtap="fourColomn">四列</button>
+</view>
+</view>

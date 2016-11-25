@@ -1,0 +1,8 @@
+<view class="feedback">
+  <form bindsubmit="formSubmit">
+    <textarea name="textarea" class="feedback-textarea" auto-height placeholder="请输入您的宝贵意见,建议.我们将不断完善" placeholder-style="color:#b6b6b6;" />
+    <view class="btn-area">
+      <button class="feedback-submit" type="primary" formType="submit">发送</button>
+    </view>
+  </form>
+</view>

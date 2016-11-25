@@ -1,0 +1,16 @@
+.bd{
+    width: 800rpx;
+    height: 500rpx;
+    margin-left: 50rpx;
+}
+.checkbox{
+   display: block;
+   margin: 20;
+}
+.checklabel{
+    width: 500rpx;
+    height: 200rpx;
+}
+.checkfooter{
+    margin-left: 50rpx;
+}

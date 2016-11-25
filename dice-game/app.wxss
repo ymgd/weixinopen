@@ -1,0 +1,64 @@
+/**app.wxss**/
+
+.mt300 {
+    margin-top: 300rpx;
+}
+
+.mt60 {
+    margin-top: 60rpx;
+}
+
+.mt200 {
+    margin-top: 200rpx;
+}
+
+.mr10 {
+    margin-right: 10rpx;
+}
+
+.mb10 {
+    margin-bottom: 10rpx;
+}
+
+.w600 {
+    width: 600rpx;
+}
+
+.w60 {
+    width: 60rpx;
+}
+
+.h60 {
+    height: 60rpx;
+}
+
+.w120 {
+    width: 120rpx;
+}
+
+.h120 {
+    height: 120rpx;
+}
+.text-center {
+    text-align: center;
+}
+
+.orange-btn {
+    background-color: #fba927;
+    color: white;
+}
+
+.orange-hover {
+    background-color: rgba(251, 169, 39, 0.1);
+    opacity: 0.7;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}

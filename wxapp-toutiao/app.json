@@ -1,0 +1,51 @@
+{
+    "pages": [ 
+        "pages/test/test",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/detail/detail",
+        "pages/carlist/carlist" 
+    ],
+    "window": {
+        
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#eb4f38",
+        "navigationBarTitleText": "头条",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#eb4f38",
+        "backgroundColor": "#f9f9f9",
+        "borderStyle": "white",
+        "list": [{
+            "pagePath": "pages/test/test",
+            "iconPath": "image/home.png",
+            "backgroundColor": "#000",
+            "color": "#eb4f38",
+            "selectedIconPath": "image/home_sed.png",
+            "text": "首页"
+        }, {
+            "pagePath": "pages/logs/logs",
+            "iconPath": "image/vedio.png",
+            "backgroundColor": "#000",
+            "color": "#eb4f38",
+            "selectedIconPath": "image/vedio_sed.png",
+            "text": "视频"
+        }, {
+            "pagePath": "pages/carlist/carlist",
+            "iconPath": "image/follow.png",
+            "backgroundColor": "#000",
+            "color": "#eb4f38",
+            "selectedIconPath": "image/follow_sed.png",
+            "text": "关注"
+        }, {
+            "pagePath": "pages/index/index",
+            "iconPath": "image/myself.png",
+            "backgroundColor": "#000",
+            "color": "#eb4f38",
+            "selectedIconPath": "image/myself_sed.png",
+            "text": "我的"
+        }]
+    }
+}

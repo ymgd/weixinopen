@@ -1,0 +1,134 @@
+/**导航**/
+.flex-wrp{
+  display: flex;
+}
+.flex-tab{
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+}
+.top-tab{
+  width: 750rpx;
+  height: 100rpx;
+  background: #eee;
+  color: #000;
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 100rpx;
+  box-shadow: 0 2px 2px #bebebe;
+  margin: 0 0 8rpx 0;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.toptab.active{
+  color: #298DE5;
+  border-bottom: solid 2px #298DE5;
+}
+/*
+.swipers {
+    height: 310rpx;
+    margin:120rpx 0rpx 0rpx 0rpx;
+}
+.swiper_img{
+    height: 480rpx;
+    margin: 0rpx 50rpx;
+}
+*/
+.article-item{
+    margin:80rpx 20rpx;
+    clear: both;
+}
+.imgs{
+    border: 0;
+    width:150rpx;
+    height: 150rpx;
+    float: left;
+}
+.title {
+    text-indent: 20rpx; 
+    font-size: 40rpx;
+    line-height: 30rpx;
+    display: inline;
+}
+.art_other{    
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.navigator-hover {
+    color:blue;
+}
+
+/*
+*轮播
+*/
+page swiper{
+  height: 430rpx;
+  margin:100rpx 0rpx 0rpx 0rpx;
+}
+.slide-image{    
+    display: inline;
+}
+.textindex{
+    position: absolute;
+    top :20px;
+    color: red;
+}
+/*
+*列表
+*/
+.weui_cell{
+    position: relative;
+    display: flex;
+    padding: 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+}
+.weui_cell_hd{
+  display: inline-block;
+  width: 20%;
+  height: 50px;
+  margin-right: 5px;
+}
+.weui_cell_hd image{
+  width: 100%;
+  height: 100%;
+  vertical-align: -2px;
+}
+.weui_cell_bd{
+  display: inline-block;
+  width:80%;
+}
+.weui_cell_bd_p{
+  font-size: 14px;
+  color: #939393;
+}
+.weui_cell_bd_other{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #939393;
+  width:100%;
+}
+.node-date{
+  display: inline-block;
+  width:33%;
+}
+.node-msg{
+  display: inline-block;
+  width:33%;
+  text-align: center;
+}
+.node-cat{
+  display: inline-block;
+  width:33%;
+  text-align: right;
+}

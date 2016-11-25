@@ -1,0 +1,42 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="res-area">
+                <button size="{{btnSize}}" type="{{btnType}}" plain="{{btnPlain}}" loading="{{btnLoading}}" 
+                        disabled="{{btnDisabled}}" hover-class="{{btnHoverClass}}"> 我是按钮 </button>
+            </view>
+            <view class="op-area">
+                <view class="table">
+                    <view class="tr theader">
+                        <block wx:for="{{table.header.items}}" wx:for-index="idx">
+                            <view class="td">
+                                <block wx:if="{{idx == table.header.items.length - 1}}">
+                                <text class="aright">{{item}}</text>
+                                </block>
+                                <block wx:else>
+                                <text>{{item}}</text>
+                                </block>
+                            </view>
+                        </block>
+                    </view>
+                    <block wx:for="{{table.body.rows}}" wx:for-item="row">
+                        <view class="tr">
+                            <block wx:for="{{row.items}}" wx:for-item="item">
+                                <view class="td">
+                                    <text>{{item}}</text>
+                                </view>
+                            </block>
+                            <view class="td">
+                                <picker class="aright" bindchange="bindPickerChange" value="{{row.picker.index}}" data-picker-kind="{{row.items[0]}}" range="{{row.picker.array}}">
+                                    <view class="picker">
+                                        {{row.picker.array[row.picker.index]}}
+                                    </view>
+                                </picker>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

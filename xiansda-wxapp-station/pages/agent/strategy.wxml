@@ -1,0 +1,16 @@
+<view class="page">
+  <view class="pane bg-soft flex-row border-top">
+  	<text>销售价格</text><text class="flex-auto text-right">{{price}} + {{fee}} = </text><text class="text-h1 text-right">￥{{price+fee}}</text>
+  </view>
+  <view class="pane border-top border-bottom">
+    <view class="input-field">
+      <text class="label">代理费用</text>
+      <input bindinput="inputChanged" class="input text-right" placeholder="输入格式如：5.30" />
+      <text class="pl10">元</text>
+    </view>
+  </view>
+
+  <view class="section">
+  	<button type="primary" disabled="{{disabled}}">确定</button>
+  </view>
+</view>

@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="gs-signup">
+  <form class="signup-form">
+    <view wx:for="{{items}}" class="signup-section">
+      <view 
+        class="signup-item"
+        wx:if="{{!item.button}}">
+        {{item.name}}
+      </view>
+
+      <input 
+        class="signup-singleline" 
+        wx:if="{{item.input}}" />
+
+      <radio-group 
+        class="signup-singleline" 
+        wx:if="{{item.radio}}">
+        <label 
+          wx:for="{{item.radios}}" 
+          wx:for-item="radio">
+          <radio 
+            value="{{radio.value}}" 
+            checked="{{radio.checked}}">
+            {{radio.name}}
+          </radio>
+        </label>
+      </radio-group>
+
+      <checkbox-group
+        class="signup-multiline"
+        wx:if="{{item.checkbox}}">
+        <label
+          class="signup-label"
+          wx:for="{{item.checkboxs}}"
+          wx:for-item="checkbox">
+          <checkbox
+            value="{{checkbox.value}}"
+            checked="{{checkbox.checked}}">
+            {{checkbox.name}}
+          </checkbox>
+        </label>
+      </checkbox-group>
+
+      <picker 
+        class="signup-singleline" 
+        wx:if="{{item.picker}}" 
+        mode="{{item.mode}}" 
+        value="{{item.value}}" 
+        range="{{item.range}}"
+        bindchange="bindPickerChange"
+        data-index="{{index}}">
+        {{item.range.length > 0 ? item.range[item.value] : item.value}}
+      </picker>
+
+      <textarea
+        class="signup-multiline signup-textarea"
+        wx:if="{{item.textarea}}">
+      </textarea>
+
+      <switch
+        class="signup-switch"
+        wx:if="{{item.switch}}"
+        checked="{{item.checked}}" />
+
+      <slider
+        class="signup-singleline signup-slider" 
+        wx:if="{{item.slider}}"
+        min="{{item.min}}"
+        max="{{item.max}}"
+        show-value="{{item.show}}">
+      </slider>
+
+      <button
+        class="signup-btn"
+        wx:if="{{item.button}}">
+        {{item.name}}
+      </button>
+
+    </view>
+  </form>
+
+</view>

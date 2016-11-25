@@ -1,0 +1,21 @@
+ <!--emoticon.wxml-->
+ <template name="emoticon">
+    <scroll-view class="emoticon-wall" scroll-y="true" style="height:{{windowHeight}}px;"
+        bindscrolltolower="eventBase" data-action="scrollTolower">
+            <view class="space-72"></view>
+            <view class="emoticon">
+            <view class="content">
+                <block wx:for="{{emoticon}}" wx:for-item="emoticon"> 
+                    <view class="member" >
+                        <image class="image-5" src="{{emoticon.static_url}}" background-size="cover" 
+                            catchtap="eventBase" data-action="onMenu"  mode="center"
+                            data-id="{{emoticon.img_id}}" data-img_url="{{emoticon.thumbnail_url}}" data-category_id="{{emoticon.category_id}}" 
+                            data-size="{{emoticon.size}}" data-static_url="{{emoticon.static_url}}"  
+                            data-menu_type="{{emoticon.menu_type}}"  
+                            ></image>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </scroll-view>
+</template>

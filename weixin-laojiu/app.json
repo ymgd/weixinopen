@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detall/detall",
+    "pages/list/index",
+    "pages/cart/cart",
+    "pages/i/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#e4393c",
+    "navigationBarTitleText": "老酒频道",
+    "navigationBarTextStyle":"white"
+},
+    "tabBar":{
+        "color":"#a9b7b7",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "white",
+        "backgroundColor": "#ffffff",
+        "list": [{
+          "pagePath": "pages/index/index",
+          "iconPath": "images/home.gif",
+          "selectedIconPath": "images/home.gif",
+          "text": "首页"
+        }, {
+          "pagePath": "pages/list/index",
+          "iconPath": "images/2.gif",
+          "selectedIconPath": "images/2.gif",
+          "text": "分类"
+        }, {
+          "pagePath": "pages/cart/cart",
+          "iconPath": "images/3.gif",
+          "selectedIconPath": "images/3.gif",
+          "text": "购物车"
+        }, {
+          "pagePath": "pages/i/index",
+          "iconPath": "images/4.gif",
+          "selectedIconPath": "images/4.gif",
+          "text": "我的github"
+        }]
+      }
+
+}

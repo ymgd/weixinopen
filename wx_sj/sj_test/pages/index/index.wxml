@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<swiper class='carousel' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{homePageInfo.carouselList}}">
+    <swiper-item>
+      <image src="{{item.path}}" mode='scaleToFill' class="slide-image carousel_img" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="section type">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item type_1"><image class='type_img' src='../../images/最近上新.png' mode='aspectFill'></image></view>
+    <view class="flex-item type_2"><image class='type_img' src='../../images/官方寄卖.png' mode='aspectFill'></image></view>
+    <view class="flex-item type_3"><image class='type_img' src='../../images/限时折扣.png' mode='aspectFill'></image></view>
+    <view class="flex-item type_4" bindtap='goToMerchandisesPage'><image class='type_img' src='../../images/全部分类.png' mode='aspectFill'></image></view>
+  </view>
+</view>
+<view class="section street">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item street_left">
+      <image class='street_img_1' src='../../images/校园街.png' mode='aspectFill'></image>
+      <view class='street_text_1'>校园街</view>
+    </view>
+    <view class="flex-item street_right">
+      <view class='street_text_2'>南京市</view>
+      <image class='street_img_2' src='../../images/城市.png' mode='aspectFill'></image>
+    </view>
+  </view>
+
+  <swiper class='street_carousel' indicator-dots="{{streetIndicatorDots}}" autoplay="{{streetAutoplay}}" interval="{{streetInterval}}" duration="{{streetDuration}}">
+    <block wx:for="{{homePageInfo.streetInfoList}}">
+      <swiper-item class='swiper_item'>
+        <image src="{{item.streetPath.imgPath}}" mode='aspectFill' class="slide-image street_carousel_img" />
+        <view class='street_test'> </view>
+        <view class='street_bottom'><text class='street_bottom_1'>{{item.streetName}}</text><text class='street_bottom_2'>发布量:{{item.publishCount}} </text><text class='street_bottom_3'>浏览量:{{item.visitedCount}}</text></view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="section rent_section">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item rent">
+      <image class='rent_img' src="{{homePageInfo.rent.path}}" mode='aspectFill' />
+    </view>
+    <view class="flex-item rent_requirement">
+      <image class='rent_img' src="{{homePageInfo.rentRequirement.path}}" mode='aspectFill' />
+    </view>
+  </view>
+</view>
+
+<view class='requirement'>
+  <image class='requirement_img' src="{{homePageInfo.requirement.path}}" mode='aspectFit' />
+</view>

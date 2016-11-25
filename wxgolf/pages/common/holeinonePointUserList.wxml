@@ -1,0 +1,17 @@
+<template name="holeinonePointUser-list">
+  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <template is="{{item.subject ? 'item2' : 'item1'}}" data="{{item}}" wx:for="{{itemsArray}}"/>
+     <view class="page-center-gray-line"></view>
+            <view class="hole-ine-one-item">
+            <text class="orderIndex">{{item.orderInx}}</text>
+            <image class="poster-hole-in-one-avatar" src="{{item.user.avatarUrl}}"></image>
+            <text class="loginMobileNo">{{item.user.loginMobileNo}}</text>
+            </view>
+      <view class="page-center-gray-line"></view>
+    <view class="tips">
+      <view wx:if="{{hasMore}}"><image src="/images/loading.gif" mode="aspectFill"/><text>玩了命的加载中...</text></view>
+      <view wx:else><text>没有更多内容了</text></view>
+    </view>
+  </scroll-view>
+  <loading hidden="{{!loading}}">加载中...</loading>
+</template>

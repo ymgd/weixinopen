@@ -1,0 +1,90 @@
+.banner{
+    height:400rpx;
+    padding:40rpx 0;
+    background:#2aac5e;
+}
+.banner image{
+    width:100%;
+    height:100%;
+}
+
+.info{
+    padding:20rpx;
+    font-size:28rpx;
+    color:#666;
+    text-align:center;
+    background:#fff;
+}
+.info .title{
+    padding-bottom:10rpx;
+    font-size:40rpx;
+    color:#333;
+    font-weight:bold;
+}
+.info .txt{
+    padding:5rpx 0;
+}
+
+.summary,.casts{
+    margin-top:20rpx;
+    padding:20rpx;
+    background:#fff;
+}
+.summary .title,.casts .title{
+    display:block;
+    height:32rpx;
+    line-height:34rpx;
+    padding:16rpx 0;
+    font-size:32rpx;
+    font-weight:bold;
+    color:#333;
+}
+.summary .title:before,.casts .title:before{
+  content:'';
+  float:left;
+  width:10rpx;
+  height:32rpx;
+  margin-right:20rpx;
+  background:#2aac5e;
+}
+.summary .txt{
+    font-size:28rpx;
+    color:#666;
+    line-height:52rpx;
+    text-align:justify;
+}
+
+.casts .list image{
+    width:70rpx;
+    height:100rpx;
+}
+.casts .list{
+    font-size:0;
+}
+.casts .listItem{
+    display:inline-block;
+    width:33.33333%;
+    margin:10rpx 0;
+}
+.casts .listItem .img{
+    position:relative;
+    margin:0 10rpx;
+    padding-bottom:143%;
+}
+.casts .listItem image{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.casts .listItem .name{
+    padding:10rpx 0;
+    display:block;
+    font-size:28rpx;
+    color:#666;
+    text-align:center;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}

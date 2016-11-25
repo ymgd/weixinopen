@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/xinxi/xinxi",
+    "pages/fabu/fabu",
+    "pages/paihang/paihang",
+    "pages/wode/wode",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "iHobby",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor":"#000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "热门",
+      "iconPath": "images/tabbar/remen0.png",
+      "selectedIconPath": "images/tabbar/remen.png"
+    }, {
+      "pagePath": "pages/xinxi/xinxi",
+      "text": "信息",
+      "iconPath":"images/tabbar/xinxi0.png",
+      "selectedIconPath": "images/tabbar/xinxi.png"
+    }, {
+      "pagePath": "pages/fabu/fabu",
+      "text": "发布",
+      "iconPath":"images/tabbar/fabu.png",
+      "selectedIconPath": "images/tabbar/fabu.png"
+    }, {
+      "pagePath": "pages/paihang/paihang",
+      "text": "排行",
+      "iconPath":"images/tabbar/paihang0.png",
+      "selectedIconPath": "images/tabbar/paihang.png"
+    }, {
+      "pagePath": "pages/wode/wode",
+      "text": "我的",
+      "iconPath":"images/tabbar/wode.png",
+      "selectedIconPath": "images/tabbar/wode.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

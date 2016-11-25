@@ -1,0 +1,29 @@
+.typescore-text {
+  margin-left: 0px;
+  font-family: 微软雅黑;
+  font-size: 16px;
+}
+
+.typescore-view{
+  padding-top: 5px;
+  padding-left: 1px;
+}
+
+.typescore-title{
+  font-family: 微软雅黑;
+  font-size: 12px;
+}
+
+.typescore-input{
+    width:100px;
+}
+
+.typescore-button{
+    width: 120px;
+    height: 40px;
+    font-family: 微软雅黑;
+  font-size: 16px;
+  margin-left: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px
+}

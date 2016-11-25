@@ -1,0 +1,23 @@
+<!--home.wxml-->
+<template name="article-item">
+    <view class="common-item" data-title="{{item.title}}" data-url="{{item.url}}" bindtap="bindViewTap">
+      <view class="common-text">
+        <text class="common-title">{{item.title}}</text>
+        <view class="common-info">
+          <text>{{item.site}} ・{{item.readCount}} 阅 ・{{item.collectCount}} 收藏 ・ {{item.shareCount}} 分享 </text>
+        </view>
+      </view>
+    </view>
+</template>
+  <scroll-view scroll-y="true" scroll-top="0" style="height:100%;width:100%;;" bindscrolltolower="loadingMore">
+    <view class="common-list">
+      <block wx:for="{{contents}}">
+        <template is="article-item" data="{{item:item}}"/>
+      </block>
+    </view>
+    <view class="refresh-footer" wx:if="{{loadingMore}}">
+      <icon type="waiting" wx:if="{{hasMore}}" size="30" color="{{footerIconColor}}"  />
+      <view wx:else> 没有数据了啦 </view>
+    </view>
+  </scroll-view>
+<!--</view>-->

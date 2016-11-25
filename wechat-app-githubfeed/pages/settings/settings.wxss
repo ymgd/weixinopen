@@ -1,0 +1,10 @@
+.settings {
+  height: 100%;
+  padding: 20rpx;
+}
+.logout {
+  width: 100%;
+  background-color: #f61d4b;
+  color: #fff;
+  font-weight: bold;
+}

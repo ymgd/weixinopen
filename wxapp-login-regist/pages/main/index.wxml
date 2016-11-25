@@ -1,0 +1,5 @@
+<view class="content">
+    
+    <text>您好，{{username}}！</text>
+    
+</view>

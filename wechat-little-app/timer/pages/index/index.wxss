@@ -1,0 +1,80 @@
+page{
+    background-color: #336699;
+    font-family: "黑体","宋体";
+}
+
+.title{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    background-color: orange;
+    box-shadow: 2px 2px 10px #B8B8B8;
+    margin-bottom: 10px;
+
+}
+
+.desc{
+    color: white;
+}
+
+.big-circle{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.time{
+    height: 160px;
+}
+
+.right{
+    clip:rect(0,auto,auto,75px);
+}
+
+.blue{
+   background: #99ccff;
+}
+
+.blue1{
+   background: #0099FF; 
+}
+
+.btnGroup{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    color: white;
+    background-color: #0099cc;
+}
+
+.circle{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+
+.circle view{
+    margin-left: 50px;
+    padding-top: 60px;
+    color: black;
+    font-size: 20px;
+}
+
+.white{
+    background-color: white;
+}
+
+.second{
+left: 390rpx;
+}
+
+.first{
+left:20rpx;
+}

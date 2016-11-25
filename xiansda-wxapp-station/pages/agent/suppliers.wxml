@@ -1,0 +1,14 @@
+<!--suppliers.wxml-->
+<view class="page">
+  <block wx:for="{{suppliers}}" wx:key="id">
+  	<navigator url="supplier?id={{item.id}}">
+	  <view class="pane flex-row border-bottom">
+	  	<image src="{{item.img}}" class="avatar small" mode="aspectFill"></image>
+	  	<view class="flex-column plr20">
+		  <text class="text-h3 mb5">{{item.name}}</text>
+		  <text class="text-h4 c-gray">{{item.address}}</text>
+	  	</view>
+	  </view>
+  	</navigator>
+  </block>
+</view>

@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/map/map",
+    "pages/game/game"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "wxDemo by 染陌同学",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#21BB32",
+    "borderStyle": "white",
+    "navigationBarTitleText": "",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home2.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "Map",
+        "iconPath": "images/map1.png",
+        "selectedIconPath": "images/map2.png"
+      },
+      {
+        "pagePath": "pages/game/game",
+        "text": "Game",
+        "iconPath": "images/player1.png",
+        "selectedIconPath": "images/player2.png"
+      }
+    ]
+  }
+}

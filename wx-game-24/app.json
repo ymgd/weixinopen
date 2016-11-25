@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+     "pages/count/count",
+    "pages/result/result"
+  ],
+  "window":{
+    "backgroundTextStyle": "dark",
+     "navigationBarBackgroundColor": "#06254c",
+     "navigationBarTitleText": "24点数学巧算游戏",
+     "windowBackground": "#06254c",
+     "navigationBarTextStyle": "white"
+  }
+}

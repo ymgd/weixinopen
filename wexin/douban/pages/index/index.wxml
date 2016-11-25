@@ -1,0 +1,52 @@
+<view class="container">
+
+<!--顶部滚动图片-->
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{in_movies}}" wx:for-index="index">
+    <swiper-item>
+     <navigator url="../list/list?type=in_theaters&title=正在热映">
+      <image src="{{item.images.large}}" mode="aspectFill"/>
+      <text>{{item.title}}</text>
+     </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="body">
+    <scroll-view scroll-y="true" height="100%">
+
+        <!--正在热映-->
+        <navigator url="../list/list?type=in_theaters&title=正在热映">
+          <view class="item">
+            <text class="item-title">正在热映</text>
+            <block wx:for="{{in_movies}}" wx:for-index="index">
+                <image src="{{item.images.small}}" class="list-img"  mode="aspectFill"/>
+            </block>
+          </view>
+        </navigator>
+
+         <!--即将热映-->   
+         <navigator url="../list/list?type=coming_soon&title=即将上映">
+          <view class="item">
+            <text class="item-title">即将上映</text>
+            <block wx:for="{{coming_movies}}" wx:for-index="index">
+                <image src="{{item.images.small}}" class="list-img"  mode="aspectFill"/>
+            </block>
+          </view>
+        </navigator>
+
+
+        <!--TOP250-->
+         <navigator url="../list/list?type=top250&title=TOP250">
+          <view class="item">
+              <text class="item-title">TOP250</text>
+                <block wx:for="{{top250_movies}}" wx:for-index="index">
+                  <image src="{{item.images.small}}" class="list-img"  mode="aspectFill"/>
+                </block>
+          </view>
+        </navigator>
+
+    </scroll-view>
+  </view>
+
+</view>

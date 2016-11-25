@@ -1,0 +1,159 @@
+
+.hole-container{
+    height: 100%;
+}
+
+.page-body{
+    height: 500px;
+}
+.slide-image{
+    display: block;
+    height: 150px;
+    width:100%
+}
+/*分类*/
+.index-nav {
+  height: 70px;
+  display: flex;
+  left: 10px;
+  right: 10px;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  color: #646464;
+}
+.index-nav view {
+  flex: 1;
+  flex-direction: column;
+  /*border-right: 1px solid #F2f2f2;*/
+}
+.index-nav image {
+  width: 32px;
+  height: 32px;
+}
+.index-nav text {
+    margin-top: 5px;
+  font-size: 14px;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+}
+.l-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remind-year-rank{
+    height: 50px;
+    width: 100%;
+    background-color: #f6f6f6; 
+}
+
+.remind-year-rank-text{
+    display:block;
+    width:100%;
+    font-size: 14px;
+    font-weight: bold;
+    text-align:center;
+    padding:5px 0;
+}
+.top-of-year{
+    display:flex;
+    width:100%;
+    height: 20px;
+    padding:0px 0px;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.top-of-year-left-line{
+    display: flex;
+    height: 1px;
+    width: 35%;
+    background-color: #cccccc;
+    margin-top: 10px;
+}
+.top-of-year-right-line{
+    display: flex;
+    height: 1px;
+    width: 35%;
+    background-color: #cccccc;
+    margin-top: 10px;
+}
+
+.top-of-year-text{
+    display: flex;
+    width: 200;
+    height: 20px;
+    font-size: 10px;
+    text-align:center;
+    justify-content: center;
+    margin-top: 5px;
+    color: #888888;
+}
+
+.hole-ine-one-item{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.poster-hole-in-one-avatar{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    margin-top: 12.5px;
+    border-radius: 17.5px;
+    margin-left: 30px;
+}
+
+.orderIndex{
+    display: flex;
+    width: 20px;
+    font-size: 24px;
+    color: #666666;
+    margin-left: 20px;
+    justify-content: justify-conent;
+    align-items: center;
+    vertical-align: middle;
+}
+.loginMobileNo{
+    display: flex;
+    font-size: 14px;
+    color: black;
+    margin-left: 10px;
+    justify-content: justify-conent;
+    align-items: center;
+}
+
+.point-view{
+    display: flex;
+    width: 100px;
+    margin: 0px;
+    font-size: 10px;
+    justify-content: justify-conent;
+    align-items: center;
+}
+
+.point-orange{
+    display: flex;
+    position: absolute;
+    font-size: 10px;
+    color: #ff9900;
+    right: 30px;
+    justify-content: justify-conent;
+    align-items: center;
+}
+
+.fen-black{
+    display: flex;
+    position: absolute;
+    font-size: 10px;
+    color: black;
+    right: 10px;
+    justify-content: justify-conent;
+    align-items: center;
+}

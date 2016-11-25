@@ -1,0 +1,33 @@
+.contain {
+    width: 100%;
+    height: 100%;
+}
+.section {
+    border: 1px solid #eee;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #eee;
+    /*display: flex;
+    flex-direction:column;*/
+}
+.head {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    display: block;
+    line-height: 40px;
+}
+.input-head {
+    padding: 5px;
+}
+.input-content {
+    display: block;
+    height: 150px;
+    padding: 5px;
+}
+.publish-btn {
+    width: 90%;
+    margin-top: 20px;
+}

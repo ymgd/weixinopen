@@ -1,0 +1,51 @@
+
+
+page {
+  display: block;
+  min-height: 100%;
+  background-color: red;
+}
+
+
+swiper{
+ height:480rpx;
+}
+.slide-image{
+    width: 100%;
+    height:480rpx;
+}
+
+
+
+page{
+    background: #eeeeee;
+}
+
+
+
+page .wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: -4rpx;
+}
+
+page .wx-swiper-dot{
+    width: 252rpx;
+    display: inline-flex;
+    height: 18rpx;
+    vertical-align: sub;
+  
+}
+
+
+
+
+page .wx-swiper-dot::before{
+    content: '';
+    background: #e5e5e5;
+    flex-grow: 1;
+}
+
+page .wx-swiper-dot-active::before{
+    content: '';
+    background:rgba(240,0,0,0.8);
+    flex-grow: 1;
+}

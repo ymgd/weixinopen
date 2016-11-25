@@ -1,0 +1,115 @@
+<!-- slider detail img start -->
+<swiper class="detail-img-box" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+    <swiper-item wx:for="{{goods.imgUrls}}">
+        <view>
+            <image src="{{item}}" class="detail-img" mode="aspectFit"></image>
+        </view>
+    </swiper-item>
+</swiper>
+<!-- / slider detail img end -->
+
+<!-- detail content start -->
+<view class="detail-box">
+    <view class="detail-title">{{goods.title}}</view>
+    <view class="detail-content">
+        <view class="detail-price">
+            <text class="new-price">{{goods.group}}人团 ¥{{goods.groupPrice}}</text>
+            <text class="odd-price">原价{{goods.oddPrice}}</text>
+        </view>
+        <text class="detail-other">快递：包邮</text>
+    </view>
+    <view class="icon-img"></view>
+</view>
+<!-- / detail content end -->
+
+<!-- error start -->
+<view class="otherAddress">
+    <text>新疆 西藏 青海 云南 贵州 海南 宁夏 甘肃 内蒙古 港澳台 海外地区商家不支持发货,请勿下单,我们会尽快争取让这些地区的朋友参与到拼购,谢谢支持:)</text>
+    <text>商品成团后在不缺货情况下72小时内发货;请确保收件人电话和地址填写无误以及手机畅通;</text>
+    <text>商家默认快递无法更改,请勿留言指定快递。</text>
+</view>
+<!-- / error end -->
+
+<!-- group play start -->
+<view class="groud-play-box">
+    <view class="title-box">拼团玩法</view>
+    <view class="group-play-content">
+        <view class="group-play-item">
+            <view class="group-play-img"></view>
+            <view>
+                <text>付款开团</text>
+                <text>或参团</text>
+            </view>
+        </view>
+
+        <view class="group-play-item group-play-center">
+            <view class="group-play-img "></view>
+            <view>
+                <text>分享给好友</text>
+                <text>邀请参团</text>
+            </view>
+        </view>
+
+        <view class="group-play-item group-play-last">
+            <view>
+                <text>达到人数</text>
+                <text>顺利开团</text>
+            </view>
+            <view class="group-play-img"></view>
+        </view>
+    </view>
+</view>
+<!-- / group play end -->
+
+<view class="fight-group-title">*开团并邀请好友参团，24小时内人数不足自动退款</view>
+
+<!-- fight group start -->
+<block wx:if="{{group}}">
+    <view class="fight-group">
+        <view class="title-box">懒人凑团挤一挤</view>
+        <view class="group-list">
+            <navigator wx:for="{{group}}" url="../group/group?id={{item.groupId}}" class="bordrer-top">
+                <view class="item-group">
+                    <image src="{{item.userImg}}" class="user-img"></image>
+                    <view class="group-item-center">
+                        <text class="user-name">{{item.userName}}</text>
+                        <view class="group-other">剩余<text class="red-color">{{item.endTime}}</text>结束 仅差<text class="red-color">{{item.gap}}</text>人</view>
+                    </view>
+                    <view class="join-group">参团</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</block>
+<!-- / fight group end -->
+
+<!-- goods detail start -->
+<view class="goods-detail">
+    <view class="title-box">商品描述</view>
+    <view class="goods-detail-text">{{goods.detailText}}</view>
+    <view class="goods-detail-img">
+        <image wx:for="{{goods.detailImg}}" src="{{item}}" width="750"></image>
+    </view>
+</view>
+<!-- / goods detail end -->
+
+<!-- buy tips start -->
+<view class="buy-tips">
+    <view class="buy-tips-item">
+        <view class="buy-tips-img"></view>
+        <text class="buy-tips-text">拼团享优惠</text>
+    </view>
+    
+    <view class="buy-tips-item">
+        <view class="buy-tips-img"></view>
+        <text class="buy-tips-text">全网最低价</text>
+    </view>
+    
+    <view class="buy-tips-item">
+        <view class="buy-tips-img"></view>
+        <text class="buy-tips-text">商品包退换</text>
+    </view>
+</view>
+<!-- / buy tips end -->
+
+<text class="">爱拼宝宝与平台内商家达成多人拼团享优惠价模式，由商家统一发货。收到商品如发现有任何质量问题，可联系爱拼宝宝客服进行退换。添加方式扫描下方客服二维码，加客服为微信好友说明情况，或关注爱拼宝宝公众号询问。</text>

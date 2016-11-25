@@ -1,0 +1,13 @@
+<!--通用头部模板,对于样式,可按照自己的需求定制.-->
+<!--{item : {avatar: "", name: "", intro: }}-->
+<template name="userview">
+    <view class="userview"  style="padding: {{left}}rpx {{left}}rpx {{left}}rpx {{left}}rpx;">
+        <image class="avatarview" mode="aspectFill" bindload="avatarLoaded" src="{{avatar}}"></image>
+        <view class="introview">
+            <text class="nameview">{{name}}</text>
+            <view class="descview">
+                成功送出<text class="countlbl">{{giveCount}}</text>件物品  |  得到<text class="countlbl">{{appreciatedCount}}</text>个感谢
+            </view>
+        </view>
+    </view>
+</template>

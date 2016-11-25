@@ -1,0 +1,49 @@
+{
+  "pages": [
+      "pages/index/index",
+      "pages/logs/logs",
+      "pages/life/life",
+      "pages/shopCar/index",
+      "pages/my/index",
+      "pages/detail/detail",
+      "pages/circle/circle"
+  ],
+  "window": {
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "Pretty妈咪",
+    "navigationBarBackgroundColor": "#666666",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#f1f1f1",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/life/life",
+        "text": "生活"
+      },
+      {
+        "pagePath": "pages/shopCar/index",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

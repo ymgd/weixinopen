@@ -1,0 +1,19 @@
+<view class="content">
+
+<!--单身-->
+<import src="../template/movietpl"/>
+<template is="movies" data="{{movies}}"/>
+
+</view>
+
+
+<!--加载菊花转圈-->
+<view class="body-view">
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+</view>
+
+
+
+

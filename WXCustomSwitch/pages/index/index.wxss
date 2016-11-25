@@ -1,0 +1,14 @@
+/**index.wxss**/
+@import "../../utils/templates/switch/switch.wxss";
+
+.title {
+  font-size: 15;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.switch-container {
+  display: flex;
+  display: -webkit-flex;
+  margin-bottom: 200rpx;
+}

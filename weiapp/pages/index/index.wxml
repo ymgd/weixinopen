@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="weui-grids">
+      <view wx:for="{{services}}" wx:key="index">
+        <navigator url="{{item.url}}" class="weui-grid">
+            <view class="weui-grid__icon"  >
+                <image src="../../img/{{item.id}}.png" style="width:80rpx;height:80rpx;" ></image>
+            </view>
+            <view class="weui-grid__label">{{item.title}}</view>
+        </navigator>
+      </view>
+  </view>
+</view>

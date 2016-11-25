@@ -1,0 +1,20 @@
+
+<view>
+    <button bindtap="showImageDialog" data-id="0">图片选择窗口/删除</button>
+    <button bindtap="showImageDialog" data-id="1">输入窗口</button>
+</view>
+
+<view class="section-dialog halftransparent tansdialog" style="opacity: {{dialogAlpha}}" wx:if="{{showDialog}}" >
+        <view wx:if="{{dialogType == 0}}" class="dialog" style="opacity: {{dialogAlpha}}" >
+            <text class="dialog-item0" data-id="choose" bindtap="onDialogClick">选择相片</text>
+            <text class="dialog-item1" data-id="delete" bindtap="onDialogClick">删除</text>
+        </view>
+        <view wx:if="{{dialogType == 1}}" class="dialog" style="opacity: {{dialogAlpha}}" >
+            <text class="dialog-item-input-title">标题</text>
+            <input class="dialog-item-input-input" bindinput="bindKeyInput" placeholder="{{dialogHolder}}" focus="{{dialogFocus}}" />
+            <view class="dialog-item-input-button">
+                <text class="dialog-item-input-button-cancle"  data-id="cancle" bindtap="onDialogClick">取消</text>
+                <text class="dialog-item-input-button-confirm" data-id="confirm" bindtap="onDialogClick">好</text>
+            </view>
+        </view>
+</view>

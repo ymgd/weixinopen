@@ -1,0 +1,47 @@
+{
+  data: {
+    header: {
+      banners: ['1.jpg','2.jpg','3.jpg','4.jpeg'],
+      title: '有调限量帆布袋——“鸡汤包”，正式发售',
+      price: {
+        type: 'datatime',
+        value: '2016-10-20',
+
+        type: 'price',
+        value: '￥30'
+      },
+      author: {
+        url: 'http://c.diaox2.com/cms/diaodiao/assets/icontodown.png',
+        value: '李彦峰'
+      }
+    },
+    contents: [{
+      type: 'editorhead',
+      value: '小编说',
+    }, {
+      type: 'editorcontent',
+      value: '小编说的内容'
+    }, {
+      type: 'p',
+      value: '段落内容1'
+    },{
+      type: 'p',
+      value: '段落内容2'
+    }, {
+      type: 'ul',
+      items: ['ul-item1','ul-item2','ul-item3']
+    }, {
+      type: 'ol',
+      items:  ['ol-item1','ol-item2','ol-item3']
+    }, {
+      type: 'img',
+      value: 'a.jpg'
+    }, {
+      type: 'lift',
+      value: '紧贴图片下部的小字提示内容'
+    }, {
+      type: 'tips',
+      value: 'tips内容'
+    }]
+  }
+}

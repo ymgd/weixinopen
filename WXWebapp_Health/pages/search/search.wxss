@@ -1,0 +1,25 @@
+.search {
+    position: absolute;
+    left: 50rpx;
+    top: 200rpx;
+    right: 50rpx;
+    border: 5rpx solid #eee;
+    font-style:italic;
+}
+
+.radio-group {
+    position: absolute;
+    left: 50rpx;
+    top: 300rpx;
+}
+
+.start_search {
+    position: absolute;
+    left: 50rpx;
+    top: 400rpx;
+    right: 50rpx;
+}
+
+.other-button-hover {
+  background-color: blur;
+}

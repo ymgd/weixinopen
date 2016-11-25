@@ -1,0 +1,51 @@
+/*整体背景为灰色*/
+page{
+    background: rgb(230, 230, 230);
+}
+
+.header{
+    
+    height: 200rpx;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20rpx;
+}
+/*
+margin-top: 20rpx;
+text-align: center;
+*/
+.iconImage{
+    width: 100rpx;
+    height: 100rpx;  
+}
+text{
+    margin-top: 10rpx;
+}
+/*让文字和图片容器*/
+.item-container{
+    height: 80rpx;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx 20rpx 20rpx 0;
+    
+    align-items: center;
+
+}
+/*文字样式*/
+.item-textView{
+    color: rgb(188, 188, 188);
+    font-size: 30rpx;
+    margin-left: 20rpx;
+}
+/*箭头样式*/
+.item-arrow{
+    width: 32rpx;
+    height: 32rpx;
+}
+/*分隔线*/
+.hr{
+    height: 1px;
+    background: rgb(230, 230, 230);
+}

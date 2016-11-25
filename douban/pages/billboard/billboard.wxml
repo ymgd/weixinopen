@@ -1,0 +1,21 @@
+<view class="container">
+	<view class="slide">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			<block wx:for="{{movies}}">
+				<swiper-item>
+					<image src="{{item.images.large}}" mode="{{mode}}" />
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<scroll-view class="board" scroll-y="true">
+		<block wx:for="{{boards}}">
+			<navigator url="../list/list?type={{item.type}}&title={{item.name}}">
+				<view class="board-item">
+					<text>{{item.name}}</text>
+					<image src="../../images/arrowright.png" />
+				</view>
+			</navigator>
+		</block>
+	</scroll-view>
+</view>

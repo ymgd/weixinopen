@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">map</text>
+  </view>
+  <view class="page__bd" >
+    <view class="section section_gap" >
+      <map
+        style="width: 100%; height: 300px;"
+        latitude="{{latitude}}"
+        longitude="{{longitude}}"
+        markers="{{markers}}"
+        covers="{{covers}}"
+        >
+      </map>
+    </view>
+    <view class="section section_gap">
+      <label>
+      行程消费
+      </label>
+      <label>
+        ￥{{money}}
+      </label>
+    </view>
+    <view class="section section_gap">
+      <label>
+        所骑车车辆牌号
+      </label>
+      <label>
+        {{carno}}
+      </label>
+    </view>
+  </view>
+</view>

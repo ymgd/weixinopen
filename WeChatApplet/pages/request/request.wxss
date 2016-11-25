@@ -1,0 +1,6 @@
+page{
+    font-size: 13px;
+}
+view{
+    padding-bottom: 20rpx
+}

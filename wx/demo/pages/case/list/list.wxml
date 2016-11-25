@@ -1,0 +1,49 @@
+<!--选项卡-->
+<view class="tabTit box tc bg_f">
+    <view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="" data-index="{{index}}" bindtap="filterTab"><text>{{item}}</text><image src="/images/arrow.png"></image></view>
+</view>
+<!--筛选项-->
+<view class="tabLayer tc" hidden="{{tab[0]}}">
+    <text class="{{house_type==0?'active':''}}" data-id="0" data-index="0" data-txt="户型" bindtap="filter">不限</text>
+    <text class="{{house_type==item.id?'active':''}}" wx:for="{{filterList.housetype_list}}" wx:key="" data-id="{{item.id}}" data-index="0" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+</view>
+<view class="tabLayer tc" hidden="{{tab[1]}}">
+    <text class="{{house_style==0?'active':''}}" data-id="0" data-index="1" data-txt="风格" bindtap="filter">不限</text>
+    <text class="{{house_style==item.id?'active':''}}" wx:for="{{filterList.style_list}}" wx:key="" data-id="{{item.id}}" data-index="1" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+</view>
+<view class="tabLayer tc" hidden="{{tab[2]}}">
+    <text class="{{house_area==0?'active':''}}" data-id="0" data-index="2" data-txt="面积" bindtap="filter">不限</text>
+    <text class="{{house_area==item.id?'active':''}}" wx:for="{{filterList.area_list}}" wx:key="" data-id="{{item.id}}" data-index="2" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+</view>
+
+
+<view class="w">
+<!--<view class="case pr">
+        <image class="pic"data-gid="1000102" mode="aspectFill" src="http://i1.carimg.com/0/photo/012/085/000/1715820348a92783.jpg!hmm"></image>
+        <view class="title ellipsis">波普两居 明悦和煦</view>
+        <view class="tag ellipsis">二居室 | 120平米以下 | 20万左右</view>
+    </view>-->
+
+    <!--结果-->
+    <view wx:for="{{data}}" wx:key="" wx:key="id" class="case pr">
+        <image class="pic" src="{{item.cover_img}}" mode="aspectFill" data-gid="{{item.id}}" bindtap="goToDetaile"></image>
+        <view class="title ellipsis">{{item.subject}}</view>
+        <view class="tag ellipsis">{{item.type_name}} | {{item.area_name}} | {{item.house_price}}</view>
+        <view class="headPic pa" bindtap="goToDesigner" data-did="{{item.designerid}}">
+            <image src="{{item.designer_face}}"></image>
+            <text class="ellipsis tc">{{item.designer_name}}</text>
+        </view>
+    </view>
+    <!--加载更多按钮-->
+    <view wx:if="{{hasMore}}">
+        <button type="warn" plain="true" disabled="{{disabled}}" bindtap="getMore" class="mt20">{{moreTxt}}</button>
+    </view>
+    <!--无数据提示-->
+    <view class="null tc" hidden="{{dataNull}}">
+        <icon type="clear" size="100" color="#ccc"/>
+        <view class="txt1">当前筛选无结果</view>
+        <view class="txt2">您可以尝试筛选其他分类看看</view>
+    </view>
+</view>
+<!--底部-->
+<include src="/template/footer.wxml"/>

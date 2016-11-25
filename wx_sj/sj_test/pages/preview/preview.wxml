@@ -1,0 +1,27 @@
+<!--预览界面-->
+<swiper class='preview' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current='{{imgIndex}}'>
+  <block wx:for="{{imgPaths}}">
+
+    <swiper-item>
+        <view class='description' wx:if='{{showed}}'>
+          <image class='left' src='../../images/预览详情.png' mode='aspectFit' bindtap='chooseImage'></image>
+        </view>
+        <view class='text'>
+          <view class='middle'>
+              <text class='img_index'>（</text>
+              <text class='img_index'>{{index + 1}}</text>
+              <text class='img_index'>/</text>
+              <text class='img_index'>{{imgLength}}</text>
+              <text class='img_index'>）</text>
+          </view>
+        </view>
+        <view class='delete' wx:if='{{showed}}'>
+          <image class='right' src='../../images/预览删除.png' mode='aspectFit' bindtap='deleteImg' data-index='{{index}}'></image>
+        </view>
+        <image class='preview_img' mode='aspectFit' src="{{item}}" bindtap='changeShowed'></image>
+
+    </swiper-item>
+    
+  </block>
+</swiper>

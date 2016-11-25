@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "es2015",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-export-extensions",
+    "syntax-export-extensions",
+    "transform-runtime"
+  ],
+  "ignore": [
+    "node_modules/babel-runtime/**/*.js",
+    "node_modules/core-js/**/*.js",
+    "node_modules/regenerator-runtime/**/*.js",
+    "node_modules/lodash/**/*.js",
+    "node_modules/lodash.*/**/*.js",
+    "node_modules/underscore/**/*.js"
+  ]
+}

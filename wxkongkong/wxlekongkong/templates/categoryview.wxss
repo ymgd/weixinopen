@@ -1,0 +1,22 @@
+.categoryview {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 50rpx 36rpx 50rpx 36rpx;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categoryview .itemview {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    margin-bottom: 20rpx;
+    color: #333333;
+}
+
+.categoryview .itemview image {
+    width: 140rpx;
+    height: 140rpx;
+}

@@ -1,0 +1,6 @@
+@import "../../../lib/wxParse/wxParse/wxParse.wxss";
+.normal {
+    padding: 0 15px;
+    white-space: pre-wrap;
+    font-size: 18px;
+}

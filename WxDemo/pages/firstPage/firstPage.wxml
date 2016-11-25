@@ -1,0 +1,16 @@
+<view class="container">
+    <block wx:if="{{photoList.length === 0}}">
+        <Text class="btn_add_photo" size="mini" plan="true" bindtap="onAddLocalPhoto">添加本地照片</Text>
+    </block>
+    <block wx:if="{{photoList.length > 0}}">
+        <scroll-view class="scroll-page" style="flex-direction:row;" scroll-y="true" bindscrolltoupper="onScrollToUpper" bindscrolltolower="onScrollToLower" >
+            <block wx:for="{{photoList}}">
+                <view id="{{index}}" style="display:inline;">
+                    <image style="width: {{itemSize}}px; height: {{itemSize}}px; margin: {{margin}}px;" src="{{item}}" mode="aspectFill" 
+                    bindtap="onTapImage" data-index="{{index}}">
+                    </image>
+                </view>
+            </block>
+        </scroll-view>
+    </block>
+</view>

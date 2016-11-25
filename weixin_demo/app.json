@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "dark",
+    "navigationBarTitleText": "搜索歌词",
+    "navigationBarTextStyle": "#fff"
+  }
+}

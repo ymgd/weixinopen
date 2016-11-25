@@ -1,0 +1,11 @@
+<view class="container">
+    <view id="input">
+        <input id="user-input" bindinput="inputMessage" value="{{inputMessage}}"></input>
+        <button type="primary" size="mini" bindtap="sendMessage">发送</button>
+    </view>
+    <scroll-view id="messages" scroll-y="true" wx:for="{{messages}}" wx:for-item="msg" >
+        <view class="{{msg.from == 'server' ? 'message-server' : 'message-client'}}">
+            <text>{{msg.message}}</text>
+        </view>
+    </scroll-view>
+</view>

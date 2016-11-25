@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view wx:if="{{nightMoodShow}}" class="nightMood"></view>
+<view class="container">
+  <view   class="userinfo">
+  <view class="user" bindtap="changePhoto">
+      <image wx:if="{{imageUrl == null}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image wx:else src="{{imageUrl}}" class="userinfo-avatar"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="userdetail">
+    <view>个人简介: <input placeholder="功能与形式的平衡"/></view>
+    <view>关注领域: <input placeholder="空间 软装 小户型"/></view>
+    <view class="info">点击头像以更换</view>
+  </view>
+  </view>
+  <view class="intr">{{introduction}}</view>
+  <view class="contact info">
+    <view class="contact_item">{{tel}}</view>
+    <view class="contact_item">{{contact}}</view>
+    <!--<button type="default" size="{{defaultSize}}" bindtap="nightMood"> NightMood </button>-->
+    <button class="contact_item" type="primary" bindtap="getLocation">{{btnText}}</button>
+  </view>
+</view>
+
+    <!--<text class="user-motto">{{motto}}{{timer}}</text>
+<include src="../template/footer" />-->

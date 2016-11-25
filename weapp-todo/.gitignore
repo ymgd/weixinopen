@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+
+npm-debug.log
+
+# VSCODE
+.vscode
+
+# JETBRAIN
+.wing
+
+typings/

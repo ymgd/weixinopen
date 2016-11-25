@@ -1,0 +1,75 @@
+.root {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+canvas.paper {
+    background: white;
+    width: 30px;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 18rem;
+    height: 26rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+}
+canvas.paper-lancet {
+    /*background: white;*/
+    width: 30px;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 18rem;
+    height: 26rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+}
+
+
+view.color-picker {
+    position: absolute;
+    bottom: 4rem;
+    left: 1rem;
+    right: 1rem;
+    height: 2rem;
+}
+
+view.color-item {
+    display: block;
+    float: left;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin-right: 5px;
+}
+
+view.color-item.selected {
+    border-color: black;
+}
+
+view.tool-picker {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    height: 2rem;
+}
+
+view.tool-item {
+    display: block;
+    float: left;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin-right: 5px;
+}
+
+view.tool-item.selected {
+    border-color: black;
+}

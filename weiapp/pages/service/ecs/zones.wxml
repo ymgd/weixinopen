@@ -1,0 +1,16 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells">
+            <block wx:for="{{zones_list}}">
+                <view class="weui-cell weui-cell_access" >
+                    <view class="weui-cell__bd" bindtap="selected_zone" data-id="{{item.RegionId}}">
+                        <view>{{item.LocalName}}</view>
+                    </view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="selected_zone" data-id="{{item.RegionId}}">
+                    </view>
+                </view>
+            </block>
+        </view>
+
+    </view>
+</view>

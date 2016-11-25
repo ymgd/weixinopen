@@ -1,0 +1,40 @@
+{
+    "pages":[
+        "pages/item1/index",
+        "pages/item2/index"
+        ],
+    "window":{
+     "backgroundTextStyle":"dark",
+     "backgroundColor":"#4ac2d3",
+     "navigationBarBackgroundColor"  :"#4ac2d3",
+     "navigationBarTextStyle":"black",
+     "navigationBarTitleText":"张俊凯"
+     },
+     "tabBar":{
+         "color":"#000000",
+         "selectedColor":"#faff72",
+         "backgroundColor":"#2edfa3",
+         "borderStyle":"black",
+         "list":[
+             {
+                 "pagePath":"pages/item1/index",
+                 "text":"组件",
+                 "iconPath":"images/tab-me-default.png",
+                 "selectedIconPath":"images/tab-me-selected.png"
+             },
+             {
+                 "pagePath":"pages/item2/index",
+                 "text":"表单",
+                 "iconPath":"images/tab-refund-default.png",
+                 "selectedIconPath":"images/tab-refund-selected.png"
+             }
+         ]
+     },
+     "networkTimeout":{
+         "request":"10000",
+         "connectSocket":"10000",
+         "uploadFile":"10000",
+         "downloadFile":"10000"
+     },
+     "debug":false
+}

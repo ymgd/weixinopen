@@ -1,0 +1,16 @@
+.container {
+  background-color: #eee;
+  padding:0;
+  margin:0;
+  justify-content: center;
+} 
+image {
+  width: 750rpx;
+  height: 90%;
+  margin-bottom: 40px;
+}
+button {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

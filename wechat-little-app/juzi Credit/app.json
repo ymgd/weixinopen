@@ -1,0 +1,75 @@
+{
+    "pages":[
+        
+  
+
+        "pages/home/home",
+        "pages/home/update",
+        "pages/amount/amount",
+        "pages/repay/repay",
+        "pages/me/me",
+        
+        "pages/detail/message/message",
+        "pages/detail/question/question",
+        "pages/detail/schedule/schedule",
+        "pages/detail/userInfo/userInfo",
+        "pages/detail/aboutUs/aboutUs",
+
+        "pages/detail/aboutUs/aboutExtent/edition/edition",
+        "pages/detail/aboutUs/aboutExtent/opition/opition",
+        "pages/detail/aboutUs/aboutExtent/policy/policy",
+
+        "pages/repay/repayDetail/repayDetail",
+        "pages/repay/repayDetail/test"
+    
+
+
+],
+"window":{
+     "backgroundTextStyle":"dark",
+     "backgroundColor":"#4ac2d3",
+     "navigationBarBackgroundColor":"rgb(249,99,39)" ,
+     "navigationBarTextStyle":"black",
+     "navigationBarTitleText": "桔子信用"
+     },
+    
+     "tabBar":{
+         "color":"#000000",
+         "selectedColor":"white",
+         "backgroundColor":"rgb(249,99,39)",
+         "borderStyle":"black",
+         "list":[
+             {
+                 "pagePath":"pages/home/home",
+                 "text":"首页",
+                 "iconPath":"images/tabBar/tab_home_default.png",
+                 "selectedIconPath":"images/tabBar/tab_home_selected.png"
+             },
+             {
+                 "pagePath":"pages/amount/amount",
+                 "text":"调额",
+                 "iconPath":"images/tabBar/tab_loan_default.png",
+                 "selectedIconPath":"images/tabBar/tab_loan_selected.png"
+             },
+             {
+                 "pagePath":"pages/repay/repay",
+                 "text":"还款",
+                 "iconPath":"images/tabBar/tab_refund_default.png",
+                 "selectedIconPath":"images/tabBar/tab_refund_selected.png"
+             },
+             {
+                 "pagePath":"pages/me/me",
+                 "text":"我",
+                 "iconPath":"images/tabBar/tab_me_default.png",
+                 "selectedIconPath":"images/tabBar/tab_me_selected.png"
+             }
+         ]
+     },
+     "networkTimeout":{
+         "request":"10000",
+         "connectSocket":"10000",
+         "uploadFile":"10000",
+         "downloadFile":"10000"
+     },
+     "debug":true
+}

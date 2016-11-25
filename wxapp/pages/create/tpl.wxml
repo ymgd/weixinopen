@@ -1,0 +1,13 @@
+<view class="container">    
+    <view class="section"  wx:for="{{tpls}}">
+        <view class="tpl zoomInDown animated">
+            <view class="tpl-item">
+                <image class="tpl-image" bindtap="getTpl" data-id="{{item._id}}" data-theme="{{item.name}}" data-tpl="{{item.image}}" src="{{item.image}}"></image>
+                <view class="tpl-text">{{item.name}}</view>
+                <view class="tpl-footer">
+                    <text class="tpl-"><text class="color-1">{{item.total}}</text>个人使用</text>
+                </view>
+            </view>        
+        </view>  
+    </view>    
+</view>

@@ -1,0 +1,49 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+.pie_left, .pie_right {
+    width: 100px; 
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+.pie_left, .left {
+  left: 0;
+}
+.pie_right, .right {
+  right: 0;
+}
+.left, .right {
+    width:160px; 
+    height:160px;
+    border-radius: 50%;
+    position: absolute;
+    border: 20px solid transparent;
+    transform: rotate(-135deg);
+    top: 0;
+}
+.left {
+  border-left: 20px solid red;
+  border-bottom: 20px solid red;
+}
+.right {
+  border-top: 20px solid red;
+  border-right: 20px solid red;
+}
+.mask {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    left: 25px;
+    top: 25px;
+    background: #FFF;
+    position: absolute;
+    text-align: center;
+    line-height: 150px;
+    font-size: 16px;
+}

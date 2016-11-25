@@ -1,0 +1,46 @@
+/* global */
+@font-face{
+	font-family: "number";
+	src: url("https://s.kcimg.cn/wap/font/gb1589/stliti.woff") format("woff"),
+		url("https://s.kcimg.cn/wap/font/gb1589/stliti.ttf") format('truetype');
+}
+.question-list{
+    padding-top: 10rpx;
+}
+.question-list .question-item{
+	position: relative;
+	padding:20rpx 30rpx 20rpx 82rpx;
+	min-height: 96rpx;
+    margin-top: 10rpx;
+    background-color: #fff;
+}
+.question-list .question-item:after{
+	position: absolute;
+	content: "";
+    top: 50%;
+    right: 20rpx;
+    width: 12rpx;
+    height: 12rpx;
+    border-top: 1rpx solid #dedede;
+    border-right: 1rpx solid #dedede;
+    transform:translate(0,-50%) rotate(45deg);
+}
+.question-list text{
+	position: absolute;
+	top:50%;
+	width:600rpx;
+    line-height:48rpx;
+    overflow: hidden;
+    font-size:32rpx;
+	word-break: break-all;
+	transform: translate(0,-50%);
+}
+.question-list .num{
+	position: absolute;
+	left:20rpx;
+	top:50%;
+	font-family: "number";
+	color:#EC5B3C;
+	font-size:48rpx;
+	transform: translate(0,-50%);
+}

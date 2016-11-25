@@ -1,0 +1,29 @@
+/**albumlist.wxss**/
+
+.album_img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.album_name {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.modal_image {
+    width: 100%;
+}
+
+/*.btn_submit {
+    width: 32px;
+    height:32px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #387ef5;
+    padding: 16px;
+    border-radius: 50%;
+    border: solid 1px white;
+    box-shadow: 2px 3px 20px #CCCCCC;
+}*/

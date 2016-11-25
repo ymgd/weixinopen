@@ -1,0 +1,36 @@
+.container {
+  padding: 8px 0;
+}
+
+.item {
+  padding: 8px;
+  background-color: #fff;
+  border-top: 1px solid #e4e4e4;
+  color: #787878;
+}
+
+.item image {
+  display: block;
+  width: 129px;
+  height: 114px;
+}
+
+.item-right {
+  margin-left: 11px;
+}
+
+.title {
+  margin-bottom: 25px;
+}
+.title text {
+  font-size: 16px;
+  color: #787878;
+}
+
+text {
+  font-size: 15px;
+  color: #444;
+}
+.c-1 {
+  color: #09bb07;
+}

@@ -1,0 +1,107 @@
+<template name="first">
+    <view class="dice-box first">
+        <span class="dice-point"></span>
+    </view>
+</template>
+<template name="second">
+    <view class="dice-box second">
+        <span class="dice-point"></span>
+        <span class="dice-point self-flex-end"></span>
+    </view>
+</template>
+<template name="third">
+    <view class="dice-box third">
+        <span class="dice-point"></span>
+        <span class="dice-point self-flex-center"></span>
+        <span class="dice-point self-flex-end"></span>
+    </view>
+</template>
+<template name="fourth">
+    <view class="dice-box fourth">
+        <view class="column">
+            <span class="dice-point"></span>
+            <span class="dice-point"></span>
+        </view>
+        <view class="column">
+            <span class="dice-point"></span>
+            <span class="dice-point"></span>
+        </view>
+    </view>
+</template>
+<template name="fifth">
+    <view class="dice-box fifth">
+        <view class="column">
+            <span class="dice-point"></span>
+            <span class="dice-point"></span>
+        </view>
+        <view class="column justify-center">
+            <span class="dice-point"></span>
+        </view>
+        <view class="column">
+            <span class="dice-point"></span>
+            <span class="dice-point"></span>
+        </view>
+    </view>
+</template>
+<template name="sixth">
+    <view class="dice-box sixth">
+        <view class="column">
+            <span class="dice-point"></span>
+            <span class="dice-point"></span>
+            <span class="dice-point"></span>
+        </view>
+        <view class="column">
+            <span class="dice-point"></span>
+            <span class="dice-point"></span>
+            <span class="dice-point"></span>
+        </view>
+    </view>
+</template>
+<view>
+    <view class="game-info">
+        <div class="name">{{ userInfo.name }}</div>
+        <div>
+            <span class="money {{moneyClass}}">{{ sigleScore }}</span>
+            <div class="score">
+                {{ userInfo.score }}
+            </div>
+        </div>
+    </view>
+    <view class="dice-body">
+        <block wx:for="{{showDiceTemplateArray}}">
+            <template is="{{item}}" />
+        </block>
+    </view>
+    <view class="chip-body">
+        <view class="chips">
+            <view class="column">
+                <image mode='aspectFit' data-amount="50" bindtap="putChip" class="w120 h120 mr10 mb10" src="/images/chip-50.png"></image>
+                <image mode='aspectFit' data-amount="100" bindtap="putChip" class="w120 h120 mr10" src="/images/chip-100.png"></image>
+            </view>
+            <view class="column">
+                <image mode='aspectFit' data-amount="200" bindtap="putChip" class="w120 h120 mb10" src="/images/chip-200.png"></image>
+                <image mode='aspectFit' data-amount="500" bindtap="putChip" class="w120 h120" src="/images/chip-500.png"></image>
+            </view>
+        </view>
+        <view class="put-chips" bindtouchmove="removeBet" bindtouchend="removeBetEnd">
+            <image mode='aspectFit' class="put-chips-img" src="/images/put-chips.png">
+            </image>
+            <view hidden="{{ showBet }}" class="put-chips-amount {{chipsClass}}">{{ bet > 0? bet:'下注金额' }}</view>
+        </view>
+    </view>
+    <view class="game-operate">
+        <button data-type="big" bindtap="changeDice">
+            <span>大</span>
+            <span>1:1</span>
+        </button>
+        <button data-type="leopard" bindtap="changeDice">
+            <span>豹子</span>
+            <span>1:24</span>
+        </button>
+        <button data-type="small" bindtap="changeDice">
+            <span>小</span>
+            <span>1:1</span>
+        </button>
+    </view>
+</view>
+<view hidden="{{ !showBet }}" class="moving-chips-amount"  style="top: {{finger.Y}}px; left: {{finger.X}}px;">{{bet}}</view>

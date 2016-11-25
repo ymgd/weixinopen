@@ -1,0 +1,56 @@
+<view class="container">
+  <view class="main">
+    <view class="content">
+      <view class="section-group">
+        <view class="section nth-last">
+            <text class="section-title">单项输入</text>
+            <input id="input-1" placeholder="预设内容" placeholder-class="ph-text" type="text" />
+        </view>
+      </view>
+      <view class="section-group">
+        <view class="section">
+            <text class="section-title">多项输入</text>
+            <input id="input-2" placeholder="预设内容" placeholder-class="ph-text" type="text" />
+        </view>
+        <view class="section nth-last">
+            <text class="section-title">多项</text>
+            <input id="input-3" placeholder="预设内容" placeholder-class="ph-text" type="text" />
+            <icon class="section-icon" type="info_circle" size="23" />
+        </view>
+      </view>
+      <view class="section-group">
+      <view class="section nth-last">
+            <text class="section-title">标题实在太长</text>
+            <input id="input-4" placeholder="预设内容" placeholder-class="ph-text" type="text" />
+      </view>
+      </view>
+      <view class="section-group">
+        <view class="section image-section nth-last">
+                <image class="add-image pre-image" src="{{add_image_png.src}}" mode="{{add_image_png.mode}}" bindtap="addImage"></image>
+                <block wx:for="{{preview_images}}"  wx:for-item="img">
+                    <image class="pre-image" mode="{{imageMode}}" src="{{img.src}}"></image>
+                </block>
+        </view>
+      </view>
+      <view class="section-group">
+        <view class="section">
+            <text class="section-title">多项输入</text>
+            <input id="input-5" placeholder="预设内容" placeholder-class="ph-text" type="text" />
+        </view>
+        <view class="section">
+            <text class="section-title">多项</text>
+            <input id="input-6" placeholder="预设内容" placeholder-class="ph-text" type="text" />
+        </view>
+        <view class="section nth-last">
+            <text class="section-title">多项</text>
+            <input id="input-7" placeholder="预设内容" placeholder-class="ph-text" type="text" />
+        </view>
+      </view>
+      <view class="section-group">
+        <view class="section nth-last section-text">
+          <input id="input-8" placeholder="预设内容" placeholder-class="ph-text" type="text" />
+        </view>
+      </view>
+    </view>
+  </view>
+<view>

@@ -1,0 +1,189 @@
+<view class="page gray-page-background">
+    <view class="center-head">
+        <text class="head-title">列表</text>
+    </view>
+    
+    <view class="list">
+        <view class="list-head">
+            <text>图文列表</text>
+        </view>
+        <view class="list-item with-large-space-around">
+            <image class="large-img"></image>
+            <view class="large-content">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-item with-large-space-around">
+            <image class="large-img"></image>
+            <view class="large-content">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-head">
+            <text>文字列表</text>
+        </view>
+        <view class="list-item with-large-space-around">
+            <view class="in-multiple-line">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-item with-large-space-around">
+            <view class="in-multiple-line">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-head">
+            <text>文字列表附来源</text>
+        </view>
+        <view class="list-item with-large-space-around">
+            <view class="in-multiple-line">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+                <view class="source">
+                    <text class="supplementary">文字来源</text>
+                    <text class="supplementary">时间</text>
+                    <text class="supplementary">|</text>
+                    <text class="supplementary">其他信息</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-head">
+            <text>图文组合列表</text>
+        </view>
+        <view class="list-item with-large-space-around with-bottom-border">
+            <image class="large-img"></image>
+            <view class="large-content">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+            </view>
+        </view>
+        <view class="list-item with-large-space-around with-bottom-border">
+            <image class="large-img"></image>
+            <view class="large-content">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+            </view>
+        </view>
+        <view class="list-item with-large-space-around with-bottom-border">
+            <image class="large-img"></image>
+            <view class="large-content">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+            </view>
+        </view>
+        <view class="list-item with-space-around">
+            <text class="more-link">查看更多</text>
+            <view class="right-more">
+                <image class="img-arrow" src="/image/arrowright.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-head">
+            <text>文字组合列表</text>
+        </view>
+        <view class="list-item with-large-space-around with-bottom-border">
+            <view class="in-multiple-line">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+            </view>
+        </view>
+        <view class="list-item with-large-space-around with-bottom-border">
+            <view class="in-multiple-line">
+                <text class="list-primary">标题</text>
+                <text class="list-secondary">概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述</text>
+            </view>
+        </view>
+        <view class="list-item with-space-around">
+            <text class="more-link">查看更多</text>
+            <view class="right-more">
+                <image class="img-arrow" src="/image/arrowright.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-head">
+            <text>小图文列表</text>
+        </view>
+        <view class="list-item with-bottom-border">
+            <view class="in-single-line">
+                <image class="small-img"></image>
+                <text class="page-primary-content with-space-around">文字标题</text>
+            </view>
+            <view class="right-more">
+                <image class="img-arrow" src="/image/arrowright.png"></image>
+            </view>
+        </view>
+        <view class="list-item with-bottom-border">
+            <view class="in-single-line">
+                <image class="small-img"></image>
+                <text class="page-primary-content with-space-around">文字标题</text>
+            </view>
+            <view class="right-more">
+                <image class="img-arrow" src="/image/arrowright.png"></image>
+            </view>
+        </view>
+        <view class="list-item">
+            <view class="in-single-line">
+                <image class="small-img"></image>
+                <text class="page-primary-content with-space-around">文字标题</text>
+            </view>
+            <view class="right-more">
+                <image class="img-arrow" src="/image/arrowright.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-item with-space-around">
+            <view class="in-single-line">
+                <image class="small-img"></image>
+                <text class="page-primary-content">联系人</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-item with-large-space-around">
+            <image class="medium-img"></image>
+            <view class="medium-content">
+                <text class="list-primary">联系人</text>
+                <text class="list-secondary">摘要信息</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-item with-large-space-around">
+            <image class="large-img"></image>
+            <view class="large-content">
+                <text class="list-primary">联系人</text>
+                <text class="list-secondary">描述副标题</text>
+            </view>
+            <view class="right-more">
+                <image class="img-arrow" src="/image/arrowright.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

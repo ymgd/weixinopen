@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="header">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="title-container">
+      <text class="title">Add Habit</text>
+      <text class="desc">Check your habits everyday</text>
+    </view>
+    <button size="mini" type="primary" bindtap="bindAddTap">+</button>  
+  </view>
+  <view class="section">
+    <input class="input" bindinput="bindInput" placeholder="What do you wanna do everyday?" autofocus />
+    <view class="btn-group">
+        <button bindtap="bindAddTap" class="btn" type="primary">OK</button>
+        <button bindtap="goIndex" class="btn">Cancel</button>
+    </view>
+  </view>
+</view>

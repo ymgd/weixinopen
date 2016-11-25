@@ -1,0 +1,245 @@
+.detail-img-box,
+.detail-img {
+    width: 100%;
+    height: 750rpx;
+}
+
+.detail-box {
+    position: relative;
+    padding: 22rpx 30rpx;
+    background-color: #fff;
+}
+
+.icon-img {
+    position: absolute;
+    bottom: 0;
+    left: 60rpx;
+    display: block;
+    width: 20rpx;
+    height: 20rpx;
+    -webkit-transform: rotate(45deg) translate(0,70%);
+    -moz-transform: rotate(45deg) translate(0,70%);
+    transform: rotate(45deg) translate(0,70%);
+    background-color: #ebebeb;
+}
+
+.detail-title {
+    display: block;
+    width: 100%;
+    margin-bottom: 18rpx;
+    line-height: 48rpx;
+    font-size: 36rpx;
+    color: #444;
+}
+
+.detail-content {
+    display: flex;
+    line-height: 50rpx;
+}
+
+.detail-price {
+    width: 555rpx;
+}
+
+.new-price {
+    font-size: 36rpx;
+    color: #fb5d5d;
+}
+
+.odd-price {
+    margin-left: 20rpx;
+    font-size: 30rpx;
+    text-decoration: line-through; 
+    color: #999;
+}
+
+.detail-other {
+    width: 135rpx;
+    font-size: 26rpx;
+    color: #999;
+}
+
+.otherAddress {
+    padding: 20rpx 30rpx;
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: #999;
+}
+
+.otherAddress text {
+    display: block;
+}
+
+.groud-play-box {
+    background-color: rgb(255,255,255);
+}
+
+.title-box {
+    height: 88rpx;
+    margin: 0 30rpx 20rpx;
+    line-height: 88rpx;
+    font-size: 32rpx;
+    color: #666;
+    border-bottom: 1rpx solid #ebebeb;
+}
+
+.group-play-content {
+    display: flex;
+    padding: 40rpx 30rpx;
+}
+
+.group-play-item {
+    display: flex;
+    width: 230rpx;
+    height: 56rpx;
+    line-height: 28rpx;
+    font-size: 24rpx;
+    color: #777;
+    overflow: hidden
+}
+
+.group-play-img {
+    display: block;
+    width: 56rpx;
+    height: 56rpx;
+    margin-right: 10rpx;
+    background-color: rgb(102,102,102);
+    border-radius: 50%;
+}
+
+.group-play-center {    
+    padding-left: 25rpx;
+    box-sizing: border-box;
+}
+
+.group-play-last {
+    direction: rtl;
+}
+
+.group-play-item text {
+    display: block;
+}
+
+.fight-group-title {
+    line-height: 80rpx;
+    font-size: 24rpx;
+    text-align: center;
+    color: #fb5d5d;
+}
+
+.fight-group {
+    margin-bottom: 20rpx;
+    background-color: rgb(255,255,255);
+}
+
+.group-list {
+    width: 100%;
+    margin-top: -20rpx;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
+
+.item-group {
+    display: flex;
+    width: 100%;
+    height: 64rpx;
+    padding: 24rpx 0;
+}
+
+.bordrer-top {
+    border-top: 1rpx solid #ebebeb;
+} 
+
+.bordrer-top:first-child {
+    border: 0 none;
+}
+
+.user-img,
+.user-img image {
+    display: block;
+    width: 64rpx;
+    height: 64rpx;
+}
+
+.group-item-center {
+    width: 510rpx;
+    margin-top: -10rpx;
+    margin-left: 16rpx;
+    color: #9f9f9f;
+}
+
+.user-name {
+    line-height: 32rpx;
+    font-size: 28rpx;
+}
+
+.group-other {
+    margin-top: 6rpx;
+    line-height: 32rpx;
+    font-size: 24rpx;
+}
+
+.join-group {
+    width: 96rpx;
+    height: 40rpx;
+    margin-top: 13rpx;
+    line-height: 40rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #fb5d5d;
+    border: 1rpx solid #fb5d5d;
+    border-radius: 4rpx;
+}
+
+.red-color {
+    margin: 0 6rpx;
+    color: #fb5d5d;
+}
+
+.goods-detail {
+    background-color: rgb(255,255,255);
+}
+
+.goods-detail-text {
+    padding: 0 30rpx 20rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.goods-detail-img image {
+    display: block;
+    width: 750rpx;
+    height: auto !important;
+}
+
+.buy-tips {
+    display: flex;
+    width: 100%;
+    height: 104rpx;
+    margin-top: 20rpx;
+    padding: 30rpx;
+    box-sizing: border-box;
+    background-color: rgb(255,255,255);
+}  
+
+.buy-tips-item {
+    display: flex;
+    width: 230rpx;
+}
+
+.buy-tips-img {
+    display: block;
+    width: 44rpx;
+    height: 44rpx;
+    margin-right: 12rpx;
+    border-radius: 50%;
+    background-color: #777;
+}
+
+.buy-tips-text {
+    display: block;
+    width: 174rpx;
+    line-height: 44rpx;
+    font-size: 32rpx;
+}

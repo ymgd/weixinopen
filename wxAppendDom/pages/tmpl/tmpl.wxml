@@ -1,0 +1,116 @@
+<template name="Tmpl">
+    <block wx:for="{{wxAppendData}}" wx:key="">
+        <template is="Tmpl1" data="{{item}}"/>
+    </block>
+</template>
+
+<template name="Tmpl1">
+        <block wx:if="{{item.node == 'element'}}">
+	        <block wx:if="{{item.tag == 'view'}}">
+	            <view class="{{item.class}}">
+	            			{{item.content}}
+	            		<block wx:for="{{item.child}}" wx:key="">
+	            		
+			            	<template is="Tmpl2" data="{{item}}"/>
+			            </block>
+	            </view>
+	        </block>
+
+	        <!-- img标签 -->
+	        <block wx:if="{{item.tag == 'img'}}">
+	        	<image class="{{item.class}}" src="{{item.src}}" />
+	        </block>
+
+	        <!-- text标签 -->
+	        <block wx:if="{{item.tag == 'text'}}">
+	        	<text class="{{item.class}}" >
+	        		{{item.content}}
+	        		<block wx:for="{{item.child}}" wx:key="">
+	            		
+			            <template is="Tmpl2" data="{{item}}"/>
+			        </block>
+	        	</text>
+	        </block>
+
+	    </block>
+</template>
+
+<template name="Tmpl2">
+        <block wx:if="{{item.node == 'element'}}">
+	        <block wx:if="{{item.tag == 'view'}}">
+	            <view class="{{item.class}}">
+	            			{{item.content}}
+	            		<block wx:for="{{item.child}}" wx:key="">
+	            		
+			            	<template is="Tmpl3" data="{{item}}"/>
+			            </block>
+	            </view>
+	        </block>
+
+	        <!-- img标签 -->
+	        <block wx:if="{{item.tag == 'img'}}">
+	        	<image class="{{item.class}}" src="{{item.src}}" />
+	        </block>
+
+	        <!-- text标签 -->
+	        <block wx:if="{{item.tag == 'text'}}">
+	        	<text class="{{item.class}}" >
+	        		{{item.content}}
+	        		<block wx:for="{{item.child}}" wx:key="">
+	            		
+			            <template is="Tmpl3" data="{{item}}"/>
+			        </block>
+	        	</text>
+	        </block>
+	    </block>
+</template>
+
+<template name="Tmpl3">
+        <block wx:if="{{item.node == 'element'}}">
+	        <block wx:if="{{item.tag == 'view'}}">
+	            <view class="{{item.class}}">
+	            			{{item.content}}
+	            		<block wx:for="{{item.child}}" wx:key="">
+	            		
+			            	<template is="Tmpl4" data="{{item}}"/>
+			            </block>
+	            </view>
+	        </block>
+
+	        <!-- img标签 -->
+	        <block wx:if="{{item.tag == 'img'}}">
+	        	<image class="{{item.class}}" src="{{item.src}}" />
+	        </block>
+
+	        <!-- text标签 -->
+	        <block wx:if="{{item.tag == 'text'}}">
+	        	<text class="{{item.class}}" >
+	        		{{item.content}}
+	        		<block wx:for="{{item.child}}" wx:key="">
+	            		
+			            <template is="Tmpl4" data="{{item}}"/>
+			        </block>
+	        	</text>
+	        </block>
+	    </block>
+</template>
+
+<template name="Tmpl4">
+        <block wx:if="{{item.node == 'element'}}">
+	        <block wx:if="{{item.tag == 'view'}}">
+	            <view class="{{item.class}}">
+	            			{{item.content}}
+	            </view>
+	        </block>
+
+	        <!-- img标签 -->
+	        <block wx:if="{{item.tag == 'img'}}">
+	        	<image class="{{item.class}}" src="{{item.src}}" />
+	        </block>
+
+	        <!-- text标签 -->
+	        <block wx:if="{{item.tag == 'text'}}">
+	        	<text class="{{item.class}}" >{{item.content}}</text>
+	        </block>
+	    </block>
+</template>

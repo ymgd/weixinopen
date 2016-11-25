@@ -1,0 +1,17 @@
+<view>
+    <view class="page-top" style="{{top_style}}">
+        <view class="page-btn-wrap">
+            <text class="title" bindtap="gotoTab">{{title}}</text>
+            <text class="author">{{author}}</text>
+            <!--<button class="page-btn" bindtap="gotoTab">Tab</button>-->
+        </view>
+    </view>
+    <view class="page-bottom">
+         <text class="content">
+            {{text}}
+        </text>
+        <text class="intro">
+            {{intro}}
+        </text>
+    </view>
+</view>

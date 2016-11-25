@@ -1,0 +1,5 @@
+<view class="bdview">  
+    <view class="addcity">
+        <button type="default" bindtap="addCity">添加城市</button> 
+    </view>
+</view>

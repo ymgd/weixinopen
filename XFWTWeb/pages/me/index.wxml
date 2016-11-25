@@ -1,0 +1,24 @@
+<view class="contain">
+
+<scroll-view>
+
+<!--头部-->
+<view class="headerView">
+ <image class="picture" src="{{picture}}"></image>
+ <label class="name">{{name}}</label>
+</view>
+
+<!--表格-->
+ <block wx:for-items="{{items}}">   
+<view class="item">
+ <image class="icon" src="{{item.icon}}"></image>
+ <label>{{item.text}}</label>
+  <image class="arrow" src="../../image/0106arrow3x.png"></image>
+
+</view>
+ </block>
+
+
+</scroll-view>
+
+</view>

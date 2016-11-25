@@ -1,0 +1,11 @@
+<view class="content">
+    <view class="search">
+        <input class="input" bindinput="bindKeyInput"/>
+        <button bindtap="search" hover-class="btnClick">查询</button>
+    </view>
+    <text class="input-show">你要搜索：{{inputVal}}</text>
+    <import src="../template/movietpl.wxml"/>
+    <block wx:for="{{movie}}">
+        <template is="movie" data="{{item}}"/>
+    </block>
+</view>

@@ -1,0 +1,33 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "presets": ["es2015", "stage-0"],
+  "env": {
+    "node": true
+  },
+  "globals" : {
+    "Page": true,
+    "App": true,
+    "wx" : true,
+    "getApp":true
+  },
+  "rules" : {
+    // "global-require": 0,
+    "object-shorthand": 1, // http://eslint.org/docs/rules/object-shorthand.html
+    "new-cap": 1, // 方法不能以大写字母开头
+    "comma-dangle": 0, // 要不要加最后一个逗号
+    "semi": 0, // 行末是否要加分号 http://eslint.org/docs/rules/semi
+    "prefer-arrow-callback": 1, // 优先使用箭头函数
+    "no-unused-vars": 1,
+    "camelcase": 0, // 陀峰命名法 http://eslint.org/docs/rules/camelcase
+    "prefer-template": 1, // 用 `` 拼接字符串 http://eslint.org/docs/rules/prefer-template
+    "import/no-extraneous-dependencies": 0,
+    //    "import/no-extraneous-dependencies": [0, {"devDependencies": ["gulpfile.js"]}], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    "class-methods-use-this": 0, // 类方法里必须用 this
+    "indent": [0, "tab"], // 去掉tab约定,IDE会有问题
+    "no-unused-expressions": 1, // 没必要的判断
+    "eqeqeq": 1, // 用 === 替代 ==
+    // ES5
+    "no-var": 0 // 禁用 var
+  }
+}

@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="topTitle">
+    <text class="cn">新品上架</text>
+    <text class="en">New</text>
+  </view>
+  <view class="section section_gap">
+      <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+          <view class="scroll-view-item_H">
+            <image class="item" src="../../image/lift1.jpg"/>
+            <text class="title">人气单品</text>
+            <view class="monney">$88.00</view>
+          </view>
+
+          <view class="scroll-view-item_H">
+            <image class="item" src="../../image/lift2.jpg"/>
+            <text class="title">人气单品</text>
+            <view class="monney">$88.00</view>
+          </view>
+
+          <view class="scroll-view-item_H">
+            <image class="item" src="../../image/123.png"/>
+            <text class="title">人气单品</text>
+            <view class="monney">$88.00</view>
+          </view>
+      </scroll-view>
+  </view>
+  <view class="topTitle">
+    <text class="cn">套装推荐</text>
+    <text class="en">Suit</text>
+  </view>
+  <view class="suitBox">
+    <view class="suit">
+      <view class="discribe">为周末旅行设计的Louis Vuitton Keepall旅行袋，成为了长条枕包的鼻祖；No.5香水时至今日都是CHANNEL经典；一战爆发后，英国军队指定Burberry风衣作为高级军服，从此不列颠吹着寒风，下着细雨....</view>
+    </view>
+    <view class="suitImg">
+      <image class="suitItem" src="../../image/lift3.jpg"/>
+      <image class="suitItem" src="../../image/lift1.jpg"/>
+    </view>
+    <view class="moreSuit">更多套装></view>
+  </view>
+   <view class="topTitle">
+    <text class="cn">人气单品</text>
+    <text class="en">Pick</text>
+  </view>
+  <view class="pickList">
+    <view class="listItem">
+      <image class="itemImg" src="../../image/lift2.jpg"/>
+      <text class="itemText">冬季人气单品</text>
+    </view>
+    <view class="listItem">
+      <image class="itemImg" src="../../image/lift3.jpg"/>
+      <text class="itemText">冬季人气单品</text>
+    </view>
+    <view class="listItem">
+      <image class="itemImg" src="../../image/lift1.jpg"/>
+      <text class="itemText">冬季人气单品</text>
+    </view>
+    <view class="listItem">
+      <image class="itemImg" src="../../image/123.png"/>
+      <text class="itemText">冬季人气单品</text>
+    </view>
+  </view>
+</view>
+<view class="footer">
+  <view class="add">
+    <button class="btn" type="primary" bindtap="primary">发布</button>
+  </view>
+  <view class="add1">
+    <button class="btn" type="primary" bindtap="primary" plain="true">预约</button>
+  </view>
+  <view class="add2">
+    <button class="btn" type="primary" bindtap="primary">购物车</button>
+  </view>
+</view>

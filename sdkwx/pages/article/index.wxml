@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view id="article-index">
+  <block wx:for="{{data.channel}}" wx:for-item="article" wx:key="">
+  <navigator url="view?id={{ article.id }}">
+    <view class="article">
+      <image class="act-img" src="{{article.image_url}}"></image>
+      <text class="title">{{article.title}}</text>
+      <text class="category">{{article.category}}</text>
+    </view>
+  </navigator>
+</block>
+</view>

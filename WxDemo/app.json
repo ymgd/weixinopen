@@ -1,0 +1,45 @@
+{
+  "pages": [
+        "pages/firstPage/firstPage",
+        "pages/calendarPage/calendarPage",
+        "pages/profilePage/profilePage",
+        "pages/settingLastDayPage/settingLastDayPage",
+        "pages/settingMensCycle/settingMensCycle",
+        "pages/settingNumberOfDays/settingNumberOfDays",
+        "pages/imageDetailPage/imageDetailPage"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#353038",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "appMagics",
+        "backgroundColor": "rgb(231, 228, 236)",
+        "backgroundTextStyle": "light"
+    },
+	"tabBar": {
+        "color": "#B2B2B2",
+        "selectedColor": "#00C516",
+        "backgroundColor": "#F4F4F4",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/firstPage/firstPage",
+                "text": "第1页",
+                "iconPath": "images/tab_icon.png",
+                "selectedIconPath": "images/tab_icon_hl.png"
+            },
+            {
+                "pagePath": "pages/calendarPage/calendarPage",
+                "text": "第2页",
+                "iconPath": "images/tab_icon.png",
+                "selectedIconPath": "images/tab_icon_hl.png"
+            },
+            {
+                "pagePath": "pages/profilePage/profilePage",
+                "text": "我",
+                "iconPath": "images/tab_icon.png",
+                "selectedIconPath": "images/tab_icon_hl.png"
+            }
+        ]
+    },
+    "debug": true
+}

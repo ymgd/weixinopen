@@ -1,0 +1,86 @@
+@import "../../res/qq.wxss";
+
+.cell-flex {
+    flex : 1;
+    text-align: center;
+    padding: 5px 0 10px 0;
+}
+.cell-flex:active{
+    background-color: #f7f7f7;
+}
+.cell-flex image{
+    width : 40px;
+    height: 40px;
+}
+.cell-flex .title{
+    font-size  : 13px;
+    font-family: "宋体";
+    margin-top : 5px;
+}
+
+.group-li:active{
+   background: none;
+}
+.c-group-li{
+    padding:8px 0px;
+    vertical-align:bottom;
+}
+.c-group-li .g-title{
+    margin-left: 5px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.c-group-li .g-number{
+    font-size: 10px;
+    color : #A39E9E;
+    float : right;
+    margin:2px 5px 0px 5px;
+}
+
+.c-group-li .g-title::before{
+    content: url('../../res/image/close.png');
+    margin-right:5px;
+}
+
+.c-group-li-open .g-title::before{
+    content: url('../../res/image/open.png');
+    margin-right:5px;
+}
+
+.friend-group-ul{
+    margin-top: 5px;
+}
+.friend-group-li{
+    padding: 8px 10px;
+}
+.friend-group-li:active{
+    background-color:#f7f7f7;
+}
+
+.friend-group-li .title{
+    font-size: 15px;
+}
+.friend-group-li .signature{
+    font-size: 10px;
+    color: #9E9BAC;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.friend-group-li image{
+    width: 30px;
+    height: 30px;
+    float:left;
+    margin-right: 10px;
+    border-radius:50%;
+}
+.friend-group-ul .c-devierline{
+    height: 1px;
+    margin-left:50px;
+    background-color: #e5e5e5; 
+}
+.friend-group-ul .c-devierline:last-child{
+    height: 0px;
+}

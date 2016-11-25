@@ -1,0 +1,127 @@
+.playBox{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 200rpx;
+    background: rgba(130, 148, 160,0.8);
+    text-align: center;
+    overflow: hidden;
+    z-index: 9;
+}
+.playMask{
+    position: relative;
+    top:-275rpx;
+    width: 100%;
+    height: 750rpx;
+    -webkit-filter: blur(3px) brightness(0.35);
+}
+.playImg{
+    position: absolute;
+    top:10rpx;
+    left: 50%;
+    margin-left: -55rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 100rpx;
+    border: 10rpx solid #333;
+    box-shadow: 0px 0px 10px rgb(130, 148, 160);
+    z-index: 1;
+}
+.play{
+     -webkit-animation: rotateing 5s linear infinite;
+}
+.stop {
+    animation-play-state: paused;
+}
+@-webkit-keyframes rotateing{
+	0%{   -webkit-transform: rotate(0deg);}
+	50%{   -webkit-transform: rotate(180deg);}
+	100%{  -webkit-transform: rotate(360deg);}
+}
+.playSong,.playSing{
+    position: absolute;
+    left: 0;
+    color: #fff;
+    display: block;
+    width:100%;
+    font-size: 25rpx;
+    padding-bottom: 10rpx;
+}
+.playSong{
+    top: 130rpx;
+}
+.playSing{
+    top: 165rpx;
+}
+/*play songs end*/
+.musics{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 170rpx;
+    margin-top: 200rpx;
+}
+.allMBox{
+    margin: 0 auto;
+    width: 736rpx;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 50rpx;
+}
+.musicBox{
+    width: 235rpx;
+    height: 235rpx;
+    float: left;
+    margin: 11.5rpx 11.5rpx 0 0;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 5px #494949;
+}
+.clearMargin{
+    margin-right: 0;
+}
+.cover{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 235rpx;
+    height: 235rpx;
+}
+.infoBox{
+    position: relative;
+    top:27.5rpx;
+    left: 27.5rpx;
+    width: 180rpx;
+    height: 180rpx;
+    background-color: rgb(130, 148, 160);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+}
+.scale{
+    -webkit-transform: scale(3,3);
+    opacity: 0;
+}
+.line{
+    width: 70rpx;
+    height: 5rpx;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.marginTop{
+    width:100%;
+    height: 46rpx;
+}
+.sing,.song{    
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 16rpx;
+    color: #fff;
+}
+.sing{
+    padding: 10rpx 0 15rpx;
+}
+.song{
+    padding-top: 15rpx;
+}

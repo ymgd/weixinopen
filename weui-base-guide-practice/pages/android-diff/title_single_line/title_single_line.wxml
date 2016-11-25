@@ -1,0 +1,47 @@
+<view class="container">
+    <view class="main">
+        <view class="content gap-top">
+            <view class="section-wrp">
+                <view class="section">
+                    <view class="row section-title">
+                        <text class="title-1">标题单行</text>
+                    </view>
+                    <view class="row section-body">
+                        <text>描述文字的字数尽量控制在三行内，并且单行最右侧尽量不要是标点符号。</text>
+                    </view>
+                    <view class="row section-footer set-right">
+                        <text class="btn sub-btn">取消</text>
+                        <text class="btn primary-btn">确定</text>
+                    </view>
+                </view>
+            </view>
+            <view class="section-wrp">
+                <view class="section">
+                    <view class="row section-title">
+                        <text class="title-1">标题单行</text>
+                    </view>
+                    <view class="row section-body">
+                        <text>描述文字的字数尽量控制在三行内，并且单行最右侧尽量不要是标点符号。</text>
+                    </view>
+                    <view class="row section-footer set-right">
+                        <text class="btn primary-btn">确定</text>
+                    </view>
+                </view>
+            </view>
+            <view class="section-wrp">
+                <view class="section">
+                    <view class="row section-title">
+                        <text class="title-1">标题单行</text>
+                    </view>
+                    <view class="row section-body">
+                        <view class="img-plh"></view>
+                        <text>描述文字的字数尽量控制在一行</text>
+                    </view>
+                    <view class="row section-footer set-right">
+                        <text class="btn primary-btn btn-bkr">知道了</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

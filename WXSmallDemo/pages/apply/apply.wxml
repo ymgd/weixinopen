@@ -1,0 +1,60 @@
+<view class="body">
+    <view style="height:80rpx;line-height: 80rpx;">
+        <image class="apply-choice" src="/images/type-2.png"></image>
+        <text>借款金额 (元)</text>
+        <text style="float:right;font-size:24rpx;color:#aaa;">剩余借款额度{{maxAmount}}元</text>
+    </view>
+    <view>
+        <radio-group class="radio-group" bindchange="moneyChange">
+            <label wx:for="{{moneyList}}" wx:for-index="idx" class="radio {{ idx === moneyIndex ? 'active' : ''}} {{item.disabled ? 'disabled' : ''}}">
+                <radio class="radio-item" value="{{item.name}}" checked="{{idx===0}}" disabled="{{item.disabled}}"/>{{item.value}}
+            </label>
+        </radio-group>
+    </view>
+    <view style="height:80rpx;line-height: 80rpx;" class="mar-top-60">
+        <image class="apply-choice" src="/images/date.png"></image>
+        <text>借款周期 (月)</text>
+    </view>
+    <view style="padding-bottom: 50rpx;">
+        <radio-group class="radio-group" bindchange="dateChange">
+            <label wx:for="{{dateList}}" wx:for-index="idx" class="radio {{ idx === dateIndex ? 'active' : ''}}">
+                <radio class="radio-item" value="{{item.value}}" checked="{{idx===0}}"/>{{item.value}}
+            </label>
+        </radio-group>
+    </view>
+</view>
+<view style="margin-top:20rpx;background-color:#fff;padding:25rpx;">
+    <view style="height:80rpx;line-height: 80rpx;">
+        <image class="apply-choice" src="/images/type.png"></image>
+        <text>还款说明</text>
+    </view>
+    <ul style="display:block;margin-left:42rpx;">
+        <li style="display:inline-block;width:100%;line-height:55rpx;">还款总额 <text style="float:right;">{{moneyAll}}元</text></li>
+        <li style="display:inline-block;width:100%;line-height:55rpx; color:#aaa;font-size:24rpx;">借款金额 <text style="float:right;">{{moneyAll}}元</text></li>
+        <li style="display:inline-block;width:100%;line-height:55rpx;color:#aaa;font-size:24rpx;">利息 <text style="float:right;">{{interest*loanloanDate*moneyAll/12}}元</text></li>
+        <li style="display:inline-block;width:100%;line-height:55rpx;color:#aaa;font-size:24rpx;">利息补贴 (由上海银行全额补贴)<text style="float:right;">-{{interest*loanloanDate*moneyAll/12}}元</text></li>
+    </ul>
+</view>
+<view style="border-width: 1px 0 0 0;border-color:#f0f0f0;border-style:solid;height:100rpx;line-height:100rpx;border:;background-color:#fff;padding: 0 25rpx 0 67rpx;">    
+    最迟还款日 <text style="float:right;">{{repayTime}}</text>
+</view>
+<view style="border-width: 1px 0 0 0;border-color:#f0f0f0;border-style:solid;height:100rpx;line-height:100rpx;background-color:#fff;padding: 0 25rpx 0 67rpx;">
+    还款方式<text style="float:right;">到期一次性还清，支持提前还清</text>
+</view>
+<view style="margin-top:20rpx;background-color:#fff;">
+    <view style="margin:25rpx;">
+        <view style="height:80rpx;line-height: 80rpx;">
+            <image class="apply-choice" src="/images/chat.png"></image>
+            <text>借款用途</text>
+        </view>
+    </view>        
+    <radio-group class="type-group" bindchange="typeChange">
+        <label wx:for="{{typeList}}" wx:for-index="idx" class="type-label {{ idx === typeIndex ? 'active' : ''}}">
+            <radio class="type-item" value="{{item.value}}" checked="{{idx===0}}"/>{{item.name}}
+        </label>
+    </radio-group>
+</view>
+<view style="margin-top:20rpx;background-color:#fff;padding:25rpx;">
+   <button class="btn-submit" loading="{{loading}}" disabled="{{disabled}}">向成功校友借款</button>
+   <view style="font-size:24rpx;text-align:center;margin:35rpx 0 10rpx;">点击按钮表示你已阅读并同意<navigator url="/pages/productInfo/productInfo">《借款协议》</navigator></view>
+</view>

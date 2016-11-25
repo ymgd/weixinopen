@@ -1,0 +1,95 @@
+'.source.js':
+  '设置当前页面标题':
+    'prefix': 'wxsetNavigationBarTitle'
+    'body': '''
+    wx.setNavigationBarTitle({
+      title: '${1:String}',
+      success: function(res) {
+        $2// success
+      }
+    })
+    '''
+  '显示导航条加载动画': 
+    'prefix': 'wxshowNavigationBarLoading'
+    'body': 'wx.showNavigationBarLoading()'
+  '隐藏导航条加载动画': 
+    'prefix': 'wxhideNavigationBarLoading'
+    'body': 'wx.hideNavigationBarLoading()'
+  '新窗口打开页面': 
+    'prefix': 'wxnavigateTo'
+    'body': '''
+    wx.navigateTo({
+      url: '${1:String}',
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''
+  '原窗口打开页面':
+    'prefix': 'wxredirectTo'
+    'body': '''
+    wx.redirectTo({
+      url: '${1:String}',
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''
+  '退回上一个页面':
+    'prefix': 'wxnavigateBack'
+    'body': '''
+    wx.navigateBack({
+      delta: ${1:1}, // 回退前 delta(默认为1) 页面
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''
+  '动画':
+    'prefix': 'wxcreateAnimation'
+    'body': '''
+    wx.createAnimation({
+      duration: ${1:400},
+      timingFunction: '${2:linear}', // "linear","ease","ease-in","ease-in-out","ease-out","step-start","step-end"
+      delay: ${3:0},
+      transformOrigin: '50% 50% 0',
+      success: function(res) {
+        $4//function code
+      }
+    })
+    '''
+  '创建绘图上下文':
+    'prefix': 'wxcreateContext'
+    'body': 'wx.createContext()'
+  '绘图':
+    'prefix': 'wxdrawCanvas'
+    'body': '''
+    wx.drawCanvas({
+      canvasId: '${1:String}',
+      actions: actions
+    })
+    '''
+  '隐藏键盘':
+    'prefix': 'wxhideKeyboard',
+    'body': 'wx.hideKeyboard()'
+  '停止下拉刷新动画':
+    'prefix': 'wxstopPullDownRefresh'
+    'body': 'wx.stopPullDownRefresh()'

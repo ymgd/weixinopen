@@ -1,0 +1,14 @@
+form{
+    width:100%;
+    box-sizing: border-box;
+}
+form .section{
+    display: flex;
+    padding:20rpx 0;
+}
+form .section__title{
+    width:200rpx;
+}
+form button{
+    margin-top:20rpx;
+}

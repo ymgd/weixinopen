@@ -1,0 +1,13 @@
+
+<view class="my" hidden="{{!modalHidden}}">
+    <image src="/images/my.jpg"/>
+    <view class="text">
+        <text>姓名:崔鹏程</text>
+        <text>职业:高级前端开发工程师</text>
+        <text>blog:tccpc.xyz</text>
+        <text>email:648593412@qq.com</text>
+        <text>Github:github.com/tccpc</text>
+    </view>
+</view>
+<import src="/pages/tpls/signin.wxml" />
+<template is="signin" data="{{modalHidden ,...userinfo}}"></template>

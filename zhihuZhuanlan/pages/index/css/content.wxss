@@ -1,0 +1,44 @@
+
+.content{
+     padding :0 30rpx;
+}
+
+.column-list{
+  display: block;
+} 
+
+.column-item{
+  margin-top: 80rpx;
+}
+.column-head{
+  width:  96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+  background-color: #eeeeee;
+  flex-shrink : 0;
+}
+ 
+.column-enter{
+  color: #50C87E;
+  font-size: 13px;
+   margin-left: 10rpx;
+ 
+ 
+}
+.column-title{
+  font-weight: bold;
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.column-desc{
+ color: gray;
+ font-size: 14px;  
+}
+
+
+.btn-change{
+  margin: 50px auto;
+} 

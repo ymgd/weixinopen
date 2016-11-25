@@ -1,0 +1,110 @@
+/**index.wxss**/
+
+@import "../weui.wxss";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #F0F4F3;
+}
+
+
+
+/**------feed的样式------**/
+.container .feed-item{
+  width: 690rpx;
+  padding: 30rpx 30rpx 20rpx;
+  margin: 7rpx 0 6rpx 0;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px #eeeeee;
+  display: inline-block;
+}
+/**---头部---**/
+.container .feed-item .feed-head{
+  width: 690rpx;
+  left: 10rpx;
+  height: 70rpx;
+}
+.container .feed-item .feed-head .feed-head-avatar{
+  width: 70rpx;
+  height: 70rpx;
+  margin: 0rpx;
+  border-radius: 50%;
+}
+.container .feed-item .feed-head .feed-head-name{
+  display: inline-block;
+  height: 40rpx;
+  padding-left: 2px;
+  vertical-align:40rpx;
+  margin: 0 0 0 10rpx;
+  color: #000;
+  font-size: 26rpx;
+}
+.container .feed-item .feed-head .feed-head-time{
+  height: 40rpx;
+  vertical-align:text-bottom;
+  margin-left:-52rpx;
+  color: #a0acac;
+  font-size: 22rpx;
+}
+/**---内容---**/
+.container .feed-item .feed-content{
+  padding: 10rpx 10 10 10;
+}
+.container .feed-item .feed-content .feed-content-text{
+  display: inline-block;
+  padding-top: 25rpx;
+  padding-left: 8rpx;
+  font-size: 28rpx;
+  font-weight: 600px;
+  line-height: 40rpx;
+}
+.container .feed-item .feed-content .feed-content-post image{
+  max-height: 250rpx;
+  margin: 10rpx 5rpx 5rpx -200rpx;
+}
+/**---底部---**/
+.container .feed-item .feed-actions {
+  width: 690rpx;
+  padding: 10rpx 0  0;
+  color: #a0acac;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.container .feed-item .feed-actions view{
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding: 0 10rpx 0 0;
+  font-size: 24rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+
+
+.weui-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.weui-flex__item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+
+.placeholder{
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+    margin: 5px;
+    color: #cfcfcf;
+}

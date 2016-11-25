@@ -1,0 +1,37 @@
+#deals {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 30rpx 30rpx;
+    justify-content: space-between;
+    /*width: 690rpx;*/
+}
+
+.sale-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.sale-item image {
+    width: 320rpx;
+    height: 320rpx;
+    border: 1rpx solid gray;
+}
+
+#search {
+    /*width: 690rpx;*/
+    margin:30rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search input {
+    width: 550rpx;
+    border: 1px solid #ddd;
+    font-size: 30rpx;
+}
+
+#search button {
+    margin-right: 0;
+}

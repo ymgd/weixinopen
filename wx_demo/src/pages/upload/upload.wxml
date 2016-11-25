@@ -1,0 +1,5 @@
+<!--logs.wxml-->
+<view class="container">
+    <button type="primary" loading="{{loading}}" plain="{{true}}"
+        disabled="{{disabled}}" bindtap="upload_click" hover-class="other-button-hover"> default </button>
+</view>

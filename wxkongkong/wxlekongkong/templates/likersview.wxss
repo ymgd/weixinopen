@@ -1,0 +1,13 @@
+.likersview {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+}
+
+.likersview .likerview {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 24rpx;
+    border-radius: 30rpx;
+}

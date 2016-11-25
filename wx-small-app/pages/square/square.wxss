@@ -1,0 +1,14 @@
+/**square.wxss**/
+.item {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+}
+.title{
+  font-size: 22px;
+  color: rgba(0,0,0,.7);
+}
+.content {
+  font: 16px;
+}

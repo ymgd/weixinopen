@@ -1,0 +1,219 @@
+.status-bar{
+    padding:0 24rpx;
+    height:88rpx;
+    line-height: 88rpx;
+    background: #fff;
+}
+.status-bar .avatar{
+    margin:14rpx 14px 0 0;
+    width:60rpx;
+    height:60rpx;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.status-bar .user-name{
+    font-size: 32rpx;
+}
+.status-bar .logout{
+    position: absolute;
+    right:24rpx;
+    top:0;
+    font-size: 28rpx;
+    color:#666
+}
+.status-bar .logout:before{
+    margin:34rpx 10rpx 0 0;
+    content:"";
+    width: 26rpx;
+    height:24rpx;
+    display: inline-block;
+    vertical-align: top;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAMAAADTXB33AAAAflBMVEUAAAD///////+qqqqqqqqZmZmfn5+bm5uenp6ampqZmZmZmZmbm5uampqbm5ubm5uampqbm5uZmZmampqZmZmampqbm5uampqZmZmampqampqZmZmampqZmZmampqampqZmZmampqZmZmampqZmZmampqZmZmZmZmZmZmZmZn2IOp1AAAAKXRSTlMAAQIGCQ8QHB0wMjxPUVJUVmtscnN5eomKlZelp7S1tr7AwcLm7fX2/eftftIAAACZSURBVHhejdLpDoMgEARg7CU9tPe9rj2wMu//gg2pqdjuJs4PAvkSwjHGWHL4xJE1cWyFNlXHCJw207QExeQQpDG4mABhodBoP9Vojnqh0OACv/4n5jDuPI5JRHHyGtehTGYF3MYtFejmodNT3nAJ3CciZS/Q7zG4CLL1OCXSlZMz/EZ9qEx73sPMiNTzKwnltwAM6lkbvWxvBxEdFzeEmecAAAAASUVORK5CYII=");
+    background-size: 26rpx 24rpx;
+}
+.pk{
+    margin-top:20rpx;
+    background: #fff
+}
+.pk .module{
+    padding:24px;
+    height:114rpx;
+}
+.pk .title{
+    display: block;
+    text-align: center;
+    font-size: 28rpx;
+    line-height: 28rpx;
+}
+.pk .buttons{
+    margin-top:24rpx;
+    height: 48rpx;
+    text-align: left;
+    overflow: hidden;
+}
+.pk .like,.pk .unlike{
+    width: 120rpx;
+    height: 48rpx;
+    line-height: 46rpx;
+    border-radius: 100rpx;
+    box-sizing:border-box;
+    background: #fff;
+    border-width:2rpx;
+    border-style: solid;
+    font-size: 24rpx;
+    text-align: center;
+}
+.pk .like{
+    float: left;
+    color:#EC5B3C;
+    border-color:#EC5B3C;
+}
+.pk .unlike{
+    float: right;
+    color:#999;
+    border-color:#999;
+}
+.pk progress{
+    margin-top: 10rpx
+}
+
+.comments caption{
+    margin-top: 20rpx;
+    height: 86rpx;
+    font-size: 32rpx;
+    font-weight: 900;
+    color: #333;
+    background-color: #fff;
+    display:block;
+    border-bottom: 1rpx solid #EFEFEF;
+}
+.comments caption text{
+    display: block;
+    height:82rpx;
+    line-height: 82rpx;
+    padding-left: 24rpx;
+}
+.comments caption text:after{
+    content: "";
+    display: block;
+    position: relative;
+    left: -24rpx;
+    bottom: -2rpx;
+    border-bottom: 3rpx solid #EC5B3C;
+    width: 290rpx;
+}
+.comments list-item{
+    position: relative;
+    margin-bottom: 10rpx;
+    background-color: #fff;
+    padding: 24rpx 24rpx 24rpx 104rpx;
+    box-sizing: border-box;
+}
+.comments .avatar{
+    position: absolute;
+    top:24rpx;
+    left: 24rpx;
+    background-color: #ddd;
+    width: 64rpx;
+    height: 64rpx;
+    border-radius: 50%;
+}
+.comments .user-name{
+    font-size: 26rpx;
+    color: #999;
+    height: 26rpx;
+    line-height: 26rpx;
+    margin:6px 0 14rpx;
+    display:block;
+}
+.comments .content{
+    font-size: 28rpx;
+    color: #333;
+    line-height: 40rpx;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.comments footer{
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 14rpx;
+    display:block;
+}
+.reply{
+    font-size:24rpx;
+    float: right;
+    color: #999;
+}
+.reply:before{
+    margin-top:8rpx;
+    content:"";
+    width: 24rpx;
+    height:24rpx;
+    margin-right: 10rpx;
+    vertical-align:top;
+    display: inline-block;
+    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAMFBMVEUAAACfn5+ampqXl5eZmZmXl5eZmZmYmJiZmZmZmZmYmJiYmJiZmZmZmZmZmZmZmZmaHuT5AAAAD3RSTlMAEDBAUGCPn8DP0N/g7/CGwj1zAAAAVklEQVQYlWOw/g8HmxneIzi/Gf4rMEAB03+G/wxwQICzHqT7JzLnF0E9NDMN2QvvgR5kUAd77g+DDdCDYhCfHgbJst7/4QDX9/+HAcKQPw4IE3sCYCwAJsFonUZssjoAAAAASUVORK5CYII=");
+    background-size: 24rpx 24rpx;
+}
+
+.borrow{margin:10rpx 0;padding:20rpx 34rpx 20rpx 20rpx; border-radius: 12rpx; color:#666; font-size:24rpx;background: #f5f5f5}
+.borrow .header{line-height: 24rpx;}
+.borrow-content{margin-top: 10rpx;color:#999; line-height: 36rpx;display: block}
+
+.comment-box{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    z-index: 11;
+}
+.comment-box .task{
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,.5);
+}
+.comment-box form{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:325rpx;
+    background: #efefef;
+    padding:0 30rpx;
+    box-sizing: border-box;
+    z-index: 12
+}
+.comment-box .title{
+    height:94rpx;
+    line-height: 94rpx;
+    display:block;
+    text-align:center;
+}
+.comment-box .submit,.comment-box .cancel{
+    position: absolute;
+    top:0;
+    line-height: 94rpx;
+    font-size:28rpx
+}
+.comment-box button{
+    padding:0;
+    right:30rpx;
+    background-color:#efefef;
+    font-size: 32rpx;
+    text-align: right;
+}
+.comment-box button:after{
+    display:none;
+}
+.comment-box .cancel{
+    left:30rpx;
+}
+.comment-box textarea{
+    padding:10rpx;
+    width:100%;
+    height:194rpx;
+    border:1rpx solid #c5c5c5;
+    background: #fff;
+    box-sizing: border-box;
+}

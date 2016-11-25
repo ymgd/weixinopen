@@ -1,0 +1,49 @@
+<import src="../template/nav.wxml"/>
+
+<view class="p_info">
+  <image class="head" mode="scaleToFill" src="http://seventh77.com/view/food/img/head.jpg"></image>
+  <text class="name commonText">Seventh Page</text>
+  <text class="nickname commonText">一位年轻的美食爱好者</text>
+  <text class="description commonText">热爱美食~热爱生活~</text>
+  <text class="description commonText">擅长黔菜~偶尔做西餐~</text>
+  <text class="description commonText">讨厌白萝卜~颜值大于味道~</text>
+  <text class="description commonText">梦想是开咖啡厅~要来捧场哦~</text>
+  <text class="contact commonText">微信：Seventh_Page</text>
+  <image class="wxQR" mode="scaleToFill" src="http://seventh77.com/view/food/img/weixin.jpg"></image>
+</view>
+
+<scroll-view scroll-y="true" class="moments">
+   <block wx:for="{{m_Cont}}" wx:key="index">
+      <view class="moment">
+        <navigator url="{{item.url}}" hover-class="none">
+          <view class="m_imgBox">
+            <image src="{{item.img}}" style="margin:{{item.margin}}" mode="aspectFill" class="m_img"></image>
+          </view>
+          <view class="m_cont">
+            <view class="m_nameBox">
+              <text class="m_name">{{item.name}}</text>
+              <text class="m_time">{{item.time}}</text>
+              <text class="m_Ename">{{item.Ename}}</text>
+            </view>
+            <text class="m_description">{{item.description}}</text>
+            <view class="d_s_z">
+              <view class="m_block">
+                <image src="../../images/food/heart.png" mode="scaleToFill" class="m_icon"></image>
+                <text class="icon_word">{{item.like}}</text>
+              </view>
+              <view class="m_block">
+                <image src="http://seventh77.com/img/icon/shoucang.png" mode="aspectFit" class="m_icon"></image>
+                <text class="icon_word">收藏</text>
+              </view>
+              <view class="m_block">
+                <image src="http://seventh77.com/img/icon/zhuanfa.png" mode="aspectFit" class="m_icon"></image>
+                <text class="icon_word">转发</text>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </block>
+</scroll-view>
+
+<template is="nav" data="{{...nav}}"/>

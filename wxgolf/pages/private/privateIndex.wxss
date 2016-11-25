@@ -1,0 +1,257 @@
+.top-remind-img{
+    display: flex;
+    width: 100%;
+    height: 50px;
+
+}
+/*分类*/
+.index-nav {
+  height: 90px;
+  display: flex;
+  left: 10px;
+  right: 10px;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  color: #646464;
+  border-bottom: 1px solid #eeeeee;
+}
+.index-nav view {
+  flex: 1;
+  flex-direction: column;
+}
+.index-nav image {
+  width: 50px;
+  height: 50px;
+}
+.index-nav text {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  margin-top: -10px;
+}
+.l-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-center-gray-line{
+    margin: 0px;
+    width: 100%;
+    height: 10px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.special-qiuchang-sign{
+  display: flex;
+  width: 100%;
+  height: 25px;
+  flex-direction:row;
+  border-bottom: 1px solid #eeeeee;
+  margin-left: 10px;
+}
+
+.special-qiuchang-img {
+  display: flex;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.special-qiuchang-text{
+  display: flex;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/*列表*/
+.recommand-qiuchang-body{
+  display: flex;
+  /*position: relative;*/
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+.recommand-qiuchang-item{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 80px;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #eeeeee; 
+}
+.recommand-qiuchang-img{
+  display: flex;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+
+}
+
+.recommand-qiuchang-meta{
+  display: flex;
+  margin-top: 0px;
+  margin-left: 80px;
+  width: 50%;
+  margin-right: 0px;
+  padding: 0px;
+  flex-direction:column;
+}
+.recommand-qiuchang-meta .recommand-qiuchang-title{
+  display: flex;
+  width: 280px;
+  height: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.recommand-qiuchang-meta .recommand-qiuchang-sub-title{
+  display: flex;
+  position: relative;
+  height: 20px;
+  width: 280px;
+  font-size: 12px;
+  margin-top: 5px;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.recommand-qiuchang-meta .recommand-qiuchang-sub-title .recommand-qiuchang-courseKind{
+  display: flex;
+  position: relative;
+  height: 20px;
+  width: 30%;
+  margin-right: 0px;
+  /*background-color: orange;*/
+}
+.recommand-qiuchang-meta .recommand-qiuchang-sub-title .recommand-qiuchang-courseData{
+  display: flex;
+  width: 30%;
+  position: relative;
+  height: 20px;
+  margin-right: 0px;
+  /*background-color: #eeeeee;*/
+}
+/*.recommand-qiuchang-meta .recommand-qiuchang-sub-title .recommand-qiuchang-distance{
+  display: flex;
+  width: 20%;
+  height: 20px;
+  background-color: #646464;
+  justify-content: center;
+  text-align: center;
+}*/
+
+.recommand-qiuchang-distance-view{
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 80px;
+  /*background-color: orchid;*/
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.recommand-qiuchang-price{
+  display: flex;
+  width: 100%;
+  height: 20px;
+  color: #ff9900;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+/*推荐商品列表*/
+.recommand-commodity-body{
+  display: flex;
+  /*position: relative;*/
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+.recommand-commodity-item{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 80px;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding: 0px;
+  flex-direction: column;
+  border-bottom: 1px solid #eeeeee; 
+}
+.recommand-commodity-img{
+  display: flex;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+
+}
+
+/*.recommand-commodity-meta{
+  display: flex;
+  margin-top: 0px;
+  margin-left: 80px;
+  width: 50%;
+  margin-right: 0px;
+  padding: 0px;
+  flex-direction:column;
+}*/
+.recommand-commodity-title{
+  /*display: flex;
+  position: relative;*/
+  width: 280px;
+  height: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+/*.recommand-commodity-meta .recommand-commodity-sub-title{
+  display: flex;
+  position: relative;
+  height: 20px;
+  width: 280px;
+  font-size: 12px;
+  margin-top: 5px;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+}*/
+
+.recommand-commodity-deliveryPrice{
+  background-color: orchid;
+
+}
+.recommand-commodity-saleCount{
+  width:100%;
+  font-size: 12px;
+  color:salmon;
+  margin-right: 10px;
+  background-color: orangered;
+}
+
+.recommand-commodity-price{
+  /*display: flex;*/
+  width: 100%;
+  height: 20px;
+  color: #ff9900;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 80px;
+  background-color: olivedrab;
+}

@@ -1,0 +1,65 @@
+<view>
+  <view class="section_title">button</view>
+  <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}"
+          bindtap="default" hover-class="other-button-hover">default</button>
+  <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}"
+          bindtap="primary">primary</button>
+  <button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="warn">
+  warn
+  </button>
+  <button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
+  <button bindtap="setPlain">点击设置以上按钮plain属性</button>
+  <button bindtap="setLoading">点击设置以上按钮loading属性</button>
+</view>
+<view>
+  <view class="section_title">checkbox-group</view>
+  <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{checkboxData.items}}" wx:key="*this">
+      <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+      {{item.value}}
+    </label>
+    </checkbox-group>
+  </view>
+  <view>
+    <view class="section_title">form</view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="section section_gap">
+        <view class="section__title">switch</view>
+        <switch name="switch" />
+      </view>
+      <view class="section section_gap">
+        <view class="section__title">slider</view>
+        <slider name="slider"show-value></slider>
+      </view>
+      <view class="section">
+        <view class="section__title">input</view>
+        <input name="input" placeholder="please input here" />
+      </view>
+      <view class="section section_gap">
+        <view class="section__title">radio</view>
+        <radio-group name="radio-group">
+          <label>
+            <radio value="radio1" />
+            radio1</label>
+            <label>
+              <radio value="radio2" />
+              radio2</label>
+            </radio-group>
+          </view>
+          <view class="section section_gap">
+            <view class="section__title">checkbox</view>
+            <checkbox-group name="checkbox">
+              <label>
+                <checkbox value="checkbox1" />
+                checkbox1</label>
+                <label>
+                  <checkbox value="checkbox2" />
+                  checkbox2</label>
+                </checkbox-group>
+              </view>
+              <view class="btn-area">
+                <button formType="submit">Submit</button>
+                <button formType="reset">Reset</button>
+              </view>
+            </form>
+          </view>

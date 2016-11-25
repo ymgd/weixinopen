@@ -1,0 +1,26 @@
+{
+  "name": "wechat devtools extension",
+  "version": "0.2",
+  "description": "Add appData & storage panel for WEPT",
+  "devtools_page": "devtools.html",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "background",
+    "tabs",
+    "activeTab",
+    "http://localhost/"
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["http://localhost/*"],
+    "js": ["content_script.js"],
+    "run_at": "document_start"
+  }],
+  "manifest_version": 2
+}

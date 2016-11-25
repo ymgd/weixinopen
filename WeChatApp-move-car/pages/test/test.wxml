@@ -1,0 +1,10 @@
+<!--test.wxml-->
+<view class="userinfo">
+    <text>test</text>
+</view>
+<view>
+    <text>test</text>
+</view>
+<view>
+    <text>test</text>
+</view>

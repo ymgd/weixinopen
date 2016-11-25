@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="swiperview">
+        <swiper class="swiperitem" indicator-dots="{{indicatordos}}" autoplay="{{autoplay}}"
+          bindchange="displaychange" duration="1000" interval="2000"
+          vertical="{{vertical}}"
+        >
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+                <image src="{{item}}"></image>
+            </swiper-item>
+        </block>
+        </swiper>
+    </view>
+    <view vlass="bottomview">
+        <button type="default" bindtap="changeautodisplay" class="bottomButton">autodisplay:{{autoplay?"YES":"NO"}}</button>
+        <button type="default" bindtap="changeindicator" class="bottomButton">indicatordots:{{autoplay?"YES":"NO"}}</button>
+        <button type="default" bindtap="changevertical" class="bottomButton">水平:{{autoplay?"YES":"NO"}}</button>
+    </view>
+</view>

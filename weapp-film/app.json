@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/details/details"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF4D64",
+    "navigationBarTitleText": "淘票",
+    "backgroundColor":"#FFF",
+    "navigationBarTextStyle":"white"
+  }
+}

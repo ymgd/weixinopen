@@ -1,0 +1,33 @@
+{
+    "WeApp app": {
+        "prefix": "wa-app",
+        "body": [
+            "let param: AppParam = {",
+            "\tonLaunch: function () {",
+            "\t\t$1",
+            "\t},",
+            "\tonShow: function () {",
+            "\t\t$2",
+            "\t},",
+            "\tonHide: function () {",
+            "\t\t$3",
+            "\t}",
+            "};",
+            "",
+            "App(param);"
+        ]
+    },
+    "WeApp page": {
+        "prefix": "wa-page",
+        "body": [
+            "let ${0:pageName};",
+            "",
+            "Page({",
+            "\tdata: {$1},",
+            "\tonLoad: function () {",
+            "\t\t${0:pageName} = this;",
+            "\t}",
+            "});"
+        ]
+    }
+}

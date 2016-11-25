@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/cinema/cinema",
+    "pages/myself/myself"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "娱票儿",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar":{
+    "color":"#dbdbdb",
+    "selectedColor": "#1296db",
+    "borderStyle":"white",
+    "list":[
+      {
+        "text":"电影",
+        "pagePath":"pages/movie/movie",
+        "iconPath":"img/movie.png",
+        "selectedIconPath":"img/movie-active.png"
+      },
+      {
+        "text":"电影院",
+        "pagePath":"pages/cinema/cinema",
+        "iconPath":"img/cinema.png",
+        "selectedIconPath":"img/cinema-active.png"
+      },
+      {
+        "text":"我的",
+        "pagePath":"pages/myself/myself",
+        "iconPath":"img/myself.png",
+        "selectedIconPath":"img/myself-active.png"
+      }
+
+    ]
+  }
+}

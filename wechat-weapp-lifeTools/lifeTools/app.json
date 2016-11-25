@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/air_quality/air_quality",
+    "pages/air_quality/result"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "空气质量查询",
+    "navigationBarTextStyle":"white"
+
+  }
+}

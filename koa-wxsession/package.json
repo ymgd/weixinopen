@@ -1,0 +1,33 @@
+{
+  "name": "koa-wxsession",
+  "version": "0.9.0",
+  "description": "Wechat session authorization and validation middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dreamacro/koa-wxsession.git"
+  },
+  "keywords": [
+    "koa",
+    "wechat",
+    "middleware",
+    "session"
+  ],
+  "author": "Dreamacro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dreamacro/koa-wxsession/issues"
+  },
+  "homepage": "https://github.com/Dreamacro/koa-wxsession#readme",
+  "devDependencies": {
+    "debug": "^2.3.2"
+  },
+  "dependencies": {
+    "lru-cache": "^4.0.1",
+    "redis": "^2.6.3",
+    "superagent": "^2.3.0"
+  }
+}

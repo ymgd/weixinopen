@@ -1,0 +1,47 @@
+<!--movement-->
+<view class="container">
+  <scroll-view scroll-y="true"  class="scroll-wrapper"  scroll-into-view="{{toView}}" bindscrolltolower="lower">
+        <!--列表模板方式-->
+        <block wx:for="{{movementList}}">
+            <template is="items" data="{{...item}}"/>
+        </block>
+        <!--传统方式-->
+       <!--<view class="scroll-view-item" wx:for="{{movementList}}" data-id="{{item.id}}"  style="background:#fff url('{{item.Record.AppCoverUrl}}')" >
+            <view class="mask">
+                <view class="item-center">
+                    <text class="title item-title">{{item.Record.TitleCN}}</text>
+                    <text  class="title item-subtitle">{{item.Record.TitleEN}}</text>
+                </view>
+                <view class="item-user">
+                    <image class="item-user-cover" src="{{item.User.Avatar}}"></image>
+                    <text class="item-user-name">{{item.User.NickName}}</text>
+                </view>
+                <text class="item-time">{{item.CreateTime}}</text>
+            </view>
+      </view>-->
+      
+    </scroll-view>
+
+   
+    <!--模板-->
+    <template name="items">
+        <navigator url="../recorddetail/recorddetail?id=101" hover-class="navigator-hover">
+            <view class="scroll-view-item"  data-id="{{id}}"  style="background:#fff url('{{Record.AppCoverUrl}}')" >
+                    <view class="mask">
+                        <view class="item-center">
+                            <text class="title item-title">{{Record.TitleCN}}</text>
+                            <text  class="title item-subtitle">{{Record.TitleEN}}</text>
+                        </view>
+                        <view class="item-user">
+                            <image class="item-user-cover" src="{{User.Avatar}}"></image>
+                            <text class="item-user-name">{{User.NickName}}</text>
+                        </view>
+                        <text class="item-time">{{CreateTime}}</text>
+                    </view>
+            </view>
+        </navigator>
+      </template>
+
+</view>
+
+

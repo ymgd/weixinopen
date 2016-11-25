@@ -1,0 +1,8 @@
+{
+    "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#f3f2f7",
+    "navigationBarTitleText": "借款申请",
+    "navigationBarTextStyle":"black"
+  }
+}

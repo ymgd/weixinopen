@@ -1,0 +1,17 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="top-bar">
+                <view wx:for="{{tabs}}" wx:for-item="tab" id="{{tab.id}}" class="top-bar-item {{tab.current}} {{tab.sort_type}}" bindtap="tabTap">
+                    <view class="tab-content">
+                        <text>{{tab.name}}</text>
+                         <view class="sort-op">
+                            <view class="triangle-up"></view>
+                            <view class="triangle-down"></view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

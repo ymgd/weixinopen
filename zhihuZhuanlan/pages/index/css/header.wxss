@@ -1,0 +1,36 @@
+
+/**
+ * 头部内容
+ */
+.header{
+  position: relative;
+  margin-top : -70px;
+}
+
+.header-bg{
+  width: 100%;
+  height: 450px;
+}
+
+.header-logo{
+  width : 129px;
+  height: 178px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -59.5px;
+  margin-top: -66px;
+}
+
+.header-title{
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #2a2a2a;
+  letter-spacing: .5em;
+  position: absolute;
+  bottom: 85px;
+  font-size: 18px;
+  left: 0;
+ 
+}

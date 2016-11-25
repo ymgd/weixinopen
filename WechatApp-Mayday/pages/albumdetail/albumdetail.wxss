@@ -1,0 +1,6 @@
+/**albumdetail.wxss**/
+
+.name {
+    font-size: 14px;
+    padding: 20px;
+}

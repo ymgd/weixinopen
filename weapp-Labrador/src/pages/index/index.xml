@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="userinfo" catchtap="handleViewTap">
+    <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
+    <text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+  </view>
+  <view class="usermotto">
+    <component key="motto" name="title"/>
+  </view>
+  <component key="list"/>
+  <component key="counter"/>
+</view>

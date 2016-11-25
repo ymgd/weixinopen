@@ -1,0 +1,1507 @@
+{
+  "F:\\project\\weapp-labrador\\src\\app.js": {
+    "mtime": "Wed Nov 16 2016 13:52:29 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\regenerator\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\regenerator\\index.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\asyncToGenerator.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\asyncToGenerator.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\classCallCheck.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\classCallCheck.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\createClass.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\createClass.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\index.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\app.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": {
+    "mtime": "Wed Nov 16 2016 13:54:03 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\regenerator\\index.js": {
+    "mtime": "Wed Nov 16 2016 13:54:15 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\regenerator-runtime\\runtime-module.js": "F:\\project\\weapp-labrador\\dist\\npm\\regenerator-runtime\\runtime-module.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\regenerator\\index.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\regenerator-runtime\\runtime-module.js": {
+    "mtime": "Wed Nov 16 2016 13:54:00 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-own-property-names.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-own-property-names.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\typeof.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\typeof.js",
+      "F:\\project\\weapp-labrador\\node_modules\\regenerator-runtime\\runtime.js": "F:\\project\\weapp-labrador\\dist\\npm\\regenerator-runtime\\runtime.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\regenerator-runtime\\runtime-module.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-own-property-names.js": {
+    "mtime": "Wed Nov 16 2016 13:54:08 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\get-own-property-names.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\get-own-property-names.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-own-property-names.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\get-own-property-names.js": {
+    "mtime": "Wed Nov 16 2016 13:54:22 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.get-own-property-names.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.get-own-property-names.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_core.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_core.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\get-own-property-names.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.get-own-property-names.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-sap.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-sap.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gopn-ext.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gopn-ext.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.get-own-property-names.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-sap.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_export.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_export.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_core.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_core.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_fails.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_fails.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-sap.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_export.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_global.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_core.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_core.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_ctx.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_ctx.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_hide.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_hide.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_export.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_global.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_global.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_core.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_core.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_ctx.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_a-function.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_a-function.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_ctx.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_a-function.js": {
+    "mtime": "Wed Nov 16 2016 13:54:22 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_a-function.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_hide.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-dp.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-dp.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_property-desc.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_property-desc.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_descriptors.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_descriptors.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_hide.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-dp.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_an-object.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_an-object.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_ie8-dom-define.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_ie8-dom-define.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-primitive.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-primitive.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_descriptors.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_descriptors.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-dp.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_an-object.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_is-object.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_is-object.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_an-object.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_is-object.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_is-object.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_ie8-dom-define.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_descriptors.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_descriptors.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_fails.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_fails.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_dom-create.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_dom-create.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_ie8-dom-define.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_descriptors.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_fails.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_fails.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_descriptors.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_fails.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_fails.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_dom-create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_dom-create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-primitive.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-primitive.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_property-desc.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_property-desc.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gopn-ext.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-iobject.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-iobject.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gopn.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gopn.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gopn-ext.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-iobject.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iobject.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iobject.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_defined.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_defined.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-iobject.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iobject.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_cof.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_cof.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iobject.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_cof.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_cof.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_defined.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_defined.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gopn.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-keys-internal.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-keys-internal.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_enum-bug-keys.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_enum-bug-keys.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gopn.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-keys-internal.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_has.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_has.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_array-includes.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_array-includes.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_shared-key.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_shared-key.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-keys-internal.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_has.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_has.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_array-includes.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-length.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-length.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-index.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-index.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_array-includes.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-length.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-integer.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-integer.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-length.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-integer.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-integer.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-index.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-index.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_shared-key.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_shared.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_shared.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_uid.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_uid.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_shared-key.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_shared.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_shared.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_uid.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_uid.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_enum-bug-keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_enum-bug-keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\typeof.js": {
+    "mtime": "Wed Nov 16 2016 13:54:15 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\symbol\\iterator.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\symbol\\iterator.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\symbol.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\symbol.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\typeof.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\symbol\\iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:12 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\symbol\\iterator.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\symbol\\iterator.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\symbol\\iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\symbol\\iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:21 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.string.iterator.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.string.iterator.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\web.dom.iterable.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\web.dom.iterable.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_wks-ext.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_wks-ext.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\symbol\\iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.string.iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_string-at.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_string-at.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-define.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-define.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.string.iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_string-at.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_string-at.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-define.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_library.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_library.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_redefine.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_redefine.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iterators.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iterators.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-create.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-create.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_set-to-string-tag.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_set-to-string-tag.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gpo.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gpo.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_wks.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_wks.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-define.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_library.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_library.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_redefine.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_redefine.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iterators.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iterators.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-create.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-create.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_set-to-string-tag.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_set-to-string-tag.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_wks.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_wks.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-dps.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-dps.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_html.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_html.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-dps.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-keys.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-keys.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-dps.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_html.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_html.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_set-to-string-tag.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_wks.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_wks.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_set-to-string-tag.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_wks.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_wks.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gpo.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-object.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-object.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gpo.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_to-object.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_to-object.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\web.dom.iterable.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.array.iterator.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.array.iterator.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\web.dom.iterable.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.array.iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_add-to-unscopables.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_add-to-unscopables.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-step.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-step.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.array.iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_add-to-unscopables.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_add-to-unscopables.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-step.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-step.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_wks-ext.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_wks-ext.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\symbol.js": {
+    "mtime": "Wed Nov 16 2016 13:54:05 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\symbol\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\symbol\\index.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\symbol.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\symbol\\index.js": {
+    "mtime": "Wed Nov 16 2016 13:54:21 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.symbol.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.symbol.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.to-string.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.to-string.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es7.symbol.async-iterator.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es7.symbol.async-iterator.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es7.symbol.observable.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es7.symbol.observable.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\symbol\\index.js": {
+    "mtime": "Wed Nov 16 2016 13:54:43 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.symbol.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_meta.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_meta.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_wks-define.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_wks-define.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_keyof.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_keyof.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_enum-keys.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_enum-keys.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_is-array.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_is-array.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gopd.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gopd.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-pie.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-pie.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gops.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gops.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.symbol.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_meta.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_meta.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_wks-define.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_wks-define.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_keyof.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_keyof.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_enum-keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gops.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gops.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-pie.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-pie.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_enum-keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gops.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gops.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-pie.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-pie.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_is-array.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_is-array.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-gopd.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-gopd.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.to-string.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.to-string.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es7.symbol.async-iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es7.symbol.async-iterator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es7.symbol.observable.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es7.symbol.observable.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\regenerator-runtime\\runtime.js": {
+    "mtime": "Wed Nov 16 2016 13:54:01 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\promise.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\promise.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\set-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\set-prototype-of.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\create.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\create.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\typeof.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\typeof.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\symbol.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\symbol.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\regenerator-runtime\\runtime.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\promise.js": {
+    "mtime": "Wed Nov 16 2016 13:54:05 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\promise.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\promise.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\promise.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\promise.js": {
+    "mtime": "Wed Nov 16 2016 13:54:19 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.promise.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.promise.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\promise.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.promise.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_classof.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_classof.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_an-instance.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_an-instance.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_for-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_for-of.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_species-constructor.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_species-constructor.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_task.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_task.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_microtask.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_microtask.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_redefine-all.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_redefine-all.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_set-species.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_set-species.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-detect.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-detect.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.promise.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_classof.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_classof.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_an-instance.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_an-instance.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_for-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-call.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-call.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_is-array-iter.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_is-array-iter.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\core.get-iterator-method.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\core.get-iterator-method.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_for-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-call.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-call.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_is-array-iter.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_is-array-iter.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\core.get-iterator-method.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\core.get-iterator-method.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_species-constructor.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_species-constructor.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_task.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js",
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_invoke.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_invoke.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_task.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_invoke.js": {
+    "mtime": "Wed Nov 16 2016 13:54:25 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_invoke.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_microtask.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_microtask.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_redefine-all.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_redefine-all.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_set-species.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\global.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\global.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_set-species.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_iter-detect.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_iter-detect.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\set-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:09 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\set-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\set-prototype-of.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\set-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\set-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:22 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.set-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.set-prototype-of.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\set-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.set-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_set-proto.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_set-proto.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.set-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_set-proto.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_set-proto.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:09 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\create.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\create.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:22 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.create.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.create.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.create.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\asyncToGenerator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:13 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\asyncToGenerator.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\classCallCheck.js": {
+    "mtime": "Wed Nov 16 2016 13:54:13 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\classCallCheck.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\createClass.js": {
+    "mtime": "Wed Nov 16 2016 13:54:15 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\define-property.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\define-property.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\createClass.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\define-property.js": {
+    "mtime": "Wed Nov 16 2016 13:54:09 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\define-property.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\define-property.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\define-property.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\define-property.js": {
+    "mtime": "Wed Nov 16 2016 13:54:22 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.define-property.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.define-property.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\define-property.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.define-property.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.define-property.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\labrador\\index.js": {
+    "mtime": "Wed Nov 16 2016 13:54:03 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\keys.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\keys.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\promise.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\promise.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\typeof.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\typeof.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\create-page.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\create-page.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\component.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\component.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\list.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\list.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\prop-types.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\prop-types.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\index.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:09 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\keys.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\keys.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:22 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.keys.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.keys.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.keys.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\labrador\\create-page.js": {
+    "mtime": "Wed Nov 16 2016 13:54:04 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\assign.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\assign.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\keys.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\keys.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\json\\stringify.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\json\\stringify.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-own-property-names.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-own-property-names.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\create-page.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\assign.js": {
+    "mtime": "Wed Nov 16 2016 13:54:08 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\assign.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\assign.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\assign.js": {
+    "mtime": "Wed Nov 16 2016 13:54:44 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\assign.js": {
+    "mtime": "Wed Nov 16 2016 13:54:22 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.assign.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.assign.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\assign.js": {
+    "mtime": "Wed Nov 16 2016 13:54:45 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.assign.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-assign.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-assign.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.assign.js": {
+    "mtime": "Wed Nov 16 2016 13:54:45 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\_object-assign.js": {
+    "mtime": "Wed Nov 16 2016 13:54:24 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\_object-assign.js": {
+    "mtime": "Wed Nov 16 2016 13:54:45 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\json\\stringify.js": {
+    "mtime": "Wed Nov 16 2016 13:54:12 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\json\\stringify.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\json\\stringify.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\json\\stringify.js": {
+    "mtime": "Wed Nov 16 2016 13:54:45 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\json\\stringify.js": {
+    "mtime": "Wed Nov 16 2016 13:54:20 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\json\\stringify.js": {
+    "mtime": "Wed Nov 16 2016 13:54:45 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\labrador\\component.js": {
+    "mtime": "Wed Nov 16 2016 13:54:02 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\keys.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\keys.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\assign.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\assign.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\json\\stringify.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\json\\stringify.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\component.js": {
+    "mtime": "Wed Nov 16 2016 13:54:45 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\labrador\\list.js": {
+    "mtime": "Wed Nov 16 2016 13:54:04 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\assign.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\assign.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\keys.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\keys.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\json\\stringify.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\json\\stringify.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\list.js": {
+    "mtime": "Wed Nov 16 2016 13:54:45 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\labrador\\prop-types.js": {
+    "mtime": "Wed Nov 16 2016 13:54:01 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\typeof.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\typeof.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\prop-types.js": {
+    "mtime": "Wed Nov 16 2016 13:54:45 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\src\\components\\counter\\counter.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-prototype-of.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\classCallCheck.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\classCallCheck.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\createClass.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\createClass.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\possibleConstructorReturn.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\possibleConstructorReturn.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\inherits.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\inherits.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\index.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\components\\counter\\counter.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:10 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\get-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\get-prototype-of.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\fn\\object\\get-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:22 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.get-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.get-prototype-of.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\fn\\object\\get-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\core-js\\library\\modules\\es6.object.get-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:23 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\core-js\\library\\modules\\es6.object.get-prototype-of.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\possibleConstructorReturn.js": {
+    "mtime": "Wed Nov 16 2016 13:54:14 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\possibleConstructorReturn.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\inherits.js": {
+    "mtime": "Wed Nov 16 2016 13:54:13 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\inherits.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\src\\components\\counter\\counter.test.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\components\\counter\\counter.test.js": {},
+  "F:\\project\\weapp-labrador\\src\\components\\item\\item.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-prototype-of.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\classCallCheck.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\classCallCheck.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\createClass.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\createClass.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\possibleConstructorReturn.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\possibleConstructorReturn.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\inherits.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\inherits.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\index.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\components\\item\\item.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\src\\components\\list\\list.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\regenerator\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\regenerator\\index.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\asyncToGenerator.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\asyncToGenerator.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-prototype-of.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\classCallCheck.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\classCallCheck.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\createClass.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\createClass.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\possibleConstructorReturn.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\possibleConstructorReturn.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\inherits.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\inherits.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\index.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\components\\list\\list.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\src\\components\\list\\list.test.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\components\\list\\list.test.js": {},
+  "F:\\project\\weapp-labrador\\src\\components\\title\\title.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-prototype-of.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\classCallCheck.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\classCallCheck.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\createClass.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\createClass.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\possibleConstructorReturn.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\possibleConstructorReturn.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\inherits.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\inherits.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\index.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\components\\title\\title.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\src\\pages\\index\\index.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\regenerator\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\regenerator\\index.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\asyncToGenerator.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\asyncToGenerator.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-prototype-of.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\classCallCheck.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\classCallCheck.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\createClass.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\createClass.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\possibleConstructorReturn.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\possibleConstructorReturn.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\inherits.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\inherits.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\index.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\pages\\index\\index.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\src\\pages\\index\\index.test.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\pages\\index\\index.test.js": {},
+  "F:\\project\\weapp-labrador\\src\\pages\\logs\\logs.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\regenerator\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\regenerator\\index.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\asyncToGenerator.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\asyncToGenerator.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\object\\get-prototype-of.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\object\\get-prototype-of.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\classCallCheck.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\classCallCheck.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\createClass.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\createClass.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\possibleConstructorReturn.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\possibleConstructorReturn.js",
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\helpers\\inherits.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\helpers\\inherits.js",
+      "F:\\project\\weapp-labrador\\node_modules\\labrador\\index.js": "F:\\project\\weapp-labrador\\dist\\npm\\labrador\\index.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\pages\\logs\\logs.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\src\\utils\\random-color.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\utils\\random-color.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\src\\utils\\util.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {
+      "F:\\project\\weapp-labrador\\node_modules\\babel-runtime\\core-js\\promise.js": "F:\\project\\weapp-labrador\\dist\\npm\\babel-runtime\\core-js\\promise.js"
+    },
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\utils\\util.js": {
+    "mtime": "Wed Nov 16 2016 13:54:46 GMT+0800 (中国标准时间)",
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\src\\utils\\util.test.js": {
+    "mtime": "Wed Nov 16 2016 13:52:30 GMT+0800 (中国标准时间)",
+    "depends": {},
+    "v": "0.5.12"
+  },
+  "F:\\project\\weapp-labrador\\dist\\utils\\util.test.js": {}
+}

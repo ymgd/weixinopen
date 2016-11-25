@@ -1,0 +1,11 @@
+<view class="search">
+    <input bindinput="bindKeyInput" placeholder-style="color:gray" placeholder="请输入查询信息"/>
+</view>
+<radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+<view class="start_search">
+    <button bindtap="startSearch" hover-class="none">开始查询</button>
+</view>

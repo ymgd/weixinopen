@@ -1,0 +1,99 @@
+page {
+    height: 100%;
+}
+.container {
+    background: #EFEFF4;
+    padding: 0;
+}
+
+.section {
+    font-size: 34rpx;
+}
+
+.section-header {
+    font-size: 28rpx;
+    color: #888888;
+}
+
+.section-header .section-row-wrp {
+    background: inherit;
+}
+
+.section-header .section-row {
+    border-bottom:none;
+    padding: 40rpx 0 20rpx 0;
+}
+
+.section-row-wrp {
+    background: #ffffff;
+    padding-left: 30rpx;
+}
+
+.section-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2rpx solid #E5E5E5;
+    padding: 9rpx 30rpx 9rpx 0;
+}
+
+.section-body .section-row-wrp:last-child .section-row{
+    border-bottom: none;
+}
+
+.chevron_icon {
+    width: 16rpx;
+    height: 25rpx;
+}
+
+.section-row-big {
+    line-height: 45rpx;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+}
+
+.section-row-big text{
+    margin-right: 30rpx;
+}
+
+.section-body.drop-list-box .section-row-wrp {
+    background: rgba(255, 255, 255, .7);
+    padding-left:0;       
+}
+
+.section-body.drop-list-box  .section-row {
+    justify-content: center;
+    padding: 31rpx 0;
+    font-size: 36rpx;
+}
+
+.no-border-bottom {
+    border-bottom: 0;
+}
+
+.section-row-wrp.cancel {
+    margin-top: 12rpx;
+}
+
+.sub-info {
+    font-size: 26rpx;
+    color: #9B9B9B;
+}
+
+.section.footer .section-row {
+    justify-content: flex-start;
+    border-bottom: 0;
+    padding-left: 30rpx;
+    padding-top: 50rpx;
+}
+
+.footer checkbox {
+    margin-right: 10rpx;
+}
+
+.link {
+    color:#576B95;
+}
+
+
+

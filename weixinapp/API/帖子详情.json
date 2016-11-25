@@ -1,0 +1,25 @@
+
+{
+	"deviceType":"ios9.0",
+	"uid":"oW2wBwUJF_7pvDFSPwKfSWzFbc5o",
+	"versionCode":"1.0",
+	"timestamp":"1479174892808",
+	"sign":"817AF07823E5CF86031A8A34FB593D1EC12A5499D66EBA10E7C4B6D034EF1C67A9C8FE9FF2A33F82",
+	"id":"3",
+	"artId":"11826224"
+}
+
+{
+	"result": true,
+	"msg": "查询成功",
+	"obj": {
+		"DetailsUrl": "minisnsapp/detail/11826224",
+		"CommentCounts": 0,
+		"PraiseCounts": 2
+	},
+	"objArray": null,
+	"errcode": 0,
+	"pageIndex": 0,
+	"totalPage": 0,
+	"totalCount": 0
+}

@@ -1,0 +1,11 @@
+/*样式表*/
+.header{
+    margin: 10rpx;
+    text-align: center;
+}
+.list-item{
+    margin-bottom: 50rpx;
+    padding: 10rpx;
+    border: 1px solid #eee;
+    cursor: pointer;
+}

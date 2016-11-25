@@ -1,0 +1,21 @@
+<view class="content">
+    <view class = "logo">
+        <image mode="aspectFit" src="/images/logo.png"></image>
+    </view>
+    <form bindsubmit="formSubmit">
+        <view class="input-area">
+          <input id="username" name="username" maxlength='40' type="text" placeholder="邮箱/手机号" />
+          <input id="password" name="password" maxlength='20' type="password" placeholder="密码" />
+        </view>
+        <view class="btn-area">
+            <button  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"   formType="submit"  loading="{{btnLoading}}"> {{loginBtnTxt}} </button>
+            <view class="txt-area">
+                <navigator redirect url="../findpassword/index"><text class="forgot-password">忘记密码？</text></navigator>
+                <navigator redirect url="../regist/index"><text class="register">注册账号</text></navigator> 
+            </view>
+        </view>
+    </form>
+
+    <!--<progress class="myprogress" percent="{{percent }}" color="{{color}}" active/>-->
+    
+</view>

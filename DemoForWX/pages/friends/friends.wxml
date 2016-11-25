@@ -1,0 +1,15 @@
+<view class="main_title">
+    点击可查看具体信息哦~
+</view>
+<view class="main_body">
+    <block wx:for="{{friends}}">
+        <view class="item" bindtap="tapfriend" data-gametag="{{item.AppDisplayName}}">
+            <view class="avatar-box"><image src="{{item.AppDisplayPicRaw}}" class="userinfo-avatar"/></view>
+            <view class="data-box">
+                <view class="name-box">{{item.AppDisplayName}}</view>
+                <view class="score-box">成就:{{item.Gamerscore}}</view>
+            </view>
+        </view>
+        <view class="clear"></view>
+    </block>
+</view>

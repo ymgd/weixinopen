@@ -1,0 +1,50 @@
+.section{
+    label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+        text{
+            width:70px;
+            text-align: right;
+        }
+        input{
+            flex: 1;
+            border-bottom: 1rpx solid #999;
+        }
+    }
+}
+.my{
+    display: flex;
+    border: 1px solid #999;
+    margin: 10px;
+    @media screen and (max-width: 320px){
+        image{
+            height: 180px;
+        }
+    }
+    @media screen and (max-width: 400px) and (min-width: 321px){
+        image{
+            height: 230px;
+        }
+    }
+    @media screen and (min-width: 401px) {
+        image{
+            height: 230px;
+        }
+    }
+    image{
+        padding: 10px;
+        width: 150px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        color: #555;
+        font-size: 14px;
+        padding-top: 10px;
+        text{
+            padding: 5px 0;
+        }
+    }
+}

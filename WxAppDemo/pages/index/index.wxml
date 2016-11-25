@@ -1,0 +1,3 @@
+<view>
+  <view class="text" bindtap="onRedirect">Rank !</view>
+</view>

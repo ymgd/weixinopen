@@ -1,0 +1,12 @@
+<view class="page">
+    <scroll-view lower-threshold="50" scroll-y="true" style="height: 100%;" bindscrolltolower="onLoadMore">
+        <view wx:for="{{list}}" class='list singleline' bindtap='OnItemClick' data-index='{{index}}'>
+            <image class='album_img' data-index='{{index}}' mode="scaleToFill" src="{{item.img}}"></image>
+            <text class='album_name' data-index='{{index}}'>{{item.name}}</text>
+        </view>
+    </scroll-view>
+    <image class='floating_action_button' src="../../assets/submit.png"></image>
+    <!--    <modal class="modal" no-cancel>
+            <image class='modal_image' mode='aspectFit' src="http://7xqkyh.com1.z0.glb.clouddn.com/image/mayday/album/%E4%BA%94%E6%9C%88%E5%A4%A9%20-%20EP.jpg"></image>
+        </modal>-->
+</view>

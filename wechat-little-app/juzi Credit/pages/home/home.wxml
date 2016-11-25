@@ -1,0 +1,25 @@
+<!--计时圈-->
+<view class="time">
+
+    <!--圆圈-->
+	<view class="big-circle">
+		
+		<!--中间的橘黄色圆-->
+		<view class="middleCircle"></view>
+		<!--文字-->
+		<view class="date">
+		<text>365</text>
+		<text>评估时间:2016-07-12</text>
+		
+		</view>
+
+	</view>
+
+	<!--按钮-->
+	<button size="mini" type="default"  bindtap="btnClick" hover-class="other-button-hover"> 信用提升 </button>
+
+
+ 
+
+</view>
+

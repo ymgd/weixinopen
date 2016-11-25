@@ -1,0 +1,37 @@
+/**
+ * 应用css
+ */
+.search{
+    padding:10px;
+    text-align:center;
+}
+.search-input{
+    background-color:#EFEFF2;
+    border-radius:5px;
+    font-size:13px;
+    padding:4px 0;
+    color:#A39E9E;
+}
+.search-input .placeholder::before{
+    content: url('image/search.png');
+    margin-right: 8px;
+}
+
+.ul-list{
+    margin : 0;
+    padding: 0;
+}
+.ul-list .li-item{
+    border-bottom: 1px solid #e5e5e5;
+}
+.ul-list .li-item:last-child{
+    border-bottom: none;
+}
+.ul-list .li-item:active{
+    background-color: #f7f7f7;
+}
+
+.divider-line{
+   height: 1px;
+   background-color: #e5e5e5;
+}

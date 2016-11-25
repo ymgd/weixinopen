@@ -1,0 +1,41 @@
+
+.logo, .title, .copyleft {
+    text-align: center;
+}
+.logo {
+    margin-top: 40rpx;
+}
+.logo image {
+    width: 100px;
+    height: 100px;
+}
+.title {
+    margin-top: 20rpx;
+    font-size: 34rpx;
+}
+.infos {
+    padding: 0 40rpx;
+    margin-top: 100rpx;
+    border-top: 1px solid #b2b2b2;
+    line-height: 3;
+}
+.item {
+    border-bottom: 1rpx solid #b2b2b2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.item .label {
+    font-size: 34rpx;
+}
+.item .content {
+    font-size: 28rpx;
+    color: #888888;
+}
+.copyleft {
+    position: absolute;
+    bottom: 10rpx;
+    width: 100%;
+    color: #888888;
+    font-size: 22rpx;
+}

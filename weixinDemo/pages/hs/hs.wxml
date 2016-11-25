@@ -1,0 +1,28 @@
+<scroll-view scroll-y="true" style="height: ;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+    <view class="section">
+    <view class="flex-wrp">
+        <view class="flex-item bc_green">1</view>
+        <view class="flex-item bc_red">2</view>
+        <view class="flex-item bc_blue">3</view>
+    </view>
+    </view>
+    <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+    </block>
+    </swiper>
+</scroll-view>
+<progress percent="20" show-info />
+<progress percent="40" stroke-width="20" />
+<progress percent="60" color="pink" />
+<progress percent="60" active />
+<!--<map longitude="113.324520" latitude="23.099994" markers="{{markers}}" covers="{{covers}}" style="width: 375px; height: 200px;"></map>-->
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button>

@@ -1,0 +1,60 @@
+.baitiao-area{
+    margin-top: 20rpx;
+}
+
+.baitiao-top{
+    height: 216rpx;
+}
+
+.baitiao-top-area{
+    flex:1;
+    padding-top: 48rpx;
+    padding-left: 32rpx;
+}
+
+.baitiao-top-right{
+    margin-right: 32rpx;
+    line-height: 216rpx;    
+}
+
+.baitiao-desp1{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #999999;
+    letter-spacing: 0rpx;
+}
+
+.baitiao-desp2{   
+   font-family: SanFranciscoDisplay-Semibold;
+   font-size: 66rpx;
+   color: #424954;
+   line-height: 80rpx;   
+}
+
+.baitiao-grid{
+    border-top: 1rpx solid #eee;
+    height: 162rpx;   
+}
+
+.baitiao-grid-item{
+   flex: 1;
+   padding-top: 38rpx;   
+   padding-left: 32rpx;
+}
+
+.baitiao-desp3{
+    font-family: PingFangSC-Regular;
+    font-size: 32rpx;
+    color: #333333;
+    letter-spacing: 0rpx;
+    line-height: 46rpx;
+}
+
+
+.baitiao-desp4{
+   font-family: PingFangSC-Light;
+   font-size: 28rpx;
+   color: #999999;
+   line-height: 40rpx;
+}

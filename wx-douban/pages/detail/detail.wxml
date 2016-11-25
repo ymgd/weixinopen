@@ -1,0 +1,42 @@
+<import src="../common/templates.wxml" />
+<template is="pageLoading" data="{{pageLoadingHide}}" />
+
+<view class="page">
+    <block wx:if="{{fail}}">
+        <view class="errorTips">{{data}},请刷新重试</view>
+    </block>
+    <block wx:else>
+        <view class="banner"><image src="{{data.images.large}}" mode="aspectFit"></image></view>
+
+        <view class="info">
+            <view class="title">{{data.title}}</view>
+            <view class="txt">评分: <text class="c-red">{{data.rating.average}}</text> / <text class="c-red">{{data.wish_count}}</text>人想看</view>
+            <view class="txt">
+                <block wx:for="{{data.directors}}">{{item.name}}(导演) /</block>
+                <block wx:for="{{data.casts}}"> {{item.name}} /</block>
+            </view>
+            <view class="txt">类型:
+                <block wx:for="{{data.genres}}"> {{item}} /</block>
+            </view>
+            <view class="txt">{{data.year}}上映</view>
+        </view>
+
+        <view class="summary">
+            <text class="title">剧情简介</text>
+            <view class="txt">{{data.summary}}</view>
+        </view>
+
+        <view class="casts">
+            <text class="title">主演</text>
+            <view class="list">
+                <block wx:for="{{data.casts}}">
+                    <view class="listItem">
+                        <view class="img"><image src="{{item.avatars.medium}}"></image></view>
+                        <text class="name">{{item.name}}</text>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </block>
+
+</view>

@@ -1,0 +1,30 @@
+.container{
+    padding: .3rem .2rem;
+    display: block;
+    background-color: #fffbef;
+}
+.tags-box{
+    margin-bottom: 1rem;
+}
+.tags_title{
+    background: url("../../img/books.png") no-repeat 0 center #c4f2dd;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: .3rem 2rem;
+    color: darkcyan;
+    border-bottom:2px solid #a6e3c7;
+    background-size: 2rem;
+}
+.tag{
+    margin:.2rem .4rem;
+    padding: .2rem .3rem;
+    font-size: .8rem;
+    display: inline-block;
+    border:2px dotted #ddd;
+    border-radius: .2rem;
+    color: #666;
+    cursor: pointer;
+}
+.tag-hover{
+    background-color: #ddd;
+}

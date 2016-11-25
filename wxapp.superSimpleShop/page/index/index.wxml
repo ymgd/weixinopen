@@ -1,0 +1,46 @@
+<view class="container">
+    <view id="head-swiper">
+        <swiper indicator-dots="true" autoplay="true">
+            <swiper-item>First Picture</swiper-item>
+            <swiper-item>Second Picture</swiper-item>
+            <swiper-item>Third Picture</swiper-item>
+        </swiper>
+    </view>
+
+    <view id="search">
+        <input type="text" bindinput="inputSearch"></input>
+        <button size="mini" bindtap="search">搜索</button>
+    </view>
+
+    <!--there is a bug here, that the row flex will not work if simply using iteration through the deals. So hack here-->
+    <view id="deals" wx:for="{{deals}}" wx:if="{{index%2 == 0}}" wx:key="pid">
+        <view class="sale-item">
+            <navigator url="../item/item?index={{index}}">
+                <image src="/image/{{deals[index].image}}.jpg"></image>
+            </navigator>
+            <text>{{deals[index].name}}</text>
+            <text>￥{{deals[index].price}}</text>
+        </view>
+        <view class="sale-item" wx:if="{{index+1 < deals.length}}">
+            <navigator url="../item/item?index={{index+1}}">
+                <image src="/image/{{deals[index+1].image}}.jpg"></image>
+            </navigator>
+            <text>{{deals[index+1].name}}</text>
+            <text>￥{{deals[index+1].price}}</text>
+        </view>
+    </view>
+
+    <!--this should work once the bug has been fixed-->
+    <!-- /*
+    <view id="deals" wx:for="{{deals}}" wx:for-item="item">
+        <view class="sale-item">
+            <navigator url="../item/item?index={{index}}">
+                <image src="/image/{{item.image}}.jpg"></image>
+            </navigator>
+            <text>{{item.name}}</text>
+            <text>{{item.price}}</text>
+        </view>
+    </view>    
+    */ -->
+
+</view>

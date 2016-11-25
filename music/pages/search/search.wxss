@@ -1,0 +1,20 @@
+.search{
+    background: #eee;
+    padding: 30rpx 10rpx 20rpx;
+}
+.search input{
+    width: 97%;
+    height: 60rpx;
+    padding-left: 3%;
+    line-height: 60rpx;
+    border-radius: 10rpx;
+    margin: 0 auto;
+    margin-bottom: 10rpx;
+    background: #fff;
+    font-size: 30rpx;
+}
+.search button{
+    height: 60rpx;
+    font-size: 30rpx;
+    line-height: 60rpx;
+}

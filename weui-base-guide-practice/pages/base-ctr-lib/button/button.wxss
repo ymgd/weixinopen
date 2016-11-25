@@ -1,0 +1,52 @@
+.container {
+    background:#ffffff;
+}
+
+.main {
+    padding:16rpx;
+}
+
+.content{
+    margin:20rpx 40rpx;
+}
+
+.res-area{
+    height:100rpx;
+    text-align: center;
+}
+
+.op-area{
+    margin-top: 50rpx;
+    font-size: 28rpx;
+}
+
+.table {
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.tr {
+    display:flex;
+    justify-content:space-between;
+    padding:14rpx;
+    border-bottom: 2rpx solid #e7e7eb;
+}
+
+.theader{
+   background-color:#f6f8f9;
+   border-bottom:none;
+}
+
+.td {
+  display:inline-block;
+  width:100%;
+  padding:10rpx;
+}
+
+
+
+picker{
+    display:inline-block;
+    width:100%;
+    order:1;
+}

@@ -1,0 +1,34 @@
+<view class="container">
+   <ul class="list">
+      <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="./map/map" hover-class="navigator-hover">map(调用腾讯地图)</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="./canvas/canvas" hover-class="navigator-hover">canvas</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="./scrollView/scrollView" hover-class="navigator-hover">scroll-view</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="./swiper/swiper" hover-class="navigator-hover">swiper</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+         <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="./pullDownRefresh/pullDownRefresh" hover-class="navigator-hover">下拉刷新&上拉加载</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+    </ul>
+</view>

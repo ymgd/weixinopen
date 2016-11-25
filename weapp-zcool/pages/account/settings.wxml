@@ -1,0 +1,32 @@
+<view class="settings">
+  <view class="settings-list">
+    <view class="settings-item">
+      <text class="settings-text">新消息通知</text>
+      <switch class="settings-switch" checked bindchange="netSwitchChange"/>
+    </view>
+    <view class="settings-item no-border">
+      <text class="settings-text">声音</text>
+      <switch class="settings-switch" bindchange="netSwitchChange"/>
+    </view>
+  </view>
+  <view class="settings-list">
+    <view class="settings-item">
+      <text class="settings-text">2G/3G/4G网络下载图片</text>
+      <switch class="settings-switch" checked bindchange="netSwitchChange"/>
+    </view>
+    <view class="settings-item no-border" bindtap="clearCache">
+      <text class="settings-text">清除缓存</text>
+      <text class="settings-desc">{{cache}}</text>
+    </view>
+  </view>
+  <view class="settings-list">
+    <view class="settings-item">
+      <text class="settings-text">客服电话</text>
+      <text class="settings-desc">{{tel}}</text>
+    </view>
+    <view class="settings-item no-border">
+      <text class="settings-text">关于站酷</text>
+      <text class="settings-desc">{{version}}</text>
+    </view>
+  </view>
+</view>

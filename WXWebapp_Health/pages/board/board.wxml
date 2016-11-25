@@ -1,0 +1,35 @@
+<view class="container">
+    <view class="slide">
+        <swiper indicator-dots="true" autoplay="true" interval="8000" duration="1000">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" width="355" height="150" mode="aspectFill"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view class="describe">
+        <text></text>
+    </view>
+    <view class="board">
+        <navigator url="../list/list?type=list" hover-class="none">
+            <view class="board-item">
+                <text>生活贴士</text>
+                <image class= "images" src="../../images/arrowright.png" mode="aspectFill"></image>
+            </view>
+        </navigator>
+        <navigator url="../list/list" hover-class="none">
+            <view class="board-item">
+                <text>健康知识</text>
+                <image class= "images" src="../../images/arrowright.png" mode="aspectFill"></image>
+            </view>
+        </navigator>
+        <navigator url="../list/list" hover-class="none">
+            <view class="board-item">
+                <text>健康菜谱</text>
+                <image class= "images" src="../../images/arrowright.png" mode="aspectFill"></image>
+            </view>
+        </navigator>
+    </view>
+</view>

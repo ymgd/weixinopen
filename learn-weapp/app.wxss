@@ -1,0 +1,111 @@
+/*.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10% 0;
+  box-sizing: border-box;
+} */
+page {
+  position: relative;
+  height: 100%;
+  font-family: 'microsoft yahei ui'
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: flex-start;
+}
+
+.common-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.common-item {
+  position: relative;
+  border-bottom: 1px solid #EEE;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-bottom: 16rpx;
+  padding-top: 16rpx;
+  min-height: 106rpx;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.common-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  justify-content: space-between;
+}
+
+.common-info {
+    font-size: 26rpx;
+    color:darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    text-overflow: ellipsis
+}
+
+.common-title {
+  font-size: 32rpx;
+  width: 100%;
+  text-overflow: ellipsis
+}
+
+
+.float-action {
+  position: absolute;
+  bottom: 26rpx;
+  right: 26rpx;
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 50%;
+  box-shadow: 2px #AAA;
+  background: #1E90FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  opacity:.8;
+}
+
+.refresh-footer {
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+.hidden{
+  display: none;
+}
+
+.more{
+    width: 24px;
+    height: 44px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E90FF;
+    border:2px solid #1E90FF;
+}
+
+.more-img{
+    width: 3px;
+    height: 14px;
+    padding-right: 24px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+<view>
+    <view class="row">
+        <view class="cell">1/2</view>
+        <view class="cell">1/2</view>
+    </view>
+    <view class="row">
+        <view class="cell">1/3</view>
+        <view class="cell">1/3</view>
+        <view class="cell">1/3</view>
+    </view>
+    <view class="row">
+        <view class="cell">1/4</view>
+        <view class="cell">1/4</view>
+        <view class="cell">1/4</view>
+        <view class="cell">1/4</view>
+    </view>
+</view>

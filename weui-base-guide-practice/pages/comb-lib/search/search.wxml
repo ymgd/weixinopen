@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="top-bar-wrp">
+                <view class="top-bar">
+                    <input class="search" type="text" auto-focus="{{input.auto_focus}}" placeholder-class="search-ph"   bindfocus="{{input.focus}}" bindblur="{{input.blur}}" />
+                    <view class="input-ph {{input.placeholder.hidden}}" bindtap="phTap">
+                        <image class="search-icon" src="{{search_png.src}}" />
+                        <text class="sub">搜索</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

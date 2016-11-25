@@ -1,0 +1,17 @@
+<!-- 推荐 -->
+
+<import src="../../template/rec_index.wxml" />
+
+<view class="nav">
+	<navigator>
+		<text class="nav-list act">推荐</text>
+	</navigator>
+	<navigator url="../joke/joke">
+		<text class="nav-list">段子</text>
+	</navigator>
+	<navigator url="../pic/pic">
+		<text class="nav-list">趣图</text>
+	</navigator>
+</view>
+
+<template is="rec_list" data="{{req}}" />

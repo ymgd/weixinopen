@@ -1,0 +1,103 @@
+page{
+    background: #f2ebe3;
+}
+.cart{
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+    image{
+        width: 66px;
+        height: 66px;
+        margin-bottom: 20px;
+    }
+
+}
+.baoyou{
+    font-size: 18px;
+    color: #DB2929;
+    padding: 10px;
+}
+.goods{
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    image{
+        width:80px;
+        height: 80px;
+        border: 1px solid #ddd;
+    }
+    .good-cont{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        color: #555;
+        font-size: 14px;
+        padding: 5px;
+        height: 100px;
+        .goods-navigator{
+            display: flex;
+            flex:2;
+        }
+        .good-price{
+            display: flex;
+            flex-direction: column;
+            flex:3;
+            .price{
+                font-size: 16px;
+                color: #ec5151;
+
+            }
+            .btn-box{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                image{
+                    width:23px;
+                    height: 23px;
+                    border: 0;
+                    margin: 0;
+                }
+            }
+            .btn{
+                display: flex;
+                flex-direction: row;
+                input{
+                    margin: 0;
+                    width:40px;
+                    text-align: center;
+                    border: 1px solid #eee;
+                    font-size: 16px;
+                    height: 28px;
+                }
+                button{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+.total{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    .total_text{
+        display: flex;
+        color:#777;
+        text{
+            color:#ec5151;
+        }
+    }
+    .total_js{
+        color: #fff;
+        background: #ec5151;
+        height: 30px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "wxa-compressor",
+  "version": "0.0.1",
+  "description": "微信小程序代码压缩器",
+  "scripts": {
+    "clean": "gulp clean --silent",
+    "dev": "gulp watch --silent",
+    "build": "gulp prod --silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nbagonet/wxa-compressor.git"
+  },
+  "keywords": [],
+  "author": "wangshuov <nbagonet@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jslint": "^1.0.5",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-logger": "0.0.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uglyfly": "^1.4.2",
+    "pump": "^1.0.1",
+    "uglify-js": "^2.7.4"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "pages": [
+        "pages/newsDetail/newsDetail"
+    ],
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#fd7736",
+        "backgroundColor": "#efeff4"
+    },
+    "tabBar": {
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}

@@ -1,0 +1,173 @@
+<view class="head">
+  <!--用一个循环创建三个标题-->
+  <block wx:for-items="{{titles}}" wx:for-item="title">
+              
+                <view class="title-item" bindtap="titleClick" id="{{index}}">
+                      
+                      <!--上面的图片-->
+                      <image class="title-item-image" src="{{title.url}}" />
+                      
+                      <!--下面的文字-->
+                      <text class="title-item-content">{{title.title}}</text>
+
+                </view>
+              
+    </block>
+
+
+</view>
+
+<view class="body">
+   
+                            
+                
+     
+ <scroll-view   class="scroll-view" 
+                scroll-x="true" 
+                style="width:100%" 
+            
+                bindscroll="scroll" 
+                scroll-into-view="{{toView}}" 
+                scroll-left="{{scrollLeft}}">
+    <!--红色-->
+        <view id="red"  class="scroll-view-item bc_red">
+          <!-- 第一道横线-->
+          <view class="hr"></view>
+          <!--左边的小模块-->
+          <view class="leftGapView"></view>
+          <!--中间的文字区域-->
+          <view class="red-title">手机通讯录绑定</view>
+          <!-- 第二道横线-->
+          <view class="hr"></view>
+                <!--下面body区域-->
+                <view class="body-body">
+                    <view class="body-top">
+                      <image class="red-icon" src="../../images/update/icon_tongxunlu_larg.png" />
+                      <text>通讯录</text>
+                    </view>  
+                    
+                    <!--说明信息-->
+                    <view class="body-middle">
+                        <text class="body-middle-text">{{contactInfo.intro}}</text>
+                    </view> 
+                    
+                    <!--同意通讯录-->
+                    <view class="body-bottom">
+                        <!--左边一个checkbox，右边一个横幅-->
+                        <view class="body-bottom-container"> 
+                          <checkbox-group bindchange="checkboxOne">
+                            <checkbox checked="{{!contactInfo.checked}}"/>   
+                          </checkbox-group>
+                      
+                          <text class="checkboxText">{{contactInfo.value}}</text>  
+                        </view>
+                    </view>
+
+                    <!--绑定按钮-->
+                    
+                    <button type="warn" bindtap="bindContacts" disabled="{{contactInfo.checked}}">绑定授权</button>
+
+                    
+                              
+                </view>
+          
+          
+          
+        </view>
+
+<!--黄色-->
+        <!--中间部分-->
+        <view id="yellow" class="scroll-view-item bc_yellow">
+            <!-- 第一道横线-->
+            <view class="hr"></view>
+            <!--左边的小模块-->
+          <view class="leftGapView"></view>
+            <!--中间的文字区域-->
+            <view class="red-title">支付宝绑定</view>
+            <!-- 第二道横线-->
+            <view class="hr"></view>
+                  <!--下面body区域-->
+                <view class="body-body">
+                  
+                      <view class="body-top">
+                        <image class="yellow-icon" src="../../images/update/icon_alipay.png" />
+                      
+                      </view>  
+                      
+                      <!--说明信息-->
+                      <view class="body-middle">
+                          <text class="body-middle-text">{{alipayInfo.intro}}</text>
+                      </view> 
+                      
+                      <!--同意通讯录-->
+                      <view class="body-bottom">
+                          <!--左边一个checkbox，右边一个横幅-->
+                          <view class="body-bottom-container">
+                            <checkbox-group bindchange="checkboxTwo">
+                              <checkbox checked="{{!alipayInfo.checked}}"/>
+                            </checkbox-group>
+                            <text class="checkboxText">{{alipayInfo.value}}</text> 
+                          </view>
+                      </view>
+
+                      <!--绑定按钮-->
+                      
+                      <button type="warn" bindtap="bindAlipay" disabled="{{alipayInfo.checked}}">绑定支付宝</button>
+
+                                
+                  </view>
+            
+            
+        </view>
+
+<!--蓝色-->
+        <view id="blue" class="scroll-view-item bc_blue">
+            <!-- 第一道横线-->
+            <view class="hr"></view>
+            <!--左边的小模块-->
+          <view class="leftGapView"></view>
+            <!--中间的文字区域-->
+            <view class="red-title">芝麻信用绑定</view>
+            <!-- 第二道横线-->
+            <view class="hr"></view>
+                <!--下面body区域-->
+                <view class="body-body">
+                    
+                    <view class="body-top-blue">
+                      <image class="blue-icon" src="../../images/update/icon_zhimaxinyong.png" />
+                    </view>  
+                    
+                    
+                    <!--说明信息-->
+                    <view class="body-middle">
+                        <text class="body-middle-text">{{seasameInfo.intro}}</text>
+                    </view> 
+                    
+                    <!--同意通讯录-->
+                    <view class="body-bottom">
+                        <!--左边一个checkbox，右边一个横幅-->
+                        <view class="body-bottom-container">
+                          <checkbox-group bindchange="checkboxThree">
+                            <checkbox checked="{{!seasameInfo.checked}}"/>
+                          </checkbox-group>
+                          <text class="checkboxText">{{seasameInfo.value}}</text> 
+                        </view>
+                    </view>
+
+                    <!--绑定按钮-->
+                    
+                    <button type="warn" bindtap="bindSeasame" disabled="{{seasameInfo.checked}}">绑定授权</button>
+                    <!--  {{seasameInfo.checked}} -->
+                  
+                </view>
+                 
+
+           
+
+
+        </view>
+    </scroll-view>
+                
+            
+
+</view>

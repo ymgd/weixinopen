@@ -1,0 +1,30 @@
+
+<view class="page">
+  <view class="page__hd page__bd_spacing">
+
+    <view class="weui-cells weui-cells_form">
+    <form bindsubmit="submit_key" >
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">key</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="app_key" value="{{app_key}}" placeholder="请输入阿里云 key"/>
+        </view>
+
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">secret</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="app_secret" value="{{app_secret}}" placeholder="请输入阿里云 secret"/>
+        </view>
+
+      </view>
+      <button class="weui-btn weui-btn_primary" type="primary" 
+         form-type="submit">保存</button>
+    </form>
+    </view>
+  </view>
+</view>

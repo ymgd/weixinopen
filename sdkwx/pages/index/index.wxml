@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="http://tva2.sinaimg.cn/crop.0.0.300.300.180/0060D6Ocjw8f73hdm78htj308c08cq36.jpg" background-size="cover"></image>
+    <text class="userinfo-nickname">SDK.cn</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">SDK.CN - 中国领先的开发者服务平台</text>
+  </view>
+  <view class="into" bindtap="articleIndex">
+    <text class="">打开开发之旅</text>
+  </view>
+</view>

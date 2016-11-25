@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "todo",
+    "navigationBarBackgroundColor": "#000000",
+    "backgroundColor": "#fbf9fe"
+  }
+}

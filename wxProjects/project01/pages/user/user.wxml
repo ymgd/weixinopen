@@ -1,0 +1,133 @@
+<!--logs.wxml-->
+<view class="container set-bg">
+
+    <view class="section">
+
+        <view class="u-1">
+            <navigator class="u-set" url="../setManager/set">设置</navigator>
+            <text class="u-name">liudi</text>
+            <view class="u-1-pic">
+                <image src="../../images/u_u.jpg"/>
+            </view>
+        </view>
+
+         <view class="u-2">
+           <view class="u-list">
+                <navigator class="u-item" url="#">
+                    <text>400</text>
+                    <text>收藏的宝贝</text>
+                </navigator>
+                 <navigator class="u-item" url="#">
+                    <text>400</text>
+                    <text>收藏的店铺</text>
+                </navigator>
+                 <navigator class="u-item" url="#">
+                    <text>400</text>
+                    <text>我的足迹</text>
+                </navigator>
+           </view>
+        </view>
+           
+    </view>
+
+     <view class="section bor-b mt">
+        <view class="order-act mt">
+            <view class="order-item">
+                <view class="icon icon-pay"></view>
+                <text>待付款</text>
+            </view>
+             <view class="order-item">
+                <view class="icon icon-send"></view>
+                <text>待发货</text>
+            </view>
+             <view class="order-item">
+                <view class="icon icon-deliver"></view>
+                <text>待收货</text>
+            </view>
+             <view class="order-item">
+                <view class="icon icon-evaluate"></view>
+                <text>待评价</text>
+            </view>
+             <view class="order-item">
+                <view class="icon icon-refund"></view>
+                <text>退款/售后</text>
+            </view>
+        </view>
+        <view class="order_list f32 pl bor-t">
+             <navigator class="o-item flex" url="#">
+                <span class="o-s">
+                 <i class="icon o-i"></i>
+                </span>
+                <span class="o-c">全部订单</span>
+                <span class="o-all f12">查看全部订单<i class="arrow"></i></span>
+             </navigator>
+        </view>
+    </view>
+
+    <view class="section mt">
+      <view class="core-entry pl f32">
+              <navigator class="label-act flex" url="#">
+                 <span class="c-s">
+                    <i class="icon o-s"></i>
+                </span>
+                <view class="c-c flex bor-b">
+                    <text>购物车</text>
+                    <i class="arrow"></i>
+                </view>
+             </navigator>
+              <navigator class="label-act la2 flex" url="#">
+                 <span class="c-s">
+                    <i class="icon o-s"></i>
+                </span>
+                <view class="c-c flex bor-b">
+                    <text>搜索</text>
+                    <i class="arrow"></i>
+                </view>
+             </navigator>
+             
+              <navigator class="label-act la3 flex" url="#">
+                 <span class="c-s">
+                    <i class="icon o-s"></i>
+                </span>
+                <view class="c-c flex bor-b">
+                    <text>支付宝</text>
+                    <i class="arrow"></i>
+                </view>
+             </navigator>
+              <navigator class="label-act la4 flex" url="#">
+                 <span class="c-s">
+                    <i class="icon o-s"></i>
+                </span>
+                <view class="c-c flex bor-b">
+                    <text>旺旺</text>
+                    <i class="arrow"></i>
+                </view>
+             </navigator>
+        </view>
+    </view>
+
+    <view class="section mt mb">
+      <view class="core-entry pl  bor-b f32">
+              <navigator class="label-act la5 flex" url="#">
+                 <span class="c-s">
+                    <i class="icon o-s"></i>
+                </span>
+                <view class="c-c flex bor-b">
+                    <text>我的彩票</text>
+                    <i class="arrow"></i>
+                </view>
+             </navigator>
+              <navigator class="label-act la6 flex" url="#">
+                 <span class="c-s">
+                    <i class="icon o-s"></i>
+                </span>
+                <view class="c-c flex">
+                    <text>我的机票</text>
+                    <i class="arrow"></i>
+                </view>
+             </navigator>
+      
+        </view>
+    </view>
+
+</view>

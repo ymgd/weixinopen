@@ -1,0 +1,20 @@
+<import src="../common/tab.wxml" />
+<import src="../common/list.wxml" />
+
+
+<view class="container">
+    <scroll-view scroll-y="true" bindscrolltolower="nextPage">
+        <template is="nav" data="{{nav_list: nav_list, tabActive: tabActive}}" />
+
+        <swiper class="song_pic" indicator-dots="true" autoplay="true" interval="5000">
+            <block wx:for="{{picUrls}}" wx:key="{{index}}">
+                <swiper-item>
+                    <image src="{{item}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+
+        <template is="song_list" data="{{song_list: song_list}}" />
+
+    </scroll-view>
+</view>

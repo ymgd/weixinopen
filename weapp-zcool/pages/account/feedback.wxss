@@ -1,0 +1,11 @@
+.feedback-textarea {
+  width: 100%;
+  min-height: 200rpx;
+  font-size: 30rpx;
+  padding: 10rpx;
+  border-bottom: 1px solid #e4e6e6;
+  margin-bottom: 40rpx;
+}
+.feedback-submit {
+  margin: 0 30rpx;
+}

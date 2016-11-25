@@ -1,0 +1,126 @@
+'.source.js':
+  '发起网络请求':
+    'prefix': 'wxrequest'
+    'body': '''
+    wx.request({
+      url: 'https://${1:URL}',
+      data: {},
+      method: '${2:GET}', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function(res){
+        ${3}// success
+      },
+      fail: function() {
+        ${4}// fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+    '''
+  '上传文件':
+    'prefix': 'wxuploadFile'
+    'body': '''
+    wx.uploadFile({
+      url: 'https://String',
+      filePath:'filePath',
+      name:'name',
+      // header: {}, // 设置请求的 header
+      // formData: {}, // HTTP 请求中其他额外的 form data
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+    '''
+  '下载文件':
+    'prefix': 'wxdownloadFile'
+    'body': '''
+    wx.downloadFile({
+      url: "https://URL",
+      // type: 'image', // 下载资源的类型，用于客户端识别处理，有效值：image/audio/video
+      // header: {}, // 设置请求的 header
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+    '''
+  '创建 WebSocket 连接':
+    'prefix': 'wxconnectSocket'
+    'body': '''
+    wx.connectSocket({
+      url: "wss://URL",
+      data: {},
+      // header: {}, // 设置请求的 header
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+    '''
+  '监听 WebSocket 打开':
+    'prefix': 'wxonSocketOpen'
+    'body': '''
+    wx.onSocketOpen(function() {
+      // callback
+    })
+    '''
+  '监听 WebSocket 错误':
+    'prefix': 'wxonSocketError'
+    'body': '''
+    wx.onSocketError(function() {
+      // callback
+    })
+    '''
+  '发送 WebSocket 消息':
+    'prefix': 'wxsendSocketMessage'
+    'body': '''
+    wx.sendSocketMessage({
+      data: 'String',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+    '''
+  '接受 WebSocket 消息':
+    'prefix': 'wxonSocketMessage'
+    'body': '''
+    wx.onSocketMessage(function(data) {
+      // data
+    })
+    '''
+  '关闭 WebSocket 连接':
+    'prefix': 'wxcloseSocket'
+    'body': '''
+    wx.closeSocket()
+    '''
+  '监听 WebSocket 关闭':
+    'prefix': 'wxonSocketClose'
+    'body': '''
+    wx.onSocketClose(function() {
+      // callback
+    })
+    '''

@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/case/list/list",
+    "pages/pic/list/list",
+    "pages/pic/detaile/detaile",
+    "pages/designer/designer",
+    "pages/case/detaile/detaile",
+    "pages/yuyue/yuyue"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#e64340",
+    "navigationBarTitleText": "家居在线",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar":{
+    "color":"#fff",
+    "selectedColor":"#e64340",
+    "backgroundColor":"#000",
+    "list":[
+      {
+        "text":"案例",
+        "pagePath":"pages/case/list/list",
+        "iconPath":"images/case.png",
+        "selectedIconPath":"images/case1.png"
+      },
+      {
+        "text":"图库",
+        "pagePath":"pages/pic/list/list",
+        "iconPath":"images/pic.png",
+        "selectedIconPath":"images/pic1.png"
+      },
+      {
+        "text":"预约",
+        "pagePath":"pages/yuyue/yuyue",
+        "iconPath":"images/yuyue.png",
+        "selectedIconPath":"images/yuyue1.png"
+      }
+    ]
+  }
+}

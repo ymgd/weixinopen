@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/board/board",
+    "pages/list/list",
+    "pages/item/item",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#35495e",
+    "navigationBarTitleText": "电影麻辣烫",
+    "navigationBarTextStyle":"white"
+  }
+}

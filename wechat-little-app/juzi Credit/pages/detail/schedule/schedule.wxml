@@ -1,0 +1,50 @@
+<view class="container">
+
+  <view class="menu-list">
+    <block wx:for-items="{{menuList}}" wx:for-item="menuItem">
+      <view class="menu-item">
+        <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
+          <view class="menu-item-title"> 
+            <text class="menu-item-name">{{menuItem.name}}</text>
+            <text class="menu-item-name">{{menuItem.amount}}元</text>
+          </view>
+          <view class="rightContainer">
+            <text>材料核实</text>
+            <image
+                class="menu-item-arrow {{menuItem.opened ? 'open' : 'close'}} {{menuItem.url ? 'url' : ''}}"
+                src="../../../images/arrowright.png">
+            </image>
+          
+          </view>
+        </view>
+
+        <!--折叠单身部分-->
+        <view class="menu-item-api-list {{menuItem.opened ? 'open' : 'close'}}">
+             <view class="menu-item-api-item" style="{{index === 0 ? 'border-top:none;' : ''}}">
+                    <view class="menu-item-api-item-text">
+                        <text class="menu-item-api-item-text-step">{{menuItem.validDate}}</text>
+                        <text class="menu-item-api-item-text-step">{{menuItem.reTime}}</text>
+                        
+                    </view>
+              </view>
+
+              <!--分割线-->
+              <view class="hr"></view>
+
+              <view class="menu-item-api-item" style="{{index === 0 ? 'border-top:none;' : ''}}">
+                    <view class="menu-item-api-item-text">
+                        <text class="menu-item-api-item-text-step">{{menuItem.step1}}</text>
+                        <text class="menu-item-api-item-text-step">{{menuItem.step2}}</text>
+                        <text class="menu-item-api-item-text-step">{{menuItem.step3}}</text>
+                        <text class="menu-item-api-item-text-step">{{menuItem.step4}}</text>
+                    </view>
+              </view>
+                        
+            
+          
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+

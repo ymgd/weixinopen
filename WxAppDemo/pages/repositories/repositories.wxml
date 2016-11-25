@@ -1,0 +1,23 @@
+<view class="index">
+  <view class="loading">
+    <loading hidden="{{!loading}}" >
+      加载中...
+    </loading>
+  </view>
+
+  <view class="sort-btn">
+    <view bindtap="sortByStars" class="{{starsBtnStyle}}">按 starts 排序</view>
+    <view bindtap="sortByForks" class="{{forksBtnStyle}}">按 forks 排序</view>
+  </view>
+
+  <view class="index-container" wx:for="{{repositories}}">
+    <text class="rank">{{index + 1}}</text>
+    <view class="info">
+      <text class="name">{{item.name}}</text>
+      <text class="star">⭐️ {{item.stars}}</text>
+      <text class="desc">{{item.desc}}</text>
+      <image src="/image/user.png" mode="aspectFit" class="image"></image>
+      <text class="owner">{{item.owner}}</text>
+    </view>
+
+</view>

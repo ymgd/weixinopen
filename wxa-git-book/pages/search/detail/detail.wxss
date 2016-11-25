@@ -1,0 +1,11 @@
+.directory {
+  padding: 0 20px;
+
+}
+.directory .directory-item {
+  line-height:40px;
+  border-bottom: 1px solid #ccc;
+}
+.directory .directory-item:last-child {
+  border-bottom: none;
+}

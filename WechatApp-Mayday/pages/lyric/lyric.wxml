@@ -1,0 +1,6 @@
+<view class='page'>
+    <text class='info'>作词:{{lyric.writer}}/作曲:{{lyric.compose}}</text>
+    <scroll-view scroll-y="true" class='lyric-view'>
+        <text class='lyric'>{{lyric.content}}</text>
+    </scroll-view>
+</view>

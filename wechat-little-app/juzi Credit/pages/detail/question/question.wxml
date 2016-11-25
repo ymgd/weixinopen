@@ -1,0 +1,30 @@
+<view class="container">
+  
+  <!--细节列表-->
+  <view class="help-list">
+    <block wx:for-items="{{help}}" wx:for-item="helpItem">
+      <view class="help-item">
+        <view class="help-item-main" id="{{index}}" bindtap="taphelpItem">
+          <text class="help-item-name">{{helpItem.title}}</text>
+          <image
+            class="help-item-arrow {{helpItem.opened ? 'open' : 'close'}} {{helpItem.url ? 'url' : ''}}"
+            src="../../../images/arrowright.png">
+          </image>
+        </view>
+        
+        
+        <view class="help-item-api-list {{helpItem.opened ? 'open' : 'close'}}">
+          
+              <view class="help-item-api-item" style="{{index === 0 ? 'border-top:none;' : ''}}">
+                  <view class="help-item-api-item-text">
+                      <text class="help-item-api-item-text-zhname">{{helpItem.body}}</text>
+                  </view>
+              </view>
+            
+        </view>
+
+        
+      </view>
+    </block>
+  </view>
+</view>

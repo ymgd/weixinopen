@@ -1,0 +1,37 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'wx.createAnimation',desc:'动画展示'}}"/>
+
+        <view class="section-show flex bgf">
+        
+            <view animation="{{animationData}}" 
+            style="background:red;height:50rpx;width:50rpx"></view>
+        
+        </view>
+
+        <view class="section-btn flex">
+            <button type="default" size="mini" class="mt" 
+            bindtap="rotate">rotate</button>
+
+            <button type="default" size="mini" class="mt" 
+            bindtap="scale"> scale</button>
+
+            <button type="default" size="mini" class="mt" 
+            bindtap="translate"> translate</button>
+
+            <button type="default" size="mini" class="mt" 
+            bindtap="skew"> skew</button>
+
+            <button type="default" size="mini" class="mt" 
+            bindtap="all"> all</button> 
+
+            <button type="default" size="mini" class="mt" 
+            bindtap="reset"> reset</button>
+
+        </view>
+      
+    </view>
+</view>

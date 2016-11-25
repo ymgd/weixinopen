@@ -1,0 +1,3 @@
+<view class="container col settings">
+  <button class="logout" bindtap="handleLogoutTap" size="mini">Logout</button>
+</view>

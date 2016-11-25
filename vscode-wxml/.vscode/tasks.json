@@ -1,0 +1,32 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "0.1.0",
+  "command": "vsce",
+  "isShellCommand": true,
+  "showOutput": "always",
+  "suppressTaskName": true,
+  "tasks": [
+    {
+      "taskName": "patch",
+      "args": [
+        "publish",
+        "patch"
+      ]
+    },
+    {
+      "taskName": "minor",
+      "args": [
+        "publish",
+        "minor"
+      ]
+    },
+    {
+      "taskName": "major",
+      "args": [
+        "publish",
+        "major"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/joke/joke",
+    "pages/pic/pic",
+    "pages/collection/collection",
+    "pages/add/add",
+    "pages/my/my",
+    "pages/setting/setting"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "逗乐",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",    
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index-actived.png"
+    },
+    {
+      "pagePath": "pages/collection/collection",
+      "iconPath": "images/collection.png",
+      "selectedIconPath": "images/collection-actived.png"      
+    },    
+    {
+      "pagePath": "pages/add/add",
+      "iconPath": "images/add.png",
+      "selectedIconPath": "images/add-actived.png"      
+    },
+    {
+      "pagePath": "pages/my/my",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my-actived.png"        
+    },
+    {
+      "pagePath": "pages/setting/setting",
+      "iconPath": "images/setting.png",
+      "selectedIconPath": "images/setting-actived.png"        
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true  
+}
+

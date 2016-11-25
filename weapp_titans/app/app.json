@@ -1,0 +1,33 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/tab/tab",
+        "pages/detail/detail"
+    ],
+
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#6021da",
+        "navigationBarTitleText": "Titans",
+        "windowBackground": "#1c1b16",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh":"true"
+    },
+
+    "tabBar": {
+        "list": [{
+        "pagePath": "pages/index/index",
+        "text": "Bunch",
+        "iconPath": "images/in1.png",
+        "selectedIconPath": "images/in2.png"
+        }, {
+        "pagePath": "pages/tab/tab",
+        "text": "Piece",
+        "iconPath": "images/ta1.png",
+        "selectedIconPath": "images/ta2.png"
+        }],
+        "color":"white",
+        "backgroundColor":"#6021da",
+        "selectedColor":"#BEBEBE"
+    }
+}

@@ -1,0 +1,61 @@
+<import src="../template/nav.wxml"/>
+
+<scroll-view scroll-y="true" class="scrollBox">
+    <view class="photoBox">
+        <image class="photo" src="{{food.img}}" mode="aspectFill"></image>
+        <view class="nameBox">
+            <text class="name">{{food.name}}</text>
+            <text class="Ename">{{food.Ename}}</text>
+        </view>
+    </view>
+
+    <view class="materialBox">
+        <view class="m_shadow">
+            <text class="m_title">FOOD MATERIAL</text>
+
+            <view class="s_box">
+                <text class="m_s">主料：</text>
+                <view class="seasoningBox">
+                    <block wx:for="{{food.m_material}}" wx:key="index">
+                        <view class="s_block">
+                            <text class="s_name">{{item.name}}</text>
+                            <text class="s_num">{{item.num}}</text>
+                        </view>
+                    </block>
+                </view>
+
+                <text class="m_s">辅料：</text>
+                <view class="seasoningBox">
+                    <block wx:for="{{food.n_material}}" wx:key="index">
+                        <view class="s_block">
+                            <text class="s_name">{{item.name}}</text>
+                            <text class="s_num">{{item.num}}</text>
+                        </view>
+                    </block>
+                </view>
+            </view>
+
+        </view>
+    </view>
+
+    <block wx:for="{{food.step}}" wx:key="index">
+        <view class="stepBox">
+            <view class="stepNum {{index%2 == 0 ? 'fl' : 'fr'}}">
+                <image src="http://seventh77.com/view/food/img/{{index+1}}.png" class="stepImg" mode="scaleToFill"></image>
+            </view>
+
+            <view class="stepCont {{index%2 == 0 ? 'fr' : 'fl'}}">
+                <view class="photoFrame {{index%2 == 0 ? 'fr' : 'fl'}}">
+                    <image src="{{item.img}}" class="stepPhoto" mode="scaleToFill"></image>
+                </view>
+                <view class="stepWordBox {{index%2 == 0 ? 'fl' : 'fr'}}">
+                    <text class="stepWord">{{item.title}}</text>
+                    <text class="stepWord" wx:for="{{item.cont}}" wx:key="index">{{item}}</text>
+                    <text class="stepTips" wx:if="{{item.tips != 0}}">tips:{{item.tips}}</text>
+                </view>
+            </view>
+        </view>
+    </block>
+</scroll-view>
+
+<template is="nav" data="{{...nav}}"/>

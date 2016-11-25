@@ -1,0 +1,16 @@
+<view class="wrap">
+<view class="name">{{skill.name}}技能图谱</view>
+<!-- <view class="contribute" style="display: {{loading? 'none' : 'block'}}"> -->
+<view class="contribute">
+<view class="label">贡献者：</view>
+<view wx:for="{{skill.contribute}}" wx:key="*this" class="content">
+    <text>{{item.name}}</text> - <text>{{item.title}}</text>
+</view>
+</view>
+<block wx:for="{{node}}" wx:key="*this">
+<view class="{{item.style}} item">
+<!-- ({{item.style}})- -->
+{{item.content}}
+</view>
+</block>
+</view>

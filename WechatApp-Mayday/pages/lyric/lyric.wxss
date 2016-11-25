@@ -1,0 +1,22 @@
+.info {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6%;
+}
+
+.player {
+    text-align: center;
+}
+
+.lyric-view {
+    height: 92%;
+}
+
+.lyric {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+
+}

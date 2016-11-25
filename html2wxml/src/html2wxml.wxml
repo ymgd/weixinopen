@@ -1,0 +1,98 @@
+<!--
+  @params {ElementNodeString} innerWxml
+-->
+
+<template name="html2Wxml">
+  <block wx:key="index" wx:for="{{innerWxml}}" wx:for-item="root">
+    <text wx:if="{{root.node == 'text'}}" class="{{root.attr.class}}" style="{{root.attr.style}}">{{root.text}}</text>
+    <block wx:if="{{root.node == 'element'}}">
+      <text class="{{root.attr.class}}" style="{{root.attr.style}}">
+        <block wx:if="{{root.child}}" wx:key="index" wx:for="{{root.child}}" wx:for-item="tag">
+          <text wx:if="{{tag.node == 'text'}}" class="{{tag.attr.class}}" style="{{tag.attr.style}}">{{tag.text}}</text>
+          <block wx:if="{{tag.node == 'element'}}">
+            <text class="{{tag.attr.class}}" style="{{tag.attr.style}}">
+              <block wx:if="{{tag.child}}" wx:key="index" wx:for="{{tag.child}}" wx:for-item="tag1">
+                <text wx:if="{{tag1.node == 'text'}}" class="{{tag1.attr.class}}" style="{{tag1.attr.style}}">{{tag1.text}}</text>
+                <block wx:if="{{tag1.node == 'element'}}">
+                  <text class="{{tag1.attr.class}}" style="{{tag1.attr.style}}">
+                    <block wx:if="{{tag1.child}}" wx:key="index" wx:for="{{tag1.child}}" wx:for-item="tag2">
+                      <text wx:if="{{tag2.node == 'text'}}" class="{{tag2.attr.class}}" style="{{tag2.attr.style}}">{{tag2.text}}</text>
+                      <block wx:if="{{tag2.node == 'element'}}">
+                        <text class="{{tag2.attr.class}}" style="{{tag2.attr.style}}">
+                          <block wx:if="{{tag2.child}}" wx:key="index" wx:for="{{tag2.child}}" wx:for-item="tag3">
+                            <text wx:if="{{tag3.node == 'text'}}" class="{{tag3.attr.class}}" style="{{tag3.attr.style}}">{{tag3.text}}</text>
+                            <block wx:if="{{tag3.node == 'element'}}">
+                              <text class="{{tag3.attr.class}}" style="{{tag3.attr.style}}">
+                                <block wx:if="{{tag3.child}}" wx:key="index" wx:for="{{tag3.child}}" wx:for-item="tag4">
+                                  <text wx:if="{{tag4.node == 'text'}}" class="{{tag4.attr.class}}" style="{{tag4.attr.style}}">{{tag4.text}}</text>
+                                  <block wx:if="{{tag4.node == 'element'}}">
+                                    <text class="{{tag4.attr.class}}" style="{{tag4.attr.style}}">
+                                      <block wx:if="{{tag4.child}}" wx:key="index" wx:for="{{tag4.child}}" wx:for-item="tag5">
+                                        <text wx:if="{{tag5.node == 'text'}}" class="{{tag5.attr.class}}" style="{{tag5.attr.style}}">{{tag5.text}}</text>
+                                        <block wx:if="{{tag5.node == 'element'}}">
+                                          <text class="{{tag5.attr.class}}" style="{{tag5.attr.style}}">
+                                            <block wx:if="{{tag5.child}}" wx:key="index" wx:for="{{tag5.child}}" wx:for-item="tag6">
+                                              <text wx:if="{{tag6.node == 'text'}}" class="{{tag6.attr.class}}" style="{{tag6.attr.style}}">{{tag6.text}}</text>
+                                              <block wx:if="{{tag6.node == 'element'}}">
+                                                <text class="{{tag6.attr.class}}" style="{{tag6.attr.style}}">
+                                                  <block wx:if="{{tag6.child}}" wx:key="index" wx:for="{{tag6.child}}" wx:for-item="tag7">
+                                                    <text wx:if="{{tag7.node == 'text'}}" class="{{tag7.attr.class}}" style="{{tag7.attr.style}}">{{tag7.text}}</text>
+                                                    <block wx:if="{{tag7.node == 'element'}}">
+                                                      <text class="{{tag7.attr.class}}" style="{{tag7.attr.style}}">
+                                                        <block wx:if="{{tag7.child}}" wx:key="index" wx:for="{{tag7.child}}" wx:for-item="tag8">
+                                                          <text wx:if="{{tag8.node == 'text'}}" class="{{tag8.attr.class}}" style="{{tag8.attr.style}}">{{tag8.text}}</text>
+                                                          <block wx:if="{{tag8.node == 'element'}}">
+                                                            <text class="{{tag8.attr.class}}" style="{{tag8.attr.style}}">
+                                                              <block wx:if="{{tag8.child}}" wx:key="index" wx:for="{{tag8.child}}" wx:for-item="tag9">
+                                                                <text wx:if="{{tag9.node == 'text'}}" class="{{tag9.attr.class}}" style="{{tag9.attr.style}}">{{tag9.text}}</text>
+                                                                <block wx:if="{{tag9.node == 'element'}}">
+                                                                  <text class="{{tag9.attr.class}}" style="{{tag9.attr.style}}">
+                                                                    <block wx:if="{{tag9.child}}" wx:key="index" wx:for="{{tag9.child}}" wx:for-item="tag10">
+                                                                      <text wx:if="{{tag10.node == 'text'}}" class="{{tag10.attr.class}}" style="{{tag10.attr.style}}">{{tag10.text}}</text>
+                                                                      <block wx:if="{{tag10.node == 'element'}}">
+                                                                        <text class="{{tag10.attr.class}}" style="{{tag10.attr.style}}">
+                                                                          <block wx:if="{{tag10.child}}" wx:key="index" wx:for="{{tag10.child}}" wx:for-item="tag11">
+                                                                            <text wx:if="{{tag11.node == 'text'}}" class="{{tag11.attr.class}}" style="{{tag11.attr.style}}">{{tag11.text}}</text>
+                                                                            <block wx:if="{{tag11.node == 'element'}}">
+                                                                              <text class="{{tag11.attr.class}}" style="{{tag11.attr.style}}">
+                                                                                ...
+                                                                              </text>
+                                                                            </block>
+                                                                          </block>
+                                                                        </text>
+                                                                      </block>
+                                                                    </block>
+                                                                  </text>
+                                                                </block>
+                                                              </block>
+                                                            </text>
+                                                          </block>
+                                                        </block>
+                                                      </text>
+                                                    </block>
+                                                  </block>
+                                                </text>
+                                              </block>
+                                            </block>
+                                          </text>
+                                        </block>
+                                      </block>
+                                    </text>
+                                  </block>
+                                </block>
+                              </text>
+                            </block>
+                          </block>
+                        </text>
+                      </block>
+                    </block>
+                  </text>
+                </block>
+              </block>
+            </text>
+          </block>
+        </block>
+      </text>
+    </block>
+  </block>
+</template>

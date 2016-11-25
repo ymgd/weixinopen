@@ -1,0 +1,17 @@
+/**app.wxss**/
+page {
+  background: #f7f7f7;
+}
+text {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ui-mb {
+  margin-bottom: 16rpx;
+}

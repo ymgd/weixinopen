@@ -1,0 +1,32 @@
+.container {
+  background: rgba(255,255,255,0.8);
+}
+.famous {
+  flex: 1;
+}
+.pickers {
+  height: 13%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  padding: 20rpx;
+}
+.picker_text {
+  font-size: 30rpx;
+}
+scroll-view {
+  height: 87%;
+}
+.user_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #E2E2E2;
+}
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+}
+.username {
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #333333;
+}

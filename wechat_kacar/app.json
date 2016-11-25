@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "xcar/news/news",
+    "xcar/discovery/discovery",
+    "xcar/mycar/mycar",
+    "xcar/findcar/findcar",
+    "xcar/down/down",
+    "xcar/content/content"  
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTitleText": "卡卡汽车",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "xcar/news/news",
+      "text": "新闻",
+      "iconPath": "imgs/tabbar/news.png",
+      "selectedIconPath": "imgs/tabbar/news_focus.png"
+    }, {
+      "pagePath": "xcar/discovery/discovery",
+      "text": "发现",
+      "iconPath": "imgs/tabbar/discovery.png",
+      "selectedIconPath": "imgs/tabbar/discovery_focus.png"
+    }, {
+      "pagePath": "xcar/mycar/mycar",
+      "text": "个人中心",
+      "iconPath": "imgs/tabbar/center.png",
+      "selectedIconPath": "imgs/tabbar/center_focus.png"
+    }, {
+      "pagePath": "xcar/findcar/findcar",
+      "text": "找车",
+      "iconPath": "imgs/tabbar/find.png",
+      "selectedIconPath": "imgs/tabbar/find_focus.png"
+    }, {
+      "pagePath": "xcar/down/down",
+      "text": "降价",
+      "iconPath": "imgs/tabbar/down.png",
+      "selectedIconPath": "imgs/tabbar/down_focus.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 50000,
+    "downloadFile": 50000
+  },
+  "debug": true
+}

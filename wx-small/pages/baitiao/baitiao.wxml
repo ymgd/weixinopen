@@ -1,0 +1,10 @@
+<view class="container main-content">
+  <!--白条额度-->
+  <include src="limitarea/limitarea.wxml" />
+  <!--主广告位-->
+  <include src="mainad/mainad.wxml" />
+  <!--频道入口-->
+  <include src="channel/channel.wxml" />
+  <!--频道底部-->
+  <include src="channelbottom/channelbottom.wxml" />
+</view>

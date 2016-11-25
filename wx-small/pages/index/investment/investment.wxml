@@ -1,0 +1,36 @@
+ <view class="jrm-flex-column jrm-w100p investment-area bg-fff">
+   <view class="jrm-flex-row jrm-w100p investment-top">
+       <image class="investment-top-icon" src="./images/investment@2x.png" background-size="cover"></image>
+       <text class="investment-desp1">推荐给你的投资产品</text>
+   </view>
+   <view class="jrm-flex-row jrm-w100p investment-grid">
+     <view class="jrm-flex-column investment-item investment-item1">
+       <text class="investment-desp2">4.70%</text>
+       <text class="investment-desp3">历史年化结算利率</text>      
+     </view>      
+     <view class="jrm-flex-column  investment-item investment-item2">
+       <text class="investment-desp4">建议增加短期持仓</text>
+       <text class="investment-desp3">由于您的持仓期限较长</text>      
+     </view>   
+   </view>  
+   <view class="jrm-flex-row jrm-w100p investment-grid">
+     <view class="jrm-flex-column investment-item investment-item1">
+       <text class="investment-desp5">保本基金</text>
+       <text class="investment-desp3">抗跌神器 赚钱法宝</text>      
+     </view>      
+     <view class="jrm-flex-column  investment-item investment-item2">
+       <text class="investment-desp4">建议持有债券基金</text>
+       <text class="investment-desp3">由于您偏好稳定理财产品</text>      
+     </view>   
+   </view>  
+   <view class="jrm-flex-row jrm-w100p investment-grid">
+     <view class="jrm-flex-column investment-item investment-item1">
+       <text class="investment-desp2">3.95%</text>
+       <text class="investment-desp3">月涨跌幅</text>      
+     </view>      
+     <view class="jrm-flex-column  investment-item investment-item2">
+       <text class="investment-desp4">建议提高资产灵活性</text>
+       <text class="investment-desp3">由于您的持仓期限稳定</text>      
+     </view>   
+   </view>  
+  </view>

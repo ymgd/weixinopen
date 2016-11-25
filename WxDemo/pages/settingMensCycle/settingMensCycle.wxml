@@ -1,0 +1,8 @@
+<view class="container">
+    <picker mode="selector" range="{{daysRange}}" value="{{selectedIndex >= 0 ? selectedIndex : 4}}" bindchange="onDateChange">
+        <view class="picker">
+            <view class="picker-title">周期长度: </view>
+            <view class="picker-selector">{{selectedValue >= 0 ? selectedValue : "点击选择"}}</view>
+        </view>
+    </picker>
+</view>

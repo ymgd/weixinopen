@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/playground/playground",
+    "pages/index/index",
+    "pages/chooseRole/chooseRole"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "狼人杀",
+    "navigationBarTextStyle":"black"
+  }
+}

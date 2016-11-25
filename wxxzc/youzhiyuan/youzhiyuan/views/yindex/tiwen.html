@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content="">
+		<link rel="stylesheet" type="text/css" href="css/slick.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont/iconfont.css" />
+		<title>我要提问</title>
+
+		<body>
+			<div class="header">
+				<span>我要提问</span>
+				<a href="ask.html" class="back"><i class="iconfont icon-left"></i></a>
+			</div>
+			<div class="banner">
+				<img src="img/self-report.png">
+			</div>
+			<div class="contain"  style="padding-top:3%;">
+				 <div class="reason">	
+				<textarea  placeholder="请您在此输入您的申请原因，以便通过审核" id="tiwen"></textarea>
+			</div>
+			</div>
+            <div class="step-btn">
+                <a href="javascript:void(0)" class="ta-center db" id="sub">提交</a>
+            </div>
+			<script src="js/jquery-1.10.2.min.js"></script>
+			<script type="text/javascript" src="js/basic.js"></script>
+			<script type="text/javascript" src="js/rem.js"></script>
+		</body>
+
+</html>
+<script>
+    $(function(){
+        $('#sub').click(function(){
+            var question=$('#tiwen').val()
+            var mydate = new Date();
+            var str = "" + mydate.getFullYear() + "-";
+            str += (mydate.getMonth()+1) + "-";
+            str += mydate.getDate();
+
+
+            var url="http://www.hefei.com/public/youtiwen?callback=?";
+
+            $.getJSON(url,{question:question,token:1,time:str},
+                    function (e) {
+
+                        if (e == 1) {
+                            alert('ok')
+                        }
+                    })
+
+
+        })
+
+    })
+</script>

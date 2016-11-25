@@ -1,0 +1,90 @@
+.index {
+  height: 100%;
+  background-color: #fff
+}
+
+.wx-loading-mask {
+  display: none !important
+}
+
+.index-container {
+  margin: 20px auto;
+  height: 110px;
+  width: 94%;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.rank {
+  display: inline-block;
+  text-align: center;
+  width: 15px;
+  font-size: 14px;
+  line-height: 110px;
+  margin: 0 3%;
+  color: #333;
+}
+
+.info {
+  margin-top: 10px;
+  display: inline-block;
+  width: 85%;
+  vertical-align: top;
+}
+
+.name {
+  color: #80bd01;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.star {
+  float: right;
+  font-size: 12px;
+  color: #bbb;
+}
+
+.desc {
+  margin: 8px 0;
+  display: block;
+  height: 36px;
+  font-size: 12px;
+  color: #bbb;
+  overflow: hidden;
+}
+
+.owner {
+  color: #80bd01;
+  margin-left: 2px;
+  font-size: 13px
+}
+
+.image {
+  width: 13px;
+  height: 13px;
+}
+
+.sort-btn {
+  text-align: center;
+}
+
+.btn {
+  margin-bottom: 20px;
+  display: inline-block;
+  background-color: #fff;
+  width: 100px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  margin: 0 auto;
+  color: #333;
+  box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.clicked {
+  background-color: #80bd01;
+  color: #fff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,36 @@
+page{
+    background-color:#fff;
+}
+
+.container{
+    background-color:#fff;
+    height:100%;
+}
+
+.currencyTitle{
+    line-height: 24px;
+    background: #f7f7f7;
+    color: #333;
+    font-size: 12px;
+    border-bottom: 1px solid #d4d4d4;
+    text-indent: 4.3%;
+}
+
+.currencyItem{
+    font-size: 16px;
+    color: #333;
+    margin-left: 4.3%;
+    border-bottom: 1px solid #d4d4d4;
+    line-height: 42px;
+}
+
+.zimuTitle{
+    line-height: 24px;
+    background: #f7f7f7;
+    color: #333;
+    font-size: 12px;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+    text-indent: 4.3%;
+    margin-top: -1px;
+}

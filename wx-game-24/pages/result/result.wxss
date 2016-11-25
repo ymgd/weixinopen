@@ -1,0 +1,12 @@
+.congratulation{
+    text-align: center;
+    font-size: 32rpx;
+    margin: 100rpx auto 50rpx;
+}
+.score-box{
+    text-align: center;
+    font-size: 40rpx;
+    margin: 40rpx auto 100rpx;
+    color: red;
+}
+.total{font-size:72rpx}

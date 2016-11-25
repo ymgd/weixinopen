@@ -1,0 +1,85 @@
+.header {
+	height: 250px;
+	width: 100%;
+	background-image: none;
+}
+
+.header image {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	
+	margin: 20px 14px 0;
+}
+
+.content .title {
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+.content .type {
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	padding: 0 6px;
+	font-size: 13px;
+	color: #fff;
+	background-color: blue;
+	border: none;
+	border-radius: 2px;
+}
+
+.content .desc {
+	font-size: 15px;
+	line-height: 18px;
+	color: #999;
+	margin-top: 10px;
+}
+
+.content .up {
+	font-size: 15px;
+	line-height: 18px;
+	color: #000;
+	margin-top: 10px;
+}
+
+.info {
+	margin: 20px 14px 0;
+	font-size: 14px;
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+}
+
+.info .info-text {
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+}
+
+.info .info-list {
+	margin-top: 10px;
+}
+
+.info .icon {
+	background: transparent url(../../images/icons.png) no-repeat top left;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+}
+
+.info .icon-play {
+	background-position: -659px -210px;
+}
+
+.info .icon-danmu {
+	background-position: -659px -275px;
+}
+
+.info .icon-coins {
+	background-position: -659px -340px;
+}

@@ -1,0 +1,17 @@
+ <view class="jrm-flex-row jrm-w100p userinfo-area bg-fff">     
+    <view class="jrm-flex-column">
+     <image class="userinfo-icon" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>        
+    <view class="jrm-flex-column userinfo-item">
+       <text class="userinfo-title">94.1</text>
+       <text class="userinfo-desp">小白信用</text>
+    </view>
+    <view class="jrm-flex-column userinfo-item">
+       <text class="userinfo-title">高</text>
+       <text class="userinfo-desp">保障程度</text>
+    </view>   
+    <view class="jrm-flex-column userinfo-item">
+       <text class="userinfo-title">已签到</text>
+       <text class="userinfo-desp">会员中心</text>
+    </view>      
+  </view>

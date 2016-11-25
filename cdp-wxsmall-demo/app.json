@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "场地派",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "resource/img/classify-bg-1@3x.png",
+      "selectedIconPath": "resource/img/logo.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "定制",
+      "iconPath": "resource/img/classify-bg-1@3x.png",
+      "selectedIconPath": "resource/img/logo.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "我的",
+      "iconPath": "resource/img/classify-bg-1@3x.png",
+      "selectedIconPath": "resource/img/logo.png"
+    }]
+  }
+}

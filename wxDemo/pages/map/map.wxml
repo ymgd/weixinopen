@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="map-showInfomations">
+        <view>hi~ <text>{{userInfo.nickName}}</text></view>
+        <view>纬度:<text>{{location.latitude}}</text></view>
+        <view>经度:<text>{{location.longitude}}</text></view>
+    </view>
+    <button class="map-button-showMap" bindtap="handleBtnClick" type="primary">查看地图</button>
+</view>

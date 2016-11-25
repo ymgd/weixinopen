@@ -1,0 +1,15 @@
+.topic-head {
+    border-bottom: 1px solid #eee;
+    padding: 8px 4px;
+    display: flex;
+    margin-bottom: 8rpx;
+}
+.topic-info {
+    flex: 1;
+}
+.topic-content {
+    padding: 4px;
+}
+.username {
+    margin: 15rpx;
+}

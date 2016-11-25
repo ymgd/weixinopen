@@ -1,0 +1,95 @@
+<view class="container bg">
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view>
+        <image class="jc-img" src="{{imageUrl}}"></image>
+        <view class="hide"><input value="{{imageUrl}}" disabled="true" name="banner"></input></view>
+    </view>
+    <view class="section">
+        <view class="menu">
+            <view class="menu-item">
+                <image class="menu-icon" src="/image/theme.png"></image>
+                    <view class="menu-text">
+                        <input class="section-input input" type="text" value="" placeholder="活动主题" value="{{title}}" autofocus name="title"></input>
+                    </view>
+            </view>
+
+            <view class="menu-item">
+                <picker mode="date" value="{{startTime}}" start="" end="" bindchange="bindStartTimeChange">
+                    <view class="picker">
+                    <image class="menu-icon" src="/image/time.png"></image>
+                    <view class="menu-text">
+                        <text class="vm">开始时间</text><text class="vm m-l-10" >{{startTime}}</text>
+                        <view class="hide"><input value="{{startTime}}" disabled="true" name="startTime"></input></view>    
+                    </view>                
+                    </view>
+                </picker>
+            </view>
+
+            <view class="menu-item">
+                <picker mode="date" value="{{endTime}}" start="" end="" bindchange="bindEndTimeChange">
+                    <view class="picker">
+                    <image class="menu-icon" src="/image/time.png"></image>
+                    <view class="menu-text">
+                        <text class="vm">结束时间</text><text class="vm m-l-10">{{endTime}}</text>
+                        <view class="hide"><input value="{{endTime}}" disabled="true" name="endTime"></input></view>     
+                    </view>                
+                    </view>
+                </picker>
+            </view>
+            
+            <view class="menu-item">
+                <image class="menu-icon" src="/image/number.png"></image>
+                <input class="menu-text" type="number" name="total" value="{{total}}" bindtap="number" placeholder="人数" maxlength="4"></input>
+            </view>
+
+            <view class="menu-item">
+                <image class="menu-icon" src="/image/address.png"></image>
+                <view class="menu-text">
+                    <input disabled="true" class="menu-text vm"  value="{{addressName}}" name="address" placeholder="地点"></input>
+                    <view class="hide">
+                        <input value="{{latitude}}" name="latitude"></input>
+                        <input value="{{longitude}}" name="longitude"></input>
+                    </view>
+                </view>
+                <image bindtap="selectMap" data-latitude="{{latitude}}" data-longitude="{{longitude}}" class="icon-postion" src="/image/map.png"></image>
+            </view>
+
+            <view class="menu-item">
+                <image class="menu-icon" src="/image/money.png"></image>
+                <input class="menu-text" type="number" value="{{money}}" name="money" placeholder="费用"  maxlength="4"/>
+            </view>
+
+            <view class="menu-item">
+                <image class="menu-icon" src="/image/tel.png"></image>
+                <view class="menu-text">
+                    <input type="number" class="menu-text" name="tel" value="{{tel}}" placeholder="联系电话" maxlength="11"></input>
+                </view>
+            </view>
+             
+        </view>
+    </view>
+
+    
+    <view class="section">
+        <view class="menu">
+            <view class="menu-item">
+                <image class="menu-icon" src="/image/text.png"></image>
+                <view class="menu-text">
+                    <text class="vm">活动描述</text>
+                </view>
+                <view class="m-t-5">
+                    <input class="menu-text" placeholder="说些什么吧" name="description" ></input>                    
+                </view>
+            </view>
+            <view class="menu-item">
+                <image class="menu-icon" src="/image/image.png"></image>
+                <input class="menu-text" type="text" name="images" value="{{images}}" placeholder="图片地址，多张图片以半角逗号分开" ></input>
+            </view>         
+        </view>
+    </view>
+    <view class="section">
+        <button class="" type="primary" disabled="{{submitStatus}}" form-type="submit">提交</button>
+    </view>
+</form>
+
+</view>

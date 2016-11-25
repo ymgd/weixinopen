@@ -1,0 +1,12 @@
+ <view class="jrm-flex-row jrm-w100p calendar-area">
+    <view class="jrm-flex-column calendar-num-area">
+       <text class="calendar-num1">22</text>
+       <text class="calendar-num2">周四</text>
+    </view>
+    <view class="calendar-middle">
+       <text class="calendar-title">月月盈强势回归，4.80%</text>       
+    </view>   
+    <view class="calendar-right">
+      <image class="calendar-right-icon" src="./images/right_arrow@2x.png" background-size="cover"></image>
+    </view>      
+  </view>

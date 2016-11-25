@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/albumlist/albumlist",
+    "pages/albumdetail/albumdetail",
+    "pages/lyric/lyric",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "#387ef5",
+    "navigationBarBackgroundColor": "#387ef5",
+    "navigationBarTitleText": "WeChat小程序 Demo",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#333333",
+    "color": "#CCCCCC",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/albumlist/albumlist",
+        "text": "歌词",
+        "iconPath": "assets/tab_lyric.png",
+        "selectedIconPath": "assets/tab_lyric.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "我",
+        "iconPath": "assets/tab_user.png",
+        "selectedIconPath": "assets/tab_user.png"
+      }
+    ]
+  }
+}

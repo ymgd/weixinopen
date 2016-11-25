@@ -1,0 +1,16 @@
+<view class = "contain">
+    <view class="bd">
+        <checkbox-group bindchange="change">
+            <label class="checkbox" wx:for="{{items}}">
+                <checkbox value="{{item.value}}" checked="{{item.checked}}"
+                > 
+                {{item.value}}
+                </checkbox>
+            </label>
+        </checkbox-group>
+    </view>
+
+    <view class="checkfooter">
+    <text >{{text}}</text>
+    </view>
+</view>

@@ -1,0 +1,27 @@
+.settings-list {
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.settings-item {
+  position: relative;
+  line-height: 80rpx;
+  margin: 0 18rpx;
+  border-bottom: 1px solid #e4e6e6;
+}
+.settings-text {
+  font-size: 26rpx;
+}
+.settings-switch {
+  position: absolute;
+  top: 10rpx;
+  right: 0;
+}
+.no-border {
+  border-bottom: none;
+}
+.settings-desc {
+  position: absolute;
+  right: 0;
+  font-size: 24rpx;
+  color: #b6b6b6;
+}

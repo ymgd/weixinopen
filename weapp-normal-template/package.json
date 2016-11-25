@@ -1,0 +1,41 @@
+{
+  "name": "weapp-normal-template",
+  "version": "1.0.0",
+  "description": "normal template for weapp . 使用标准微信小程序写法的模板。",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreedBell/weapp-normal-template.git"
+  },
+  "keywords": [
+    "weapp",
+    "template",
+    "微信",
+    "小程序",
+    "模板"
+  ],
+  "author": "Bell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GreedBell/weapp-normal-template/issues"
+  },
+  "homepage": "https://github.com/GreedBell/weapp-normal-template#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb-base": "^10.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-require-modules": "^1.1.1",
+    "gulp-sass": "^2.3.2",
+    "imagemin-pngquant": "^5.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}

@@ -1,0 +1,31 @@
+<view class="main_title">欢迎你,{{user_name}}!</view>
+<view class="main_body">
+    <block wx:if="{{xbox_info}}">
+    <view class="tips">您已经绑定XboxLive账号,{{xbox_info.gamertag}}</view>
+    <view class="data_list">地区:{{xbox_info.location}}</view><view class="data_list"> 成就:{{xbox_info.gamerscore}}</view>    
+    <view class="tips">会员等级:{{xbox_info.tier}}</view>   
+    <view class="image">
+        <image src="{{xbox_info.avatarBodyImagePath}}" />
+    </view>  
+    <view class="buttons">
+            <button type="primary" class="btn-list" bindtap="gofriends">好友</button>
+            <button type="primary" class="btn-list" bindtap="gamelist">游戏</button>
+            <button type="warn" class="btn-list" bindtap="unbind">解绑</button>            
+    </view>    
+    </block>
+    <block wx:else>
+    <view class="tips">暂无您的Xbox数据,要进行绑定吗?</view>
+    <view class="tips">请输入你的GameTag:</view>
+    <form bindsubmit="formSubmit">
+        <view class="section">
+            <input type="text" placeholder="GameTag" name="GameTag" focus="{{input_focus}}"/>
+        </view>
+        <view class="section">
+            <button type="primary" formType="submit">绑定Xbox Live</button>
+        </view>
+    </form>
+    </block>
+</view>
+<view class="footer">
+    {{App.globalData.copyright}}
+</view>

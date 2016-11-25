@@ -1,0 +1,9 @@
+<template name="switch">
+  	<view 
+		id="{{id}}"
+		class="switch {{isOn ? 'toggle-on' : 'toggle-off'}}" 
+	  	style="background-color:{{isOn ? onTintColor || '#09bb07' : '#ddd'}}" 
+		bindtap="tapSwitch"
+	>
+	</view>
+</template>

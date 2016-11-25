@@ -1,0 +1,72 @@
+page{
+  font-size: 14px;
+}
+audio{
+  display: none !important;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.song-list{
+  padding-bottom: 80px;
+  color: #666;
+}
+.song-item {
+  display: flex;
+  padding: 10px;
+}
+.song-item.even{
+  background: #f3f3f3;
+}
+.song-item.current{
+  color: #31c27c;
+}
+.song-item .song-no{
+  width: 30px;
+}
+.song-item .song-name{
+  flex: 1;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #31c27c;
+  color: #fff;
+}
+.song-info{
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+}
+.song-info .song-name{
+  flex: 1;
+  overflow: hidden;
+}
+.song-info .song-time{
+  width: 50px;
+  text-align: right;
+}
+.controls{
+  padding: 5px 0;
+  font-size: 15px;
+  text-align: center;
+}
+.controls .btn{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  text-align: center;
+  text-indent: -999px;
+  background-size: 100% 100%;
+}
+.controls .btn-mode{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 15px;
+  bottom: 13px;
+}

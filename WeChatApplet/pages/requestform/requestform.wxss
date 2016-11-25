@@ -1,0 +1,13 @@
+view{
+    padding-left: 10rpx;
+    padding-bottom: 20rpx
+}
+textarea{
+    border: 1rpx gainsboro solid;
+    height: 400rpx;
+    width:98%;
+    font-size: 20rpx;
+}
+picker {
+    border: 1rpx gainsboro solid;
+}

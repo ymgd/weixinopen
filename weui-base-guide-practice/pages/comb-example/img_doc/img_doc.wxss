@@ -1,0 +1,41 @@
+.container.doc {
+    background: #ffffff;
+}
+
+.content {
+    font-size: 32rpx;
+    padding: 30rpx;
+}
+
+.a-neck {
+    margin-top: 30rpx;
+}
+
+.a-neck-text text {
+    margin-right: 10rpx;
+}
+
+.a-neck-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 50rpx;
+}
+
+.a-neck-img image {
+    width: 700rpx;
+    height: 390rpx;
+
+}
+
+.a-title {
+    font-size: 40rpx;
+}
+
+.a-body {   
+    margin-top: 35rpx;
+}
+
+.section {
+    text-indent: 60rpx;
+    line-height: 50rpx;
+}

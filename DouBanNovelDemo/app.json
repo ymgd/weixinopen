@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/book/book"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "豆瓣科幻小说",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color":"#030303",
+    "selectedColor":"#111",
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "list":[{"pagePath":"pages/index/index",
+    "text":"首页"},
+    {"pagePath":"pages/index/me",
+    "text":"我"}]
+  },
+  "networkTimeout":{
+    "request":10000,
+    "downloadFile":10000
+  },
+  "debug":true
+}

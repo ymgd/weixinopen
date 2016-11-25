@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/openlocation/openlocation",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/journey/journey",
+    "pages/journeypath/journeypath",
+    "pages/wallet/wallet",
+    "pages/trade/trade",
+    "pages/recharge/recharge",
+    "pages/settings/settings"
+  ]
+  ,
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "wechat",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/bicycle1.png",
+      "selectedIconPath": "image/bicycle2.png",
+      "text": "使用"
+    }, {
+      "pagePath": "pages/mine/mine",
+      "iconPath": "image/mine.png",
+      "selectedIconPath": "image/mine.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

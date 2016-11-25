@@ -1,0 +1,45 @@
+邮箱类的宣传页
+psd ----> 图片  ----->table(foxmail不兼容div)
+
+
+psd截图
+第一步: 移动 ----> 勾选(自动选择)、 有 组 变 图层 --->
+第二步: 新建弹框 (背景内容):透明  ---->
+
+做得项目兼容:
+在ie6的浏览器支持支png-8(半透明),
+其他的浏览器支持png-24(全透明)
+
+网站的里面的图片 刷新 时 图片渐渐变透明(JPEG格式时,设置连续)
+
+工作:
+axzure 
+psd/原型  ----> html.css.js  ---> 自己造一些假数据-----> 配合后端对接接口/接口文档  -->发布到测试服务器(测试工程师)  --->修改bug   --> 上线了
+
+
+http://json.bmbstack.com/bannerList
+http://json.bmbstack.com/playingList
+http://json.bmbstack.com/cinemaList
+
+
+http://m.wepiao.com/
+
+分享logo: jiathis
+
+
+www.w3ctech.com
+html-js
+div.io
+css88
+
+
+
+函数调用的时候,不是把函数拿到的调用的位置去执行.(函数的默认返回值是undefined),在要被调用的函数 加return.
+
+// 共有
+module.exports = {
+	
+
+}
+// 调用共有
+ modules.函数名();

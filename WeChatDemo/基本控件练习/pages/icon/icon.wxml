@@ -1,0 +1,30 @@
+<view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="45"/>
+  </block>
+</view>
+
+
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="45" color="{{item}}"/>
+  </block>
+</view>
+
+<switch checked bindchange="switch1Change"/>
+
+<progress percent="{{percent}}" color="#09BB07" 
+show-info="{{showinfo}}" stroke-width="{{width}}" active="{{active}}"/>
+<view class="bottomView">
+    <button type="default" bindtap="changeWidth" class="bottomButton">随机改成宽度:{{width}}</button>
+    <button type="default" bindtap="changeShowInfo" class="bottomButton">是否显示详情:{{showinfo}}</button>
+    <button type="default" bindtap="changepercent" class="bottomButton">随机改成value:{{percent}}</button>
+    <button type="default" bindtap="changeactive" class="bottomButton">是否动画:{{active}}</button>
+</view>
+

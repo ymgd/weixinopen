@@ -1,0 +1,18 @@
+.page__hd{
+  text-align: center
+}
+
+
+.section{
+    width: 300px;
+    height: 255px;
+    margin-left: 20px
+}
+.section-view{
+    width: 300px;
+    height: 255px;
+    top: 14px;
+    right: 22px;
+    left: 10px;
+
+}

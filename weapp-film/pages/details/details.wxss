@@ -1,0 +1,123 @@
+/**index.wxss**/
+.flex-box{
+	display: flex;
+}
+.flex-btn{
+	flex: 1;
+}
+.detail{
+	border-bottom: 1rpx solid #e5e5e5;
+	padding: 30rpx 30rpx 0 30rpx;
+    overflow: hidden;
+    position: relative;
+}
+.video-hide{
+	display: none;
+}
+.video-show{
+	display: block;
+	position: absolute;
+	width: 750rpx;
+	height: 406rpx;
+	top: 0;
+	left: 0;
+}
+.bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 750rpx;
+	height: 1048rpx;
+	z-index: -1;
+}
+.detail-img{
+	width: 236rpx;
+	height: 376rpx;
+	margin-right: 20rpx;
+	position: relative;
+}
+.detail-img .img{
+	width: 236rpx;
+	height: 376rpx;
+}
+.detail-play{
+	position: absolute;
+	left: 70rpx;
+	top: 130rpx;
+	width: 80rpx;
+	height: 80rpx;
+}
+.detail-title{
+	height: 70rpx;
+}
+.detail-title text{
+	font-size: 18px;
+	line-height: 70rpx;
+	color: #FFF;
+}
+.i-imax{
+	width: 52rpx;
+	height: 28rpx;
+	margin-left: 10rpx;
+}
+.detail-size{
+	height: 40rpx;
+	font-size: 14px;
+	color: #FFF;
+}
+.detail-size .star{
+	width: 100rpx;
+	height: 20rpx;
+	background: url(../../images/i-star.png) no-repeat;
+	background-size: 100rpx;
+	display: inline-block;
+	margin-right: 10rpx;
+}
+.stars{
+	width: 100rpx;
+	height: 20rpx;
+	background: url(../../images/i-stars.png) no-repeat;
+	background-size: 100rpx;
+	float: left;
+	margin-right: 10rpx;
+}
+.detail-brief{
+	font-size: 14px;
+	line-height: 50rpx;
+	color: #FFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 400rpx;
+}
+.detail-brief .wish{
+	color: #FFF;
+	border-right: 1rpx solid #666;
+	padding-right: 10rpx;
+	margin-right: 10rpx;
+}
+.detail-main{
+	position: relative;
+}
+.detail-sale{
+	position: absolute;
+	right: 10rpx;
+	top: 70rpx;
+}
+.detail-sale text{
+	padding: 10rpx 18rpx;
+	border: 1rpx solid #37b7ff;
+	font-size: 14px;
+	color: #37b7ff;
+	border-radius: 6rpx;
+}
+.detail-sale .pre-sale{
+	border: 1rpx solid #fea54c;
+	color: #fea54c;
+}
+.details-dra view{
+	margin: 23rpx;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+}

@@ -1,0 +1,39 @@
+<import src="../../component/titleBar/title_bar.wxml"/>
+    
+<view class="column-main">
+    
+        <view class="column-header fx-column fx-row-center">
+            <image src="{{columnInfo.avatar.src}}" mode="aspectFit" class="column-icon block"></image>
+              <text class="column-info-user">
+                {{columnInfo.name}}
+             </text> 
+            <text class="column-info-desc">
+                {{columnInfo.intro}}
+            </text>
+            <button size="mini" type="primary" plain="true">关注专栏</button>
+            <text class="column-follow-num">
+                {{columnInfo.followersCount}}人关注
+            </text>
+        </view>
+           
+
+        <template is="titleBar"   data="{{...barInfo.newPost}}"></template>  
+
+
+        <view class="cover-list">
+            <view  data-slug="{{item.slug}}" catchtap="onForwardPostDetail"  class="cover-item fx-column"  wx:for="{{postList}}" wx:key="{{index}}">
+                <image src="{{item.titleImage}}" mode="scaleToFill" class="cover-image" />
+                <text class="cover-title">{{item.title}}</text>
+                <text class="cover-desc mu-3">{{item.content}}</text>
+                <view class="cover-util  fx-row fx-row-center fx-row-space-between">
+                    <text class="cover-util-left">{{item.author.name}}·{{item.publishedTime}}</text>
+                    <text class="cover-util-right">{{item.likesCount}}赞·{{item.commentsCount}}评论</text>
+                </view>
+            </view>
+
+        
+        </view> 
+       
+      
+  
+</view>

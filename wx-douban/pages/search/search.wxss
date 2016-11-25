@@ -1,0 +1,56 @@
+.search-header{
+    position:relative;
+    width:100%;
+    height:80rpx;
+    background:#fff;
+}
+.search-header .txt{
+    margin-right:100rpx;
+    padding-left:20rpx;
+    height:100%;
+    font-size:28rpx;
+    color:#666;
+}
+.search-header .btn{
+    position:absolute;
+    right:0;
+    top:0;
+    width:100rpx;
+    height:100%;
+    padding:0;
+    text-align:center;
+    border:none!important;
+    font-size:28rpx;
+    color:#333;
+}
+.search-header .btn icon{
+    vertical-align: middle;
+}
+
+.search-history{
+    padding:40rpx 20rpx 20rpx;
+}
+.search-history .title{
+    display:block;
+    font-size:28rpx;
+    color:#999;
+    line-height:20px;
+}
+.search-history .clear{
+    float:right;
+    padding:0;
+    border:none!important;
+    line-height:0;
+}
+.search-history .list{
+    padding:20rpx 0;
+}
+.search-history .list navigator{
+    display:inline-block;
+    margin-right:20rpx;
+    padding:10rpx 20rpx;
+    font-size:28rpx;
+    color:#666;
+    border:1px solid #999;
+    border-radius:10rpx;
+}

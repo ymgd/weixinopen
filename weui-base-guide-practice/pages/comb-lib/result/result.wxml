@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="body">
+                <view class="notice-section">
+                    <icon type="success" size="93" />
+                    <text class='tf-size-20'>操作成功</text>
+                </view>
+                <view class="detail-section sub">
+                    <p class='tf-size-14'>
+                        内容详情，根据实际情况来，如果换行则不超过规定长度，居中展现<span class="link">文字链接</span>
+                    </p>
+                </view>
+                <view class="btn-section">
+                    <button type="primary">推荐操作</button>
+                    <button type="default">辅助操作</button>
+                </view>
+            </view>
+            <view class="footer">
+                <text class="link">底部链接文本</text>
+                <small>Copyright © 2008-2013 CocoaChina.com</small>
+            </view>
+        </view>
+    </view>
+</view>

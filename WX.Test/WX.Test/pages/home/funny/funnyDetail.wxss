@@ -1,0 +1,64 @@
+.container{
+    padding: 0;
+    margin: 0;
+    background: rgb(240,240,240)
+}
+.hotCommentContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+}
+.normalCommentContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+}
+.comment{
+    border-bottom: 1px solid rgb(240,240,240);
+}
+.commentAlert{
+    margin: 6px;
+    color: red;
+    font-size: 14px;
+}
+.userInfoAndLikeNum{
+    /*清除浮动*/
+    overflow: hidden; 
+}
+.userIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    float: left;
+    margin: 6px;
+}
+.userName{
+    margin-bottom: 10px;
+    float: left;
+    line-height: 50px;
+    font-size: 15px;
+    color: cadetblue;
+}
+.likeButton{
+    float: right;
+    line-height: 50px;
+    margin-right: 6px;
+}
+.likeIcon{
+    width: 15px;
+    height: 15px;
+}
+.likeNum{
+    font-size: 13px;
+    color: dimgray;
+    margin-left: 3px;
+}
+.content{
+    color: rgb(50, 50, 50);
+    font-size: 17px;
+    line-height:23px;
+    margin: 6px;
+}

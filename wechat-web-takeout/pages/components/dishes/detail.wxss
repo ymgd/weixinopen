@@ -1,0 +1,16 @@
+.flex-item{
+	margin: 0 1rem;
+	padding: 1rem 0.3rem;
+	border-bottom: 1px #ddd solid
+}
+.flex-item .title{
+	display: block;
+	font-size: 1rem;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+.flex-item .price{
+	color: red;
+	font-size: 1rem;
+	font-weight: bolder;
+}

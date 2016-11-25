@@ -1,0 +1,121 @@
+<!--index.wxml-->
+<view class="container">
+    <view hidden="{{!isLoading}}" class="loading">
+        <image src="../../src/load.png" />
+    </view>
+    <view class="flex-row head-nav al-center">
+        <view class="{{currentType == 'hot' ? 'type-selected' : ''}}" data-type="hot" bindtap="changeType">热门</view>
+        <text>|</text>
+        <view class="{{currentType == 'subscribe' ? 'type-selected' : ''}}" data-type="subscribe" bindtap="changeType">订阅</view>
+        <text>|</text>
+        <view class="{{currentType == 'special' ? 'type-selected' : ''}}" data-type="special" bindtap="changeType">专题</view>
+    </view>
+    <!--hot-->
+    <view class="page" hidden="{{!(currentType=='hot')}}">
+        <view class="platform-nav">
+            <view class="platform-nav-item" data-index="0" data-platform="instagram" bindtap="changePlatform">Instagram</view>
+            <view class="platform-nav-item" data-index="1" data-platform="facebook" bindtap="changePlatform">Facebook</view>
+            <view class="platform-nav-item" data-index="2" data-platform="twitter" bindtap="changePlatform">Twitter</view>
+            <view class="platform-nav-item" data-index="3" data-platform="weibo" bindtap="changePlatform">Weibo</view>
+            <view class="nav-bar {{'hot-bar-left-'+platIndex}}">
+                <view></view>
+            </view>
+        </view>
+        <view class="scorll">
+            <scroll-view scroll-y="true">
+                <template is="hot-list-item" data="{{...item, playingId: playingId}}" wx:for="{{hotDataList}}" wx:key="{{index}}"></template>
+            </scroll-view>
+        </view>
+    </view>
+    <!--subscribe-->
+    <view class="page" hidden="{{!(currentType=='subscribe')}}">
+        <view class="platform-nav" >
+            <view class="sub-nav-item">全部</view>
+            <view class="nav-bar" style="width: 10%;left: 2%;">
+                <view></view>
+            </view>
+        </view>
+        <view class="scorll">
+            <scroll-view style="height:100%;" scroll-y="true">
+                <template is="sub-list-item" data="{{...item, playingId: playingId}}" wx:for="{{subDataList}}" wx:key="{{index}}"></template>
+            </scroll-view>
+        </view>
+    </view>
+    <!--special-->
+    <view class="page" hidden="{{!(currentType=='special')}}">
+        <view class="scorll">
+            <scroll-view style="height:100%;" scroll-y="true">
+                <template is="special-list-item" data="{{...item}}" wx:for="{{specialDataList}}" wx:key="{{index}}"></template>
+            </scroll-view>
+        </view>
+    </view>
+</view>
+
+<!--热门list-->
+<template name="hot-list-item">
+    <view class="list-item">
+        <view class="madia-area">
+            <template is="{{type=='video' ? 'hot-video' : 'hot-image'}}" data="{{imageSpec: imageSpec, videoSpec: videoSpec, id: imageId, playingId: playingId}}"></template> 
+            <view class="hot-author-info ju-between al-center">
+                <view class="fx-row al-center">
+                    <image mode="aspectFill" class="sub-avatar" src="{{author.avatar}}" />
+                    <view class="fx-col">
+                        <text class="author-name">{{author.nickname}}</text>
+                        <text class="pub-time">{{publishTime}}</text>
+                    </view>
+                </view>
+                <view class="sub-platform fx-row al-center">
+                    <text>来自{{platform}}</text>
+                    <image src="../../src/{{platform}}.png" />
+                </view>
+            </view>
+        </view>
+        <text class="hot-desc">{{title}}</text>
+    </view>
+</template>
+
+<template name="hot-image">
+     <image class="media" src="{{imageSpec[0].url}}" style="height: {{imageSpec[0].height/imageSpec[0].width*20}}rem" />
+</template>
+
+<template name="hot-video">
+    <view bindtap="videoPlay" data-imgid="{{id}}">
+        <image class="play-icon" src="../../src/play.png" />
+        <image wx:if="{{!(playingId == id)}}" class="media" src="{{videoSpec.coverUrl}}" style="height: {{videoSpec.height/videoSpec.width*20}}rem"></image>
+        <video wx:if="{{playingId == id}}" controls="" src="{{videoSpec.videoUrl}}" autoplay="1"  style="height: {{videoSpec.height/videoSpec.width*20}}rem" ></video>
+    </view>
+</template>
+
+ <!--订阅list-->
+<template name="sub-list-item">
+    <view class="sub-list-item">
+        <view class="madia-area">
+            <template is="{{type=='video' ? 'hot-video' : 'hot-image'}}" data="{{imageSpec: imageSpec, videoSpec: videoSpec, id: imageId, playingId: playingId}}"></template>
+        </view>
+        <view class="sub-detail">
+            <view class="ju-between al-center">
+                <view class="fx-row al-center">
+                    <image mode="aspectFill" class="sub-avatar" src="{{author.avatar}}" />
+                    <view class="fx-col">
+                        <text class="author-name">{{author.nickname}}</text>
+                        <text class="pub-time">{{publishTime}}</text>
+                    </view>
+                </view>
+                <view class="sub-platform fx-row al-center">
+                    <text>来自Instagram</text>
+                    <image src="../../src/instagram.png" />
+                </view>
+            </view>
+            <text class="desc">{{title}}</text>
+            <view class="sub-type">#{{interestTags && interestTags[0].tag}}</view>
+        </view>
+    </view>
+</template>
+
+<!--专题list-->
+<template name="special-list-item">
+    <view class="special-list-item">
+        <image class="fx-row" mode="aspectFill" src="{{trendingCoverUrl}}" />
+        <text class="special-title">{{trendingTitle}}</text>
+    </view>
+</template>

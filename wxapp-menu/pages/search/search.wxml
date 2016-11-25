@@ -1,0 +1,22 @@
+<!-- 搜寻美食 -->
+<view class="content">
+    <view class="search">
+        <input class="input" bindinput="bindKeyInput"></input>
+        <button bindtap="search" hoverhover-class="btnClick">查询</button>
+    </view>
+    <text class="inputShow">你要搜索：{{inputVal}}</text>
+
+    <view>
+        <view class="item" wx:for="{{list}}" wx:key="list" bindtap="navToDetail" id="{{item.id}}">
+            <view class="item-img">
+                <image src="{{item.albums}}"/>
+            </view>
+            <view class="item-text">
+                <view class="title">{{item.title}}</view>
+                <view class="tags">{{item.tags}}</view>
+                <view class="imtro">{{item.imtro}}</view>
+            </view>
+            <view class="line"></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="page-header">
+  <text class="page-header-text">{{title}}</text>
+</view>
+<view class="container">
+  <view class="user" bindtap="getUserInfo">
+    <image class="user-avatar" src="{{avatarUrl}}" background-size="cover"/>
+    <text class="user-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>

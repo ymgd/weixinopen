@@ -1,0 +1,26 @@
+.btn-area{
+    background-image: url(../../images/gd.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100rpx 40% 50rpx;
+    z-index: 1;
+    box-sizing: border-box;
+    min-height: 100%;
+    min-width:100%;
+    /*text-align: center;*/
+}
+.title{
+    font-size: 30rpx;
+    color: #fff;
+    text-align: right;
+    writing-mode: vertical-rl;
+}
+.content {
+    font-size: 50rpx;
+    color: #fff;
+    writing-mode: vertical-rl;
+}

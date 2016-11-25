@@ -1,0 +1,19 @@
+/*样式表*/
+.search_form{
+    margin:20rpx;
+}
+.form-btn{
+    margin-top:10rpx;
+}
+.searchsearch-list{
+    margin: 10rpx;
+}
+.header{
+    margin: 15rpx;
+    text-align: center;
+    color: black;
+}
+.list-item{
+    margin-bottom: 15rpx;
+    border: 1px solid #eee;
+}

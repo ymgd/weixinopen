@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="modal-list">
+                <modal class="modal1" title="{{modal1.title}}" no-cancel="{{modal1.no_cancel}}" confirm-text="{{modal1.confirm_text}}"  hidden="{{modal1.hidden}}" bindconfirm="{{modal1.change}}">
+                    <view class="modal-cust-content">
+                        <text>{{modal1.content_text}}</text>
+                    </view>
+                </modal>
+                <modal class="modal2" title="{{modal2.title}}" no-cancel="{{modal2.no_cancel}}" confirm-text="{{modal2.confirm_text}}"  hidden="{{modal2.hidden}}" bindconfirm="{{modal2.change}}">
+                    <view class="modal-cust-content">
+                        <text>{{modal2.content_text}}</text>
+                    </view>
+                </modal>
+                <modal class="modal3" title="{{modal3.title}}" no-cancel="{{modal3.no_cancel}}" confirm-text="{{modal3.confirm_text}}"  hidden="{{modal3.hidden}}" bindconfirm="{{modal3.change}}">
+                    <view class="modal-cust-content">
+                        <image class="blank-rect" src="{{blank_rect_png.src}}"></image>
+                        <text>{{modal3.content_text}}</text>
+                    </view>
+                </modal>
+                <modal class="modal4" title="{{modal4.title}}" no-cancel="{{modal4.no_cancel}}" confirm-text="{{modal4.confirm_text}}"  hidden="{{modal4.hidden}}" bindconfirm="{{modal4.change}}">
+                    <view class="modal-cust-content">
+                        <text>{{modal4.content_text}}</text>
+                    </view>
+                </modal>
+                <modal class="modal5" title="{{modal5.title}}" no-cancel="{{modal5.no_cancel}}" confirm-text="{{modal5.confirm_text}}"  
+                cancel-text="{{modal5.cancel_text}}" hidden="{{modal5.hidden}}" bindconfirm="{{modal5.change}}" bindcancel="{{modal5.change}}">
+                    <view class="modal-cust-content">
+                        <text>{{modal4.content_text}}</text>
+                    </view>
+                </modal>
+            </view>
+
+            <view class="btn-area">
+                <button type="default" bindtap="modalTap1">普通弹框</button>
+                <button type="default" bindtap="modalTap2">无标题弹框</button>
+                <button type="default" bindtap="modalTap3">有图弹框</button>
+                <button type="default" bindtap="modalTap4">框换行</button>
+                <button type="default" bindtap="modalTap5">弹框有操作</button>
+            </view>
+
+        </view>
+    </view>
+</view>

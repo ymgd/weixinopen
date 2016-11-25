@@ -1,0 +1,275 @@
+
+.container{
+  background-color: #f4f4f4;
+  height: 100%;
+  overflow: scroll;
+  line-height: 34rpx;
+}
+
+.main {
+    margin:0;
+    margin-top: 37rpx;
+}
+
+.section-group {
+    margin-bottom:40rpx;
+}
+
+.section {
+    background-color:#ffffff;
+}
+
+.section-wrp {
+    font-size:34rpx;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #e7e7eb;
+    padding:30rpx 30rpx 16rpx 0;
+    margin-left: 30rpx;
+}
+
+.list-section-wrp {
+    padding-bottom:30rpx;
+}
+
+.s-section-wrp {
+    height: 42rpx;
+}
+
+.pg-section-wrp {
+    padding: 28rpx 30rpx 28rpx 0;
+}
+
+.nth-last{
+    border:none;
+}
+
+text.sub{
+    opacity: .4;
+    font-size:26rpx;
+}
+
+.list-item-label {
+    padding-right:20rpx;
+}
+
+.list-item-label image {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.list-item-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.list-item-content .title {
+    font-size: 34rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+    margin-bottom: 8rpx;
+}
+
+.list-item-only-word .title {
+    margin-bottom: 16rpx;
+}
+
+.section-chevron {
+    width: 16rpx;
+    height: 25rpx;
+}
+
+text.more-link {
+    font-size: 28rpx;
+    color: #586c94;
+}
+
+.more-section-wrp {
+    height: 32rpx;
+    padding-top: 28rpx;
+    padding-bottom: 28rpx;
+}
+
+.source-note {
+    display: flex;
+    justify-content: flex-start;
+    margin-top:20rpx;
+}
+
+.source-note text {
+    display: inline-block;
+    font-size: 26rpx;
+    color: #CECECE;
+    padding-right: 20rpx;
+}
+
+.source-note-last{
+    padding-left: 20rpx;
+    padding-right: 0;
+    border-left: 2rpx solid #CECECE;
+}
+
+.loading-section-wrp {
+    display: flex;
+    justify-content: center;
+}
+
+.loading-bar text{ 
+    font-size: 28rpx;
+    color:#888888;
+    line-height: 40rpx;
+    margin-left: 15rpx;
+}
+
+.loading-icon {
+    width:40rpx;
+    height: 40rpx;
+}
+
+.loading-bar {
+    display: flex;
+    align-items:center;
+}
+
+.contact-section-wrp {
+    display: flex;
+    justify-content: flex-start;
+    padding-top:16rpx;
+    padding-bottom: 16rpx;
+}
+
+.contact-item-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-item-label image {
+    width:72rpx;
+    height: 72rpx;
+}
+
+.contact-item-label text.title {
+    margin-left: 20rpx;
+    font-size:34rpx;
+}
+
+.contact-item-avatar image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.contact-section-wrp.large2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-item-info {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 20rpx;
+    flex: 1 auto;
+}
+
+.summary {
+    font-size:28rpx;
+    line-height: 40rpx;
+    color: #888888;
+}
+
+.contact-item-info-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-item-info-up .title {
+    line-height: 48rpx;
+}
+
+.contact-item-info-up text.time {
+    font-size:24rpx;
+    color: #B2B2B2;
+}
+
+.contact-section-wrp.large3 {
+    padding-top:23rpx;
+    padding-bottom:23rpx;
+}
+
+.contact-section-wrp.large3 .contact-item-avatar image {
+    width:128rpx;
+    height:128rpx;
+}
+
+.contact-section-wrp.large3 .title {
+    font-size:36rpx;
+    line-height:50rpx;
+}
+
+.contact-section-wrp.large3 .sub-title {
+    font-size:26rpx;
+    line-height:37rpx;
+    color:#9B9B9B;
+    margin-top:12rpx;
+}
+
+.contact-item-info-titles {
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.contact-section-wrp.large3 .contact-item-info {
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.s-list-section-wrp {
+    padding-top:27rpx;
+    padding-bottom:27rpx;
+}
+
+.detail {
+    font-size: 34rpx;
+    color:#888888;
+}
+
+.small-list-section-wrap {
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+}
+
+image.small-rect {
+    width:58rpx;
+    height: 58rpx;
+}
+
+.small-list-item-label {
+    display: flex;
+    align-items: center;
+}
+
+.small-list-item-label .title {
+    margin-left: 20rpx;
+}
+
+.assist {
+    color: #888888;
+}
+
+.lr-list-section-wrap {
+    padding-top: 26rpx;
+    padding-bottom: 26rpx;
+}
+
+.assist .section-chevron {
+    margin-left: 30rpx;
+}
+
+.link-more {
+    color:#586C94;
+    font-size: 28rpx;
+}
+

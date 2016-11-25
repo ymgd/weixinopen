@@ -1,0 +1,184 @@
+
+.section{
+  background-color:#fff;
+  /*padding-bottom:20rpx;*/
+}
+
+/*u-1 start*/
+.u-1{
+  height:235rpx;
+  background:url("../../images/u_bg.jpg");
+  background-size:cover;
+  position:relative;
+  color:#fff;
+}
+
+.u-1-pic{
+  width:160rpx;
+  height:160rpx;
+  border-radius:50%;
+  padding:5rpx;
+  background-color:rgba(255, 255, 255, .5);
+  position: absolute;
+  bottom:-80rpx;
+  left:40rpx
+
+}
+
+.u-set{
+  display: inline-block;
+  width:120rpx;
+  height:60rpx;
+  background-color:rgba(0, 0, 0, .5);
+  text-align:center;
+  line-height: 60rpx;
+  border-radius:30rpx;
+  float:right;
+  margin:20rpx 20rpx 0 0;
+  font-size:28rpx;
+}
+
+.u-name{
+  float:left;
+  margin:160rpx 0 0 250rpx;
+}
+
+.u-1-pic image{
+  border-radius:50%;
+}
+/*u-1 end*/
+/*u-2 start*/
+.u-2{
+  padding-bottom:20rpx;
+}
+.u-list{
+  display:flex;
+  padding-left:210rpx;
+  font-size:28rpx;
+  margin-top:30rpx;
+  color:#051b28;
+}
+.u-item{
+
+  flex:1;
+  border-left:1px solid #e7e7e7;
+}
+
+.u-item:first-child{
+  border:0;
+}
+
+.u-item text{
+  display: block;
+  text-align:center;
+}
+/*u-2 end*/
+
+.order-act{
+  display:flex;
+  justify-content: space-around;
+  font-size:24rpx;
+}
+.order-item text{
+  display: block;
+  margin-top:10rpx;
+}
+.order-item .icon{
+  margin:0 auto;
+  width:50rpx;
+  height:50rpx;
+}
+.icon-pay{
+  background-position: -105rpx -53rpx;
+}
+.icon-send{
+  background-position: -105rpx -105rpx;
+}
+.icon-deliver{
+  background-position: -158rpx -53rpx;
+}
+.icon-evaluate{
+  background-position: 0rpx -53rpx;
+}
+.icon-refund{
+  background-position: 0rpx 0rpx;
+}
+/*全部订单 start*/
+.order_list{
+  margin-top:20rpx;
+ 
+}
+.o-item{
+  width:100%;
+  height:80rpx;
+}
+.o-item .icon{
+  width:29rpx;
+  height:31rpx;
+  display: flex;
+}
+.o-s{
+  width:50rpx;
+  height:50rpx;
+  border-radius:8rpx;
+  background-color:#5090cd;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.o-c{
+  flex:1;
+  margin-left:15rpx;
+}
+.o-all{
+  color: #999;
+}
+.o-i{
+  background-position: -63rpx -62rpx;
+}
+
+/*全部订单 end*/
+.label-act{
+  width:100%;
+  height:80rpx;
+}
+.c-s{
+
+}
+.c-s .o-s{
+  background-color:#e7a200;
+   background-position: -2rpx -105rpx;
+}
+.c-c{
+    width:100%;
+    height:80rpx;
+}
+.c-c text{
+    display: block;
+  
+   flex:1;
+   margin-left:20rpx;
+}
+
+.la2 .o-s{
+  background-color:#5090cd;
+   background-position: -53rpx -105rpx;
+}
+
+.la3 .o-s{
+  background-color:#00aeef;
+   background-position: -158rpx -105rpx;
+}
+.la4 .o-s{
+  background-color:#00aeef;
+   background-position: -158rpx 0;
+}
+
+.la5 .o-s{
+  background-color:#e64c2e;
+   background-position: -53rpx 0;
+}
+.la6 .o-s{
+  background-color:#00aeef;
+   background-position: -105rpx 0;
+}

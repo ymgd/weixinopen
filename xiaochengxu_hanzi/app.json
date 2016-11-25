@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/chengyu/chengyu",
+    "pages/detail/detail",
+    "pages/searchDetail/searchDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "快快查字典",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#b2b2b2",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#fdfdfd",
+    "borderStyle": "black",
+    "position":"bottom",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "新华字典",
+      "iconPath": "images/xinhuanziduan.png",
+      "selectedIconPath": "images/xinhuanziduanSelected.png"
+    },
+    {
+      "pagePath": "pages/chengyu/chengyu",
+      "text": "更多搜索",
+      "iconPath": "images/chengyu.png",
+      "selectedIconPath": "images/chengyuSelected.png"
+    }
+    
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":true
+}

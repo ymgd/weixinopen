@@ -1,0 +1,12 @@
+<!--banner模板-->
+<!--event: image==>tapOnImage-->
+<!--data: items[url:'']-->
+<template name="bannerview">
+<swiper indicator-dots="true" autoplay="true" inteval="1000" duration="1000">
+    <block wx:for="{{items}}">
+        <swiper-item style="text-align:center;">
+            <image class="bannerImageView" src="{{item.url}}" bindtap="tapOnImage" id="{{index}}" style="width:100%; height:220px;"></image>
+        </swiper-item>
+    </block>
+</swiper>
+</template>

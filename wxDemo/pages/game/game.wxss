@@ -1,0 +1,7 @@
+.game-btn{
+    margin-top: 20px;
+}
+
+.game-view-num{
+    margin-top: 30%;
+}

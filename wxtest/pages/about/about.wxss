@@ -1,0 +1,6 @@
+/**about.wxss**/
+.about{ padding: 5%; background:#eee; color: #999;}
+.about text{ display: block; line-height: 1.5rem;}
+
+.aboutme{ background: #f5f5f5; border-top:solid 1px #ccc; text-align: center; }
+.aboutme .title{ margin: 3% 0; background: #eee; padding: 5px; color:#333;}

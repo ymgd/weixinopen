@@ -1,0 +1,62 @@
+<view class="page">
+    <view class="page_hd ">
+        <view class="section section_ctn" style="position:center">
+                <image class="logo" src="../../image/ofo-bicycle-full-logo.png" style="width:127.33333333px;height:101px;margin:auto;position:center; margin-left:6.5rem"></image>
+        </view>
+    </view>
+    <view class="page_body" > 
+        <form class="" catchsubmit="formSubmit" catchreset="formReset">
+            <view class="weui_cells_title">
+                <label>
+                    <text>登录</text>
+                </label>
+            </view>
+
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item">
+                <input name="phone" placeholder="手机号" value="{{phone}}" bindinput="phoneDataChange"/>
+            </view>
+        </view>
+
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item" style="width:260px;">
+                <input name="captcha" placeholder="验证码" value="{{captcha.value}}" bindinput="captchaDataChange"/>
+            </view>
+            <view class="flex-item" style="width:23px" >
+            <icon name="captcha_icon" type="warn" size="20" style="display:{{captcha.error}}"/>
+            </view>
+            <view class="flex-item-button" bindtap="getCaptcha">
+                <image src="{{captcha.image}}" style="width:100px;height:44px;" ></image>
+            </view>
+        </view>
+
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item" style="width:260px;">
+                <input name="code" placeholder="短信验证码" value="{{code}}"  class="ofo-button"/>
+            </view>
+            <view class="flex-item-button" bindtap="getVerifyCode">
+                <label>
+                    <text>获取验证码</text>
+                </label>
+            </view>
+        </view>
+        
+        <view class="body-view">
+            <toast hidden="{{dialog.hidden}}" duration="2000"  bindchange="toast2Change">
+            {{dialog.title}}
+            </toast>
+        </view>
+
+            <view class="section" style="margin-top:40px; margin-left:12px" bindChange="checkboxChange">
+                <checkbox name="agree"> 我已经阅读并同意
+                    <text style="color: #fed52f;">《用户注册服务协议》</text> 
+                </checkbox>
+            </view>
+            <view class="btn-area">
+                <button formType="submit"  class="ofo-button">登陆</button>
+            </view>
+            
+        </form>
+    </view>
+
+</view>

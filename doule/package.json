@@ -1,0 +1,27 @@
+{
+  "name": "doule",
+  "version": "0.0.5",
+  "description": "doule",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkxiansheng/doule.git"
+  },
+  "keywords": [
+    "doule"
+  ],
+  "author": "mk",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11",
+    "monk": "^3.1.3"
+  },  
+  "bugs": {
+    "url": "https://github.com/mkxiansheng/doule/issues"
+  },
+  "homepage": "https://github.com/mkxiansheng/doule#readme"
+}

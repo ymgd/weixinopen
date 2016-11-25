@@ -1,0 +1,27 @@
+
+<view class="container">
+	<view class="header">
+		<text>{{ title }}</text>
+	</view>
+	<view class="list">
+		<navigator wx:for="{{ list }}" url = "../item/item?id={{ item.id }}">
+			<view class="list-item">
+				<view class="list-image">
+				<image src="{{ item.images.large }}"></image>
+				</view>
+				<view class="info">
+					<text class="title">{{ item.title }} {{ item.original_title }}</text>
+					<text class="year">({{ item.year }})</text>
+					<text class="average">{{ item.rating.average }}分</text>
+					<text class="director">导演：<block wx:for="{{ item.directors }}">
+						{{ item.name }}
+					</block>
+					</text>
+				</view>
+				
+			</view>
+			
+		</navigator>
+	</view>
+	
+</view>

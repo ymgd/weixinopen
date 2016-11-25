@@ -1,0 +1,14 @@
+<block wx:for="{{['red','orange','yellow','green','navy','blue','purple']}}" wx:key="index">
+    <view class="block {{item}}"></view>
+</block>
+<view class="wordBox">
+    <text class="w1">coming soon...</text>
+    <text class="w2 word">Seventh Page's Web</text>
+    <text class="w3 word">animes technology movies music</text>
+    <text class="w4 word">welcome to my web</text>
+    <navigator url="../../pages/food/food">
+        <text class="w5 word">www.seventh77.com</text>
+    </navigator>
+</view>
+   
+    

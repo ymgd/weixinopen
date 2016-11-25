@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<import src="header.wxml" />
+<import src="list.wxml" />
+
+<scroll-view scroll-y="{{true}}" class="container">
+	<template is="header" data="{{site: site}}" />
+  <template is="list" data="{{list: list}}" />
+</scroll-view>

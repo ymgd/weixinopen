@@ -1,0 +1,25 @@
+<loading hidden="{{loading}}">
+  加载中...
+</loading>
+<view class="detail flex-box" url="">
+	<view class="detail-img"><image class="img" src="{{films.MovieDetailModel.img}}"></image><image bindtap="vShow" class="detail-play" src="../../images/i-play.png"></image></view>
+	<view class="detail-main flex-btn">
+	    <view class="detail-title detail-brief">
+		    <text>{{films.MovieDetailModel.nm}}</text>
+		    <image class="i-imax" wx:if="{{films.MovieDetailModel.imax}}" src="../../images/i-imax.png"></image>
+		    <image class="i-imax" wx:if="{{films.MovieDetailModel.preSale}}" src="../../images/i-imax.png"></image>
+	    </view>
+	    <view class="detail-brief">{{films.MovieDetailModel.scm}}</view>
+	    <view class="detail-brief">{{films.MovieDetailModel.cat}}</view>
+	    <view class="detail-brief">{{films.MovieDetailModel.src}} / {{films.MovieDetailModel.dur}}分钟</view>
+	    <view class="detail-brief">{{films.MovieDetailModel.rt}}</view>
+	    <view class="detail-brief" wx:if="{{films.MovieDetailModel.preSale}}"><text class="wish">{{films.MovieDetailModel.wish}}人想看</text>{{films.MovieDetailModel.showInfo}}</view>
+	    <view class="detail-size" wx:if="{{!films.MovieDetailModel.preSale}}"><view class="star"><view style="width: {{films.MovieDetailModel.sc * 10}}%" class="stars"></view></view>{{films.MovieDetailModel.sc}}</view>
+	</view>
+	<image class="bg" src="https://gw.alicdn.com/tps/i4/TB1pa7pJFXXXXX6XFXXwwg20FXX-640-448.png"></image>
+<video class="{{video}}" autoplay="true" bindended="vHid" src="{{films.MovieDetailModel.vd}}" controls></video>
+</view>
+<scroll-view class="details-dra"><view>{{details}}</view></scroll-view>
+<button type="primary" size="{{primarySize}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="pay"> 立即购票 </button>
+<button bindtap="pay">立即购票</button>
+

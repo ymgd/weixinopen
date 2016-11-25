@@ -1,0 +1,50 @@
+/**trend.wxss**/
+
+.flex-item{
+	display: flex;
+	padding: 20rpx;
+	border-bottom: 1rpx solid #eee;
+}
+
+.trend-cen-text{
+	flex: 10;
+	margin-top: -12rpx;
+}
+.trend-text{
+	font-size: 26rpx;
+	color: #4078c0;
+}
+.trend-detail{
+	font-size: 18rpx;
+	color: #333;
+}
+.trend-star{
+	flex: 1;
+	margin: -15rpx -15rpx 0 0;
+}
+.trend-star-img{
+	width: 16px;
+	height: 16px;
+}
+.trend-star-text{
+	font-size: 16rpx;
+	color: #999;
+	margin-right: 5rpx;
+}
+.section-lan{
+	display: flex;
+}
+.picker{
+	padding: 15rpx;
+	margin: 0 20rpx;
+	font-size: 28rpx;
+	color: #333;
+	border: 1rpx solid #eee;
+	flex: 1;
+}
+.trend-ico{
+	width: 20rpx;
+	height: 20rpx;
+	margin-top: 10rpx;
+	float: right;
+}

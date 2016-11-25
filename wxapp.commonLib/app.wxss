@@ -1,0 +1,334 @@
+/**app.wxss**/
+.page {
+  font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+  /*border: 1px solid green;*/
+}
+
+.gray-page-background {
+  background-color: #eee;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50rpx;
+  box-sizing: border-box;
+  /*background-color: #fcfcfc;*/
+} 
+
+.center-head {
+  display: flex;
+  justify-content: center;
+  padding-top: 30rpx;
+}
+
+/*大标题*/
+.head-title { 
+  font-size: 40rpx;
+  color: #000;
+}
+
+/*页面全局按钮*/
+button.page-button {
+  font-size: 36rpx;
+  color: #000;
+}
+
+.list {
+  /*border: 1px solid green;*/
+  margin: 40rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background-color: #fff;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.with-space-around {
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  /*border: 1px solid red;*/
+}
+
+.with-large-space-around {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  /*border: 1px solid red;*/
+}
+
+.right-more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list-item .in-multiple-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.list-item .in-multiple-line .list-primary {
+  padding-bottom: 16rpx;
+}
+
+/*多行列表*/
+.multi-line-list {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid red;*/
+}
+
+/*列表主要内容*/
+.list-primary {
+  font-size: 34rpx;
+  color: #000;
+}
+
+/*列表副内容*/
+.list-secondary {
+  font-size: 28rpx;
+  color: #888;
+}
+
+/*列表普通项*/
+.list-general-item {
+  font-size: 28rpx;
+  color: #888;
+}
+
+/*列表简介*/
+.list-intro {
+  font-size: 34rpx;
+  color: #888;
+}
+
+.right-more .list-intro {
+  margin-right: 16rpx;
+}
+
+/*页面主要内容*/
+.page-primary-content {
+  font-size: 34rpx;
+  color: #000;
+}
+
+/*页面主要描述*/
+.page-primary-description {
+  font-size: 32rpx;
+  color: #000;
+}
+
+/*页面主要描述*/
+.page-secondary-description {
+  font-size: 28rpx;
+  color: #888;
+}
+
+/*表单小标题*/
+.form-head {
+  font-size: 28rpx;
+  color: #888;
+}
+
+/*辅助信息*/
+.supplementary {
+  font-size: 26rpx;
+  color: #b2b2b2
+}
+
+/*版权链接*/
+.copyright-link, .more-link {
+  font-size: 26rpx;
+  color: #576b95
+}
+
+
+/*底部信息*/
+.footnote {
+  font-size: 20rpx;
+  color: #b2b2b2;
+  margin-bottom: 40rpx;
+  /*行间距8*/
+}
+
+.list-item .in-single-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list-item .small-img {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #ddd;
+  margin-right: 16rpx;
+}
+
+.list-item .medium-img {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #ddd;
+  margin-right: 30rpx;
+}
+
+.list-item .large-img {
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #ddd;
+  margin-right: 30rpx;
+}
+
+.right-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left-check text {
+  padding-left: 30rpx;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+  align-items: center;
+}
+
+.input-title {
+  width: 170rpx;
+  margin-right: 10rpx;
+}
+
+.right-info {
+  width: 40rpx;
+  margin-right: 0;
+}
+
+.left-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input-inline {
+  width: 300rpx;
+  /*border: 1px solid red;*/
+}
+
+.upload-img {
+  margin-top: 16rpx;
+  margin-bottom: 16rpx;
+  border: 1px solid #ddd;
+  width: 80rpx;
+  height: 120rpx;
+  font-size: 160rpx;
+  color: #ddd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.list-head {
+  width: 100%;
+  color: #b2b2b2;
+  border-bottom: 1px solid #ddd;
+  padding-top: 30rpx;
+  padding-bottom: 16rpx;
+  font-size: 28rpx;
+}
+
+.list-item .large-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 460rpx;
+  justify-content: flex-start
+}
+
+.list-item .medium-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 490rpx;
+  justify-content: flex-start
+}
+
+.source {
+  padding-top: 16rpx;
+}
+
+.source text {
+  padding-right: 16rpx;
+}
+
+.with-bottom-border {
+  border-bottom: 1px solid #ddd;
+}
+
+.bottom-more {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.font-color-green {
+  color: #09bb07;
+}
+
+.font-color-darkgray {
+  color: #353535;
+}
+
+.font-color-gray {
+  color: #888;
+}
+
+.font-color-lightgray {
+  color: #b2b2b2;
+}
+
+.font-color-blue {
+  color: #576b95;
+}
+
+.font-color-red {
+  color: #e64340;
+}
+
+/*按下时的颜色透明度*/
+.color-pressed {
+  opacity: 0.2
+}
+
+/*禁用时的颜色透明度*/
+.color-disabled {
+  opacity: 0.1
+}
+
+image.img-arrow {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.hide {
+  display: none;
+}

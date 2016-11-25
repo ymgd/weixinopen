@@ -1,0 +1,66 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells">
+            <navigator url="../service/ecs/zones" hover-class="none" class="weui-cell weui-cell_access" >
+                <view class="weui-cell__bd"  >
+                    <view>当前区域：{{selected_zone_name}}</view>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"  >
+                </view>
+            </navigator>
+        </view>
+        <block wx:if="{{TotalCount==0}}">
+        <view class="weui-loadmore weui-loadmore_line">
+            <view class="weui-loadmore__tips">暂无数据</view>
+        </view>
+        </block>
+        <block wx:if="{{TotalCount}}">
+            <view class="weui-form-preview">
+                <block wx:for="{{InstanceList}}" >
+                    <view class="list_line"> </view>
+                    <view class="weui-form-preview__hd">
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__value">{{item.InstanceId}}</view>
+                        </view>
+                    </view>
+                    <view class="weui-form-preview__bd">
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">显示名称</view>
+                            <view class="weui-form-preview__value">{{item.InstanceName}}</view>
+                        </view>
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">实例状态</view>
+                            <view class="weui-form-preview__value">{{status_name[item.Status]}}</view>
+                        </view>
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">公网 IP</view>
+                            <view class="weui-form-preview__value">
+                                <block wx:for="{{item.PublicIpAddress.IpAddress}}">
+                                    {{item}} | 
+                                </block>
+                            </view>
+                        </view>
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">内网 IP</view>
+                            <view class="weui-form-preview__value">
+                                <block wx:for="{{item.InnerIpAddress.IpAddress}}">
+                                    {{item}} | 
+                                </block>
+                            </view>
+                        </view>
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">网络类型</view>
+                            <view class="weui-form-preview__value">{{internet_type_name[item.InternetChargeType]}}</view>
+                        </view>
+                    </view>
+                    <view class="weui-form-preview__ft">
+                        <view bindtap="selected_ecs" data-id="{{index}}" class="weui-form-preview__btn weui-form-preview__btn_primary" >查看</view>
+                    </view>
+                </block>
+                
+            </view>
+        </block>
+        
+
+    </view>
+</view>

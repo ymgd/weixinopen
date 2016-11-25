@@ -1,0 +1,93 @@
+<view class="container">
+
+<view class="search">
+    <view class="search-input" bindtap="handerSearch">
+        <view class="placeholder">搜索</view>
+    </view>
+</view>
+
+<view class="row-flex">
+    <view class="cell-flex">
+        <image src="../../res/image/new_friend.png"></image>
+        <view class="title">新朋友</view>
+    </view>
+    <view class="cell-flex">
+        <image src="../../res/image/group_chat.png"></image>
+        <view class="title">群聊</view>
+    </view>
+    <view class="cell-flex">
+        <image src="../../res/image/qq_subscription.png"></image>
+        <view class="title">公众号</view>
+    </view>
+</view>
+
+</view>
+
+<view class="group-ul" style="margin-top:16px;">
+    <block wx:for="{{fristRowList}}">
+        <view class="group-li c-group-li {{item.trigger == 'open' ? 'c-group-li-open' : ''}}">
+            <view data-index="{{index}}" bindtap="onFristRowItemClick">
+                <text class="g-title">{{item.title}}</text>
+                <text class="g-number">{{item.onlineNum}}/{{item.children.length}}</text>
+            </view>
+            <view class="friend-group-ul" style="display:{{item.trigger == 'open' ? 'block' : 'none'}}">
+                <block wx:for="{{item.children}}" wx:for-item="children">
+                    <view class="friend-group-li" data-id = "{{children.userId}}" bindtap="onFriendItemClick">
+                        <image src="{{children.head}}"></image>
+                        <view>
+                            <view class="title">{{children.title}}</view>
+                            <text class="signature">{{children.signature}}</text>
+                        </view>
+                    </view>
+                    <view class="c-devierline"></view>
+                </block>
+            </view>
+        </view>
+    </block>
+</view>
+
+<view class="group-ul" style="margin-top:16px;">
+    <view class="group-li c-group-li">
+        <text class="g-title">我的好友</text>
+        <text class="g-number">23/51</text>
+    </view>
+    <view class="group-li c-group-li">
+        <text class="g-title">祝愿学习该DOME的朋友</text>
+        <text class="g-number">91/202</text>
+    </view>
+    <view class="group-li c-group-li">
+        <text class="g-title">身体健康,开心快乐</text>
+        <text class="g-number">36/262</text>
+    </view>
+    <view class="group-li c-group-li">
+        <text class="g-title">希望您把这份快乐传递下去</text>
+        <text class="g-number">74/92</text>
+    </view>
+    <view class="group-li c-group-li">
+        <text class="g-title">通过分享git地址给您身边的朋友</text>
+        <text class="g-number">38/1222</text>
+    </view>
+    <view class="group-li c-group-li">
+        <text class="g-title">下面这三行</text>
+        <text class="g-number">38/1222</text>
+    </view>
+     <view class="group-li c-group-li">
+        <text class="g-title">是我测试滚动条状态的</text>
+        <text class="g-number">38/1222</text>
+    </view>
+     <view class="group-li c-group-li">
+        <text class="g-title">that's all</text>
+        <text class="g-number">38/1222</text>
+    </view>
+</view>
+
+<view class="group-ul" style="margin:16px 0;">
+    <view class="group-li c-group-li">
+        <text class="g-title">手机通讯录</text>
+        <text class="g-number">未匹配</text>
+    </view>
+    <view class="group-li c-group-li">
+        <text class="g-title">我的设备</text>
+        <text class="g-number">3/3</text>
+    </view>
+</view>

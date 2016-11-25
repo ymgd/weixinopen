@@ -1,0 +1,166 @@
+.container {
+    background-color: #f6f6f6;
+}
+.carimg {
+    width: 750rpx;
+    height: 500rpx;
+    overflow: hidden;
+}
+.carimg wx-image {
+    width: 750rpx;
+    height: 500rpx;
+}
+.carname {
+    font-size: 33rpx;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 20rpx 30rpx;
+    background: #fff;
+}
+.carremark {
+    color: #666;
+    font-size: 36rpx;
+    line-height: 1.5;
+    background: #fff;
+    padding: 0 30rpx 20rpx;
+}
+.tmall-price {
+    width: 690rpx;
+    height: 100rpx;
+    padding: 20rpx 30rpx;
+    background: #ffecd2;
+}
+.ptag {
+    float: left;
+    width: 66%;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.ptag view {
+    display: inline-block;
+}
+.ptag .minprice {
+    font-size: 36rpx;
+    font-weight: 700;
+    color: #ff7200;
+    margin-right: 20rpx;
+}
+.ptag .oldprice {
+    color: #666;
+    font-size: 24rpx;
+}
+.ptag .oldprice em {
+    text-decoration: line-through;
+}
+.psave {
+    float: left;
+    width: 30%;
+    height: 100rpx;
+    color: #ff7200;
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 50rpx;
+    border-left: 1px solid #ff7200;
+}
+.psave em {
+    font-weight: 700;
+}
+.tmall-types {
+    width: 690rpx;
+    padding: 0 30rpx;
+    background: #fff;
+}
+.tmall-types.pt20 {
+    padding-top: 20rpx;
+}
+.tmall-types.mb20 {
+    margin-bottom: 20rpx;
+}
+.tipstxt {
+    float: left;
+    width: 72rpx;
+    height: 60rpx;
+    font-size: 28rpx;
+    line-height: 60rpx;
+}
+.cartypelist {
+    overflow: hidden;
+}
+.cartypeitem {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 56rpx;
+    color: #333;
+    font-size: 24rpx;
+    line-height: 56rpx;
+    padding: 0 12rpx;
+    margin: 0 20rpx 20rpx 0;
+    border: 2rpx solid #d2d2d2;
+}
+.cartypeitem.cur {
+    border-color: #ff7200;
+}
+.cartypeitem.cur:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    display: inline-block;
+    width: 16rpx;
+    height: 16rpx;
+    background: url(../../images/icon-selected-01.png) no-repeat;
+    background-size: 16rpx 16rpx;
+}
+.cartypeitem.disabled {
+    color: #dedede;
+    cursor: not-allowed;
+    background: #eee;
+    border: 2rpx dashed #dedede;
+}
+.tmall-process {
+    width: 690rpx;
+    padding: 20rpx 30rpx 20rpx;
+    background: #fff;
+}
+.pub-title {
+    width: 656rpx;
+    height: 48rpx;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 48rpx;
+    background: #fff;
+    padding-left: 24rpx;
+    margin-bottom: 30rpx;
+    border-left: 10rpx solid #ff7200;
+}
+
+.question_container {
+    width: 100%;
+    margin-top: 10rpx;
+    background-color: #fff;
+    text-align: center;
+    padding: 15px
+}
+
+.question_hint {
+    font-size: 24rpx;
+    line-height: 1.2;
+    padding: 20rpx 30rpx;
+    background: #fff;
+    color: black
+}
+
+.question_phone {
+    color: lightseagreen
+}
+
+.fixed-bottom {
+    position:fixed; 
+    left:0px; 
+    bottom:0px; 
+    width:100%; 
+    height:50px; 
+    background-color: rgba(0, 0, 0, .4); 
+    z-index:9999;
+}

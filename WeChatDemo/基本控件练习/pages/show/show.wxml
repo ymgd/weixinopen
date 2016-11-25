@@ -1,0 +1,11 @@
+<view class="bd view">
+    <view class="bottomView">
+    <button type="default" bindtap="sheet" class="bottomButton">sheet</button>
+    <button type="default" bindtap="model" class="bottomButton">model</button>
+    <button type="default" bindtap="toast" class="bottomButton">toast</button>
+    <button type="default" bindtap="loading" class="bottomButton">loading</button>
+    <button type="default" bindtap="call" class="bottomButton">打电话</button>
+    <button type="default" bindtap="systemInfo" class="bottomButton">系统信息</button>
+</view>
+
+</view>

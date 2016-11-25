@@ -1,0 +1,59 @@
+/*public.wxss*/
+
+.shortcut {
+     position:absolute;
+     top:72rpx;
+}
+
+.shortcut .content{
+    
+    /*position:absolute;*/
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 10rpx;
+}
+.shortcut .btn{
+    background: #fff;
+    border: 1px solid #9ac600;
+    border-radius: 3px;
+     
+}
+.shortcut .label{
+    /*background-color: gainsboro;
+    margin: 10rpx;
+    padding: 2rpx;
+    border-radius: 5rpx;
+    -moz-box-shadow: 0px 0px 5px #000000;
+    -webkit-box-shadow: 0px 0px 5px #000000;
+    box-shadow: 0px 0px 5px #000000;*/
+
+   margin: 15rpx;
+    color: #9ac600;
+    font-size: 24rpx;
+    /*letter-spacing: 3px;*/
+    line-height: 40rpx;
+}
+
+.search {
+    
+    position:absolute;
+     height: 72rpx;
+     width:100%;
+}
+
+.search .btn {
+    width: 64rpx;
+    height: 64rpx;
+    
+    /*float:left ;*/
+    /*background-color: #fa3;*/
+}
+.search .input {
+    width:400rpx;
+    margin-left: 143rpx;
+    margin-right: 32rpx;
+    margin-top: 6rpx;
+    background-color: #fff;
+    float:left ;
+}

@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    
+    <!--<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>-->
+    <text class="userinfo-nickname">
+      Hello,{{userInfo.nickName}} 点我进入列表页面
+    </text>
+    
+  </view>
+  
+  <!--<view class="usermotto">
+    <text class="user-motto">
+      点图像进入列表页面
+    </text>
+    
+  </view>-->
+</view>

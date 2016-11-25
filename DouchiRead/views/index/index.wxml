@@ -1,0 +1,35 @@
+<view class="container">
+    <view class="user-section">
+        <image class="user_headimg" src="{{userInfo.avatarUrl}}"></image>
+        <navigator url="../search/index">
+            <view class="search_ico" ></view>
+        </navigator>
+        <view class="user_hello">
+            <text>欢迎, {{userInfo.nickName}}{{date}}</text>
+        </view>      
+    </view>
+    <scroll-view scroll-y="true" class="bookitems-section" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="100">
+        <swiper class="banner-box" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%" height="100%"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <block wx:for="{{bookList}}">
+            <navigator hover-class="nav-hover" url="../detail/index?id={{item.id}}">
+                <view class="book_item"> 
+                    <image mode="aspectFit" class="book_item_img" src="{{item.image}}"></image>
+                    <view class="book_item_infos">
+                        <view class="book_title">{{item.title}}</view>
+                        <view class="book_ps rel"><view class="book_star">推荐指数：{{item.rating.average}}</view><text class="book_price">￥{{item.price}}</text></view>
+                        <view class="book_author">作者：{{item.author[0]}}</view>
+                        <view class="book_tags">标签：{{item.tags[0].title}}/{{item.tags[1].title}}/{{item.tags[2].title}}</view>
+                        <view class="book_item_summary">摘要：{{item.summary}}</view>
+                    </view>
+                </view>
+            </navigator>
+        </block> 
+    </scroll-view>
+    <navigator url="../classify/index"><view class="classifybtn b">分类</view></navigator>
+</view>

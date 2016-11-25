@@ -1,0 +1,41 @@
+<view class="container">
+<view class="body-view">
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+</view>
+<view class="hot-item">
+    <view class="image"><image src="{{info.images.large}}"></image></view>
+    <view class="content">
+        <view class="title1">{{info.title}}</view>
+        <view class="title">年份：{{info.year}}年</view>
+        <view class="title">评分：{{info.rating.average}}分</view>
+        <view class="title">类型：{{info.genres}}</view>
+        <view class="aka">别名：
+            <block wx:for="{{info.aka}}" wx:key="unique">
+                {{item}}
+            </block>
+        </view>
+        <view class="title"><image src="../assets/img/collect.png"></image>{{info.collect_count}}</view>
+    </view>
+    <view class="description">{{info.summary}}</view>
+    <view class="casts">
+        <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+            <block wx:for="{{info.casts}}" wx:for-index="index" wx:key="unique">    
+                <swiper-item>    
+                <image src="{{item.avatars.small}}" class="slide-image"/>
+                <view class="casts-name">
+                    <view style="width:500rpx">{{item.name}}</view>
+                    <!-- <view style="width:500rpx"><block wx:if="{{item.gender}}">{{item.gender}}</block><block wx:if="{{item.born_place}}">，出生于{{item.born_place}}</block></view>
+                    <view style="width:500rpx">曾出演：
+                        <block wx:for="{{item.works}}" wx:for-index="index" wx:for-item="works" wx:key="unique">
+                            <text class="works" bindtap="clickShow" id="{{works.subject.id}}">{{works.subject.title}}({{works.subject.year}})  </text>
+                        </block>
+                    </view> -->
+                </view>
+                </swiper-item>    
+            </block>   
+        </swiper>
+    </view>
+</view>
+</view>

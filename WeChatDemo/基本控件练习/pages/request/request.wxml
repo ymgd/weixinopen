@@ -1,0 +1,9 @@
+<view class="bd view">
+    <button type="default" bindtap="request" class="bottomButton">请求</button>
+</view>
+
+<view class="imageCell">
+    <block wx:for="{{imgsUrl}}">
+        <image src="http://tnfs.tngou.net/image{{item.img}}"/>
+    </block>
+</view>

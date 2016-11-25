@@ -1,0 +1,41 @@
+<view class="container">
+  <!-- 需要帮忙验证的邻居 -->
+  <view class="table-block">
+    <view class="table-title">需要帮忙验证的邻居</view>
+    <block wx:for="{{neighbors_authenticated}}">
+      <view class="table-row">
+        <!-- 用户头像 -->
+        <image class="neighbor-photo" src="{{item.neighbor_photo}}"></image>
+        <!-- 用户名 -->
+        <text class="main-content">{{item.neighbor_name}}</text>
+      </view>
+    </block>
+  </view>
+  <!-- 最近联系人 -->
+  <view class="table-block">
+    <view class="table-title">最近联系人</view>
+    <block wx:for="{{neighbors_recently}}">
+      <view class="table-row">
+        <!-- 用户头像 -->
+        <image class="neighbor-photo" src="{{item.neighbor_photo}}"></image>
+        <view class="name-and-lastchat-warp">
+          <!-- 用户名 -->
+          <text class="s-font">{{item.neighbor_name}}</text>
+          <!-- 聊天内容 -->
+          <text class="xs-font lastchat">{{item.neighbor_lastchat}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- 所有小区邻居 -->
+  <view class="table-block">
+    <view class="table-title">所有小区邻居</view>
+    <block wx:for="{{neighbors_all}}">
+      <view class="table-row">
+        <!-- 用户头像 -->
+        <image class="neighbor-photo" src="{{item.neighbor_photo}}"></image>
+        <!-- 用户名 -->
+        <text class="main-content">{{item.neighbor_name}}</text>
+      </view>
+    </block>
+  </view>

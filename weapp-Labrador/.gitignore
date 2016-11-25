@@ -1,0 +1,5 @@
+dist
+node_modules
+.DS_Store
+.tags
+.tags_sorted_by_file

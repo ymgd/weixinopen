@@ -1,0 +1,14 @@
+<!-- 分类 -->
+<loading hidden="{{!loading}}">
+	加载ing
+</loading>
+
+<view class="page-header">
+	<text class="page-header-title">{{title}}</text>
+</view>
+
+<scroll-view scroll-y="true" class="page-body">
+	<navigator wx:for="{{list}}" url="../menu/menu?id={{item.id}}">
+		<view class="item_list">{{item.title}}</view>
+	</navigator>
+</scroll-view>

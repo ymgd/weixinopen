@@ -1,0 +1,7 @@
+<template name="toast">
+    <view class="body-view">
+      <toast hidden="{{toastHidden}}" bindchange="toastChange">
+        催办成功~
+      </toast>
+    </view>
+</template>

@@ -1,0 +1,21 @@
+
+<view class="fx-column edit-layer">
+ 
+    <view catchtap="onSelectCoverImg" class="preview-wrapper fx-row fx-row-center fx-row-middle">
+         <image src="{{selectImg}}" mode="aspectFill" class="edit-img-pic" wx:if="{{selectImg}}"  />
+         <image src="../../imgs/photo.png" class="edit-photo" wx:if="{{!selectImg}}" />
+    </view>
+    
+    <view class="edit-text fx">
+        <input bindinput="bindKeyTitle"  type="text" placeholder="输入标题"  class="edit-title"  auto-focus/>   
+        <view class="edit-desc-wrap">
+            <textarea 
+                 bindinput="bindKeyDesc" auto-height placeholder="输入正文"   class="edit-desc" />
+        </view>
+    </view> 
+ 
+    <view class="edit-bottom" style="">
+          <button bindtap="onSubmitPost"  style="width:100%;" size="mini" type="primary" plain="true">提交</button>
+    </view>
+
+</view>

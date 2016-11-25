@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/community/community",
+    "pages/story/story",
+    "pages/add/add",
+    "pages/neighbors/neighbors",
+    "pages/activities/activities",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "爱帮助",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#EFEFF4"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/story/story",
+        "text": "爱帮助"
+      },
+      {
+        "pagePath": "pages/neighbors/neighbors",
+        "text": "邻居"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "+"
+      },
+      {
+        "pagePath": "pages/activities/activities",
+        "text": "邻居活动"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我"
+      }
+    ]
+  }
+}

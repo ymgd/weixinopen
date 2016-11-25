@@ -1,0 +1,52 @@
+/**app.wxss**/
+/*.container {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /*align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.page{
+  height: 100%;
+}*/
+/*.page-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+}*/
+
+/*.page-header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1rpx solid #ccc;
+  /*margin-bottom: 10rpx;*/
+/*}*/
+
+.tips {
+  font-size: 28rpx;
+  text-align: center;
+  padding: 50rpx;
+  color: #ccc;
+}
+
+.tips image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.tips image,
+.tips text {
+  vertical-align: middle;
+}
+
+/*.page-footer{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1rpx solid #ccc;
+  margin-bottom: 64px;
+}*/

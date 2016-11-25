@@ -1,0 +1,14 @@
+<template name="celebrityuserview">
+<view class="celebrityuserview">
+    <view class="userview">
+        <image class="avatar" src="src"></image>
+        <view class="infoview">
+            <view class="topview">
+                <text class="namelbl">{{name}}</text>
+                <image class="markimage" src="../../resource/images/icon_mark.png"></image>
+            </view>
+            <text class="desclbl">乐空空团队玩转“断舍离”</text>
+        </view>
+    </view>
+</view>
+</template>

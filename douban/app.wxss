@@ -1,0 +1,18 @@
+/**app.wxss**/
+
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+/**在这里必须设置 height: 100%，否则加载更多数据的时候会有问题**/
+page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	background-color: #f9f9f9;
+	font-family: -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+}

@@ -1,0 +1,18 @@
+.mainad-area{
+  padding-bottom: 40rpx;
+}
+
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+
+.slide-image{
+  width: 100%;
+}
+
+.section_gap .repeat{
+  background-color: #DDDDDD;
+  width: 12rpx;
+  height: 12rpx;
+}

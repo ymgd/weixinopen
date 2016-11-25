@@ -1,0 +1,26 @@
+<import src="../../tmpl/mdTmpl.wxml"/>
+<!--repo.wxml-->
+<view class="repo-body">
+	<view class="repo-des">{{description}}</view>
+	<view class="repo-list">
+		<view class="repo-list-item" wx:for="{{repoListDir}}" wx:key="unique">
+			<image class="ico" src="../../../img/dir.png"/>
+			<view class="repo-list-text">{{item.name}}</view>
+		</view>
+		<view class="repo-list-item" wx:for="{{repoListFile}}" wx:key="unique">
+			<image class="ico" src="../../../img/file.png"/>
+			<view class="repo-list-text">{{item.name}}</view>
+		</view>
+		<!-- <view class="repo-list-item">
+			<image class="ico" src="../../../img/file.png"/>
+			<view class="repo-list-text">index.html</view>
+		</view> -->
+	</view>
+	<view class="repo-md" id="rdCon">
+		<template is="mdTmpl" data="{{wxMdData}}"/>
+	</view>
+</view>
+
+
+
+

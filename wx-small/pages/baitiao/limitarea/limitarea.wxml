@@ -1,0 +1,23 @@
+<view class="jrm-flex-column jrm-w100p jrm-bg-fff limitarea">
+ <view class="jrm-flex-row jrm-w100p jrm-pl32 jrm-pr32 jrm-box limitarea-area">
+    <view class="jrm-flex-column limitarea-left">
+       <text class="limitarea-desp1">白条可用额度</text>
+       <text class="limitarea-desp2">{{limit}}</text>
+       <view>
+        <text class="limitarea-desp3">可提额</text>
+       </view>       
+     </view>      
+    <view class="userassets-right">      
+    </view>
+  </view>
+ <view class="jrm-flex-row jrm-w100p limitarea-grid">
+     <view class="jrm-flex-column jrm-pl32 limitarea-grid-item border-right-1rpx">
+       <text class="limitarea-grid-desp1">金条可用额度</text>
+       <text class="limitarea-grid-desp2">29,102.00</text>      
+     </view>      
+     <view class="jrm-flex-column jrm-pl32 limitarea-grid-item">
+       <text class="limitarea-grid-desp1">近7日代还</text>
+       <text class="limitarea-grid-desp2">29,102.00</text>      
+     </view>   
+ </view>
+</view>

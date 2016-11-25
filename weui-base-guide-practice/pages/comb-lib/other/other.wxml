@@ -1,0 +1,80 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="section">
+                <view class="section-header">
+                    <view class="section-row-wrp">
+                        <view class="section-row">
+                            <text>滑块选择器</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-body">
+                    <view wx:for="{{switches}}" wx:for-item="sw" class="section-row-wrp">
+                        <view class="section-row">
+                            <text>{{sw.label}}</text>
+                            <switch type="switch" checked="{{sw.checked}}" bindchange="{{sw.bindchange}}"/>
+                        </view>
+                    </view>
+                </view>
+            </view>
+             <view class="section">
+                <view class="section-header">
+                    <view class="section-row-wrp">
+                        <view class="section-row">
+                            <text>宽行组合列表</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-body">
+                    <view class="section-row-wrp">
+                        <view class="section-row section-row-big">
+                            <text>{{list[0].content}}</text>
+                        </view>
+                    </view>
+                    <view class="section-row-wrp">
+                        <view class="section-row section-row-big">
+                            <text>{{list[1].content}}</text>
+                            <image class="chevron_icon" src="{{chevron_png.src}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+             <view class="section">
+                <view class="section-header">
+                    <view class="section-row-wrp">
+                        <view class="section-row">
+                            <text>下拉框</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-body drop-list-box">
+                    <view class="section-row-wrp">
+                        <view class="section-row">
+                            <text>按钮一</text>
+                        </view>
+                    </view>
+                    <view class="section-row-wrp">
+                        <view class="section-row no-border-bottom">
+                            <text>按钮二</text>
+                        </view>
+                    </view>
+                    <view class="section-row-wrp cancel">
+                        <view class="section-row">
+                            <text>取消</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section footer">
+                <view class="section-body">
+                    <view class="section-row sub-info">
+                        <checkbox value="1" checked="true"/>
+                        <text>已阅读并同意</text>
+                        <text class="link">《借款额度合同及相关授权》</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

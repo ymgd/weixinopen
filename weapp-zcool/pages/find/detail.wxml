@@ -1,0 +1,56 @@
+<view class="find-detail">
+    <view class="detail-title">{{title}}</view>
+    <view class="detail-author">
+        <text class="author">{{author}}</text>
+        <text class="time">{{time}}</text>
+    </view>
+    <view class="detail-info">
+        <view class="text">个人绘本讲述小魔女收集秋天树叶的故事灵感来自于秋天午后的阳光</view>
+        <block wx:for="{{imgUrls}}">
+            <image class="detail-image" src="{{item}}" mode="aspectFill"></image>
+        </block>
+        <view class="text">今年秋天的某一天，突然对秋日午后的阳光很有灵感，于是画了这个小插图，这个是第一个小草图。</view>
+        <image class="detail-image" src="http://img.zcool.cn/community/01551a5829103ba84a0d304f0cd599.jpg@900w_1l_2o_100sh.jpg" mode="aspectFill"></image>
+        <view class="text">然后想到给小魔女来个故事，这是小魔女角色的线稿。</view>
+        <block wx:for="{{imgUrls2}}">
+            <image class="detail-image" src="{{item}}" mode="aspectFill"></image>
+        </block>
+        <view class="text">哟霍霍霍霍~谢谢您的观看和支持，喜欢的话请点个赞吧~</view>
+    </view>
+    
+    <view class="detail-zan">
+        <block wx:if="{{isLikeBtn}}">
+            <image class="zan-btn" bindtap="likeEvent" src="/images/zan.png"></image>
+        </block>
+        <block wx:else>
+            <image class="zan-btn" src="/images/zan-dis.png"></image>
+        </block>
+    </view>
+
+    <view class="detail-other">
+        <view class="detail-number">
+            <image class="icon-look" src="/images/icons/icon-view.png"></image>{{look}}
+            <image class="icon-like ml20" src="/images/icons/icon-zan.png"></image>{{like}}
+        </view>
+        <text class="desc">原创作品 - 插画 - 儿童插画</text>
+        <view class="comment">
+            <view class="comment-title">评论（{{comments.length}}）</view>
+            <view class="send-comment">
+                <form bindsubmit="formSubmit">
+                    <textarea class="comment-textarea" name="comment" placeholder="请输入评论内容" value="{{defaultText}}" />
+                    <button formType="submit" type="primary" class="comment-btn">发送</button>
+                </form>
+            </view>
+            <block wx:for="{{comments}}">
+                <view class="comment-item {{index === comments.length -1 ? 'no-border' : ''}}">
+                    <image class="user-image" src="{{item.imgurl}}" mode="aspectFill"></image>
+                    <view class="comment-content">
+                        <view class="user-name">{{item.name}}</view>
+                        <view class="user-time">{{item.time}}</view>
+                        <view class="user-comment">{{item.comment}}</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

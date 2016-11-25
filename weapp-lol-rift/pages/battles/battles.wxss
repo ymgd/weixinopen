@@ -1,0 +1,24 @@
+.battle-list {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+
+.image-section {
+  float: left;
+}
+
+.battle-item {
+  margin: 20rpx;
+  font-size: 18px;
+  float: right;
+}
+
+.column-content {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  align-items: flex-start;
+}

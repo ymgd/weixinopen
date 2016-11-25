@@ -1,0 +1,26 @@
+<view class="header">
+  <image class="iconImage" src="../../../images/testHead.png"></image>
+  <text>1.1</text>
+</view>
+
+<view class="body">
+   <block wx:for-items="{{titles}}" wx:for-item="item">
+      <navigator url="{{item.url}}">
+                 
+                 <view class="item-container">
+                    <view class="item-textView">
+                        <text class="item-text">{{item.title}}</text>
+                    </view>
+
+                    <image class="item-arrow" src="../../../images/arrowright.png"></image>
+                </view>
+                <!--分割线-->
+                <view class="hr"></view>
+      
+      </navigator>
+   
+   
+   </block>
+
+
+</view>

@@ -1,0 +1,45 @@
+/**index.wxss**/
+.banner {
+  width: 100%;
+}
+.list {
+  width: 90%;
+  margin: 10px auto;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+.list view {
+  padding: 5px;
+}
+.title {
+  padding: 5px;
+  font-size: 26px;
+  border-bottom: 1px solid #eee;
+}
+.content {
+  padding: 5px;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+}
+.date {
+  font-size: 16px;
+}
+.scrollArea {
+  height: 400px;
+}
+.write-btn {
+  border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.float-btn {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 1em;
+}

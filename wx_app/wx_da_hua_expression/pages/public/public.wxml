@@ -1,0 +1,35 @@
+<!--public.wxml-->
+<import src="../../template/emoticon.wxml"/><!--menu模板-->
+<import src="../../template/menu.wxml"/><!--menu模板-->
+<view class="container" catchtap="eventBase" data-action="all">
+    <!--表情图-->
+    <template is="emoticon" data="{{emoticon,windowHeight}}"></template>
+   
+
+<!--<view class="container" >-->
+    <!--搜索栏-->
+     <view class="search" >
+        <view >
+            <input class="input" 	placeholder="热图、丰兄" value="{{keyword}}" bindblur="inputBlur"/>
+            <image class="btn" src="../../images/ic_action_search.png" background-size="cover" catchtap="eventBase"  data-action="btnSearch" ></image>
+        </view>
+        
+    </view>
+   <!--短语快捷键-->
+    <view class="shortcut">
+        <view class="content" >
+            <block wx:for="{{hotLabel}}">
+                <view  index="{{index}}" id="{{item.id}}">
+                    <view class="btn"><label class="label" 
+                    catchtap="eventBase"  data-action="btnShortcut"
+                    data-keyword="{{item}}">{{item}}</label></view>
+                </view>
+            </block>
+        </view>
+    </view>
+<!--点击表情，弹出菜单-->
+    <template is="menu" data="{{menuType,MENU_TYPE,menuWidth,menuHeight,selectEmoticon,pageName}}"></template>
+  <loading wx:if="{{displayLoading}}" >
+    加载中...
+  </loading>
+</view>

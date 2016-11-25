@@ -1,0 +1,14 @@
+<!--battles.wxml-->
+<view class="container battle-list">
+  <block wx:for="{{battles}}" wx:for-item="battle">
+    <view class="column-content">
+      <view class="image-section">
+      <image style="width: 50px; height: 50px; background-color: #eeeeee;" mode="aspectFit" src="http://ossweb-img.qq.com/images/lol/img/champion/{{battle['legend_name']}}.png">
+      </image>
+      </view>
+      <text class="battle-item">{{battle["battle_time"]}} 
+       {{battle["game_id"]}} {{battle["legend_name"]}} 
+       {{battle["detail_info"]["KDA"]}} {{battle["detail_info"]["battle_result"]}}</text>
+    </view>
+  </block>
+</view>

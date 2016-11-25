@@ -1,0 +1,24 @@
+<!--影院头部-->
+<view class="header">
+    <view class="city">深圳</view>
+    <view class="section">
+        <input type="text" value="搜索影院"/>
+    </view>    
+</view>
+
+<!--影院内容-->
+<view class="cinema">
+    <view class="cinemaList" wx:for="{{cinemaList}}" wx:key="影院">
+        <view class="cinema-top">
+            <text class="left">{{item.title}}</text>
+            <text class="right">{{item.price}}</text>
+        </view>
+        <view class="cinema-middle">
+            <text class="left">{{item.subTitle}}</text>
+            <text class="right">1.7km</text>
+        </view>
+        <view class="cinema-bottom">
+            <text>{{item.tag}}</text>
+        </view>
+    </view>
+</view>

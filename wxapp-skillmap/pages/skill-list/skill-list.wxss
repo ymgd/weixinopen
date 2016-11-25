@@ -1,0 +1,47 @@
+.wrapper {
+    display: flex;
+    padding: 10rpx 0;
+    flex-wrap: wrap;
+    padding-bottom: 40rpx;
+}
+
+.item {
+    width: 150rpx;
+    height: 265rpx;
+    margin: 40rpx 50rpx 0 50rpx;
+}
+.item .cover {
+    width: 150rpx;
+    height: 225rpx;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+
+}
+.item .title {
+  margin-top: 30rpx;
+  text-align: center;
+  padding: 10rpx 0;
+  word-wrap: break-word;
+  width: 150rpx;
+  font-size: 22rpx;
+  line-height: 1.2;
+  color: white;
+
+}
+.item .logo {
+  width: 30%;
+  height: 7.5%;
+  margin-bottom: 10rpx;
+}
+
+.item .name {
+    margin-top: 12rpx;
+    width: 100%;
+    font-size: 20rpx;
+    color: #888;
+    margin-left: 4rpx;
+    line-height: 1.2;
+}

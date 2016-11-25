@@ -1,0 +1,50 @@
+/**app.wxss**/
+page {
+  background-color: #fbf9fe; 
+  height: 100%;
+}
+/**容器 flex-direction: column 表示元素垂直排列*/
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 200rpx 0rpx;
+} 
+
+ /**page 用于页面根标签 overflow超出范围的裁剪**/
+.page {
+    min-height: 100%;
+    flex: 1;
+    background-color: #FBF9FE;
+    font-size: 32rpx;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    overflow: hidden;
+}
+ /**页面中的input的组件**/
+.page input{
+    padding: 20rpx 30rpx;
+    background-color: #fff;
+}
+
+/**段落*/
+.section{
+    margin-bottom: 80rpx;
+}
+/**段落标题*/
+.section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+/**button范围*/
+.btn-area{
+    padding: 0 30rpx;
+}
+/**button*/
+.btn-area button{
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+

@@ -1,0 +1,56 @@
+
+<!--头部-->
+<view class="header-bar">
+    <image src="../../img/logo.png" />
+    <view class="city">深圳</view>
+    <view class="header-content">
+        <text bindtap="navClick" data-index="{{index}}" wx:for="{{nav}}" class="{{ index == nowIndex ? 'active' : ''}}" wx:key="电影">正在上映</text>
+    </view>
+</view>
+
+<!--幻灯片-->
+<swiper autoplay="true" indicator-dots="true" interval="2000" class="{{nowIndex == 0 ? 'show' : 'hide'}}">
+    <swiper-item wx:for="{{bannerList}}" wx:key="幻灯片">
+        <image src="{{item}}" /> 
+    </swiper-item>
+</swiper>
+
+<!--正在上映电影-->
+<view class="{{nowIndex == 0 ? 'show' : 'hide'}}">
+    <!--电影-->
+    <view wx:for="{{movieList}}" wx:key="电影" class="movieView">
+        <image src="{{item.image}}"/>
+        <view class="movie-right">
+            <view class="movie-top">
+                <text wx:if="current = 0">{{item.title}}</text>
+                <!--<text>IMAX3D</text>-->
+                <text class="right">{{item.score}}</text>
+                </view>
+            <view class="movie-bottom">
+                <text class="text1">{{item.subTitle}}</text>
+                <text class="actor">{{item.actor}}</text>
+                <button>{{item.action}}</button>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!--即将上映电影-->
+<view class="{{nowIndex == 1 ? 'show' : 'hide'}}">
+    <!--电影-->
+    <view wx:for="{{movieList}}" wx:key="电影" class="movieView">
+        <image src="{{item.image}}"/>
+        <view class="movie-right">
+            <view class="movie-top">
+                <text wx:if="current = 0">{{item.title}}</text>
+                <!--<text>IMAX3D</text>-->
+                <text class="right">IMAX3D</text>
+                </view>
+            <view class="movie-bottom">
+                <text class="text1">{{item.subTitle}}</text>
+                <text class="actor">{{item.actor}}</text>
+                <button>想看</button>
+            </view>
+        </view>
+    </view>
+</view>

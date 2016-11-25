@@ -1,0 +1,23 @@
+<view class="container">
+    
+    <view class="word"><label style="border-bottom: 1px solid #1b1d20;">演示</label></view>
+    <view class="sample">
+        <image class="img" src="../../images/gif_in_1.gif"></image>
+        <image class="math" src="../../images/gif_jia.png"></image>
+        <image class="img"  src="../../images/gif_in_2.gif"></image>
+        <image class="math" src="../../images/gif_deng.png"></image>
+        <image class="img"  src="../../images/gif_out.gif"></image>
+    </view>
+    
+    <view class="word"><label style="border-bottom: 1px solid #1b1d20;">GIF拼接</label></view>
+    <view class="py">
+        <image class="img" src="{{img_first}}" catchtap="addFirst"></image>
+        <image class="math" src="../../images/gif_jia.png"></image>
+        <image class="img"  src="{{img_seconde}}" catchtap="addSeconde"></image>
+    </view>
+    <view class="word"><label style="border-bottom: 1px solid #1b1d20;">结果</label></view>
+    <view class="reasult">
+        <image class="img" src="../../images/gif_out.gif"></image>
+    </view>
+    <button >确认GIF接龙</button>
+</view>

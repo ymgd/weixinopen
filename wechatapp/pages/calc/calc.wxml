@@ -1,0 +1,10 @@
+<!-- view: 横\纵向布局容器 -> StackPanel -->
+<view class="container">
+    <form bindsubmit="calcSubmit">
+        <input name="num1" value="{{num1}}"></input>
+        <text>+</text>
+        <input name="num2" value="{{num2}}"></input>
+        <button form-type="submit">=</button>
+        <text class="result">{{value}}</text>
+    </form>
+</view>

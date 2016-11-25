@@ -1,0 +1,60 @@
+.flipview{height:320rpx}
+.flipview swiper-item{
+    position: relative;
+    overflow: hidden;
+    height:320rpx;
+}
+.flipview swiper-item image{
+    width:100%;
+    vertical-align: top;
+}
+.flipview .caption{
+    position: absolute;
+    bottom: 20rpx;
+    left: 0;
+    font-size:28rpx;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 0 20rpx;
+    height: 28rpx;
+    line-height: 28rpx;
+    overflow: hidden;
+}
+.flipview .tabs{
+    position: absolute;
+    right:19rpx;
+    bottom:20rpx;
+    font-size: 28rpx;
+    line-height: 28rpx;
+    color:#3f3f3f;
+}
+.flipview .tabs .current{
+    color:rgba(255,255,255,.98)
+}
+.section{padding:0 20rpx}
+.section navigator{
+    position: relative;
+    margin-top: 20rpx;
+    padding:62rpx 0 0 216rpx;
+    overflow: hidden;
+    height:98rpx;
+    border-radius: 12rpx;
+}
+.project-item-0{background: #00D5E6 url("https://s.kcimg.cn/wap/images/gb1589/banner1.png") no-repeat 0 0; background-size: 180rpx 160rpx;}
+.project-item-1{background: #2B8DFF url("https://s.kcimg.cn/wap/images/gb1589/banner2.png") no-repeat 41rpx 15rpx; background-size: 138rpx 131rpx;}
+.project-item-2{background: #3BD679 url("https://s.kcimg.cn/wap/images/gb1589/banner3.png") no-repeat 0 0; background-size: 180rpx 160rpx;}
+
+.section .title{
+    font-size: 36rpx;
+    line-height:36rpx;
+    color:#fff;
+    font-weight: bold;
+}
+.section .total{
+    position: absolute;
+    bottom: 10rpx;
+    right: 20rpx;
+    color: rgba(255,255,255,.6);
+    font-size:20rpx;
+}

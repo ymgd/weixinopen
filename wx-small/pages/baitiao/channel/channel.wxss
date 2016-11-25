@@ -1,0 +1,32 @@
+.channel-area{
+    margin-top: 20rpx;
+    box-sizing: border-box;
+}
+
+.channel-item{
+    flex: 1;
+    height: 214rpx;
+    box-sizing: border-box;
+}
+
+.channel-item-icon{ 
+  margin-top: 44rpx;
+  width: 72rpx;
+  height: 72rpx;
+}
+
+.channel-item-desp{
+    margin-top: 18rpx;
+    font-family: PingFangSC-Regular;
+font-size: 28rpx;
+line-height: 40rpx;
+color: #333333;
+}
+
+.channel-item-desp1{
+    margin-top: 2rpx;
+font-family: PingFangSC-Regular;
+font-size: 22rpx;
+line-height: 30rpx;
+color: #FF801A;
+}

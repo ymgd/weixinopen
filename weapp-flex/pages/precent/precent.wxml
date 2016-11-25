@@ -1,0 +1,50 @@
+<view class="container">
+    <view>
+        <view> 横向 </view>
+        <view class="row cell-row">
+            <view class="row-1">row-1</view>
+            <view class="row-5">row-5</view>
+        </view>
+        <view class="row cell-row">
+            <view class="row-2">row-2</view>
+            <view class="row-4">row-4</view>
+        </view>
+        <view class="row cell-row">
+            <view class="row-3">row-3</view>
+            <view class="row-3">row-3</view>
+        </view>
+        <view class="row cell-row row-6">row-6</view>
+        <view class="row cell-row">
+            <view class="row-5 row-offset-1">row-offset-1</view>
+        </view>
+        <view class="row cell-row">
+            <view class="row-4 row-offset-2">row-offset-2</view>
+        </view>
+        <view class="row cell-row">
+            <view class="row-3 row-offset-3">row-offset-3</view>
+        </view>
+    </view>
+    <view>
+        <view> 纵向 </view>
+        <view class="row cell-column">
+            <view class="column row-1">
+                <view class="column-6">cell-6</view>
+            </view>
+            <view class="column row-1">
+                <view class="column-1">cell-1</view>
+                <view class="column-5">cell-5</view>
+            </view>
+            <view class="column row-1">
+                <view class="column-2">cell-2</view>
+                <view class="column-4">cell-4</view>
+            </view>
+            <view class="column row-1">
+                <view class="column-3">cell-3</view>
+                <view class="column-3">cell-3</view>
+            </view>
+            <view class="column row-1">
+                <view class="column-2 column-offset-4">column-offset-4</view>
+            </view>
+        </view>
+    </view>
+</view>

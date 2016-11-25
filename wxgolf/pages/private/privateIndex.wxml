@@ -1,0 +1,57 @@
+<!--<view class="container">-->
+<view>
+  <image class="top-remind-img" src="../../images/bg_servers_top_icon@2x.png"></image>
+</view>
+<view class="index-nav">
+        <block wx:for-items="{{navs}}">
+            <view class="l-c-c" catchtap="go" data-type="{{item.text}}">
+                <image src="{{item.image}}" class="slide-image"/>
+                <text>{{item.text}}</text>
+            </view>
+        </block>
+</view>
+<view class="page-center-gray-line"></view>
+<view class="special-qiuchang-sign">
+    <image class="special-qiuchang-img" src="../../images/index-tejia.png"></image>
+    <text class="special-qiuchang-text">特价球场</text>
+</view>
+<scroll-view scroll-y="true" class="recommand-qiuchang-body">
+  <navigator wx:for="{{recommandClubsArray}}">
+    <view class="recommand-qiuchang-item">
+        <image class="recommand-qiuchang-img" src="{{item.logoUrl}}"></image>
+        <view class="recommand-qiuchang-meta">
+            <text class="recommand-qiuchang-title">{{item.name}}</text>
+            <view class="recommand-qiuchang-sub-title">
+                 <text class="recommand-qiuchang-courseKind">{{item.courseKind}}</text>
+                 <text class="recommand-qiuchang-courseData">{{item.courseData}}</text>
+            </view>
+            <text class="recommand-qiuchang-price">¥{{item.weekdayPrice}}</text>
+        </view>
+        <view class="recommand-qiuchang-distance-view">
+                <text class="recommand-qiuchang-distance">99km</text>
+        </view>
+    </view>
+  </navigator>
+</scroll-view>
+<view class="page-center-gray-line"></view>
+<view class="special-qiuchang-sign">
+    <image class="special-qiuchang-img" src="../../images/index-tejia.png"></image>
+    <text class="special-qiuchang-text">特价球具</text>
+</view>
+
+<scroll-view scroll-y="true" class="recommand-commodity-body">
+  <navigator wx:for="{{recommendCommodityArray}}">
+    <view class="recommand-commodity-item">
+        <image class="recommand-commodity-img" src="{{item.icon}}"></image>
+        <!--<view class="recommand-commodity-meta">-->
+            <text class="recommand-commodity-title">{{item.name}}</text>
+            <!--<view class="recommand-commodity-sub-title">-->
+                 <text class="recommand-commodity-deliveryPrice">{{item.courseKind}}</text>
+                 <text class="recommand-commodity-saleCount">已售{{item.commoditySaleCount.saleCount}}件</text>
+            <!--</view>-->
+            <text class="recommand-commodity-price">¥{{item.commodityPrice.specialOfferPrice}}</text>
+        <!--</view>-->
+    </view>
+  </navigator>
+</scroll-view>
+<!--</view>-->

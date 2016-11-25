@@ -1,0 +1,50 @@
+.header{
+    padding:0 20rpx;
+    line-height:60rpx;
+    font-size:28rpx;
+    color:#999;
+}
+.list{
+    position:absolute;
+    top:60rpx;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#fff;
+}
+.list .listItem{
+    display:block;
+    clear:both;
+    margin:0 20rpx;
+    padding:20rpx;
+    border-bottom:1px solid #ddd;
+    overflow:hidden;
+}
+.list .listItem:last-child{
+    border-bottom:none;
+}
+.list .listItem .img{
+    float:left;
+    width: 120rpx;
+    height:166rpx;
+}
+.list .listItem .img image{
+    width: 120rpx;
+    height:166rpx;
+}
+.list .listItem .info{
+    margin-left:140rpx;
+}
+.list .listItem .info .title{
+    display:block;
+    padding-bottom:14rpx;
+    font-size:32rpx;
+    font-weight:bold;
+    color:#666;
+}
+.list .listItem .info .txt{
+    display:block;
+    padding:5rpx 0;
+    font-size:28rpx;
+    color:#666;
+}

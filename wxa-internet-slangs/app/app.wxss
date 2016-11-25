@@ -1,0 +1,14 @@
+page {
+  display: flex;
+  flex-direction: column;
+  font-family: "Avenir", "Avenir Next", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 16px;
+}

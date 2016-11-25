@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="item">
+                <image class="big-rect" src="{{big_rect_png.src}}"></image>
+            </view>
+            <view class="item">
+                <button type="primary" loading="true">操作</button>
+            </view>
+        </view>
+    </view>
+</view>

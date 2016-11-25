@@ -1,0 +1,7 @@
+page{
+    background-color: #f8f8f8;
+}
+.list_line{
+    background-color: #f8f8f8;
+    height:20px;
+}

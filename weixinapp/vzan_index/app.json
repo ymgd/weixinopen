@@ -1,0 +1,32 @@
+{
+    "pages":[
+         "vzan/index/index"
+         
+    ],
+    "window":{
+        "navigationBarBackgroundColor":"#FFFFFF",
+        "navigationBarTitleText":"赞赏科技",
+        "backgroundColor":"#ADD8E6",
+        "enablePullDownRefresh":true
+    },
+    "tabBar":{
+        "color":"F5F5F5",
+        "backgroundColor":"#FFFFFF",
+        "borderStyle":"black",
+        "selectedColor":"#ADD8E6",
+        "list":[{
+            "pagePath":"vzan/index/index",
+            "selectedIconPath":"vzan/image/icon_account_HL.png",
+            "iconPath":"vzan/image/icon_account.png",
+            "text":"首页"
+        },{
+            "pagePath":"vzan/account/account",
+            "selectedIconPath":"vzan/image/icon_index_HL.png",
+            "iconPath":"vzan/image/icon_index.png",
+            "text":"账户"
+        }
+
+        ]
+    },
+    "debug":true
+} 

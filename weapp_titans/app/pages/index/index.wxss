@@ -1,0 +1,96 @@
+.page-top {
+    width: 750rpx;
+    height: 594rpx;
+    /*background-image: url(../../images/bg.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 750rpx 694rpx;
+    background-position:0 -40rpx;
+    position: relative;
+    z-index: 2;
+}
+.username,.text-info {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+.username {
+    font-size: 40rpx;
+    color: #fff;
+    top:339rpx;
+}
+.text-info {
+    font-size: 32rpx;
+    color:#bdd0ee;
+    top:400rpx;
+}
+.page-btn-wrap {
+    position: absolute;
+    top: 400rpx;
+    width: 100%;
+    text-align: center;
+    /*word-break:keep-all;*/
+}
+.title {
+    font-size: 40rpx;
+    color: #FFEEDD;
+    font-weight: 900;
+}
+.author {
+    font-size: 25rpx;
+    color: #FFEEDD;
+    font-weight: 900;
+}
+.page-btn {
+    position:relative;
+    margin:0 20rpx;
+    padding:0;
+    box-sizing:border-box;
+    font-size:32rpx;
+    text-decoration:none;
+    -webkit-tap-highlight-color:transparent;
+    overflow:hidden;
+    display: inline-block;
+    width: 300rpx;
+    height: 85rpx;
+    background-color: #fff;
+    color: #2277da;
+    line-height: 85rpx;
+}
+.page-bottom {
+    background-color: #FAFAD2;
+    width: 100%;
+    /*min-height: 100%;*/
+    position: absolute;
+    padding: 0 50rpx 50rpx;
+    z-index: 1;
+    box-sizing: border-box;
+    /*text-align: center;*/
+}
+.content{
+    font-size: 40rpx;
+    color: #000;
+}
+.intro{
+    font-size: 30rpx;
+    color: #000;
+}
+.qr-img {
+    display: block;
+    width: 300rpx;
+    height: 300rpx;
+    margin: 40rpx auto;
+}
+.qr-txt {
+    display: block;
+    color: #666;
+    font-size: 32rpx;
+    margin: 20rpx auto 0;
+    text-align: center;
+}
+.page-logo {
+    display: block;
+    width: 200rpx;
+    height: 54rpx;
+    margin: 40rpx auto 40rpx;
+}

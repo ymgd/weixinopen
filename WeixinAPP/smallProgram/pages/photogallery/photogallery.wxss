@@ -1,0 +1,31 @@
+.container {
+  height: 100%;
+  background-color: #eee;
+  padding:0;
+  margin:4rpx 0 0 0;
+} 
+.plus-image{
+  width:250rpx;
+  height:250rpx;
+}
+.photo-list{
+  display: inline-block;
+}
+.photo-list image {
+   width:250rpx;
+   height: 250rpx;
+}
+.op-area{
+  width:100%;
+  border-top:2rpx gray solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.op-area button {
+  width: 100%;
+  border-radius: 0;
+}

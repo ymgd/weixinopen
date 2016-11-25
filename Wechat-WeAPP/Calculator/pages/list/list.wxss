@@ -1,0 +1,34 @@
+page{
+    min-height:100%;
+    height:100%;
+}
+.content{
+height:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+box-sizing:border-box;
+position:relative;
+}
+.item{
+    width:90%;
+    line-height:100rpx;
+    margin-top:3rpx;
+    margin-bottom:3rpx;
+    border-radius:3px;
+    color:#fef4e9;
+    border:1px solid #da7c0c;
+    background:#f78d1d;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+.main-bg{
+    height:100%;
+    width:100%;
+    min-height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}

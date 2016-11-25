@@ -1,0 +1,19 @@
+<view class="action_cavas" bindtouchstart="tapStart" bindtouchmove="tapMove" bindtouchend="tapEnd">
+<view class="score">
+    <view class="title">2048</view>
+    <view class="scoredetail">
+        <view class="scoredesc">历史最高</view>
+        <view class="scorenumber">{{maxscore}}</view>
+    </view>
+</view>
+
+<view class="bc_cavas">
+    <view class="bc" wx:for="{{numbers}}" wx:for-item="row" >
+        <view wx:for="{{row}}" class="bc_ bc_{{item}}"> {{item}} </view>
+    </view>
+</view>
+</view>
+<view class="intro">↑ ↓ ← → 使得某个数字累加到2048</view>
+<modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalCancle">
+  <view> 游戏结束，重新开始吗？ </view>
+</modal>

@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<import src="../common/topicsList"/>
+<view class="container">
+  <block wx:if="{{topics.length > 0}}">
+    <template is="topicsList" data="{{topics}}"/>
+  </block>
+  <view wx:else class="nodata"></view>
+  <view hidden="{{loading}}" class='loading'>加载中...</view>
+</view>

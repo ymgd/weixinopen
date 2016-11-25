@@ -1,0 +1,37 @@
+pages:
+- pages/index/index
+- pages/categories/categories
+- pages/items/items
+- pages/cart/cart
+# here bug is when put page at the last, it occues that page not found
+# solved! all pages must have non empty *.js, filled with page
+- pages/profile/profile
+
+window:
+  backgroundTextStyle: light
+  navigationBarBackgroundColor: "#0e2a42"
+  navigationBarTitleText: demo
+  navigationBarTextStyle: "#ffda6a"
+
+# tabBar, it has regular form
+tabBar:
+  backgroundColor: "#0e2a42"
+  selectedColor: "#ffda6a"
+  color: "#777"
+  list:
+  - pagePath: pages/index/index
+    text: 首页
+    iconPath: icons/tab_icons/homepage_off.png
+    selectedIconPath: icons/tab_icons/homepage_on.png
+  - pagePath: pages/categories/categories
+    text: 分类
+    iconPath: icons/tab_icons/category_off.png
+    selectedIconPath: icons/tab_icons/category_on.png
+  - pagePath: pages/cart/cart
+    text: 购物车
+    iconPath: icons/tab_icons/shopcar_off.png
+    selectedIconPath: icons/tab_icons/shopcar_on.png
+  - pagePath: pages/profile/profile
+    text: 我的
+    iconPath: icons/tab_icons/my_off.png
+    selectedIconPath: icons/tab_icons/my_on.png

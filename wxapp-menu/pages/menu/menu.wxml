@@ -1,0 +1,34 @@
+<!-- 分类菜谱
+分为左右两部分,都是scrollView可进行上下滑动
+左边：母分类标签
+右边：母分类标签对应的子分类标签
+-->
+
+<view class="content">
+
+    <!-- 左侧母分类标签 -->
+    <scroll-view class="flex-left" scroll-y="true">
+
+        <view class="category" wx:for="{{category}}" wx:key="category">
+            <view id="{{item.parentId}}" class="category-item" bindtap="handleTap">
+                <text>{{item.name}}</text>
+                <view class="line"></view>
+            </view>
+        </view>
+
+    </scroll-view>
+
+    <!-- 右侧子分类标签 -->
+    <scroll-view class="flex-right" scroll-y="true">
+
+        <view class="subCategory" wx:for="{{subCategory}}" wx:key="subCategory">
+            <view id="{{item.id}}" class="subCategory-item" bindtap="navToList" 
+                    data-name="{{item.name}}">
+                <text>{{item.name}}</text>
+                <view class="line"></view>
+            </view>
+        </view>
+    
+    </scroll-view>
+
+</view>

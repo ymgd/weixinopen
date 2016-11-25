@@ -1,0 +1,11 @@
+.section{
+    width:100%;
+    padding:20rpx 0;
+}
+input{
+    border-bottom:1px solid #ccc;
+    
+}
+button{
+    margin-top:20rpx;
+}

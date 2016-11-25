@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 32rpx;
+}
+
+swiper {
+  flex: 1;
+}
+
+swiper-item {
+  flex: 1;
+}
+
+swiper-item image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+
+swiper-item text {
+  color: #FFF;
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.body {
+  flex: 1;
+  overflow: auto;
+}
+
+.item {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background-color: #FBF9FE;
+  overflow: hidden;
+  border-radius: 4rpx;
+  cursor: pointer;
+}
+
+
+.item-title {
+  display: flex;
+  flex-flow: row wrap;
+  border-left: 5rpx solid green;
+  padding-left: 10rpx;
+  flex: 1;
+}
+
+
+.list-img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width:110rpx;
+  height: 160rpx;
+  flex:0 1 auto;
+  padding: 20rpx;
+  float: left;
+  
+}

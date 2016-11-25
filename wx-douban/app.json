@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#2aac5e",
+    "navigationBarTitleText": "豆瓣电影-DIY",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#f4f8fb"
+  },
+  "tabBar":{
+    "color":"#333",
+    "selectedColor":"#2aac5e",
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "list":[{
+      "pagePath":"pages/index/index", 
+      "text":"首页", 
+      "iconPath":"images/home.png", 
+      "selectedIconPath":"images/home-actived.png"
+    },
+    {
+      "pagePath":"pages/search/search", 
+      "text":"搜索", 
+      "iconPath":"images/search.png", 
+      "selectedIconPath":"images/search-actived.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

@@ -1,0 +1,244 @@
+'.source.js':
+  '从相册选择图片，或者拍照':
+    'prefix': 'wxchooseImage'
+    'body': '''
+    wx.chooseImage({
+      count: 9, // 最多可以选择的图片张数，默认9
+      sizeType: ['original', 'compressed'], // original 原图，compressed 压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // album 从相册选图，camera 使用相机，默认二者都有
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+    '''
+  '预览图片':
+    'prefix': 'wxpreviewImage'
+    'body': '''
+    wx.previewImage({
+      // current: '${1:String}', // 当前显示图片的链接，不填则默认为 urls 的第一张
+      urls: [StringArray],
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''
+  '开始录音':
+    'prefix': 'wxstartRecord'
+    'body': '''
+    wx.startRecord({
+      success: function(res){
+        $1// success
+      },
+      fail: function() {
+        $2// fail
+      },
+      complete: function() {
+        $3// complete
+      }
+    })
+    '''
+  '结束录音':
+    'prefix': 'wxstopRecord'
+    'body': '''
+    wx.stopRecord({
+      success: function(res){
+        $1// success
+      },
+      fail: function() {
+        $2// fail
+      },
+      complete: function() {
+        $3// complete
+      }
+    })
+    '''
+  '播放语音':
+    'prefix': 'wxplayVoice'
+    'body': '''
+    wx.playVoice({
+      filePath: '${1: String}',
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''
+  '暂停播放语音':
+    'prefix': 'wxpauseVoice'
+    'body': '''
+    wx.pauseVoice({
+      success: function(res){
+        $1// success
+      },
+      fail: function() {
+        $2// fail
+      },
+      complete: function() {
+        $3// complete
+      }
+    })
+    '''
+  '结束播放语音':
+    'prefix': 'wxstopVoice'
+    'body': '''
+    wx.stopVoice({
+      success: function(res){
+        $1// success
+      },
+      fail: function() {
+        $2// fail
+      },
+      complete: function() {
+        $3// complete
+      }
+    })
+    '''
+  '获取音乐播放状态':
+    'prefix': 'wxgetBackgroundAudioPlayerState'
+    'body': '''
+    wx.getBackgroundAudioPlayerState({
+      success: function(res){
+        $1// success
+      },
+      fail: function() {
+        $2// fail
+      },
+      complete: function() {
+        $3// complete
+      }
+    })
+    '''
+  '播放音乐':
+    'prefix': 'wxplayBackgroundAudio'
+    'body': '''
+    wx.playBackgroundAudio({
+      dataUrl: '${1:String}',
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''
+  '暂停播放音乐': 
+    'prefix': 'wxpauseBackgroundAudio'
+    'body': '''
+    wx.pauseBackgroundAudio({
+      success: function(res){
+        $1// success
+      },
+      fail: function() {
+        $2// fail
+      },
+      complete: function() {
+        $3// complete
+      }
+    })
+    '''
+  '控制音乐播放进度':
+    'prefix': 'wxseekBackgroundAudio'
+    'body': '''
+    wx.seekBackgroundAudio({
+      position: ${1: Number},
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''
+  '停止播放音乐': 
+    'prefix': 'wxstopBackgroundAudio'
+    'body': '''
+    wx.stopBackgroundAudio({
+      success: function(res){
+        $1// success
+      },
+      fail: function() {
+        $2// fail
+      },
+      complete: function() {
+        $3// complete
+      }
+    })
+    '''
+  '监听音乐开始播放':
+    'prefix': 'wxonBackgroundAudioPlay'
+    'body': '''
+    wx.onBackgroundAudioPlay(function() {
+      $1// callback
+    })
+    '''
+  '监听音乐暂停':
+    'prefix': 'wxonBackgroundAudioPause'
+    'body': '''
+    wx.onBackgroundAudioPause(function() {
+      $1// callback
+    })
+    '''
+  '监听音乐结束':
+    'prefix': 'wxonBackgroundAudioStop'
+    'body': '''
+    wx.onBackgroundAudioStop(function() {
+      $1// callback
+    })
+    '''
+  '从相册选择视频，或者拍摄':
+    'prefix': 'wxchooseVideo'
+    'body': '''
+    wx.chooseVideo({
+      sourceType: ['album', 'camera'], // album 从相册选视频，camera 使用相机拍摄
+      // maxDuration: 60, // 拍摄视频最长拍摄时间，单位秒。最长支持60秒
+      camera: ['front', 'back'],
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+    '''
+    '保存文件':
+      'prefix': 'wx.saveFile'
+      'body': '''
+      wx.saveFile({
+        tempFilePath: '${1: String}',
+        success: function(res){
+          $2// success
+        },
+        fail: function() {
+          $3// fail
+        },
+        complete: function() {
+          $4// complete
+        }
+      })
+      '''

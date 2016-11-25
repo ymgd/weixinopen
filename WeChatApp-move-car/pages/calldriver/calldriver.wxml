@@ -1,0 +1,19 @@
+<import src="../../component/button.wxml"/>
+
+<view class="container">
+    <view class="content_group">
+        <view class="title">输入车牌号 :</view>
+        <view class="content">
+            <picker range="{{array}}" bindchange="bindPickerChange">
+                <view class="piker">当前选择 : <view class="chepai">{{array[index]}}</view></view>
+            </picker>
+            <input class="form-input" id="plate" maxlength="6" bindinput="bindInputChange" placeholder="车牌后6位"/>
+        </view>
+    </view>
+    <view class="search_btn" bindtap="query">
+        <template is="Kbutton"  data="{{value:'查询车主信息'}}"/>
+    </view>
+    <toast hidden="{{toastHidden}}" icon="clear" duration="2000" bindchange="toastChange">
+        {{msg}}
+    </toast>
+</view>

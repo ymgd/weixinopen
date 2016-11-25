@@ -1,0 +1,12 @@
+<view>
+    <view>
+    <swiper indicator-dots="true" autoplay="true">
+        <swiper-item>
+            <image src="http://i.pengxun.cn/upload/forumbs/20160412/t_131048991851898491.jpg"/>
+        </swiper-item>
+        <swiper-item>
+            <image src="http://i.pengxun.cn/upload/forumbs/20160317/131026755967736244.jpg"/>
+        </swiper-item>
+    </swiper>
+    <view>
+</view>

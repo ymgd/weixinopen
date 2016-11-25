@@ -1,0 +1,63 @@
+<import src="../../component/titleBar/title_bar.wxml"/>
+<view class="">
+
+    <view class="detail-banner">
+         <image catchtap="onPreImage"  data-img-src="{{detail.targetPost.titleImage}}" src="{{detail.targetPost.titleImage}}" mode="aspectFill" class="detail-banner-img"  />  
+    </view>
+    <view class="detail-header page-pd">
+      
+        <view class="detail-title page-pd">
+            <text class="">{{detail.targetPost.title}}</text>
+        </view>
+        <view   class="fx-row fx-row-center" style="color:gray;font-size:14px;">
+            <image  src="{{detail.targetPost.author.avatar.src}}" mode="aspectFit" class="detail-user"  />
+            <text>{{detail.targetPost.author.name}}</text>
+            <text style="margin-left:4px;">·{{detail.targetPost.publishedTime}}</text>
+        </view>
+    </view>  
+
+
+    <view class="detail-content page-pd">
+        {{detail.targetPost.summary}}
+    </view>
+
+    <view class="detail-comment page-pd">
+        <template is="titleBar" data="{{...barInfo.comment}}"  />    
+        <view class="comment-list">
+                <view class="comment-item" wx:for="{{commentList}}" wx:key="{{index}}">
+                    <view class="comment-bar fx-row fx-row-center">
+                        <image src="{{item.author.avatar.src}}" mode=""  class="comment-headr"/>
+                        <text class="comment-user-name">{{item.author.name}}</text>
+                    </view>
+                    <view class="comment-content">
+                        {{item.content}}
+                    </view>
+                    <view class="comment-util fx-row fx-row-center fx-row-left">
+                            <text>{{item.createdTime}}</text>
+                            <text class="ml10" >回复</text>
+                            <text class="ml10" >赞</text>
+                            <text class="ml10" >举报</text>
+                    </view>
+                </view>
+            </view>
+
+
+            <view  class="loading-more" >
+                 <!--<icon wx-if="{{isLoadMore}}" class="ani-loading" type="success" size="20" />-->
+                 <image  wx-if="{{isLoadMore}}" src="../../imgs/loading_48.png" class="loading-img ani-loading"  />
+                 <text class="loading-more-end-text" wx-if="{{isEnd}}">加载完成</text>
+            </view>           
+
+    </view>
+ 
+
+   <!--<view class="detail-recommend page-pd">
+        <template is="titleBar" data="{{...barInfo.recommend}}"  />    
+
+        
+
+   </view>-->
+
+
+
+</view>

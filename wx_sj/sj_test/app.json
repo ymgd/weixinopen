@@ -1,0 +1,60 @@
+{
+  "pages":[
+
+    "pages/createMerchandise/createMerchandise",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/publish/publish",
+    "pages/merchandises/merchandises",
+    "pages/merchandiseInfo/merchandiseInfo",
+    "pages/userInfo/userInfo",
+    "pages/logIn/logIn",
+    "pages/preview/preview",
+    "pages/location/location",
+    "pages/merchandiseType/merchandiseType",
+    "pages/signature/signature"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#8a8a8a",
+    "selectedColor":"#06ccb6",
+    "borderStyle":"white",
+    "backgroundColor":"#e6e6e6",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/首页.png",
+      "selectedIconPath": "images/点击首页.png"
+    }, 
+    {
+      "pagePath": "pages/search/search",
+      "text": "发现",
+      "iconPath": "images/发现.png",
+      "selectedIconPath": "images/点击发现.png"
+    },
+    {
+      "pagePath": "pages/publish/publish",
+      "text": "发布",
+      "iconPath": "images/发布.png",
+      "selectedIconPath": "images/点击发布.png"
+    },
+    {
+      "pagePath": "pages/merchandises/merchandises",
+      "text": "消息",
+      "iconPath": "images/消息.png",
+      "selectedIconPath": "images/点击消息.png"
+    },
+    {
+      "pagePath": "pages/userInfo/userInfo",
+      "text": "我的",
+      "iconPath": "images/我的.png",
+      "selectedIconPath": "images/点击我的.png"
+    }
+    ]
+  }
+}

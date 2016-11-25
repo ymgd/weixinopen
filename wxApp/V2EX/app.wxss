@@ -1,0 +1,9 @@
+page {
+    min-height: 100%;
+}
+.node-name {
+    background: #e2e2e2;
+    padding: 6rpx 10rpx;
+    border-radius: 8rpx;
+    margin-right: 20rpx;
+}

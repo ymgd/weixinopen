@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="table-block">
+    <view class="table-row">
+      <text class="table-row-title">闲置处理</text>
+      <view class="mark-and-arrow-warp">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+    <view class="table-row">
+      <text class="table-row-title">邻家特产</text>
+      <view class="mark-and-arrow-warp">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+    <view class="table-row">
+      <text class="table-row-title">周边信息</text>
+      <view class="mark-and-arrow-warp">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+  </view>

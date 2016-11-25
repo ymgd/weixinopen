@@ -1,0 +1,9 @@
+<!--legends.wxml-->
+<view class="container legend-list">
+  <block wx:for="{{legends}}" wx:for-item="legend">
+  <view class="image-section">
+   <image style="width: 80px; height: 80px; background-color: #eeeeee;" mode="aspectFit" src="http://ossweb-img.qq.com/images/lol/img/champion/{{legend['id']}}.png"></image>
+   </view>
+    <text class="legend-item">{{index + 1}}.{{legend["id"]}} {{legend["title"]}} {{legend["name"]}} {{legend["tags"][0]}}</text>
+  </block>
+</view>

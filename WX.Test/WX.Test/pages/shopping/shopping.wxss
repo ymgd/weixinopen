@@ -1,0 +1,40 @@
+.container{
+    margin: 0;
+    padding: 0;
+}
+.navigateView{
+    border-top: 10px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.navigateViewtitle{
+    padding: 7px 7px;
+    color: dimgray;
+    font-size: 15px;
+}
+.allGoods{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.goodItem{
+    width: 33.3%;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    padding: 5px 0;
+
+}
+.goodImageContainer{
+    width: 100%;
+    height: 80%;
+}
+.goodImage{
+    width: 80px;
+    height: 80px;
+}
+.goodTitle{
+    font-size: 14px;
+}

@@ -1,0 +1,8 @@
+<view class="container">
+    <loading hidden="{{ hidden }}">加载中</loading>
+    <view class="nodes">
+        <block wx:for="{{ nodes }}">
+            <view class="node" id="{{ item.id }}" bindtap="goNode">{{ item.title }}</view>
+        </block>
+    </view>
+</view>

@@ -1,0 +1,92 @@
+<!--index.wxml-->
+<view class="container">
+   <ul class="list">
+      <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../button/button" hover-class="navigator-hover">Button</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+       <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../checkbox/checkbox" hover-class="navigator-hover">checkbox</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../form/form" hover-class="navigator-hover">form</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../input/input" hover-class="navigator-hover">input</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../label/label" hover-class="navigator-hover">label</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../picker/picker" hover-class="navigator-hover">picker</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../radio/radio" hover-class="navigator-hover">radio</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../slider/slider" hover-class="navigator-hover">slider</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../switch/switch" hover-class="navigator-hover">switch</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" data-id="button">
+        <div class="list-item-left">
+            <navigator url="../textarea/textarea" hover-class="navigator-hover">textarea</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+       <li class="list-item" >
+        <div class="list-item-left">
+            <view bindtap="showActionSheet"  hover-class="navigator-hover">action-sheet(底部上弹菜单)</view>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+       <li class="list-item" >
+        <div class="list-item-left">
+            <view bindtap="showModal" hover-class="navigator-hover">modal(模态窗口)</view>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+         <li class="list-item" >
+        <div class="list-item-left">
+            <view bindtap="toastSuccess" hover-class="navigator-hover">toast(成功消息提醒框)</view>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+          <li class="list-item" >
+        <div class="list-item-left">
+            <view bindtap="toastLoading" hover-class="navigator-hover">toast(正在加载消息提醒框)</view>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+
+
+
+   </ul>
+</view>

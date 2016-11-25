@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<import src="../../templates/history.wxml" />
+
+<view class="container">
+  <view class="sky" animation="{{animationData}}">
+    <view class="day">
+      <image src="{{sun}}" class="sky-view"></image>
+    </view>
+    <view class="night">
+      <image src="{{moon}}" class="sky-view"></image>
+    </view>
+  </view>
+</view>
+<view class="board-container">
+  <view class="mask" bindtap="timeAfterTime"></view>
+  <view class="board" animation="{{boardAnimationData}}">
+    <block wx:if="{{isDay}}">
+      <view class="ground-title">白天</view>
+      <view class="ground">
+        <block wx:for="{{players}}">
+          <view wx:if="{{index == currentPlayerIndex}}" class="player">
+            <image src="{{item.avatar}}" class="player-avatar current-player-avatar" animation="{{currentPlayerAnimationData}}"></image>
+            <view class="player-name">{{item.name}}</view>
+          </view>
+          <view wx:elif="{{index < currentPlayerIndex}}" class="player">
+            <image src="{{item.avatar}}" class="player-avatar" animation="{{originAnimationData}}"></image>
+            <view class="player-name">{{item.name}}</view>
+          </view>
+          <view wx:else class="player">
+            <image src="{{item.avatar}}" class="player-avatar coming-player-avatar" animation="{{originAnimationData}}"></image>
+            <view class="player-name coming-player-name">{{item.name}}</view>
+          </view>
+        </block>
+        <view wx:for="{{playerStubs}}" class="player-stub"></view>
+      </view>
+      <scroll-view class="storyboard" scroll-x="true">
+        <block wx:for="{{storyboard.history}}">
+          <image catchtouchstart="touchHistory" catchtouchend="touchHistoryEnd" class="time-logo" src="{{sunLogo}}" wx:if="{{item.time == 'day'}}"
+            data-history-index="{{index}}"></image>
+          <image catchtouchstart="touchHistory" catchtouchend="touchHistoryEnd" class="time-logo" src="{{moonLogo}}" wx:else data-history-index="{{index}}"></image>
+        </block>
+      </scroll-view>
+    </block>
+    <block wx:else>
+      <view class="ground-title night-ground-title">黑夜</view>
+      <view class="ground night-ground">
+        <block wx:for="{{players}}">
+          <view wx:if="{{index == markedPlayerIndex}}" class="player">
+            <image src="{{item.avatar}}" class="player-avatar"></image>
+            <view class="player-name night-player-name">{{item.name}}</view>
+            <image src="{{clawmark}}" class="clawmark" animation="{{clawAnimationData}}"></image>
+          </view>
+          <view wx:elif="{{index == markingPlayerIndex}}" class="player">
+            <image src="{{item.avatar}}" class="player-avatar current-marking-avatar"></image>
+            <view class="player-name night-player-name">{{item.name}}</view>
+          </view>
+          <view wx:else class="player">
+            <image src="{{item.avatar}}" class="player-avatar"></image>
+            <view class="player-name night-player-name">{{item.name}}</view>
+          </view>
+        </block>
+        <view wx:for="{{playerStubs}}" class="player-stub"></view>
+        <canvas class="wolf-ground" canvas-id="wolf-ground" catchtouchstart="canvastouchstart" catchtouchend="canvastouchend" catchtouchmove="canvastouchmove"></canvas>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="history-view-container {{viewShown}}" wx:if="{{viewShown == 'view-shown'}}">
+  <view class="history-view">
+    <view wx:if="{{touchingTime == 'day'}}" class="history-banner">
+      <image src="{{sunLogo}}" class="history-logo"></image>
+    </view>
+    <view wx:else class="history-banner-dark">
+      <image src="{{moonLogo}}" class="history-logo"></image>
+    </view>
+    <view class="history-content">
+      <view wx:for="{{historyEvents}}" class="history-item">
+        <template is="{{item.type}}" data="{{...item}}"></template>
+      </view>
+    </view>
+  </view>
+</view>

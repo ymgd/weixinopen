@@ -1,0 +1,7 @@
+/*样式表*/
+.list-item{
+    margin-bottom: 50rpx;
+    padding: 10rpx;
+    border: 1px solid #eee;
+    display: block;
+}

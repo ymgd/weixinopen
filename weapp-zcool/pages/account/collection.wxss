@@ -1,0 +1,29 @@
+.collection-item {
+  padding: 15rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #e4e6e6;
+}
+.collection-image {
+  float: left;
+  width: 250rpx;
+  height: 188rpx;
+  margin-right: 20rpx;
+}
+.collection-info {
+  position: relative;
+  overflow: hidden;
+  height: 188rpx;
+}
+.title {
+  font-size: 35rpx;
+  margin-bottom: 20rpx;
+}
+.desc {
+  font-size: 28rpx;
+}
+.author {
+  position: absolute;
+  bottom: 0;
+  font-size: 28rpx;
+  color: #b6b6b6;
+}

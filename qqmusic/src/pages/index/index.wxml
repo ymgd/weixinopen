@@ -1,0 +1,111 @@
+
+<!--index.wxml-->
+<view class="tab">
+  <view class="tab-item tab-item-active" bindtap="tabItemTap" data-view="1" wx:if="{{mainView==1}}">推荐</view>
+  <view class="tab-item" data-view="1" bindtap="tabItemTap" wx:if="{{mainView!=1}}">推荐</view>
+  <view class="tab-item tab-item-active" bindtap="tabItemTap" data-view="2" wx:if="{{mainView==2}}">排行榜</view>
+  <view class="tab-item" data-view="2" bindtap="tabItemTap" wx:if="{{mainView!=2}}">排行榜</view>
+  <view class="tab-item tab-item-active" bindtap="tabItemTap" data-view="3" wx:if="{{mainView==3}}">搜索</view>
+  <view class="tab-item" data-view="3" bindtap="tabItemTap" wx:if="{{mainView!=3}}">搜索</view>
+</view>
+<view hidden="{{mainView != 1}}">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{slider}}"  wx:key="unique">
+      <swiper-item data-id="{{item.id}}" data-url="{{item.linkUrl}}">
+        <image src="{{item.picUrl}}" style="height:100%" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="channel">
+    <text class="channel-title">电台</text>
+    <view class="radio-list" >
+      <block wx:for="{{radioList}}"  wx:key="unique">
+        <view class="radio-item" data-id="{{item.radioid}}" data-ftitle="{{item.Ftitle}}" bindtap="radioTap">
+          <image class="radio-img" mode="aspectFit" style="height:167.5px;" src="{{item.picUrl}}"/>
+          <text class="radio-text">{{item.Ftitle}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="channel">
+    <text class="channel-title">热门歌曲</text>
+    <view class="radio-list">
+      <view class="radio-item" wx:for="{{songList}}"  wx:key="unique" data-id="{{item.id}}" data-imgsrc="{{item.picUrl}}" bindtap="hotMusicTap">
+        <image class="radio-img" mode="aspectFit" style="height:167.5px;" src="{{item.picUrl}}"/>
+        <text class="radio-text">{{item.songListDesc}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 排行榜 -->
+<view class="top-view" hidden="{{mainView != 2}}">
+  <view class="top-item" wx:for="{{topList}}" wx:key="unique" data-id="{{item.id}}" bindtap="topListTap">
+    <image class="top-item-img" mode="aspectFit" src="{{item.picUrl}}"/>
+    <view class="top-item-info">
+      <view class="top-item-info-inner">
+        <text class="top-item-title">{{item.topTitle}}</text>
+        <text class="top-item-text" wx:for="{{item.songList}}"  wx:key="unique">{{index+1}}: {{item.songname}}-{{item.singername}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!--搜索-->
+<view hidden="{{mainView != 3}}">
+  <view class="search-bar">
+    <view class="search-input-warp">
+      <form bindsubmit="searchSubmit">
+        <label class="search-input-icon"></label>
+        <input type="text" class="search-input"
+         bindfocus="bindFocus" 
+         bindkeyup="searchBoxKeyUp"
+         name="search" 
+         value="{{searchKey}}" 
+         bindinput="bindKeyInput" 
+         bindkeydown="searchBoxKeyUp"
+          placeholder="搜索歌曲、歌单、专辑" 
+          placeholder-class="search-input-placeholder"/>
+        <view class="search-cancel" bindtap="searchOk" >确定</view>
+        <!--<view class="search-cancel" bindtap="searchCancel" wx:if="{{isShowCancel && !isShowOk}}">取消</view>-->
+      </form>
+    </view>
+  </view>
+  <!-- 历史搜索记录 -->
+  <view class="search-hi" wx:if="{{showSearchPanel == 2}}">
+    <block wx:if="{{historySearchs.length > 0}}">
+      <view class="search-hi-item" wx:for="{{historySearchs}}"  wx:key="unique">
+        <view class="hi-icon"></view>
+        <text class="hi-text" data-key="{{item}}" bindtap="historysearchTap">{{item}}</text>
+        <view class="hi-close" data-index="{{index}}" bindtap="delHistoryItem"></view>
+      </view>
+      <view class="clear-serach" bindtap="clearHistorySearchs">清除搜索记录</view>
+    </block>
+  </view>
+  <view class="ssong-list" wx:if="{{showSearchPanel == 3}}">
+    <block wx:if="{{zhida.type == 3}}">
+      <view class="ssong-item" data-data="{{zhida}}" data-id="{{zhida.albummid}}" bindtap="zhidaTap">
+        <image class="ss-icon"  mode="aspectFit" src="http://y.gtimg.cn/music/photo_new/T002R68x68M000{{zhida.albummid}}.jpg?max_age=2592000"></image> 
+        <view class="ss-text">
+          <text class="ss-title">{{zhida.albumname}}</text>
+          <text class="ss-sub-title">{{zhida.singername}}</text>
+        </view>
+      </view>
+    </block>
+    <view class="ssong-item" wx:for="{{searchSongs}}" wx:key="unique" data-index="{{index}}" bindtap="musuicPlay">
+      <image class="ss-icon"  mode="aspectFit" src="../../resources/images/song_icon.png"></image> 
+      <view class="ss-text">
+        <text class="ss-title">{{item.songname}}</text>
+        <text class="ss-sub-title"><block wx:for="{{item.singer}}" wx:key="unique">{{item.name}}</block></text>
+      </view>
+    </view>
+  </view>
+  <!-- 热门搜索 -->
+  <view class="quick-search" wx:if="{{showSearchPanel == 1}}">
+    <view class="quick-search-title">
+      <text>热门搜索</text>
+    </view>
+    <view class="quick-search-bd">
+      <text class="quick-search-item-red" data-url="{{special.url}}" data-key="{{special.key}}">{{special.key}}</text>
+      <text class="quick-search-item" wx:for="{{hotkeys}}"  wx:key="unique" data-n="{{item.n}}" bindtap="hotKeysTap" data-key="{{item.k}}">{{item.k}}</text>
+    </view>
+  </view>
+</view>

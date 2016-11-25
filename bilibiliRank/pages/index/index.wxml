@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="header"></view>
+	<view class="content">
+		<view class="cmds">
+			<navigator wx:for="{{bili.list}}" url="../ranklist/ranklist?id={{item.id}}">
+				<view class="cmd-list" data-id="{{item.id}}">{{item.name}}</view>
+			</navigator>
+		</view>
+	</view>
+</view>

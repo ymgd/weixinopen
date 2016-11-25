@@ -1,0 +1,47 @@
+/**app.wxss**/
+page{
+  height: 100%;
+  background-color: #F4F3F4;
+}
+.container {
+  overflow-x: hidden; 
+  overflow-y: auto;
+  background-color: #ffffff;
+} 
+
+.red-point{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #FA4625;
+}
+
+.page-footer{
+  position:fixed; 
+  left:0px; 
+  bottom:0px; 
+  width:100%; 
+}
+
+.row-flex{
+  display: flex;
+  width:100%;
+}
+.row-flex .cell-flex{
+  flex : 1;
+}
+
+.group-ul{
+  margin-top: 1px solid #e5e5e5;
+  margin-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+.group-ul .group-li{
+  border-bottom: 1px solid #e5e5e5;
+}
+.group-li:active{
+  background : #f7f7f7;
+}
+.group-ul .group-li:last-child{
+  border-bottom: none;
+}

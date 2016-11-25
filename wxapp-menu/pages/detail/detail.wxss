@@ -1,0 +1,45 @@
+page{
+    display: block;
+    height: 100%;
+    background-color: #eeeeee;
+}
+.content{
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    margin-left: 15rpx;
+    margin-right: 15rpx;
+}
+.title{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pic image{
+    width: 720rpx;
+    height: 500rpx;
+}
+.imtro{
+    text-indent: 2em;
+    margin-top: 10px;
+}
+.text-1{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30rpx;
+}
+.text-2{
+    margin-top: 20rpx;
+    font-size: 16px;
+}
+.step-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40rpx;
+    font-size: 16px;
+    margin-bottom: 40rpx;
+}
+.step-item image{
+    margin: auto;
+}

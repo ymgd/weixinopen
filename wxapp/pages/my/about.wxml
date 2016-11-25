@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="title tac">报名吧</view>
+    <view class="gray tac">Version 1.0.0</view>
+    <view class="m-t-20 gray">
+    	<text class="">报名吧</text> 解决报名人员统计困难等问题。
+    </view>
+    <view class="b-1 text tac">
+    	<view class="gray text m-t-20">此版本暂时不支持支付</view>
+    	<view class="gray tac ">版本支持：Android 6.3.0+</view>	
+    </view>
+    
+</view>

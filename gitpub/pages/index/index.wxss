@@ -1,0 +1,125 @@
+/**index.wxss**/
+
+.index{
+	margin: 25% auto;
+	width: 400rpx;
+	height: 400rpx;
+}
+
+.login-ico{
+	display: block;
+	margin: 0 auto;
+	width: 120rpx;
+	height: 120rpx;
+}
+.login-from{
+	margin-top: 20rpx;
+}
+.username-input{
+	display: block;
+	margin: 10rpx auto;
+	width: 300rpx;
+	background-color: #EFEDF0;
+	font-size: 26rpx;
+}
+.placeholder{
+	margin-left: 10rpx;
+	color: #333;
+}
+.primary{
+	margin-top: 10rpx;
+	width: 300rpx;
+}
+.info{
+	display: flex;
+	background-color: #F5F5F5;
+}
+.user-info{
+	padding: 10rpx;
+	margin: 0 auto;
+}
+.user-name{
+	font-size: 38rpx;
+	color: #333;
+	font-weight: 800;
+}
+.user-ali{
+	font-size: 35rpx;
+	color: #767676;
+}
+.user-msg{
+	margin-top: 10rpx;
+	font-size: 28rpx;
+	color: #767676;
+}
+.group{
+	width: 20px;
+	height: 20px;
+	margin-top: 10rpx;
+	margin-right: 15rpx;
+}
+.group-text{
+	vertical-align: middle;
+	line-height: 27rpx;
+}
+
+
+
+
+
+
+.repositories{
+	padding: 26rpx;
+	font-size: 30rpx;
+}
+.repo-title{
+	font-weight: 800;
+	margin-bottom: 20rpx;
+}
+.projects{
+	width: 100%;
+	height: 100%;
+	border: 1px #e5e5e5 solid;
+	border-radius: 10rpx;
+	margin-bottom: 20rpx;
+}
+.project{
+	display: flex;
+	width: 91%;
+	height: 50rpx;
+	border-bottom: 1px #e5e5e5 solid;
+	padding: 30rpx;
+}
+.pname{
+	flex: 1;
+	color: #4078c0;
+	font-weight: 600;
+}
+.istar{
+	width: 16px;
+	height: 16px;
+	flex: 1;
+	margin-left: 10rpx;
+}
+.itext{
+	color: #999;
+}
+.pstar{
+	margin-top: 5rpx;
+	position: absolute;
+	right: 100rpx;
+	color: #999;
+	font-size: 26rpx;
+}
+
+.show-all{
+	width: 100%;
+	height: 70rpx;
+	line-height: 70rpx;
+	border: 1px solid #d5d5d5;
+	border-radius: 10rpx;
+	text-align: center;
+	background-image: linear-gradient(#fcfcfc, #eee);
+	color: #333;
+	font-size: 30rpx;
+}

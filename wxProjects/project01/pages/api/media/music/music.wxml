@@ -1,0 +1,26 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+     <template is="header" 
+        data="{{title:'BackgroundAudio',desc:'播放音乐，同时只能有一首音乐正在播放。'}}"/>
+
+         <view class="showLocation">
+            <text>音频时长:{{duration}}</text>
+            <text>音频的播放位置:{{currentPosition}}</text>
+            <text>播放状态:{{status}}</text>
+            <text>音频的下载进度:{{downloadPercent}}</text>
+            <text>歌曲数据链接:{{dataUrl}}</text>
+            <text>歌曲数据链接歌曲数据链接歌曲数据链接歌曲数据链接歌曲数据链接歌曲数据链接歌曲数据链接歌曲数据链接</text>
+        </view>
+
+        <view class="music-oper flex">
+
+            <button type="primary"  size="mini" bindtap="playMusic"> 播放音乐 </button>
+            <button type="default"  size="mini" bindtap="pauseMusic"> 暂停音乐 </button>
+            <button type="default"  size="mini" bindtap="stopMusic"> 停止音乐 </button>
+            <button type="default"  size="mini" bindtap="playerState"> 播放状态 </button>
+
+        </view>
+       
+    </view>
+</view>

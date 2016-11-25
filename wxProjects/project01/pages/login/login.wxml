@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="section"> 
+    <input  maxlength="10" placeholder="用户名" class="input-style" bindinput="getUserName"/>
+    <input  maxlength="10" placeholder="密码" class="input-style" bindinput="getPassword"/>
+    <button type="primary" bindtap="login"> 登录 </button>
+    <text class="error mt">{{errorMsg}}</text>
+  </view>
+</view>

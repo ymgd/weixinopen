@@ -1,0 +1,38 @@
+.account-header {
+  padding: 20rpx 30rpx;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #e4e6e6;
+}
+.userinfo-avatar {
+  float: left;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.userinfo-nickname {
+  line-height: 120rpx;
+  font-size: 16px;
+}
+.account-main {
+  background: #fff;
+  border-top: 1px solid #e4e6e6;
+  border-bottom: 1px solid #e4e6e6;
+}
+.account-nav-list {
+  line-height: 40px;
+  padding: 0 30rpx;
+  color: #444;
+  font-size: 14px;
+}
+.navigator-text {
+  display: block;
+  border-bottom: 1px solid #e4e6e6;
+}
+.navigator-hover {
+  background: #f6f6f6;
+}
+.no-border {
+  border-bottom: none;
+}

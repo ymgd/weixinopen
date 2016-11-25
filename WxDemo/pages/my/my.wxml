@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="userinfo">
+        <image class="user-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+        <text class="user-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="setting">
+        <view class="weui_cell" bindtap="onTouchBirthCell">
+            <view class="weui_cell_hd">
+                <image src="../../images/iconfont_dingdan.png"></image>
+            </view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p">出生日期</view>
+            </view>
+            <view class="cell_value">{{userBirth}}</view>
+            <view class="with_arrow"></view>
+        </view>
+    </view>
+</view>

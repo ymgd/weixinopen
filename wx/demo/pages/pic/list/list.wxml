@@ -1,0 +1,39 @@
+<!--选项卡-->
+<view class="tabTit box tc bg_f">
+	<view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="" data-index="{{index}}" bindtap="filterTab">
+		<text>{{item}}</text>
+		<image src="/images/arrow.png"></image>
+	</view>
+</view>
+<!--筛选项-->
+<view class="tabLayer tc" hidden="{{tab[0]}}">
+	<text class="{{house_type==0?'active':''}}" data-id="0" data-index="0" data-txt="户型" bindtap="filter">不限</text>
+	<text class="{{house_type==item.id?'active':''}}" wx:for="{{filterList.space_list}}" wx:key="" data-id="{{item.id}}" data-index="0" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+</view>
+<view class="tabLayer tc" hidden="{{tab[1]}}">
+	<text class="{{house_style==0?'active':''}}" data-id="0" data-index="1" data-txt="风格" bindtap="filter">不限</text>
+	<text class="{{house_style==item.id?'active':''}}" wx:for="{{filterList.style_list}}" wx:key="" data-id="{{item.id}}" data-index="1" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+</view>
+<view class="tabLayer tc" hidden="{{tab[2]}}">
+	<text class="{{house_section==0?'active':''}}" data-id="0" data-index="2" data-txt="面积" bindtap="filter">不限</text>
+	<text class="{{house_section==item.id?'active':''}}" wx:for="{{filterList.section_list}}" wx:key="" data-id="{{item.id}}" data-index="2" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+</view>
+
+<view class="content">
+	<view wx:for="{{data}}" class="pic" bindtap="goDetaile" data-index="{{index}}" wx:key="">
+		<image src="{{item.imgfile_l}}" mode="aspectFill"></image>
+		<view class="des ellipsis">{{item.des}}</view>
+	</view>
+</view>
+<view class="w">
+	<view class="btnBox" wx:if="{{hasMore&&data.length>0}}">
+		<button type="warn" plain="true" disabled="{{disabled}}" bindtap="getMore" class="mt20">{{moreTxt}}</button>
+	</view>
+	<!--无数据提示-->
+	<view class="null tc" wx:if="{{dataNull&&data.length==0}}">
+		<icon type="clear" size="100" color="#ccc"/>
+		<view class="txt1">当前筛选无结果</view>
+		<view class="txt2">您可以尝试筛选其他分类看看</view>
+	</view>
+</view>
+<include src="/template/footer.wxml"/>

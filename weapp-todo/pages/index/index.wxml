@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="user-info">
+    <image src="{{userInfo.avatarUrl}}" />
+    <view class="name">{{userInfo.nickName}}</view>
+  </view>
+  <view class="section">
+      <input placeholder="在这里填写任务" type="emoji" bindinput="bindKeyInput"  value="{{text}}"/>
+      <button type="primary" catchtap="newtodo">添加</button>
+  </view>
+  <view class="tab-wrapper">
+    <view class="tab {{done ? '' : 'no'}}" data-idx="no" bindtap="switch">未完成</view>
+    <view class="tab {{done ? 'done' : ''}}" data-idx="done" bindtap="switch">已完成</view>
+  </view>
+  <view class="todo-list" wx:for="{{showList}}" wx:key="index">
+    <checkbox-group bindchange="switchChange" data-index="{{item.id}}" wx:if="{{!item.status}}">
+      <checkbox value="{{item.status}}"checked="{{item.status}}" />
+    </checkbox-group>
+    <text bindtap="gotoDetail" data-row-id="{{item.id}}">{{item.value}}</text>
+  </view>
+</view>
+

@@ -1,0 +1,8 @@
+<view class="container">
+    <picker mode="date" start="{{startDate}}" end="{{endDate}}" value="{{localLastMensDate}}" bindchange="onDateChange">
+        <view class="picker">
+            <view class="picker-title">最近一次月经: </view>
+            <view class="picker-date">{{localLastMensDate ? localLastMensDate : "点击选择"}}</view>
+        </view>
+    </picker>
+</view>

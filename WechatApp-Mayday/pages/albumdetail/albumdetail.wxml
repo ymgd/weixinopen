@@ -1,0 +1,5 @@
+<view class="page">
+    <view wx:for="{{list}}" class='list singleline' bindtap='OnItemClick' data-index='{{index}}'>
+        <text class='name' data-index='{{index}}'>{{index+1}}.{{item.name}}</text>
+    </view>
+</view>

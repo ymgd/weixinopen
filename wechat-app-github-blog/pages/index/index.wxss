@@ -1,0 +1,68 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header{
+  background: #222;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  background-image: url("http://static.bootcss.com/expo/img/d/dd/2de797545de56274f03a5920eb3a1.jpg");
+  padding: 250rpx 0 0;
+  text-align: center;
+  min-height: 500rpx;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 2rem;
+}
+.logo{
+	position: absolute;
+  left: 1%;
+  right: 1%;
+  bottom: -28px;
+}
+.logo image{
+	width: 50px;
+	height: 45px;
+}
+.list{
+	padding: 20rpx;
+}
+.item{
+	text-align: center;
+	background: #fff;
+	margin-bottom: 20rpx;
+  padding:20rpx;
+  color: #666;
+  font-size: 30rpx;
+}
+
+.item .thumb{
+	height: 0;
+  padding-bottom: 70%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.item .thumb .image{
+	display: block;
+  background-repeat: no-repeat;
+  background-position: left 0;
+  background-size: 100%;
+  width: 100%;
+  height: 1000px;
+  max-width: 100%;
+  transform: translateZ(0);
+  transition: all .25s linear;
+}
+.item-title{
+	line-height: 3rem;
+  font-size: 1.2rem;
+}
+.item-desc{
+  text-align: left;
+  white-space: pre-line;
+}

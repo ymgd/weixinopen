@@ -1,0 +1,69 @@
+<template name="mdTmpl">
+    <block wx:for="{{wxMdData}}" wx:key="">
+        <template is="mdTmpl1" data="{{item}}"/>
+    </block>
+</template>
+
+<template name="mdTmpl1">
+        <block wx:if="{{item.node == 'element'}}">
+	        <block wx:if="{{item.tag == 'view'}}">
+	            <view class="{{item.class}}">
+	            	<block wx:if="{{item.child}}">
+	            		<block wx:for="{{item.child}}" wx:key="">
+	            		
+			            	<template is="mdTmpl2" data="{{item}}"/>
+			            </block>
+	            	</block>
+	            	<blcok wx:else>
+	            			{{item.content}}
+	            	</blcok>
+	            </view>
+	        </block>
+	    </block>
+</template>
+
+<template name="mdTmpl2">
+        <block wx:if="{{item.node == 'element'}}">
+	        <block wx:if="{{item.tag == 'view'}}">
+	            <view class="{{item.class}}">
+	            	<block wx:if="{{item.child}}">
+	            		<block wx:for="{{item.child}}" wx:key="">
+	            		
+			            	<template is="mdTmpl3" data="{{item}}"/>
+			            </block>
+	            	</block>
+	            	<blcok wx:else>
+	            			{{item.content}}
+	            	</blcok>
+	            </view>
+	        </block>
+	    </block>
+</template>
+
+<template name="mdTmpl3">
+        <block wx:if="{{item.node == 'element'}}">
+	        <block wx:if="{{item.tag == 'view'}}">
+	            <view class="{{item.class}}">
+	            	<block wx:if="{{item.child}}">
+	            		<block wx:for="{{item.child}}" wx:key="">
+	            		
+			            	<template is="mdTmpl4" data="{{item}}"/>
+			            </block>
+	            	</block>
+	            	<blcok wx:else>
+	            			{{item.content}}
+	            	</blcok>
+	            </view>
+	        </block>
+	    </block>
+</template>
+
+<template name="mdTmpl4">
+        <block wx:if="{{item.node == 'element'}}">
+	        <block wx:if="{{item.tag == 'view'}}">
+	            <view class="{{item.class}}">
+	            			{{item.content}}
+	            </view>
+	        </block>
+	    </block>
+</template>

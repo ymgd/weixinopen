@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/cart/cart",
+    "page/favorite/favorite",
+    "page/item/item",
+    "page/buy/buy",
+    "page/payment/payment",
+    "page/service/service"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStype": "black",
+    "navigationBarTitleText": "My Shop",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": " #cccccc",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [{
+      "text": "主页",
+      "pagePath": "page/index/index",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }, {
+      "text": "购物车",
+      "pagePath": "page/cart/cart",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }, {
+      "text": "收藏夹",
+      "pagePath": "page/favorite/favorite",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }, {
+      "text": "服务",
+      "pagePath": "page/service/service",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 600000,
+    "downloadFile": 600000
+  },
+  "debug": true
+}

@@ -1,0 +1,14 @@
+<view class='publish'>
+    <view class='top' bindtap='goToCreateMerchandise'><image class='img' src='../../images/闲置商品.png' mode='aspectFill'></image></view>
+    <view class='top'><image class='img' src='../../images/出租商品.png' mode='aspectFill'></image></view>
+    <view class='top'><image class='img' src='../../images/时间出租.png' mode='aspectFill'></image></view>
+    <view class='bottom'><text class='text'>闲置商品</text></view>
+    <view class='bottom'><text class='text'>出租商品</text></view>
+    <view class='bottom'><text class='text'>时间出租</text></view>
+    <view class='top'><image class='img' src='../../images/求购商品.png' mode='aspectFill'></image></view>
+    <view class='top'><image class='img' src='../../images/求租商品.png' mode='aspectFill'></image></view>
+    <view class='top'><image class='img' src='../../images/时间求租.png' mode='aspectFill'></image></view>
+    <view class='bottom'><text class='text'>求购商品</text></view>
+    <view class='bottom'><text class='text'>求租商品</text></view>
+    <view class='bottom'><text class='text'>时间求租</text></view>
+</view>

@@ -1,0 +1,78 @@
+page{
+    background: #ebebeb;
+}
+.user_header{
+    height: 200px;
+    background-color: #3080c0;
+}
+.user_info{
+    text-align: center;
+    padding-top: 50px;
+}
+.user_icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    border: 2px solid red;
+    background-color: orange;
+}
+.user_nickName{
+    color: white;
+    display: block;
+}
+ /*display: flex;
+justify-content: space-around;
+*/
+.items_action{
+    flex-direction: row;
+   
+    text-align: center;
+    padding: 10px 0px;
+    background-color: white;
+}
+.flex_item{
+    width: 33%;
+}
+.action_icon{
+    width: 23px;
+    height: 23px;
+}
+.action_title{
+    padding-top: 4px;
+    font-size: 13px;
+    color: black;
+    display: block;
+}
+.two_side{
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;    
+}
+.cells{
+    margin-top: 20px;
+}
+.cell_content{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    text-align: right;
+}
+.cell_title{
+    font-size: 17px;
+    margin-left: 30px;
+    float: left;
+
+}   
+.cell_arrow{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.navigator-hover {
+    color:blue;
+}
+.other-navigator-hover {
+    color:red;
+}

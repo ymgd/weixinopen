@@ -1,0 +1,12 @@
+<view class='top'>
+<button class='select_button'>{{selectInfo.typeName}}</button>
+</view>
+
+
+<view class='middle'>
+<view class='type' wx:for='{{typeInfo}}'>
+<button data-typeID='{{item.typeID}}' data-typeName='{{item.typeName}}' bindtap='selectType' class='type_button' hover-class='type_other_button'>{{item.typeName}}</button>
+</view>
+
+
+</view>

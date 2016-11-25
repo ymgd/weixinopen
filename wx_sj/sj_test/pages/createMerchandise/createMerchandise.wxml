@@ -1,0 +1,200 @@
+<!--<view>{{tokenID}}</view>-->
+<!--发布商品标题，描述，类别-->
+<view class='title_description' wx:if='{{showInfo.titleDescription}}'>
+    <view class='title'>
+        <input placeholder-class='title_input' placeholder="标题" />
+    </view>
+    <view class='title'>
+        <input placeholder-class='title_input' placeholder="商品描述" />
+    </view>
+</view>
+
+<!--发布商品图片-->
+<view class='img_list' wx:if='{{showInfo.camera}}'>
+    <view class='camera' wx:if='{{showInfo.cameraImg}}'>
+        <image class='camera_img' src='../../images/相机.png' mode='aspectFit' bindtap='chooseImage'></image>
+        <view class='camera_text'>最多添加九张图片</view>
+    </view>
+    <view class='preview' wx:for="{{imgPaths}}">
+        <image data-imgIndex='{{index}}' 
+        data-imgPath="{{item}}" data-imgPaths='{{imgPaths}}' class='preview_img' 
+        src='{{item}}' mode='scaleToFill' bindtap='goToPreviewPage'>
+        </image>
+    </view>
+    <view class='preview' wx:if='{{showInfo.addImg}}'>
+        <image class='preview_img' src='../../images/添加图片.png' mode='aspectFit' bindtap='chooseImage'></image>
+    </view>
+</view>
+
+
+
+<!--发布商品价格-->
+<view class='rent_price'>
+    <view class='price' bindtap='getInputPage'>
+        <view class='price_img'>原价</view>
+        <view class='price_text'>
+            <view>{{priceInfo.oldPrice}}</view>
+        </view>  
+    </view>
+    <view class='price' bindtap='getCurrentInputPage'>
+        <view class='price_img'>现价</view>
+        <view class='price_text'>
+            <view>{{priceInfo.currentPrice}}</view>
+        </view>  
+    </view>
+    <view class='price' bindtap='getShipmentInputPage'>
+        <view class='price_img'>运费</view>
+        <view class='price_text'>
+            <view>{{priceInfo.shipmentPrice}}</view>
+        </view>  
+    </view>
+
+</view>
+
+<!--原价输入价格键盘-->
+
+<view wx:if='{{showInfo.keyBoard}}'>
+    <view class='key_input'>
+        <image  class='price_input_img' src='../../images/价格输入.png'></image>
+        <view class='price_input_text'>{{priceInfo.oldPrice}}</view>
+    </view>
+    <view class='key_symbol'>
+        <view  wx:for='{{["0",".","00"]}}'>
+            <button class='key_button_symbol' type='default'
+            data-number='{{item}}' bindtap='pushOtherPriceNumber'>{{item}}</button>
+        </view>
+    </view>
+    <view class='key_number'>
+        <view  wx:for='{{["1","2","3","4","5","6","7","8","9"]}}'>
+            <button class='key_button_number' type='default' data-number='{{item}}' bindtap='pushPriceNumber'>{{item}}</button>
+        </view>
+    </view>
+    <view class='key_symbol'>
+        <button class='key_button_img' bindtap='completePrice'>
+        <image class='key_img' src='../../images/输入完成.png'></image>
+        </button>
+        <button class='key_button_img' bindtap='resetPrice'>
+        <image class='key_img' src='../../images/重新输入.png'></image>
+        </button>
+        <button class='key_button_img' bindtap='popPrice'>
+        <image class='key_img' src='../../images/后退.png'></image>
+        </button>
+    </view>
+</view>
+
+<!--现价输入价格键盘-->
+<view wx:if='{{showInfo.currentKeyBoard}}'>
+    <view class='key_input'>
+        <image  class='price_input_img' src='../../images/价格输入.png'></image>
+        <view class='price_input_text'>{{priceInfo.currentPrice}}</view>
+    </view>
+    <view class='key_discount'>
+        <view  wx:for='{{["八折","五折","三折"]}}'>
+            <button class='key_button_discount' type='default'
+            data-index='{{index}}' bindtap='setDiscountPrice'>{{item}}</button>
+        </view>
+    </view>
+    <view class='key_symbol'>
+        <view  wx:for='{{["0",".","00"]}}'>
+            <button class='key_button_symbol' type='default'
+            data-number='{{item}}' bindtap='pushOtherCurrentPriceNumber'>{{item}}</button>
+        </view>
+    </view>
+    <view class='key_number'>
+        <view  wx:for='{{["1","2","3","4","5","6","7","8","9"]}}'>
+            <button class='key_button_number' type='default' data-number='{{item}}' bindtap='pushCurrentPriceNumber'>{{item}}</button>
+        </view>
+    </view>
+    <view class='key_symbol'>
+        <button class='key_button_img' bindtap='completeCurrentPrice'>
+        <image class='key_img' src='../../images/输入完成.png'></image>
+        </button>
+        <button class='key_button_img' bindtap='resetCurrentPrice'>
+        <image class='key_img' src='../../images/重新输入.png'></image>
+        </button>
+        <button class='key_button_img' bindtap='popCurrentPrice'>
+        <image class='key_img' src='../../images/后退.png'></image>
+        </button>
+    </view>
+</view>
+
+<!--运费输入价格键盘-->
+<view wx:if='{{showInfo.shipmentKeyBoard}}'>
+    <view class='key_input'>
+        <image  class='price_input_img' src='../../images/运费输入.png'></image>
+        <view class='price_input_text'>{{priceInfo.shipmentPrice}}</view>
+    </view>
+    <view class='key_symbol'>
+        <button class='key_button_free' bindtap='freeShipment'>
+        <image class='key_free' src='../../images/免邮.png'></image>
+        </button>
+        <view  wx:for='{{["0","."]}}'>
+            <button class='key_button_number' type='default'
+            data-number='{{item}}' bindtap='pushOtherShipmentPriceNumber'>{{item}}</button>
+        </view>
+    </view>
+    <view class='key_number'>
+        <view  wx:for='{{["1","2","3","4","5","6","7","8","9"]}}'>
+            <button class='key_button_number' type='default' data-number='{{item}}' bindtap='pushShipmentPriceNumber'>{{item}}</button>
+        </view>
+    </view>
+    <view class='key_symbol'>
+        <button class='key_button_img' bindtap='completeShipmentPrice'>
+        <image class='key_img' src='../../images/输入完成.png'></image>
+        </button>
+        <button class='key_button_img' bindtap='resetShipmentPrice'>
+        <image class='key_img' src='../../images/重新输入.png'></image>
+        </button>
+        <button class='key_button_img' bindtap='popShipmentPrice'>
+        <image class='key_img' src='../../images/后退.png'></image>
+        </button>
+    </view>
+</view>
+
+<!--发布商品地址-->
+<view class='location' wx:if='{{showInfo.location}}'>
+    <image class='location_img' src='../../images/选择发布地点.png' mode='aspectFit' bindtap='goToLocationPage'></image>
+    <view class='location_text' bindtap='goToLocationPage'>{{selectedInfo.collegeName}}</view>
+</view>
+
+
+<!--选择商品类型-->
+<view class='type_rent'>
+    <view class='type'>
+        <image  bindtap='goToTypePage' class='type_img' src='../../images/点击商品类型.png'></image>
+        <view class='type_text' bindtap='goToTypePage'>{{typeInfo.typeName}}</view>
+    </view>
+    <view class='type'>
+        <image class='rent_img' src='../../images/可以租赁.png'></image>
+        <view class='rent_text'>是否可租</view>
+    </view>
+</view>
+
+
+<!--发布商品标签 -->
+<view class='signature'>
+    <image  bindtap='goToSignaturePage' class='signature_img' src='../../images/商品标签.png'></image>
+    <view class='signature_text'>选择商品标签</view>
+</view>
+
+
+
+
+
+
+
+
+<!--发布商品-->
+
+<!--<button type='primary' bindtap='createMerchandiseWithSignature'>发布<button/>-->
+
+<!--<view class='file'>
+<button class='file_button' type='default'>测试文件上传</button>
+</view>
+
+<view class='file'>
+<button class='file_button' type='default'>测试文件下载</button>
+</view>-->
+
+
+

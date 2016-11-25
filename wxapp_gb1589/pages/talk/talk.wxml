@@ -1,0 +1,49 @@
+<page>
+    <view class="comment-box" hidden="{{status}}" id="commentBox">
+        <view class="task" catchtouchstart="hideBox"></view>
+        <form bindsubmit="formSubmit">
+            <text class="title">写跟帖</text>
+            <text class="cancel" bindtap="hideBox">取消</text>
+            <button formType="submit" class="submit">发送</button>
+            <textarea maxlength="140" name="message" focus="{{!status}}"/>
+        </form>
+    </view>
+    <view class="status-bar">
+        <image src="{{userInfo.avatar}}" mode="aspectFill" class="avatar" />
+        <text class="user-name">{{userInfo.name}}</text>
+        <text class="logout">退出</text>
+    </view>
+    <view class="pk">
+        <view wx:for="{{pk}}" class="module">
+            <text class="title">{{item.title}}</text>
+            <view class="buttons">
+                <text data-total="{{item.likeTotal}}" class="like" bindtap="support">{{item.likeText}}</text>
+                <text data-total="{{item.unlikeTotal}}" class="unlike" bindtap="support">{{item.unlikeText}}</text>
+            </view>
+            <progress percent="{{item.percent}}" stroke-width="4" color="#EC5B3C" active />
+        </view>
+    </view>
+    <view class="comments">
+        <caption>
+            <text>{{comments.title}}</text>
+        </caption>
+        <list>
+            <list-item wx:for="{{comments.list}}">
+                <image src="{{item.avatar}}" mode="aspectFill" class="avatar" />
+                <text class="user-name">{{item.userName}}</text>
+                <view wx:if="{{item.borrow}}" class="borrow">
+                    <view class="header">
+                        <text>{{item.borrow['userName']}}</text>
+                        <text>{{item.borrow['date']}}</text>
+                    </view>
+                    <text class="borrow-content">{{item.borrow['content']}}</text>
+                </view>
+                <text class="content">{{item.content}}</text>
+                <footer>
+                    <text class="reply" data-replyid="{{item.pid}}" bindtap="showBox">回复</text>
+                    <text class="date">{{item.date}}</text>
+                </footer>
+            </list-item>
+        </list>
+    </view>
+</page>

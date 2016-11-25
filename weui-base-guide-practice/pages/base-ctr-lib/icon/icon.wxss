@@ -1,0 +1,37 @@
+.container {
+    background:#ffffff;
+}
+.main {
+    padding:16rpx;
+}
+.header {
+    border-bottom: 2rpx solid;
+    height: 50rpx;
+    line-height:50rpx;
+    opacity: .4;
+}
+
+.content{
+    margin:20rpx 40rpx;
+}
+
+.title{
+    opacity: .4;
+}
+
+.group{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+}
+
+.item-row{
+    margin: 27rpx 1rpx;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+
+.icon-type-info {
+    font-size: 34rpx;
+}

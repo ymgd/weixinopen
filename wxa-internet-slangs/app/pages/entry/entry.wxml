@@ -1,0 +1,62 @@
+<view class="entry-header" style="background-image: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)), url('{{item.imageUrl}}');">
+  <view class="entry-speak">{{item.speak}}</view>
+  <view class="entry-title">{{item.title}}</view>
+</view>
+<view class="container">
+  <!-- 标签 -->
+  <view class="entry-tags" wx:if="{{item.tags}}">
+    <view wx:if="{{item.tags.phonetic}}">
+      <text class="tag">{{item.tags.phonetic}}</text>
+      <text>{{item.tags.phoneticDfn}}</text>
+    </view>
+    <view wx:if="{{item.tags.abbr}}">
+      <text class="tag">{{item.tags.abbr}}</text>
+      <text>{{item.tags.abbrDfn}}</text>
+    </view>
+    <view wx:if="{{item.tags.alt}}">
+      <text class="tag">{{item.tags.alt}}</text>
+      <text>{{item.tags.altDfn}}</text>
+    </view>
+  </view>
+  <!-- 释义 -->
+  <view class="entry-dfn">
+    <text class="dfn">{{item.dfn}}</text>
+  </view>
+  <!-- 附件 -->
+  <block wx:if="{{item.attachments}}">
+    <block wx:for="{{attachments}}" wx:for-item="attachment" wx:key="unique">
+      <!-- wx:key 必须设为 unique 而不是 *this 否则编译后其后内容无法显示 -->
+      <!-- 必须使用 wx:for-item 为变量指定名称，否则默认名称 item 将重复使用，导致编译后其后内容无法显示 -->
+      <view class="entry-attachments" wx:if="{{attachment.type == 'quote'}}">
+        <view class="attachment-quote">
+          <text>{{attachment.text}}</text>
+        </view>
+      </view>
+      <view class="entry-attachments" wx:if="{{attachment.type == 'image'}}">
+        <image id="attachment-image" class="attachment-image" mode="{{attachment.mode}}" src="{{attachment.src}}"></image>
+      </view>
+      <view class="entry-attachments" wx:if="{{attachment.type == 'audio'}}">
+        <audio id="attachment-audio" class="attachment-audio" name="{{attachment.name}}" author="{{attachment.author}}" src="{{attachment.src}}"></audio>
+      </view>
+      <view class="entry-attachments" wx:if="{{attachment.type == 'video'}}">
+        <video id="attachment-video" class="attachment-video" src="{{attachment.src}}"></video>
+        <!-- 如果设定 video 元素的 autoplay 属性为 true，则视频加载出来之前其后内容无法显示 -->
+      </view>
+    </block>
+  </block>
+  <!-- 脚注 -->
+  <view class="entry-footnotes" wx:if="{{item.footnotes}}">
+    <view wx:for="{{footnotes}}" wx:for-item="footnote" wx:key="unique">
+      <text class="footnote">{{footnote}}</text>
+    </view>
+  </view>
+  <!-- 元数据 -->
+  <view class="entry-meta" wx:if="{{item.meta}}">
+    <view wx:if="{{item.meta.derivation}}">
+      <text class="meta">{{"语源：" + item.meta.derivation}}</text>
+    </view>
+    <view wx:if="{{item.meta.collectionDate}}">
+      <text class="meta">{{"收录：" + item.meta.collectionDate}}</text>
+    </view>
+  </view>
+</view>

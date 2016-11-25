@@ -1,0 +1,23 @@
+<view class="container">
+
+<ul class="list">
+      <li class="list-item" >
+        <div class="list-item-left">
+            <navigator url="../audio/audio" hover-class="navigator-hover">audio</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+        <li class="list-item" >
+        <div class="list-item-left">
+            <navigator url="../image/image" hover-class="navigator-hover">image</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+         <li class="list-item" >
+        <div class="list-item-left">
+            <navigator url="../video/video" hover-class="navigator-hover">vedio</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+</ul>
+</view>

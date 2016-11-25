@@ -1,0 +1,20 @@
+<!--车模板-->
+<template name="car_template">
+  <view bindtap="buy" id="{{car.id}}">
+    <image src="{{car.car_image}}" class="car_iamge"/>
+    <text class="car_description">{{car.car_description}}</text>
+    <view class="price_container">
+      <text class="car_price">￥{{car.price}}万起</text>
+      <text class="guid_price">指导价: ￥{{car.guid_price}}万起</text>
+      <button type="primary" size="mini" bindtap="primary" class="button" >马上抢</button>
+    </view>
+    <view class="split"></view>
+  </view>
+</template>
+
+<view wx:for="{{cars}}" wx:for-index="position" wx:for-item="car">
+      <template is="car_template" data="{{car}}"></template>
+</view>
+
+
+

@@ -1,0 +1,24 @@
+<view id="container">
+    <view class="cell" wx:for="{{items}}">
+        <!--商家信息-->
+        <view class="merchantMessage">
+            <image class="merchantIcon" src='/resource/images/goodFood.png'></image>
+            <view class="merchantDetailMessage">
+                <view class="merchantname">{{item.poi.name}}</view>
+                <view class="merchantScore smallTitle">评分:{{item.poi.avgScore}}分 ￥{{item.poi.avgPrice}}/人</view>
+                <view class="descAndAddress">
+                    <view class="merchantDesc smallTitle">{{item.poi.cateName}}</view>
+                    <view class="merchantAddress smallTitle">{{item.poi.areaName}}</view> 
+                </view>
+            </view>
+        </view>
+        <!--优惠信息-->
+        <view class="allFavorableMessage">
+            <view class="favorableMessage" wx:for="{{item.poi.payAbstracts}}">
+                <image class="favorableIcon" src="{{item.icon_url}}"></image>
+                <text class="favorableTitle smallTitle">{{item.abstract}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<button class="loadMoreDataButton" loading="{{isShowLoadMoreAnimation}}" style="visibility:{{isShowLoadMoreButton}}">{{loadMoreDataTitle}}</button>

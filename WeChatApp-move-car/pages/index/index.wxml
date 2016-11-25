@@ -1,0 +1,28 @@
+<import src="../../component/button.wxml"/>
+
+<!-- <view class="logo">
+    <image src="car.png"></image>
+    <view class="title">微信挪车 CallDriver</view>
+</view> -->
+<!-- <view class="container">
+  <view class="btns">
+    <navigator url="../calldriver/calldriver">
+        <button size="default" class="btn_one" hover-class="button-hover"> 有人挡住我的车,我要通知挪车 </button>
+    </navigator>
+    <button size="default" class="btn_one" hover-class="button-hover"> 我是车主, 我要提交我的信息 </button>
+  </view>
+</view> -->
+<view class="container">
+    <image src="../../resource/car_logo.png" class="logo"></image>
+    <view class="btn_group">
+        <view bindtap="onMoveCar">
+            <template is="Kbutton"  data="{{value:'我要挪车'}}"/>
+        </view>
+        <view bindtap="onFullInfo">
+            <template is="Kbutton" data="{{value:'我是车主'}}"/>
+        </view>
+        <view bindtap="_dialog">
+            <template is="Kbutton" data="{{value:'测试'}}"/>
+        </view>
+    </view>
+</view>

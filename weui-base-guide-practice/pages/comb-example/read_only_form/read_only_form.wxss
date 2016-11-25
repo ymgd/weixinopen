@@ -1,0 +1,31 @@
+@import "../../../public/common_form.wxss";
+
+form.readonly {
+    color: #888888;
+    font-size: 28rpx;
+}
+
+.list-item-section .section-row{
+    border-bottom: none;
+}
+
+.total-amount.list-item-section .section-row{
+    border-bottom: 2rpx solid #f3f3f3;
+    line-height: 42rpx;
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+    font-size: 30rpx;
+}
+
+.total-amount.list-item-section .section-row .value {
+    font-size: 48rpx;
+    color: #000000;
+}
+
+form.readonly button {
+    color: #09BB07;
+    background: #ffffff;
+    font-size: 30rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+}

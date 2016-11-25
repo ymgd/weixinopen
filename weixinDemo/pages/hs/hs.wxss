@@ -1,0 +1,23 @@
+.flex-wrp{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item{
+    width: 251rpx;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+.bc_green{
+    background-color: green;
+}
+.bc_red{
+    background-color: red;
+}
+.bc_blue{
+    background-color: blue;
+}
+image{
+    width: 100%;
+    height: 100%;
+}

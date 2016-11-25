@@ -1,0 +1,25 @@
+<view class="page">
+    <view class="page_hd">
+        <view class="widgets__item">
+            <view class="widgets__list widgets__list_show">
+                <navigator url="../journey/journey" class="widget">
+                    <text class="widget__name">行程</text>
+                    <image class="widget__arrow" src="../../image/arrowright.png" mode="aspectFill" />
+                    <view class="widget__line widget__line_first"></view>
+                </navigator>
+                <navigator url="../wallet/wallet" class="widget">
+                    <text class="widget__name">钱包</text>
+                    <image class="widget__arrow" src="../../image/arrowright.png" mode="aspectFill" />
+                    <view class="widget__line widget__line_first"></view>
+                </navigator>
+            </view>
+            <view class="widgets__list widgets__list_show">
+                <navigator url="../settings/settings" class="widget">
+                    <text class="widget__name">设置</text>
+                    <image class="widget__arrow" src="../../image/arrowright.png" mode="aspectFill" />
+                    <view class="widget__line widget__line_first"></view>
+                </navigator>
+            </view>
+        </view>
+     </view>
+</view>

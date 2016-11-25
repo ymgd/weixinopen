@@ -1,0 +1,7 @@
+.map-showInfomations view{
+    margin-top: 15px;
+}
+
+.map-button-showMap{
+    margin-top: 70px;
+}

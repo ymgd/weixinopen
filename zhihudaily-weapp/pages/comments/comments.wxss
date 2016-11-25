@@ -1,0 +1,23 @@
+
+
+/*用户头像*/
+.userinfo_avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.comment_counts{
+    border-bottom:1px solid #dedede;padding:5px;background-color:#fff;font-size:18px;
+}
+
+.comments_item{
+    border-bottom:1px solid #dedede;padding:10px;background-color:#fff;
+}
+
+.comments_item .avatar{
+    width:32px;
+}
+.comments_item .author_content{
+    width:calc(100% - 32px);
+}

@@ -1,0 +1,132 @@
+<view class="page gray-page-background">
+  <view class="center-head">
+        <text class="head-title">选择</text>
+    </view>
+
+  <view class="list">
+    <view class="list-item with-space-around">
+      <text class="list-primary">单行列表</text>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="list">
+    <view class="list-item with-space-around">
+      <text class="list-primary">单行列表</text>
+      <view class="right-more">
+        <text class="list-intro">详细信息</text>
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="list double-line-list">
+    <view class="list-item with-space-around">
+      <view class="in-multiple-line">
+        <text class="list-primary">双行列表</text>
+        <text class="list-secondary">描述信息</text>
+      </view>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="list multi-line-list">
+    <view class="list-item with-space-around with-bottom-border">
+      <text class="list-primary">多行列表</text>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </view>
+    <view class="list-item with-space-around with-bottom-border">
+      <text class="list-primary">多行列表</text>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </view>
+    <view class="list-item with-space-around">
+      <text class="list-primary">多行列表</text>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="list">
+    <view class="list-item">
+      <view class="in-single-line">
+        <image class="small-img"></image>
+        <text class="page-primary-content with-space-around">文字标题</text>
+      </view>
+      <view class="right-more">
+        <image class="img-arrow" src="/image/arrowright.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="list multi-line-list">
+    <view class="list-item with-space-around with-bottom-border">
+      <text class="list-primary">单选项</text>
+      <view class="right-check">
+        <icon type="success_no_circle"></icon>
+      </view>
+    </view>
+    <view class="list-item with-space-around with-bottom-border">
+      <text class="list-primary">单选项</text>
+    </view>
+    <view class="list-item with-space-around">
+      <text class="list-primary">单选项</text>
+    </view>
+  </view>
+
+  <view class="list multi-line-list">
+    <view class="list-item with-bottom-border">
+      <text class="list-primary with-space-around">开启中</text>
+      <view class="right-check">
+        <switch checked="true"></switch>
+      </view>
+    </view>
+    <view class="list-item">
+      <text class="list-primary with-space-around">关闭</text>
+      <view class="right-check">
+        <switch></switch>
+      </view>
+    </view>
+  </view>
+
+  <view class="list multi-line-list">
+    <view class="list-item with-space-around with-bottom-border">
+      <view class="left-check">
+        <icon type="success"></icon>
+        <text class="list-primary">多选项</text>
+      </view>
+      <view class="right-check">
+        <icon type="success_no_circle"></icon>
+      </view>
+    </view>
+    <view class="list-item with-space-around with-bottom-border">
+      <view class="left-check">
+        <icon type="circle"></icon>
+        <text class="list-primary">多选项</text>
+      </view>
+      <view class="right-check">
+        <icon type="success_no_circle" class="hide"></icon>
+      </view>
+    </view>
+    <view class="list-item with-space-around">
+      <view class="left-check">
+        <icon type="circle"></icon>
+        <text class="list-primary">多选项</text>
+      </view>
+      <view class="right-check">
+        <icon type="success_no_circle" class="hide"></icon>
+      </view>
+    </view>
+  </view>
+
+  
+
+</view>

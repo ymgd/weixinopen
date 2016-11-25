@@ -1,0 +1,117 @@
+.m-item{
+  text-align: center
+}
+
+.image{
+  width: 100%;
+  height: 100%
+}
+.m-item-title{
+  font-size: 24rpx;
+  color: black
+}
+.dish-item{
+  width: 100%
+}
+.dish-item-pic{
+  padding: 10rpx
+}
+.dish-item-pic image{
+   width: 140rpx;
+   height: 140rpx;
+   margin: 0 auto
+}
+/*banner导航*/
+swiper{
+  height: 300rpx
+}
+.swiper-item{
+  display: block;
+  height: 300rpx;
+}
+/*菜单wrap*/
+.menu-wrp{
+  overflow:hidden;
+  width:750rpx;
+  height: 800rpx;
+  display:flex;
+  background-color: #FFFFFF;
+  flex-direction:row;
+}
+
+/*左侧菜单*/
+.menu-item{
+  width: 200rpx;
+  height: 200rpx;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-item-icon{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  border-radius: 50%
+}
+.left-side{
+  height: 800rpx;
+  display:flex;
+  width: 200rpx;
+  background-color: #FFFFFF;
+  flex-direction:column;
+}
+/*右侧菜品*/
+
+/*菜品信息*/
+.dish-item-info{
+  width: 150rpx;
+  padding-left: 10rpx
+}
+.dish-item-name{
+  color: #454545;
+  font-size: 28rpx;
+  line-height: 50rpx
+}
+.dish-item-sales{
+  color: #ccc;
+  font-size:22rpx;
+  line-height: 70rpx
+}
+.dish-item-money{
+  color: #f50909;
+  font-size: 26rpx;
+}
+/*操作菜品数量*/
+.dish-item-count{
+  width: 220rpx;
+  display: flex;
+  padding: 100rpx 30rpx 0;
+}
+.dish-item-count-minus{
+  width: 50rpx;
+  height: 50rpx;
+}
+.dish-item-count-text{
+  color: #ccc;
+  padding: 0 15rpx;
+  line-height: 50rpx
+
+}
+.dish-item-count-plus{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+
+
+.flex-auto{
+  width: 100%;
+  height: 800rpx;
+  color: #FFFFFF;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+}
+

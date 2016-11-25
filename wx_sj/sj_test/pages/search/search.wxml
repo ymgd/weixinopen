@@ -1,0 +1,32 @@
+<view class="section search_top">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item search_top_left">
+      <text class='search_top_1'>发现</text>
+    </view>
+    <view class="flex-item search_top_right">
+      <text class='search_top_2'>新品</text>
+    </view>
+  </view>
+</view>
+<!--时间出租-->
+<view class='rent'>
+  <image class='rent_img' src="{{searchPageInfo.time[0].path}}" mode='scaleToFill'></image>
+</view>
+
+<!--时间求租-->
+<view class='rent'>
+  <image class='rent_img' src="{{searchPageInfo.time[1].path}}" mode='scaleToFill'></image>
+</view>
+
+<!--分享话题1-->
+<view class='shared'>
+  <image class='shared_img_1' src="{{searchPageInfo.shared[0].path}}" mode='scaleToFill'></image>
+</view>
+
+<!--分享话题2-->
+<view class='shared'>
+  <image class='shared_img_2' src="{{searchPageInfo.shared[1].path}}" mode='scaleToFill'></image>
+</view>
+
+
+

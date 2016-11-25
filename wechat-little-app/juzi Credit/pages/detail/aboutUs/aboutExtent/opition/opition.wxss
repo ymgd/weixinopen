@@ -1,0 +1,12 @@
+.section{
+    margin-top: 5px;
+}
+
+.btn-area{
+    
+    margin: 300rpx 80rpx 0rpx 80rpx;
+}
+
+input{
+    margin: 20rpx 20rpx 0rpx 20rpx;
+}

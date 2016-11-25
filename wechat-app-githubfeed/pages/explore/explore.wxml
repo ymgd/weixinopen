@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="col explore">
+    <view class="col pickers">
+      <picker bindchange="handleLanguagePickerChange" mode="selector" value="{{languageIndex}}" range="{{languageArray}}">
+        <view class="picker_text">
+          挑选语言：{{languageArray[languageIndex]}}
+        </view>
+      </picker>
+      <picker bindchange="handleTabPickerChange" value="{{tabIndex}}" range="{{tabArray}}">
+        <view class="picker_text">
+        挑选时间：{{tabArray[tabIndex]}}
+        </view>
+      </picker>
+    </view>
+    <scroll-view scroll-y="true">
+      <block wx:for="{{items}}" wx:key="explore">
+        <navigator url="../repo/repo?repo_full_name={{item.full_name}}">
+          <view class="row repo_item">
+            <navigator url="../user/user?user_name={{item.owner.login}}">
+              <image class="avatar" mode="aspectFit" src="{{item.owner.avatar_url}}"></image>
+            </navigator>
+            <view class="col" style="flex: 1">
+              <text class="full_name">{{item.full_name}}</text>
+              <text class="language">{{item.language ? item.language : ''}}</text>
+            </view>
+            <view class="stargazers_count">{{item.stargazers_count}}</view>
+          </view>
+        </navigator>
+      </block>
+    </scroll-view>
+  </view>
+</view>

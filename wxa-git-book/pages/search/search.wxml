@@ -1,0 +1,29 @@
+<import src="tpls/list.wxml"/>
+<view class="section" style="position:fixed;top:0;left:0;right:0;background:#ccc;z-index:999;">
+  <input placeholder="搜索：作者／书名"/>
+</view>
+<scroll-view scroll-y="true" style="height: 100%;margin-top:30px;" bindscrolltolower="pullUpLoad" bindscrolltoupper="pullDownRefresh" lower-threshold="0" >
+  <loading hidden="{{loaded}}">
+    加载中...
+  </loading>
+  <block wx:for="{{books}}" wx:key="*" wx:for-item="book">
+    <navigator url="detail/detail?id={{book.id}}">
+      <template is="list" data="{{book}}"/>
+    </navigator>
+  </block>
+  <view wx:for="{{[]}}" wx:key="*" wx:for-item="book" style="postion:relative;display:flex;flex-direction:row;height:100px;padding:10px 0 10px 10px;border-top: 1px solid #ccc;border-bottom:1px solid #ccc;">
+    <view style="with:80px;height:100px;margin-right:10px;background-color: #e00;">
+      <image style="width: 80px;height:100%;" mode="aspectFill" src="{{book.cover.small}}"></image>
+    </view>
+    <view>
+      <view style="font-size: 14px;">
+        <text>书名：</text>
+        <text style="font-wight:500;">{{book.title}}</text>
+      </view>
+      <view style="font-size: 14px;">
+        <text>简介：</text>
+        <text>{{book.description}}</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

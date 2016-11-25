@@ -1,0 +1,32 @@
+ <view class="jrm-flex-column jrm-w100p news-area bg-fff">
+   <view class="jrm-flex-row jrm-w100p item-bar-top">
+       <image class="item-bar-icon" src="./images/newarea@2x.png" background-size="cover"></image>
+       <text class="item-bar-desp">你感兴趣的内容</text>
+   </view>
+   <view class="jrm-flex-row jrm-w100p news-item">
+     <view class="jrm-flex-row news-item-content">
+       <view class="jrm-flex-column news-item-1">
+          <text class="news-item-title">躺着夺冠的C罗，爱名模，爱名车，更爱理财</text>
+          <text class="news-item-desp">今天凌晨，事隔12年，C罗终于带着</text>
+          <view class="news-item-flag-area">
+           <text class="news-item-flag">理财教育</text>
+          </view>          
+       </view>
+       <image class="news-item-image" src="//img12.360buyimg.com/jrpmobile/jfs/t3469/161/988825559/10962/b813a888/5818b5d4N0f8de0d4.jpg" background-size="cover"></image>
+     </view>
+   </view>
+
+   <view class="jrm-flex-row jrm-w100p news-item">
+     <view class="jrm-flex-row news-item-content">
+       <view class="jrm-flex-column news-item-1">
+          <text class="news-item-title">躺着夺冠的C罗，爱名模，爱名车，更爱理财</text>
+          <text class="news-item-desp">今天凌晨，事隔12年，C罗终于带着</text>
+          <view class="news-item-flag-area">
+           <text class="news-item-flag">理财教育</text>
+          </view>          
+       </view>
+       <image class="news-item-image" src="//img12.360buyimg.com/jrpmobile/jfs/t3469/161/988825559/10962/b813a888/5818b5d4N0f8de0d4.jpg" background-size="cover"></image>
+     </view>
+   </view>
+ 
+  </view>

@@ -1,0 +1,12 @@
+@import "../../../public/android_diff.wxss";
+
+.img-plh {
+    height: 380rpx;
+    width: 100%;
+    background: #D8D8D8;
+    margin-bottom: 30rpx;
+}
+
+.btn-bkr {
+    background: #f0f0f0;
+}

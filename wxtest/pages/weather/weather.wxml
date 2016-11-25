@@ -1,0 +1,97 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="city" bindtap="bindViewTap">
+    <text>当前城市：{{basic.city}}</text>
+    <text class="update">{{basic.update.loc}}</text>
+  </view>
+
+  <view class="weather">
+    <image class="section" src="{{now.cond.src}}"></image>
+    <view class="aside">
+      <text class="temperature">{{now.tmp}}℃</text>
+      <text>{{now.cond.txt}} | {{now.wind.dir}}{{now.wind.sc}}级</text>
+    </view>
+    <view class="other">
+      <view class="border_r"><text class="title">相对湿度</text><text class="info">{{now.hum}}%</text></view>
+      <view class="border_r"><text class="title">降水量</text><text class="info">{{now.pcpn}}mm</text></view>
+      <view><text class="title">能见度</text><text class="info">{{now.vis}}km</text></view>
+    </view>
+  </view>
+
+  <view class="suggestion">
+    <text class="title">生活指数</text>
+    <view class="list">
+        <view class="list_l">
+          <image src="../../images/icon/comf.png"></image>
+          <text>舒适度指数</text>
+        </view>
+        <view class="list_r">
+          <text class="list_t">{{suggestion.comf.brf}}</text>
+          <text>{{suggestion.comf.txt}}</text>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_l">
+          <image src="../../images/icon/cw.png"></image>
+          <text>洗车指数</text>
+        </view>
+        <view class="list_r">
+          <text class="list_t">{{suggestion.cw.brf}}</text>
+          <text>{{suggestion.cw.txt}}</text>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_l">
+          <image src="../../images/icon/drsg.png"></image>
+          <text>穿衣指数</text>
+        </view>
+        <view class="list_r">
+          <text class="list_t">{{suggestion.drsg.brf}}</text>
+          <text>{{suggestion.drsg.txt}}</text>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_l">
+          <image src="../../images/icon/flu.png"></image>
+          <text>感冒指数</text>
+        </view>
+        <view class="list_r">
+          <text class="list_t">{{suggestion.flu.brf}}</text>
+          <text>{{suggestion.flu.txt}}</text>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_l">
+          <image src="../../images/icon/sport.png"></image>
+          <text>运动指数</text>
+        </view>
+        <view class="list_r">
+          <text class="list_t">{{suggestion.sport.brf}}</text>
+          <text>{{suggestion.sport.txt}}</text>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_l">
+          <image src="../../images/icon/trav.png"></image>
+          <text>旅游指数</text>
+        </view>
+        <view class="list_r">
+          <text class="list_t">{{suggestion.trav.brf}}</text>
+          <text>{{suggestion.trav.txt}}</text>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_l">
+          <image src="../../images/icon/uv.png"></image>
+          <text>紫外线指数</text>
+        </view>
+        <view class="list_r">
+          <text class="list_t">{{suggestion.uv.brf}}</text>
+          <text>{{suggestion.uv.txt}}</text>
+        </view>
+      </view>
+      
+
+
+  </view>
+</view>

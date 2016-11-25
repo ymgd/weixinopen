@@ -1,0 +1,47 @@
+page {
+    overflow: hidden;
+    background-color: #fef8fd;
+}
+.input-placeholder {
+    color: #ccc;
+}
+.bg {
+    background-repeat: no-repeat;
+}
+.bg view {
+    padding: 0 28rpx;
+}
+.logo image {
+    width: 78%;
+    margin-left: 12%;
+}
+.telephone {
+    margin-bottom: 25rpx;
+}
+.telephone input {
+    border: 1px solid #ccc;
+    height: 80rpx;
+    border-radius: 10rpx;
+    text-indent: 15rpx;
+    margin-right: 10rpx;
+}
+.telephone button {
+    line-height: 80rpx;
+}
+.login button {
+    background-color: #e50150;
+}
+.code {
+    margin-bottom: 30rpx;
+}
+.code input {
+    border: 1px solid #ccc;
+    height: 80rpx;
+    margin-bottom: 40rpx;
+    border-radius: 10rpx;
+    text-indent: 15rpx;
+}
+.footer {
+    height: 150rpx;
+    font-size: 26rpx;
+}

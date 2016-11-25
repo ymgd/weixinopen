@@ -1,0 +1,115 @@
+
+text{
+    color: darkgray;
+    font-size: 12px;
+}
+/*容器*/
+.contain{
+
+    height: 100%; 
+}
+
+/*1.菜单栏*/
+.memuView{
+
+height: 50px; 
+display: flex;
+flex-direction: row;
+text-align: center;
+background: white;
+border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+/*2.菜单栏按钮*/
+.titleView{
+  
+    flex: 1;    /*同一行的控件平分父控件的宽度*/
+    font-size: 14px;
+    line-height: 50px;
+    color: darkgray;
+}
+
+ .menu-text.selected{
+     color: red;
+ }
+
+/*3.列表view*/
+.item{
+
+ background: white;
+ display: flex;
+ flex-direction: column;
+ /*border-bottom: 1px solid lightgrey;*/
+ /*border-bottom-width: 8px;*/
+ margin-bottom: 8px;
+}
+
+.item-top{
+    display: flex;
+    flex-direction: row;
+}
+/*4.图片背景View*/
+.imageBgView{
+    width: 80px;
+    height: 80px;
+    margin: 8px 0 0px 8px;
+
+}
+
+/*5.列表图片*/
+.item image{
+width: 80px;
+height: 80px;
+ border-radius:50%;
+}
+
+/*6.文字背景View*/
+.textBgView{
+   flex: 1;
+    margin: 8px;
+}
+
+/*7.文字背景View*/
+.textBgView view{
+    margin:5px 0 0 0;
+}
+
+/*8.标题*/
+.titleText{
+    font-size: 15px;
+    color: black;
+}
+
+/*9.年级*/
+.gradeText{
+    float: right;
+}
+
+/*10.时间*/
+.timeText{
+ float: right;
+}
+
+/*11.小时数*/
+.timeCountText{
+ float: right;
+}
+
+/*12.价格*/
+.priceText{
+
+float: right;
+font-size: 14px;
+color: burlywood;
+}
+
+/*13.底部价格View*/
+.item-bottom-priceView{
+    margin: 0 8px 8px 8px;
+}
+ 
+swiper{
+    /*background: green;*/
+    height: 500px;
+}
+

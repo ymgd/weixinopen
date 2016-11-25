@@ -1,0 +1,27 @@
+.container{
+  height: 100%;
+  overflow: visible;
+  background-color: #ffffff;
+}
+
+.main {
+    margin:0;
+    margin-top: 37rpx;
+}
+
+.btn-area button {
+    margin: 20rpx;
+}
+
+.modal-cust-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 30rpx;
+}
+
+.blank-rect {
+    width:490rpx;
+    height: 327rpx;
+    margin-bottom: 40rpx;
+}

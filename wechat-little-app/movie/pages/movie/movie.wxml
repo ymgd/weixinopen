@@ -1,0 +1,29 @@
+<view class="content">
+
+<!--滚动横幅-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style="width:100%"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--单身-->
+<import src="../template/movietpl"/>
+<template is="movies" data="{{movies}}"/>
+
+
+<!--加载菊花转圈-->
+<view class="body-view">
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+
+</view>
+
+
+
+
+</view>

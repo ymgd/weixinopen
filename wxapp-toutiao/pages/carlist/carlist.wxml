@@ -1,0 +1,14 @@
+
+<scroll-view scroll-y="true" class="scroll_view" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+    <block  wx:for-items="{{list}}" wx:for-item="item">
+        <view class="list_item {{item.istag?'bg':''}}" id="{{index}}">
+            <view wx:if="{{item.istag}}"  id="{{item.tagname}}">
+                <view class="u-time">{{item.tagname}}</view>
+            </view>
+            <view wx:else id="{{item.car_id}}">
+                <image class="userinfo-avatar-img" src="{{item.car_logo}}" background-size="cover"></image>
+                <view  class="u-time">{{item.carName}}</view>
+            </view>
+        </view>
+    </block>
+</scroll-view>

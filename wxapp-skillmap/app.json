@@ -1,0 +1,31 @@
+{
+    "pages":[
+      "pages/skill-list/skill-list",
+      "pages/about/about",
+      "pages/skill/skill",
+      "pages/test/test",
+      "pages/index/index",
+      "pages/logs/logs"
+    ],
+    "window":{
+      "backgroundTextStyle":"light",
+      "backgroundColor": "#000000",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTitleText": "技能图谱",
+      "navigationBarTextStyle":"black"
+    },
+    "tabBar": {
+        "position": "bottom",
+        "list": [{
+          "pagePath": "pages/skill-list/skill-list",
+          "text": "技能图谱",
+          "iconPath": "resources/icon-list.png",
+          "selectedIconPath": "resources/icon-list-select.png"
+        }, {
+          "pagePath": "pages/about/about",
+          "text": "关于",
+          "iconPath": "resources/icon-about.png",
+          "selectedIconPath": "resources/icon-about-select.png"
+        }]
+    }
+}

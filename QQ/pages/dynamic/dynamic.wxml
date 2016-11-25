@@ -1,0 +1,51 @@
+<view class="container">
+
+<view class="search">
+    <view class="search-input" bindtap="handerSearch">
+        <view class="placeholder">搜索电影/音乐/商品...</view>
+    </view>
+</view>
+
+<view class="row-flex">
+    <view class="cell-flex">
+        <image src="../../res/image/qzone.png"></image>
+        <view class="title">好友动态</view>
+    </view>
+    <view class="cell-flex">
+        <image src="../../res/image/vicinity.png"></image>
+        <view class="title">附近</view>
+    </view>
+    <view class="cell-flex">
+        <image src="../../res/image/tribe.png"></image>
+        <view class="title">兴趣部落</view>
+    </view>
+</view>
+
+</view>
+
+<view class="group-ul" style="margin-top:16px;">
+
+    <block wx:for="{{fristRowMenus}}">
+        <view class="c-group-li" data-tag="{{item.xtype}}" bindtap="onFItemClickHandler">
+            <image class="icon" src="{{item.icon}}" ></image>
+            <text  class="title">{{item.title}}</text>
+            <image class="arrow" src="../../res/image/arrow_right.png"></image>
+        </view>
+        <view class="c-devierline"></view>
+    </block>
+    
+</view>
+
+
+<view class="group-ul" style="margin-top:16px;margin-bottom:30px;">
+
+    <block wx:for="{{seconedRowMenus}}">
+         <view class="c-group-li">
+            <image class="icon" src="{{item.icon}}" ></image>
+            <text  class="title">{{item.title}}</text>
+            <image class="arrow" src="../../res/image/arrow_right.png"></image>
+        </view>
+        <view class="c-devierline"></view>
+    </block>
+
+</view>    

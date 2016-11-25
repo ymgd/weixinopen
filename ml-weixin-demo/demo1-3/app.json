@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/clife",
+    "pages/apply/apply",
+    "pages/history/history",
+    "pages/scale/scale"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#F1BA30",
+    "navigationBarTitleText": "信 用 生 活",
+    "navigationBarTextStyle":"white",
+    "statusBarTextStyle":"white"
+  },
+   "tabBar":{
+    "color":"#white",
+    "selectedColor":"#F1BA30",
+    "borderStyle":"white",
+    "backgroundColor":"#ffffff",
+    "list":[{
+      "pagePath":"pages/clife",
+      "text":"首页",
+      "iconPath":"img/main.png",
+      "selectedIconPath":"img/main_selected.png"
+    },
+    {
+      "pagePath":"pages/apply/apply",
+      "text":"申请",
+      "iconPath":"img/main.png",
+      "selectedIconPath":"img/main_selected.png"
+    },
+    {
+      "pagePath":"pages/history/history",
+      "text":"账单",
+      "iconPath":"img/main.png",
+      "selectedIconPath":"img/main_selected.png"
+    },
+    {
+      "pagePath":"pages/scale/scale",
+      "text":"我",
+      "iconPath":"img/main.png",
+      "selectedIconPath":"img/main_selected.png"
+    }]
+
+  }
+
+}

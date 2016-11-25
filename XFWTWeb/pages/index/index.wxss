@@ -1,0 +1,141 @@
+/*容器*/
+.contain{
+
+  height: 100%;
+}
+
+/*轮播控件*/
+.swpier{
+
+  width: 100%;
+  height: 200px; 
+}
+
+/**index.wxss**/
+.slide-image{
+
+  width: 100%;
+  height: 200px;
+}
+
+/*导航课程栏*/
+.nav{
+
+  width:100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+
+/*格子*/
+.boxView{
+
+display: flex;
+flex: 1;
+flex-direction:column;
+ align-items: center;
+  border-right:1px solid rgb(245, 245, 245); 
+}
+
+/*格子图片*/
+.boxView image{
+  margin-top: 7px;
+  width: 36px;
+  height: 36px;
+ 
+}
+
+/*格子文字*/
+.boxView text{
+
+  font-size: 12px;
+  margin-top: 7px; 
+}
+
+/*推荐课程*/
+.recommendCourseView{
+
+  margin-top: 10px;
+  background: white;
+  height: 40px;
+}
+
+/*推荐课程文字*/
+.recommendCourseView .courseText{
+
+  font-size: 16px;
+   margin-left: 10px;
+   line-height: 40px;
+}
+
+/*描述*/
+.recommendCourseView .desText{
+
+  font-size: 13px;
+  margin-left: 10px;
+     line-height: 40px;
+     color: lightgray;
+}
+
+/*课程cell*/
+.item{
+ background: white;
+ height: 80px;
+   display: flex;
+   flex-direction: row;
+   padding: 5px 0 5px 5px;
+   border-top: 0.5px solid rgb(245, 245, 245);
+   /*y轴对齐方式*/
+  /*align-items: center; */
+  /*x轴对齐方式*/
+  /*justify-content: space-between;*/ 
+}
+
+/*图片背景View*/
+.item-left{
+
+  width: 80px;
+  height: 80px;
+}
+
+/*课程图片*/
+.courseImage{
+
+  width: 100%;
+  height: 100%;
+}
+
+/*右边item*/
+.item-right{
+  margin-left: 10px;
+  flex: 1; /*占满两侧空白部分*/
+}
+
+/*右边item的view*/
+.item-right view{
+  margin: 8px 0 0 5px;
+}
+
+/*时间*/
+.timeText{
+
+ font-size: 11px;
+   color: darkgray;
+
+}
+
+/*年级*/
+.gradeText{
+  font-size: 11px;
+   color: darkgray;
+
+}
+/*价格*/
+.priceText{
+
+  font-size: 13px;
+  color: burlywood;
+  float: right;
+  padding-right: 10px;
+}

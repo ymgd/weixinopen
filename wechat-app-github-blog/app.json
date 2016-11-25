@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f2f2f2",
+    "navigationBarTitleText": "Eyas 博客",
+    "navigationBarTextStyle":"black"
+  },
+  "config": {
+  	"server": "https://api.github.com",
+  	"github": {
+  		"user": "eyasliu",
+  		"repo": "blog"
+  	}
+  }
+}

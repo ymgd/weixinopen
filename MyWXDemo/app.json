@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/movement/movement",
+    "pages/publish/publish",
+    "pages/record/record",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#C1B087",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+     "color":"#bebebe",
+    "selectedColor":"#72674E",
+    "borderStyle":"black",
+    "backgroundColor":"#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/movement/movement",
+      "text": "动态"
+    },{
+      "pagePath": "pages/publish/publish",
+      "text": "发布"
+    },{
+      "pagePath": "pages/record/record",
+      "text": "唱片"
+    },{
+      "pagePath": "pages/data/data",
+      "text": "网络获取"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

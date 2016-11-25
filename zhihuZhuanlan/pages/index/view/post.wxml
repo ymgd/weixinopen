@@ -1,0 +1,10 @@
+<view class="fx-row fx-wrap menu-list">
+
+    <view  class="col-25 menu-item" wx:for="{{menuList}}" wx:key="*this" wx:for-item="menu">
+        <button type="primary"  >
+             {{menu.menuName}}
+        </button>
+    </view>
+              
+</view>
+           

@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+
+    "pages/item/list",
+
+    "pages/work/list",
+
+    "pages/user/index",
+    "pages/user/login",
+    "pages/user/access",
+
+    "pages/agent/suppliers",
+    "pages/agent/supplier",
+    "pages/agent/item",
+    "pages/agent/strategy"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#222",
+    "navigationBarTitleText": "鲜时达",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#f1f1f1",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#09bb07",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "事务",
+      "iconPath": "images/icons/home-outline.png",
+      "selectedIconPath": "images/icons/home-outline_s.png"       
+    }, {
+      "pagePath": "pages/item/list",
+      "text": "代理",
+      "iconPath": "images/icons/layers.png",
+      "selectedIconPath": "images/icons/layers_s.png"          
+    }, {
+      "pagePath": "pages/user/index",
+      "text": "用户",
+      "iconPath": "images/icons/head.png",
+      "selectedIconPath": "images/icons/head_s.png"          
+    }]
+  }    
+}

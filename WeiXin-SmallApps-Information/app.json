@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/information/index/index",
+    "pages/logs/logs",
+    "pages/information/detail/detail",
+    "pages/found/index/index",
+    "pages/personal/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#3080c0",
+    "navigationBarTitleText": "餐饮咖 « 资讯",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#3080c0",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/information/index/index",
+      "text": "资讯",
+      "iconPath":"images/zixun@2x.png",
+      "selectedIconPath":"images/zixun_selected@2x.png"
+    },{
+      "pagePath": "pages/found/index/index",
+      "text": "发现",
+      "iconPath":"images/faxian@2x.png",
+      "selectedIconPath":"images/faxian_selected@2x.png"
+    },{
+      "pagePath":"pages/personal/index/index",
+      "text":"我",
+      "iconPath":"images/wo@2x.png",
+      "selectedIconPath":"images/wo_selected@2x.png"
+    }]
+  }
+}

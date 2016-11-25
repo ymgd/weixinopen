@@ -1,0 +1,49 @@
+.add_box {
+	padding: 0 20rpx;
+}
+.add_bt_box {
+	margin: 40rpx 0;
+}
+.concel {
+	display: inline-block;
+}
+.submit {
+	display: inline-block;
+	float: right;
+}
+textarea {
+	width: 100%;
+}
+.pic_box {
+	display: none;
+	margin: 40rpx 0;
+	overflow: hidden;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;	
+}
+.pic_list {
+	padding: 10rpx;
+	border: 1px solid #eee;
+	width: 200rpx;
+	height: 200rpx;
+	display:flex;
+	justify-content:space-between;
+	flex-basis:33%;
+	box-sizing:border-box;
+	flex:0 0 31%;
+	margin:0 1%;	
+}
+.pic_list_img {
+	width: 100%;
+	height: 100%;
+}
+.footer {
+	margin-top: 20rpx;
+	background-color: #eee;
+	padding: 20rpx 20rpx;
+}
+.add_img {
+	width: 32rpx;
+	height: 32rpx;
+}

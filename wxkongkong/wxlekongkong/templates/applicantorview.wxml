@@ -1,0 +1,13 @@
+<template name="applicantorview">
+    <view style="padding: {{top}}px {{left}}px 0 {{left}}px; background-color: white; width: 100%">
+        <view style="display: flex;flex-direction: row;">
+            <image src="{{avatar}}" style="width: 60rpx; height: 60rpx; border-radius: 30rpx;"></image>
+            <view style="margin: 0 0 0 {{left}}px ; display: flex; flex-direction: column; backgroud-color: red;">
+                <text style="font-size:13px">{{name}}</text>
+                <text style="font-size:10px; margin-top: 5rpx; color: lightgray;">{{date}}</text>
+                <text style="font-size:14px; margin-top: 10rpx;">{{reason}}</text>
+            </view>
+        </view>
+        <view class="dottedline" style="margin: {{top}}px 0 0 42px"></view>
+    </view>
+</template>

@@ -1,0 +1,4 @@
+<view class="container" style="height:{{imageHeight}}px;">
+    <image mode="aspectFit" src="{{imageSrc}}"/>
+    <button data-image-path="{{imageSrc}}" bindtap="deletePhoto">删除</button>
+</view>

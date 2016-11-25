@@ -1,0 +1,93 @@
+/*view image{
+    margin: 0;
+    padding: 0;
+}*/
+.container{
+    margin: 0;
+    padding: 0;
+}
+.chatMessageContainer{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.chatMessageCell{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.otherCellContainer{
+    width: 100%;
+     display: flex;
+    justify-content: flex-start;
+}
+
+.meCellContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.cellTitle{
+    margin-top: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: cyan;
+    word-break:break-all;
+    max-width: 70%;
+    border-radius: 3px;
+    /*上下居中*/
+     margin: auto 0; 
+}
+/*为了加对话框箭头*/
+.chattTitle{ 
+    position: relative; 
+    margin-left: 10px;
+}
+/*为了加对话框箭头,此时仅仅加了左侧对话箭头，右侧同理可以添加*/
+.chattTitle:before{
+    content: "";  
+    display: block;
+    position: absolute; 
+    top:8px;
+    width: 0;
+    height: 0;
+    border:6px transparent solid;
+    left:-12px;
+    border-right-color: cyan;
+}
+.cellIcon{
+     width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    vertical-align: top;
+    border: 3px solid wheat;
+}
+
+.inputToolBar{
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-end;
+}
+.inputTool{
+    padding-left: 5px;
+    margin: 0;
+    border: 1px solid lightgrey;
+    width: 80%;
+    line-height: 40px;
+    height: 40px;
+    box-sizing: border-box
+}
+.sendButtonTool{
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    height: 40px;
+    border: none;
+}
+
+

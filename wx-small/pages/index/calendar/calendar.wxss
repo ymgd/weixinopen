@@ -1,0 +1,42 @@
+.calendar-area{
+    height: 112rpx;
+    font-size: 30rpx;
+    color: #417CDC;
+    background-color: #F2F6FF;
+}
+
+.calendar-item1{
+    flex: 1;    
+}
+
+.calendar-num-area{     
+     padding-left: 32rpx;
+     padding-top: 15rpx;
+     padding-right: 41rpx;        
+}
+
+.calendar-num1{  
+ font-size: 44rpx;
+ color: #417CDC;
+}
+
+.calendar-num2{ 
+ font-size: 24rpx;
+ color: #417CDC;
+}
+
+.calendar-middle{
+  flex: auto;
+  line-height: 112rpx;
+}
+
+
+.calendar-right{
+    width: 46rpx;
+    line-height: 112rpx;
+}
+
+.calendar-right-icon{
+    width: 14rpx;
+    height: 24rpx;
+}

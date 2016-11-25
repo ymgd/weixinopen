@@ -1,0 +1,10 @@
+<image style="width: 100%; height: 250px;" src="{{dish.Images[0].ImagePath}}"></image>
+<view class="flex-item">
+	<text class="title">{{dish.Goods.GoodsName}}</text>
+	<text class="price">￥{{dish.Goods.Price || 0}}</text>
+</view>
+<view class="flex-item">
+	<text class="title">商品简介</text>
+	<text class="summary">{{dish.Goods.summary || '进口鸡翅，香嘣脆！'}}</text>
+</view>
+<loading hidden="{{hidden}}">玩命加载中…</loading>

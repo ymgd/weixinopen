@@ -1,0 +1,6 @@
+<view class="panel panel-success">
+  <view class="panel-heading">{{songTitle}}</view>
+  <view class="panel-body">
+    {{songText}}
+  </view>
+</view>

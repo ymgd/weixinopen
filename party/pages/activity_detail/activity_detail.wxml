@@ -1,0 +1,12 @@
+<view>
+    <view class="activity-image">
+        <image mode="scaleToFill" src="{{poiActivity.poster}}"/>
+    </view>
+
+    <view class="activity-summary">
+        <text>活动详情</text>
+        <view class="activity-content">
+            <text>{{poiActivity.content || '暂无详情'}}</text>
+        </view>
+    </view>
+</view>

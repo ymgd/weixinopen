@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="content">
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+    <block wx:for="{{imgSrc}}">
+      <swiper-item>
+        <image src="{{item}}" style="width:100%"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <import src="../template/movietpl.wxml"/>
+  <block wx:for="{{movie}}">
+  <template is="movie" data="{{item}}"/>
+  </block>
+</view>

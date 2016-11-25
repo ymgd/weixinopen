@@ -1,0 +1,36 @@
+.section label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px; }
+  .section label text {
+    width: 70px;
+    text-align: right; }
+  .section label input {
+    flex: 1;
+    border-bottom: 1rpx solid #999; }
+
+.my {
+  display: flex;
+  border: 1px solid #999;
+  margin: 10px; }
+  @media screen and (max-width: 320px) {
+    .my image {
+      height: 180px; } }
+  @media screen and (max-width: 400px) and (min-width: 321px) {
+    .my image {
+      height: 230px; } }
+  @media screen and (min-width: 401px) {
+    .my image {
+      height: 230px; } }
+  .my image {
+    padding: 10px;
+    width: 150px; }
+  .my .text {
+    display: flex;
+    flex-direction: column;
+    color: #555;
+    font-size: 14px;
+    padding-top: 10px; }
+    .my .text text {
+      padding: 5px 0; }

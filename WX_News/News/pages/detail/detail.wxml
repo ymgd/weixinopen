@@ -1,0 +1,18 @@
+<view class="detail-page">
+    <view>
+        <text class="title">{{newsDetail.title}}</text>
+    </view>
+
+    <view class="info">
+        <text>{{newsDetail.source}}</text>
+        <text class="date">{{newsDetail.time}}</text>
+    </view>
+
+    <view>
+        <image src="{{newsDetail.icon}}" alt="" mode="aspectFill" style="width: 100%;" />
+    </view>
+
+    <view class="content">
+        <text>{{newsDetail.content}}</text>
+    </view>
+</view>

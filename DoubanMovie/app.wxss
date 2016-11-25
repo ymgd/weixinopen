@@ -1,0 +1,27 @@
+/**app.wxss**/
+page {
+  background-color: #fbf9fe;
+  height: 100%;
+}
+.container {
+  background: #fbf9fe;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.directors-title {
+	width: 80rpx;
+	height: 50rpx;
+	padding-left: 10rpx;
+	font-size: 25rpx;
+	font-family: "sans-serif";
+	color: black;
+}
+.directors {
+	width: 450rpx;
+    height: 50rpx;
+    font-size: 25rpx;
+    font-family: "sans-serif";
+    color: #ccc;
+}

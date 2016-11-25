@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <!--index.wxml-->
+  <view class="body">
+     <view class="images-wrapper">
+       <text class="images-text">请选择图片</text>
+       <view class="images-list">
+         <block wx:for-items="{{imageList}}" wx:for-item="image">
+           <image src="{{image}}" class="images-image" data-src="{{image}}" bindtap="previewImage"></image>
+         </block>
+         <image src="/images/plus.png" class="images-image images-image-plus" bindtap="chooseImage"></image>
+       </view>
+     </view>
+  </view>
+
+</view>

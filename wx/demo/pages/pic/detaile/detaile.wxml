@@ -1,0 +1,11 @@
+<swiper indicator-dots="{{indicatorDots}}" duration="{{duration}}" current="{{current}}" autoplay="{{autoplay}}" bindchange="swiperChange">
+  <block wx:for="{{data}}" wx:key="">
+    <swiper-item>
+      <image src="{{item.imgfile_l}}" class="slide-image" mode="aspectFit" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="swiper-num">{{current+1}}/{{data.length}}</view>
+<view class="swiper-text">
+	<view wx:for="{{data}}" wx:key="" hidden="{{index!=current}}" data-id="{{index}}">{{item.des}}</view>
+</view>

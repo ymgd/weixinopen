@@ -1,0 +1,52 @@
+<view class="container">
+    <view class="section">
+        <view class="user">
+            <view class="user-box clearfix">
+                <image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
+                <view class="user-name">
+                <text class="vm">{{nickName}}</text>
+                <image class="vm gender-icon" src="{{userInfo.gender?'/image/gender-male.png':'/image/gender-female.png'}}"></image>
+                </view>
+                <view class="user-signature">{{signature||'这家伙很懒，什么都没有留下'}}</view>
+            </view>
+           <!--  <view class="user-content clearfix">
+                <view class="user-content-item">
+                    <view class="bold">{{0}}</view>
+                    <view class="m-t-5">活动</view>
+                </view>
+                <view class="user-content-item">
+                    <view class="bold">{{0}}</view>
+                    <view class="m-t-5">关注</view>
+                </view>
+                <view class="user-content-item">
+                    <view class="bold">{{0}}</view>
+                    <view class="m-t-5">粉丝</view>
+                </view>
+            </view> -->
+        </view>
+    </view>
+    <view class="section">
+        <view class="menu">
+            <!-- <view class="menu-item">
+                <image class="menu-icon" src="/image/message.png"></image>
+                <text class="menu-text">我关注的</text>
+            </view> -->
+            <view class="menu-item">
+                <image class="menu-icon" src="/image/edit.png"></image>
+                <navigator url="my-list" class="menu-text">我的活动</navigator>                
+            </view>
+        </view>       
+    </view>
+    <view class="section">
+        <view class="menu">
+           <!--  <view class="menu-item">
+                <image class="menu-icon" src="/image/setting.png"></image>
+                <navigator url="setting" class="menu-text">设置</navigator>
+            </view> -->
+            <view class="menu-item">
+                <image class="menu-icon" src="/image/about.png"></image>
+                <navigator url="about" class="menu-text">关于</navigator>
+            </view>
+        </view>       
+    </view>    
+</view>

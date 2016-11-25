@@ -1,0 +1,24 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "__DEBUG__": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "prefer-const": 0,
+    "prefer-template": 0,
+    "no-param-reassign": 0,
+    "comma-dangle": [1, "never"],
+    "spaced-comment": [0, "always"],
+    "func-names": 0,
+    "no-underscore-dangle": 0,
+    "import/prefer-default-export": 1,
+    "class-methods-use-this": 1,
+    "no-prototype-builtins": 0,
+    "import/no-extraneous-dependencies": 1,
+    "radix": 0
+  }
+}

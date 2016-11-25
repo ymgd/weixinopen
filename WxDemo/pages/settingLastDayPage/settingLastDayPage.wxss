@@ -1,0 +1,23 @@
+.picker {
+    position: relative;
+    display: flex;
+    margin-top: 35px;
+    padding: 15px;
+    align-items: center;
+    background-color: #fff;
+    border-top:1px solid #dadada;
+    border-bottom:1px solid #dadada;
+}
+
+.picker-title {
+    display: inline-block;
+    font-size: 14px;
+    color:#939393;
+}
+
+.picker-date {
+    display: inline-block;
+    font-size: 14px;
+    color:#111;
+    margin-left: 20rpx;
+}

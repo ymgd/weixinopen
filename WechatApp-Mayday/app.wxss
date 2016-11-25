@@ -1,0 +1,39 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.page{
+  height: 100%;
+}
+
+.floating_action_button {
+    width: 64rpx;
+    height:64rpx;
+    position: fixed;
+    right: 60rpx;
+    bottom: 60rpx;
+    background: #387ef5;
+    padding: 32rpx;
+    border-radius: 50%;
+    border: solid 2rpx white;
+    box-shadow: 4rpx 6rpx 40rpx #CCCCCC;
+}
+
+.list {
+    border-bottom: #CCC 1px solid;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.singleline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

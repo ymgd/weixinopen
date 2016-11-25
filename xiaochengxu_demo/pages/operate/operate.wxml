@@ -1,0 +1,28 @@
+<view class="container">
+<ul class="list">
+      <li class="list-item" >
+        <div class="list-item-left">
+            <navigator bindtap="showActionSheet" hover-class="navigator-hover">action-sheet(底部上弹菜单)</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+       <li class="list-item" >
+        <div class="list-item-left">
+            <navigator bindtap="showModal" hover-class="navigator-hover">modal(模态窗口)</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+         <li class="list-item" >
+        <div class="list-item-left">
+            <navigator bindtap="toastSuccess" hover-class="navigator-hover">toast(成功消息提醒框)</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+          <li class="list-item" >
+        <div class="list-item-left">
+            <navigator bindtap="toastLoading" hover-class="navigator-hover">toast(正在加载消息提醒框)</navigator>
+        </div>
+        <div class="list-item-right"></div>
+       </li>
+ </ul>
+</view>

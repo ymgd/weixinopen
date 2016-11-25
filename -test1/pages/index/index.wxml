@@ -1,0 +1,37 @@
+<view class="container">
+<view class="sliders">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style="width: 100%" mode="aspectFill"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="Button" >
+<button class="buttonLeft" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="didLeft">方式一
+</button>
+<button class="buttonRight" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="didRight">方式二
+</button>
+</view>
+
+<view class="showList">
+<button class="showItem" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="didItem">连接
+</button>
+<button class="showItem2" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="didItem">连接
+</button>
+<button class="showItem2" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="didItem">连接
+</button>
+</view>
+</view>
+
+
+
+

@@ -1,0 +1,63 @@
+
+/*头部*/
+.headerView{
+    display: flex;
+    flex-direction: column;
+    background: red;
+    padding: 30px 0 30px 10px;
+    /*子控件居中显示*/
+    align-items: center; 
+}
+
+/*头像*/
+.headerView .picture{
+height: 70px;
+width: 70px;
+margin-bottom: 15px;
+border-radius:50%;
+}
+
+ /*名字*/
+ .headerView .name{
+     color: white;
+ }
+
+/*表格*/
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 10px ;
+    background: white;
+    border-bottom: 0.5px solid lightgrey;
+}
+
+/*图标*/
+.item .icon{
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+/*文字*/
+.item label{
+    margin: 5px 0 0 10px; 
+    font-size: 15px;
+
+    /*撑开label两边部分的距离*/
+    flex: 1;
+
+    /*垂直居中*/
+    margin: auto; 
+}
+
+/*箭头*/
+.item .arrow{
+     width: 8px;
+    height: 9px;
+   margin: auto; 
+}
+
+.item .line{
+    background: lightgray;
+    height: 0.5px;
+}

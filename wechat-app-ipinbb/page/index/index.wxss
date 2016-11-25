@@ -1,0 +1,134 @@
+.index{
+    background-color: #ebebeb;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 32rpx;
+}
+
+.layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner,
+.banner swiper {
+    width: 750rpx;
+    height: 300rpx;
+}
+
+.slide-image {
+    width: 100%;
+    height: 300rpx;
+}
+
+/* home-hot */
+.home-hot {
+    display: flex;
+    max-width: 100%;
+    height: 340rpx;
+    border-bottom: 1rpx solid #ddd;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.hot-left {
+    width: 299rpx;
+    border-right: 1rpx solid #ddd;
+}
+
+.hot-left image {
+    width: 299rpx;
+    height: 340rpx;
+}
+
+.hot-right { 
+    width: 450rpx;
+    box-sizing: border-box;
+}
+
+.hot-right-top { 
+    width: 450rpx;
+    height: 140rpx;
+}
+
+.hot-right-top image { 
+    display: block;
+    width: 450rpx;
+    height: 140rpx;
+}
+
+.hot-right-btm {
+    display: flex;
+    flex-direction: row;
+    height: 200rpx;
+    border-top: 1rpx solid #ddd;
+}
+
+.hot-right-btm-left {
+    width: 225rpx;
+    height: 200rpx;
+}
+
+.hot-right-btm-right {
+    width: 225rpx;
+    height: 199rpx;
+    box-sizing: border-box;
+}
+
+.hot-right-btm-right {
+    border-left: 1rpx solid #ddd;
+}
+
+.hot-right-btm-left image,
+.hot-right-btm-right image {
+    display: block;
+    width: 225rpx;
+    height: 199rpx;
+}
+
+.hot-right-btm-left image {
+    width: 224rpx;
+}
+
+/* navbar */
+.navbar-box,
+.navbar {
+    width: 100%;
+    height: 80rpx;
+    white-space: nowrap; /* 这句样式很重要 */
+    background-color: rgb(255,255,255);
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar navigator {    
+    display: inline-block;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+    margin: 0 32rpx;
+    color: #999;
+}
+
+.navbar .curNavigator {
+    font-size: 32rpx;
+    color: #f4554a;
+    border-bottom: 4rpx solid #f4554a;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    opacity:1;
+}
+
+.other-navigator-hover {
+    background-color: none;
+}

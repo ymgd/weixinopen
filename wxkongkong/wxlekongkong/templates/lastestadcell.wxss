@@ -1,0 +1,69 @@
+.lastestadcell {
+    width: 100%;
+    background-color: white;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    padding: 28rpx;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #D0D0D0; 
+}
+
+.lastestadcell .adimage {
+    width: 120rpx; 
+    height: 120rpx;
+    background-color: yellow;
+}
+
+.lastestadcell .adinfoview {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24rpx;
+    width: 590rpx;
+}
+
+.lastestadcell .adinfoview .userinfoview {
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+}
+
+.lastestadcell .adinfoview .userinfoview .avatar {
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 20rpx;
+}
+
+.lastestadcell .adinfoview .userinfoview .name {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 14px;
+    margin-left: 16rpx;
+}
+
+.lastestadcell .adinfoview .userinfoview .extro {
+    font-size: 14px;
+    font-weight: 14px;
+    color: #969696;
+}
+
+.lastestadcell .adinfoview .userinfoview .date {
+    font-size: 12px;
+    color: #969696;
+    margin-left: auto;
+    margin-right: 28rpx;
+}
+
+.lastestadcell .adinfoview .content {
+    margin-top: 18rpx;
+    font-size: 14px; 
+    color: #333333;
+    margin: 9rpx;
+    word-break: break-all;    
+    text-overflow: ellipsis;    
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 1;    
+    overflow: hidden; 
+}

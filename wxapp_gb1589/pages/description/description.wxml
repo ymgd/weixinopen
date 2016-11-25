@@ -1,0 +1,9 @@
+<page>
+    <view class="question-list">
+        <block wx:for="{{questions}}">
+            <navigator class="question-item" url="{{item.link}}">
+                <text class="num">0{{index+1}}</text><text class="content">{{item.text}}</text>
+            </navigator>
+        </block>
+    </view>
+</page>

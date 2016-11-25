@@ -1,0 +1,32 @@
+<scrollview class="collection-set" scroll-y="true" bindscrolltolower="pullUpLoad" bindscroll="scroll">
+    <view class="page-head">
+        <view class="page-title">掘金收藏集</view>
+        <view class="page-desc">精选的内容合集：{{rankType}}</view>
+    </view>
+
+    <view class="section">
+        <picker bindchange="selectRankType" value="{{index}}" range="{{rankTypes}}">
+            <view class="picker">当前选择：{{rankType}}</view>
+        </picker>
+    </view>
+
+    <view class="collections">
+        <block wx:for="{{collections}}" wx:key="idx" wx:for-item="collection">
+            <view class="collection" style="background-image:url({{collection.bgImg.url}})">
+                <view class="collection-overlay"></view>
+                <view class="collection-info">
+                    <text class="collection-title">{{collection.title}}</text>
+                    <text class="collection-data">{{collection.entryCount}} 篇文章，{{collection.followCount}} 人关注</text>
+                </view>
+            </view>
+        </block>
+    </view>
+
+    <view class="load-more" wx:if="{{canLoadMore}}">
+        <button type="primary" loading="{{loading}}" plain="true" bindtap="loadMore">加载更多</button>
+    </view>
+
+    <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalHide" bindcancel="modalHide">
+        <view> 请求发生错误 </view>
+    </modal>
+</scrollview>

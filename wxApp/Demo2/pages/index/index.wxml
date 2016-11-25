@@ -1,0 +1,10 @@
+<view class="mod-test">
+    <view class="title">
+        <view wx:for="{{tabs}}" data-id="{{index}}" wx:for-item="tab" class="tab{{index == activeTab ? ' active' : ''}}" bindtap="changeItem">{{tab}}</view>
+    </view>
+    <swiper current="{{activeTab}}" class="pages" bindchange="itemChange">
+        <swiper-item class="item">第一屏</swiper-item>
+        <swiper-item class="item">第二屏</swiper-item>
+        <swiper-item class="item">第三屏</swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,44 @@
+<view>
+    <scroll-view scroll-y="true" bindscrolltolower="loadList" class="layout">
+
+        <!-- list start -->
+        <navigator wx:for="{{lists}}" wx:key="" class="hot-item-box" url="../component/group/group?groupId={{item.groupId}}">
+            <view class="hot-item-top">
+                <view class="hot-img">
+                    <image src="{{item.goodsImg}}"></image>
+                </view>
+
+                <view class="hot-item-top-right">
+                    <text class="hot-item-title">{{item.goodsTitle}}</text>
+                    <view class="hot-item-price">{{item.groupSize}}人团 ¥{{item.groupPrice}}</view>
+                    <view class="hot-item-No-time-box">
+                        <view class="hot-item-No">仅差<text class="text-red">{{item.lessNum}}</text>人</view>
+                        <view class="hot-item-time">剩余时间 <text>{{item.displayTime}}</text></view>
+                    </view>
+                </view>
+            </view>
+            
+            <view class="hot-item-btm">
+                <view class="hot-item-user-box">
+                    <view wx:for="{{item.userLst}}" wx:key="" class="hot-item-user-img">
+                        <image src="{{item.headImg}}"></image>
+                    </view>
+                </view>
+                <text class="hot-item-btn">参与</text>
+            </view>
+        </navigator>
+        <!-- / list end -->
+
+        <!-- loading start -->
+        <view class="body-view">
+            <loading hidden="{{hidden}}">
+                加载中...
+            </loading>
+        </view>
+        <!-- / loading end -->
+
+        <!-- prompt message start -->
+        <text class="{{tipShow ? 'promptShow' : 'promptHide'}}">没有更多内容了</text>
+        <!-- / prompt message end -->
+    </scroll-view>
+</view>

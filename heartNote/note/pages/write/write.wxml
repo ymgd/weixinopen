@@ -1,0 +1,11 @@
+<view class="contain">
+    <view class="section">
+        <text class="head">文章标题</text>
+        <input class="input-head" bindinput="bindTitle" placeholder="这是标题" auto-focus/>
+    </view>
+    <view class="section">
+        <text class="head">文章内容</text>
+        <input class="input-content" bindinput="bindContent" placeholder="这是内容" auto-focus/>
+    </view> 
+</view>
+<button class="publish-btn" bindtap="save" type="primary">保存随文<button/>

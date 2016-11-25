@@ -1,0 +1,15 @@
+.user {
+  border: 1rpx solid red;
+  padding: 20rpx;
+}
+.user_info {
+  border: 1rpx solid red;
+}
+.user_info_left {
+  border: 1rpx solid red;
+  margin-right: 20rpx;  
+}
+.user_info_left image {
+  width: 200rpx;
+  height: 200rpx;
+}

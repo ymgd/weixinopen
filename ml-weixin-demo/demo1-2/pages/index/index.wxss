@@ -1,0 +1,31 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top:6rem;
+}
+.changeImageBtn {
+  padding: .05rem .15rem;
+  font-size: 1rem;
+  color: #666;
+  background-color: #ffee08;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -mz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}

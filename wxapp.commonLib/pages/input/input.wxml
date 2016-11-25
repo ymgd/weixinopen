@@ -1,0 +1,44 @@
+<view class="page gray-page-background">
+    <view class="center-head">
+        <text class="head-title">输入</text>
+    </view>
+
+  <view class="list">
+    <view class="input-item with-space-around">
+        <text class="list-primary input-title">单项输入</text>
+        <input placeholder="预设内容"></input>
+    </view>
+  </view>
+
+  <view class="list multi-line-list">
+    <view class="input-item with-space-around with-bottom-border">
+        <view class="left-input">
+            <text class="list-primary input-title">多项输入</text>
+            <input placeholder="预设内容" class="input-inline"></input>
+        </view>
+        <view class="right-info">
+        </view>
+    </view>
+    <view class="input-item with-space-around">
+        <view class="left-input">
+            <text class="list-primary input-title">多项输入</text>
+            <input placeholder="预设内容" class="input-inline"></input>
+        </view>
+        <view class="right-info">
+            <icon type="info_circle"></icon>
+        </view>
+    </view>
+  </view>
+
+  <view class="list">
+    <view class="input-item with-space-around">
+        <input class="upload-img" disabled="true" value="+"></input>
+    </view>
+  </view>
+
+  <view class="list">
+    <view class="input-item with-space-around">
+        <input placeholder="预设内容"></input>
+    </view>
+  </view>
+</view>

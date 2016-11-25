@@ -1,0 +1,5 @@
+@import "/utils/wxSearch/wxSearch.wxss";
+
+.input-placeholder {
+  color: #b0bec5;
+}

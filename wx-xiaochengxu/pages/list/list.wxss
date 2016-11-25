@@ -1,0 +1,48 @@
+.header {
+  padding: 30rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.list-item {
+  display: flex;
+  cursor: pointer;
+  border-bottom: 1rpx solid #eee;
+  padding: 20rpx;
+}
+
+.list-item image {
+  height: 200rpx;
+  width: 140rpx;
+}
+
+
+.list-item .info {
+  flex: 1;
+  margin-left: 20rpx;
+  color: #777;
+  font-size: 30rpx;
+}
+
+.list-item .info text {
+  display: block;
+  margin: 10rpx 0;
+}
+
+.list-item .info .title {
+  font-size: 40rpx;
+}
+
+.list-item .rating text {
+  font-size: 30rpx;
+  background-color: #c40;
+  color: #fff;
+  padding: 10rpx;
+  border-radius: 20rpx;
+}

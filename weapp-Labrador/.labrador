@@ -1,0 +1,13 @@
+{
+  "npmMap":{
+  },
+  "uglify":{
+    "mangle": [],
+    "compress": {
+      "warnings": false
+    }
+  },
+  "classNames": {
+    "for-test":true
+  }
+}

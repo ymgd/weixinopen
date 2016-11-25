@@ -1,0 +1,9 @@
+<view class="container">
+    
+    <view class="pic_desc">{{desc}}</view>
+    <button bindtap="enterIndex">立即进入</button>
+
+    <image src="{{imgsrc}}"></image>
+
+
+<view>

@@ -1,0 +1,17 @@
+{
+    "pages":[
+        "views/start/index",
+        "views/index/index",
+        "views/detail/index",
+        "views/classify/index",
+        "views/search/index"
+    ],
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "rgb(6, 195, 173)",
+        "navigationBarTitleText": "豆豉读书",
+        "navigationBarTextStyle":"whirte",
+        "enablePullDownRefresh":"true"
+    }
+
+}

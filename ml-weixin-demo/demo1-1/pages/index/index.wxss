@@ -1,0 +1,38 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 6.5rem;
+  padding: 10rpx 1rem;
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #f33446;
+  transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+}
+
+.user-motto {
+  margin-left: 0 rpx;
+  animation: animateLeft 1.5s ease-in-out;
+  -o-animation: animateLeft 1.5s ease-in-out;
+  -moz-animation: animateLeft 1.5s ease-in-out;
+  -webkit-animation: animateLeft 1.5s ease-in-out;
+}

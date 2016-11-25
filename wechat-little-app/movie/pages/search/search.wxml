@@ -1,0 +1,26 @@
+<view class="content"> 
+        <view class="search">
+                <input class="input" bindinput="bindKeyInput"/>
+                <button bindtap="search" hover-class="btnClick">查询</button>
+        </view>
+
+        <text class="inoutShow">你要搜索: {{inputVal}}</text>
+
+ 
+ <!--列表内容-->
+ <!--单身-->
+<import src="../template/movietpl"/>
+<template is="movies" data="{{movies}}"/>
+
+</view>
+
+<!--加载菊花转圈-->
+<view class="body-view">
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+</view>
+
+<modal title="小提示" confirm-text="知道啦" hidden="{{modalHidden}}" no-cancel="true" bindconfirm="hideModal">
+请输入要查询的关键词，比如:盗梦空间
+</modal>

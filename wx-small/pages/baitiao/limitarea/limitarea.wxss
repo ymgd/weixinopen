@@ -1,0 +1,56 @@
+
+.limitarea-area{
+   padding-top: 36rpx;
+   /*background-color: red;*/
+}
+
+.limitarea-desp1{
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    line-height: 37rpx;
+    color: #888888;
+}
+
+
+.limitarea-desp2{
+    font-family: SanFranciscoDisplay-Semibold;
+    font-size: 72rpx;
+    line-height: 86rpx;
+    color: #333333;
+    font-weight: bold;
+}
+
+.limitarea-desp3{
+    font-family: PingFangSC-Regular;
+    font-size: 20rpx;
+    color: #FFFFFF;
+    padding: 6rpx 12rpx; 
+    background-color: #B99562;
+    border-radius: 30rpx;
+}
+
+.limitarea-grid{
+    height: 190rpx;
+}
+
+.limitarea-grid-item{
+    padding-top: 46rpx;
+    flex:1;
+    height: 100%;
+}
+
+.limitarea-grid-desp1{
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    line-height: 37rpx;
+    color: #888888;
+}
+
+.limitarea-grid-desp2{
+    margin-top: 8rpx;
+    font-family: SanFranciscoDisplay-Semibold;
+    font-size: 44rpx;
+    line-height: 53rpx;
+    color: #333333;
+    font-weight: bold;
+}

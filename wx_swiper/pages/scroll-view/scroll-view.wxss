@@ -1,0 +1,68 @@
+
+ .top-tab{
+  width: 750rpx;
+  height: 100rpx;
+  background: #298DE5;
+  color: #8CCEFD;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0 2px 2px #bebebe;
+}
+
+.flex-wrp{
+  display: flex;
+}
+
+.flex-tab{
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.flex-item{
+ 
+  flex-grow: 1;
+  text-align: center;
+}
+.toptab{
+  border-bottom: solid 3px transparent;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s  ease-in-out; /* Firefox 4 */
+  -webkit-transition: all 0.4s ease-in-out; /* Safari 和 Chrome */
+  -o-transition: all 0.4s  ease-in-out; /* Opera */
+}
+
+.toptab.active{
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: solid 3px #fff;
+}
+
+
+
+.tab_con{ 
+   color: #fff;
+    height: 350rpx;
+    background: #a10;
+    position: relative;
+    width: 300%;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s  ease-in-out; /* Firefox 4 */
+    -webkit-transition: all 0.4s ease-in-out; /* Safari 和 Chrome */
+    -o-transition: all 0.4s  ease-in-out; /* Opera */
+
+}
+.tab_con view{
+  width:33.3%;
+  height:100%;
+  display: inline-block;
+  
+}
+
+.list_active1{
+left:-100%;
+}
+.list_active2{
+left:-200%;
+}

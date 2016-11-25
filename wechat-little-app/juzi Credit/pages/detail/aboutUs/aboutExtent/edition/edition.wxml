@@ -1,0 +1,3 @@
+<view>
+<text>{{attr.body}}</text>
+</view>

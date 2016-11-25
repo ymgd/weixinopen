@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container index" hidden="{{isLogin}}">
+	<image class="login-ico" src="../../img/login.png"/>
+	<view class="login-from">
+		<form bindsubmit="login">
+			<view class="username">
+				<input name="token" class="username-input" placeholder="You token" value="" placeholder-class="placeholder"/>
+			</view>
+			<button formType="submit" type="primary" class="primary" loading="{{isLogin}}"> Login Gitpub </button>
+		</form>
+	</view>
+</view>
+
+<view class="info" hidden="{{!isLogin}}">
+	<view class="user-info">
+		<view class="user-name">{{userInfo.userName}}</view>
+		<view class="user-ali">{{userInfo.userAli}}</view>
+		<view class="user-msg">
+			<view>
+				<image class="group" src="../../img/group.png"/>
+				<text class="group-text">{{userInfo.company}}</text>
+			</view>
+			<view>
+				<image class="group" src="../../img/adress.png"/>
+				<text class="group-text">{{userInfo.position}}</text>
+			</view>
+			<view>
+				<image class="group" src="../../img/email.png"/>
+				<text class="group-text">{{userInfo.email}}</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+<view class="repositories" hidden="{{!isLogin}}">
+	<view class="repo-title">Pinned repositories</view>
+	<view class="projects">
+		<view class="project"  wx:for="{{reposInfo}}" wx:key="unique">
+			<view class="pname" id="{{index}}" bindtap="toRepos">{{item.full_name}}</view>
+			<view class="pstar">
+				<text class="itext">{{item.stargazers_count}}</text>
+				<image class="istar" src="../../img/star_hover.png"/>
+			</view>
+		</view>
+	</view>
+	<view class="show-all" bindtap="showAll" hidden="{{!isShowAllBtn}}">show All</view>
+</view>
+
+

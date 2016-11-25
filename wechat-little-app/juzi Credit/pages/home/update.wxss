@@ -1,0 +1,167 @@
+page{
+    background: rgb(230, 230, 230);
+}
+.head{
+    height: 13%;
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px 10px 20px;
+}
+
+.title-item{
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-item-image{
+    height: 100rpx;
+    width: 100rpx;
+}
+
+
+
+.body{
+   height: 87%;
+   
+}
+
+
+
+.scroll-view{
+    background: rgb(230, 230, 230);
+     white-space: nowrap;
+     height: 100%;
+ }
+
+.scroll-view-item{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*#F76260*/
+.bc_red{
+    background-color: rgb(230,230, 230) ;
+}
+/*#10AEFF*/
+.bc_blue{
+    background-color: rgb(230, 230, 230) ;
+}
+/*#FFBE00*/
+.bc_yellow{
+    background-color: rgb(230, 230, 230) ;
+}
+
+/*具体内容布局*/
+.hr{
+    height: 1px;
+    width: 100%;
+    background:rgb(0, 0, 0); 
+}
+
+.red-title{
+    background: white;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+.leftGapView{
+    background: rgb(230, 230, 230) ;
+    height: 7%;
+    width: 20px;
+    float: left;
+}
+.body-body{
+    width: 100%;
+    height: 93%;
+    background: rgb(230, 230, 230);
+}
+
+.red-icon{
+    width: 60px;
+    height:60px;
+}
+
+.body-top{
+    color: rgb(230, 127, 52);
+    font-size: 30px;
+    
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+}
+
+.body-middle{
+    
+    width: 100%;
+    height: 70px;
+    text-align: center;
+
+    
+    
+}
+
+.body-middle-text{
+   white-space:pre-wrap;
+   text-align: center;
+   
+}
+/*下部bottom*/
+.body-bottom{
+   height: 10%;
+   font-size: 15px;
+   
+
+   position: relative;
+
+}
+
+.body-bottom-container{
+    
+  transform:translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left:50%;
+}
+
+
+.checkboxText{
+    margin-left: 10px;
+}
+
+/*支付宝排版*/
+.yellow-icon{
+    width: 160px;
+    height:60px;
+}
+
+/*芝麻信用排版 padding-left: 30%; */
+.body-top-blue{
+    color: rgb(230, 127, 52);
+    font-size: 30px;
+    
+    width: 100%;
+    height: 30%;
+    position: relative;
+    
+}
+
+.blue-icon{
+    width: 160px;
+    height:60px;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left:50%;
+}
+

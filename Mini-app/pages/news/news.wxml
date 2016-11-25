@@ -1,0 +1,18 @@
+<View class="page">
+    <view class = "roomlist">
+    
+        <block wx:for-items = "{{roomlist}}">
+        
+        <view id = "item.room_id" class="room_lists" bindtap = "clickroom">
+
+        <text class="room_name">
+        <text class="room_name_title">房间</text>
+        <text class="room_name_value">{{item.room_name}}</text>
+        <text class="nickname">({{item.nickname}})</text>
+        </text>
+
+        <image class="room_vertical_src" src="{{item.vertical_src}}"></image>
+        </view>
+        </block>
+    </view>
+</View>

@@ -1,0 +1,6 @@
+<template name="titleBar">
+    <view class="fx-row fx-row-center title">
+        <text class="component-title-bar">{{name}}</text>
+        <view class="fx component-title-solid"></view>
+    </view> 
+ </template>

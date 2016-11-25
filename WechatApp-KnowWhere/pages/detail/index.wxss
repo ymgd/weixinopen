@@ -1,0 +1,5 @@
+#bg{
+background-color: red;
+width: 750rpx;
+height: 1330rpx;
+}

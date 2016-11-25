@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="header">
+      <view class="title">{{title}}</view>
+      <view class="desc">{{desc}}</view>
+  </view>
+
+  <view class="menu-list">
+	  <block wx:for-items="{{meList}}" wx:for-item="meItem">
+	    <navigator url="{{meItem.url}}">
+	      <view class="me-item">
+	        <view class="me-item-text">
+	          <text class="me-item-text-name">{{meItem.name}}</text>
+	        </view>
+	        <image class="me-item-arrow" src="/image/arrowright.png"></image>
+	      </view>
+	    </navigator>
+	  </block>
+   </view>     
+</view>

@@ -1,0 +1,22 @@
+<loading hidden="{{loading}}">
+  加载中...
+</loading>
+<scroll-view class="container img-content" style="height: {{windowHeight}}px; width: {{windowWidth}}px; " scroll-y="true" bindscrolltoupper="pullDownRefresh" bindscrolltolower="pullUpLoad" lower-threshold="800">
+	<navigator class="list flex-box" wx:for="{{films}}" url="../details/details?title=navigate&id={{item.id}}&titles={{item.nm}}">
+		<view class="list-img"><image class="img" src="{{item.img}}"></image><image class="list-play" src="../../images/i-play.png"></image></view>
+		<view class="list-main flex-btn">
+		    <view class="list-title list-brief">
+			    <text>{{item.nm}}</text>
+			    <test class="i-imax" wx:if="{{item.imax && item['3d']}}" src="../../tests/i-imax.png">3Dimax</test>
+			    <test class="i-imax" wx:elif="{{item['3d']}}" src="../../tests/i-play.png">3d</test>
+				<test class="i-imax" wx:elif="{{item['imax']}}" src="../../tests/i-star.png">imax</test>
+				<test class="i-imax" wx:else="{{item['imax']}}" src="../../tests/i-stars.png">2d</test>
+		    </view>
+		    <view class="list-size" wx:if="{{!item.preSale}}"><view class="star"><view style="width: {{item.sc * 10}}%" class="stars"></view></view>{{item.sc}}</view>
+		    <view class="list-brief" wx:if="{{item.preSale}}"><text class="wish">{{item.wish}}人想看</text>{{item.showInfo}}</view>
+		    <view class="list-brief">{{item.scm}}</view>
+		    <view class="list-brief">{{item.dir}} {{item.star}}</view>
+		    <view class="list-sale"><text wx:if="{{!item.preSale}}" class="sales">购票</text><text wx:if="{{item.preSale}}" class="pre-sale">预售</text></view>
+		</view>
+	</navigator>
+</scroll-view>

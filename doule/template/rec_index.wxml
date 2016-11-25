@@ -1,0 +1,70 @@
+<!-- 趣图 -->
+<template name="pic_tpl">
+	<view class="list-item">
+		<view class="item-header">
+			<view class="header-img">
+				<image class="img" src="../../images/header.jpg"></image>
+			</view>
+			<text class="header-name">逗比</text>
+			<text class="header-time">{{item.updatetime}}</text>
+			<view>
+				<image class="col" src="{{item.col_url ? '../../images/collection-actived.png' : '../../images/collection.png'}}" bindtap="collection" data-id="{{item.hashId}}"></image>
+			</view>		
+		</view>
+		<view class="item-body">
+			<text>{{item.content}}</text>
+			<image class="body-img" src="{{item.url}}"></image>
+		</view>
+		<view class="footer">
+			<view class="icon_box">
+				<image class="zan" src="{{item.iszan ? '../../images/icon/zan_act.png' : '../../images/icon/zan.png'}}" bindtap="zan" data-id="{{item.hashId}}"></image>
+				<text class="zan_num">{{item.zan}}</text>
+			</view>
+			<view class="icon_box">
+				<image class="cai" src="{{item.iscai ? '../../images/icon/cai_act.png' : '../../images/icon/cai.png'}}" bindtap="cai" data-id="{{item.hashId}}"></image>
+				<text class="cai_num">{{item.cai}}</text>
+			</view>
+			<view class="icon_box">
+				<image class="share" src="../../images/icon/share.png"></image>
+			</view>								
+		</view>
+	</view>
+</template>
+
+<!-- 段子 -->
+<template name="joke_tpl">
+	<view class="list-item">
+		<view class="item-header">
+			<view class="header-img">
+				<image class="img" src="../../images/header.jpg"></image>
+			</view>
+			<text class="header-name">逗比</text>
+			<text class="header-time">{{item.updatetime}}</text>
+			<view>
+				<image class="col" src="{{item.col_url ? '../../images/collection-actived.png' : '../../images/collection.png'}}" bindtap="collection" data-id="{{item.hashId}}"></image>
+			</view>
+		</view>
+		<view class="item-body">
+			<text>{{item.content}}</text>
+		</view>
+		<view class="footer">
+			<view class="icon_box">
+				<image class="zan" src="{{item.iszan ? '../../images/icon/zan_act.png' : '../../images/icon/zan.png'}}" bindtap="zan" data-id="{{item.hashId}}"></image>
+				<text class="zan_num">{{item.zan}}</text>
+			</view>
+			<view class="icon_box">
+				<image class="cai" src="{{item.iscai ? '../../images/icon/cai_act.png' : '../../images/icon/cai.png'}}" bindtap="cai" data-id="{{item.hashId}}"></image>
+				<text class="cai_num">{{item.cai}}</text>
+			</view>
+			<view class="icon_box">
+				<image class="share" src="../../images/icon/share.png"></image>
+			</view>								
+		</view>	
+	</view>	
+</template>
+
+<template name="rec_list">
+	<scroll-view class="scroll-box" scroll-y="true" upper-threshold="50" lower-threshold="50" bindscrolltoupper="scrollUpData" bindscrolltolower="lower" bindscroll="scroll">
+		<template is="{{item.url ? 'pic_tpl' : 'joke_tpl'}}" data="{{item}}" wx:for="{{req}}"></template>
+	</scroll-view>
+</template>

@@ -1,0 +1,114 @@
+.page-top {
+    width: 750rpx;
+    height: 400rpx;
+    z-index: 2;
+}
+.score{text-align: center; padding: 20rpx;color: #888; font-size: 30rpx;}
+.win{color: red; font-size: 40rpx;}
+.playing{font-size: 34rpx; color: #333; margin-bottom: 10rpx;}
+.page-bottom {
+    background-color: #fff;
+    width: 100%;
+    height: 30%;
+    padding-top:100rpx;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    text-align: center;
+}
+.page-btn-wrap {
+    position: absolute;
+    top: 270rpx;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+.card{   
+    background: #f3f3f3; 
+    border: 1rpx solid #f2f2f2;
+    border-radius: 5rpx; 
+    text-align: center; 
+    padding:2px 6px 2px 0px;
+    height: 110rpx; 
+    line-height: 110rpx; 
+    font-size: 48rpx; 
+    margin: 50rpx 20rpx; 
+    color: dodgerblue;
+     box-shadow: none;
+     width: 140rpx;
+}
+
+.page-numbers{
+    position: absolute;
+    top: 100rpx;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    display: flex;
+    justify-content:center;
+}
+.page-btn-wrap{
+    padding-top: 50rpx;
+     display: flex;
+    justify-content:center;
+}
+.operator{   
+    background: #6dc8fb; 
+    vertical-align: middle; 
+    border: 1px solid #49a9df;      
+    padding:2px 1px 2px 0px;
+    line-height:80rpx; 
+    font-size: 60rpx; 
+    margin: 5rpx 10rpx; 
+    border-radius: 5rpx;
+    color: #fff;
+    width:120rpx;
+    box-shadow: 0 1rpx 0 #fff inset;
+    box-sizing: content-box;
+    overflow:hidden;
+}
+.operator::after{
+    border: none;
+}
+.card::after{
+    border: none;
+}
+.active{
+    background: #7ca4d5;
+    color: #fffeff;
+    border: 1rpx solid #6492ca;
+    box-shadow: 0 1rpx 0 #d8e5f5 inset;
+}
+.disabled{
+    background: #f2f2f2;
+    color: #ddd;
+    border: none;
+}
+.count-list{
+    padding: 5rpx 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.count-area{
+    position: absolute; 
+    z-index: 6; 
+    width: 100%; 
+    text-align:center; 
+    top: 440rpx; 
+    height: 400rpx;
+}
+.number{
+    display: inline-block; 
+    width: 70rpx; 
+    margin: 10rpx; 
+    vertical-align: middle;
+    text-align: center;
+}
+.result-mask{position: fixed; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0,0,0,.5); z-index: 18;}
+.result-area{position: absolute; width: 100%; text-align: center; z-index: 20; top: 50%; margin-top: -200rpx; font-size:36rpx}
+.mt20{margin-top: 20rpx}
+.success{color: red}
+.fail{color: blue}

@@ -1,0 +1,22 @@
+<import src="../../wxParse/wxParse.wxml" />
+<template name="header">
+	<view class="header">
+		<navigator url="/pages/index/index" redirect="true">
+			<image src="/images/arrowright.png" />
+			返回
+		</navigator>
+		<view class="header-title">文章内容</view>
+	</view>
+</template>
+
+<view class="detail">
+	<template is="header" data="{{item: item}}" />
+	<view class="content">
+		<view class="title">
+			{{item.title}}
+		</view>
+		<view class="content">
+			<template is="wxParse" data="{{wxParseData}}" />
+		</view>
+	</view>
+</view>

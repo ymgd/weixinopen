@@ -1,0 +1,46 @@
+<audio src="{{src}}" action="{{action}}" binderror="errorEvent" bindtimeupdate="timeupdateEvent" bindended="endEvent"></audio>
+<image class="play-bg" mode="aspectFill" src="{{picurl}}" ></image>
+<image wx:if="{{lyricHidden}}" bindtap="switchbgEvent" class="trun-bg" mode="aspectFill" src="{{picurl}}" style="transform: translateX(-50%) rotate({{deg}}deg);"></image>
+<view wx:if="{{!lyricHidden}}" id="container" class="play-container" animation="{{animationData}}" bindtap="switchbgEvent">
+	<view wx:for="{{lyricList}}" class="lyric {{item.time <= currentTime && item.endtime > currentTime ? 'selected' : ''}}">
+		<text wx:if="{{item.en}}">{{item.en}}</text>
+		<text wx:if="{{item.zh}}">{{item.zh}}</text>
+	</view>
+</view>
+<view class="footer">
+	<view class="progress">
+		<text>{{timeText}}</text>
+		<progress percent="{{per}}" color="red" stroke-width="4"/>
+		<text>{{durationText}}</text>
+	</view>
+  	<view class="controls">
+  		<image class="mode" mode="scaleToFill" bindtap="switchModeEvent" src="../../images/{{mode}}.png" />
+  		<image mode="scaleToFill" bindtap="prevEvent" src="../../images/prev.png" />
+  		<image mode="scaleToFill" bindtap="actionEvent" src="../../images/{{status === 'play' ? 'pause' : 'play'}}.png" />
+  		<image mode="scaleToFill" bindtap="nextEvent" src="../../images/next.png" />
+  		<image class="fav" mode="scaleToFill" bindtap="favEvent" src="../../images/{{fav}}.png" />
+  	</view>
+</view>
+<toast hidden="{{toastHidden}}" duration="2000" bindchange="toastChange">{{toastMsg}}</toast>
+<action-sheet hidden="{{favHidden}}" bindchange="actionSheetChange">
+	<action-sheet-item>
+		<input placeholder="＋ 新建收藏夹" placeholder-style="margin:0 auto;" maxlength="10" bindchange="addFavItem"/>
+	</action-sheet-item>
+	<block wx:for="{{favlist}}">
+    	<action-sheet-item class="favitem" bindtap="favItemTap" data-name="{{item.name}}">
+    		<view class="left">
+				<image wx:if="{{item.picurl}}" src="{{item.picurl}}" mode="aspectFit"/>
+				<image class="default" wx:else src="../../images/default.png" mode="aspectFit"/>
+			</view>
+			<view class="right">
+				<view>
+					<text class="fav-name">{{item.name}}</text>	
+				</view>
+				<view>
+					<text class="fav-count">共{{item.count}}首</text>
+				</view>
+			</view>
+    	</action-sheet-item>
+  	</block>
+  	<action-sheet-cancel>取消</action-sheet-cancel>
+</action-sheet>

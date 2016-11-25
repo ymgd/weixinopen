@@ -1,0 +1,47 @@
+page{
+    background-color: #ffffff;
+    height:100%;
+}
+
+.edit-layer{
+     height:100%;
+} 
+.edit-photo{
+    width: 42px;
+    height: 42px;
+}
+  
+.preview-wrapper{
+    position: relative;
+    background-color: #f7f8f9;
+    min-height: 192px;
+    width: 100%;
+}
+.edit-desc{
+    font-size: 16px;
+}
+.edit-desc-wrap{
+     width: 100%;
+    padding: 16px 10px;
+}
+.edit-title{
+    min-height: 30px;
+    padding: 16px 10px;
+    font-size: 26px;
+    border-bottom: 1px solid #c7c7c7;
+}
+.edit-bottom{
+    padding :20px  16px;
+}
+
+.edit-img-pic{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+

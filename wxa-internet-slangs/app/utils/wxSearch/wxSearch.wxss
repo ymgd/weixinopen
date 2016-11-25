@@ -1,0 +1,41 @@
+.wxSearch-panel {
+  display: flex;
+  flex-direction: row;
+}
+.wxSearch-input {
+  flex: 8;
+  margin-right: 8px;
+  padding: 4px 8px;
+  background-color: #eceff1;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.wxSearch-button {
+  flex: 1;
+  padding: 4px 8px;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: center;
+}
+.wxSearchTitle {
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+}
+.wxSearchMindKeyItem,
+.wxSearchKeyItem,
+.wxSearchHistoryItem {
+  display: flex;
+  padding: 8px 0;
+  color: #2196f3;
+  font-size: 14px;
+  border-bottom: 1px solid #eceff1;
+}
+.wxSearchHistoryEmpty,
+.wxSearchDeleteAllBtn {
+  margin-top: 16px;
+  color: #b0bec5;
+  font-size: 12px;
+}

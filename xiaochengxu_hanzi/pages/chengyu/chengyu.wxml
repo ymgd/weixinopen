@@ -1,0 +1,36 @@
+<!--chengyu.wxml-->
+<view class="page">
+   
+   <view class="section__title" style = "color:grey;margin-top:10px">按拼音查</view>
+  <block wx:for="{{pinyinDatas}}" wx:for-item="pinyin" wx:key="*this">
+   
+      <view class="scroll-view" id="{{pinyin.pinyin}}"  
+      bindtap="detail" style="float:left; flex-direction:row; justify-content: space-around;cursor: pointer;">
+            <view class="flex-item">{{pinyin.pinyin}}</view>
+      </view>    
+  
+        <!--<view  class="widgets__list {{pinyin.open ? 'widgets__list_show' : ''}}">
+                        <block wx:for-items="{{pinyin.list}}" wx:for-item="page">
+                            <navigator url="component-pages/{{page}}/{{page}}" class="widget">
+                                <text class="widget__name">{{page}}</text>
+                                <image class="widget__arrow" src="/image/arrowright.png" mode="aspectFill" />
+                                <view class="widget__line {{index == 0 ? 'widget__line_first' : ''}}"></view>
+                            </navigator>
+                        </block>
+                    </view>-->
+  </block> 
+            
+   <!-- 横向分割线 -->
+  
+   <view class = "home-view-sep-hor" style = "display: inline-block;"></view>
+   <view class = "home-view-sep-hor" style = "margin-bottom:8px;margin-top:0px;border-bottom: 1px solid #e2e2e2;"></view>
+    
+  <view class="section__title" style = "color:grey;margin-top:10px">按部首查</view>
+  <block wx:for="{{bushouDatas}}" wx:for-item="bushou" wx:key="*this" >
+    <view id="{{bushou.bushou}}" class="scroll-view" bindtap="detailByBushou" style="cursor: pointer;float:left; flex-direction:row; justify-content: space-around;">
+                <view class="flex-item">{{bushou.bushou}}</view>
+    </view>    
+  </block>
+
+ 
+</view>

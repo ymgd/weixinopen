@@ -1,0 +1,52 @@
+<view class='carousel'>
+    <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{merchandiseInfo.imgList}}">
+        <swiper-item>
+        <image src="{{item.imgPath}}" mode='aspectFit' class="slide-image carousel_img"></image>
+        </swiper-item>
+    </block>
+    </swiper>
+</view>
+
+<view class='merchandiseName'>
+ <text class='merchandiseName_text'>{{merchandiseInfo.merchandiseName}}</text>
+</view>
+<view class='price'>
+    <view class='currentPrice'>
+        <image class='currentPrice_img'  src="../../images/现.png"></image>
+        <text class='currentPrice_text'>¥{{merchandiseInfo.currentPrice}}</text>
+    </view>
+     <view class='currentPrice'>
+        <image class='currentPrice_img'  src="../../images/运.png"></image>
+        <text class='currentPrice_text'>¥{{merchandiseInfo.shipmentPrice}}</text>
+    </view>
+    <view class='currentPrice'>
+        <image class='currentPrice_img'  src="../../images/原.png"></image>
+        <text class='currentPrice_text'>¥{{merchandiseInfo.oldPrice}}</text>
+    </view>
+</view>
+<view class='price'>
+    <view>
+       <image class='description_img'  src="../../images/详情.png"></image>
+       <text class='description_title'>商品描述:</text>
+    </view>
+    <text class='description_content'>软皮面日记本/手账本。软皮面日记本/手账本，软皮面日记本/手账本，软皮面日记本/手账本</text>
+</view>
+<view>
+    <view class='userName'>
+       <image class='userName_img'  src="../../images/发布者.png"></image>
+       <view  class='userName_text'>{{merchandiseInfo.userName}}</view>
+    </view>
+    <view class='userName'>
+       <image class='userName_img'  src="../../images/时间.png"></image>
+       <view  class='userName_text'>{{merchandiseInfo.createTime}}</view>
+    </view>
+</view>
+
+<button  size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> primary </button>
+
+
+
+

@@ -1,0 +1,7 @@
+<import src="activity_item.wxml"/>
+
+<view class="container">
+  <block wx:for="{{activities}}" wx:for-item="activity" wx:key="*this">
+    <template is="activity-item" data="{{...activity}}"/>
+  </block>
+</view>

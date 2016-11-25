@@ -1,0 +1,154 @@
+/**index.wxss**/
+.topTitle{
+    font-size: 14px;
+    background: #fff;
+    color: #1aad19;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: #1aad19 1px solid;
+}
+.topTitle .cn, .topTitle .en{
+    display: block;
+    text-align: center;
+    line-height: 16px;
+}
+.topTitle .en{
+    font-size: 12px;
+}
+.section{
+    width: 100%;
+    background: #fff;
+    margin-top: 10px;
+}
+.scroll-view_H{
+    white-space: nowrap;
+}
+.scroll-view-item{
+    height: 200px;
+}
+.scroll-view-item_H{
+    display: inline-block;
+    width: 180px;
+    height: 200px;
+    background: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.scroll-view-item_H .item{
+    width: 180px;
+    height: 150px;
+}
+
+.scroll-view-item_H .title{
+    display: block;
+    line-height: 20px;
+} 
+
+/**套装推荐**/
+.suitBox{
+    background: #fff;
+}
+.suit{
+    font-size: 13px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.suit .discribe{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #000;
+    line-height: 20px;
+}
+.suitImg, .pickList{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px 0;
+}
+.suitImg .suitItem{
+    width: 48%;
+    height: 180px;
+}
+
+.moreSuit{
+    font-size: 14px;
+    border: 1px solid #1aad19;
+    display: block;
+    width: 90%;
+    line-height: 24px;
+    margin: 10px auto;
+    text-align: center;
+    color: #1aad19;
+}
+
+.listItem{
+    width: 48%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.listItem .itemImg{
+    width: 100%;
+    height: 180px;
+}
+.listItem .itemText{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    line-height: 20px;
+}
+.container{
+    padding-bottom: 50px;
+    overflow-x: hidden;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-top: 1px solid #1aad19;
+    clear: both;
+}
+
+.footer .btn{
+    font-size: 12px;
+}
+
+.footer .add{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 5px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.footer .add1{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 5px;
+    float: left;
+}
+
+.footer .add2{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 5px;
+    float: right;
+    margin-right: 10px;
+}
+
+

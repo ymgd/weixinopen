@@ -1,0 +1,41 @@
+.hot-bar-left-0 {
+    left: 4%;
+}
+
+.hot-bar-left-1 {
+    left: 29%;
+}
+
+.hot-bar-left-2 {
+    left: 54%;
+}
+
+.hot-bar-left-3 {
+    left: 79%;
+}
+
+.sub-bar-left-0 {
+    left: 2%;
+}
+
+.sub-bar-left-1 {
+    left: 17%;
+}
+
+.sub-bar-left-2 {
+    left: 32%;
+}
+
+.zoom {
+    animation: zoom-in 0.2s ease-out;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(1.05);
+        opacity: 0;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

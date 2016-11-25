@@ -1,0 +1,12 @@
+<view class="collection">
+  <block wx:for="{{collection}}">
+    <view class="collection-item">
+      <image src="{{item.imgUrl}}" mode="aspectFill" class="collection-image"></image>
+      <view class="collection-info">
+        <view class="title">{{item.title}}</view>
+        <view class="desc">{{item.desc}}</view>
+        <view class="author">{{item.author}}</view>
+      </view>
+    </view>
+  </block>
+</view>

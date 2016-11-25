@@ -1,0 +1,17 @@
+<view class="logo">
+    <image src="/resources/stuq.png"></image>
+</view>
+<view class="title">
+    StuQ 技能图谱 {{version}}
+</view>
+
+<view class="infos">
+    <view wx:for="{{infos}}" wx:key="*this" class="item">
+        <text class="label">{{item[0]}}</text>
+        <text class="content">{{item[1]}}</text>
+    </view>
+</view>
+
+<view class="copyleft">
+    {{copyleft}}
+</view>

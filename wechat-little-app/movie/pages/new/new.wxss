@@ -1,0 +1,32 @@
+.content{
+    background-color: #3a3a3a;
+    min-height: 100%;
+}
+
+.casts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.casts image{
+    width: 180rpx;
+    margin-right: 20rpx;
+    margin-left: 20rpx;
+}
+
+.detail{
+    padding-left: 20px;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.hr{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    opacity: 0.2;
+}

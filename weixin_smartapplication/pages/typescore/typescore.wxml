@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="group" style="width: 80%">
+    <view class="typescore-title">Please Type Score</view>
+    <view class="typescore-view" >
+        <input class="typescore-input" bindblur="bindScoreA" placeholder="scoreA"  ></input>
+        <input class="typescore-input" bindblur="bindScoreB" placeholder="scoreB"  ></input>
+    </view>
+    <button bindtap="typeScore" class="typescore-button" type="default" size="default"  plain="false"
+          > 比分转换 </button>
+    <view class="typescore-title">Result:</view>
+    <text class="typescore-text">【{{resScore}}】</text>
+  </view>
+</view>

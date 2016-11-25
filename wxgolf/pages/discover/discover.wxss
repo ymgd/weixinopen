@@ -1,0 +1,30 @@
+.top-image{
+    width: 100%;
+    height: 200px;
+    background-color: #eeeeee;
+}
+
+.section__ctn{
+    margin: 0;
+}
+.classify{
+    position: relative;
+    width: 64px;
+    height: 94px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.classify-icon{
+    width: 64px;
+    height: 64px;
+}
+.classify-icon-image{
+    width: 64px;
+    height: 64px;
+}
+.label-2__text{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}

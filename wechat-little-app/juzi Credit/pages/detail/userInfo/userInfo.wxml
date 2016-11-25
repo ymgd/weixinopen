@@ -1,0 +1,21 @@
+<view class="rowView">  
+  <text class="leftText">头像</text>
+  <image class="rightIcon" src="../../../images/testHead.png" background-size="cover" />
+</view>
+
+<view class="rowView">  
+  <text class="leftText">姓名</text>
+  <text class="rightText">张三</text>
+</view>
+
+<view class="rowView">  
+  <text class="leftText">身份证</text>
+  <text class="rightText">341***********2987</text>
+</view>
+
+<view class="rowView">  
+  <text class="leftText">手机号</text>
+  <text class="rightText">136****8289</text>
+</view>
+
+<button type="default" size="default"  bindtap="default" hover-class="other-button-hover"> 退出登录 </button>

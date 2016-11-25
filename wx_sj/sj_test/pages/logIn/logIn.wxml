@@ -1,0 +1,39 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<!--输入用户名-->
+<view class="section user">
+  <view class="user_left">
+    <image class='user_left_img' src='../../images/登录手机.png' mode='scaleToFill'></image>
+    <view class='user_left_text'>账号</view>
+  </view>
+  <input  name='user' class='user_right'  placeholder="请输入手机号"/>
+</view>
+
+<!--输入密码-->
+<view class="section password">
+  <view class="user_left" bindtap='passwordChange'>
+    <image class='user_left_img' src='{{passwordImgUrl}}' mode='scaleToFill'></image>
+    <view class='user_left_text'>密码</view>
+  </view>
+  <input  password='{{passwordType}}' name='password' class='user_right' placeholder="请输入密码"/>
+</view>
+
+<!--登录-->
+<view class='bottom'>
+    <button  class='log_in' hover-class='clicked' formType='submit'>登录</button>
+    <button  class='log_in' hover-class='clicked'>注册</button>
+</view>
+
+ <!--登录问题-->
+
+ <view class='problem'>
+    <view class='problem_top'>
+
+    <image class='problem_img' src='../../images/登录问题.png' mode='scaleToFill'></image>
+    
+    </view>
+    <view class='problem_text'>
+        登录遇到问题？
+    </view>
+ </view>
+
+</form>

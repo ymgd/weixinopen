@@ -1,0 +1,77 @@
+.userassets-area{
+    margin-top: 20rpx;
+   
+}
+
+.userassets-top{
+   height: 256rpx;
+}
+
+.userassets-num-area{
+    flex:1;
+    padding-left: 32rpx;
+}
+
+.userassets-desp1{
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #999999;
+  letter-spacing: 0px;
+  line-height: 48px;
+}
+
+.userassets-desp2{
+ font-family: SanFranciscoDisplay-Semibold;
+ font-size: 66rpx;
+ color: #424954;
+ line-height: 80rpx;
+}
+
+.userassets-desp3{
+ font-family: PingFangSC-Regular;
+ font-size: 28rpx;
+ color: #FF801A;
+ letter-spacing: 0rpx;
+ line-height: 62rpx;
+}
+
+.userassets-right{
+    width: 46rpx;
+    margin-right: 32rpx;
+    line-height: 256rpx;
+}
+
+.userassets-right-icon{
+  width: 46rpx;
+  height: 31rpx;
+}
+
+.userassets-grid{
+  height: 162rpx;
+  border-top: 1rpx solid #eee;
+}
+
+.userassets-grid-item{
+    flex:1;
+    padding-top: 38rpx;
+    padding-left: 32rpx;
+}
+
+.border-right-1rpx{
+  border-right: 1rpx solid #eee;
+}
+
+.userassets-desp5{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  line-height: 46rpx;
+  color: #333333;
+  letter-spacing: 0rpx; 
+}
+
+.userassets-desp6{
+   font-family: PingFangSC-Light;
+   font-size: 28rpx;
+   line-height: 40rpx;
+   color: #999999;
+}

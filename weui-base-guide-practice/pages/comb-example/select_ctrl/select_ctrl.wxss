@@ -1,0 +1,6 @@
+@import "../../../public/common_form.wxss";
+
+.section-wrp.form-header{
+    background: inherit;
+    color: #888888;
+}

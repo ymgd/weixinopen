@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/repositories/repositories",
+    "pages/users/users"
+  ],
+  "window":{
+    "backgroundTextStyle":"black",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Rank JavaScript",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "borderStyle": "white",
+    "selectedColor": "#80bd01",
+    "backgroudColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "仓库排名",
+      "iconPath": "image/repository.png",
+      "selectedIconPath": "image/repository_selected.png"
+    }, {
+      "pagePath": "pages/users/users",
+      "text": "开发者排名",
+      "iconPath": "image/user.png",
+      "selectedIconPath": "image/user_selected.png"
+    }]
+  }
+}

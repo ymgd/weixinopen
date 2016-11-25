@@ -1,0 +1,15 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'Toast、Modal、ActionSheet',desc:'提示框。'}}"/>
+
+        <button type="primary" class="mt" bindtap="showToast"> 消息提示框 </button>
+
+         <button type="primary" class="mt" bindtap="showModal"> 模态弹窗 </button>
+
+          <button type="primary" class="mt" bindtap="showActionSheet"> 操作菜单 </button>
+      
+    </view>
+</view>

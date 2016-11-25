@@ -1,0 +1,58 @@
+.container{
+    margin: 0;
+    padding: 0;
+}
+.swiper_image{
+    width: 100%;
+}
+.swiper{
+    width: 100%;
+    height: 200px;
+}
+.totalCells{
+    width: 100%;
+}
+/*右边cell布局*/
+.rightImageCell{
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.rightImageText{ 
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 70%;
+}
+.cell_title{
+    color: black;
+    font-size: 16px;
+}
+.cell_time{
+    display: block;
+    font-size: 13px;
+    padding-top: 10px;
+    height: 20px;
+    color: lightgray;
+}
+.cell_image{
+    padding-top: 2px;
+    width: 20%;
+    height: 60px;
+}
+/*上面图片的布局*/
+.topImageCells{
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+.top_cell_image{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+}
+.topImageText{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}

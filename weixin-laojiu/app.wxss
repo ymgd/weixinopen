@@ -1,0 +1,4 @@
+/**app.wxss**/
+page{
+    font-family: "Microsoft YaHei",微软雅黑，Verdana,Helvetica,Arial,sans-serif;
+}

@@ -1,0 +1,18 @@
+<view class="container">
+	<block wx:for="{{favlist}}">
+		<view class="block" bindtap="playTap" data-name="{{item.name}}">
+			<image class="left" wx:if="{{item.picurl}}" src="{{item.picurl}}" mode="aspectFit"/>
+			<view wx:else class="default">
+				<image src="../../images/default.png" mode="aspectFit"/>	
+			</view>
+			<view class="right">
+				<view>
+					<text class="fav-name">{{item.name}}</text>	
+				</view>
+				<view>
+					<text class="fav-count">共{{item.count}}首</text>
+				</view>
+			</view>
+		</view>	
+	</block>
+</view>

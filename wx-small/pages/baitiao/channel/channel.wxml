@@ -1,0 +1,46 @@
+ <view class="jrm-flex-column jrm-w100p channel-area jrm-bg-fff">  
+   <view class="jrm-flex-row jrm-w100p channel-grid">
+     <view class="jrm-flex-cc channel-item">
+       <image class="channel-item-icon" src="./images/youhuijuan@2x.png" background-size="cover"></image>
+       <text class="channel-item-desp">领券</text>      
+       <text class="channel-item-desp1">618优惠券</text>      
+     </view>      
+    <view class="jrm-flex-cc channel-item">
+       <image class="channel-item-icon" src="./images/shangcheng@2x.png" background-size="cover"></image>
+       <text class="channel-item-desp">白条商城</text>      
+       <text class="channel-item-desp1"></text>      
+     </view>  
+    <view class="jrm-flex-cc channel-item">
+       <image class="channel-item-icon" src="./images/daikuan@2x.png" background-size="cover"></image>
+       <text class="channel-item-desp">白条贷款</text>      
+       <text class="channel-item-desp1"></text>      
+     </view>   
+     <view class="jrm-flex-cc channel-item">
+       <image class="channel-item-icon" src="./images/xiaobaika@2x.png" background-size="cover"></image>
+       <text class="channel-item-desp">小白卡</text>      
+       <text class="channel-item-desp1"></text>      
+     </view>    
+   </view>   
+   <view class="jrm-flex-row jrm-w100p channel-grid">
+     <view class="jrm-flex-cc channel-item">
+       <image class="channel-item-icon" src="./images/gangbeng@2x.png" background-size="cover"></image>
+       <text class="channel-item-desp">钢镚</text>      
+       <text class="channel-item-desp1"></text>      
+     </view>      
+    <view class="jrm-flex-cc channel-item">
+       <image class="channel-item-icon" src="./images/phone@2x.png" background-size="cover"></image>
+       <text class="channel-item-desp">手机充值</text>      
+       <text class="channel-item-desp1"></text>      
+     </view>  
+    <view class="jrm-flex-cc channel-item">
+       <image class="channel-item-icon" src="./images/xiaoyuan@2x.png" background-size="cover"></image>
+       <text class="channel-item-desp">校园白条</text>      
+       <text class="channel-item-desp1"></text>      
+     </view>   
+     <view class="jrm-flex-cc channel-item">
+       <image class="channel-item-icon" src="./images/more@2x.png" background-size="cover"></image>
+       <text class="channel-item-desp">更多</text>      
+       <text class="channel-item-desp1"></text>      
+     </view>    
+   </view>   
+  </view>

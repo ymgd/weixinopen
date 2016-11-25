@@ -1,0 +1,14 @@
+.invest_hd {background: #45ade1;color: #fff;padding: 80rpx 0;}
+.left {display: inline-block;width: 50%;text-align: center;}
+.right {display: inline-block;width: 50%;text-align: center;}
+.title {font-size: 44rpx;}
+.hd_num {font-size: 28rpx;margin-top: 8rpx;}
+.hd_num text {font-size: 44rpx;color: #ffd200;padding: 0 10rpx;}
+
+
+.invest_bd {font-size: 30rpx;text-align: center;}
+.bd_title {background: #fff;line-height: 2.6rem;color: #45ade1;border-bottom: 2rpx solid #ddd;}
+.invest_list {border-bottom: 2rpx solid #ddd;line-height: 2.8em;font-size: 26rpx;}
+.bd_left {display: inline-block;width: 40%;}
+.bd_center {display: inline-block;width:30%;}
+.bd_right {display: inline-block;width:30%;}

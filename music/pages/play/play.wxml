@@ -1,0 +1,48 @@
+<view class="container">
+    <view class="song_info">
+        <text class="song_tt">{{item.title}}</text>
+        <text class="song_author">{{item.author}}</text>
+    </view>
+    <view hidden="{{is_show_lyr}}" class="song_tx" style="transform: rotate({{angle}}deg)"> 
+        <image src="{{item.pic}}"></image>
+    </view>
+    <view  class="lyr_box" style="height: {{height}}rpx">
+        <view class="lyrics" style="top: {{top}}rpx">
+            <block wx:for="{{song_lyr}}" wx:key="{{index}}">
+                <text class="{{index==textActive?'active':''}}">{{item.lyr}}</text>
+            </block>
+        </view>
+    </view>
+    <view class="controls">
+        <view class="song_pross">
+            <text class="cur_time">{{cur_time}}</text>
+            <slider min="0" max="{{duration}}" value="{{current}}" bindchange="changeSongPross" />
+            <text class="total_time">{{total_time}}</text>
+        </view>
+        <view class="bts">
+            <view bindtap="showLyr" class="show_bt"><image src="../../images/show.png" /></view>
+            <view bindtap="prevSong" class="prev_bt"><image src="../../images/next.png" /></view>
+            <view class="play_bt" bindtap="playSong"><image src="../../images/{{isPlaying?'pause':'play'}}.png" /></view>
+            <view bindtap="nextSong" class="next_bt"><image src="../../images/next.png" /></view>
+            <view bindtap="showPlayed" class="list_bt"><image src="../../images/list.png" /></view>
+        </view>
+    </view>
+   <view class="played_list {{is_show_played?'':'hide' }}">
+    <scroll-view scroll-y="true">
+        <view class="played_tt">
+            播放列表
+            <text bindtap="delAllSong">del</text>
+        </view>
+        <block wx:for="{{played_list}}" wx:for-item="ceil" wx:key="{{index}}">
+            <view bindtap="changeSong" class="played_item {{ceil.id==item.id?'active':''}}" data-id="{{ceil.id}}">
+                <text class="played_id">{{index+1}}</text>
+                <view class="played_core">
+                    <text class="played_name">{{ceil.title}}</text>
+                    <text class="played_author">{{ceil.author}}</text>
+                </view>
+                <view catchtap="delOneSong" data-id="{{ceil.id}}" class="played_del"></view>
+            </view>
+        </block>
+   </scroll-view>
+   </view>
+</view>

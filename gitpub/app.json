@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/repo/repo",
+    "pages/trend/trend",
+    "pages/star/star"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "gitpub",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#ccc",
+    "selectedColor":"black",
+    "backgroundColor":"#EEEEEE",
+    "borderStyle":"white",
+    "list": [
+    	{
+	      "pagePath": "pages/index/index",
+		    "backgroundTextStyle":"light",
+		    "navigationBarBackgroundColor": "#fff",
+		    "navigationBarTitleText": "gitpub",
+		    "navigationBarTextStyle":"black",
+        "iconPath": "img/user.png",
+        "selectedIconPath": "img/user_hover.png",
+	      "text": "index"
+    	}, 
+    	{
+      	"pagePath": "pages/trend/trend",
+		    "backgroundTextStyle":"light",
+		    "navigationBarBackgroundColor": "#fff",
+		    "navigationBarTitleText": "gitpub",
+		    "navigationBarTextStyle":"black",
+        "iconPath": "img/trend.png",
+        "selectedIconPath": "img/trend_hover.png",
+      	"text": "trending"
+    	},
+    	{
+      	"pagePath": "pages/star/star",
+		    "backgroundTextStyle":"light",
+		    "navigationBarBackgroundColor": "#fff",
+		    "navigationBarTitleText": "gitpub",
+		    "navigationBarTextStyle":"black",
+        "iconPath": "img/star.png",
+        "selectedIconPath": "img/star_hover.png",
+      	"text": "star"
+    	}
+	]
+  },
+  "debug": true
+}

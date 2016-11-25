@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/tennis/tennis",
+    "pages/wxassert/wxassert",
+    "pages/typescore/typescore",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的微信小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志"
+    }, {
+      "pagePath": "pages/tennis/tennis",
+      "text": "Tennis"
+    }
+    , {
+      "pagePath": "pages/typescore/typescore",
+      "text": "Type Score"
+    }, {
+      "pagePath": "pages/wxassert/wxassert",
+      "text": "wxassert"
+    }]
+  }
+}

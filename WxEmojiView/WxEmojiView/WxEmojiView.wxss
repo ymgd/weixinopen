@@ -1,0 +1,41 @@
+.WxEmojiView{
+    align-items: center;
+}
+.WxEmojiPreView{
+    margin: 20rpx 0;
+    padding: 20rpx 0;
+    background-color: #efefef;
+}
+.wxEmoji{
+    height: 60rpx;
+    width: 60rpx;
+}
+.WxEmojiTextarea{
+    min-height: 200rpx;
+    border: 2rpx solid #eee;
+    margin: 10rpx;
+    width: 96%;
+}
+.WxEmojiHiddenTextarea{
+    height: 100rpx;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.WxEmojiViewContainer{
+    position:fixed; 
+    left:0; 
+    bottom:0;
+    width: 100%;
+}
+.WxEmojiChooseChooseView{
+    background-color: #eee;
+    display: flex;
+}
+.wxPreEmoji{
+    height: 60rpx;
+    width: 60rpx;
+    margin: 10rpx;
+    display: inline-flex;
+    flex: 1;
+}

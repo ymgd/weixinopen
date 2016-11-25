@@ -1,0 +1,69 @@
+<view class="container">
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view id="red"  class="scroll-view-item_H bc_red">
+            <image class="scroll-view-item-img" src="http://img.huizecdn.com/test/002.jpg"></image>
+        </view>
+        <view id="yellow" class="scroll-view-item_H bc_yellow">
+            <image class="scroll-view-item-img" src="http://img.huizecdn.com/test/003.jpg"></image>
+        </view>
+    </scroll-view>
+    <view class="section">    
+        <view class="section-title">活动列表</view>
+        
+        <view class="list-box clearfix" wx:for="{{allActivity}}">
+            <view class="list-item">
+                <view bindtap="detial" data-id="{{item._id}}">
+                    <view class="list-type {{item.money ? 'list-type-money' : ''}}">{{item.money ? '￥'+item.money : '免费' }}</view>
+                    <image class="list-avatar" src="{{item.avatarUrl}}"></image>
+                    <view class="list-name" data-id="{{item._id}}">{{item.title}}</view>               
+                    <view class="list-des" data-id="{{item._id}}">{{item.description}}
+                    </view>
+                    <view>
+                        <image class="list-image" mode="" wx:for="{{item.images}}" wx:for-item="src" src="{{src}}"  data-id="{{item._id}}"></image>
+                    </view>
+                    <view class="list-address fz-10 m-t-5">
+                        <image class="list-icon vm" src="/image/address.png" data-id="{{item.id}}"></image>
+                        <view class="list-icon-text vm"  data-id="{{item.id}}">{{item.address}}</view>
+                    </view>
+                </view>
+                <view class="list-botton clearfix">
+                    <view class="fl gray">
+                        <image class="list-icon vm" src="/image/time.png" data-id="{{item.id}}"></image>
+                        <text class="vm">{{item.date}} {{item.time}}</text>
+                    </view>
+                    <view class="fr">                        
+                        <text class="vm color-1">{{item.number}}</text><text class="vm">/{{item.total}}人报名</text>
+                        <!-- <image class="list-bottom-icon vm m-l-20" src="/image/like.png"></image>
+                        <text class="vm m-l-5">{{item.like}}</text> -->
+                    </view>
+                </view>
+            </view>
+           
+        </view>
+        <view class="list-box clearfix" wx:for="{{list}}">
+        <view class="list-item"  bindtap="detial" data-id="{{item.id}}">
+            <view class="list-type  {{item.type !== '免费' ? 'list-type-money': ''}}">
+            {{item.type}}
+            </view>
+            <image class="list-avatar" src="{{item.avatar}}"></image>
+            <view class="list-name">{{item.name}}</view>
+            <view class="list-des" data-id="{{item.id}}">{{item.des}}</view>
+            <image class="list-image" mode=""  wx:for="{{item.images}}" wx:for-item="src" src="{{src}}"  data-id="{{item.id}}"></image>
+            <view class="list-time fz-10">
+                <image class="list-icon vm" src="/image/time.png" data-id="{{item.id}}"></image>
+                <view class="list-icon-text vm" data-id="{{item.id}}">{{item.time}}</view>
+            </view>
+            <view class="list-address fz-10">
+                <image class="list-icon vm" src="/image/address.png" data-id="{{item.id}}"></image>
+                <view class="list-icon-text vm"  data-id="{{item.id}}">{{item.address}}</view>
+            </view>
+            <view class="list-botton">
+                <text class="vm color-1">{{item.num}}</text>
+                <text class="vm m-l-5">报名</text>
+                <image class="list-bottom-icon vm m-l-20" src="/image/like.png"></image>
+                <text class="vm m-l-5">{{item.like}}</text>
+            </view>
+        </view>
+        </view>
+    </view>   
+ </view>

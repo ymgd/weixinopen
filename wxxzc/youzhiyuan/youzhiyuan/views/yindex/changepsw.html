@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="css/base.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/iconfont/iconfont.css"/>
+  <title>用户登录</title>
+	</head>
+	<body>
+		<div class="header">
+			<span>修改密码</span>
+			<a href="user-center.html" class="back"><i class="iconfont icon-left"></i></a>
+		</div>
+		<ul class="login-box">
+			<li>
+		        <input type="password" name="name" placeholder="旧密码" id="old"/>
+			</li>
+			<li>
+		        <input type="password" name="name" placeholder="新密码" id="new"/>
+			</li>
+			<li>
+		        <input type="password" name="name" placeholder="确认密码" id="new2"/>
+			</li>
+		</ul>
+		</div>
+		<div class="confirm">
+			<a href="javascript:void(0)" id="sub">提交</a>
+		</div>
+	</body>
+	<script src="js/jquery-1.10.2.min.js"></script>
+     <script type="text/javascript" src="js/rem.js"></script>	
+</html>
+<script>
+    $(function(){
+        $('#sub').click(function(){
+            var old=$('#old').val()
+            var newpwd=$('new').val()
+            var newpwd2=$('new2').val()
+
+
+            var url="http://www.hefei.com/public/youchangepsw?callback=?";
+
+            $.getJSON(url,{old:old,newpwd:newpwd,newpwd2:newpwd2},
+                    function (e) {
+
+                        if (e == 1) {
+                            alert('ok')
+                        }
+                    })
+
+
+        })
+
+    })
+</script>

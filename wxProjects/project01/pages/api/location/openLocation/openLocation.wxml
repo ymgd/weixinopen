@@ -1,0 +1,20 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'wx.openLocation',desc:'使用微信内置地图查看位置'}}"/>
+
+         <view class="showLocation">
+            <text>纬度:{{latitude}}</text>
+            <text>经度:{{longitude}}</text>
+            <text>位置名称:{{name}}</text>
+            <text>详细地址:{{address}}</text>
+        </view>
+
+         <button type="primary" class="mt" bindtap="getLocation"> 查看位置 </button>
+
+          <button type="primary" class="mt" bindtap="chooseLocation"> 选择位置 </button>
+      
+    </view>
+</view>

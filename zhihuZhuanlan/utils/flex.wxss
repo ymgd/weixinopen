@@ -1,0 +1,258 @@
+/**
+ * 基础布局
+ */
+.fx-row{
+  display: flex;
+  flex-direction: row;
+}
+.fx-row-reverse{
+  flex-direction: row-reverse;
+}
+
+.fx-column{
+   display: flex;
+   flex-direction: column;
+}
+
+.fx-column-reverse{
+  flex-direction: column-reverse;
+}
+
+.fx-wrap{
+  flex-wrap: wrap
+}
+
+/**
+ * 垂直方向 子元素沿着侧轴排列
+ */
+ .fx-row-top{
+   align-items: flex-start
+ }
+ .fx-row-center{
+   align-items: center;
+ }
+  .fx-row-bottom{
+   align-items: flex-end;
+ }
+
+.fx-row-stretch {
+  align-items: stretch; }
+
+.fx-row-baseline {
+  align-items: baseline; 
+}
+
+/**
+ * 水平方向
+ * 子元素沿着主轴排列方式
+ * justify-content: flex-start | flex-end | center | space-between | space-around;
+ */
+.fx-row-left {
+  justify-content: flex-star; }
+
+.fx-row-middle {
+
+  justify-content: center; }
+
+.fx-row-right {
+
+  justify-content: flex-end; }
+
+.fx-row-space-between {
+
+  justify-content: space-between; }
+
+.fx-row-space-around {
+  justify-content: space-around; 
+  }
+
+
+/**
+ * 覆盖父元素的align-items属性，定义了单独的弹性子元素如何沿着侧轴排列
+ */
+.fx-col-top {
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.fx-col-bottom {
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.fx-col-center {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.fx-col-left {
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start; }
+
+.fx-col-right {
+  -webkit-align-content: flex-end;
+  -moz-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end; }
+
+.fx-col-middle {
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
+.fx-col-space-between {
+  -webkit-align-content: space-between;
+  -moz-align-content: space-between;
+  -ms-flex-line-pack: space-between;
+  align-content: space-between; }
+
+.fx-col-space-around {
+  -webkit-align-content: space-around;
+  -moz-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around; }
+
+
+
+/**
+ * flex item操作
+ */
+ 
+ /** auto(1 1 aut) **/
+.fx-atuo {
+  -webkit-box-flex: auto;
+  -webkit-flex: auto;
+  -moz-box-flex: auto;
+  -moz-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  }
+ 
+  .fx-none{
+      flex : none;
+      -webkit-box-flex: none;
+  -webkit-flex: none;
+  -moz-box-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  }
+ 
+.fx {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.fx-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.fx-2 {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -moz-box-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  flex: 2; }
+
+.fx-3 {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  -moz-box-flex: 3;
+  -moz-flex: 3;
+  -ms-flex: 3;
+  flex: 3; }
+
+.fx-4 {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+  -moz-box-flex: 4;
+  -moz-flex: 4;
+  -ms-flex: 4;
+  flex: 4; }
+
+.fx-5 {
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+  -moz-box-flex: 5;
+  -moz-flex: 5;
+  -ms-flex: 5;
+  flex: 5; }
+
+.fx-6 {
+  -webkit-box-flex: 6;
+  -webkit-flex: 6;
+  -moz-box-flex: 6;
+  -moz-flex: 6;
+  -ms-flex: 6;
+  flex: 6; }
+
+.fx-7 {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+  -moz-box-flex: 7;
+  -moz-flex: 7;
+  -ms-flex: 7;
+  flex: 7; }
+
+.fx-8 {
+  -webkit-box-flex: 8;
+  -webkit-flex: 8;
+  -moz-box-flex: 8;
+  -moz-flex: 8;
+  -ms-flex: 8;
+  flex: 8; }
+
+.fx-9 {
+  -webkit-box-flex: 9;
+  -webkit-flex: 9;
+  -moz-box-flex: 9;
+  -moz-flex: 9;
+  -ms-flex: 9;
+  flex: 9; }
+
+
+
+  
+
+  .col-15{
+      width: 15%;
+  }
+
+  .col-10{
+      width: 10%;
+  }
+
+  .col-20{
+      width: 20%;
+  }
+
+  .col-25{
+      width: 25%;
+  }
+
+  .col-33{
+      width: 33.333333333333336%;
+  }
+  .col-30{
+      width: 30%;
+  }
+
+  .col-50{
+      width: 50%
+  }
+   .col-66{
+     width: 66.66666666666666%;
+  }

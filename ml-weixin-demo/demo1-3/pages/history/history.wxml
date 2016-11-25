@@ -1,0 +1,23 @@
+<view class="section">
+<!--<input style="width:18rem;margin-left:1rem;margin-top:10px; border:1px solid #dddddd;border-radius:10px;text-alien:center;margin-bottom:10px" 
+ calss="searchInput" placeholder=" 搜 索" 
+    placeholder-style="padding-left:1rem;color:#dddddd;font-size:14px"/>
+</view>-->
+
+<view class="container">
+  <view class="list-container">
+    <navigator url="." wx:for="{{list}}">
+      <view class="list-item" >
+        <view class="item-left">
+          <text class="item-title">{{item.title}}</text>
+          <text>这里是借款记录</text>
+         <text class="item-date">{{item.date}}</text>
+      
+        </view>
+        <view class="item-right">
+          <image src="{{item.img}}" class="item-img"/>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

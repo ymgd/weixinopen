@@ -1,0 +1,46 @@
+/**导航**/
+.flex-wrp{
+    display: flex;
+}
+.flex-tab{
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+}
+.top-tab{
+  width: 750rpx;
+  height: 100rpx;
+  background: #fff;
+  color: #000;
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 100rpx;
+  border-bottom: 30rpx solid #eee;
+  margin: 0 20rpx 8rpx 0rpx;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.toptab.active{
+  color: #298DE5;
+  border-bottom: solid 2px #298DE5;
+}
+
+/**页面样式**/
+.brand{
+    width: 600rpx;
+    height: 130rpx;
+    clear: both;
+}
+.brand_new{
+    width: 120rpx;
+    height: 120rpx;
+    float: left;
+}
+.btn{
+  margin:5px;
+}

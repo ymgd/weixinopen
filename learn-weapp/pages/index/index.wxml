@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="index">
+
+<view class="body">
+    <view class="widgets__item">
+        <view id="content" class="widgets__info" bindtap="toSplash">
+            <text class="widgets__info-name">启动屏幕</text>
+        </view>
+    </view>
+    <view class="widgets__item">
+        <view id="content" class="widgets__info" bindtap="toTab">
+            <text class="widgets__info-name">TabLayout示例页面</text>
+        </view>
+    </view>
+   <view class="widgets__item">
+        <view id="content" class="widgets__info" bindtap="toLoadPull">
+            <text class="widgets__info-name">下拉刷新/底部自动加载</text>
+        </view>
+    </view>
+    <view class="widgets__item">
+        <view id="content" class="widgets__info" bindtap="toUpload">
+                       <text class="widgets__info-name">上传图片</text>
+                   </view>
+               </view>
+    <view class="widgets__item">
+        <view id="content" class="widgets__info" bindtap="toDialog">
+            <text class="widgets__info-name">自定义弹出框</text>
+        </view>
+    </view>
+</view>
+</view>

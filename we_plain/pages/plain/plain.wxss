@@ -1,0 +1,53 @@
+.modal {
+    width: 360px;
+    height: 300px;
+    top: 100px;
+    left: 55%;
+    margin-left: -200px;
+    border: #666 solid 2px;
+    border-radius: 8px;
+    position: absolute;
+    font-size: 20px;
+    background-color: #dddddd;
+    z-index: 1002;
+}
+
+.modal_hide {
+    display: none;
+}
+
+.header {
+    height: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: #666 solid 2px; 
+}
+
+.content {
+    height: 210px;
+    line-height: 210px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-top: #666 solid 2px; 
+}
+
+.footer button {
+    width: 120px;
+    height: 42px;
+    border: #666 solid 2px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    color: #333;
+    cursor: pointer;
+}

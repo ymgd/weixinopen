@@ -1,0 +1,36 @@
+.item-display {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.item-display image {
+    width: 400rpx;
+    height: 400rpx;
+    border: 1px solid gray;
+}
+
+.item-display text {
+    padding: 5rpx auto;
+}
+
+.item-display button {
+    margin-top: 20rpx;
+    width: 400rpx;
+}
+
+.item-display .status {
+    font-size: 30rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-display .status label {
+    display: flex;
+    align-items: center;
+    margin: 10rpx;
+}
+
+.text-nonactive {
+    color: #eee;
+}

@@ -1,0 +1,35 @@
+.button-hover {
+  background-color: #ddd;
+}
+.section,.btn-area{
+  margin: 15px 5px;
+}
+.del{
+  color: red;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.title{
+  margin: 5px 0;
+  font-size: 20px;
+}
+.section__title{
+  
+  margin-bottom: 15px;
+  font-size: 24px;
+
+}
+.btn-area button{
+  margin-bottom: 15px;
+}
+
+input{
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  padding: 8px 5px;
+  background-color: #ddd;
+}
+form{
+  margin-top: 15px;
+  background-color: #ddd;
+}

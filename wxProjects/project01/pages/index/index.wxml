@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="section">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="section">
+    <view class="header bgf">
+      <text class="header-title">精品推荐</text>
+      <navigator class="all-pro f12 col1" 
+       url="../product/productList"> more </navigator>
+    </view>
+
+    <view class="pro-list bgf">
+      <view class="pro-item" wx:for="{{proItems}}" wx:key="{{item.id}}">
+        <image src="{{item.url}}" mode="scaleToFill"/>
+        <view class="pro-title f12">
+          <text>{{item.proName}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="header bgf">
+      <text class="header-title">超值爆品</text>
+      <navigator class="all-cp f12 col1"
+       url="../product/productList"> more </navigator>
+    </view>
+    <view class="cp-list bgf">
+      <view class="cp-item" wx:for="{{listItems}}">
+        <view class="cp-pic">
+          <image src="{{item.url}}"/>
+          <image src="../../images/icon.png" class="cp-icon"/>
+        </view>
+        <view class="cp-desc mt">
+          <text class="cp-name">标题</text>
+          <text class="cp-intro mt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</text>
+        </view>
+       
+      </view>
+    </view>
+  </view>
+
+ 
+</view>

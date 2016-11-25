@@ -1,0 +1,32 @@
+.top{
+    float: left;
+    width: 750rpx;
+    height: 200rpx;
+}
+
+.select_button{
+    float: left;
+    width: 650rpx;
+    height: 150rpx;
+    margin-left: 50rpx;
+    margin-top: 10rpx;
+    color: white;
+    background-color: #60ccb6;
+    font-size: 50rpx;
+}
+
+.type{
+    float: left;
+    width: 300rpx;
+    margin-left: 50rpx;
+    margin-top: 10rpx;
+}
+
+.type_button{
+    color: #707070;
+}
+
+.type_other_button{
+    color: white;
+    background-color: #60ccb6;
+}

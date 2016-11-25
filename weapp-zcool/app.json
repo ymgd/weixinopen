@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/detail",
+
+    "pages/find/find",
+    "pages/find/detail",
+
+    "pages/account/account",
+    "pages/account/account-info",
+    "pages/account/feedback",
+    "pages/account/collection",
+    "pages/account/attention",
+    "pages/account/settings",
+
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "zcool站酷",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffd102",
+    "backgroundColor": "#f7f7f7",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#f6ca00",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/icons/home.png",
+      "selectedIconPath": "images/icons/home-selected.png"
+    }, {
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "images/icons/find.png",
+      "selectedIconPath": "images/icons/find-selected.png"
+    }, {
+      "pagePath": "pages/account/account",
+      "text": "个人中心",
+      "iconPath": "images/icons/account.png",
+      "selectedIconPath": "images/icons/account-selected.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000
+  },
+  "debug": true
+}

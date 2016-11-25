@@ -1,0 +1,366 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.tab {
+  height: 44px;
+  line-height: 42px;
+  background: #fff;
+}
+.tab-item {
+  float: left;
+  width: 33.333333%;
+  height: 43px;
+  font-size: 16px;
+  text-align: center;
+}
+.tab-item-active {
+  color: #31c27c;
+  border-bottom: 2px solid #31c27c;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.channel {
+  margin-top: 10px;
+}
+
+.channel-title {
+  font-size: 16px;
+  padding: 0 10px;
+  box-sizing: border-box;
+} 
+
+
+.radio-list{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.radio-item {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.radio-img-box {
+  width: 100%;
+  height: 50%;
+}
+.radio-img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.radio-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.top-view {
+  background: #f7f7f7;
+  padding: 10px;
+}
+
+.top-item {
+  display: -webkit-box;
+  height: 100px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.top-item-img {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.top-item-info {
+  position: relative;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.top-item-info-inner {
+    -webkit-box-flex: 1;
+    margin: 0 10px 0 15px;
+}
+
+.top-item-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  
+}
+
+.top-item-text {
+  position: relative;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  width: 100%;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.search-bar {
+  background: #f7f7f7;
+  padding: 10px;
+}
+
+.search-input-warp {
+  position: relative;
+  padding: 8px 12px 8px 35px;
+
+  background: #fff;
+}
+.search-input-icon {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../resources/images/search.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  text-indent: -999px;
+}
+
+.search-input {
+  font-size: 14px;
+  min-height: 20px;
+  line-height: 20px;
+}
+
+.search-input-placeholder{
+  color: #ddd;
+  font-size: 14px;
+  line-height: 20px;
+}
+.search-cancel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  font-size: 16px;
+  height: 45px;
+  width: 70px;
+  text-align: center;
+  line-height: 45px;
+  z-index: 50;
+  background: #f7f7f7;
+}
+
+.quick-search {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.quick-search-title {
+  font-size: 14px;
+}
+
+.quick-search-bd {
+  position: relative;
+  margin-top: 10px;
+}
+
+.quick-search-item {
+  font-size: 14px;
+  float: left;
+  margin: 0 10px 10px 0;
+  line-height: 20px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: #000;
+  border: 1px solid rgba(0,0,0,.6);
+}
+
+.quick-search-item-red {
+  font-size: 14px;
+  float: left;
+  margin: 0 10px 10px 0;
+  line-height: 20px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: #fc4524;
+  border: 1px solid #fc4524;
+}
+
+
+.search-hi{
+
+}
+
+.search-hi-item {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #ededed;
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+.hi-icon {
+  position: absolute;
+  left: 10px;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: url('../../resources/images/clock_ic.png') no-repeat center center;
+  background-size: 20px;
+}
+.hi-text {
+  position: absolute;
+  left: 54px;
+  right: 54px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size:16px;
+}
+.hi-close {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.hi-close::before {
+    position: absolute;
+    height: 18px;
+    width: 2px;
+    left: 50%;
+    margin-left: -1px;
+    top: 50%;
+    margin-top: -9px;
+    content: "";
+    background: rgba(0,0,0,.4);
+    -webkit-transform: rotate(45deg);
+}
+.hi-close::after {
+    width: 18px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    margin-left: -9px;
+    top: 50%;
+    margin-top: -1px;
+    content: "";
+    background: rgba(0,0,0,.4);
+    -webkit-transform: rotate(45deg);
+}
+
+.clear-serach {
+  font-size: 12px;
+  text-align: center;
+  color: #47c88a;
+  line-height: 44px;
+}
+
+.ssong-list {
+  background: #fff;
+}
+
+.ssong-item {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #ededed;
+}
+
+.ss-icon {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.ss-icon-round {
+  border-radius: 15px;
+}
+
+.ss-text {
+  position: absolute;
+  left: 54px;
+  right: 10px;
+  display: block;
+  height: 44px;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.ss-title {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ss-sub-title {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 14px;
+  font-size: 12px;
+  color: #999;
+  line-height: 12px;
+  padding-top: 2px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+}

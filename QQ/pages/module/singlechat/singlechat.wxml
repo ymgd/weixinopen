@@ -1,0 +1,25 @@
+<view class="chat-ul" catchtap="onClickContent">
+
+        <block wx:for="{{chatMsgs}}">
+            <view wx:if="{{item.isOwner}}" class="chat-li-slef">
+                <view class="content content-self">{{item.text}}</view>
+                <image class="head" src="{{item.head}}" data-tag="head" data-id="{{item.userId}}"></image>
+            </view>
+            <view wx:else class="chat-li-other">
+                <image class="head" src="{{item.head}}" data-tag="head" data-id="{{item.userId}}"></image>
+                <view class="content content-other">{{item.text}}</view>
+            </view>
+        </block>
+
+</view>
+<view class="page-footer" style="background-color:#F4F3F4;">
+    <view class="chat-input">
+        <input placeholder="暂用失去焦点替代回车" bindblur="sendMessage" />
+    </view>
+
+    <view class="chat-fn-select">
+        <view wx:for="{{chatModes}}" data-tag="{{item.tag}}" bindtap="onChatFnItemClick">
+            <image src="{{item.icon}}" mode="aspectFit"></image>
+        <view>
+    </view>
+</view>

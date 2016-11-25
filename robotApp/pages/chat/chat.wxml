@@ -1,0 +1,39 @@
+<!--chat.wxml-->
+<template name="temp">
+    <block wx:for="{{message}}">
+        <block wx:if="{{item.type == 1}}">
+            <view class="reply">
+                <view class="pic">
+                    <image src="{{item.src}}"></image>
+                </view>
+                <view class="content">
+                    <view class="text">
+                        {{item.content}}
+                    </view>
+                </view>
+            </view>
+        </block>
+        <block wx:elif="{{item.type == 0}}">
+            <view class="send">
+                <view class="content">
+                    <view class="text">
+                        {{item.content}}
+                    </view>
+                </view>
+                <view class="pic">
+                    <image src="{{item.src}}"></image>
+                </view>
+            </view>
+        </block>
+    </block>
+</template>
+
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}">
+    <template is="temp" data="{{message}}"></template>
+</scroll-view>
+<form bindsubmit="sendMessage">
+    <view class="sendMessage">
+        <textarea auto-height="true" name="input" class="inputMsg" value="{{inputMsg}}"/>
+        <button form-type="submit" class="send">发送</button>
+    </view>
+</form>

@@ -1,0 +1,41 @@
+<view class="root">
+    <canvas class="paper" canvas-id="paper" 
+        bindtouchstart="onTouchStart"  
+        bindtouchmove="onTouchMove"   
+        bindtouchend="onTouchEnd">    <!--触发触摸 事件--> <!--触摸移动 事件--> <!--触摸结束 事件-->
+    </canvas>
+    <canvas class="paper-lancet" canvas-id="paper-lancet" 
+        bindtouchstart="onLancetStart"  
+        bindtouchmove="onLancetMove"   
+        bindtouchend="onLancetEnd" wx:if="{{displayLancet}}">    
+    </canvas>
+    <view>
+        透明度（画笔、柳叶刀、橡皮）:
+        <slider bindchange="slider3change" show-value/>
+        大小（画笔、橡皮）:
+        <slider bindchange="slider3change" show-value/>
+    </view>
+    
+    <view class="color-picker">
+        <view
+            wx:for-items="{{colors}}"
+            wx:for-item="color"
+            class="color-item {{paintColor == color ? 'selected' : ''}}"
+            data-color="{{color}}"
+            style="background-color: {{color}}"  
+            bindtap="chooseColor">     <!--选择颜色 事件-->
+        </view>
+        
+    </view>
+    <view class="tool-picker">
+        <view class="tool-item selected"  catchtap="eventBase"  data-action="modeChange"  data-mode="pecile">铅笔</view>
+        <view class="tool-item selected" catchtap="eventBase"  data-action="modeChange"  data-mode="lancet">柳叶刀</view>
+        <view class="tool-item selected" style="background-color: red"   >颜色</view>
+        <view class="tool-item selected" catchtap="eventBase" data-action="modeChange"  data-mode="eraser">橡皮</view>
+        <view class="tool-item selected" catchtap="eventBase" data-action="save" >保存</view>
+        <!--<view class="tool-item selected" >外链资源</view>-->
+        <!--<view class="tool-item selected" >长按取色</view>-->
+        
+    </view>
+    <!--<button catchtap="save" >保存</button>-->
+</view>

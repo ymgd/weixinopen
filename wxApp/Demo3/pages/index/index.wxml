@@ -1,0 +1,8 @@
+<view class="mod-slider">
+    <view class="money">
+        <input type="text" class="aa" value="{{money}}" bindchange="switchMoneyState" />
+    </view>
+    <view>
+        <slider bindchange="sliderChange" show-value="true" value="{{money}}" step="{{moneyStep}}" max="{{moneyMax}}" min="{{moneyMin}}"  />
+    </view>
+</view>

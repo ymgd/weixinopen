@@ -1,0 +1,49 @@
+<view class ='contain'> 
+
+<!--1.菜单栏-->
+<view class ='memuView'> 
+ <block wx:for-items="{{menuItems}}"> 
+    <view class="titleView" bindtap="tapMenuItem" id="{{item.id}}"> 
+      <text class="menu-text {{currentMenuID == item.id  ? 'selected' : ''}}"  
+      >{{item.courseName}} </text>
+    </view>
+    </block>
+ </view>
+
+
+ <!--2.列表View-->
+<swiper class="swiper" interval="{{interval}}" duration="{{duration}}" 
+current="{{currentPage}}" bindchange="changeCurrentPage">
+
+ <block wx:for-items="{{lists}}">       
+<swiper-item id="{{item}}">
+  <block wx:for-items="{{[0,0,0]}}">    
+ <!--列表背景View-->
+ <view class="item">
+
+ <!--item上部分-->
+<view class="item-top">
+ <view class="imageBgView">  <image src="../../image/0713head.png"></image> </view>
+                  <view class="textBgView">
+                  <view> <text class="titleText">{{courseTitle}}</text> </view>
+                  <view>  <text>小班辅导</text>  <text class="gradeText">{{courseGrade}}</text> </view>
+                  <view> <text>课酬</text>  <text class="timeText">{{coursePay}}</text> </view>
+                 <view>  <text>课时</text>  <text class="timeCountText">{{courseCount}}</text> </view>
+                  </view>
+</view>
+
+<!--item下部分-->
+<view class="item-bottom">
+  <view class="item-bottom-priceView"> 
+  <text class="orderText">{{courseOrderid}}</text> 
+   <text class="priceText">{{coursePrice}}</text> </view>
+</view>
+
+ </view>
+
+ </block>
+ </swiper-item>
+ </block>
+ </swiper>
+
+  </view>

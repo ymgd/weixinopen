@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/log/log"
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#282828",
+    "navigationBarTitleText": "行者",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#fff",
+    "backgroundColor": "#282828",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/cycling.png",
+      "selectedIconPath": "images/cycling_selected.png"
+    }, {
+      "pagePath": "pages/log/log",
+      "text": "历史",
+      "iconPath": "images/history.png",
+      "selectedIconPath": "images/history_selected.png"
+    }]
+  },
+  "debug": true
+}

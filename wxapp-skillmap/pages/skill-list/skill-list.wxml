@@ -1,0 +1,14 @@
+<view class="wrapper">
+    <block wx:for="{{skills}}" wx:key="*this">
+        <view class="item" data-index="{{index}}" bindtap="onTap">
+            <view class="cover">
+                <view class="title" style="background-color:{{item.color}}">
+                  <view>{{item.name}}</view>
+                  <view>技能图谱</view>
+                </view>
+                <image src="/resources/logo-stuq.png" class="logo"></image>
+            </view>
+            <view class="name" >{{item.name}}</view>
+        </view>
+    </block>
+</view>

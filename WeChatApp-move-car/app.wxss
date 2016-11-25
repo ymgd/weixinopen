@@ -1,0 +1,98 @@
+/**app.wxss**/
+@font-face {
+    font-family: 'fontAwesome';
+    src: url('../../resource/fontawesome-webfont.woff') format('woff');
+}
+
+page{
+    height: 100%;
+    width: 100%;
+    font-family: "Segoe UI","Helvetica Neue",Helvetica,sans-serif;
+    background: #44403f;
+    color: #dcd9d8;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50rpx 0;
+    box-sizing: border-box;
+}
+
+.label {
+    font-size: .8rem;
+    text-shadow: 1px 1px 1px #343231;
+    color: #dcd9d8;
+}
+
+.form {
+    display: block;
+    padding: 0rem 2rem;
+    width: 100%;
+}
+
+.form-input {
+    display: inline-block;
+    width: 6rem;
+    border: 1px solid rgb(41, 41, 41);
+    box-sizing: border-box;
+    margin-left: .5rem;
+    height: 1rem;
+    font-size: .8rem;
+    padding: 0 .4rem;
+    border-radius: .1rem;
+}
+
+.ident {
+    margin-left: 1rem;
+}
+
+.content_group {
+    width: 18rem;
+    display: flex;
+    flex-direction:column;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#44403f), to(#474342));
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .5);
+    border-radius: 10rpx;
+    border: 1px solid #2e2c2b;
+    border-top-color: #605a59;
+    color: #dcd9d8;
+    margin-bottom: 1rem;
+}
+
+.content_group .title {
+    display: flex;
+    height: 1.5rem;
+    font-size: .7rem;
+    align-items: center;
+    text-shadow: 1px 1px 1px #343231;
+    padding-left: 1rem;
+    border-bottom: 2rpx solid #4c4847;
+}
+
+.content_group .content {
+    display: flex;
+    width: 100%;
+    background: #4c4847;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 1) inset;
+    overflow: hidden;
+}
+
+.content_group .content .piker {
+    font-size: .8rem;
+    text-shadow: 1px 1px 1px #343231;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}

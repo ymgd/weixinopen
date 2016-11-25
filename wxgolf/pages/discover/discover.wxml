@@ -1,0 +1,17 @@
+<!--<view class="container">-->
+<view class="page-header"></view>
+<view class="page">
+   <view class="section__ctn">
+        <image class="top-image" mode="aspectFill" src="../../images/game_bg.png"></image>
+    </view>   
+</view>
+<view class="classify">
+  <view class="classify-icon">
+    <image class="classify-icon-image" src="../../images/icon_game.png"></image>
+  </view>
+  <view class="label-2__text">
+   <label>游戏</label>
+  </view>
+</view>
+<view class="page-footer"></view>
+<!--<view>-->

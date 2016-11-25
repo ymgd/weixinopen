@@ -1,0 +1,32 @@
+<view class="tl-top">
+    <view class="tl-top-info">
+        <view class="tl-top-info-inner">
+            <view class="tl-top-info-text">
+                <view class="tl-top-info-title">{{albumInfo.name}}</view>
+                <view class="tl-top-info-base">
+                    <text>{{albumInfo.singername}}</text><text style="margin-left: 5px;">{{albumInfo.aDate}}</text><text style="margin-left:10px;">{{albumInfo.genre}}</text>
+                </view>
+            </view>
+            <view class="tl-top-play"></view>
+        </view>
+    </view>
+    <image class="tl-img"  mode="aspectFit" src="{{coverImg}}"></image>
+    <view class="tl-top-b"></view>
+</view>
+
+<view class="song-list" style="background:{{listBgColor}}">
+    <view class="song-item" wx:for="{{albumInfo.list}}" wx:key="unique" bindtap="bindMusicTab" data-data="{{item.data}}" data-index="{{index}}" data-mid="{{item.songmid}}">
+        <text class="song-index">{{index+1}}</text>
+        <view class="song-item-title">{{item.songname}}</view>
+        <view class="song-item-text">
+            <block wx:for="{{item.singer}}" wx:key="unique">
+                <block wx:if="{{index!=0}}">|</block>
+                {{item.name}}
+            </block>
+        </view>
+    </view>
+</view>
+<view class="desc" style="background:{{listBgColor}}">
+    <view class="desc-title">简介</view>
+    <text>{{albumInfo.desc}}</text>
+</view>

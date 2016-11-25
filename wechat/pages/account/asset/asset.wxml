@@ -1,0 +1,8 @@
+<view class="zhzzc">账户总资产统计(元)</view>
+<canvas canvas-id="firstCanvas"></canvas>
+
+
+
+
+<view>投资收益统计(元)</view>
+<canvas canvas-id="secondCanvas"></canvas>

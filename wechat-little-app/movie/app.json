@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/recommend/recommend",
+    "pages/search/search",
+    "pages/new/new"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2b2b2b",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+         "color":"#dddddd",
+         "selectedColor":"#3cc51f",
+         "backgroundColor":"#2b2b2b",
+         "borderStyle":"black",
+         "list":[
+             {
+                 "pagePath":"pages/movie/movie",
+                 "text":"影院热映",
+                 "iconPath":"assets/img/dy-1.png",
+                 "selectedIconPath":"assets/img/dy.png"
+             },
+             {
+                 "pagePath":"pages/recommend/recommend",
+                 "text":"电影推荐",
+                 "iconPath":"assets/img/tj-1.png",
+                 "selectedIconPath":"assets/img/tj.png"
+             },
+             {
+                 "pagePath":"pages/search/search",
+                 "text":"查询电影",
+                 "iconPath":"assets/img/search-1.png",
+                 "selectedIconPath":"assets/img/search.png"
+             }
+         ]
+     }
+
+}

@@ -1,0 +1,10 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  background-color: lightpink;
+  color: lightseagreen;
+}
+.log-item {
+  margin: 20rpx;
+}

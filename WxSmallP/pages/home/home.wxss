@@ -1,0 +1,75 @@
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 200px;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+}
+
+.goodlistcell {
+  border-bottom: 1px solid #f8f8f8;
+  padding: 10px 10px 10px 85px;
+  /*padding-left: 75px;*/
+  
+  /*height: 101px;*/
+}
+
+.headImage {
+  width : 75px;
+  height : 81px;
+  border-radius: 6px;
+  /*padding: 10px;*/
+  margin-left: -75px;
+  float: left;
+  /*display: inline-block;*/
+
+}
+
+.cellText {
+  /*margin-top: -91px;*/
+  margin-left:10px;
+  /*display: inline-block;*/
+}
+
+.text {
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: inline-block;
+}
+
+.name {
+  color: "#000000";
+  font-size: 18px;
+}
+
+.saled {
+  margin-top: 4px;
+  color: "#7d7d7d";
+  font-size: 14px;
+}
+
+.brief {
+  margin-top: 6px;
+  color: "#7d7d7d";
+  font-size: 14px;
+}
+
+.price {
+  margin-top: 8px;
+  color: red;
+  font-size: 18px;
+}
+
+.addsubTap {
+  float: right;
+  margin-top: -20px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 9999;
+}

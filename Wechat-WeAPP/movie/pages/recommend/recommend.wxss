@@ -1,0 +1,7 @@
+@import "../index/index.wxss";
+.movie-end{
+    color:#777;
+    text-align:center;
+    font-size:12px;
+    padding:10rpx;
+}

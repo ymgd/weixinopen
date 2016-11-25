@@ -1,0 +1,14 @@
+<view class="mainView">
+    <view class="title">上次运动</view>
+    <block wx:if="{{wp}}">
+        <view class="show-meters">运动距离：<text>{{wp.meters}}</text></view>
+        <view class="show-time">运动时间：<text>{{wp.time}}</text></view>
+    </block>
+    <block wx:if="{{waypoints}}">
+        <view wx:for="{{waypoints}}"  wx:for-index="idx" wx:for-item="item" class="item">
+        ⚪️ {{item.lat}} , {{item.lng}}
+        </view>
+    </block>
+</view>
+
+

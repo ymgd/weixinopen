@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{"hi~ "+userInfo.nickName}}</text>
+  </view>
+  <view class="user-infos">
+    <view>
+      <text>关于作者:</text>
+    <view/>
+    <view>
+      <text>Github:</text>
+      <text>{{Github}}</text>
+    <view/>
+    <view>
+      <text>Blog:</text>
+      <text>{{Blog}}</text>
+    <view/>
+  </view>
+</view>

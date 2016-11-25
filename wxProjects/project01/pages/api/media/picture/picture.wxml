@@ -1,0 +1,58 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+      
+         <template is="header" 
+        data="{{title:'wx.chooseImage、wx.previewImage',desc:'从本地相册选择图片或使用相机拍照。'}}"/>
+        
+        <view class="set-section">
+            <view class="set-select">
+                <picker mode="selector" value="{{sourceTypeIndex}}"  range="{{sourceTypeName}}" bindchange="bindSourceType">
+                    <view class="select-arg flex">
+                        <view class="p-title">
+                            <text>图片来源</text>
+                            <text class="col1 f14">请选择</text>
+                        </view>
+                        <view class="p-s col1"> {{sourceTypeName[sourceTypeIndex]}}</view>
+                
+                    </view>
+                   
+                </picker>
+
+                <picker mode="selector" value="{{sizeTypeIndex}}"  range="{{sizeTypeName}}" bindchange="bindSizeType">
+                    <view class="select-arg flex">
+                        <view class="p-title">
+                            <text>图片质量</text>
+                            <text class="col1 f14">请选择</text>
+                        </view>
+                         <view class="p-s col1"> {{sizeTypeName[sizeTypeIndex]}}</view>
+                
+                    </view>
+                  
+                </picker>
+
+                <picker mode="selector" value="{{countIndex}}"  range="{{countType}}" bindchange="bindCount">
+                  
+                    <view class="select-arg flex">
+                            <view class="p-title">
+                                <text>图片数量</text>
+                                <text class="col1 f14">请选择</text>
+                            </view>
+                            <view class="p-s col1"> {{countType[countIndex]}}</view>
+                    </view>
+                </picker>
+            </view>
+
+           <view class="show-pic flex">
+                <image wx:for="{{imgList}}" mode="aspectFill" src="{{item}}" data-src="{{item}}" 
+                class="select-pic" bindtap="previewImage"/>
+           </view>
+           <button type="primary" bindtap="chooseImage"> 选择图片 </button>
+            
+
+        </view>
+    </view>
+
+
+    
+</view>

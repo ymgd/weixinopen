@@ -1,0 +1,62 @@
+.banner,
+.banner image {
+    width: 750rpx;
+    height: 320rpx;
+}
+
+/* 商品信息 */
+.ten-box {
+    width: 750rpx;
+    padding-bottom: 40rpx;
+    display: flex;
+    flex-flow: wrap;
+    background-color: rgb(255,255,255);
+}
+
+.ten-item-box {
+    width: 330rpx;
+    margin: 40rpx 0 0 30rpx;
+}
+
+.ten-item-img {
+    width: 330rpx;
+    height: 330rpx;
+    margin-bottom: 16rpx;
+    border-radius: 6rpx;
+}
+
+.ten-item-title {
+    display: block;
+    width: 314rpx;
+    height: 40rpx;
+    margin: 0 auto;
+    line-height: 40rpx;
+    font-size: 28rpx; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(68,68,68);
+    overflow: hidden;
+}
+
+.ten-item-content {
+    height: 44rpx;
+    margin: 4rpx 8rpx 0;
+    line-height: 44rpx;
+    color: rgb(153,153,153);
+}
+
+.ten-price {
+    font-size: 32rpx;
+    color: #fb5d5d;
+}
+
+.ten-btn {
+    height: 56rpx;
+    margin: 10rpx 8rpx 0;
+    line-height: 56rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: rgb(255,255,255);
+    background-color: #fb5d5d;
+}
+

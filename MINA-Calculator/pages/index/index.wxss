@@ -1,0 +1,58 @@
+/**index.wxss**/
+
+/*---screen---*/
+.screen{
+  
+  width:80%;
+  margin-top:-20%;
+  margin-bottom:15%;
+  text-align: right;
+  padding: 20px;
+  background-color: gainsboro;
+}
+.screen text{
+  font-size: 30px;
+}
+
+/*---button-line---*/
+.button-line{
+  width:100%;
+}
+.button-line button{
+  float:left;
+  margin: 3% 2.5% 3% ;
+  width:20%;
+}
+
+/*---button-line2---*/
+.button-line2{
+  width:100%;
+  
+}
+.button-line2 button{
+   margin:3% 2.5% 3%;
+}
+.button-line2 .btn1{
+  width:20%;
+  float: left;
+}
+.button-line2 .btn2{
+  width:45%;
+  float: left;
+}
+.button-line2 .btn3{
+  width:20%;
+  float: left;
+}
+
+/*---button-line3---*/
+.button-line3{
+  
+  width:100%;
+}
+.button-line3 button{
+  float:left;
+  width:45%;
+  margin:3% 2.5% 3%
+}
+

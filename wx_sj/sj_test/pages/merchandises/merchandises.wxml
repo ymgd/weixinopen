@@ -1,0 +1,36 @@
+<scroll-view scroll-y='true' style="height: {{wHeight}}px;" bindscrolltolower='onReachBottom' scroll-top='{{scrollTop}}'>
+<view  class='merchandise' wx:for="{{merchandiseInfo}}">
+    <view class='merchandise_top'>
+        <view class='portraitPath'><image class='portraitPath_img' src="{{item.portraitPath}}"></image></view>
+        <text class='userName'>{{item.userName}}</text>
+        <text class='currentPrice'>{{item.currentPrice}}</text>  
+        <view class='rmb'><image class='rmb_img'  src="../../images/人民币.png"></image></view>
+    </view>
+    <view data-merchandiseID='{{item.merchandiseID}}' bindtap='goToMerchandiseInfo' class='merchandise_middle'>
+        <view  wx:for='{{item.imgList}}' wx:if='{{item.imgList.length == 1}}' wx:for-item='img'>
+            <view ><image class='merchandise_img_1' mode='aspectFit'
+                src="{{img.imgPath}}" binderror="errImg" data-err-img='{{img.imgPath}}'></image>
+            </view>
+        </view>
+        <view  wx:for='{{item.imgList}}' wx:if='{{item.imgList.length == 2}}' wx:for-item='img'>
+            <view ><image class='merchandise_img_2' mode='aspectFill'
+                src="{{img.imgPath}}" binderror="errImg" data-err-img='{{img.imgPath}}'></image>
+            </view>
+        </view>
+        <view  wx:for='{{item.imgList}}' wx:if='{{item.imgList.length >= 3}}' wx:for-item='img'>
+            <view wx:if='{{index < 3}}'><image class='merchandise_img_3' mode='aspectFill'
+                src="{{img.imgPath}}" binderror="errImg" data-err-img='{{img.imgPath}}'></image>
+            </view>
+        </view>
+    </view>
+    <view class='merchandise_bottom'>
+        <view class='college'><image class='college_img' mode='aspectFit' src="../../images/学校.png"></image></view>
+        <text class='collegeName'>{{item.collegeName}}</text>
+    </view>
+</view>
+</scroll-view>
+<image bindtap='goToTop' class='goToTop_{{imgShow}}' src="../../images/置顶.png"></image>
+
+
+
+

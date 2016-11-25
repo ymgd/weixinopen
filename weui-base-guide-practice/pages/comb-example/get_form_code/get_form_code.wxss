@@ -1,0 +1,5 @@
+@import "../../../public/common_form.wxss";
+
+.toggle-code {
+    min-width: 200rpx;
+}

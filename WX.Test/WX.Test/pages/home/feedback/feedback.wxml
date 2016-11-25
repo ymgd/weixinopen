@@ -1,0 +1,20 @@
+<view class="container">
+    <!--聊天信息-->
+    <view class="chatMessageContainer">
+        <view class="chatMessageCell" wx:for="{{chatMessages}}">
+            <view class="otherCellContainer" wx:if="{{item.type === 0}}">
+                <image class="chatIcon cellIcon" src="/resource/images/goodFood.png"></image>
+                <view class="chattTitle cellTitle">{{item.title}}</view>
+            </view>
+            <view class="meCellContainer" wx:elif="{{item.type === 1}}">
+                <view class="meChatTitle cellTitle">{{item.title}}</view>
+                <image class="meChatIcon cellIcon" src="/resource/images/goodFood.png"></image>
+            </view>
+        </view> 
+    </view>
+    <!--底部工具条-->
+    <view class="inputToolBar">
+        <input class="inputTool" bindinput="bindInput" placeholder="请输入内容"/>
+        <button class="sendButtonTool" bindtap="sendMessage">发送</button>
+    </view>
+</view>

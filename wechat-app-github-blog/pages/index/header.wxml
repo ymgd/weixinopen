@@ -1,0 +1,11 @@
+<!-- header -->
+<template name="header">
+	<view class="header">
+		<view class="text">
+			<view class="title">{{site.title}}</view>
+		</view>
+		<view class="logo">
+			<image src="http://image.youzhan.org/e/35/22ccaf4c24ef690f7767e6a3ba5f0.png" />
+		</view>
+	</view>
+</template>

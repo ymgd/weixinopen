@@ -1,0 +1,102 @@
+.chat-ul{
+    padding-bottom: 80px;
+    list-style: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.chat-li-slef{
+    text-align:right;
+    padding-top: 8px;
+    clear:both;
+}
+.chat-li-slef .head{
+    float:right;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    margin-right:5px;
+}
+.chat-li-other{
+    padding-top: 8px;
+    clear:both;
+}
+.chat-li-other .head{
+    float:left;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    margin-left:5px;
+}
+
+.chat-ul .content{
+    position: relative;
+    clear: both;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    font: 15px/20px 'Noto Sans', sans-serif;
+    border-radius: 8px;
+    background-color: rgba(4, 116, 228,1.0);
+    max-width:55%;
+}
+.chat-ul .content-self{
+    animation: show-chat-odd 0.15s 1 ease-in;
+    -moz-animation: show-chat-odd 0.15s 1 ease-in;
+    -webkit-animation: show-chat-odd 0.15s 1 ease-in;
+    margin-right: 10px;
+    color       : white;
+    text-align  : left;
+}
+.chat-ul .content-self::after{
+    position: absolute;
+    top: 15px;
+    border-right: 8px solid transparent;
+    right: -8px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 8px solid rgba(4, 116, 228,1.0);
+}
+
+.chat-ul .content-other{
+    animation: show-chat-even 0.15s 1 ease-in;
+    -moz-animation: show-chat-even 0.15s 1 ease-in;
+    -webkit-animation: show-chat-even 0.15s 1 ease-in;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255,1.0);
+    color : #1f1f1f;
+}
+.chat-ul .content-other::after{
+    position: absolute;
+    top: 15px;
+    border-left: 8px solid transparent;
+    left: -8px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 8px solid rgba(255, 255, 255,1.0);
+}
+
+
+.chat-input{
+    background-color:#ffffff;
+    margin:8px 8px 0;
+    border-radius:5px;
+}
+.chat-input input{
+   padding:2px 5px;
+   font-size:13px;
+}
+
+.chat-fn-select{
+    display:flex;
+    margin:10px;
+}
+.chat-fn-select view{
+    flex : 1;
+    text-align: center;
+}
+.chat-fn-select image{
+   height:20px;
+   width:20px; 
+}

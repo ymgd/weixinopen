@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>vConsole/Demo1</title>
+  <link href="./lib/weui.min.css" rel="stylesheet"/>
+  <link href="./lib/demo.css" rel="stylesheet"/>
+
+  <script src="./lib/zepto.min.js"></script>
+  <script src="./lib/zepto.touch.min.js"></script>
+
+  <!-- 引入vConsole的JS库 -->
+  <script src="../dist/vconsole.min.js"></script>
+  
+</head>
+<body ontouchstart>
+  <div class="page">
+    <h1 class="page_title">Demo 1</h1>
+    <div class="weui_text_area">
+      <p class="weui_msg_desc">点击下面的按钮，即可打印 log。<br/>点击右下角按钮，即可查看 log。</p>
+    </div>
+    <a href="javascript:;" class="weui_btn weui_btn_primary js_btn_log" data-type="log">普通日志(log)</a>
+    <a href="javascript:;" class="weui_btn weui_btn_primary js_btn_log" data-type="info">信息日志(info)</a>
+    <a href="javascript:;" class="weui_btn weui_btn_primary js_btn_log" data-type="debug">调试日志(debug)</a>
+    <a href="javascript:;" class="weui_btn weui_btn_primary js_btn_log" data-type="warn">警告日志(warn)</a>
+    <a href="javascript:;" class="weui_btn weui_btn_primary js_btn_log" data-type="error">报错日志(error)</a>
+
+    <a href="javascript:;" class="weui_btn weui_btn_default js_btn_log_obj">打印Object</a>
+    <a href="javascript:;" class="weui_btn weui_btn_default js_btn_trigger_error">触发JS Error</a>
+    <a href="javascript:;" class="weui_btn weui_btn_default js_btn_log_sys">打印到系统面板</a>
+    <a href="javascript:;" class="weui_btn weui_btn_default js_btn_ajax">发起AJAX</a>
+  </div>
+  <div class="weui_toptips weui_notice" id="js_tips">已打印log</div>
+</body>
+
+<script>
+console.info('欢迎使用 vConsole。vConsole 是一个由微信公众平台前端团队研发的 Web 前端开发者面板，可用于展示 console 日志，方便开发、调试。');
+
+$('.js_btn_log').on('tap', function(e) {
+  var type = $(this).data('type');
+  console[type](type); // 例如，console.log(type)
+  showTips();
+});
+$('.js_btn_log_obj').on('tap', function(e) {
+  var obj = {
+    'foo': 'bar',
+    'obj': {'bool': true},
+    'arr': [9, 8, 7],
+    'tips': 'JS对象可以折叠展示'
+  };
+  console.log(obj);
+  showTips();
+});
+$('.js_btn_trigger_error').on('tap', function(e) {
+  showTips();
+  var err = undefined;
+  err.a = 1;
+});
+$('.js_btn_log_sys').on('tap', function(e) {
+  // 输出到系统面板
+  console.log('[system]', '当前时间戳:', (+new Date()));
+  showTips();
+});
+$('.js_btn_ajax').on('tap', function(e) {
+  // 发起一个AJAX
+  $.post('ajax.php',  { id: Math.random() }, function(resp) {
+    console.log(resp);
+  });
+  showTips();
+});
+
+// 用于页面内展示顶部tips
+var tipsTimer;
+function showTips() {
+  tipsTimer && clearTimeout(tipsTimer);
+  $('#js_tips').show();
+  tipsTimer = setTimeout(function() {
+    $('#js_tips').hide();
+  }, 1500);
+}
+
+</script>
+</html>

@@ -1,0 +1,102 @@
+
+.more{
+  font-size:12px;
+}
+
+/*精品推荐 start*/
+.header{
+  border-left-width:4rpx;
+  border-left-style:solid;
+  border-left-color:palevioletred;
+
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+ 
+  height:80rpx;
+  padding:0 20rpx;
+  margin:20rpx 0;
+
+  border-bottom:1px solid #e8e8e8;
+
+}
+
+.header-title{
+  color:#e70b26;
+}
+
+.pro-list{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:space-around;
+  padding:0 1%;
+  /*padding-right:5%;*/
+}
+
+.pro-item{
+  
+  width:48%;
+  height:250rpx;
+  background-color: red;
+  /*border:1rpx solid #e8e8e8;*/
+  /*margin:5% 0 0 5%;*/
+  margin-top:15rpx;
+  position: relative
+}
+
+.pro-title{
+  position: absolute;
+  bottom:0;
+  left:0;
+  text-align: center;
+  color:#fff;
+  line-height: 1.2;
+  background-color:rgba(0, 0, 0, 0.4);
+ 
+  width:100%;
+  height:50rpx;
+  box-sizing:border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:0 10rpx;
+
+}
+/*精品推荐 end*/
+
+/*热门测评 start*/
+.cp-item{
+  height:500rpx;
+ 
+}
+
+.cp-pic{
+  height:300rpx;
+  position: relative;
+}
+
+.cp-icon{
+  position: absolute;
+  bottom:-35rpx;
+  right:100rpx;
+  width:75rpx;
+  height:75rpx;
+  border-radius:50%;
+
+}
+
+.cp-desc text{
+  display: block;
+}
+.cp-desc{
+  padding:0 20rpx;
+}
+
+.cp-intro{
+  font-size:12px;
+  line-height: 1.2;
+  color:#999;
+}
+
+
+/*热门测评 end*/

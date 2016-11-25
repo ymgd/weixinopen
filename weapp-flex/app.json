@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/grid/grid",
+    "pages/precent/precent"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#24252C",
+    "navigationBarTitleText": "weapp-flow",
+    "navigationBarTextStyle":"#ffffff"
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#ffffff",
+    "borderStyle": "#24252C",
+    "backgroundColor": "#24252C",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/radio.png",
+        "selectedIconPath": "images/radio-active.png",
+        "text": "布局"
+      },
+      {
+        "pagePath": "pages/grid/grid",
+        "iconPath": "images/radio.png",
+        "selectedIconPath": "images/radio-active.png",
+        "text": "网格"
+      },
+      {
+        "pagePath": "pages/precent/precent",
+        "iconPath": "images/radio.png",
+        "selectedIconPath": "images/radio-active.png",
+        "text": "百分比"
+      }
+    ]
+  }
+}

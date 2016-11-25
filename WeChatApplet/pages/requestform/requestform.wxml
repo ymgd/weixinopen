@@ -1,0 +1,25 @@
+<!--TODO: add more field-->
+<view>
+  <view>
+  <view>选择模板</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{templateNames}}">
+    <view>
+      当前选择：{{templateNames[index]}}
+    </view>
+  </picker>
+  </view>
+  <view>
+    <view>主题：</view>
+    <input id="sub" type="text" placeholder="{{ sub?sub:'输入主题，留空使用模板默认值' }}" bindchange="bindKeyInput"/>
+  </view>  
+  <view>
+    <view>描述：</view> 
+    <textarea id="des" value="{{ des?des:'' }}" placeholder="{{ des?'':'输入描述' }}" bindblur="bindKeyInput"/>
+  </view>  
+  <button bindtap="bindSaveTap" style="width:98%;">提交请求</button>
+</view>
+<view class="body-view">
+  <toast hidden="{{toastHidden}}" duration="3000" bindchange="toastChange">
+    {{message + ' ID:'+ newid}}
+  </toast>
+</view>

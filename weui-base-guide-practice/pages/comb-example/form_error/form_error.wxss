@@ -1,0 +1,107 @@
+page {
+    height: 100%;
+}
+.container {
+    padding: 0;
+    font-size: 34rpx;
+    background: #efeff4;
+}
+
+.section-label {
+    font-size: 28rpx;
+}
+
+.section-body {
+    background: #ffffff;
+}
+
+.section-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 88rpx;
+    padding: 0;
+    margin: 0;
+    margin-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.section-label text {
+    margin-top: 14rpx;
+}
+
+.section-row .col2 {
+    width: 100%;
+    margin-left: 30rpx;
+}
+
+.section-row .col {
+    display: inline-block;
+    min-width: 150rpx;
+}
+
+.section-row {
+    border-bottom: 2rpx solid #E5E5E5;
+}
+
+.section-body .section-row:last-child{
+    border: none;
+}
+
+.section-label.section-row {
+    border: none;
+}
+
+.blank-bar {
+    height: 30rpx;
+}
+
+.section-row button {
+    width: 100%;
+    color: #ffffff;
+}
+
+.section-row.no-border {
+    border: 0;
+}
+
+.section.check-term {
+    padding: 20rpx 0;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .section-row {
+    justify-content: center;
+}
+
+.plh {
+    color: #d5d5d5;
+}
+
+.check-box-png {
+    width: 24rpx;
+    height: 24rpx;
+    padding: 10rpx;
+    padding-left: 0;
+}
+
+.error {
+    background: #e64340;
+    color: #ffffff;
+}
+
+.section.notice {
+    display: flex;
+    justify-content: center;
+    height: 70rpx;
+    align-items: center;
+    position: absolute;
+    width: 100%;    
+}
+
+

@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<block wx:for="{{usersList}}" wx:for-item="user">
+<view class="userItem" bindtap="chat">
+  <view class="pic">
+    <image src="{{user.src}}"></image>
+  </view>
+  <view class="name">
+    <view>{{user.name}}</view>
+  </view>
+  <view class="time">{{user.time}}</view>
+</view>
+</block>

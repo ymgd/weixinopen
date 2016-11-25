@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#messages {
+    margin: 0 20rpx;
+    display: flex;
+    flex-direction: column;
+    font-size: 30rpx;
+    /*border: 1px solid red;*/
+}
+
+#input {
+    display: flex;
+    flex-direction: flow;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20rpx 20rpx 40rpx 20rpx;
+}
+
+#user-input {
+    width: 550rpx;
+    border: 1px solid #ddd;
+}
+
+#input button {
+    margin: 0;
+}
+
+#messages .message-server, #messages .message-client {
+    border: 1px solid #ddd;
+    border-radius: 8rpx;
+    width: 690rpx;
+    margin: 0 0 30rpx 0;
+    padding: 10rpx;
+}
+
+#messages .message-server {
+    background-color: white;
+}
+
+#messages .message-client {
+    background-color: limegreen;
+}

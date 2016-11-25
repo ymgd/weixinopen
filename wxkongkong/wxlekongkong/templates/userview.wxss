@@ -1,0 +1,37 @@
+.userview {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userview .avatarview {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+    background-color: red;
+}
+
+.userview .introview {
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.userview .introview .nameview {
+    font-size: 14px;
+    color: #333333;
+}
+
+.userview .introview .descview {
+    margin-top: 15rpx;
+    font-size: 12px;
+    color: #969696;
+    display: flex;
+    flex-direction: row;
+}
+
+.userview .introview .countlbl {
+    color: #00C4F7;
+}

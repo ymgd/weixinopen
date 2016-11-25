@@ -1,0 +1,9 @@
+<scroll-view scroll-y="true" class="list" bindscrolltolower="handleLoadMore">
+  <view class="lll"  wx:for="{{list}}" wx:for-item="item" bindtap="bindViewTap" data-title="{{item.title}}" bindtap="tapName" id="{{item.id}}">
+	  <image style=" width: 80rpx;height: 80rpx;margin: 20rpx;" src="http://tnfs.tngou.net/image{{item.img}}" mode="aspectFill"></image>
+    <view  class="eee" > 
+       <view style="margin:10rpx;font-size:30rpx"> {{item.title}}</view>
+       <!--<view style="margin:5rpx;font-size:6rpx"> {{item.keywords}}</view>-->
+    </view>
+  </view>
+</scroll-view>

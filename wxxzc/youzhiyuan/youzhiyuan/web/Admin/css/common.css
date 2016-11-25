@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+*{margin:0px;padding:0px;}
+#map{
+	width:90%;
+	height:50px;
+	line-height:50px;
+	background:url(../images/pin_1.png) no-repeat 0px 0px;
+	padding-left:5%;
+	margin:10px auto;
+	border-bottom:1px dashed #d4d4d4;
+}
+#map .title{
+	margin:0px 10px;
+	font-size:24px;
+	font-weight:bold;
+	text-align:left;
+}
+#content{
+	width:90%;
+	margin:10px auto;
+	height:auto;
+	overflow:hidden;
+}
+/********************* 分类层级  *************************/
+#content .table tbody .hide{
+	display:none;
+}
+
+#table-d{
+	width:99%;
+	height:auto;
+	border:1px solid #ddd;
+	border-radius:5px;
+}
+#table-d ul{
+	width:100%;
+	border-bottom:1px solid #ddd;
+}
+#table-d ul li{
+	list-style:none;
+}

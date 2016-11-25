@@ -1,0 +1,21 @@
+<import src="../common/header.wxml" />
+<import src="../common/footer.wxml" />
+
+<view class="container">
+  <template is="header" data="{{}}"/>
+
+  <view class="page-body">
+      <view wx:for="{{apitest}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName.Title}}
+   <text class="page-body-text">      
+      {{itemName.Summary}}
+      </text>
+  
+  </view>
+  </view>
+
+
+
+  <template is="footer" />
+</view>
+

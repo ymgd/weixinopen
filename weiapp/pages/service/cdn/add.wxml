@@ -1,0 +1,116 @@
+<view class="page">
+  <view class="page__hd page__bd_spacing">
+    <form bindsubmit="submit_add" >
+        <view class="weui-cells__title">域名:</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="DomainName" placeholder="请输入域名"/>
+                </view>
+            </view>
+        </view>
+        <view>
+        <view class="weui-cells__title">业务类型:</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd" style="width:100%" >
+                    <picker bindchange="SelectedType" name="CdnType" value="{{type_index}}" range="{{CdnTypeName}}">
+                        <view class="weui-select">{{CdnTypeName[type_index]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells__title">源站类型:</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd" style="width:100%" >
+                    <picker bindchange="SelectedSource" name="SourceType" value="{{source_index}}" range="{{SourceTypeName}}">
+                        <view class="weui-select">{{SourceTypeName[source_index]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+        <view class="{{is_ip_show}}">
+            <view class="weui-cells__title">IP地址列表</view>
+            <view class="weui-cells weui-cells_after-title">
+                <checkbox-group bindchange="ipChange" name="SourcesIp">
+                    <label class="weui-cell weui-check__label" wx:for="{{ipItems}}" wx:key="{{item.name}}">
+                        <checkbox class="weui-check" value="{{item.name}}" checked="{{item.checked}}"/>
+
+                        <view class="weui-cell__hd weui-check__hd_in-checkbox" >
+                            <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                            <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                        </view>
+                        <view class="weui-cell__bd" bindlongtap="to_ip_menu" data-index="{{index}}" >{{item.name}}</view>
+                    </label>
+                </checkbox-group>
+                <view class="weui-cell weui-cell_link">
+                    <view class="weui-cell__bd" bindtap="add_ip">添加ip</view>
+                </view>
+            </view>
+        </view>
+        <view class="{{is_domain_show}}">
+            <view class="weui-cells__title">源站域名:</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="SourcesDomain" placeholder="请输入域名"/>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="{{is_oss_domain_show}}">
+            <view class="weui-cells__title">OSS域名地址:</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="SourcesOSS" placeholder="请输入域名"/>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <checkbox-group bindchange="ChangePort" name="is_port">
+                <label class="weui-cell weui-check__label" >
+                    <checkbox class="weui-check" value="1" checked="{{is_port}}"/>
+                    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                        <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!is_port}}"></icon>
+                        <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{is_port}}"></icon>
+                    </view>
+                    <view class="weui-cell__bd">使用443端口</view>
+                </label>
+            </checkbox-group>
+        </view>
+
+
+      <button class="weui-btn weui-btn_primary" type="primary" 
+         form-type="submit">保存</button>
+    
+    </view>
+    </form>
+  </view>
+  <view class="js_dialog {{add_ip_dialog_show}}" >
+        <view class="weui-mask"></view>
+        <form bindsubmit="add_ip_form">
+        <view class="weui-dialog">
+            <!--<view class="weui-dialog__hd">
+                <view class="weui-dialog__title">弹窗标题</view>
+            </view>-->
+            <view class="weui-dialog__bd">
+                <view class="weui-cells weui-cells_after-title">
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__bd">
+                            <input class="weui-input" name='ip' auto-focus placeholder="请输入ip地址" />
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-dialog__ft">
+                <view bindtap="hide_dialog" class="weui-dialog__btn weui-dialog__btn_default">取消</view>
+                <button form-type="submit" class="weui-dialog__btn weui-dialog__btn_primary">添加</button>
+            </view>
+        </view>
+        </form>
+    </view>
+
+</view>

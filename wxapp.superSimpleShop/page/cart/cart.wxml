@@ -1,0 +1,36 @@
+<view class="container">
+    <view class="page-head">
+        <text>购物车</text>
+    </view>
+
+    <view id="action">
+        <button bindtap="edit" type="primary">{{inEditMode ? '完成' : '编辑'}}</button>
+        <button class="{{inEditMode ? '' : 'hide'}}" type="warn" bindtap="deleteItems">删除</button>
+    </view>
+    
+    <view id="carts">
+        <checkbox-group bindchange="selectItems">
+            <view wx:for="{{items}}" class="item {{index == 0 ? 'item-first' : ''}}" wx:key="pid">
+                <checkbox style="width: 10%" value="{{item.pid}}"></checkbox>
+                <navigator url="../item/item?index={{index}}" style="width: 25%">
+                    <image src="/image/{{item.image}}.jpg"></image>
+                </navigator>
+                <text style="width: 40%">{{item.name}}</text>
+                <text style="width: 25%">￥{{item.price}}</text>
+                <button id="cut{{index}}" class="amountButtonLeft" disabled="{{inEditMode ? false : true}}"
+                bindtap="decrease">-</button>
+                <input style="width:10%" value="{{item.inCartQuantity}}" disabled="true"
+                    type="number" class="{{inEditMode ? '' : 'input-disabled'}}" id="qty{{index}}"
+                    bindinput="editQty"></input>
+                <button id="add{{index}}" class="amountButtonRight" disabled="{{inEditMode ? false : true}}"
+                bindtap="increase">+</button>
+            </view>
+        </checkbox-group>
+        <view id="total-price">
+            <text>总价：￥{{totalPrice}}</text>
+        </view>
+        <view id="pay">
+            <button type="primary" bindtap="placeOrder">去结算</button>
+        </view>
+    </view>
+</view>

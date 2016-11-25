@@ -1,0 +1,10 @@
+<view class="container">
+  <scroll-view class="board" scroll-y="true">
+    <navigator wx:for="{{ boards }}" url="../list/list?type={{ item.key }}&title={{ item.name }}" hover-class="none">
+      <view class="board-item">
+        <text>{{ item.name }}</text>
+        <image src="../../images/arrowright.png" mode="aspectFill"/>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

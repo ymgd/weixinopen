@@ -1,0 +1,69 @@
+/**index.wxss**/
+/*用户信息*/
+@import "userinfo/userinfo.wxss";
+/*日历*/
+@import "calendar/calendar.wxss";
+/*用户资产*/
+@import "userassets/userassets.wxss";
+/*白条*/
+@import "baitiao/baitiao.wxss";
+/*推荐*/
+@import "investment/investment.wxss";
+/*你的全部服务*/
+@import "servicearea/servicearea.wxss";
+/*新闻*/
+@import "newsarea/newsarea.wxss";
+
+.main-content{
+  background-color: #efeff4;
+}
+
+.bg-fff{
+  background-color: #fff;
+}
+/*
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}*/
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.item-bar-top{
+    padding-left: 32rpx;
+    padding-top: 37rpx;
+    height: 120rpx;  
+    font-family: PingFangSC-Medium;
+    font-size: 32rpx;
+    color: #333333;  
+    align-content: center;   
+    box-sizing: border-box;     
+}
+
+.item-bar-icon{    
+    width: 30rpx;
+    height: 30rpx;
+    padding-top: 8rpx;
+    margin-right: 18rpx;
+}
+
+.item-bar-desp{    
+   font-family: PingFangSC-Medium;
+    font-size: 32rpx;
+    color: #333333;
+    line-height: 46rpx;
+}

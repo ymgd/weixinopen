@@ -1,0 +1,44 @@
+/*.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.textStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer {
+  margin-top: 200px;
+}*/
+
+.neighbor-photo{
+  width: 72rpx;
+  height: 72rpx;
+  margin-right: 20rpx;
+}
+.xs-font{
+  font-size: 13px;
+}
+.s-font{
+  font-size: 15px;
+}
+.name-and-lastchat-warp{
+  display: flex;
+  flex-direction: column;
+}
+.lastchat{
+  color: #999;
+}
+.table-title{
+  padding: 20rpx 30rpx;
+  font-size: 16px;
+  border-bottom: 1px solid #f6f6f6;
+  color: #999;
+}

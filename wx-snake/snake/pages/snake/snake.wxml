@@ -1,0 +1,24 @@
+<!--snake.wxml-->
+<view class="control" bindtouchstart="tapStart" bindtouchmove="tapMove" bindtouchend="tapEnd">
+
+<view class="score">
+    <view class="title">snake</view>
+    <view class="scoredetail">
+        <view class="scoredesc">得分</view>
+        <view class="scorenumber">{{score}}</view>
+    </view>
+    <view class="scoredetail">
+        <view class="scoredesc">历史最高</view>
+        <view class="scorenumber">{{maxscore}}</view>
+    </view>
+</view>
+<view class="ground">
+    <view wx:for="{{ground}}"  class="rows" wx:for-item="cols">
+        <view wx:for="{{cols}}" class="block block_{{item}}" >
+
+        </view>
+    </view>
+</view>
+<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+  <view> 游戏结束，重新开始吗？ </view>
+</modal>

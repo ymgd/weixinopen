@@ -1,0 +1,22 @@
+<view class="container">
+    <view class="page-head">
+        <text>订单</text>
+    </view>
+    
+    <view id="order">
+        <view wx:for="{{items}}" class="item {{index == 0 ? 'item-first' : ''}}" wx:key="pid">
+            <navigator url="../item/item?index={{index}}" style="width: 25%">
+                <image src="/image/{{item.image}}.jpg"></image>
+            </navigator>
+            <text style="width: 40%">{{item.name}}</text>
+            <text style="width: 25%">￥{{item.price}}</text>
+            <text>{{item.inCartQuantity}}</text>
+        </view>
+        <view id="total-price">
+            <text>总价：￥{{totalPrice}}</text>
+        </view>
+        <view id="pay">
+            <button type="primary" bindtap="pay">支付</button>
+        </view>
+    </view>
+</view>

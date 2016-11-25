@@ -1,0 +1,28 @@
+<view class="container">
+  <!-- 选择发布tab -->
+  <view class="top-bar">
+    <view class="top-bar-item" style="color:{{help}}" id="help" catchtap="onTapTag">邻里求助</view>
+    <view class="top-bar-item" style="color:{{notice}}" id="notice" catchtap="onTapTag">社区通知</view>
+    <view class="top-bar-item" style="color:{{activity}}" id="activity" catchtap="onTapTag">邻里活动</view>
+  </view>
+  <!-- 选择发布tab底下的标示 -->
+  <view class="flag-line" style="margin-left:{{flag_position}}"></view>
+  <!-- 填写要发布的内容 -->
+  <view class="content-input">
+    <textarea class="main-content" placeholder="{{placeholder}}" placeholder-class="sub-info" />
+  </view>
+  <!-- 发布照片 -->
+  <!-- TODO: 照片信息 -->
+  <view class="add-photo-wrap">
+    <image class="add-photo-image" src="/image/add-photo.png" bindtap="uploadPhoto" />
+  </view>
+  <!-- 选择一个分类 -->
+  <view class="select-category-wrap">
+    <view class="main-content">选择一个分类</view>
+    <view class="category-wrap">
+      <block wx:for="{{class_category}}">
+        <view class="info-mark select-category">{{item}}</view>
+      </block>
+    </view>
+  </view>
+</view>

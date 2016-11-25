@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/calculate/calculate",
+    "pages/list/list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "漂亮计算器",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,26 @@
+.topics {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.topic {
+    border-bottom: 1px solid #eee;
+    padding: 8px 4px;
+    display: flex;
+}
+.avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+.topic-info {
+    flex: 1;
+}
+.topic-title {
+    margin-bottom: 15rpx;
+    font-size: 34rpx;
+}
+.topic-desc {
+    font-size: 30rpx;
+}

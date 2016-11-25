@@ -1,0 +1,32 @@
+.userinfo-area{
+   height: 148rpx; 
+   align-items: center;
+}
+
+.userinfo-icon{
+  margin: 32rpx;
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 50%;
+}
+
+ .userinfo-item{
+   flex: 1;
+   padding-left: 32rpx;
+   height: 82rpx;
+   text-align: left;
+   border-left: 1px solid #eee;
+ }
+
+ .userinfo-title{   
+   font-size: 37rpx;
+   color: #333333;
+   line-height: 38rpx;
+ }
+
+  .userinfo-desp{
+   margin-top: 12rpx;   
+   font-size: 24rpx;
+   color: #999;
+   line-height: 38rpx;
+ }

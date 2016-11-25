@@ -1,0 +1,15 @@
+<template name="movie">
+ 
+  <view class="movie" bindtap="detail" id="{{item.id}}">
+    <view class="pic">
+      <image src="{{item.images.medium}}" mode="aspectFit"></image>
+    </view>
+    <view class="movie-info">
+      <view class="base-info">
+        <text>
+          {{item.text}}
+        </text>
+      </view>
+    </view>
+  </view>
+</template>

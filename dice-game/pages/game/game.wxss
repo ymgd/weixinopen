@@ -1,0 +1,213 @@
+.game-info {
+    margin: 0 20rpx;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+.game-info .score {
+    border: 1px solid #eee;
+    border-radius: 20%;
+    padding: 5rpx 10rpx;
+}
+
+.game-info .money {
+    color: red;
+    position: absolute;
+    right: 4px;
+    opacity: 0;
+    bottom: 0rpx;
+}
+
+.game-info .money.change {
+    animation: changeMoney ease-in-out 1.5s;
+}
+
+
+/*金钱的动画效果*/
+
+@keyframes changeMoney {
+    0% {
+        bottom: 0rpx;
+        opacity: 0;
+    }
+    10% {
+        bottom: 10rpx;
+        opacity: 0.2;
+    }
+    20% {
+        bottom: 20rpx;
+        opacity: 0.4;
+    }
+    30% {
+        bottom: 30rpx;
+        opacity: 0.6;
+    }
+    40% {
+        bottom: 40rpx;
+        opacity: 0.8;
+    }
+    50% {
+        bottom: 50rpx;
+        opacity: 1;
+    }
+    60% {
+        bottom: 54rpx;
+        opacity: 1;
+    }
+    75% {
+        bottom: 56rpx;
+        opacity: 0.6;
+    }
+    85% {
+        bottom: 58rpx;
+        opacity: 0.4;
+    }
+    95% {
+        bottom: 60rpx;
+        opacity: 0.2;
+    }
+    100% {
+        bottom: 60rpx;
+        opacity: 0;
+    }
+}
+
+.dice-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20rpx;
+}
+
+.dice-box {
+    margin: 26rpx;
+    padding: 8rpx;
+    background-color: #e7e7e7;
+    width: 200rpx;
+    height: 200rpx;
+    box-shadow: inset 0 5px white, inset 0 -5px #bbb, inset 5px 0 #d7d7d7, inset -5px 0 #d7d7d7;
+    border-radius: 10%;
+}
+
+.dice-point {
+    display: block;
+    width: 48rpx;
+    height: 48rpx;
+    border-radius: 50%;
+    margin: 8rpx;
+    background-color: #333;
+    box-shadow: inset 0 6rpx #111, inset 0 -6rpx #555;
+}
+
+.self-flex-center {
+    align-self: center;
+}
+
+.self-flex-end {
+    align-self: flex-end;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third {
+    display: flex;
+}
+
+.fourth,
+.sixth,
+.fifth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chip-body {
+    display: flex;
+    margin: 10rpx 20rpx 0;
+    justify-content: space-between;
+}
+
+.chip-body .chips,
+.chip-body .put-chips {
+    display: flex;
+}
+
+.chip-body .put-chips {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.chip-body .put-chips .put-chips-img {
+    width: 232rpx;
+    height: 232rpx;
+}
+
+.chip-body .put-chips .put-chips-amount,
+.moving-chips-amount {
+    position: absolute;
+    color: #e0d23e;
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.put-chips-amount.blink-smooth {
+    animation: 1s blink-smooth 2 alternate;
+}
+
+
+/*闪烁效果*/
+
+@keyframes blink-smooth {
+    50% {
+        color: transparent
+    }
+}
+
+.game-operate {
+    display: flex;
+    margin-top: 40rpx;
+}
+
+.game-operate button {
+    width: 200rpx;
+    height: 200rpx;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 60rpx;
+}
+
+@media all and (max-height: 480px) {
+    .dice-box {
+        width: 180rpx;
+        height: 180rpx;
+        margin: 0.85rem 0;
+    }
+    .chip-body {
+        margin: 40rpx 0.53rem 70rpx;
+    }
+}

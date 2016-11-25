@@ -1,0 +1,75 @@
+<template name="chengYuDetail">
+  <view class="item" style="margin-bottom:5px" catchtap="Detail" id="{{item.id}}">
+        <view class="info">
+            <text class="searchChengYuword" style="margin-top:100px;">{{chengYuItem.zi}}</text>
+            <text class="reply" style="margin-left:10px"><text style="color:grey">词头：</text>{{chengYuItem.head}}</text>
+            <text class="reply" style="margin-left:10px">
+            <text style="color:grey">首字部首：</text>{{chengYuItem.bushou}}</text>
+            </view>
+        <view class="info" style="margin-left:130px;margin-top:10px;">
+        <text class="reply"><text style="color:grey">拼音：</text>{{chengYuItem.pinyin}}</text>
+            <!--<text class="reply"><text style="color:grey">五笔：</text>{{chengYuItem.wubi}}</text>
+            -->
+        </view>
+        <view style = "margin-bottom:8px;margin-top:8px;border-bottom: 1px solid #e2e2e2;"></view>
+        <view class="info" style="margin-top:14px;">
+            <text class ="reply" style="color:grey">解释：</text>
+            <text class="reply" style="line-height:18px">{{chengYuItem.chengyujs}}</text>
+        </view>
+
+        <block wx:if="{{chengYuItem.from_!=null}}">
+            <view class="info" style="margin-top:8px;">
+                <text class="reply" style="line-height:18px">
+                <text style="color:grey">出处：</text>{{chengYuItem.from_}}
+                </text>
+            </view>
+        </block>     
+        <block wx:if="{{chengYuItem.example!=null}}">
+            <view class="info" style="margin-top:8px;">
+                <text class="reply" style="line-height:18px">
+                    <text style="color:grey">举例：</text>{{chengYuItem.example}}
+                </text>
+            </view>
+        </block>
+        <block wx:if="{{chengYuItem.yufa!=null}}">
+            <view class="info" style="margin-top:8px;">
+                <text class="reply" style="line-height:18px">
+                    <text style="color:grey">语法：</text>{{chengYuItem.yufa}}
+                </text>
+            </view>
+         </block>   
+        <block wx:if="{{chengYuItem.ciyujs!=null}}">
+            <view class="info" style="margin-top:8px;">
+                <text class="reply" style="line-height:18px">
+                <text style="color:grey">词语解释：</text>{{chengYuItem.ciyujs}}
+                </text>
+            </view>
+        </block>
+        <block wx:if="{{chengYuItem.yinzhengjs!=null}}">
+            <view class="info" style="margin-top:8px;">
+                <text class="reply" style="line-height:18px">
+                <text style="color:grey">引证解释：</text>{{chengYuItem.yinzhengjs}}
+                </text>
+            </view>
+        </block>    
+
+        
+    </view>
+<!--<scroll-view scroll-y="true" style="height: 100%;">-->
+
+    <block wx:if="{{chengYuItem.tongyi!=null}}">
+            <text style = "margin-left:12px;color:grey">同义词：</text>   
+       
+        <view style="margin-top:2px;margin-left:30px;margin-bottom:2px" wx:key="*this" wx:for="{{chengYuItem.tongyi}}">
+        <text>{{item}}</text>
+        </view>
+        <view style = "margin-bottom:8px;margin-top:8px;border-bottom: 1px solid #e2e2e2;"></view>
+    </block>
+    <block wx:if="{{chengYuItem.fanyi!=null}}">
+        <text style = "margin-left:12px;color:grey">反义词：</text>   
+        <view style="margin-top:2px;margin-left:30px;margin-bottom:2px" wx:key="*this" wx:for="{{chengYuItem.fanyi}}">
+        {{item}}
+        </view>
+    </block>
+<!--</scroll-view>-->
+</template>

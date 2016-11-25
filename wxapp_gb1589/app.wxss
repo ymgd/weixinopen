@@ -1,0 +1,6 @@
+page {
+  background-color: #F5F5F5;
+  height: 100%;
+  font:32rpx/1.5 "Microsoft YaHei";
+}
+caption,list-item{display:block}

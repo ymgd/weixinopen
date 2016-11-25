@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/menu/menu",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#2b2b2b",
+    "navigationBarTitleText": "百家菜谱",
+    "navigationBarTextStyle":"white",
+    "backgroundTextStyle":"light"
+  },  
+  "tabBar": {
+    "color": "white",
+    "selectedColor": "#00ff00",
+    "backgroundColor": "#2b2b2b",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [ {
+      "pagePath": "pages/menu/menu",
+      "iconPath": "assets/img/ic-menu.png",
+      "selectedIconPath": "assets/img/ic-menu.png",
+      "text": "百家菜谱"
+    }, {
+      "pagePath": "pages/search/search",
+      "iconPath": "assets/img/ic-search.png",
+      "selectedIconPath": "assets/img/ic-search.png",
+      "text": "搜寻美食"
+    }]
+  },
+  "networkTimeout":{
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

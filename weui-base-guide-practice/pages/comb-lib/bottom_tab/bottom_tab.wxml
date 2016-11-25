@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="bottom-bar">
+                <view class="bottom-bar-item current">
+                    <image class="tab_item_icon" src="{{tab_item_icon1_png.src}}"></image>
+                    <view class="unread-count">
+                        <text>8</text>
+                    </view>
+                    <text>选项</text>
+                </view>
+                <view class="bottom-bar-item">
+                    <image class="tab_item_icon" src="{{tab_item_icon2_png.src}}"></image>
+                    <text>选项</text>
+                </view>
+                <view class="bottom-bar-item">
+                    <image class="tab_item_icon" src="{{tab_item_icon3_png.src}}"></image>
+                    <text>选项</text>
+                </view>
+                <view class="bottom-bar-item">
+                    <image class="tab_item_icon transf" src="{{tab_item_icon3_png.src}}"></image>
+                    <text>选项</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

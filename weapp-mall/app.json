@@ -1,0 +1,45 @@
+{
+  "pages": [
+      "page/home/home",
+      "page/me/me",
+      "page/cart/cart",
+      "page/show/show"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "全球购",
+    "navigationBarBackgroundColor": "#222222",
+    "backgroundColor": "#EEEEEE",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "white",
+    "borderStyle": "black",
+    "backgroundColor": "#222222",
+    "list": [{
+      "pagePath": "page/home/home",
+      "iconPath": "img/home.png",
+      "selectedIconPath": "img/home-on.png",
+      "text": "全球导购"
+    }, {
+      "pagePath": "page/cart/cart",
+      "iconPath": "img/cart.png",
+      "selectedIconPath": "img/cart-on.png",
+      "text": "购物车"
+    }, {
+      "pagePath": "page/me/me",
+      "iconPath": "img/me.png",
+      "selectedIconPath": "img/me-on.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

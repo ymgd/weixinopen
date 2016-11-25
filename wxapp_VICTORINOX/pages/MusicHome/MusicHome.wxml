@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container" >
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+<view>热门歌曲</view>
+  <view wx:for="{{hot_song_list}}" wx:for-index="idx" wx:for-item="song" >
+    <view class="itemcontent" id="{{idx}}" bindtap="songClick">
+        <text style="background-color:#ff0000; color:#ffffff;"> {{song.author}}-{{song.title}}</text>
+  
+    </view>
+    
+  </view>
+
+ 
+
+  
+</view>
+
+

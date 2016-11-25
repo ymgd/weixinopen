@@ -1,0 +1,13 @@
+<!--wxassert.wxml-->
+<view class="container">
+  <view class="group" style="width: 80%">
+    <view class="wxassert-title">Done: {{pass}} of {{pass + notpass}} Failed: {{notpass}}</view>
+    <progress wx:if="{{persent==100}}"  class="wxassert-progress" percent="100" active />
+    <progress wx:else color="red" class="wxassert-progress" percent="100" active />
+    <view class="wxassert-view" wx:for="{{resArray}}" >
+        <icon class="wxassert-icon" type="success" size="20" wx:if="{{item.key}}"></icon>
+        <icon class="wxassert-icon" type="warn" size="20" wx:else></icon>
+        <text class="wxassert-text">{{item.value}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+
+.sliders {
+    margin-bottom: 10px;
+}
+
+.buttonLeft {
+    float: left;
+    margin-left: 20px;
+    width: 40%;
+    height: 80px;
+    background-image: url('/images/test1.jpg');
+    background-size: cover
+}
+
+.buttonRight {
+    float: right;
+    margin-right: 20px;
+    width: 40%;
+    height: 80px;
+    background-image: url('/images/test1.jpg');
+    background-size: cover
+}
+
+.showItem {
+    margin-top: 100px;
+    width: 90%;
+    height: 150px;
+    background-image: url('/images/test1.jpg');
+    background-size: cover
+}
+
+.showItem2 {
+    margin-top: 10px;
+    width: 90%;
+    height: 150px;
+    background-image: url('/images/test1.jpg');
+    background-size: cover
+}

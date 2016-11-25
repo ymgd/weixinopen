@@ -1,0 +1,18 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'wx.getLocation',desc:'获取当前的地理位置、速度。'}}"/>
+
+        <view class="showLocation">
+            <text>纬度:{{latitude}}</text>
+            <text>经度:{{longitude}}</text>
+            <!--<text>速度:{{speed}}</text>
+            <text>位置的精确度:{{accuracy}}</text>-->
+        </view>
+
+        <button type="primary" class="mt" bindtap="getLocation"> 获取位置 </button>
+      
+    </view>
+</view>

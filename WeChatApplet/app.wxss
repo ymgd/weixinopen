@@ -1,0 +1,54 @@
+/**app.wxss**/
+input{
+  font-size:13px;
+  border-bottom: 1px #EEE solid;
+  margin-bottom: 20rpx
+}
+/*common list*/
+.list-item {
+  position: relative;
+  overflow: hidden
+}
+
+/*index list*/
+.index-list-item {
+  background: #FFF;
+  padding: 15rpx 30rpx;
+  overflow: hidden;
+  border-top:#EEE 1rpx solid;
+}
+.index-list-item::active {
+  background: #EEE;
+}
+
+.index-list-item .content {
+  margin-left: 20rpx;
+}
+.index-list-item .title {
+  display: inline-block;
+  height: 40rpx;
+  padding-top: 20rpx;
+  overflow: hidden;
+}
+
+.index-list-item .title_red {
+  display: inline-block;
+  height: 40rpx;
+  padding-top: 20rpx;
+  overflow: hidden;
+  color: mediumvioletred;
+}
+.index-list-item .desc  {
+  display: block;
+  font-size: 30rpx;
+  padding-top: 10rpx;
+  color: #AAA;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.refresh-footer {
+  text-align: center;
+  padding: 10rpx 0;
+}

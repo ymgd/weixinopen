@@ -1,0 +1,12 @@
+<view class="info">
+  <block wx:for="{{info}}" wx:for-item="infos">
+  <view class="info-list">
+    <block wx:for="{{infos}}" wx:for-index="idx" wx:for-item="itemName">
+      <view class="info-item {{idx === infos.length - 1 ? 'no-border' : ''}}">
+        <view class="label">{{itemName.label}}</view>
+        <view class="content">{{itemName.content}}</view>
+      </view>
+    </block>
+  </view>
+  </block>
+</view>

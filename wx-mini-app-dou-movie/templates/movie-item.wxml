@@ -1,0 +1,18 @@
+<template name="movie-item">
+    <navigator url="../movie/movie?id={{movie.id}}" wx:for="{{movies}}" wx:for-item="movie">
+        <view class="item">
+            <image class="poster" src="{{movie.images.small}}">
+                <view class="meta">
+                    <text class="title">{{movie.title}}</text>
+                    <text class="sub-title">{{movie.original_title}}({{movie.year}})</text>
+                    <view class="artists">
+                        <text wx:for="{{movie.directors}}" wx:for-item="director"> {{director.name}} </text>
+                    </view>
+                </view>
+                <view class="rating">
+                    <text>{{movie.rating.average}}</text>
+                </view>
+            </image>
+        </view>
+    </navigator>
+</template>

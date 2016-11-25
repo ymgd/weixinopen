@@ -1,0 +1,54 @@
+.winnerview {
+    width: 100%;
+    height: 200px;
+    margin-top: 24rpx;
+    background-color: white;
+}
+
+.winnerview .titleview {
+    color: #333333;
+    font-size: 14px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #D0D0D0;
+}
+
+.winnerview .userview {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    color: #333333;
+}
+
+.winnerview .userview .avatar {
+    width: 64rpx;
+    height: 64rpx;
+    border-radius: 32rpx;
+    margin-right: 18rpx;
+    background-color: yellow;
+}
+
+.winnerview .reasonview {
+    padding-bottom: 28rpx;
+}
+
+.winnerview .titlelbl {
+    color: #657B86;
+    font-size: 12px;
+}
+
+.winnerview .reasonlbl {
+    color: #333333;
+    font-size: 14px;
+    margin-top: 20rpx;
+}
+
+.winnerview .appreciateview {
+    border-width: 0 0 1px 0;
+    border-style: dotted;
+    border-color: #D0D0D0;
+}
+
+.winnerview .appreciateview .appreciateimage {
+    margin: 20rpx 0 48rpx 0;
+}

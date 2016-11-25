@@ -1,0 +1,10 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'canvas',desc:'绘图'}}"/>
+
+       
+    </view>
+</view>

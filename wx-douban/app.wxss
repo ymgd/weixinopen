@@ -1,0 +1,32 @@
+/**app.wxss**/
+.page, page {
+  background-color: #f4f8fb;
+  height: 100%;
+}
+
+.loading{
+  min-height:100rpx;
+  background-image:url(images/loading.gif);
+  background-size:60rpx auto;
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+}
+
+.errorTips{
+  padding:40rpx;
+  font-size:28rpx;
+  color:#999;
+  text-align:center;
+}
+
+.c-red{
+  color:#df5001;
+}
+.c-blue{
+  color:#006ae2;
+}
+
+.page navigator{
+  color:#006ae2;
+  display:inline-block;
+}

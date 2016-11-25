@@ -1,0 +1,37 @@
+<view>微赞，微信端免费好用的增粉、变现多功能工具</view>
+<!--<script src="http://i.pengxun.cn/manager/content/js/jquery.js?v=0.1"></script>-->
+<!--<link href="http://i.pengxun.cn/manager/content/css/gw.css?v=0.19" rel="stylesheet" /> 
+<link href="http://i.pengxun.cn/manager/content/css/base.css?v=0.01" rel="stylesheet" />-->
+<input type="idcard" id="sessid" value="1082244955" />
+<view style="height:74px">
+    <view class="fl gw-logo"></view>
+    <view class="fl gw-nav">
+        <navigator class="fl" url="../account/account?wp=IdxPage" redirect="false">首页</navigator>
+        <navigator class="fl" url="../account/account?wp=Live">直播</navigator>
+        <navigator class="fl" url="../account/account?wp=Tutor">问专家</navigator>
+        <navigator class="fl" url="../account/account?wp=OurApp">微赞APP</navigator>
+        <navigator class="fl" url="../account/account?wp=Example">客户案例</navigator>
+        <navigator class="fl" url="../account/account?wp=Contact">关于我们</navigator>
+        <navigator class="fl" url="../account/account?wp=Cooperate">商业合作</navigator>
+    </view>
+</view>
+<view class="fl">
+    <canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas">123142141dfa</canvas>
+</view>
+
+<!--<div class="m-a" style="height: 148rpx;">
+    <div class="fl gw-logo"></div>
+    <div class="fl f-16 bz gw-nav" style="margin-left:30px">
+        <a href="http://www.baidu.com" class="fl bz bb-4 ">首页</a><button class="fl bz ">首页</button>
+        <a href="#" class="fl rel bz " target="_blank">直播<i class="icon-hot"></i></a>
+        <a href="#" class="fl bz ">问专家</a>
+        <a href="#" class="fl bz ">微赞APP</a>
+        <a href="#" class="fl bz ">客户案例</a>
+        <a href="#" class="fl bz ">关于我们</a>
+        <a href="#" class="fl bz ">商业合作</a>
+    </div>
+    
+    <input id="register" class="bz f-14 fr gw-lr-public gw-login-bt" style="cursor:pointer" type="button" value="免费注册" />
+    <a href="#"><input class="bz f-14 fr gw-lr-public gw-register-bt" style="cursor:pointer" type="button" value="登录"/></a>
+
+</div>-->

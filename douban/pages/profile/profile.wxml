@@ -1,0 +1,11 @@
+<view class="container">
+    <view class="header">
+        <text class="title">{{title}}</text>
+    </view>
+    <view class="user">
+        <image class="user-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFit" />
+        <text class="user-nickname">{{userInfo.nickName}}</text>
+        <text hidden="{{!userInfo.city}}">{{userInfo.city}} {{userInfo.province}}</text>
+        <text hidden="{{!userInfo.city}}"> Thanks ~ </text>
+    </view>
+</view>

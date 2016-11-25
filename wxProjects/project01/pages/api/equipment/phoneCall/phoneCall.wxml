@@ -1,0 +1,15 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'wx.makePhoneCall',desc:'拨打电话。'}}"/>
+
+        <view class="showLocation">
+           <input placeholder="输入电话号码" bindinput="getPhoneCall" auto-focus/>
+        </view>
+
+        <button type="primary" class="mt" bindtap="phoneCall"> 拨打电话 </button>
+      
+    </view>
+</view>

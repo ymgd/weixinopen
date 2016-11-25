@@ -1,0 +1,78 @@
+.entry-header {
+  padding: 48px 0;
+  color: #ffffff;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.entry-header .entry-speak {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.entry-header .entry-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.entry-tags {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eceff1;
+}
+.entry-tags .tag {
+  margin-right: 8px;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.entry-attachments {
+  margin-top: 8px;
+}
+.entry-attachments .attachment-quote {
+  padding: 0 16px;
+  font-size: 14px;
+  color: #607d8b;
+}
+.entry-attachments .attachment-quote::before {
+  content: "“";
+  position: absolute;
+  margin: -8px 0 0 -16px;
+  font-size: 32px;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #b0bec5;
+}
+.entry-attachments .attachment-quote::after {
+  content: "”";
+  position: absolute;
+  margin: -8px 0 0 4px;
+  font-size: 32px;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #b0bec5;
+}
+.entry-attachments .attachment-image,
+.entry-attachments .attachment-audio,
+.entry-attachments .attachment-video {
+  width: 100%;
+}
+.entry-footnotes {
+  margin-top: 8px;
+  padding-top: 8px;
+  color: #607d8b;
+  font-size: 12px;
+  border-top: 1px solid #eceff1;
+}
+.entry-footnotes .footnote {
+  word-break: break-all;
+}
+.entry-meta {
+  margin-top: 8px;
+  color: #b0bec5;
+  font-size: 12px;
+}

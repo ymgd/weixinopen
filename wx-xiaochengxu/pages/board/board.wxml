@@ -1,0 +1,40 @@
+<!-- wxml中写结构 -->
+<view class="container">
+  <view class="slide">
+    <swiper indicator-dots="true" autoplay="true" interval="8000" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" mode="aspectFill"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="board">
+    <navigator url="../list/list?type=in_theaters&name=正在热映" hover-class="none">
+      <view class="board-item">
+        <text>正在热映</text>
+        <image src="../../images/arrowright.png" mode="aspectFill"/>
+      </view>
+    </navigator>
+    <navigator url="../list/list?type=coming_soon&name=即将上映" hover-class="none">
+      <view class="board-item">
+        <text>即将上映</text>
+        <image src="../../images/arrowright.png" mode="aspectFill"/>
+      </view>
+    </navigator>
+
+    <navigator url="../list/list?type=top250&name=TOP250" hover-class="none">
+      <view class="board-item">
+        <text>TOP250</text>
+        <image src="../../images/arrowright.png" mode="aspectFill"/>
+      </view>
+    </navigator>
+
+    <navigator url="../list/list?type=us_box&name=北美电影榜" hover-class="none">
+      <view class="board-item">
+        <text>北美电影榜</text>
+        <image src="../../images/arrowright.png" mode="aspectFill"/>
+      </view>
+    </navigator>
+  </view>
+</view>

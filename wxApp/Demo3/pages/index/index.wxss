@@ -1,0 +1,19 @@
+.mod-slider .money {
+    margin: 40rpx 0;
+    text-align: center;
+    font-size: 60rpx;
+    color: #ccc;
+    display: block;
+}
+.aa {
+    width: 100rpx;
+    position: relative;
+    margin: 0 auto;
+    overflow: inherit;
+}
+.aa::before {
+    content: "￥";
+    position: absolute;
+    top: 0;
+    left: -50rpx;
+}

@@ -1,0 +1,39 @@
+<!-- index.wxml -->
+<view class="container">
+  <modal title="操作成功" confirm-text="进入社区" cancel-text="撤销验证" hidden="{{modalHidden}}" bindconfirm="confirmMessageYes"
+         bindcancel="cancel">10分钟内，您的邻居会根据您的地址为你送上验证码，这将是您和邻居的第一次互动，如果你想取消接受验证码，可以选择撤销验证。</modal>
+  <!-- 选择社区 -->
+  <view bindtap="selectCommunity" class="table-block">
+    <view class="table-row">
+      <text class="table-row-title">选择社区</text>
+      <view class="img-flex-wrap">
+        <image class="arrow-right-img" src="/image/Chevron.png" />
+      </view>
+    </view>
+  </view>
+  <!-- 个人信息输入 -->
+  <form catchsubmit="formSubmit">
+    <view class="table-block">
+      <!-- 联系电话 -->
+      <view class="table-row">
+        <text class="table-row-title">联系电话</text>
+        <input name="input" placeholder-style="color:#BDBDBD" class="input-content" placeholder="手机或固话" />
+      </view>
+      <!-- 详细地址 -->
+      <view class="table-row address-input">
+        <text class="table-row-title">详细地址</text>
+        <textarea name="input" placeholder-style="color:#BDBDBD" class="textarea-content" placeholder="街道门牌信息" />
+      </view>
+    </view>
+    <!-- 按钮 -->
+    <view class="button-group authenticated-button-group">
+      <!-- 确认是否发送个人信息 -->
+      <!-- 确认 -->
+      <button class="button-cell" formType="submit" type="primary" bindtap="confirmMessage">确认</button>
+      <!-- 先不确认 -->
+      <button class="button-cell" type="default" bindtap="withoutAuthenticated">先不认证 进社区看看</button>
+    </view>
+  </form>
+  <!-- 为什么要取得认证 -->
+  <text class="why-info">为什么要取得认证</text>
+</view>

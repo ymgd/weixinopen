@@ -1,0 +1,30 @@
+<view class="container">
+
+    <view class="section mb">
+
+        <view class="api-list">
+            <view class="api-item mt" wx:for="{{apiList}}" wx:key="{{item.id}}">
+                <view class="api-title flex {{item.openClass}}" bindtap="showMenu" id="{{item.id}}" >
+                    <text class="api-t" id="12">{{item.name}}</text>
+                    <i class="arrow"></i>
+                </view>
+               
+                <view class="api-web {{item.openClass}} f32  bor-t col3" animation="{{item.animationData}}">
+                    <navigator wx:for="{{item.subList}}" url="{{item.url}}" id="{{item.id}}" wx:key="{{item.id}}" class="api-web-n flex bor-b ">
+                        <view class="api-web-v">
+                            <text>{{item.name}}</text>
+                            <text class="api-desc col1 f12">{{item.desc}}</text>
+                        </view>
+                         <i class="arrow"></i>
+                    </navigator>
+                   
+                
+                </view>
+            </view>
+
+        
+        </view>
+
+    </view>
+
+</view>

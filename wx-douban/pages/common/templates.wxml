@@ -1,0 +1,32 @@
+<!-- 加载中 -->
+<template name="pageLoading">
+    <loading hidden="{{pageLoadingHide}}">
+        加载中...
+    </loading>
+</template>
+
+<!-- 首页横向列表 -->
+<template name="index-list-col">
+    <view class="index-list">
+        <text class="title">{{title}}</text>
+        <block wx:if="{{fail}}">
+            <view class="errorTips">{{data}}请刷新页面重试</view>
+        </block>
+        <block wx:elif="{{loading}}">
+            <view class="loading"></view>
+        </block>
+        <block wx:else>
+            <scroll-view scroll-x="true" class="list">
+                <block wx:for="{{data}}">
+                    <view class="listItem" bindtap="goDetail" data-id="{{item.id}}">
+                        <image src="{{item.images.medium}}" mode="aspectFit"></image>
+                        <text>{{item.title}}</text>
+                    </view>
+                </block>
+            </scroll-view>
+        </block>
+    </view>
+</template>
+
+<!-- 首页横向列表 -->
+<template name="index-list-row"></template>

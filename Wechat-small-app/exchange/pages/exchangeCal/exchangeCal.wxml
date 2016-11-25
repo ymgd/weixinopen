@@ -1,0 +1,65 @@
+<view class="container">
+
+    <view class="dateArea">
+        <picker mode="date" value="{{date}}" start="2014-10-01" end="{{dateStr}}" bindchange="bindDateChange">
+            <view>
+                <text class="dateTitle">交易时间</text>{{date}}
+            </view>
+        </picker>
+    </view>
+
+    <!-- 交易币种 -->
+    <view class="currencyTitle">
+        <text>交易币种</text>
+    </view>
+    <view class="item">
+        <view class="itemLeft fl">
+            <image src="../../images/flags/{{tradeCurrency.description}}.png" class="flag" bindtap="changeTrans"></image>
+        </view>
+        <view class="itemRight fr">
+            <input class="fr" placeholder="请输入交易金额" bindinput="calInput" />
+        </view>
+        <view class="clear"></view>
+        <view class="currencyDes">
+            <text class="currencyDesText">{{tradeCurrency.name}}</text>
+            <text class="currencyDesText">{{tradeCurrency.description}}</text>
+            <text class="currencyDesText">{{tradeCurrency.comments}}</text>
+        </view>
+    </view>
+
+    <!-- 交易币种 -->
+    <view class="currencyTitle">
+        <text>扣账币种</text>
+    </view>
+    <view class="item">
+        <view class="itemLeft fl">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{debitArray}}">
+                <image src="../../images/flags/{{debitCurrency.description}}.png" class="flag"></image>
+            </picker>
+        </view>
+        <view class="itemRight fr">
+            <input class="fr" placeholder="自动计算扣款金额" value="{{calResult}}"/>
+        </view>
+        <view class="clear"></view>
+        <view class="currencyDes">
+            <text class="currencyDesText">{{debitCurrency.name}}</text>
+            <text class="currencyDesText">{{debitCurrency.description}}</text>
+            <text class="currencyDesText">{{debitCurrency.comments}}</text>
+        </view>
+    </view>
+
+    <view class="calResult" hidden="{{rateTextFlag}}">
+        <text class="calNum">1</text>
+        <text class="calNum">{{tradeCurrency.name}} = </text>
+        <text class="calNum">{{rate}}</text>
+        <text class="calNum">{{debitCurrency.name}}</text>，更新于
+        <text>{{date}}</text>
+    </view>
+
+    <view class="errorToast" hidden="{{errorFlag}}">
+        抱歉没有找到您要的结果，请尝试其他查询条件
+    </view>
+
+
+    
+</view>

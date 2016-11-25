@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <input placeholder="请输入IP地址" bindinput="input" />
+  <button type="primary"  bindtap="btnClick"> IP查询 </button>
+
+
+<view wx:if="{{ ipInfo != null }}">
+  <scroll-view scroll-y="true" style="height: 200px;" >
+            <text>IP: {{ipInfo.ip}}</text>
+            <text>国家： {{ipInfo.country}} </text><w:br/>
+            <text>省：{{ipInfo.region}} </text>
+            <text>城市：{{ipInfo.city}} </text>
+            <text>ISP: {{ipInfo.isp}} </text>
+   </scroll-view>
+</view>
+
+
+</view>

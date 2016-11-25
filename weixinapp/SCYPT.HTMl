@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>javascript在线运行平台</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"></script> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-utf16.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/evpkdf.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/cipher-core.js"></script>
+	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/mode-ecb.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/tripledes.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-utf16.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/format-hex.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function greeter(person) {
+  return "Hello, " + person;
+}
+var user = "某某某";
+
+  var hash = CryptoJS.MD5("deviceType=iPhone 6&timestamp=1479697820949&uid=oW2wBwaOWQ2A7RLzG3fcpmfTgnPU&versionCode=1");
+
+  console.log("Md5", (hash.toString(CryptoJS.enc.Hex)).toUpperCase());
+
+  //CryptoJS.DES.encrypt("5d428c7ca7c1d091cfa3b9b11a9b4645");
+  var keyhex = CryptoJS.enc.Utf8.parse("vzanlive");
+  var iv = CryptoJS.enc.Utf8.parse("32526978");
+var encrypted = CryptoJS.DES.encrypt("EECB57D063A3BC1560E753B1E5F7A230", keyhex, {
+	iv:iv,
+	mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+});
+
+console.log(encrypted.ciphertext.toString(CryptoJS.enc.Hex))
+
+
+	var encryptedData = 
+	'CiyLU1Aw2KjvrjMdj8YKliAjtP4gsMZM'+
+	'QmRzooG2xrDcvSnxIMXFufNstNGTyaGS'+
+	'9uT5geRa0W4oTOb1WT7fJlAC+oNPdbB+'+
+	'3hVbJSRgv+4lGOETKUQz6OYStslQ142d'+
+	'NCuabNPGBzlooOmB231qMM85d2/fV6Ch'+
+	'evvXvQP8Hkue1poOFtnEtpyxVLW1zAo6'+
+	'/1Xx1COxFvrc2d7UL/lmHInNlxuacJXw'+
+	'u0fjpXfz/YqYzBIBzD6WUfTIF9GRHpOn'+
+	'/Hz7saL8xz+W//FRAUid1OksQaQx4CMs'+
+	'8LOddcQhULW4ucetDf96JcR3g0gfRK4P'+
+	'C7E/r7Z6xNrXd2UIeorGj5Ef7b1pJAYB'+
+	'6Y5anaHqZ9J6nKEBvB4DnNLIVWSgARns'+
+	'/8wR2SiRS7MNACwTyrGvt9ts8p12PKFd'+
+	'lqYTopNHR1Vf7XjfhQlVsAJdNiKdYmYV'+
+	'oKlaRv85IfVunYzO0IKXsyl7JCUjCpoG'+
+	'20f0a04COwfneQAGGwd5oa+T8yO5hzuy'+
+	'Db/XcxxmK01EpqOyuxINew==';
+  	var iv = 'r7BXXKkLb8qrSNn05n0qiA=='
+  	var sessionKey = 'tiihtNczf5v6AKRyjwEUhQ=='
+
+ 	 var encryptedData = 
+ 	 "kw6JDacuW6H7jpVRUr7YqiGWGTh4nJ6+" +
+ 	 "D4YPqJBU96nnxgdopREkP3nNRjX+qPQO" +
+ 	 "ZES+BPT8RFx7erP7R2nU2azEUcFmxVlk" + 
+ 	 "LKI1R0lQZgC9HCCLFyQtr0J2kglS1PY9" + 
+ 	 "8QkMwQW2gC3jHtDF/6NOEHwnzfCsdVBC" + 
+ 	 "AOa0F3sC2+02A7DPunz1tuTIS499JLpF" + 
+ 	 "PB/QFi0kqmwIsGwAw8EyXi9K/i+Zz0ja" + 
+ 	 "3P16gf+YLu1o+KzuNPwxqGrTIU26S/6r" + 
+ 	 "PFO4jw8G2ok3y0DCxgaV1KKzOsAqLqnV" + 
+ 	 "tZ8dbS13XWy5dIx9BIHof7bj8ULVlQL2" + 
+ 	 "gcyeqgg9J8dovmejbRS0jUy0VzD3TnDx" + 
+ 	 "PzeUU2t8BX5JfHgBNMEzX9ZW615Y62Te" + 
+ 	 "bODoIqzeYX07geMtHcv1rbTQ8nKdYwqk" +
+ 	 "3yB8dfs5RrOcfDbkDZYg1pxJypLdylBx" +
+ 	 "bVsWDVFQRe12mjK2duIdOjEKSQslNOqD" + 
+ 	 "nTQ5i1CKeepYnvP3gOykO7mPU5jly0mv" +
+ 	 "xDX9sjjZ/fJRRlMzbh3fEQ==";
+ 	encryptedData="M7OiqnBAAE3FZDG9E/W74yKi1flHK8qTkK77bQWo4G4QhcR6yBKXg6ozxot4nBqKJPSbnPt6uq/g/JMEtNFR8zsKwwHbBfJu7doB9t119Y3gIuQZRke6IBWInrxyMg42hYWmxWSIuZxMdQLnsg2Atgf4Xn28RlpwmHbTmVZnOa9EcwCyDr5ustFtzns/eWmGOuZZeDHfAItGAGhro9kmwS5J/ut99U+ANFqUOASd8peYf6jdnYIc+asbhaqb5Xqz7TgrSSBw/5liWILngaLcXvLJvldrVbTeBee7lPcf82rIw6nT/H9OkxraW8WE60PN8zy6fohafyODpV9KggxqKd86vJeJJ57wq6xV+DY5pNupA3iUt/fT77HS47wgJTtUxLnZ9X+rGxcIS8ezKkpwACeu8vxAGZgDOGeBDPRhSsryH4HptanCChrv9u9IU5LHTs25fgkMlwofOTzOcToy84KkoYARLbeTa2jnHPcSaijrP6eganhS0E8c4Z4aG3hxH5cN3SbG1r+8id4s5bwt7w=="
+    var iv = "MemH64etXSCsi++UDSCGLw==";
+    var sessionKey = "lWOEjl56KoIQeiT+d/SaNA==";
+
+	// encrypted = CryptoJS.enc.Base64.parse(encryptedData);
+    key  = CryptoJS.enc.Base64.parse(sessionKey);
+    iv   = CryptoJS.enc.Base64.parse(iv);
+    key = CryptoJS.enc.Hex.parse(key.toString(CryptoJS.enc.Hex));
+    // key = key.toString(CryptoJS.enc.Hex);
+    iv = CryptoJS.enc.Hex.parse(iv.toString(CryptoJS.enc.Hex));
+    encrypted = CryptoJS.enc.Hex.parse(encrypted.toString(CryptoJS.enc.Hex));
+    var decrypted = CryptoJS.AES.decrypt({ciphertext: encrypted}, key,{
+        iv:iv,
+        mode:CryptoJS.mode.CBC,
+        padding:CryptoJS.pad.Pkcs7
+    });
+
+    console.info("UserInfo");
+   console.log(decrypted.toString(CryptoJS.enc.Latin1));
+   console.log(decrypted.toString(CryptoJS.enc.Hex));
+   console.log(decrypted.toString(CryptoJS.enc.Utf8));
+
+
+/**
+* {"session_key":"HyqWWW0DrHOMBKnaX\/OPDA==","expires_in":2592000,"openid":"obiMY0YuQSpXSAY21oWjKw-OJC0E"}
+*  
+*
+encryptedData:"wUQzi5Cf2GOvskooxD8SVnrMPouyEPQm25tlqRCC90fG52syrSwCP8Odmu+5TmIvLjWxDQJgmnEg1KgsBoN/VbwY1RdofUj4oAkxzgwM8XWI/1V/3945s7zBZBz0YFGmXmhRsf1X90I83lZdib1rjSCfIO4rZbdVxRJ5foA65hOgou06c1VgYqyqKS6faBwRGw7ebbfi6IDwIsl9aueF8fVsQb7TMo81rXP6e8uJK5xWL6KJwgeQemlxr5787l9NSJglJZYRk93jvKZOX1VQFUblME2oBeHrmSkvqXoDwY2lY8OEtDL+iHIUPwcvV5foAr/cfFJJy6VbDG237M2ZYKochDnRv9m+kOurBYq5KJqiIMW4Vq9kvr1jyQsia6Yh3wBuHt+gwxgvwX+x3cQ9fakqRGt7i4n/NqHjBfbr116gflRQE5+mbCb4LuIV6jLqI3Fc9OWG1ijWNPncTTaXPOBoqtjPxLWI/Mwg30zCGnTKnELBOeYKtyYcJsTT4uWHL68vOMAwjRd03LQO5du6Dg=="
+iv:"laf9/nQdsKI2mJ7AWtJI1A=="
+* 
+* 
+*  
+*/
+
+
+
+
+document.body.innerHTML = greeter(user);
+//-->
+</script>
+</body>
+</html>
+
+
+

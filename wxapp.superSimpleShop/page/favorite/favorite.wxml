@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="page-head">
+        <text>收藏夹</text>
+    </view>
+
+    <view id="action">
+        <button bindtap="changeMode" type="primary">{{inEditMode ? '完成' : '编辑'}}</button>
+        <button class="{{inEditMode ? '' : 'hide'}}" type="warn" bindtap="deleteItems">删除</button>
+    </view>
+    
+    <view id="favorites">
+        <checkbox-group bindchange="selectItems">
+            <view wx:for="{{items}}" class="item {{index == 0 ? 'item-first' : ''}}" wx:key="pid">
+                <checkbox value="{{item.pid}}" class="{{inEditMode ? '' : 'hide'}}" style="width: 10%"></checkbox>
+                <navigator url="../item/item?index={{index}}" style="width: 25%">
+                    <image src="/image/{{item.image}}.jpg"></image>
+                </navigator>
+                <text style="width: 35%">{{item.name}}</text>
+                <text style="width: 15%">{{item.price}}</text>
+                <view style="width: 15%">
+                    <image src="/image/arrowright.png" class="up-arrow arrow" bindtap="moveUp" id="up{{index}}"></image>
+                    <image src="/image/arrowright.png" class="down-arrow arrow" bindtap="moveDown" id="down{{index}}"></image>
+                </view>
+            </view>
+        </checkbox-group>
+    </view>
+</view>

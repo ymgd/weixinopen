@@ -1,0 +1,31 @@
+page{
+    background: white;
+}
+
+.container{
+    background: white;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.textView{
+
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    height: 5%;
+    width: 50%;
+    
+}
+
+.lineView{
+
+    position: absolute;
+    background-color: orange;
+    height: 1%;
+    width: 50%;
+
+    top: 49%;
+    left: 25%;
+}

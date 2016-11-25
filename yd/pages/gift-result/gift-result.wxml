@@ -1,0 +1,88 @@
+<!--index.wxml-->
+<!-- <loading hidden="{{loadingHidden}}">玩命搜索数据</loading> -->
+<view class="container">
+
+    <view class="search-box">
+     <input class="search-input" placeholder="搜索你想要的礼物" placeholder-class="placeholder-style" bindchange="bindChange" value="{{query}}"/>
+     <view class="search-btn">
+       <icon type="search" bindtap="search" size="18"/>
+     </view>
+    </view>
+
+    <view class="category-tabs">
+      <view class="tab" wx:for="{{categorys}}" wx:key="name" wx:for-item="category">
+        <view class="tab-title {{currentIndex === index ? 'active':''}}">
+          <text wx:if="{{category.selectedIndex === 0}}" bindtap="switchSelectCond" data-item="{{category.name}}">{{category.title}}</text>
+          <text wx:else bindtap="switchSelectCond" data-item="{{category.name}}">{{category.items[category.selectedIndex]}}</text>
+          <i class="arrow">▴</i>
+          <view class="line"></view>
+        </view>
+      </view>
+    </view>
+
+    <view class="result-area">
+
+      <view class="section-sep first-section-sep clearfix" wx:if="{{raiders.length > 0}}">
+        <view class="section-sep-container">
+          <text class="pull-left">攻略</text>
+          <text class="pull-right" bindtap="viewAll">全部 <i class="arrow arrow-right arrow-red">▴</i></text>
+        </view>
+      </view>
+
+      <view class="up-list" wx:if="{{raiders.length > 0}}">
+        <block wx:for="{{raiders}}" wx:for-item="raider" wx:key="aid">
+          <view class="up-list-item">
+            <navigator url="../article/article?id={{raider.aid}}">
+             <view class="item-desc-container">
+                <image class="item-img" src="{{raider.cover_image_url}}"></image>
+                <view class="info-view">
+                  <text class="title">{{raider.title}}</text>
+                  <view class="target-word">
+                    <text class="keyword">{{ raider.rendered_keywords[0][0] }}</text>
+                  </view>
+                </view>
+             </view>
+           </navigator>
+         </view>
+        </block>
+     </view>
+
+    <view class="section-sep clearfix">
+      <view class="section-sep-container">
+        <text class="pull-left">单品</text>
+        <text class="pull-right" bindtap="orderBy">{{orderByActionSheetItems[currentPX]}} <i class="arrow arrow-down  arrow-red">▴</i></text>
+      </view>
+    </view>
+
+    <view class="down-list">
+      <block wx:for="{{goods}}" wx:for-item="good" wx:key="aid">
+        <view class="down-list-item">
+          <navigator url="../article/article?id={{good.aid}}">
+          <view class="image-container">
+            <image src="{{good.thumb_image_url}}"></image>
+          </view>
+          <view class="info-container">
+            <text class="info">{{good.title}}</text>
+            <text class="price">{{ ( !good.price || good.price === "N/A" ) ? "无":good.price }}</text>
+          </view>
+          </navigator>
+        </view>
+      </block>
+    </view>
+
+  </view>
+</view>
+
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+  <block wx:for="{{category.items}}" wx:key="items">
+    <action-sheet-item bindtap="bindItemTap" data-group="{{category.name}}" data-item="{{item}}" class="{{category.selectedIndex === index ?'selected':''}}">{{item}}</action-sheet-item>
+  </block>
+  <action-sheet-cancel bindtap="hideActiveSheet">取消</action-sheet-cancel>
+</action-sheet>
+
+<action-sheet hidden="{{orderByActionSheetHidden}}" bindchange="orderByActionSheetChange">
+  <block wx:for="{{orderByActionSheetItems}}" wx:key="items">
+    <action-sheet-item bindtap="orderByBindItemTap" data-item="{{item}}">{{item}}</action-sheet-item>
+  </block>
+  <action-sheet-cancel bindtap="orderByHideActiveSheet">取消</action-sheet-cancel>
+</action-sheet>

@@ -1,0 +1,8 @@
+  {
+  "navigationBarBackgroundColor": "#06ccb6",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "预览图片",
+  "backgroundColor": "#06ccb6",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false
+  }

@@ -1,0 +1,18 @@
+<!-- list start -->
+<view class="lists-box">
+    <navigator wx:for="{{list}}" wx:key="" class="item-box" url="../component/detail/detail?id={{item.goods_id}}">
+        <view class="item-img">
+            <image src="{{item.goods_img}}"></image>
+        </view>
+        <text class="item-title">{{item.goods_title}}</text>
+        <text class="item-content">{{item.goods_promote_info}}</text>
+        <view class="item-btm">
+            <view class="item-buy-people">
+                <view class=""></view>
+                {{item.goods_group_size}}人团
+            </view>
+            <view class="item-price">¥{{item.goods_group_price}}</view>
+        </view>
+    </navigator>
+</view>
+<!-- / list end -->

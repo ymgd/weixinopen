@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="setting">
+        <view class="weui_cell" bindtap="onTouchLastMenstruationCell">
+            <view class="weui_cell_hd">
+                <image src="../../images/iconfont_dingdan.png"></image>
+            </view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p">最近一次月经</view>
+            </view>
+            <view class="cell_value">{{mensInfo.lastDate ? mensInfo.lastDate : "哪天来"}}</view>
+            <view class="with_arrow"></view>
+        </view>
+        <view class="weui_cell" bindtap="onTouchMenstruationDaysCell">
+            <view class="weui_cell_hd">
+                <image src="../../images/iconfont_dingdan.png"></image>
+            </view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p">经期长度</view>
+            </view>
+            <view class="cell_value">{{mensInfo.numberOfDays ? mensInfo.numberOfDays : "月经持续天数"}}</view>
+            <view class="with_arrow"></view>
+        </view>
+        <view class="weui_cell" bindtap="onTouchMenstruationCycleCell">
+            <view class="weui_cell_hd">
+                <image src="../../images/iconfont_dingdan.png"></image>
+            </view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p">周期长度</view>
+            </view>
+            <view class="cell_value">{{mensInfo.cycle ? mensInfo.cycle : "两次月经开始日期间隔天数"}}</view>
+            <view class="with_arrow"></view>
+        </view>
+    </view>
+</view>

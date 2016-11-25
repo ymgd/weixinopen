@@ -1,0 +1,28 @@
+.my {
+    background-color: #eee;
+}
+.block {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 40rpx;
+    padding: 10px;
+    box-shadow: 0px 0px 2px #369;
+    box-sizing: border-box;
+}
+.login {
+    height: 100px;
+    background: #f35e5e;
+    color: #fff;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.button {
+    border: 1px solid #fff;
+    text-align: center;
+    width: 78px;
+    padding:6px 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+}

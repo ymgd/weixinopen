@@ -1,0 +1,122 @@
+<view class="container">
+  <view class="topTitle">
+    <text class="cn">生活圈</text>
+    <text class="en">Cricle</text>
+  </view>
+  <view class="lifeList">
+    <view class="lift-item">
+      <view class="item-header">
+        <image class="item-avater" src="../../image/avater1.png"/>
+        <view class="item-name">
+          <text class="username">黄小米</text>
+          <text class="date">2016-10-20</text>
+        </view>
+        <view class="fouce">＋关注</view>
+      </view>
+      <view class="item-text">北冥有鱼，其名为鲲，鲲之大， 一锅炖不下， 化而为鸟， 其名为鹏， 鹏之大， 需要两个烧烤架 一个孜然 一个微辣</view>
+      <view>
+        <image class="item-image" src="../../image/biif.png"/>
+      </view>
+      <view class="zan-number">
+        <view class="zanzan-box">
+          <image class="zan-icon" src="../../image/play1.png"/>
+          <text class="zan-text">251</text>
+        </view>
+        <view class="zanzan-box">
+          <image class="zan-icon" src="../../image/play2.png"/>
+          <text class="zan-text">353</text>
+        </view>
+        <view class="zanzan-box">
+          <image class="zan-icon" src="../../image/play3.png"/>
+          <text class="zan-text">283</text>
+        </view>
+      </view>
+      <view class="link-shop">
+        <image class="shop-avater" src="../../image/123.png"/>
+        <view class="shop-name">
+          <text class="title name">2016秋冬新品通勤简约纯色连帽拉链中长款</text>
+          <text class="date name">RMB: 88.00</text>
+          <text class="sale name">月销量: 280</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="lifeList">
+    <view class="lift-item">
+      <view class="item-header">
+        <image class="item-avater" src="../../image/avater2.png"/>
+        <view class="item-name">
+          <text class="username">黄小米</text>
+          <text class="date">2016-10-20</text>
+        </view>
+        <view class="fouce">＋关注</view>
+      </view>
+      <view class="item-text">北冥有鱼，其名为鲲，鲲之大， 一锅炖不下， 化而为鸟， 其名为鹏， 鹏之大， 需要两个烧烤架 一个孜然 一个微辣</view>
+      <view>
+        <image class="item-image" src="../../image/life.png"/>
+      </view>
+      <view class="zan-number">
+        <view class="zanzan-box">
+          <image class="zan-icon" src="../../image/play1.png"/>
+          <text class="zan-text">322</text>
+        </view>
+        <view class="zanzan-box">
+          <image class="zan-icon" src="../../image/play2.png"/>
+          <text class="zan-text">456</text>
+        </view>
+        <view class="zanzan-box">
+          <image class="zan-icon" src="../../image/play3.png"/>
+          <text class="zan-text">745</text>
+        </view>
+      </view>
+      <view class="link-shop">
+        <image class="shop-avater" src="../../image/lift3.jpg"/>
+        <view class="shop-name">
+          <text class="title name">2016秋冬新品通勤简约纯色连帽拉链中长款</text>
+          <text class="date name">RMB: 88.00</text>
+          <text class="sale name">月销量: 280</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="lifeList">
+    <view class="lift-item">
+      <view class="item-header">
+        <image class="item-avater" src="../../image/avater1.png"/>
+        <view class="item-name">
+          <text class="username">黄小米</text>
+          <text class="date">2016-10-20</text>
+        </view>
+        <view class="fouce">＋关注</view>
+      </view>
+      <view class="item-text">北冥有鱼，其名为鲲，鲲之大， 一锅炖不下， 化而为鸟， 其名为鹏， 鹏之大， 需要两个烧烤架 一个孜然 一个微辣</view>
+      <view>
+        <image class="item-image" src="../../image/123.png"/>
+      </view>
+      <view class="zan-number">
+        <view class="zanzan-box">
+          <image class="zan-icon" src="../../image/play1.png"/>
+          <text class="zan-text">343</text>
+        </view>
+        <view class="zanzan-box">
+          <image class="zan-icon" src="../../image/play2.png"/>
+          <text class="zan-text">2345</text>
+        </view>
+        <view class="zanzan-box">
+          <image class="zan-icon" src="../../image/play3.png"/>
+          <text class="zan-text">656</text>
+        </view>
+      </view>
+      <view class="link-shop">
+        <image class="shop-avater" src="../../image/lift2.jpg"/>
+        <view class="shop-name">
+          <text class="title name">2016秋冬新品通勤简约纯色连帽拉链中长款</text>
+          <text class="date name">RMB: 88.00</text>
+          <text class="sale name">月销量: 280</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

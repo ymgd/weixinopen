@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/board/board",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/item/item"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#35495e",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#000",
+    "borderStyle": "balck",
+    "backgroundColor": "#ffffff",
+    "list": [
+    {
+      "text": "榜单",
+      "pagePath": "pages/board/board",
+      "iconPath":"images/board.png",
+      "selectedIconPath":"images/board-actived.png"
+    }, 
+    {
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath":"images/search.png",
+      "selectedIconPath":"images/search-actived.png"
+    }
+    
+    ]
+  },
+  "dubug":"true"
+
+}

@@ -1,0 +1,9 @@
+<view class="circle">
+    <view class="pie_left"><view class="left" animation="{{animationDataLeft}}"></view></view>
+    <view class="pie_right"><view class="right" animation="{{animationDataRight}}"></view></view>
+    <view class="mask"><span>{{nowPer}}</span>%</view>
+</view>
+
+<view class="section">
+  <slider max="100" min="0" show-value="true" bindchange="startAnimate" left-icon="cancel" right-icon="success_no_circle"/>
+</view>

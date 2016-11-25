@@ -1,0 +1,39 @@
+
+.api-txt2{
+    display: flex;
+    line-height:1.5;
+    padding:20rpx 20rpx 0 20rpx;
+}
+
+picker{
+      width:100%;
+}
+.select-arg{
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.p-title,.p-s{
+    width:100%;
+    height:100rpx;
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    padding:0 20rpx;
+}
+.p-title{
+     background-color: #fff;
+}
+
+.p-title text:first-child{
+    flex:1
+}
+.show-pic{
+    flex-flow: row wrap;
+    padding:20rpx;
+}
+.select-pic{
+     width: 156rpx;
+     height: 156rpx; 
+     background-color: #eeeeee;
+     margin:10rpx;
+}

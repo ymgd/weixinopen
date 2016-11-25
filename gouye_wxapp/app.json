@@ -1,0 +1,43 @@
+{
+  "pages": [
+      "page/splash/splash",
+      "page/activity/activity",
+      "page/me/me",
+      "page/html5/html5"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "够野",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "page/activity/activity",
+      "iconPath": "image/activityNotChecked.png",
+      "selectedIconPath": "image/activityChecked.png",
+      "text": "活动列表"
+    }, {
+      "pagePath": "page/me/me",
+      "iconPath": "image/userNotChecked.png",
+      "selectedIconPath": "image/userChecked.png",
+      "text": "我的够野"
+    }, {
+      "pagePath": "page/html5/html5",
+      "iconPath": "image/userNotChecked.png",
+      "selectedIconPath": "image/userChecked.png",
+      "text": "静态页面"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

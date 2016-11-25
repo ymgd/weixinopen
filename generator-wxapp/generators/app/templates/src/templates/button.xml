@@ -1,0 +1,3 @@
+<template name="button">
+  <button bindtap="{{onTap}}" class="{{styles[type]}}" type="{{type}}">{{name}}</button>
+</template>

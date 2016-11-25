@@ -1,0 +1,12 @@
+page{padding:120rpx 0;}
+.content{overflow: hidden;padding-left: 10rpx;}
+.pic{float:left;width:329rpx;margin:0 0 10px 25rpx;overflow: hidden;}
+.pic image{width:329rpx;height:329rpx;}
+.tabTit{height:90rpx;line-height: 90rpx;border-bottom: solid 1px #eee;position:fixed;top:0;width: 750rpx;z-index: 1;background: #f5f5f5;}
+.tabTit .active{color:#e64340;background: #fff;}
+.tabTit .active image{transform: rotate(180deg);background: none;}
+.tabTit image{width:26rpx;height:26rpx;vertical-align: middle;margin-left: 5px;}
+.tabLayer{box-shadow: 0 5px 5px rgba(0,0,0,.15);width:750rpx;overflow: hidden;position: fixed;top:90rpx;z-index: 1;background: #fff;padding-bottom: 26rpx;border-bottom: solid 1px #eee;}
+.tabLayer text{width:210rpx;height:60rpx;line-height:60rpx;float:left;border: solid 1px #eee;margin:20rpx 0 0 26rpx;}
+.tabLayer .active{color:#e64340;border-color:#e64340;}
+.btnBox{clear:both;}

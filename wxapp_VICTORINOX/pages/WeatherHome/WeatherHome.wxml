@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <!--city-->
+  <view class="cityinfo">
+     <text>{{city}}</text>
+  </view>
+  <view class="currtime-info">
+     <text>{{currtime}}发布</text>
+  </view>
+
+  <!--weather-->
+  <view class="weahterinfo">
+    <view class="weahterinfo-item">
+      <text style="font-size: 200rpx">{{todayWeather.tmp}}</text>
+      <text style="font-size: 70rpx">o</text>
+    </view>
+    <view class="weahterinfo-item">
+      <text >{{todayWeather.cond.txt}}</text>
+      <text style="margin-left:20rpx">{{todayWeather.wind.dir}}{{todayWeather.wind.sc}}级</text>
+    </view>
+    <view class="weahterinfo-item" style="font-size:30rpx">
+      <text >体感 {{todayWeather.fl}}</text>
+      <text style="font-size: 20rpx;margin-left:5rpx">o</text>
+      <text style="margin-left:5rpx">C</text>
+      <text style="margin-left:20rpx">空气质量 {{todayAqi.city.qlty}}</text>
+    </view>
+  </view>
+
+  <!--forecast-->
+  <view class="line_h"></view>
+  <template name="forecastinfoItem">
+     <view class="forecastinfo-item">
+     <view class="forecastinfo-item-text">{{time}}</view>
+     <view class="forecastinfo-item-text-row" style="font-size:30rpx">
+        <text >{{min}}</text>
+        <text style="font-size: 20rpx;margin-left:5rpx">o</text>
+        <text style="margin-left:5rpx">C-</text>
+        <text >{{max}}</text>
+        <text style="font-size: 20rpx;margin-left:5rpx">o</text>
+      <text style="margin-left:5rpx">C</text>
+     </view>
+     <view class="forecastinfo-item-text">{{weather}}</view>
+    </view>
+  </template>
+
+  <view class="forecastinfo-container">
+    <template is="forecastinfoItem" data="{{time:'明天',min:daily_forecast[1].tmp.min,max:daily_forecast[1].tmp.max,weather:daily_forecast[1].cond.txt_d}}" />
+    <view class="line_v"></view>
+    <template is="forecastinfoItem" data="{{time:'后天',min:daily_forecast[2].tmp.min,max:daily_forecast[2].tmp.max,weather:daily_forecast[2].cond.txt_d}}" />
+    <view class="line_v"></view>
+    <template is="forecastinfoItem" data="{{time:daily_forecast[3].date,min:daily_forecast[3].tmp.min,max:daily_forecast[3].tmp.max,weather:daily_forecast[3].cond.txt_d}}" />
+  </view>
+</view>
+
+

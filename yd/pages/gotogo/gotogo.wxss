@@ -1,0 +1,67 @@
+.container{
+  background-color: rgb(240,240,240);
+}
+
+.article-list {
+  width: 530rpx;
+  height: 700rpx;
+  margin: 0 auto;
+  margin-top: 120rpx;
+  overflow: hidden;
+  position: relative;
+  border: 1px rgb(199,199,205) solid;
+  line-height: 1;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+}
+
+.article-box {
+  position: absolute;
+  overflow: hidden;
+}
+
+.article-box image{
+    width: 530rpx;
+    height: 580rpx;
+}
+
+.article-info {
+  /*box-sizing: border-box;
+ min-height: 92rpx;*/
+ background-color: #fff;
+ padding: 24rpx;
+ border-top: 1px rgb(199,199,205) solid;
+ font-size: 28rpx;
+ color: #333;
+}
+
+.article-title {
+  max-width: 530rpx;
+  display: block;
+  overflow: hidden; /*自动隐藏文字*/
+  text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+  white-space: nowrap;/*强制不换行*/
+}
+.price {
+  display: block;
+  color:#e60012;
+  margin-top: 16rpx;
+}
+.operate-area {
+  margin:0 auto;
+  margin-top: 110rpx;
+  text-align: center;
+}
+.operate-area view{
+  display: inline-block;
+}
+.operate-area image{
+  margin-right: 130rpx;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 1px rgb(199,199,205) solid;
+}
+.operate-area .dislike{
+  margin-right: 0;
+}

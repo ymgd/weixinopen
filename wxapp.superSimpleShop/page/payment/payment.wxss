@@ -1,0 +1,34 @@
+#order {
+    display: flex;
+    flex-direction: column;
+}
+
+#order .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #eee;
+    margin: 0 20rpx;
+    padding: 5rpx 0;
+}
+
+#order .item-first {
+    border-top: 1rpx solid #eee;
+}
+
+#order image {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+#order text {
+    font-size: 30rpx;
+}
+
+#total-price {
+    margin: 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}

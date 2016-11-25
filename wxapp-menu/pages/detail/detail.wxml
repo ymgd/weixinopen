@@ -1,0 +1,44 @@
+<!-- 菜谱的详情页，
+详细介绍做菜过程，内容包括：
+1.名称
+2.美食效果图
+3.美食叙述
+4.食材：主料、辅料
+5.步骤：分部显示过程，包含图片和文字
+ -->
+<view class="content">
+
+    <!-- 标题 -->
+    <view class="title">
+        {{menu.title}}
+    </view>
+
+    <!-- 美食照片 -->
+    <view class="pic">
+        <image src="{{menu.albums[0]}}" mode="scaleToFill"></image>
+    </view>
+
+    <!-- 介绍 -->
+    <view class="imtro">
+        {{menu.imtro}}
+    </view>
+
+    <!-- 食材 -->
+    <view class="text-1">食材</view>
+    <view>
+        <!-- 主料 -->
+        <view class="text-2">主料:</view>
+        <view>{{menu.ingredients}}</view>
+        <!-- 辅料 -->
+        <view class="text-2">辅料:</view>
+        <view>{{menu.burden}}</view>
+    </view>
+
+    <!-- 步骤 -->
+    <view class="text-1">步骤</view>
+    <view wx:for="{{menu.steps}}" wx:key="unique" class="step-item">
+        <image src="{{item.img}}" mode="aspectFit"></image>
+        <text>{{item.step}}</text>
+    </view>
+    
+</view>

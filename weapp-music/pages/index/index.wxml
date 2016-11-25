@@ -1,0 +1,24 @@
+<block wx:if="{{loading === true && audioAction.method == 'play'}}">
+  <loading>歌曲加载中</loading>
+</block>
+<audio src="{{src}}" name="{{name}}" author="{{author}}" poster="{{poster}}" action="{{audioAction}}" bindplay="started" bindended="ended" bindtimeupdate="timeupdate" controls></audio>
+<scroll-view class="song-list">
+  <block wx:for="{{displayList}}" wx:for-item="song" wx:for-index="index">
+    <view class="song-item {{index % 2 === 1 ? 'even': 'odd' }} {{src === song.src ? 'current': ''}}" bindtap="playItem" data-src="{{song.src}}">
+      <view class="song-no">{{displayList.length - index }}</view><view class="song-name">{{song.songname}}</view>
+    </view>
+  </block>
+</scroll-view>
+<view class="footer">
+  <view class="song-info">
+    <view class="song-name">{{name}}</view>
+    <view class="song-time">{{time}}</view>
+  </view>
+  <view class="controls">
+    <view class="btn btn-prev" bindtap="prev" style="background-image:url(../../images/prev.png)">上一首</view>
+    <view class="btn btn-play" bindtap="play_pause" style="background-image:url(../../images/{{status}}.png)">{{status}}</view>
+    <view class="btn btn-next" bindtap="next" style="background-image:url(../../images/next.png)">下一首</view>
+    <view class="btn btn-mode" bindtap="switchMode" style="background-image:url(../../images/{{mode}}.png)">{{mode}}</view>
+  </view>
+</view>
+

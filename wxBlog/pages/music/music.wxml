@@ -1,0 +1,27 @@
+<import src="../template/nav.wxml"/>
+
+<view class="playBox">
+    <image src="{{playMusic.img}}" mode="scaleToFill" class="playMask"></image>
+    <image src="{{playMusic.img}}" mode="scaleToFill" class="playImg {{play}}" bindtap="controlMusic"></image>
+    <text class="playSong">{{playMusic.song}}</text>
+    <text class="playSing">{{playMusic.sing}}</text>
+</view>
+
+<scroll-view scroll-y="true" class="musics">
+    <view class="allMBox">
+        <block wx:for="{{musics}}" wx:key="index">
+            <view class="musicBox">
+                <image src="{{item.picUrl}}" mode="scaleToFill" class="cover"></image>
+                <view id="{{item.name}}" class="infoBox {{item.scale}}" bindtap="playMusic">
+                    <view class="marginTop"></view>
+                    <view class="line"></view>
+                    <text class="song">{{item.name}}</text>
+                    <text class="sing">{{item.singer}}</text>
+                    <view class="line"></view>
+                </view>
+            </view>
+        </block>
+    </view>
+</scroll-view>
+
+<template is="nav" data="{{...nav}}"/>

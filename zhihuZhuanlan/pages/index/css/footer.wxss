@@ -1,0 +1,39 @@
+.footer{
+    position: relative;
+    padding-top: 68px;
+    text-align: center
+}
+
+.footer-tips{
+    font-size: 18px;
+    border:  .5px solid #97FFD8;
+    padding: 10px 0px;
+    width: 225px;
+    margin: 0 auto;
+    border-left: 0;
+    border-right: 0
+}
+
+.edit-icon{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 18px;
+  
+}
+
+.edit-post{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+   background-color: #009688;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   text-align: center;
+   color: #fff;
+    
+     box-shadow: 0px 3px 9px 2px #BFBFBF;
+}
+

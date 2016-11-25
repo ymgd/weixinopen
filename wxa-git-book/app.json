@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/logs/logs",
+    "pages/search/detail/detail",
+    "pages/search/show/show"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff0",
+    "navigationBarTitleText": "git-book",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/search/search",
+      "text": "书库"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "我"
+    }]
+  },
+  "debug": true
+}

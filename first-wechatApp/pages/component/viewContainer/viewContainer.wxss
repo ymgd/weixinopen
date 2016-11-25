@@ -1,0 +1,14 @@
+.flex-wrp{
+  display: flex;
+  background: #fff;
+}
+.flex-item{
+  height: 100px;
+  width: 100px;
+}
+.section{
+  margin-bottom: 40px;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}

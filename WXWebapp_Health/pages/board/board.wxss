@@ -1,0 +1,33 @@
+.slide swiper {
+    height: 300rpx;
+}
+.slide-image {
+    width: 100%;
+    height: 100%;
+}
+.board {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50rpx;
+    padding: 40rpx;
+}
+.board-item {
+    flex: 1;
+    cursor: pointer;
+    border: 1rpx solid #eee;
+    margin-top: 30rpx;
+    padding: 30rpx;
+}
+.board-item image {
+    flex: 1;
+} 
+.board-item image {
+    height: 20rpx;
+    width: 20rpx;
+} 
+.images {
+    position: absolute;
+    right: 100rpx;
+    height: 50rpx;
+    width: 50rpx;
+}

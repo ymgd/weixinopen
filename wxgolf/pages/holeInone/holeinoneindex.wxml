@@ -1,0 +1,47 @@
+<!--<view class="hole-container">-->
+<!--<view class="container">-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for-items="{{contentBlockItemsArray}}">
+    <swiper-item>
+    <!--style="height: {{(SystemInfo.windowWidth)/2}}px"-->
+      <image src="{{item.iconUrl}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="section index-nav">
+        <block wx:for-items="{{navs}}">
+            <view class="l-c-c" catchtap="go" data-type="{{item.text}}">
+                <image src="{{item.image}}" class="slide-image"/>
+                <text>{{item.text}}</text>
+            </view>
+        </block>
+</view>
+
+<view class="remind-year-rank">
+    <text class="remind-year-rank-text">年度排行榜</text>
+    <view class="top-of-year">
+        <view class="top-of-year-left-line"></view>
+        <text class="top-of-year-text">TOP OF YEAR</text>
+        <view class="top-of-year-right-line"></view>
+    </view>
+</view>
+<scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+        <navigator wx:for="{{itemsArray}}">
+            <view class="hole-ine-one-item">
+                <text class="orderIndex">{{item.orderInx}}</text>
+                <image class="poster-hole-in-one-avatar" src="{{item.user.avatarUrl}}"></image>
+                <text class="loginMobileNo">{{item.user.loginMobileNo}}</text>
+                <view class="point-view">
+                    <text class="point-orange">{{item.pointCount}}</text>
+                    <text class="fen-black">分</text>
+                </view>
+            </view>
+        </navigator>   
+        <view class="tips">
+            <view wx:if="{{hasMore}}"><image src="/images/loading.gif" mode="aspectFill"/><text>数据加载中...</text></view>
+            <view wx:else><text>没有更多内容了</text></view>
+        </view>
+</scroll-view> 
+<loading hidden="{{!loading}}">加载中...</loading> 
+<!--</view>-->

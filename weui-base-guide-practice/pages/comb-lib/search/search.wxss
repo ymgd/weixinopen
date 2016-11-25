@@ -1,0 +1,55 @@
+page {
+    height: 100%;
+}
+.container{  
+    padding: 0;
+    background: #EFEFF4;
+}
+
+.top-bar-wrp {
+    padding: 16rpx;
+    border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+    background: #ffffff; 
+    border-radius: 10rpx;
+    position: relative;
+}
+
+.top-bar input {
+    position: relative;
+}
+
+
+.search-ph {
+    text-align: center;
+    font-size: 26rpx;
+    opacity: .4;
+}
+
+.input-ph {
+    display: flex;
+    position: absolute;
+    top: 13rpx;
+    left: 315rpx;
+}
+
+.sub {
+    font-size: 26rpx;
+    opacity: .4;
+}
+
+.search-icon {
+    width: 25rpx;
+    height: 25rpx;
+    margin-right: 10rpx;
+}
+
+.hidden {
+    display: none;
+}
+
+.search {
+    text-align: center;
+}

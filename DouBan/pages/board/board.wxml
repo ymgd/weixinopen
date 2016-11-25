@@ -1,0 +1,35 @@
+<!--榜单-->
+<view class="container">
+	<view class="slider">
+		<swiper indicator-dots="{{true}}"
+		  autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}">
+		  <block wx:for="{{imgUrls}}">
+		    <swiper-item>
+		      <image src="{{item}}" class="slide-image" width="355" height="150" mode="scaleToFill"/>
+		    </swiper-item>
+		  </block>
+		</swiper>
+	</view>
+	<view class="board">
+		<navigator url="../list/list?type=in_theaters&name=正在上映" hover-class="none">
+			<view class="board-item">
+				<text>正在上映</text>
+			</view>
+		</navigator>
+		<navigator url="../list/list?type=coming_soon&name=即将上映" hover-class="none">
+			<view class="board-item">
+				<text>即将上映</text>
+			</view>
+		</navigator>
+		<navigator url="../list/list?type=top250&name=TOP250" hover-class="none">
+			<view class="board-item">
+				<text>TOP250</text>
+			</view>
+		</navigator>
+		<navigator url="../list/list?type=us_box&name=TOP250" hover-class="none">
+			<view class="board-item">
+				<text>北美票房榜</text>
+			</view>
+		</navigator>
+	</view>
+</view>

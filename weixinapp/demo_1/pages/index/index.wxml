@@ -1,0 +1,19 @@
+<!--index.wxml
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+-->
+<view>{{text}}</view>
+<button bindtap="changeText">Change normal data</button>
+<view>{{array[0].text}}</view>
+<button bindtap="changeItemInArray">Change Array date</button>
+<view>{{object.text}}</view>
+<button bindtap="changeItemObject">Change Object data</button>
+<view>{{newField.text}}</view>
+<button bindtap="addNewField">Add new data</button>

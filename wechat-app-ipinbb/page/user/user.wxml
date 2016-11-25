@@ -1,0 +1,49 @@
+<view>
+    <!-- header start -->
+    <view class="user-header">
+        <view class="user-img">
+            <view class="iconfont icon-weixin"></view>
+        </view>
+
+        <view class="login-btn" bindtap="loginFun">微信授权登录</view>
+    </view>
+    <!-- / header end -->
+
+    <!-- article start -->
+    <view class="user-article">
+        <navigator url="">
+            <view class="user-order">
+                <text class="order-all">全部订单</text>
+                <view class="order-look">查看<view class="iconfont icon-right"></view></view>
+            </view>
+        </navigator>
+
+        <view class="order-class">
+            <navigator class="item-order" url="">
+                <view class="iconfont icon-group"></view>
+                <text class="item--order-text">待成团</text>
+            </navigator>
+
+            <navigator class="item-order" url="">
+                <view class=" iconfont icon-pay"></view>
+                <text class="item--order-text">待付款</text>
+            </navigator>
+
+            <navigator class="item-order" url="">
+                <view class="iconfont icon-send"></view>
+                <text class="item--order-text">待发货</text>
+            </navigator>
+
+            <navigator class="item-order" url="">
+                <view class="iconfont icon-deliver"></view>
+                <text class="item--order-text">待收货</text>
+            </navigator>
+
+            <navigator class="item-order" url="">
+                <view class="iconfont icon-complete"></view>
+                <text class="item--order-text">已完成</text>
+            </navigator>    
+        </view>
+    </view>
+    <!-- / article end -->
+</view>

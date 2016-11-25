@@ -1,0 +1,133 @@
+.container{
+  background-color: whitesmoke;
+  height: 100%;
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  z-index: -1;
+}
+
+.bottom-line{
+  border-top: 1px solid gainsboro;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  position:absolute;
+  bottom:0px;
+}
+.bottom-line input{
+  float: left;
+  background-color: white;
+  width: 75%;
+  height: 90%;
+  font-size: 24px;
+  margin: 1px 2% 1px;
+  border-bottom:1px solid gainsboro;
+  
+}
+.bottom-line button{
+  float: left;
+  width:20%;
+  height: 45px;
+  margin-top:2.5px;
+ 
+}
+.messageSV{
+  background-color: ghostwhite;
+  z-index: 1;
+  width: 100%;
+  position:absolute;
+  top:0px;
+  bottom:51px;
+}
+/************myMessage********************/
+.myMessage {
+	padding:15px;
+
+}
+.myview{
+  height: 100%;
+}
+.myview image{
+    float:right;
+}
+.userinfo-avatar {
+
+     width: 80rpx;
+    height: 80rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+  
+  }
+.myview .m {
+position:relative;
+float: right;
+margin: 10px;
+max-width: 60%;
+}
+.myview .m .mes {
+position:relative;
+padding:10px;
+background:#4EC046;
+border-radius:5px; /* 圆角 */
+word-wrap: break-word;
+max-width: 90%;
+float: right;
+}
+
+.myview .m .arrow {
+position:absolute;
+top:5px;
+right:-16px; /* 圆角的位置需要细心调试哦 */
+width:0;
+height:0;
+font-size:16px;
+border:solid 8px;
+border-color:ghostwhite ghostwhite ghostwhite #4EC046;
+z-index: 0;
+
+}
+/************youMessage********************/
+ .youMessage {
+	 padding:15px;
+}
+.youview{
+
+  height: 100%;
+}
+.youview image{
+    float:left;
+}
+
+.youview .m {
+position:relative;
+float: left;
+margin: 10px;
+max-width: 60%;
+}
+.youview .m .mes {
+position:relative;
+padding:10px;
+background:white;
+border-radius:5px; /* 圆角 */
+word-wrap: break-word;
+max-width: 90%;
+float: left;
+}
+
+.youview .m .arrow {
+position:absolute;
+top:5px;
+left:-16px; /* 圆角的位置需要细心调试哦 */
+width:0;
+height:0;
+font-size:16px;
+border:solid 8px;
+border-color:ghostwhite white ghostwhite ghostwhite;
+z-index: 0;
+
+
+}
+.yk{ clear:both;}

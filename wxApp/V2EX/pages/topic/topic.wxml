@@ -1,0 +1,14 @@
+<view class="container">
+    <loading hidden="{{ hidden }}">加载中</loading>
+    <view class="topic-head">
+        <image class="avatar" src="{{ topic.member.avatar_normal }}"></image>
+        <view class="topic-info">
+            <view class="topic-title">{{ topic.title }}</view>
+            <view class="topic-desc">
+                <text class="username">{{ topic.member.username }}</text>
+                <text class="">{{ topic.created }}</text>
+            </view>
+        </view>
+    </view>
+    <view class="topic-content">{{ topic.content }}</view>
+</view>

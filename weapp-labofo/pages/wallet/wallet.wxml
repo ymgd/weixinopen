@@ -1,0 +1,21 @@
+<view class="page">
+    <view class="page_hd ">
+        <view class="section section_ctn" style="position:center">
+                <view class="title" style="text-align:center">我的余额</view>
+                <view class="desc" style="text-align:center">{{balance}}</view>
+        </view>
+    </view>
+    <view class="page_body" > 
+
+        <view class="btn-area">
+              <navigator url="../trade/trade" hover-class="navigator-hover" >
+                  <button  type="default"  class="ofo-button">查看交易明细</button>
+              </navigator>
+        </view>
+        <view class="btn-area">
+              <navigator url="../recharge/recharge" hover-class="navigator-hover" >
+                  <button class="ofo-button">充值</button>
+              </navigator>
+        </view>
+    </view>
+</view>

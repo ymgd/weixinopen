@@ -1,0 +1,50 @@
+'.source.js':
+  '获取本地数据缓存':
+    'prefix': 'wxgetStorage'
+    'body': '''
+    wx.getStorage({
+      key: '${1:String}',
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''
+  '设置本地数据缓存':
+    'prefix': 'wxsetStorage'
+    'body': '''
+    wx.setStorage({
+      key: '${1: String}',
+      data: Object/String,
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''
+  '清理本地数据缓存':
+    'prefix': 'wxclearStorage'
+    'body': '''
+    wx.clearStorage({
+      key: '${1: String}',
+      success: function(res){
+        $2// success
+      },
+      fail: function() {
+        $3// fail
+      },
+      complete: function() {
+        $4// complete
+      }
+    })
+    '''

@@ -1,0 +1,8 @@
+<import src="../templates/button" />
+<view class="{{styles.container}}">
+  <view class="{{styles.user}}">
+    <image class="{{styles.avatar}}" src="{{user.avatarUrl}}" background-size="cover"></image>
+    <text class="{{styles.nick}}">{{user.nickName}}</text>
+  </view>
+  <template is="button" data="{{styles, ...button }}" />
+</view>

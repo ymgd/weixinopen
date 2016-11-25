@@ -1,0 +1,16 @@
+<view class="container">
+  <view wx:for-index="itemIndex" wx:for="{{entries}}" wx:key="unique">
+    <!-- 为 wx:for 循环指定 wx:for-index，才能进入正确的详情页 -->
+    <!-- <view class="entry-meta" wx:if="{{item.meta}}">
+      <view wx:if="{{item.meta.collectionDate}}">
+        <text class="meta">{{item.meta.collectionDate}}</text>
+      </view>
+    </view> -->
+    <navigator url="../entry/entry?index={{itemIndex}}">
+      <view class="section section-entry" style="background-image: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)), url('{{item.imageUrl}}');">
+        <view class="section-speak">{{item.speak}}</view>
+        <view class="section-title">{{item.title}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>

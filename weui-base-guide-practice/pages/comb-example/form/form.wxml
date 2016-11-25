@@ -1,0 +1,83 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="section">
+                <view class="section-label sub section-row">
+                    <text>请输入持卡本人的银行卡号</text>
+                </view>
+                <view class="section-body">
+                    <view class="section-row">
+                        <text class="col col1">卡号</text>
+                        <input class="col col2" type="text" placeholder="招商银行 信用卡 (8332)" placeholder-class="plh"/>
+                    </view>
+                </view>
+            </view>
+              <view class="section">
+                <view class="section-label sub section-row">
+                    <text>请填写银行卡信息</text>
+                </view>
+                <view class="section-body">
+                    <view class="section-row">
+                        <text class="col col1">有效期</text>
+                        <picker class="col col2" value="{{card.date}}" mode="selector" range="{{card.valid_dates}}" bindchange="selectCardDate">
+                            <text class="plh">请选择月份/年份</text>
+                        </picker>
+                        <icon type='info_circle' size='23' />
+                    </view>
+                </view>
+            </view>
+               <view class="section">
+                <view class="section-label sub section-row">
+                    <text>段落文字输入</text>
+                </view>
+                <view class="section-body">
+                    <view class="section-row">
+                        <text class="col col1">姓名</text>
+                        <input class="col col2" type="text" placeholder="请输入完整姓名" placeholder-class="plh"/>
+                    </view>
+                    <view class="section-row">
+                        <text class="col col1">证件类型</text>
+                        <input class="col col2" type="text" value="身份证"/>
+                    </view>
+                    <view class="section-row">
+                        <text class="col col1">证件号</text>
+                        <input class="col col2" type="text" placeholder="请输入证件号" placeholder-class="plh"/>
+                    </view>
+                </view>
+            </view>
+            <view class="section">
+                <view class="section-label blank-bar">
+                </view>
+                <view class="section-body">
+                    <view class="section-row">
+                        <text class="col col1">手机号</text>
+                        <input class="col col2" type="text" placeholder="请输入银行预留手机号" placeholder-class="plh"/>
+                        <icon type='info_circle' size='23' />
+                    </view>
+                </view>
+            </view>
+            <view class="section check-term">
+                <view class="section-row no-border sub tf-size-14">
+                    <view class="check-box" bindtap="checkTap">
+                        <image class="check-box-png {{check_toggles[0]}}" src="{{check_box_png.src}}"></image>
+                        <image class="check-box-png {{check_toggles[1]}}" src="{{check_box_blank_png.src}}"></image>
+                    </view>
+                    <text>已阅读并同意</text>
+                    <text class="link">《借款额度合同及相关授权》</text>
+                </view>
+            </view>
+            <view class="section">
+                <view class="section-row no-border">
+                    <button type="primary" disabled="{{!checked_term}}">下一步</button>
+                </view>
+            </view>
+            <view class="footer">
+                <view class="section">
+                    <view class="section-row sub tf-size-11">
+                        <text>本服务由理财通提供底层技术支持</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

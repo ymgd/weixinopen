@@ -1,0 +1,33 @@
+<view class="index">
+    <view class="menu">
+        <scroll-view scroll-x="true" class="top-nav" >
+            <view bindtap="toPurchase" class="top-btn">交易明细</view>
+            <view bindtap="toRecharge" class="top-btn">充值明细</view>
+        </scroll-view>
+    </view>
+    <view class="body">
+        <view class="widgets"  style="display:{{purchase}}">
+            <block wx:for-items="{{purchase_list}}">
+                <view class="widgets__item">
+                    <view id="{{item.orderno}}" class="widgets__info widgets__info_show">
+                        <text class="widgets__info-name" style="font-sie: 14px">{{item.descr}}</text>
+                        <text class="widgets__info-name" style="font-sie: 14px">{{item.time}}</text>
+                        <text class="widgets__info-name" style="font-sie: 14px">￥{{item.money}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+
+        <view class="widgets" style="display:{{recharge}}">
+            <block wx:for-items="{{recharge_list}}">
+                <view class="widgets__item">
+                    <view class="widgets__info widgets__info_show">
+                        <text class="widgets__info-name" style="font-sie: 14px">{{item.descr}}</text>
+                        <text class="widgets__info-name" style="font-sie: 14px">{{item.time}}</text>
+                        <text class="widgets__info-name" style="font-sie: 14px">￥{{item.money}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

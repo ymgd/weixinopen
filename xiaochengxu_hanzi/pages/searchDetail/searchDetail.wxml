@@ -1,0 +1,12 @@
+<view class="page">
+    <scroll-view scroll-y="true" style="height: 100%;">
+        <view class="page__bd">
+            <view class="container2">
+                <template is="detail" data="{{item}}" />
+            </view>
+        </view>  
+    </scroll-view>
+</view>
+<import src="../../template/detail.wxml"/>
+
+

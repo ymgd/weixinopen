@@ -1,0 +1,19 @@
+.button {
+    width: 100%;
+    margin-top: 30px;
+}
+.section {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0px 0 0 #26a69a;
+}
+.section.focus {
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+}
+button.login {
+    width: 100%;
+    background-color: #31cda6;
+}

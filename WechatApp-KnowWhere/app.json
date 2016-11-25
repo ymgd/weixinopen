@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/index",
+    "pages/main_page/zhanxun/index",
+    "pages/main_page/exhibition/index",
+    "pages/main_page/book/index",
+    "pages/main_page/content/index",
+    "pages/setting/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9B9DB1",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png",
+        "text": "知亦行"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/photo_home.png",
+        "selectedIconPath": "images/photo_home.png",
+        "text": "眼界"
+      },
+        {
+        "pagePath": "pages/detail/index",
+        "iconPath": "images/shopping.png",
+        "selectedIconPath": "images/shopping.png",
+        "text": "基金"
+      },
+      {
+        "pagePath": "pages/setting/index",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me.png",
+        "text": "我"
+      }
+    ]
+  }
+}

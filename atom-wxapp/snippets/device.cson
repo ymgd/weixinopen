@@ -1,0 +1,36 @@
+'.source.js':
+  '获取网络类型':
+    'prefix': 'wxgetNetworkType'
+    'body': '''
+    wx.getNetworkType({
+      success: function(res) {
+        $1// success
+      }
+    })
+    '''
+  '异步获取系统信息': 
+    'prefix': 'wxgetSystemInfo'
+    'body': '''
+    wx.getSystemInfo({
+      success: function(res) {
+        $1// success
+      }
+    })
+    '''
+  '同步获取系统信息':
+    'prefix': 'wxgetSystemInfoSync'
+    'body': 'wx.getSystemInfoSync()'
+  '监听重力感应数据':
+    'prefix': 'wxonAccelerometerChange'
+    'body': '''
+    wx.onAccelerometerChange(function(res){
+      $1// callback
+    })
+    '''
+  '监听罗盘数据':
+    'prefix': 'wxonCompassChange'
+    'body': '''
+    wx.onCompassChange(function(res){
+      $1// callback
+    })
+    '''

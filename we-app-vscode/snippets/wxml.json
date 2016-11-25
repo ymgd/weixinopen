@@ -1,0 +1,132 @@
+{
+    "block": {
+        "prefix": "wa-block",
+        "body": "<block wx:for=\"{{${0:items}}}\">$0</block>",
+        "description": "神秘的block标签"
+    },
+    "view": {
+        "prefix": "wa-view",
+        "body": "<view>$0</view>",
+        "description": "视图容器"
+    },
+    "scroll-view": {
+        "prefix": "wa-scroll-view",
+        "body": "<scroll-view scroll-x=\"${0:false}\" scroll-y=\"${1:false}\" upper-threshold=\"${2:50}\" lower-threshold=\"${3:50}\" scroll-top=\"$4\" scroll-top=\"$5\" scroll-into-view=\"$6\" bindscrolltoupper=\"$7\" bindscrolltolower=\"$8\" bindscroll=\"$9\">$10</scroll-view>",
+        "description": "可滚动视图区域"
+    },
+    "swiper": {
+        "prefix": "wa-swiper",
+        "body": "<swiper indicator-dots=\"${0:false}\" autoplay=\"${1:false}\" vertical=\"${2:false}\" current=\"${3:0}\" interval=\"${4:5000}\" duration=\"${5:1000}\" bindchange=\"$6\">$7</swiper>",
+        "description": "滑块视图容器"
+    },
+    "swiper-item": {
+        "prefix": "wa-swiper-item",
+        "body": "<swiper-item>$0</swiper-item>",
+        "description": "滑块视图容器"
+    },
+    "icon": {
+        "prefix": "wa-icon",
+        "body": "<icon type=\"${0:success|success_no_circle|info|warn|waiting|cancel|download|search|clear}\" size=\"${1:23}\" color=\"$2\">$3</icon>",
+        "description": "图标"
+    },
+    "text": {
+        "prefix": "wa-text",
+        "body": "<text>$0</text>",
+        "description": "文本 支持转义符\"\\\" 除了文本节点以外的其他节点都无法长按选中"
+    },
+    "textarea": {
+        "prefix": "wa-textarea",
+        "body": "<textarea>$0</textarea>",
+        "description": "多行输入框"
+    },
+    "progress": {
+        "prefix": "wa-progress",
+        "body": "<progress percent=\"$0\" show-info=\"${1:false}\" stroke-width=\"${2:6}\" color=\"${3:#09BB07}\" active=\"${4:false}\">$5</progress>",
+        "description": "进度条"
+    },
+    "button": {
+        "prefix": "wa-button",
+        "body": "<button size=\"${0:default|mini}\" type=\"${1:default|primary|warn}\" plain=\"${2:false}\" disabled=\"${3:false}\" loading=\"${4:false}\" form-type=\"${5:submit|reset}\" hover-class=\"${6:button-hover}\">$7</button>",
+        "description": "按钮"
+    },
+    "checkbox-group": {
+        "prefix": "wa-checkbox-group",
+        "body": "<checkbox-group bindchange=\"$0\">$1</checkbox-group>",
+        "description": "多项选择器 内部由多个checkbox组成"
+    },
+    "checkbox": {
+        "prefix": "wa-checkbox",
+        "body": "<checkbox value=\"$0\" disabled=\"${1:false}\" checked=\"${2:false}\">$3</checkbox>",
+        "description": "多选项目"
+    },
+    "form": {
+        "prefix": "wa-form",
+        "body": "<form report-submit=\"$0\" bindsubmit=\"$1\" bindreset=\"$2\">$3</form>",
+        "description": "表单 将组件内的用户输入的<switch/> <input/> <checkbox/> <slider/> <radio/> <picker/> 提交"
+    },
+    "input": {
+        "prefix": "wa-input",
+        "body": "<input value=\"$0\" type=\"${1:text|number|idcard|digit|time|date}\" password=\"${2:false}\" placeholder=\"$3\" placeholder-style=\"$4\" placeholder-class=\"$5\" disabled=\"${6:false}\" maxlength=\"${7:140}\" auto-focus=\"${8:false}\" focus=\"${9:false}\" bindchange=\"$10\" bindinput=\"$11\" bindfocus=\"$12\" bindblur=\"$13\">$14</input>",
+        "description": "输入框"
+    },
+    "label": {
+        "prefix": "wa-label",
+        "body": "<label for=\"$0\">$1</label>",
+        "description": "用来改进表单组件的可用性 使用for属性找到对应的id 或者将控件放在该标签下 当点击时 就会触发对应的控件 for优先级高于内部控件 内部有多个控件的时候默认触发第一个控件 目前可以绑定的控件有 <button/> <checkbox/> <radio/> <switch/>"
+    },
+    "picker": {
+        "prefix": "wa-picker",
+        "body": "<picker mode=\"${0:selector|time|date}\" range=\"${1:[]}\" value=\"$2\" bindchange=\"$3\" start=\"$4\" end=\"$5\" fields=\"${6:day}\">$0</picker>",
+        "description": "滚动选择器 现支持三种选择器 通过mode来区分 分别是普通选择器 时间选择器 日期选择器 默认是普通选择器"
+    },
+    "radio-group": {
+        "prefix": "wa-radio-group",
+        "body": "<radio-group bindchange=\"$0\">$1</radio-group>",
+        "description": "单项选择器 内部由多个<radio/>组成"
+    },
+    "radio": {
+        "prefix": "wa-radio",
+        "body": "<radio value=\"$0\" checked=\"${1:false}\" disabled=\"${2:false}\" >$3</radio>",
+        "description": "单选项目"
+    },
+    "slider": {
+        "prefix": "wa-slider",
+        "body": "<slider min=\"${0:0}\" max=\"${1:100}\" step=\"${2:1}\" disabled=\"${3:false}\" value=\"$4\" show-value=\"${5:false}\" bindchange=\"$6\">$0</slider>",
+        "description": "滑动选择器"
+    },
+    "switch": {
+        "prefix": "wa-switch",
+        "body": "<switch checked=\"${0:false}\" type=\"${1:switch|checkbox}\" bindchange=\"$2\">$0</switch>",
+        "description": "开关选择器"
+    },
+    "navigator": {
+        "prefix": "wa-navigator",
+        "body": "<navigator url=\"$0\" redirect=\"${1:false}\" hover-class=\"${2:navigator-hover}\">$3</navigator>",
+        "description": "页面链接"
+    },
+    "audio": {
+        "prefix": "wa-audio",
+        "body": "<audio action=\"$0\" src=\"$1\" loop=\"${2:false}\" controls=\"${3:false}\" poster=\"$4\" name=\"${5:未知音频}\" author=\"${6:未知作者}\" binderror=\"$7\" bindplay=\"$7\" bindpause=\"$9\" bindratechange=\"$10\" bindtimeupdate=\"$11\" bindended=\"$12\">$13</audio>",
+        "description": "音频"
+    },
+    "image": {
+        "prefix": "wa-image",
+        "body": "<image src=\"$0\" mode=\"${1:scaleToFill|aspectFit|aspectFill}\" binderror=\"$2\" bindload=\"$3\">$4</image>",
+        "description": "图片"
+    },
+    "video": {
+        "prefix": "wa-video",
+        "body": "<video src=\"$0\" binderror=\"$1\">$2</video>",
+        "description": "视频"
+    },
+    "map": {
+        "prefix": "wa-map",
+        "body": "<map longitude=\"$0\" latitude=\"$1\" scale=\"${2:16}\" markers=\"$3\" covers=\"$4\">$5</map>",
+        "description": "地图"
+    },
+    "canvas": {
+        "prefix": "wa-canvas",
+        "body": "<canvas canvas-id=\"$0\" binderror=\"$1\">$2</canvas>",
+        "description": "画布"
+    }
+}

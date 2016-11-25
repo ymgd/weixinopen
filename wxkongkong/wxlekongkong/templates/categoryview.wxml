@@ -1,0 +1,10 @@
+<template name="categoryview">
+<view class="categoryview">
+    <block wx:for="{{items}}">
+        <view class="itemview" data-tag="{{index}}" bindtap="clickOnCategoryView">
+            <image src="{{item.imageurl}}"></image>
+            <text>{{item.title}}</text>
+        </view>
+    </block>
+</view>
+</template>

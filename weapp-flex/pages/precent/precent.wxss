@@ -1,0 +1,143 @@
+/* 6 百分比 */
+.cell-row {
+    height: 30%;
+    line-height: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.cell-column {
+    height: 400px;
+    text-align: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-1 {
+    width: 16.67%;
+}
+
+.row-2 {
+    width: 33.33%;
+}
+
+.row-3 {
+    width: 50%;
+}
+
+.row-4 {
+    width: 66.67%;
+}
+
+.row-5 {
+    width: 83.33%;
+}
+
+.row-6 {
+    width: 100%;
+}
+
+.row-offset-1 {
+    margin-left: 16.67%;
+}
+
+.row-offset-2 {
+    margin-left: 33.33%;
+}
+
+.row-offset-3 {
+    margin-left: 50%;
+}
+
+.row-offset-4 {
+    margin-left: 66.67%;
+}
+
+.row-offset-5 {
+    margin-left: 83.33%;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6 {
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-1 {
+    height: 16.67%;
+}
+
+.column-2 {
+    height: 33.33%;
+}
+
+.column-3 {
+    height: 50%;
+}
+
+.column-4 {
+    height: 66.67%;
+}
+
+.column-5 {
+    height: 83.33%;
+}
+
+.column-6 {
+    height: 100%;
+}
+
+.column-offset-1 {
+    margin-top: 100%;
+}
+
+.column-offset-2 {
+    margin-top: 200%;
+}
+
+.column-offset-3 {
+    margin-top: 300%;
+}
+
+.column-offset-4 {
+    margin-top: 400%;
+}
+
+.column-offset-5 {
+    margin-top: 500%;
+}
+
+.column-1, .column-2, .column-3, .column-4, .column-5, .column-6 {
+    width: 100%;
+}
+
+.row-1, .column-1 {
+    background-color: rebeccapurple;
+}
+
+.row-2, .column-2 {
+    background-color: red;
+}
+
+.row-3, .column-3 {
+    background-color: rosybrown;
+}
+
+.row-4, .column-4 {
+    background-color: royalblue;
+}
+
+.row-5, .column-5 {
+    background-color: saddlebrown;
+}
+
+.row-6, .column-6 {
+    background-color: seagreen;
+}

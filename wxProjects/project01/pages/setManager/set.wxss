@@ -1,0 +1,33 @@
+.set-list{
+    padding-left:20rpx;
+    background-color:#fff;
+    border:1px solid #e7e7e7;
+    border-left-width:0;
+    border-right-width:0;
+}
+.set-item{
+    height:60rpx;
+    display: flex;
+    flex-flow:row wrap;
+    align-items:center;
+    overflow: hidden;
+    border-bottom:1px solid #e7e7e7;
+}
+.set-item:last-child{
+    border-bottom:0;
+}
+
+.set-t{
+    flex:1;
+   
+}
+
+
+.set-btn{
+    text-align:center;
+}
+
+.btn{
+    
+   
+}

@@ -1,0 +1,4 @@
+<import src="../../WxEmojiView/WxEmojiView.wxml"/>
+<template is="WxEmojiView" data="{{WxEmojiObjs}}"/>
+
+

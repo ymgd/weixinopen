@@ -1,0 +1,169 @@
+.container{
+    padding-bottom: 50px;
+}
+.item-header{
+    width: 100;
+    box-sizing: border-box;
+    padding: 0 10px;
+    clear: both;
+    overflow: hidden;
+}
+
+.lift-item{
+    overflow: hidden;
+    padding: 10px 0;
+    background: #fff;
+}
+
+.lift-item .item-avater{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    float: left;
+}
+
+.lift-item .item-name{
+    float: left;
+    margin-left: 10px;
+    
+}
+
+.lift-item .item-name .username{
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+.lift-item .item-name .date{
+    font-size: 12px;
+    display: block;
+    color: #333;
+    margin-top: 10px;
+}
+
+.item-text{
+    clear: borth;
+    padding: 15px;
+    font-size: 13px;
+}
+.lifeList .item-image{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.zan-number {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 14px;
+    height: 40px;
+    margin: 10px 0;
+}
+.zan-number .zanzan-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.zan-number .zan-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.zan-number .zan-text{
+    line-height: 40px;
+}
+.item-text{
+    line-height: 24px;
+}
+.shop-avater{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0 10px;
+    
+}
+.link-shop{
+    clear: both;
+    overflow: hidden;
+    margin-top: 10px;
+    border-bottom: 1px dashed #f1f1f1;
+    border-top: 1px dashed #f1f1f1;
+    padding: 10px 0;
+    
+}
+
+.link-shop .shop-name{
+    float: left;
+    font-size: 12px;
+    width: 75%;
+}
+
+.link-shop .shop-name .name{
+    display: block;
+    line-height: 20px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.imgbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imgbox .item-image{
+    width: 45%;
+    height: 180px;
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-top: 1px solid #1aad19;
+    clear: both;
+}
+
+.footer .btn{
+    font-size: 12px;
+}
+
+.footer .zannum{
+    width: 200px;
+    height: 30px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+.footer .icon{
+    font-size: 12px;
+    line-height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    width: 33%;
+}
+
+.footer .icon .iconimg{
+    width: 30px;
+    height: 30px;
+}
+
+.footer .add2{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 5px;
+    float: right;
+    margin-right: 10px;
+}
+

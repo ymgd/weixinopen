@@ -1,0 +1,5 @@
+
+/*news.wxss*/
+.news_item{
+    padding:5px;background-color:#fff;margin:5px;
+}

@@ -1,0 +1,22 @@
+<scroll-view scroll-y="true">
+  <view wx:for="{{story}}" wx:key="*this" class="single-story">
+    <!-- 文章标题以及副标题 -->
+    <view class="class-and-mark-warp">
+      <text class="main-content">{{item.story_class}}</text>
+      <view class="info-mark story-category">{{item.story_category}}</view>
+    </view>
+    <!-- 内容以及照片 -->
+    <view class="story-content main-description">{{item. story_content}}</view>
+    <view class="story-image-warp" wx:if="{{item.story_image}}">
+      <view wx:for="{{item.story_image}}" wx:key="*this">
+        <image class="story-image" src="{{item}}"></image>
+      </view>
+    </view>
+    <!-- 作者、时间以及其它信息 -->
+    <view class="sub-info author-posttime-status-warp">
+      <view class="story-author">{{item. story_author}}</view>
+      <view class="story-post-time">{{item. story_post_time}}</view>
+      <view class="story_status">{{item. story_status}}个人认为有用</view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,13 @@
+<!--scrollview footerview-->
+<!--data: {hasmore: true/false}-->
+
+<template name="loadingmoreview">
+<view class="loadingmoreview">
+    <block wx:if="{{hasMore}}">
+        <text style="font-size: 13px; margin-left: 10px;">加载更多...</text>
+    </block>
+    <block wx:else>
+        <text style="font-size: 13px;">没有更多数据了...</text>
+    </block>
+</view>
+</template>

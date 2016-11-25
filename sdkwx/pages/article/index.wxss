@@ -1,0 +1,30 @@
+#article-index {
+    margin: 5px;
+}
+.article {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.act-img {
+    float: left;
+    display: block;
+    width: 100px;
+    height: 80px;
+    margin-right: -100px;
+}
+.title {
+    float: left;
+    display: block;
+    margin-left: 105px;
+    margin-top: 4px;
+    height: 60px;
+}
+.category {
+    float: left;
+    display: block;
+    margin-left: 105px;
+    color: #999;
+    font-size: 12px;
+}

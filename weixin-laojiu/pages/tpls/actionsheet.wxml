@@ -1,0 +1,8 @@
+<template name="actionsheet">
+    <action-sheet hidden="{{actionsheetHidden}}" bindchange="actionsheetChange">
+      <block wx:for="{{actionsheetItems}}">
+        <action-sheet-item class="item" bindtap="bindItemTap" data-name="{{item}}">{{item}}</action-sheet-item>
+      </block>
+      <action-sheet-cancel bindtap="bindCancel" class="cancel">取消</action-sheet-cancel>
+    </action-sheet>
+</template>

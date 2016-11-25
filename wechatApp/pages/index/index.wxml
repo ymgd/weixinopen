@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="section-list">
+  <view class="section">
+    <text class="inputText">{{text1}}</text>
+    <input bindinput="handle" placeholder="填写个数" value="{{text1}}" auto-focus/>
+  </view>
+  <hr/>
+  <view class="section">
+    <text class="inputText">总金额</text>
+    <input placeholder="填写金额" auto-focus/>
+  </view>
+  <hr/>
+  <view class="section">
+    <text class="inputText">祝福语</text>
+    <input placeholder="恭喜发财,大吉大利" auto-focus/>
+  </view>
+</view>
+<view class="section-list">
+  <view class="section link">
+    <icon type="success" size="20" color="#09bb07" />
+    <text>需要口令才能领取</text>
+  </view>
+  <hr/>
+  <view class="section">
+    <text class="inputText">红包口令</text>
+    <input placeholder="口令最多为100个字符" auto-focus/>
+  </view>
+  <hr/>
+  <view class="section">
+    <text class="inputText">口令提示</text>
+    <input placeholder="选填,支持链接" auto-focus/>
+  </view>
+</view>
+<text class="bigText">￥0</text>
+<text class="smallText">未用完的钱将在5天后自动退还</text>
+<button type="primary">塞钱进红包</button>

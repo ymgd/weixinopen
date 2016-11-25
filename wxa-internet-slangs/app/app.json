@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/entry/entry",
+    "pages/search/search",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false,
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "新词 GET!"
+  },
+  "tabBar": {
+    "color": "#b0bec5",
+    "selectedColor": "#2196f3",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新词",
+        "iconPath": "images/icon-index.png",
+        "selectedIconPath": "images/icon-index-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/icon-search.png",
+        "selectedIconPath": "images/icon-search-active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/icon-about.png",
+        "selectedIconPath": "images/icon-about-active.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+<view style="background-color:#F1BA30">
+ <!--<image style="width:20rem;height:7.81rem;"  src="../img/head_small.png"></image>-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" class="banners" style="height:7.81rem" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{bannerUrls}}">
+      <swiper-item class="banner" >
+          <image src="{{item.img}}" style="width:20rem;height:7.81rem;" data-id="{{item.id}}" bindtap="bindViewTap" 
+          class="banner-image" width="100%" height="100%"/>
+          <!--<text class="banner-title">{{item.title}}</text>-->
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+<view>
+    <text class="txttip">请填写如下信息</text></view>
+<view>
+<view class="section">
+    <text class="label">姓名：</text>
+    <input class="input" bindblur="outInputName" bindinput="updateInputName" 
+         maxlength="10" placeholder="输入您的姓名" placeholder-style="color:#dddddd;font-size: 0.9rem"/>
+</view>
+<view class="section">
+    <text class="label">身份证号：</text>
+    <input class="input" bindblur="outIdentityNum" bindinput="updateIdentityNum" 
+    type="idcard" placeholder="输入您的身份证号" placeholder-style="color:#dddddd;font-size: 0.9rem" />
+</view>
+<view class="section">
+    <text class="label">手机号：</text>
+    <input  class="ph_input" bindblur="outMobileNum" bindinput="updateMobileNum" type="number" 
+    placeholder="输入您的手机号"   placeholder-style="color:#dddddd;font-size: 0.9rem"/>
+    <button class="btn_code" bindtap="getICode">获取验证码</button>
+</view>
+<view class="section">
+    <text class="label">验证码：</text>
+    <input class="telCode" maxlength="4" bindblur="outICode" bindinput="updateICode" type="tel"  />
+</view>
+
+<view class="btn_section">
+    <button class="sb_button" bindtap="submitInfo"  hover-class="other-button-hover"> 申请提交 </button>
+</view>
+</view>

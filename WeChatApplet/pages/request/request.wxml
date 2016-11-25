@@ -1,0 +1,183 @@
+<!--
+TODO: below action
+-->
+<view>
+<button bindtap="editRequest" size="mini">编辑</button>
+<button bindtap="closeRequest" size="mini">关闭</button>
+<button bindtap="assignRequest" size="mini">指派</button>
+<button bindtap="pickupRequest" size="mini">提取</button>
+<button bindtap="deleteRequest" size="mini">删除</button>
+</view>
+
+<!--
+TODO: use wx.for to show attributes flexiblely 
+TODO: use slider to add actions(close, delete...) for each item
+-->
+<view wx:if="{{pagedata.SUBJECT}}">
+<text style="width:30%;float: left">标题: </text>
+<text>{{pagedata.SUBJECT}}</text>
+</view>
+<view wx:if="{{pagedata.SHORTDESCRIPTION}}">
+<text style="width:30%;float: left">概述: </text>
+<text>{{pagedata.SHORTDESCRIPTION}}</text>
+</view>
+<view wx:if="{{pagedata.REQUESTER}}">
+<text style="width:30%;float: left">请求人: </text>
+<text>{{pagedata.REQUESTER}}</text>
+</view>
+<view wx:if="{{pagedata.CREATEDTIME}}">
+<text style="width:30%;float: left">创建时间: </text>
+<text>{{pagedata.CREATEDTIME}}</text>
+</view>
+<view wx:if="{{pagedata.STATUS}}">
+<text style="width:30%;float: left">状态: </text>
+<text>{{pagedata.STATUS}}</text>
+</view>
+<view wx:if="{{pagedata.TECHNICIAN}}">
+<text style="width:30%;float: left">技术员: </text>
+<text>{{pagedata.TECHNICIAN}}</text>
+</view>
+<view wx:if="{{pagedata.APPROVAL_STATUS}}">
+<text style="width:30%;float: left">审批状态: </text>
+<text>{{pagedata.APPROVAL_STATUS}}</text>
+</view>
+<view wx:if="{{pagedata.ASSET}}">
+<text style="width:30%;float: left">资产: </text>
+<text>{{pagedata.ASSET}}</text>
+</view>
+<view wx:if="{{pagedata.CATEGORY}}">
+<text style="width:30%;float: left">分类: </text>
+<text>{{pagedata.CATEGORY}}</text>
+</view>
+<view wx:if="{{pagedata.CLOSURECODE}}">
+<text style="width:30%;float: left">关闭代码: </text>
+<text>{{pagedata.CLOSURECODE}}</text>
+</view>
+<view wx:if="{{pagedata.CLOSURECOMMENTS}}">
+<text style="width:30%;float: left">关闭注释: </text>
+<text>{{pagedata.CLOSURECOMMENTS}}</text>
+</view>
+<view wx:if="{{pagedata.COMPLETEDTIME}}">
+<text style="width:30%;float: left">完成时间: </text>
+<text>{{pagedata.COMPLETEDTIME}}</text>
+</view>
+<view wx:if="{{pagedata.CREATEDBY}}">
+<text style="width:30%;float: left">创建人: </text>
+<text>{{pagedata.CREATEDBY}}</text>
+</view>
+<view wx:if="{{pagedata.DEPARTMENT}}">
+<text style="width:30%;float: left">部门: </text>
+<text>{{pagedata.DEPARTMENT}}</text>
+</view>
+<view wx:if="{{pagedata.DESCRIPTION}}">
+<text style="width:30%;float: left">描述: </text>
+<text>{{pagedata.DESCRIPTION}}</text>
+</view>
+<view wx:if="{{pagedata.DUEBYTIME}}">
+<text style="width:30%;float: left">预期时间: </text>
+<text>{{pagedata.DUEBYTIME}}</text>
+</view>
+<view wx:if="{{pagedata.EDITING_STATUS}}">
+<text style="width:30%;float: left">编辑状态: </text>
+<text>{{pagedata.EDITING_STATUS}}</text>
+</view>
+<view wx:if="{{pagedata.EDITORID}}">
+<text style="width:30%;float: left">编辑人ID: </text>
+<text>{{pagedata.EDITORID}}</text>
+</view>
+<view wx:if="{{pagedata.FCR}}">
+<text style="width:30%;float: left">FCR: </text>
+<text>{{pagedata.FCR}}</text>
+</view>
+<view wx:if="{{pagedata.FR_DUETIME}}">
+<text style="width:30%;float: left">FR_DUETIME: </text>
+<text>{{pagedata.FR_DUETIME}}</text>
+</view>
+<view wx:if="{{pagedata.GROUP}}">
+<text style="width:30%;float: left">组: </text>
+<text>{{pagedata.GROUP}}</text>
+</view>
+<view wx:if="{{pagedata.IMPACT}}">
+<text style="width:30%;float: left">影响: </text>
+<text>{{pagedata.IMPACT}}</text>
+</view>
+<view wx:if="{{pagedata.IMPACTDETAILS}}">
+<text style="width:30%;float: left">影响信息: </text>
+<text>{{pagedata.IMPACTDETAILS}}</text>
+</view>
+<view wx:if="{{pagedata.ISVIPUSER}}">
+<text style="width:30%;float: left">是否VIP: </text>
+<text>{{pagedata.ISVIPUSER}}</text>
+</view>
+<view wx:if="{{pagedata.IS_CATALOG_TEMPLATE}}">
+<text style="width:30%;float: left">是否分类模板: </text>
+<text>{{pagedata.IS_CATALOG_TEMPLATE}}</text>
+</view>
+<view wx:if="{{pagedata.ITEM}}">
+<text style="width:30%;float: left">项目: </text>
+<text>{{pagedata.ITEM}}</text>
+</view>
+<view wx:if="{{pagedata.LEVEL}}">
+<text style="width:30%;float: left">级别: </text>
+<text>{{pagedata.LEVEL}}</text>
+</view>
+<view wx:if="{{pagedata.MODE}}">
+<text style="width:30%;float: left">模式: </text>
+<text>{{pagedata.MODE}}</text>
+</view>
+<view wx:if="{{pagedata.PRIORITY}}">
+<text style="width:30%;float: left">优先级: </text>
+<text>{{pagedata.PRIORITY}}</text>
+</view>
+<view wx:if="{{pagedata.REQUESTTEMPLATE}}">
+<text style="width:30%;float: left">请求模板: </text>
+<text>{{pagedata.REQUESTTEMPLATE}}</text>
+</view>
+<view wx:if="{{pagedata.REQUESTTYPE}}">
+<text style="width:30%;float: left">请求类型: </text>
+<text>{{pagedata.REQUESTTYPE}}</text>
+</view>
+<view wx:if="{{pagedata.RESOLVEDTIME}}">
+<text style="width:30%;float: left">解决时间: </text>
+<text>{{pagedata.RESOLVEDTIME}}</text>
+</view>
+<view wx:if="{{pagedata.RESPONDEDTIME}}">
+<text style="width:30%;float: left">答复时间: </text>
+<text>{{pagedata.RESPONDEDTIME}}</text>
+</view>
+<view wx:if="{{pagedata.RESPONSEDUEBYTIME}}">
+<text style="width:30%;float: left">答复过期时间: </text>
+<text>{{pagedata.RESPONSEDUEBYTIME}}</text>
+</view>
+<view wx:if="{{pagedata.SERVICE}}">
+<text style="width:30%;float: left">服务: </text>
+<text>{{pagedata.SERVICE}}</text>
+</view>
+<view wx:if="{{pagedata.SITE}}">
+<text style="width:30%;float: left">站点: </text>
+<text>{{pagedata.SITE}}</text>
+</view>
+<view wx:if="{{pagedata.SLA}}">
+<text style="width:30%;float: left">SLA: </text>
+<text>{{pagedata.SLA}}</text>
+</view>
+<view wx:if="{{pagedata.SUBCATEGORY}}">
+<text style="width:30%;float: left">子类: </text>
+<text>{{pagedata.SUBCATEGORY}}</text>
+</view>
+<view wx:if="{{pagedata.TECHNICIAN_LOGINNAME}}">
+<text style="width:30%;float: left">技术员登录名称: </text>
+<text>{{pagedata.TECHNICIAN_LOGINNAME}}</text>
+</view>
+<view wx:if="{{pagedata.TIMESPENTONREQ}}">
+<text style="width:30%;float: left">花费时间: </text>
+<text>{{pagedata.TIMESPENTONREQ}}</text>
+</view>
+<view wx:if="{{pagedata.URGENCY}}">
+<text style="width:30%;float: left">紧急度: </text>
+<text>{{pagedata.URGENCY}}</text>
+</view>
+<view wx:if="{{pagedata.WORKORDERID}}">
+<text style="width:30%;float: left">请求ID: </text>
+<text>{{pagedata.WORKORDERID}}</text>
+</view>

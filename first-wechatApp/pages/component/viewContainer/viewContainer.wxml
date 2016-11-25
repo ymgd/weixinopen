@@ -1,0 +1,109 @@
+
+
+<view class="section">
+  <view class="section_title">vertical scroll</view>
+  <scroll-view scroll-y="true" style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower"
+               bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="scroll-view-item bc_green"></view>
+    <view id="red" class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to scroll into view</button>
+    <button size="mini" bindtap="tapMove">click me to scroll</button>
+  </view>
+</view>
+<view class="section section_gap">
+  <view class="section_title">horizontal scroll</view>
+  <scroll-view class="scroll-view_H" scroll-x="true" style="height:200px;width: 100%">
+    <view id="green" class="scroll-view-item_H bc_green"></view>
+    <view id="red" class="scroll-view-item_H bc_red"></view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow"></view>
+    <view id="blue" class="scroll-view-item_H bc_blue"></view>
+  </scroll-view>
+</view>
+<view>
+<view class="section_title">swiper</view>
+  <swiper style="width:100%;height:150px" indicator-dots="true" autoplay="true">
+    <block wx:for="{{swiperConfig.imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style="width:100%" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="section">
+  <view class="section_title">flex-direction:row</view>
+  <view class="flex-wrp" style="flex-direction:row">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section_title">flex-direction:column</view>
+  <view class="flex-wrp" style="flex-direction:column">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section_title">justify-content:flex-start</view>
+  <view class="flex-wrp" style="flex-direction:row;justify-content:flex-start">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section_title">justify-content:flex-end</view>
+  <view class="flex-wrp" style="flex-direction:row;justify-content:flex-end">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section_title">justify-content:center</view>
+  <view class="flex-wrp" style="flex-direction:row;justify-content:center">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section_title">justify-content:space-between</view>
+  <view class="flex-wrp" style="flex-direction:row;justify-content:space-between">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section_title">justify-content:space-around</view>
+  <view class="flex-wrp" style="flex-direction:row;justify-content:space-around">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section_title">align-items: flex-end</view>
+  <view class="flex-wrp" style="height: 200px;flex-direction:row;justify-content: center;align-items: flex-end">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section_title">align-items: flex-end</view>
+  <view class="flex-wrp" style="height: 200px;flex-direction:row;justify-content: center;align-items: center">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+
+

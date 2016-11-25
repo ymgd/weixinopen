@@ -1,0 +1,41 @@
+<view class="page">
+    <view class="page__bd">
+
+        <view class="weui-form-preview">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__value">{{info.DomainName}}</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">CNAME域名</view>
+                    <view class="weui-form-preview__value">{{info.Cname}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">加速业务类型</view>
+                    <view class="weui-form-preview__value">{{CdnTypeName}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">状态</view>
+                    <view class="weui-form-preview__value">{{StatusName}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">创建时间</view>
+                    <view class="weui-form-preview__value">{{info.GmtCreated}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">修改时间</view>
+                    <view class="weui-form-preview__value">{{info.GmtModified}}</view>
+                </view>
+                <view wx:if="{{info.Description}}" class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">审核失败原因：</view>
+                    <view class="weui-form-preview__value">{{info.Description}}</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__ft">
+                <view bindtap="to_set" class="weui-form-preview__btn weui-form-preview__btn_primary" >操作</view>
+            </view>
+        </view>
+    </view>
+</view>

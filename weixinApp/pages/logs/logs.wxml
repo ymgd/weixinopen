@@ -1,0 +1,58 @@
+<!--logs.wxml-->
+<!--<form bindsubmit="formSubmit" bindreset="formReset">
+
+    <view class="section">
+        <input placeholder="请输入" id="input" value="{{inputVal}}" name="input"/>
+    </view>
+
+  <view class="btn-area">
+    <button formType="submit" type="primary" class="btn">保存</button>
+    <button formType="reset" type="warn" class="reset">重置</button>
+  </view>
+</form>-->
+
+<!--<view class="section">
+        <input placeholder="请输入" 
+        bindinput="bindKeyInput" 
+        value="{{inputVal}}"
+         />
+    </view>-->
+
+<!--<view>
+{{inputVal}}
+</view>-->
+
+<!--<view bindtap="upload">
+  <image src="https://36dong.com/api/thumbImg/293x347?img=http://resource.36dong.com/banner/20160825/c2fd9f089bf1846f22c133829833d12e.jpg" 
+    background-size="cover"></image>
+    <text>上传图片</text>
+</view>-->
+
+<view  bindtap="upload">
+  <image src="https://36dong.com/api/thumbImg/293x347?img=http://resource.36dong.com/banner/20160825/c2fd9f089bf1846f22c133829833d12e.jpg" 
+    background-size="cover"></image>
+
+</view>
+
+
+<!--<view bindtap="previewImage" class="section">
+  <text >查看图片</text>
+</view>-->
+
+<!--<view bindtap="getImageInfos" class="section">
+  <text>查看图片信息</text>
+</view>-->
+
+
+<view wx:for="{{images}}" wx:for-item="image" wx:key="*this">
+
+  <image src="{{image}}" background-size="cover"></image>
+    <text>图片</text>
+</view>
+
+
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>

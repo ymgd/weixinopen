@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="title">{{detail.title}}</view>
+  <view class="info">
+    作者 {{detail.author.loginname}} · 回复 {{detail.reply_count}} · 浏览 {{detail.visit_count}}
+  </view>
+  <view class="content">
+    {{detail.content}}
+  </view>
+</view>

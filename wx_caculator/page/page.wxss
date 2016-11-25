@@ -1,0 +1,54 @@
+page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: STHeitiSC-Light,STHeiti;
+}
+
+#panel {
+    display: flex;
+    background: #202020;
+    align-items: flex-end;
+    color: #FFF;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 937.5rpx;
+    flex-grow: 0;
+    justify-content: space-between;
+}
+
+.button {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+.tool {
+    color: #000;
+    background: #C5C6C9;
+}
+
+.number {
+    color: #000;
+    background: #D1D2D5;
+}
+
+.operator {
+    color: #FFF;
+    background: #F98A11;
+}
+
+.zero {
+    width: 50%;
+}

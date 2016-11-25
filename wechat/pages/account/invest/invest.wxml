@@ -1,0 +1,103 @@
+<!--<view>{{text}}</view>-->
+<!--
+    可以看到底部有一个导航栏的高度是没有显示内容的的，这个是因为给scroll-view设定了固定的高度，但想要滑动到底部加载更多效果就必须得设定一个高度。
+    现在想的办法是 在js里面获取了 scrollHeight 之后再加40 或50像素抵掉下面的导航高度。还没有找到其他的办法……
+-->
+<scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="bindDownLoad" bindscroll="scroll" >
+<view class="invest_hd">
+    <view class="left">
+        <view class="title">投资笔数</view>
+        <view class="hd_num">共<text>32</text>笔</view>
+    </view>
+    <view class="left">
+        <view class="title">投资金额</view>
+        <view class="hd_num">共<text>1562032</text>元</view>
+    </view>
+</view>
+
+<view class="invest_bd">
+    <view class="bd_title">
+        <view class="bd_left">项目名称</view>
+        <view class="bd_center">投资金额(元)</view>
+        <view class="bd_right">回款金额(元)</view>
+    </view>
+    <view class="bd_content">
+    
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">10000</view>
+            <view class="bd_right"><navigator url="repayment/repayment">收益中></navigator></view>
+        </view>
+    </view>
+</view>
+</scroll-view>

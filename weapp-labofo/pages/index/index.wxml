@@ -1,0 +1,66 @@
+<view class="page">
+    <view class="page_hd ">
+        <view class="section section_ctn" style="position:center">
+                <view class="title" style="text-align:center">你好， 你现在要去哪儿？</view>
+                <view class="desc" style="text-align:center">附近有0俩车</view>
+        </view>
+    </view>
+    <view class="page_body" > 
+        <form class="" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="weui_cells_title">
+            <label>
+                <text>表单</text>
+            </label>
+        </view>
+
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item" style="width:240px;">
+                 <label style="font-size:14px; margin-left:20px">
+                    <text>{{recommend}}</text>
+                 </label>
+            </view>
+            <view class="flex-item-button" bindtap="openLocation">
+                <image src="../../image/ic_location_searching_black_18dp.png" style="height:27px; width:27px" ></image>
+                <label style="font-size:0.5rem" style="height:27px; text-align:center">查看定位</label>
+            </view>
+        </view>
+
+        <view class="weui_cells_title">
+            <label>
+                <text>ofo & bicyclebicycle 车牌号</text>
+            </label>
+        </view>
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item" >
+                <input name="code" placehol der="车牌号" value="{{code}}"  class="ofo-button"/>
+            </view>
+        </view>
+        
+        <view class="body-view">
+            <toast hidden="true" duration="2000"  bindchange="toast2Change">
+            {{dialog.title}}
+            </toast>
+        </view>
+
+            <view class="btn-area">
+                <button formType="submit"  class="ofo-button">马上用车</button>
+            </view>
+            
+        </form>
+    </view>
+
+    <view class="section section_gap">
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 270px; margin-top:125px; margin-left:30px">
+            <view id="green" class="scroll-view-item_H bc_green">
+                <image class="poster" mode="scaleToFill" src="http://ofo.so/images/bg-1920.jpg"></image>        
+            </view>
+            <view id="red"  class="scroll-view-item_H bc_red">
+                <image class="poster" mode="scaleToFill" src="../../image/scroll-1.png"></image>
+            </view>
+            <view id="yellow" class="scroll-view-item_H bc_yellow">
+                <image class="poster" mode="scaleToFill" src="http://b1.hucdn.com/upload/show/1609/26/89758650701601_750x350.jpg!750q50.webp"></image>
+            </view>
+            <view id="blue" class="scroll-view-item_H bc_blue"></view>
+        </scroll-view>
+    </view>
+</view>

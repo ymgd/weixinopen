@@ -1,0 +1,206 @@
+
+.container{
+    height: 100%;
+    background: rgb(230, 230,230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.blockView{
+    
+    height: 1000rpx;
+    width: 667rpx;
+    margin-top: 50rpx;
+    border-radius: 10px;
+
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+/*
+display: flex; 
+align-items: center;
+ */
+.circleView{
+    background: rgb(242, 64,38);
+    height: 780rpx;
+    width: 667rpx;
+    border-radius: 10px 10px 0px 0px;
+    
+    
+    
+    
+  
+    
+}
+
+
+/*占位的view*/
+.hr{
+    height: 2%;
+    background: rgb(212, 212, 212);
+}
+
+/*
+
+
+margin-left: 33.5rpx;
+*/
+.white-Circle{
+    background: white;
+    height: 600rpx;
+    width: 600rpx;
+    border-radius: 300rpx;
+    
+    transform : translate(-50%,-50%);
+    position :absolute;
+    top:40%;
+    left:50%;
+    
+}
+
+.red-circle{
+    background: rgb(242, 64,38);
+    height: 560rpx;
+    width: 560rpx;
+    border-radius: 280rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+
+
+}
+
+.text-view{
+    
+    height: 560rpx;
+    width: 560rpx;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+text{
+    margin-bottom: 20rpx;
+    height: 50rpx;
+}
+
+.first-text{
+    margin-top: 185rpx;
+}
+
+/*桔子信用标题*/
+
+.jvzi-title{
+    
+    color: white;
+    float: left;
+    margin-top: 20rpx;
+    width: 220rpx;
+    height: 50rpx;
+    text-align: center;
+    
+
+    
+
+    
+}
+
+
+
+
+/*
+transform : translate(-50%,-50%);
+    position :absolute;
+    top:50%;
+    left:50%;
+
+
+*/
+
+
+/*下半部分的两行格子*/
+.tapView{
+
+  background: white;
+    height: 220rpx;
+    width: 667rpx;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+
+
+.tapOne{
+    height: 49%;
+    width: 100%;
+    background: white;
+    
+    
+    
+
+}
+
+
+
+.nav-view{
+
+     
+     width: 35%;
+     float: left;
+     margin: 15px 0px 0px 5px;
+}
+
+/* */
+progress{
+    width: 60%;
+    border-radius: 1px;
+    float: right;
+    margin: -13px 10px 0px 10px;
+}
+
+
+/*
+padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 10px;
+    */
+
+.tapTwo{
+
+    height: 49%;
+    width: 100%;
+    
+
+    border-radius: 0px 0px 10px 10px;
+
+    position: relative;
+    
+    
+
+}
+
+.widget__name{
+
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    width: 100px;
+   
+
+}
+
+/*右边箭头样式*/
+.widget__arrow{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    width: 14px;
+    height: 16px;
+}

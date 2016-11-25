@@ -1,0 +1,33 @@
+.log_in{
+  position: absolute;
+  height: 310rpx;
+  width: 750rpx;
+  text-align: center;
+}
+
+.log_in_img{
+  float:left;
+  height: 300rpx;
+  width: 750rpx;
+}
+
+
+.portrait_false_img{
+  position: relative;
+  bottom: 250rpx;
+  height: 100rpx;
+  width: 150rpx;
+  color: white;
+}
+
+.log_in_text{
+  position: relative;
+  bottom: 200rpx;
+  height: 100rpx;
+}
+
+.not_log_in_text{
+  color: white;
+  font-size: 35rpx;
+  font-family: STXinwei;
+}

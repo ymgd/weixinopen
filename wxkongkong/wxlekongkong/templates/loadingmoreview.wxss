@@ -1,0 +1,9 @@
+.loadingmoreview {
+    font-size: 12px;
+    color: #909090;
+    height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

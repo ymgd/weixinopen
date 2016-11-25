@@ -1,0 +1,17 @@
+<view class="bdview">
+    <input bindinput="inputChange" placeholder="您要添加的城市" class="input"></input>
+</view>
+<view   class="mid">
+<button bindtap="search" typetype = "default">搜索</button>
+</view>
+
+<view class="midbottom" >
+    <label class="bottomlable">本地城市列表</label>
+</view>
+
+<view class="bottom" >
+    <block  wx:for="{{storecity}}">
+        <label class = "bottomlable">{{item}}</label>
+    </block>
+</view>
+<button bindtap="clean" typetype = "default">删除缓存</button>

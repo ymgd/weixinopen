@@ -1,0 +1,7 @@
+view {
+    margin-top: 10rpx
+}
+.title {
+    font-size:50rpx;
+    margin:  50rpx 0rpx 50rpx 
+}

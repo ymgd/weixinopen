@@ -1,0 +1,64 @@
+{
+	"pages": {
+		"prefix": "pages",
+		"body": [
+			"\"pages\": [",
+			"\t\"pages/index/index\",",
+			"\t\"${1:add your pages path}\"",
+			"]$2"
+		],
+		"description": "设置页面路径"
+	},
+	"window": {
+		"prefix": "window",
+		"body": [
+			"\"window\": {",
+			"\t\"navigationBarBackgroundColor\": \"${1:#000000}\",",
+			"\t\"navigationBarTextStyle\": \"${2:white}\",",
+			"\t\"navigationBarTitleText\": \"${3:Wechat}\",",
+			"\t\"backgroundColor\": \"${4:#ffffff}\",",
+			"\t\"backgroundTextStyle\": \"${5:dark}\",",
+			"\t\"enablePullDownRefresh\": ${6:false}",
+			"}$7"
+		],
+		"description": "用于设置小程序的状态栏、导航条、标题、窗口背景色"
+	},
+	"tabBar": {
+		"prefix": "tabbar",
+		"body": [
+			"\"tabBar\": {",
+			"\t\"color\": \"${1:#cccccc}\",",
+			"\t\"selectedColor\": \"${2:#000000}\",",
+			"\t\"backgroundColor\": \"${3:#ffffff}\",",
+			"\t\"borderStyle\": \"${4:black}\",",
+			"\t// list 中至少 2 个对象，最多 5 个对象",
+			"\t\"list\": [{",
+			"\t\t\"pagePath\": \"pages/index/index\",",
+			"\t\t\"text\": \"${5:text}\",",
+			"\t\t\"iconPath\": \"${6:iconPath}\",",
+			"\t\t\"selectedIconPath\": \"${7:selectedIconPath}\"",
+			"\t}]",
+			"}$8"
+		],
+		"description": "窗口的底部有tab栏"
+	},
+	"networkTimeout": {
+		"prefix": "network",
+		"body": [
+			"\"networkTimeOut\": {",
+			"\t\"request\": $1,",
+			"\t\"connectSocket\": $2,",
+			"\t\"uploadFile\": $3,",
+			"\t\"downloadFile\": $4",
+			"}$5"
+		],
+		"description": "设置网络请求的超时时间"
+	},
+	"debug": {
+		"prefix": "debug",
+		"body": [
+			"\"debug\": ${true}"
+		],
+		"description": "是否开启 debug 模式"
+	}
+}

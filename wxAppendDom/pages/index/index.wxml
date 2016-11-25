@@ -1,0 +1,6 @@
+<import src="../tmpl/tmpl.wxml"/>
+
+<!--index.wxml-->
+<view>
+	<template is="Tmpl" data="{{wxAppendData}}"/>
+</view>

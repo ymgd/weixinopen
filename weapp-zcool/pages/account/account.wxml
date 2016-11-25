@@ -1,0 +1,22 @@
+<view class="account">
+    <navigator class="ui-mb account-header" url="account-info">
+        <image class="userinfo-avatar" src="{{userinfo.avatarUrl}}"></image>
+        <text class="userinfo-nickname">{{userinfo.nickName}}</text>
+    </navigator>
+    <view class="ui-mb account-main">
+        <navigator class="account-nav-list" url="collection" hover-class="navigator-hover">
+          <text class="navigator-text">我的收藏</text>
+        </navigator>
+        <navigator class="account-nav-list no-border" url="attention" hover-class="navigator-hover">
+          <text class="navigator-text no-border">我的关注</text>
+        </navigator>
+    </view>
+    <view class="ui-mb account-main">
+        <navigator class="account-nav-list" url="feedback" hover-class="navigator-hover">
+          <text class="navigator-text">意见反馈</text>
+        </navigator>
+        <navigator class="account-nav-list" url="settings" hover-class="navigator-hover">
+          <text class="navigator-text no-border">设置</text>
+        </navigator>
+    </view>
+</view>

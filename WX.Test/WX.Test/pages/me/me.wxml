@@ -1,0 +1,27 @@
+<view class="container" style="height: 100%">
+    <!--录播图-->
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item class="swiper_item">
+                <image class="swiper_image" src="{{item.thumbnail_pic_s}}"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!--cells-->
+    <view class="totalCells" wx:for="{{cells}}">
+        <view class="rightImageCell" wx:if="{{index % 2 == 0}}">
+             <view class="rightImageText">
+                <text class="cell_title">{{item.title}}</text>
+                <text class="cell_time">{{item.date}}</text>
+            </view>
+            <image class="cell_image" src="{{item.thumbnail_pic_s}}"></image>
+        </view>
+        <view wx:else class="topImageCells">
+             <image class="top_cell_image" src="{{item.thumbnail_pic_s}}" mode="scaleToFill"></image>
+             <view class="topImageText">
+                <text class="cell_title">{{item.title}}</text>
+                <text class="cell_time">{{item.date}}</text>
+            </view>
+        </view>
+    </view>
+</view>

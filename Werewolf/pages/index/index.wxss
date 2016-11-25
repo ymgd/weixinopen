@@ -1,0 +1,26 @@
+/**index.wxss**/
+.container {
+  padding-bottom: 100rpx;
+}
+.setting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 256rpx;
+  height: 256rpx;
+  border-radius: 50%;
+  margin-bottom: 24rpx;
+}
+.role-config {
+  margin-top: 24rpx;
+}
+.role-logo {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+}
+.picker {
+  text-decoration: underline;
+}

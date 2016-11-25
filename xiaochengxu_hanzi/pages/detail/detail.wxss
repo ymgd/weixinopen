@@ -1,0 +1,11 @@
+.zi{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    word-break: break-all;
+    /*line-height: 25px;*/
+    font-size:36px;
+    margin-left:0px;
+    margin-right:30px;
+    margin-bottom: 10px;
+}

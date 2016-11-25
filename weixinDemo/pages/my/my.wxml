@@ -1,0 +1,55 @@
+<view>
+  <text>上传图片</text>
+</view>
+<button type="primary" bindtap="listenerButtonupolFile">上传图片</button>
+<view>
+  <block wx:for="{{array}}" wx:if="{{hide}}" wx:key="*this">
+    <image src="{{item}}"/>
+  </block>
+</view>
+<view>
+  <text>下载图片(未完成)</text>
+</view>
+<button type="primary" bindtap="bindViewTap">下载图片</button>
+<view>
+  <text>预览图片</text>
+</view>
+<button type="primary" bindtap="previewImage">预览图片</button>
+<view>
+  <text>获取当前位置</text>
+</view>
+<button type="primary" bindtap="previewmap">获取当前位置</button>
+<view wx:if='{{latitude}}'>
+  <text>{{latitude}}</text>
+  <text>{{longitude}}</text>
+  <text>{{speed}}</text>
+  <text>{{accuracy}}</text>
+</view>
+<view>
+  <text>查看网络情况</text>
+</view>
+<button type="primary" bindtap="getNetworkType">查看网络情况</button>
+<view wx:if='{{networkType}}'>
+  <text>{{networkType}}</text>
+</view>
+<view>
+  <text>查看手机规格</text>
+</view>
+<button type="primary" bindtap="getSystemInfo">查看手机规格</button>
+<view wx:if='{{model}}'>
+  <text>型号{{model}}</text>
+  <text>设备像素比{{pixelRatio}}</text>
+  <text>窗口宽度{{windowWidth}}</text>
+  <text>窗口高度{{windowHeight}}</text>
+  <text>微信设置的语言{{language}}</text>
+  <text>微信版本号{{version}}</text>
+</view>
+<view>
+  <text>拨打电话</text>
+</view>
+<button type="primary" bindtap="makePhoneCall">拨打电话10086</button>
+<view>
+  <text>数据缓存</text>
+</view>
+<input bindinput="setStoragebindinput" class="setStorage" placeholder="请输入要存储的数据" value="{{texta}}" />
+<button type="primary" bindtap="setStorage">数据缓存</button>

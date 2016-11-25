@@ -1,0 +1,57 @@
+.video-item {
+	height: 100px;
+	border-top: 1px solid #ddd;
+	position: relative;
+	font-size: 14px;
+	padding: 0 10px;
+}
+
+.video-item:first-child {
+	border-top: none;
+}
+
+.video-item .fav {
+	width: 120px;
+	height: 80px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.video-item .info {
+	height: 80px;
+	line-height: 80px;
+	position: absolute;
+	top: 10px;
+	padding: 0 10px 0 140px;
+}
+
+.video-item .info .title {
+	line-height: 18px;
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.video-item .info .up {
+	height: 20px;
+	line-height: 20px;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.video-item .info .more {
+	position: absolute;
+	bottom: 0;
+	height: 15px;
+	line-height: 15px;
+	font-size: 12px;
+}
+
+.video-item .info .more view {
+	display: inline-block;
+}
+
+.video-item .info .more .coins {
+	position: relative;
+	right: -40px;
+}

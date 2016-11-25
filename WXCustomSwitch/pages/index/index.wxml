@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<import src="../../utils/templates/switch/switch.wxml" />
+
+<view class="container">
+  <text class="title">自定义switch</text>
+  <view class="switch-container">
+    <view style="margin-right:20px" wx:for="{{switchData}}">
+      <template is="switch" data="{{isOn: item.isOn, id:item.id, onTintColor:item.color}}"/>
+    </view>
+  </view>
+
+  <text class="title">微信switch</text>
+  <view class="switch-container">  
+    <switch/>
+  </view>
+</view>

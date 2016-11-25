@@ -1,0 +1,55 @@
+.txttip{
+    margin-bottom:10px;
+    padding-left: 5%;
+    width:90%;
+    line-height: 1.5rem;
+    font-size:0.5rem;
+    color:#ababab;
+    border-bottom:#222 1px solid;
+    display: inline-block;
+}
+.section {
+    margin-left:3%;
+    width: 94%;
+    font-size: 1.0rem;
+    clear:both;
+}
+.label {
+    float: left;
+    width:30%;
+    line-height: 1.2rem;
+    font-size: 1.1rem;
+    color: #666;
+    text-align-last:justify;
+    /* 两端对齐 text-align-last:justify; */
+    /*justify-content:space-between;*/
+    /*text-align:justify;*/
+    margin-bottom:20px;
+}
+.input {
+    float: left;
+    color: #666;
+    text-align: left;
+}
+.ph_input {
+    float: left;
+    width:40%;
+    color: #666;
+}
+.btn_code {
+    float:right;
+    padding:0;
+    width:24%;
+    font-size: 0.6rem;
+}
+.telCode{
+   width:30%; 
+   border:1px solid #dcdcdc;
+   border-radius:4px;
+}
+.btn_section {
+    margin:22px 15% 0;
+}
+.sb_button {
+    background: #F1BA30;
+}

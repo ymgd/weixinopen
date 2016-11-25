@@ -1,0 +1,16 @@
+/**login.wxss**/
+
+.form {
+    padding: 20px;
+}
+
+.form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid 1px #CCC;
+}
+
+.form button {
+    background-color: #387ef5;
+    color: white;
+}

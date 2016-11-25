@@ -1,0 +1,46 @@
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #eeeeee;
+}
+.item{
+    width: 750rpx;
+    height: 300rpx;
+    display: flex;
+    flex-direction: row;
+    background: orange;
+    margin-top: 10rpx; 
+}
+.item-img{
+    margin-left: 10rpx;
+    margin-top: 10rpx; 
+}
+.item-img image{
+    width: 300rpx;
+    height: 280rpx;
+}
+.item-text{
+    height: 100%;
+    overflow: hidden;
+    padding: 10rpx;
+}
+.title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+.tags{
+    height: 15%;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10rpx;
+}
+.imtro{
+    height: 50%;
+    font-size: 12px;
+    overflow: scroll;
+    margin-top: 20rpx;
+}

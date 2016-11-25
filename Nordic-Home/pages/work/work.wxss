@@ -1,0 +1,24 @@
+.img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 800rpx;
+    position: fixed;
+    top: 0px;
+    background-color: black;  
+}
+.swper {
+    width: 100%;
+    height: 500px;
+}
+.btn {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    right: 20px;
+}
+.name {
+    position: fixed;
+    bottom: 120px;
+    left: 20px;
+}

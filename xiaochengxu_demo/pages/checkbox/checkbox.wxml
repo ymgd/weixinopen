@@ -1,0 +1,8 @@
+<view class="container">
+    <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{items}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" disabled="{{disabled}}"/>{{item.value}}
+    </label>
+    </checkbox-group>
+    <button bindtap='setDisabled'>设置可用(不可用)</button>
+</view>

@@ -1,0 +1,58 @@
+
+.user{
+     
+}
+.user-box{
+   padding: 30rpx 0;
+}
+.user-avatar{
+    float: left;
+    width:100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.user-name{
+    font-size: 45rpx;
+    line-height: 45rpx;
+}
+.user-signature{
+    width:180prx;
+    overflow: hidden;
+    font-size: 25rpx;
+    margin-top: 20rpx;
+    color: #999;
+}
+.gender-icon{
+    width:15px;
+    height:15px;
+    margin-left: 5px;
+}
+.user-content{
+    border-top: 1px solid #eee;
+    padding: 30rpx 0 10rpx 0;
+}
+.user-content-item{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.list-box{
+    
+}
+.list-item{
+    border-bottom: 1px solid #eee;
+    padding: 20rpx 0rpx;
+    font-size: 35rpx;
+}
+.list-last-child{
+    
+    border:none;
+}
+
+.list-icon{
+    width:50rpx;
+    height: 50rpx;
+    margin-right: 20rpx;
+}

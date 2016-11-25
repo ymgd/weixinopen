@@ -1,0 +1,45 @@
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.item{
+    width:100%;
+    height:20rpx;
+    margin-top:20rpx;
+}
+.avatar-box{
+    float:left;
+    margin-left:30rpx;
+}
+
+.data-box{
+    float:left;
+    margin-left:30rpx;
+}
+
+.name-box{
+    margin-top: 30rpx;
+    margin-left:20rpx;
+    font-size:30rpx;
+}
+
+.score-box{
+    margin-top: 30rpx;
+    margin-left:20rpx;
+}
+
+.clear{
+    clear: both;
+}
+
+.main_title{
+    background-color: green;
+    color:white;
+    text-align: center;
+    height:40rpx;
+    font-size: 30rpx;
+    line-height: 40rpx;
+}

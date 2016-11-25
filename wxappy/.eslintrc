@@ -1,0 +1,30 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "rules": {
+    "arrow-body-style": 0,
+    "prefer-arrow-callback": 0,
+    "func-names": 0,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/test/**/*.js"]}]
+  },
+  "globals": {
+    "App": true,
+    "Page": true,
+    "wx": true,
+    "getApp": true,
+    "getCurrentPages": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  }
+}

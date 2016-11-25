@@ -1,0 +1,70 @@
+<view class="container">
+	<view class="banner">
+		<image class="" src="{{banner}}"></image>
+	</view>
+	<view class="block-area">
+		<view class="title">{{title}}</view>
+		<view class="block-info clearfix">
+			<view class="block-info-left">				
+				<text class="vm">已报名</text>
+				<text class="color-1 vm">{{number}}</text>
+				<text class="vm">/{{total}}</text>
+			</view>
+			<view class="block-info-right">
+				<text class="vm">活动费用</text>
+				<text class="color-1 vm bold">￥{{money}}</text>
+				<text class="vm">元</text>
+			</view>
+		</view>
+	</view>
+	<view class="section">
+		<view class="menu-item">
+            <image class="menu-icon" src="/image/people.png"></image>
+            <view class="menu-text">
+            	<text>活动创建人：{{nickName}}</text>
+            </view>
+        </view>
+		<view class="menu-item">
+            <image class="menu-icon" src="/image/time.png"></image>
+            <view class="menu-text">
+            	<text>活动时间：{{startTime}} 至 {{endTime}}</text>
+            </view>
+        </view>
+		<view class="menu-item">
+            <image class="menu-icon" src="/image/tel.png"></image>
+            <view class="menu-text" bindtap="tel" data-tel="{{tel}}">
+            	<text data-tel="{{tel}}">{{tel}}</text>
+            </view>
+        </view>
+		<view class="menu-item">
+            <image class="menu-icon" src="/image/address.png"></image>
+            <view class="menu-text">
+            	<text>地址{{address}}</text>
+            </view>
+            <map class="m-t-10" name=""  latitude="{{latitude}}" longitude="{{longitude}}" style="width:100%; height:200px;"></map>
+         </view>
+		<view class="menu-item">
+            <image class="menu-icon" src="/image/people.png"></image>
+            <view class="menu-text">
+            	<text>参加成员</text> 	
+            </view> 
+            <view class="m-t-10">
+            	<image class="vm member-image" wx:for="{{users}}" wx:for-item="user" src="{{user.avatarUrl}}"></image>
+            	<text class="vm">{{user.name||user.nickName}}</text>
+            </view>
+         </view>
+	</view>
+	<view class="section">
+		<view class="section-title">活动详情</view>
+		<view class="m-t-10 text">
+		{{description}}
+		<image class="detial-image" mode="aspectFill" wx:for="{{images}}" wx:for-item="src" src="{{src}}"></image>
+		</view>
+	</view>
+	
+	<view class="section">
+		<button class="{{baoMin}}" type="primary"  bindtap="join" data-id="{{_id}}">我要报名</button>
+		<button class="{{baoMinChengGong}}" disabled>已经报名</button>
+	</view>
+	
+</view>

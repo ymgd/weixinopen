@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="title-container">
+      <text class="title">Habit</text>
+      <text class="desc">Check your habits everyday</text>
+    </view>
+    <button size="mini" type="primary" bindtap="bindAddTap">+</button>  
+  </view>
+  <view wx:if="{{list.length}}">
+    <scroll-view scroll-y="true">
+      <view wx:for="{{list}}" class="list">
+        <view class="list-item">
+          <view class="list-item-left">
+            <text class="list-item-text">{{item.content}}</text>
+            <text class="list-item-time" wx:if="{{item.lastCheckTime === ''}}">you didn't check it yet</text>
+            <text class="list-item-time" wx:else>{{item.lastCheckTime}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view wx:else class="empty-container">
+    <text class="empty-label">No habit yet</text>
+    <text bindtap="bindAddTap" class="add-link">add one?</text>
+  </view>
+</view>

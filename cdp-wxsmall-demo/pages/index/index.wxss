@@ -1,0 +1,360 @@
+/**index.wxss**/
+.index-header {
+  width: 100%;
+  height: 500rpx;
+  background: #ff7200 url("/resource/img/index-big-banner.jpg") no-repeat center center;
+  background-size: 100%;
+}
+
+.index-header .header-top {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  height: 100rpx;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+}
+
+.index-header .header-top .logo {
+  float: left;
+  width: 136rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  background: url("/resource/img/index-logo.png") no-repeat center center;
+  background-size: 100%;
+}
+
+.index-header .header-top .area {
+  position: relative;
+  float: right;
+  font-size: 32rpx;
+  line-height: 84rpx;
+  color: #fff;
+}
+
+.index-header .header-top .area i {
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}
+
+.index-header .header-top .area-list {
+  z-index: 9999;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  background-color: #fff;
+}
+
+.index-header .header-top .area-list li {
+  padding: 30rpx;
+  font-size: 14rpx;
+  border-bottom: 1rpx solid #e2e1e1;
+}
+
+.index-header .header-slogan {
+  width: 100%;
+  margin-top: 86rpx;
+  text-align: center;
+  font-size: 60rpx;
+  color: #fff;
+  letter-spacing: 5rpx;
+  text-shadow: 0 0 30rpx rgba(68, 75, 12, 0.5);
+}
+
+.index-header .header-search {
+  display: block;
+  box-sizing: border-box;
+  margin: 112rpx auto 0;
+  width: 680rpx;
+  height: 70rpx;
+  border: 2rpx solid #ff7200;
+  background-color: #fff;
+  border-radius: 0.47222rem;
+  text-align: center;
+  line-height: 64rpx;
+  font-size: 24rpx;
+  color: #878787;
+  letter-spacing: 3rpx;
+}
+
+.index-header .header-search i {
+  font-size: 14rpx;
+  color: #878787;
+  margin-right: 6rpx;
+}
+
+.float-search {
+  z-index: 99999;
+  position: fixed;
+  top: -1.38889rem;
+  left: 0;
+  width: 100%;
+  height: 1.38889rem;
+  background-color: rgba(255, 98, 122, 0.6);
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.float-search .header-search {
+  display: block;
+  box-sizing: border-box;
+  margin: 0.20833rem auto 0;
+  width: 9.44444rem;
+  height: 0.97222rem;
+  border: 2px solid #ff7200;
+  background-color: #fff;
+  border-radius: 0.47222rem;
+  text-align: center;
+  line-height: 0.91667rem;
+  font-size: 12px;
+  color: #878787;
+  letter-spacing: 3px;
+}
+
+.float-search .header-search i {
+  font-size: 14px;
+  color: #878787;
+  margin-right: 6px;
+}
+
+
+.classify {
+  position: relative;
+  background-color: #fff;
+}
+
+.classify:after, .classify:before {
+  position: absolute;
+  z-index: 99;
+  background-color: #efefef;
+  content: "";
+}
+
+.classify:before {
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 2rpx;
+  height: 100%;
+}
+
+.classify:after {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 2rpx;
+}
+
+.classify-item {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  height: 172rpx;
+  padding: 2rpx 3rpx 3rpx 2rpx;
+  background: #fff url("/resource/img/classify-bg-1@3x.png") no-repeat 90% center;
+  background-size: 112rpx;
+}
+
+.classify-item-title {
+  position: absolute;
+  top: 52rpx;
+  left: 20rpx;
+}
+
+.classify-item-title h3,
+.classify-item-title p {
+  width: 230rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.classify-item-title h3 {
+  font-size: 32rpx;
+  color: #bf1cbd;
+}
+
+.classify-item-title p {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #878787;
+}
+
+.part {
+  width: 100%;
+}
+
+.part-title {
+  background-color: #fff;
+  height: 92rpx;
+  padding-left: 20rpx;
+  color: #333;
+  font-size: 36rpx;
+  line-height: 92rpx;
+}
+
+.part .recommend-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20rpx;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/*.part .recommend {
+  width: 1000000rpx;
+}*/
+
+.part .recommend-wrapper .recommend-item {
+  /*float: left;*/
+  width: 600rpx;
+  background-color: #fff;
+}
+
+.part .recommend-wrapper .recommend-item a {
+  display: block;
+  width: 600rpx;
+  height: 378rpx;
+  background-color: #ff7200;
+  background-size: cover;
+}
+
+.part .recommend-wrapper .recommend-item-title {
+  height: 90rpx;
+  color: #464646;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  margin-bottom: 10rpx;
+}
+
+.extra-part {
+  background-color: #fff;
+  height: 140rpx;
+  line-height: 140rpx;
+  text-align: center;
+}
+
+.extra-part a {
+  font-size: 36rpx;
+  color: #ff7200;
+}
+
+.place-item {
+  display: block;
+  width: 100%;
+  padding-bottom: 20rpx;
+  background-color: #efefef;
+}
+
+.place-item-img {
+  position: relative;
+  height: 470rpx;
+  background: #e2e1e1 url(/resource/img/place-img-1@3x.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.place-item-img .corner-info,
+.place-item-img .placeType-info,
+.place-item-img .collection {
+  position: absolute;
+  display: block;
+}
+
+.place-item-img .corner-info {
+  top: 0;
+  left: 0;
+  width: 94rpx;
+  height: 94rpx;
+}
+
+.place-item-img .corner-info img {
+  width: 100%;
+}
+
+.place-item-img .placeType-info {
+  bottom: 20rpx;
+  left: 20rpx;
+}
+
+.place-item-img .placeType-info i {
+  display: inline-block;
+  margin-right: 12rpx;
+  min-height: 32rpx;
+  padding: 10rpx 12rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.place-item-info {
+  padding: 12rpx 20rpx;
+  background-color: #fff;
+}
+
+/*.place-item-info .place-item-info-title {
+  line-height: 58rpx;
+  font-size: 32rpx;
+  color: #464646;
+}*/
+
+.place-item-info .place-item-info-title {
+  float: left;
+  width: 460rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.place-item-info .place-item-info-price {
+  float: right;
+  font-size: 34rpx;
+  color: #ff7200;
+}
+
+.place-item-info .place-item-info-price i {
+  font-size: 24rpx;
+}
+
+.place-item-info .place-item-info-detail {
+  line-height: 36rpx;
+  font-size: 26rpx;
+  color: #878787;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.place-item-info .place-item-info-detail i {
+  margin-right: 14rpx;
+}
+
+.footer {
+  background-color: #fff;
+  width: 100%;
+  height: 76rpx;
+  line-height: 76rpx;
+}
+
+.footer span {
+  float: left;
+  margin-left: 20rpx;
+}
+
+.footer a {
+  width: 30%;
+  float: right;
+  margin-right: 20rpx;
+  text-align: right;
+}
+
+.footer a,
+.footer span {
+  font-size: 24rpx;
+  color: #878787;
+}

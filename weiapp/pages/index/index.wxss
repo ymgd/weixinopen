@@ -1,0 +1,9 @@
+
+.list .detail{
+  border: 2rpx solid #CCCCCC;
+  width:145rpx;
+  float:left;
+  padding-top: 100rpx;
+  padding-bottom: 100rpx;
+  padding-left: 100rpx;
+}

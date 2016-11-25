@@ -1,0 +1,195 @@
+/**index.wxss**/
+.carousel_img{
+    width: 100%;
+    height: 300rpx;
+}
+
+.carousel{
+    border: solid;
+    border-color: #d5d5d5;
+    border-width: 1rpx;
+}
+
+.street_carousel_img{
+    width: 100%;
+    height: 280rpx;
+    border-radius: 4rpx;
+}
+
+.street_carousel{
+    border: solid;
+    border-color: #d5d5d5;
+    border-width: 1rpx;
+    height: 340rpx;
+}
+
+.type{
+  float: left;
+  width: 100%;
+}
+.type_img{
+  width: 100%;
+  height: 170rpx;
+  border: solid;
+  border-color: #d5d5d5;
+  border-radius: 2px;
+  border-width: 0.5px;
+}
+
+.type_1{
+  float: left;
+  width: 25%;
+  height: 100rpx;
+}
+
+.type_2{
+  float: left;
+  width: 25%;
+}
+
+.type_3{
+  float: left;
+  width: 25%;
+}
+
+.type_4{
+  float: left;
+  width: 25%;
+}
+
+.street_left{
+  float: left;
+  width: 50%;
+}
+
+.street_right{
+  float: left;
+  width: 50%;
+}
+
+.street_img_1{
+  float: left;
+  width: 59rpx;
+  height: 59rpx;
+  padding-left: 10rpx;
+}
+
+.street_img_2{
+  float: right;
+  width: 59rpx;
+  height: 59rpx;
+  padding-right: 10rpx;
+}
+
+.street{
+  float: left;
+  width: 100%;
+  border-bottom:solid;
+  border-color: #d5d5d5;
+  border-radius: 2px;
+  border-width: 0.5px;
+  height: 340rpx;
+}
+
+.street_text_1{
+    padding-top: 30rpx;
+    font-size: 30rpx;
+    float: left;
+    font-family: Microsoft yahei;
+    color: #5e5e5e;
+}
+
+
+.street_text_2{
+    padding-top: 30rpx;
+    font-size: 30rpx;
+    font-family: Microsoft yahei;
+    color: #5e5e5e;
+    float: right;
+}
+.street_bottom{
+  position: relative;
+  top: -100rpx;
+  font-size: 30rpx;
+  color: white;
+  background-color: sandybrown;
+}
+
+.street_bottom_1{
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+  float: left;
+  font-size: 30rpx;
+  width: 57%;
+}
+
+.street_bottom_2{
+  float: left;
+  padding-top: 15rpx;
+  font-size: 24rpx;
+  width: 20%;
+}
+
+.street_bottom_3{
+  padding-top: 15rpx;
+  float: left;
+  font-size: 24rpx;
+  width: 20%;
+}
+
+.swiper_item{
+  position: relative;
+}
+
+.street_test{
+  position: relative;
+  top: -50rpx;
+  opacity: 0.3;
+  background-color: #5e5e5e;
+  height: 50rpx;
+}
+
+.rent_section{
+  float: left;
+}
+.rent{
+  float:left;
+  width: 375rpx;
+  height: 300rpx;
+}
+
+.rent_img{
+  height: 300rpx;
+  width: 375rpx;
+}
+
+.rent_requirement{
+  width: 375rpx;
+  float:left;
+  height: 300rpx;
+}
+
+.rent_requirement_img{
+  height: 300rpx;
+  width: 375rpx;
+}
+
+.requirement{
+  border-top: solid;
+  border-top-width: 10rpx;
+  border-top-color: #d5d5d5;
+  border-bottom: solid;
+  border-bottom-width: 10rpx;
+  border-bottom-color: #d5d5d5;
+  width: 750rpx;
+  float:left;
+  height: 300rpx;
+}
+
+.requirement_img{
+  height: 300rpx;
+  width: 750rpx;
+}
+
+
+

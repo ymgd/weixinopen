@@ -1,0 +1,35 @@
+
+<template name="WxEmojiView">
+  <view class="WxEmojiView">
+    <block wx:for="{{WxEmojiObjs.WxEmojiTextArray}}" wx:key="">
+      <block wx:if="{{item.node == 'text'}}">{{item.text}}</block>
+      <block wx:elif="{{item.node == 'element'}}">
+        <image class="wxEmoji" src="/WxEmojiView/emojis/{{item.text}}" />
+      </block>
+    </block>
+  </view>
+</template>
+
+<template name="WxEmojiTextarea">
+  <view class="WxEmojiViewContainer">
+      <!--效果显示-->
+      <view class="WxEmojiPreView">
+        <block wx:for="{{WxEmojiObjs.WxEmojiTextArray}}" wx:key="">
+          <block wx:if="{{item.node == 'text'}}">{{item.text}}</block>
+          <block wx:elif="{{item.node == 'element'}}">
+            <image class="wxEmoji" src="/WxEmojiView/emojis/{{item.text}}" />
+          </block>
+        </block>
+      </view>
+
+      <!--输入框 常规下隐藏-->
+      <textarea class="WxEmojiTextarea" placeholder="这里输入你的文字 支持加入小图标" auto-height="true" bindfocus="WxEmojiTextareaFocus" bindblur="WxEmojiTextareaBlur"  value="{{WxEmojiObjs.textAreaText}}"></textarea>
+
+      <view class="WxEmojiChooseChooseView" style="display:{{WxEmojiObjs.showWxEmojiChooseView == 1 ? 'block' : 'none'  }};">
+          <block wx:for="{{WxEmojiObjs.emojiArray}}" wx:key="">
+            <image bindtap="wxPreEmojiTap" data-text=":{{item}}:" class="wxPreEmoji" src="/WxEmojiView/emojis/{{item}}.gif"/>
+          </block>
+      </view>
+  </view>
+</template>
+

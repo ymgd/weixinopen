@@ -1,0 +1,45 @@
+@import "../../wxParse/wxParse.wxss";
+
+/*topic*/
+.topic {
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.topic-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 200rpx;
+  color: #ebedef;
+  font-size: 32rpx;
+  background: #34495e;
+}
+
+.topic-header .topic-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;
+  margin: 30rpx 60rpx;
+}
+.topic-media image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.topic-header .topic-title {
+  padding-right: 40rpx;
+}
+.topic-title .title {
+
+}
+.topic-title .time {
+  color: #7f7f7f;
+  font-size: 28rpx;
+}
+.topic-main {
+  padding: 25rpx 10rpx;
+}

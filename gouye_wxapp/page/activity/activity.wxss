@@ -1,0 +1,45 @@
+.mask {
+    position: relative;
+    margin-top: -140rpx;
+    margin-bottom: -40rpx;
+    left: 0;
+    height: 120rpx;
+    width: 100%;
+    background: rgba(0, 0, 0, .3)
+}
+.mask .cover-title {
+    position: relative;
+    left: 15rpx;
+    margin-bottom: -40rpx;
+    font-size: 28rpx;
+    color: #FFF;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.cover-days-icon {
+    position: relative;
+    margin-top: -40rpx;
+    margin-bottom: -40rpx;
+    top: -40rpx;
+    left: 20rpx;
+    height: 5%;
+    width: 5%;
+}
+.cover-days {
+    position: relative;
+    margin-top: 0rpx;
+    margin-bottom: -80rpx;
+    top: -30rpx;
+    left: 35rpx;
+    font-size: 28rpx;
+    color: #FFF;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.cover-budget {
+    position: relative;
+    margin-top: -40rpx;
+    top: -30rpx;
+    left: 270rpx;
+    font-size: 32rpx;
+    color: #FFF;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}

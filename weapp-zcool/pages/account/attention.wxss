@@ -1,0 +1,33 @@
+.attention-item {
+  padding: 15rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #e4e6e6;
+}
+.attention-image {
+  float: left;
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.attention-info {
+  position: relative;
+  height: 100rpx;
+}
+.attention-name {
+  font-size: 35rpx;
+  margin-bottom: 20rpx;
+}
+.attention-desc {
+  font-size: 28rpx;
+  color: #b6b6b6;
+}
+.attention-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 24rpx;
+  color: #12c287;
+  padding: 10rpx;
+  text-decoration: underline;
+  transform: translateY(-50%);
+}

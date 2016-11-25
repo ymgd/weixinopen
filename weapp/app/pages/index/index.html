@@ -1,0 +1,34 @@
+<view>
+  <swiper indicator-dots="true" class="index_swiper"
+    autoplay="true" duration="2000">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <view class="swiper-item">
+          <image style="width: 100%; height: 200px;" src="{{item}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="index-cates">
+    <view class="single-cate">
+      <image src="../../icons/cate_icons/category1.png" style="width: 39px;height:48px"></image>
+      <text class="cate-text">美妆个护</text>
+    </view>
+    <view class="single-cate">
+      <image src="../../icons/cate_icons/category2.png" style="width: 39px;height:48px"></image>
+      <text class="cate-text">箱包配饰</text>
+    </view>
+    <view class="single-cate">
+      <image src="../../icons/cate_icons/category3.png" style="width: 39px;height:48px"></image>
+      <text class="cate-text">生活加点</text>
+    </view>
+    <view class="single-cate">
+      <image src="../../icons/cate_icons/category4.png" style="width: 39px;height:48px"></image>
+      <text class="cate-text">家居日用</text>
+    </view>
+    <view class="single-cate">
+      <image src="../../icons/cate_icons/category5.png" style="width: 39px;height:48px"></image>
+      <text class="cate-text">母婴用品</text>
+    </view>
+  </view>
+</view>

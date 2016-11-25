@@ -1,0 +1,42 @@
+<view class="container">
+    <block wx:if="{{slides.length}}">
+        <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+          <block wx:for="{{slides}}" wx:key="{{index}}">
+            <swiper-item class="swiper-item">
+              <image src="{{item.second_image_url}}?imageView2/1/w/750/h/260"/>
+            </swiper-item>
+          </block>
+        </swiper>
+    </block>
+
+    <view wx:if="{{lists.length}}" class="lists">
+        <view class="lists-item" wx:for="{{lists}}" wx:key="{{item.id}}">
+            <view class="lists-item__header" wx:if="{{item.model.user.username}}">
+                <view class="avatar">
+                    <image src="{{item.model.user.avatar_url}}?imageView2/1/w/100"></image>
+                </view>
+                <view class="username">{{item.model.user.username}}</view>
+            </view>
+            <view class="lists-item__content">
+                <block wx:if="{{item.images && item.images.length}}">
+                    <image src="{{item.images[0].url}}?imageView2/1/w/750/h/320"/>
+                </block>
+                <block wx:elif="{{item.model.images && item.model.images.length}}">
+                    <image src="{{item.model.images[0].url}}?imageView2/1/w/750/h/320"/>
+                </block>
+                <block wx:elif="{{item.model.videos && item.model.videos.length}}">
+                    <block wx:if="{{item.model.videos[0].images && item.model.videos[0].images.length}}">
+                        <image src="{{item.model.videos[0].images[0].url}}?imageView2/1/w/750/h/320"/>
+                    </block>
+                </block>
+            </view>
+            <view class="lists-item__footer">
+                <view class="title">{{item.model.title}}</view>
+                <view class="meta">
+                    <view class="view_count">{{item.model.view_count}}</view>
+                    <view class="comment_count">{{item.model.comment_count}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

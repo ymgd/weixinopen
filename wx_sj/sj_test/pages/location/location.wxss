@@ -1,0 +1,28 @@
+.top_button{
+    margin-top: 2rpx;
+    float: left;
+    width: 230rpx;
+    height: 230rpx;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    text-align: center;
+}
+
+
+.default{
+    float: left;
+    color: #60ccb6;
+    font-size: 30rpx;
+}
+
+.middle{
+    float: left;
+}
+
+.select{
+    color:#515151;
+    width: 730rpx;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+}
+

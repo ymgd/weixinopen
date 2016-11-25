@@ -1,0 +1,34 @@
+<!--TODO: add search form at the top of this page -->
+<scroll-view scroll-y="true" bindscrolltolower="scrollLowerEvent">
+    <view wx:if="{{!loadingMore && totalRecord == 0 && !isInit}}">
+      <icon type="cancel" color="red" size="40" />
+      <view><text>没有请求</text></view>
+    </view>
+    
+    <button bindtap="addNewRequest" type="primary" style="width:98%">添加工单</button>
+
+    <view class="header" wx:if="{{totalRecord > 0 && isInit}}">
+      <text> 工单数：{{totalRecord}}</text>
+    </view>
+
+    <view class="common-list" wx:if="{{totalRecord > 0}}">
+
+      <block wx:for="{{pagedata}}" wx:key="WORKORDERID">
+        <view class="list-item" data-rid="{{item.WORKORDERID}}" bindtap="toDetailPage">
+          <view class="index-list-item">
+            <view class="content">
+              <view class="{{ item.ISOVERDUE==='true'?'title_red':'title' }}">{{item.SUBJECT}}</view>
+              <view class="desc">{{'ID:'+item.WORKORDERID+'  请求人: '+item.REQUESTER+'  状态: '+item.STATUS}}</view>
+              <text class="desc">{{'创建时间: '+item.localDate}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+
+    </view>
+
+    <view class="refresh-footer" wx:if="{{loadingMore}}">
+      <icon type="waiting" size="30" color="green"  />
+    </view>
+
+</scroll-view>

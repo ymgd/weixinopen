@@ -1,0 +1,22 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="container">
+  <block wx:if="{{topic.id}}">
+    <view class='topic'>
+      <view class='topic-header'>
+        <view class="topic-media">
+          <image mode="aspectFill" src="{{topic.author.avatar_url}}"></image>
+        </view>
+        <view class="topic-title">
+          <view class='title'>{{topic.title}}</view>
+          <view class='time'>{{topic.create_at}}</view>
+        </view>
+      </view>
+      <view class='topic-main'>
+        <view class="wxParse content">
+            <template is="wxParse" data="{{wxParseData}}"/>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view wx:else class="nodata"></view>
+</view>

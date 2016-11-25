@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/calldriver/calldriver",
+    "pages/fullinfo/fullinfo"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#44403f",
+    "navigationBarTitleText": "微信挪车",
+    "navigationBarTextStyle":"#dcd9d8"
+  }
+}

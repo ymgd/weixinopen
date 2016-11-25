@@ -1,0 +1,111 @@
+.user_left{
+    float: left;
+    width: 200rpx;
+    height: 100rpx;
+
+}
+
+.user_left_text{
+    font-size: 34rpx;
+    font-family: STHeiti;
+    color: #06ccb6;
+    margin-top: 30rpx;
+
+}
+
+.user_left_img{
+    margin-top: 20rpx;
+    float: left;
+    height: 60rpx;
+    width: 60rpx;
+    margin-left: 10rpx;
+}
+
+.user_right{
+    float: left;
+    width: 400rpx;
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+    font-size: 40rpx;
+    font-family: STHeiti;
+}
+
+
+.user{
+    float: left;
+    height: 100rpx;
+    width: 700rpx;
+    border-radius: 8rpx;
+    border: solid;
+    border-color: #06ccb6;
+    border-width: 0.5rpx;
+    margin-top: 100rpx;
+    margin-left: 20rpx;
+}
+
+.password{
+    margin-left: 20rpx;
+    float: left;
+    height: 100rpx;
+    width: 700rpx;
+    border-radius: 8rpx;
+    border-bottom: solid;
+    border-bottom-color: #06ccb6;
+    border-bottom-width: 0.5rpx;
+    border-left: solid;
+    border-left-color: #06ccb6;
+    border-left-width: 0.5rpx;
+    border-right: solid;
+    border-right-color: #06ccb6;
+    border-right-width: 0.5rpx;
+}
+
+.clicked{
+    background-color: #06ccb6;
+    opacity: 0.3;
+}
+
+
+.bottom{
+    float: left;
+    margin-top: 100rpx;
+}
+.log_in{
+    float: left;
+    color: white;
+    font-size: 40rpx;
+    width: 300rpx;
+    height: 100rpx;
+    background-color: #06ccb6;
+    margin-left: 45rpx;
+    margin-right: 30rpx;
+}
+
+.problem{
+    margin-top: 300rpx;
+    float: left;
+    border-top: solid;
+    border-top-color: #06ccb6;
+    border-top-width: 0.5rpx;
+    height: 200rpx;
+    width: 750rpx;
+    text-align: center;
+
+}
+
+.problem_top{
+    position: absolute;
+    height: 100rpx;
+}
+
+.problem_text{
+    margin-top: 40rpx;
+    color: #707070;
+    font-size: 30rpx;
+}
+
+.problem_img{
+    height: 50rpx;
+    width: 50rpx;
+    margin-left: 350rpx;
+}

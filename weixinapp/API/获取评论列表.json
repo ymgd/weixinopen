@@ -1,0 +1,256 @@
+{
+  "MinisnsId": 3,
+  "BestCmtId": 0,
+  "IsReward": 1,
+  "IsPraise": 0,
+  "CommentCount": 0,
+  "Article": {
+    "Id": 12048088,
+    "UserId": 483604,
+    "IsGuerdon": 0
+  },
+  "CommentList": [
+    {
+      "Floor": "0",
+      "IsPraise": 0,
+      "Id": 23593452,
+      "Score": "7",
+      "Signday": 0,
+      "CreateDate": "3天前",
+      "ComIndex": 1,
+      "Content": "sss",
+      "IsPc": 0,
+      "Praise": 0,
+      "Images": null,
+      "RewardUsers": null,
+      "User": {
+        "Id": 483604,
+        "Headimgurl": "http://i.pengxun.cn/userlogo/2016/10/161028120446201682c334a5-6ea2-4990-9379-932446236d9b.jpg",
+        "Nickname": "J"
+      },
+      "Comments": [
+        {
+          "Floor": "0",
+          "IsPraise": 0,
+          "Id": 23659230,
+          "Score": null,
+          "Signday": 0,
+          "CreateDate": "3天前",
+          "ComIndex": 0,
+          "Content": "fdsaf",
+          "IsPc": 0,
+          "Praise": 0,
+          "Images": null,
+          "RewardUsers": null,
+          "User": {
+            "Id": 130869661,
+            "Headimgurl": "http://wx.qlogo.cn/mmopen/tZOqj4KIx0hUglACMt0LK9pqbSxUUhsHUtLlthBsibJPZwkgl5kEzratBwOUKoYuDv0pu4rk4GiaOIxle7YNwQicKdILvWb3gXK/0",
+            "Nickname": "欢fion"
+          },
+          "Comments": null,
+          "PUserId": 0,
+          "PUserName": null,
+          "Voice": null,
+          "ArticleId": 12048088,
+          "State": 1,
+          "Reward": 0
+        },
+        {
+          "Floor": "",
+          "IsPraise": 0,
+          "Id": 23816765,
+          "Score": null,
+          "Signday": 0,
+          "CreateDate": "1天前",
+          "ComIndex": 0,
+          "Content": "测试api评论,测试API",
+          "IsPc": 0,
+          "Praise": 0,
+          "Images": null,
+          "RewardUsers": null,
+          "User": {
+            "Id": 10475223,
+            "Headimgurl": "http://wx.qlogo.cn/mmopen/tZOqj4KIx0hUglACMt0LKibI0aFfNpz7otTfNg5BmHjvic4QFL6gZ5oFcYQQuso90tZt5eZcibgwbpbnpakSR4X7UE6na6oVP3z/132",
+            "Nickname": "zmx'"
+          },
+          "Comments": null,
+          "PUserId": 0,
+          "PUserName": null,
+          "Voice": null,
+          "ArticleId": 12048088,
+          "State": 1,
+          "Reward": 0
+        },
+        {
+          "Floor": "",
+          "IsPraise": 0,
+          "Id": 23900756,
+          "Score": null,
+          "Signday": 0,
+          "CreateDate": "3小时前",
+          "ComIndex": 0,
+          "Content": "测试api评论,测试回复评论",
+          "IsPc": 0,
+          "Praise": 0,
+          "Images": [
+            {
+              "Filepath": "http://oss.vzan.cc/image/jpg/2016/5/17/0131291688862988be48509914f9fc7e62bbbb.jpg"
+            }
+          ],
+          "RewardUsers": null,
+          "User": {
+            "Id": 10475223,
+            "Headimgurl": "http://wx.qlogo.cn/mmopen/tZOqj4KIx0hUglACMt0LKibI0aFfNpz7otTfNg5BmHjvic4QFL6gZ5oFcYQQuso90tZt5eZcibgwbpbnpakSR4X7UE6na6oVP3z/132",
+            "Nickname": "zmx'"
+          },
+          "Comments": null,
+          "PUserId": 0,
+          "PUserName": null,
+          "Voice": {
+            "ServerId": "hnxYsKoh1iIEc_hggSWF5PvRrj6rJ2R225ELSj8YuWEXSQnV_sznis-yJWlZynU3",
+            "Id": 2311231,
+            "ConvertState": 0,
+            "TransFilePath": "",
+            "DownLoadFile": "http://i3.pengxun.cn/voice/amr/2016/3/9/20160309211436160b5df2-72ef-4342-929e-12a589a49fec.amr",
+            "VoiceTime": 7
+          },
+          "ArticleId": 12048088,
+          "State": 1,
+          "Reward": 0
+        }
+      ],
+      "PUserId": 0,
+      "PUserName": null,
+      "Voice": null,
+      "ArticleId": 12048088,
+      "State": 1,
+      "Reward": 0
+    },
+    {
+      "Floor": "0",
+      "IsPraise": 0,
+      "Id": 23649696,
+      "Score": "7",
+      "Signday": 0,
+      "CreateDate": "3天前",
+      "ComIndex": 2,
+      "Content": "sssfdsfs",
+      "IsPc": 0,
+      "Praise": 0,
+      "Images": null,
+      "RewardUsers": null,
+      "User": {
+        "Id": 483604,
+        "Headimgurl": "http://i.pengxun.cn/userlogo/2016/10/161028120446201682c334a5-6ea2-4990-9379-932446236d9b.jpg",
+        "Nickname": "J"
+      },
+      "Comments": [],
+      "PUserId": 0,
+      "PUserName": null,
+      "Voice": null,
+      "ArticleId": 12048088,
+      "State": 1,
+      "Reward": 0
+    },
+    {
+      "Floor": "0",
+      "IsPraise": 0,
+      "Id": 23659211,
+      "Score": "1",
+      "Signday": 0,
+      "CreateDate": "3天前",
+      "ComIndex": 3,
+      "Content": "fdasfdasf",
+      "IsPc": 0,
+      "Praise": 0,
+      "Images": null,
+      "RewardUsers": null,
+      "User": {
+        "Id": 130869661,
+        "Headimgurl": "http://wx.qlogo.cn/mmopen/tZOqj4KIx0hUglACMt0LK9pqbSxUUhsHUtLlthBsibJPZwkgl5kEzratBwOUKoYuDv0pu4rk4GiaOIxle7YNwQicKdILvWb3gXK/0",
+        "Nickname": "欢fion"
+      },
+      "Comments": [],
+      "PUserId": 0,
+      "PUserName": null,
+      "Voice": null,
+      "ArticleId": 12048088,
+      "State": 1,
+      "Reward": 0
+    },
+    {
+      "Floor": "",
+      "IsPraise": 0,
+      "Id": 23900102,
+      "Score": "4",
+      "Signday": 0,
+      "CreateDate": "4小时前",
+      "ComIndex": 4,
+      "Content": "测试api评论",
+      "IsPc": 0,
+      "Praise": 0,
+      "Images": [
+        {
+          "Filepath": "http://i.pengxun.cn/upload/articles/20150902/3428072396.jpg"
+        }
+      ],
+      "RewardUsers": null,
+      "User": {
+        "Id": 10475223,
+        "Headimgurl": "http://wx.qlogo.cn/mmopen/tZOqj4KIx0hUglACMt0LKibI0aFfNpz7otTfNg5BmHjvic4QFL6gZ5oFcYQQuso90tZt5eZcibgwbpbnpakSR4X7UE6na6oVP3z/132",
+        "Nickname": "zmx'"
+      },
+      "Comments": [],
+      "PUserId": 0,
+      "PUserName": null,
+      "Voice": {
+        "ServerId": "fgd6eQo1kXQdKok6KwSnVKc7Wcpv4juTEB9jcn75JhGBzzdz3-9i8HOPxCQPkBxF",
+        "Id": 1,
+        "ConvertState": 2,
+        "TransFilePath": "",
+        "DownLoadFile": "",
+        "VoiceTime": 3
+      },
+      "ArticleId": 12048088,
+      "State": 1,
+      "Reward": 0
+    },
+    {
+      "Floor": "",
+      "IsPraise": 0,
+      "Id": 23900900,
+      "Score": "4",
+      "Signday": 0,
+      "CreateDate": "3小时前",
+      "ComIndex": 5,
+      "Content": "测试api评论",
+      "IsPc": 0,
+      "Praise": 0,
+      "Images": [
+        {
+          "Filepath": "http://i.pengxun.cn/upload/articles/20150902/3428072396.jpg"
+        }
+      ],
+      "RewardUsers": null,
+      "User": {
+        "Id": 10475223,
+        "Headimgurl": "http://wx.qlogo.cn/mmopen/tZOqj4KIx0hUglACMt0LKibI0aFfNpz7otTfNg5BmHjvic4QFL6gZ5oFcYQQuso90tZt5eZcibgwbpbnpakSR4X7UE6na6oVP3z/132",
+        "Nickname": "zmx'"
+      },
+      "Comments": [],
+      "PUserId": 0,
+      "PUserName": null,
+      "Voice": {
+        "ServerId": "fgd6eQo1kXQdKok6KwSnVKc7Wcpv4juTEB9jcn75JhGBzzdz3-9i8HOPxCQPkBxF",
+        "Id": 1,
+        "ConvertState": 2,
+        "TransFilePath": "",
+        "DownLoadFile": "",
+        "VoiceTime": 3
+      },
+      "ArticleId": 12048088,
+      "State": 1,
+      "Reward": 0
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<view class="container">
+    <view class="main">
+        <view class="content gap-top">
+            <form class="readonly" bindsubmit="formSubmit">
+                <view wx:for="{{form.items}}" wx:for-key="id" class="section-wrp">
+                    <view class="section list-item-section {{item.style_class}}">
+                        <view class="section-row row-2-cols">
+                            <view class="col col1">
+                                <text>{{item.label}}</text>
+                            </view>
+                            <view class="col value">
+                                <text>{{item.value}}</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>                                  
+                <button type="default" disabled="{{button.disabled}}">{{button.content}}</button>    
+            </form>
+        </view>
+    </view>
+</view>

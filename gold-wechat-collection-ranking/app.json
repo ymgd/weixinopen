@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/collection-set/collection-set",
+    "pages/rank/rank"
+  ],
+  "window":{
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "掘金小程序",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/collection-set/collection-set",
+      "iconPath": "image/collection.png",
+      "selectedIconPath": "image/collection_HL.png",
+      "text": "收藏集"
+    }, {
+      "pagePath": "pages/rank/rank",
+      "iconPath": "image/rank.png",
+      "selectedIconPath": "image/rank_HL.png",
+      "text": "排行榜"
+    }]
+  },
+  "debug": true
+}

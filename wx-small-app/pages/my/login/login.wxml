@@ -1,0 +1,13 @@
+<!--my.wxml-->
+<view class="container login">
+    <view class="section {{ username_focus }}">
+        <input name="username" placeholder="邮箱/手机号" bindfocus="bindfocusUser" bindblur="bindblurUser" bindinput="bindUserNameInput" auto-focus/>
+    </view>
+    <view class="section {{ password_focus }}">
+        <input name="password" password="true" placeholder="密码" bindfocus="bindfocusPasswd" bindblur="bindblurPasswd" bindinput="bindPasswordInput"/>
+    </view>
+    <view class="button">
+        <button class="login" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="login"> 登录 </button>
+    </view>
+</view>

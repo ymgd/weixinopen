@@ -1,0 +1,33 @@
+page {
+    height: 100%;
+}
+
+.container {
+    background: #EFEFF4;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    background: #FAFAFA;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.top-bar-item {
+    font-size: 30rpx;
+    text-align: center;
+    padding: 30rpx 0;
+    border-right: 2rpx solid #CCCCCC;
+    width: 100%;
+}
+
+.top-bar-item:last-child{
+    border-right: none;
+}
+
+.top-bar-item.current {
+    background: #EAEAEA;
+}
+

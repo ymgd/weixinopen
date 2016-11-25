@@ -1,0 +1,25 @@
+/*index.wxss*/
+
+.authenticated-button-group{
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  margin-left: -335rpx;
+}
+.address-input{
+  height: 300rpx;
+  align-items: flex-start;
+}
+
+
+/*为什么要取得认证*/
+.why-info{
+  position: absolute;
+  width: 230rpx;
+  bottom: 40rpx;
+  font-size: 10pt;
+  color: #b2b2b2;
+  left: 50%;
+  margin-left: -115rpx;
+}
+

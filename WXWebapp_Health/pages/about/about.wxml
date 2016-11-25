@@ -1,0 +1,9 @@
+<view class="photo_view">
+    <image class="photo" src="../../images/photo.jpg" mode="aspectFill"></image>
+</view>
+<view class="name">
+    <text class="text">联系邮箱：</text>
+</view>
+<view class="email">
+    <text class="email_text">bluedai180@gmail.com</text>
+</view>

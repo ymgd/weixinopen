@@ -1,0 +1,17 @@
+<template name="song_list">
+    <view class="song_list">         
+        <navigator wx:for="{{song_list}}" wx:key="{{index}}" class="song_item" url="{{'../play/play?id='+item.song_id}}">
+            <text class="song_title">{{item.title}}</text>
+            <text class="song_author">{{item.author}}-{{item.style}}</text>
+        </navigator>          
+    </view>
+</template>
+
+<template name="search_list">
+    <view class="song_list">         
+        <navigator wx:for="{{search_list}}" wx:key="{{index}}" class="song_item" url="{{'../play/play?id='+item.songid}}">
+            <text class="song_title">{{item.songname}}</text>
+            <text class="song_author">{{item.artistname}}</text>
+        </navigator>          
+    </view>
+</template>

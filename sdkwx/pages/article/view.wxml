@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="article-view">
+    <view class="article">
+        <image class="act-img" src="{{article.imgUrl}}"></image>
+        <view class="title">
+            <text class="h3 text-h">{{article.title}}</text>
+        </view>
+        <view class="article-info">
+            <text class="info">{{article.category}}</text>
+            <text class="info">时间: 2016-11-09</text>
+            <text class="info">浏览: {{article.read_count}}</text>
+            <text class="info">来源: {{article.source}}</text>
+        </view>
+        <view class="content">
+           <import src="../../wxParse/wxParse.wxml"/> 
+            <template is="wxParse" data="{{wxParseData}}"/>
+        <view>
+    </view>
+</view>

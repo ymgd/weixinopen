@@ -1,0 +1,20 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells__title">cdn域名列表：</view>
+        <view class="weui-cells weui-cells_after-title">
+            <block wx:for="{{domainlist}}">
+                <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                    <view class="weui-cell__hd">
+                        <icon wx:if="{{item.DomainStatus =='online'}}" type="success" size="20" color="green"/>
+                        <icon wx:if="{{item.DomainStatus =='offline'}}" type="warn" size="20" color="red"/>
+                        <icon wx:if="{{item.DomainStatus =='configuring'}}" type="waiting" size="20" color="red"/>
+                    </view>
+                    <view class="weui-cell__bd" bindtap="to_detail" data-id="{{index}}">{{item.DomainName}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+            </block>
+            
+        </view>
+        <button class="weui-btn" bindtap="to_add" type="primary">+添加域名</button>
+    </view>
+</view>

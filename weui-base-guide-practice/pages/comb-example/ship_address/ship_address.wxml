@@ -1,0 +1,35 @@
+<view class="container">
+    <view class="main">
+        <view class="content gap-top">
+            <form bindsubmit="formSubmit">
+                <view wx:for="{{ship_address_list}}" wx:for-item="address" class="section-wrp">
+                    <view class="section">
+                        <view class="section-row row-2-cols mult-lines">
+                            <view class="col col1">
+                                <text>{{address}}</text>
+                            </view>
+                            <view class="col">
+                                <image class="col-icon" src="{{chevron_png.src}}" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row add-address">
+                            <view class="col">
+                                <image class="col-icon2 add-icon" src="{{add_png.src}}" />
+                                <text>新增收货地址</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section btn-area">
+                    <view class="section-row">
+                        <button type="primary" disabled="{{button.disabled}}">{{button.content}}</button>
+                    </view>
+                </view>
+            </form>
+        </view>
+    </view>
+</view>

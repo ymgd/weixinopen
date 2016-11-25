@@ -1,0 +1,124 @@
+.search-box{
+  background-color: rgb(242,63,65);
+}
+
+/* 上部横条结构卡片 */
+.up-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+}
+
+.up-list-item navigator{
+  padding: 15px 15px 0 15px;
+}
+
+.item-desc-container{
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px rgb(237,237,237) solid;
+  padding-bottom: 15px;
+}
+
+.item-img{
+  width: 120px;
+  height: 80px;
+}
+
+.info-view{
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left:15px;
+  font-size: 12px;
+  color:#999;
+}
+
+.title{
+  font-size:14px;
+  line-height: 1.45;
+  max-height: 41px;
+  color:#080808;
+  margin-bottom: 10px;
+  word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: start;
+  -webkit-line-clamp: 2;
+}
+
+.title, .price{
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.target-word{
+  margin-top: 10px;
+}
+.keyword{
+  color: #ff685c;
+}
+.other-word{
+  margin-left: 6px;
+  color:#999;
+}
+/*.up-list-item{
+    display: flex;
+    padding: 12px 12px 0 12px;
+    background-color: #fff;
+    margin-bottom: 3px;
+}
+
+.item-desc-container{
+  display: flex;
+  font-size:12px;
+  padding-bottom: 12px;
+  flex:1;
+}
+
+.item-img{
+    width: 120px;
+    height: 80px;
+    margin-right: 12px;
+}
+
+.info-view{
+    flex:1;
+    display: flex;
+    flex-flow: column nowrap;
+    color:#8e8e93;
+}
+.title, .price, .footer-desc{
+    flex:1;
+    display: flex;
+}
+.title{
+    font-size: 14px;
+    color:#080808;
+    overflow: hidden;
+    line-height: 1.45;
+    max-height: 42px;
+}
+.target-word{
+  margin-top: 10px;
+  font-size: 12px;
+  color:#999;
+}
+.keyword{
+  color: #f14538;
+  margin-right: 6px;
+}*/

@@ -1,0 +1,12 @@
+page,.container,scroll-view{
+    height: 100%;
+}
+.song_pic{
+  width: 100%;
+  height: 600rpx;
+  padding: 2rpx 0;
+}
+.song_pic image{
+  width: 100%;
+  height: 100%;
+}

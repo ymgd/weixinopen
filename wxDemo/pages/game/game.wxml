@@ -1,0 +1,4 @@
+<view class="container">
+    <view class="game-view-num"><text>{{num}}</text></view>
+    <button class="game-btn" bindtap="handleBtnClick" type="primary">{{state?"开始":"结束"}}</button>
+</view>

@@ -1,0 +1,74 @@
+<view class="container">
+    <view class="carimg">
+        <image mode="aspectFit" src="{{carDetail.photo}}"></image>
+    </view>
+    <view class="fullborbox carname">{{carDetail.carName}}</view>
+    <view class="fullborbox carremark">购车即送豪华大礼包</view>
+    <view class="tmall-price">
+        <view class="ptag">
+            <view class="minprice">¥{{currentSelect.cprice}}</view>
+            <view class="oldprice">指导价：<em>￥{{currentSelect.tprice}}</em></view>
+        </view>
+        <view class="psave">
+            <view>节省</view>
+            <view><em>{{currentSelect.saveMoney}}</em>元</view>
+        </view>
+    </view>
+    <view class="cf tmall-types pt20">
+        <view class="tipstxt">车型</view>
+        <view class="cf cartypelist">
+            <view wx:for="{{carModels}}" wx:for-index="position" wx:for-item="carModel">
+                <view wx:if="{{carModel.checked}}">
+                    <view class="cartypeitem cur" id="{{position}}" bindtap="modelTap">{{carModel.carModelName}}</view>
+                </view>
+                <view wx:else>
+                    <view class="cartypeitem" id="{{position}}" bindtap="modelTap">{{carModel.carModelName}}</view>
+                </view>
+            </view>       
+        </view>
+    </view>
+    <view class="cf tmall-types mb20">
+        <view class="tipstxt">颜色</view>
+        <view class="cf cartypelist">
+            <view wx:for="{{carModels}}" wx:for-index="position" wx:for-item="carModel">
+                <view wx:if="{{carModel.checked}}">
+                    <view style="display:inline" wx:for="{{carModel.moreDetail}}" wx:for-index="i" wx:for-item="detail">
+                        <view wx:if="{{i == carModel.initColor}}" id="{{i}}" class="cartypeitem cur" bindtap="colorTap">{{detail.color}}</view>
+                        <view wx:else id="{{i}}" class="cartypeitem" bindtap="colorTap">{{detail.color}}</view>
+                    </view>
+                </view>
+            </view>   
+        </view>
+    </view>
+    <view class="cf tmall-process">
+        <view class="pub-title">活动详情</view>
+        <view class="tmall-lc">
+            <image style="width:100%;height: {{activityImageHeight}}px" src="{{carDetail.detailPhotoList[0].photo}}" bindload="activityImageLoad"></image>
+        </view>
+    </view>
+    <view class="tmall-process">
+        <view class="pub-title">购车流程</view>
+        <view class="tmall-lc">
+            <image  style="width:100%;height: {{flowImageHeight}}px" src="{{carDetail.processPhotoList[0].photo}}" bindload="flowImageLoad"></image>
+        </view>
+    </view>
+
+    <view class="question_container">
+        <view class="question_hint">任何购车问题请拨打</view>
+        <view class="question_phone">400-88-16315</view>
+    </view>
+
+    <view class="fixed-bottom">
+        <view class="fbl">
+            <view class="dingjin">
+                <image  style="width:100rpx; height:50rpx" src="/resources/images/icon-dingjin.png"></image>
+                <text style="color:#EE9A49; margin-top: 2rpx">¥199元</text>
+            </view>
+            <view class="tuikuan-tips">
+                <image src="/resources/images/images/icon-tui.png"></image>
+                <text>不买车，订金随时退</text>
+            </view>
+        </view>
+        <view class="fbr"></view>
+    </view>
+</view>

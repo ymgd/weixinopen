@@ -1,0 +1,7 @@
+/**app.wxss**/
+.wrap{
+	font-family : Microsoft YaHei;
+}
+.container{
+	margin: 20px;
+}

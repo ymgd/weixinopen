@@ -1,0 +1,12 @@
+.section{
+    width:100%;
+    border-bottom:1px solid #ccc;
+    padding-top:20px;
+}
+/*
+page{
+    display: block;
+    min-height: 100%;
+    background-color:red;
+}
+*/

@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/classify/classify",
+    "pages/list/list",
+    "pages/search/search",
+    "pages/play/play",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "pink",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3eb94e",
+    "backgroundColor": "#ffffff",
+    "bordeStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "在线音乐",
+        "iconPath": "images/online.png",
+        "selectedIconPath": "images/online-s.png"
+      },
+      {
+        "pagePath": "pages/play/play",
+        "text": "正在播放",
+        "iconPath": "images/playing.png",
+        "selectedIconPath": "images/playing-s.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="news-page">
+  <swiper 
+    indicator-dots="true" 
+    autoplay="true" 
+    interval="3000" 
+    duration="1000">
+
+    <swiper-item>
+      <image src="/images/one.jpg" alt="" class="slide-image" width="400" height="200" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/two.jpg" alt="" class="slide-image" width="400" height="200" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/three.jpeg" alt="" class="slide-image" width="400" height="200" />
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{news}}" wx:for-item="item" wx:key="unique">
+    <view data-id="{{item.id}}" bindtap="readNewsDetail" class="news-item">
+      <view class="item-left">
+        <image src="{{item.icon}}" alt="" style="width:75px; height:75px;" />
+      </view>
+      <view class="item-right">
+        <view class="title-wrap">
+          <text class="title">{{item.title}}</text>
+        </view>
+        <view class="info">
+          <text class="source">{{item.source}}</text>
+          <text class="date">{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

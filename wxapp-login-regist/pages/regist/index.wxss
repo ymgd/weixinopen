@@ -1,0 +1,4 @@
+@import "../login/index.wxss";
+.smsCode{display: flex;justify-content:space-between;border-bottom: 1px solid #ddd;padding-right: 10%}
+.smsCode input{width: 336rpx;}
+.smsCode .getSmsCodeBtn{font-size: 30rpx; color:#fff;width:216rpx;box-sizing: border-box; height: 80rpx;line-height: 80rpx;margin-top: 10rpx;margin-right: 0}

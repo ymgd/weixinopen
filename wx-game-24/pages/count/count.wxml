@@ -1,0 +1,60 @@
+<view>
+    <view class="page-top">    
+        <view class="score">
+            <view class="playing">
+                正在进行第<text class="fail">{{score.gameIndex}}</text>轮游戏，等级：{{grade}}                
+            </view>
+           
+            <text class="win" wx:if="{{score.successNum>0}}">已经赢了{{score.successNum}}轮！</text>
+            <text class="fail" wx:if="{{score.failNum>0}}">错了{{score.failNum}}轮！</text>
+            <text class="skip" wx:if="{{score.skipNum>0}}">跳过{{score.skipNum}}轮！</text>
+        </view>     
+        <view class="page-numbers">
+            <button 
+                class="{{disabled[index]?'card disabled':'card active'}}" 
+                wx:for="{{numbers}}" 
+                bindtap="usetoCount" 
+                disabled="{{disabled[index]}}" 
+                data-index = "{{index}}" 
+                data-num="{{item}}">
+                    {{item}}
+            </button>           
+        </view>
+         <view class="page-btn-wrap">
+            <view class="operator" bindtap="useOperator" wx:for="{{['+','-','×','÷']}}" data-operator="{{item}}">{{item}}</view>
+        </view>
+    </view>
+    <view class= "count-area">
+         <view class="count-list" wx:for="{{countLine}}">       
+                <text class="number">{{item.firstNum}}</text>
+                <text class="number">{{item.operator}}</text>
+                <text class="number">{{item.nextNum}}</text>
+                <button 
+                    wx:if="{{item.firstNum && item.operator && item.nextNum}}" 
+                    disabled="{{item.isCounted}}" 
+                    class="{{item.isCounted?'operator disabled':'operator'}}" 
+                    bindtap="toCount">
+                        =
+                </button>
+                
+                <button 
+                    wx:if="{{item.firstNum && item.operator && item.nextNum && item.isCounted}}" 
+                    bindtap="usetoCount" 
+                    data-num = "{{item.result}}" 
+                    class="{{disabled[index+4]?'operator disabled':'operator'}}" 
+                    disabled="{{disabled[index+4]}}" 
+                    data-index = "{{index+4}}">
+                        {{item.result}}
+                </button>
+               
+            </view>                
+    </view>
+    
+    <view hidden="false" wx:for="{{answer}}">        
+        <text>算法{{index+1}}</text>:{{item}}
+    </view>
+
+    <view class="page-bottom">
+        <button class="page-btn" bindtap="reCount" wx:if="{{countLine[0].isCounted}}" >算错了，重新开始</button>
+        <button class="page-btn" bindtap="toSkip">算不出，跳过</button>        
+    </view>

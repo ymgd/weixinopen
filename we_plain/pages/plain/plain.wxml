@@ -1,0 +1,10 @@
+<view>
+    <canvas canvas-id="plainId" class="canvas" bindtap="click" bindtouchmove="move"></canvas>
+    <view id="modal" class="modal {{modalHidden}}">
+        <view class="header">飞机大战分数</view>
+        <view class="content" id="content">{{score}}</view>
+        <view class="footer">
+            <button bindtap="startGame">继 续</button>
+        </view>
+    </view>
+</view>

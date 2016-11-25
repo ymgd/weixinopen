@@ -1,0 +1,406 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  font-family: "hiragino sans gb", arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.pull-right {
+    float: right !important
+}
+
+.pull-left {
+    float: left !important
+}
+
+
+.hide {
+    display: none !important
+}
+
+.show {
+    display: block !important
+}
+
+.invisible {
+    visibility: hidden
+}
+
+.affix {
+    position: fixed
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-justify {
+    text-align: justify
+}
+
+.text-nowrap {
+    white-space: nowrap
+}
+
+.text-lowercase {
+    text-transform: lowercase
+}
+
+.text-uppercase {
+    text-transform: uppercase
+}
+
+.text-capitalize {
+    text-transform: capitalize
+}
+
+.text-muted {
+    color: #777
+}
+
+.font-12 {
+    font-size: 12px !important
+}
+
+.font-14 {
+    font-size: 14px !important
+}
+
+.font-16 {
+    font-size: 16px !important
+}
+
+.font-18 {
+    font-size: 18px !important
+}
+
+.font-20 {
+    font-size: 20px !important
+}
+
+.font-24 {
+    font-size: 24px !important
+}
+
+.font-28 {
+    font-size: 28px !important
+}
+
+.font-32 {
+    font-size: 32px !important
+}
+
+.font-36 {
+    font-size: 36px !important
+}
+
+.font-40 {
+    font-size: 40px !important
+}
+
+.font-48 {
+    font-size: 48px !important
+}
+
+.p-0 {
+    padding: 0
+}
+
+.pt-0 {
+    padding-top: 0
+}
+
+.pr-0 {
+    padding-right: 0
+}
+
+.pb-0 {
+    padding-bottom: 0
+}
+
+.pl-0 {
+    padding-left: 0
+}
+
+.p-5 {
+    padding: 5px
+}
+
+.pt-5 {
+    padding-top: 5px
+}
+
+.pr-5 {
+    padding-right: 5px
+}
+
+.pb-5 {
+    padding-bottom: 5px
+}
+
+.pl-5 {
+    padding-left: 5px
+}
+
+.p-10 {
+    padding: 10px
+}
+
+.pt-10 {
+    padding-top: 10px
+}
+
+.pr-10 {
+    padding-right: 10px
+}
+
+.pb-10 {
+    padding-bottom: 10px
+}
+
+.pl-10 {
+    padding-left: 10px
+}
+
+.p-15 {
+    padding: 15px
+}
+
+.pt-15 {
+    padding-top: 15px
+}
+
+.pr-15 {
+    padding-right: 15px
+}
+
+.pb-15 {
+    padding-bottom: 15px
+}
+
+.pl-15 {
+    padding-left: 15px
+}
+
+.p-20 {
+    padding: 20px
+}
+
+.pt-20 {
+    padding-top: 20px
+}
+
+.pr-20 {
+    padding-right: 20px
+}
+
+.pb-20 {
+    padding-bottom: 20px
+}
+
+.pl-20 {
+    padding-left: 20px
+}
+
+.p-30 {
+    padding: 30px
+}
+
+.pt-30 {
+    padding-top: 30px
+}
+
+.pr-30 {
+    padding-right: 30px
+}
+
+.pb-30 {
+    padding-bottom: 30px
+}
+
+.pl-30 {
+    padding-left: 30px
+}
+
+.m-0 {
+    margin: 0
+}
+
+.mt-0 {
+    margin-top: 0
+}
+
+.mr-0 {
+    margin-right: 0
+}
+
+.mb-0 {
+    margin-bottom: 0
+}
+
+.ml-0 {
+    margin-left: 0
+}
+
+.m-5 {
+    margin: 5px
+}
+
+.mt-5 {
+    margin-top: 5px
+}
+
+.mr-5 {
+    margin-right: 5px
+}
+
+.mb-5 {
+    margin-bottom: 5px
+}
+
+.ml-5 {
+    margin-left: 5px
+}
+
+.m-10 {
+    margin: 10px
+}
+
+.mt-10 {
+    margin-top: 10px
+}
+
+.mr-10 {
+    margin-right: 10px
+}
+
+.mb-10 {
+    margin-bottom: 10px
+}
+
+.ml-10 {
+    margin-left: 10px
+}
+
+.m-15 {
+    margin: 15px
+}
+
+.mt-15 {
+    margin-top: 15px
+}
+
+.mr-15 {
+    margin-right: 15px
+}
+
+.mb-15 {
+    margin-bottom: 15px
+}
+
+.ml-15 {
+    margin-left: 15px
+}
+
+.m-20 {
+    margin: 20px
+}
+
+.mt-20 {
+    margin-top: 20px
+}
+
+.mr-20 {
+    margin-right: 20px
+}
+
+.mb-20 {
+    margin-bottom: 20px
+}
+
+.ml-20 {
+    margin-left: 20px
+}
+
+.m-30 {
+    margin: 30px
+}
+
+.mt-30 {
+    margin-top: 30px
+}
+
+.mr-30 {
+    margin-right: 30px
+}
+
+.mb-30 {
+    margin-bottom: 30px
+}
+
+.ml-30 {
+    margin-left: 30px
+}
+
+.width-80 {
+    width: 80px;
+    min-width: 80px
+}
+
+.width-100 {
+    width: 100px;
+    min-width: 100px
+}
+
+.width-120 {
+    width: 120px;
+    min-width: 120px
+}
+
+.width-150 {
+    width: 150px;
+    min-width: 150px
+}
+
+.width-180 {
+    width: 180px;
+    min-width: 180px
+}
+
+.width-200 {
+    width: 200px;
+    min-width: 200px
+}
+
+.width-250 {
+    width: 250px;
+    min-width: 250px
+}
+
+.line-height-20 {
+    line-height: 20px
+}
+
+.line-height-34 {
+    line-height: 34px
+}

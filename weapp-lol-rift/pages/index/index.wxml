@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{icon}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{nickname}} {{level}} LV</text>
+  </view>
+
+  <view class="freeLegend" bindtap="bindFreeLegendTap">周免英雄</view>
+  <view class="latestBattle" bindtap="bindBattleListTap">最近战绩</view>
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

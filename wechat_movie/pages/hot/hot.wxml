@@ -1,0 +1,35 @@
+<scroll-view scroll-y="true" class="flex box box-tb page-body">
+    <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for-items="{{images}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="text">
+        <view class="line_flag"></view>
+        <text>正在上映</text>
+    </view>
+
+    <navigator url="../movie/movie?id={{item.id}}" wx:for="{{movies}}">
+        <view class="item">
+            <image class="poster" src="{{item.images.small}}"></image>
+            <view class="meta">
+                <text class="title">{{item.title}}</text>
+                <text class="sub-title">{{item.subject.original_title}}({{item.year}})</text>
+                <view class="artists">
+                    <text wx:for="{{item.directors}}">{{item.name}}</text>
+                </view>
+            </view>
+            <view class="rating">
+                <text>{{item.rating.average}}</text>
+                <view class="buy">购票</view>
+            </view>
+        </view>
+    </navigator>
+</scroll-view>
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+

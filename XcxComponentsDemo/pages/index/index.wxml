@@ -1,0 +1,11 @@
+<view class="container">
+  <text>父容器</text>
+  <view class="button-container">
+    <button bindtap="clearInput" type="primary" size="default" >清空</button>
+  </view>
+  <view class="value-container">
+    {{childCompVal}}
+  </view>
+  <!-- 引入子组件wxml -->
+  <include src="../../components/myComponent/index.wxml" />
+</view>

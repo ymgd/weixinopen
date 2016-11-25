@@ -1,0 +1,11 @@
+<view class="news">
+  <block wx:for="{{news}}" wx:key="unique">
+    <view class="news-item">
+      <view class="reply">{{item.reply_count}}</view>
+      <view class="title" data-id="{{item.id}}" bindtap="goDetail">
+        <view class="title-text">{{item.title}}</view>
+        <view class="title-info">By {{item.author.loginname}}</view>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,112 @@
+/**sdf.wxss**/
+.container{
+    background-color: #fff;
+    padding: 30rpx;
+}
+.remind-btn {
+    background-color: #ffcb63;
+    border-color: #e0b358;
+}
+.result-page {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    font-size: 11pt;
+}
+.result-model {
+    display: flex;
+    flex-flow: column;
+    border-radius: 3px;
+    color: #555;
+    background-color: #faf9f7;
+    overflow: hidden;
+}
+
+.result-userInfo {
+
+    display: flex;
+    align-items: stretch;
+    padding: 35rpx 30rpx;
+}
+
+    .userInfo-dormitory {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10rpx 0 20rpx;
+    }
+        .dormitory-info {
+            font-size: 20pt;
+            line-height: 150%;
+            letter-spacing: 1px;
+        }
+        .dormitory-resetBtn {
+            font-size: 9pt;
+            padding: 5rpx 20rpx;
+            text-align: center;
+            background-color: #ffcb63;
+            border-radius: 3px; 
+            color: #fff;
+        }
+
+    .userInfo-basic {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #888;
+    }
+        .basic-name {
+            font-size: 11pt;
+            line-height: 150%;
+        }
+        .basic-time {
+            font-size: 10pt;
+        }
+
+.result-chargeInfo {
+
+    display: flex;
+    flex-direction: row;
+    margin: 20rpx 0;
+}
+    .chargeInfo-model {
+        
+        flex: 1;
+        padding: 35rpx 30rpx;
+    }
+
+    .chargeInfo-num {
+
+        margin-right: 10rpx;
+    }
+    .chargeInfo-cost {
+
+        margin-left: 10rpx;
+    }
+        .chargeInfo-model-title{
+
+            margin-bottom: 30rpx;
+        }
+        .chargeInfo-model-info {
+
+            text-align: center;
+        }
+            .model-info {
+
+                font-size: 25pt;
+                line-height: 100%;
+                padding: 0 10rpx 0 20rpx;
+            }
+
+.result-specificInfo {
+    
+    padding: 35rpx 30rpx;
+}
+    .specificInfo-item {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 25rpx 0;
+    }

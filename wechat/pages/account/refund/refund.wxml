@@ -1,0 +1,46 @@
+<!--<view>{{text}}</view>-->
+<view class="invest_hd">
+    <view class="left">
+        <view class="title">回款笔数</view>
+        <view class="hd_num">共<text>32</text>笔</view>
+    </view>
+    <view class="left">
+        <view class="title">回款金额</view>
+        <view class="hd_num">共<text>1562032</text>元</view>
+    </view>
+</view>
+
+<view class="invest_bd">
+    <view class="bd_title">
+        <view class="bd_left">项目名称</view>
+        <view class="bd_center">回款时间</view>
+        <view class="bd_right">回款金额(元)</view>
+    </view>
+    <view class="bd_content">
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">2016-11-26</view>
+            <view class="bd_right">105.8</view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">2016-11-26</view>
+            <view class="bd_right">90</view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">2016-11-26</view>
+            <view class="bd_right">5290</view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">2016-11-26</view>
+            <view class="bd_right">45.8</view>
+        </view>
+        <view class="invest_list">
+            <view class="bd_left">商行贷1608121--1</view>
+            <view class="bd_center">2016-11-26</view>
+            <view class="bd_right">564.9</view>
+        </view>
+    </view>
+</view>

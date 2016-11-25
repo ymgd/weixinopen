@@ -1,0 +1,54 @@
+.main_title{
+    margin-top:20rpx;
+    height:100rpx;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+.tips{
+    margin-top:140rpx;
+    height:60rpx;
+    text-align: center;
+}
+
+.section{
+    margin-top:100rpx;
+}
+
+input{
+    width:300rpx;
+    margin: auto;
+    text-align: center;
+}
+
+button{
+    width:500rpx;
+}
+
+.buttons{
+    margin:0 auto;
+    width:630rpx;
+    text-align: center;
+}
+.btn-list{
+    width:200rpx;
+    float:left;
+    margin:5rpx;
+}
+
+.data_list{
+    float:left;
+    width:50%;
+    margin-top:50rpx;
+    text-align: center;
+}
+
+.image{
+    margin-top:50rpx;
+    text-align: center;
+}
+
+image{
+    width:300rpx;
+    height:500rpx;
+}

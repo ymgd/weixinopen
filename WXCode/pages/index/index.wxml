@@ -1,0 +1,11 @@
+<view class="section search">
+    <input placeholder="请输入要查询的歌曲名" bindinput="searchTap"  />
+</view>
+<view class="list-group" wx:if="{{theEnd}}">
+    <view class="list-group-item list-group-item-info">歌曲查找结果列表</view>
+    <view class="list-group-item" wx:for="{{searchEnd}}" wx:for-item="song" >
+         <navigator url="../song/song?id={{song.songid}}">
+                <text>{{song.songname}} - {{song.artistname}}</text>
+         </navigator>   
+    </view>
+</view>

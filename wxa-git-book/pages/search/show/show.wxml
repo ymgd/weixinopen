@@ -1,0 +1,9 @@
+<import src="../../../lib/wxParse/wxParse/wxParse.wxml"/>
+<view class="wxParse" bindtouchstart="drawerStart" bindtouchmove="drawerMove">
+<template is="wxParse" data="{{wxParseData}}"/>
+</view>
+<!--<block wx:for="{{sections}}" wx:for-item="section">
+  <view class="{{section.type}}">
+    {{section.content}}
+  </view>
+</block>-->

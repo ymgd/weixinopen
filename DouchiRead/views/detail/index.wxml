@@ -1,0 +1,18 @@
+<view class="container">
+    <image class="pic" mode="aspectFit" src="{{bookInfo.images.large}}"></image>
+    <view class="title" bindtap="alert">{{'<<'+bookInfo.title+'>>'}}</view>
+    <view class="tip">图书信息</view>
+    <view class="bookinfo pct100">
+        <view class="book_author">作者：{{bookInfo.author}}</view>
+        <view class="book_star">推荐指数 <text>{{bookInfo.rating.average}}</text></view>
+        <view class="book_translator">译者：<text>{{bookInfo.translator.length?bookInfo.translator:"无"}}</text></view>
+        <view class="book_publisher">出版社：<text>{{bookInfo.publisher}}</text></view>
+        <view class="book_tags">标签：{{bookInfo.tags[0].title}}<text wx:if="bookInfo.tags[1].title">/{{bookInfo.tags[1].title}}</text></view>
+        <view class="book_pubdate">出版时间：{{bookInfo.pubdate}}</view>
+    </view>
+    <view class="tip">图书摘要</view>
+    <view class="book_summary f8 ovh rel" style="{{'height:'+smryHeight}}">　　{{bookInfo.summary}}</view>
+    <view class="extend-bar" wx:if="{{smryHeight=='4.5rem'}}" bindtap="extendBox">展开▼</view>
+    <view class="extend-bar" wx:else bindtap="extendBox">收起▲</view>
+    <view class="footer">—— 豆豉读书，<text>重拾阅读的价值</text> ——</view>
+</view>

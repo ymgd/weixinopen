@@ -1,0 +1,28 @@
+<scroll-view scroll-y="true" bindscrolltolower="loadList" class="layout">
+
+    <!-- list start -->
+    <view>
+        <navigator wx:for="{{lists}}">
+            <view class="item-box">
+                <view class="item-img">
+                    <image src="{{item.imgUrl}}"></image>
+                </view>
+
+                <view class="item-right">
+                    <text class="item-text">{{item.text}}</text>
+                    <view class="item-title">{{item.title}}</view>
+                    <view class="{{item.selling == '售罄' ? 'item-selling' : 'item-hot' }}">{{item.selling}}</view>
+                </view>
+            </view>
+        </navigator>
+    </view>
+    <!-- / list end -->
+
+    <!-- loading start -->
+    <view class="body-view">
+        <loading hidden="{{hidden}}" bindchange="loadingChange">
+            加载中...
+        </loading>
+    </view>
+    <!-- / loading end -->
+</scroll-view>

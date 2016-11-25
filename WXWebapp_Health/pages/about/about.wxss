@@ -1,0 +1,25 @@
+.photo_view {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.photo {
+    height: 400rpx;
+    width: 400rpx;
+}
+
+.name {
+    position: absolute;
+    bottom: 350rpx;
+    left: 200rpx;
+}
+
+.email {
+    position: absolute;
+    bottom: 300rpx;
+    left: 200rpx;
+}

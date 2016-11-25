@@ -1,0 +1,54 @@
+@import "../../res/qq.wxss";
+
+.li-item{
+    padding: 10px;
+}
+
+.li-item image{
+    width : 46px;
+    height: 46px;
+    border-radius:50%;
+}
+
+.message-left{
+    margin-right: 10px;
+    float : left;
+}
+.message-middle{
+   display: flex;
+   line-height:16px;
+   margin-top:5px;
+}
+.message-right{
+   display: flex;
+   line-height:15px;
+   margin-top:8px;
+}
+.title{
+    font-size: 15px;
+    color:#040403;
+    font-weight:600;
+    flex: 1;
+}
+.content{
+    flex: 1;
+    font-size :13px;
+    color:#9B9792;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.time{
+    font-size:12px;
+    color:#9B9792;
+}
+.msgCount{
+    text-align:center;
+    min-width :14px;
+    height:14px;
+    font-size:12px;
+    border-radius:50%;
+    background-color:#FA4625;
+    color :white;
+    margin:0 auto;
+}

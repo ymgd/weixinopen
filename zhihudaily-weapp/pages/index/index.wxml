@@ -1,0 +1,36 @@
+
+<!--index.wxml-->
+<!--引用模板news.wxml文件-->
+<import src="../../components/news/news.wxml"/>
+
+<view class="container">
+
+
+    <!--banner轮播-->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:key="" wx:for="{{top_stories}}">
+            <swiper-item id="{{item.id}}" bindtap="dailyDetail">
+                <image src="{{item.image}}" class="slide-image" mode="" height="150" width="100%"/>
+                <view class="slide_title">{{item.title}}</view>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <!--最新知乎日报列表-->
+    <view class="news_list">
+        <block wx:key="" wx:for="{{stories}}" wx:for-item="item">
+                <template is="news_item" data="{{id:item.id,title:item.title,images:item.images[0]}}"/>
+                <!--<view class="news_item" id="{{item.id}}" bindtap="dailyDetail">
+                    <view class="fl_left" style="width:200px">
+                    {{item.title}}
+                    </view>
+                    <view class="fl_right">
+                        <image style="width:78px;height:78px;" src="{{item.images[0]}}"></image>
+                    </view>
+                    <view class="clearfix"></view>
+                </view>-->
+        </block>
+    </view>
+
+
+</view>

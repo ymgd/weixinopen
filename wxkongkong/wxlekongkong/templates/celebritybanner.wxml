@@ -1,0 +1,19 @@
+<!--首页小空送-->
+<template name="celebritybanner">
+    <view class="celebrityview" style="margin-top: {{vinteval}}rpx">
+        <view class="titleview">
+            <text class="titlelbl">小空送</text>
+            <text class="alllbl" bindtap="checkAllCelebrity">查看全部></text>
+        </view>
+        <view class="cardsview">
+            <block wx:for="{{items}}">
+                <view class="cardview">
+                    <image class="adimage" src="{{item.display.content.images}}"></image>
+                    <view class="titlelbl">{{item.display.content.description}}</view>
+                    <view class="commonlbl">{{item.display.content.applicationCount + '人申请'}}</view>
+                    <view class="commonlbl">{{item.display.content.statusString}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+</template>

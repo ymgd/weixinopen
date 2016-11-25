@@ -1,0 +1,28 @@
+.avatar {
+  margin-top: 50rpx;
+  width: 400rpx;
+  height: 400rpx;
+}
+.error_view {
+  height: 50rpx;
+}
+.error_text {
+  font-size: 30rpx;
+  color: #f00;
+}
+form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+input {
+  border-bottom: 1rpx solid #1AAD19;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+}
+.placeholder {
+  font-size: 25rpx;
+}
+.btn {
+  width: 100%;
+}

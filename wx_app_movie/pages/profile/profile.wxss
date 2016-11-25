@@ -1,0 +1,63 @@
+page {
+  background-color: #fef8fd;
+  height: 100%;
+}
+.user {
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-left: 20rpx;
+}
+.nick-name {
+  text-indent: 15rpx;
+}
+.situation {
+  color: #777;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.arround {
+  margin-top: 25rpx;
+  color: #777;
+  font-size: 32rpx;
+}
+.arround text {
+  text-align: center;
+}
+.about-me {
+  background-color: #fff;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+.about-me .img {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 15rpx;
+}
+.about-me .tit {
+  font-size: 28rpx;
+}
+.settings {
+  background-color: #fff;
+}
+.setting-item {
+  padding: 0 20rpx;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 32rpx;
+}
+.settings .icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+.settings .item-icon {
+  margin-right: 20rpx;
+}

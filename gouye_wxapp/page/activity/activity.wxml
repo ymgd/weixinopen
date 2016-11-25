@@ -1,0 +1,22 @@
+<scroll-view scroll-y="true" style="height:100%;width:100%;display:block" bindscrolltolower="loadingMoreEvent">
+
+<block wx:for-items="{{pageData}}" wx:for-index="i">
+    <image
+        style="width: 100%; height: 30%; background-color: #eeeeee;" 
+        mode="aspectFit" src="{{scrollbmp[i]}}" data-activity-idx="{{i}}" bindtap="activityDetail">
+    </image>
+    <view class="mask">
+        <text class="cover-title">{{pageData[i].title}}</text>
+    </view>
+    <image class="cover-days-icon"            
+        mode="aspectFit" src="../../image/days.png">
+    </image>
+    <view class="cover-days">            
+        <text class="cover-days">{{days[i]}}</text>
+    </view>
+    <view class="cover-budget">            
+        <text class="cover-budget">{{budget[i]}}</text>
+    </view>
+</block>
+
+</scroll-view>

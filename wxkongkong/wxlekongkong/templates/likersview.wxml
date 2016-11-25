@@ -1,0 +1,7 @@
+<template name="likersview">
+<view class="likersview" style="padding: 26rpx {{left}}rpx; margin-top:24rpx;">
+    <block wx:for="{{likers}}">
+        <image class="likerview" wx:if="{{index < 5}}" src="{{item.avatar.square}}"></image>
+    </block>
+</view>
+</template>

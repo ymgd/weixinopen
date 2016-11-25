@@ -1,0 +1,124 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp nth-last">
+                        <text>单行列表</text>
+                        <view class="more">
+                            <text class="more-text">详细信息</text>
+                            <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp nth-last">
+                        <text>单行列表</text>
+                        <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp d-section-wrp nth-last">
+                        <view class="d-list-label">
+                            <text>双行列表</text>
+                            <text class="sub-text">描述信息</text>
+                        </view>
+                        <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text>多行列表</text>
+                        <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                    <text>多行列表</text>
+                    <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp s-section-wrp nth-last">
+                    <text>多行列表</text>
+                    <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+            </view> 
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <view class="img-title-item">
+                            <image class="blank_rect_png" src="{{blank_rect_png.src}}"></image>
+                            <text class="img-title-text">文字标题</text>
+                        </view>
+                        <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text class="label">国家/地区</text>                                  
+                        <picker mode="selector" bindchange="{{country.change}}" value="{{country.index}}" range="{{country.array}}">
+                            <view class="picker-pad">
+                                <input type="text" value="{{country.picked_country}}" />
+                                <image class="section-chevron" src="{{chevron_png.src}}"></image>
+                            </view>
+                        </picker>     
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp fs tel-number-section-wrp">
+                        <text class="tel-number-prefix">+ 86</text>
+                        <input placeholder="请填写手机号码" placeholder-class="ph-text" type="number" />
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="section-wrp fs s-section-wrp nth-last">
+                        <text>选项</text>
+                        <input placeholder="Wording 可配置" placeholder-class="ph-text" type="text" />
+                    </view>
+                </view>
+            </view>
+             <view class="section-group">
+                <view wx:for="{{checkRows}}" class="section" wx:for-item="row">
+                    <view class="section-wrp s-section-wrp" bindtap="bindCheckChange" data-check-id="{{row.id}}" >
+                        <text>单选项</text>
+                        <icon type='success_no_circle' size="13" style="{{row.checkStyle}}" />
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view wx:for="{{switchers}}" wx:for-item="item" class="section">
+                    <view class="section-wrp s-section-wrp">
+                        <text>{{item.label}}</text>
+                        <switch checked="{{item.checked}}" bindchange="{{item.bindchange}}" data-id="{{item.id}}" />
+                    </view>
+                </view>
+            </view>
+            <view class="section-group">
+                <view wx:for="{{multCheckRows}}" class="section" wx:for-item="row" wx:for-index="idx">
+                    <block wx:if="{{idx == multCheckRows.length - 1}}" >
+                    <view class="section-wrp s-section-wrp fs nth-last" bindtap="bindMultCheckChange" data-check-id="{{row.id}}" >
+                        <icon type="{{row.icon_type}}" size="23" />
+                        <text class="flex-start-text">多选项</text>
+                    </view>
+                    </block>
+                    <block wx:else>
+                    <view class="section-wrp s-section-wrp fs" bindtap="bindMultCheckChange" data-check-id="{{row.id}}" >
+                        <icon type="{{row.icon_type}}" size="23" />
+                        <text class="flex-start-text">多选项</text>
+                    </view>
+                    </block>
+                </view>
+            </view>               
+        </view>
+    </view>  
+</view>

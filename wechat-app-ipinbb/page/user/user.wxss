@@ -1,0 +1,100 @@
+.user-header {
+    width: 100%;
+    height: 448rpx;
+    margin-bottom: 20rpx;
+    padding-top: 75rpx;
+    box-sizing: border-box;
+    background: linear-gradient(to top left,#595959,#bcbcbc);
+}
+
+.user-img {
+    width: 196rpx;
+    height: 196rpx;
+    margin: 0 auto 42rpx;
+    text-align: center;
+    background-color: rgb(255,255,255);
+    border-radius: 50%;
+    box-shadow: 1rpx 4rpx 5rpx #5b5b5b;   
+}
+
+.icon-weixin {
+    padding-top: 24rpx;
+    font-size: 140rpx;
+    color: rgb(153,153,153);
+}
+
+.user-header .login-btn {
+    width: 300rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    line-height: 80rpx;
+    text-align: center;
+    color: rgb(255,255,255);
+    border: 1rpx solid rgb(255,255,255);
+    border-radius: 4rpx;
+    box-sizing: border-box;
+}
+
+.user-header .other-button-hover {
+    background-color: rgb(255,255,255);
+}
+
+.user-article {
+    background-color: rgb(255,255,255);
+}
+
+.user-order {
+    display: flex;
+    width: 100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    padding: 0 20rpx;
+    border-bottom: 1rpx solid rgb(216,216,216);
+    box-sizing: border-box;
+}
+
+.order-all {
+    width: 630rpx;
+    font-size: 28rpx;
+    color: rgb(102,102,102);
+}
+
+.order-look {
+    font-size: 24rpx;
+    color: rgb(153,153,153);
+}
+
+.icon-right {
+    display: inline-block;
+    vertical-align: -4rpx;
+}
+
+.order-class {
+    display: flex;
+    width: 100%;
+    /*height: 186rpx;*/
+    box-sizing: border-box;
+}
+
+.item-order {
+    width: 20%;
+    height: 155rpx;
+    padding-top: 30rpx;
+    text-align: center;
+    color: rgb(153,153,153);
+}
+
+.item-order .iconfont {
+    width: 80rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    margin-bottom: 10rpx;
+    font-size: 80rpx;
+}
+
+.item--order-text {
+    line-height: 34rpx;
+    font-size: 24rpx;
+}
+
+

@@ -1,0 +1,47 @@
+.room_list{
+    display: block;
+    border-width: 0px;
+    border-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #eeeeee;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.room_id{
+    width: 100px;
+    height: 50px;
+}
+
+.room_name {
+    display: inline-block;
+    width: 49%;
+
+    border: #ffaa09 solid 0px;
+    vertical-align: top;
+}
+
+.room_name_title{
+    text-align: center;
+    padding: 00 50;
+    margin-top: 0px;
+    width:auto;
+    display: block;
+    border: #AADDBB solid 0px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #eeeeee;
+}
+
+.room_name_value {
+    text-align: center;
+    display:  block;
+    font-weight: bold;
+}
+
+.room_vertical_src{
+    display: inline-block;
+    width: 50%;
+    height: 130px;
+}

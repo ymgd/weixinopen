@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+
+<!--添加模块－固定头部-->
+  <include src="../template/header.wxml" />
+
+
+<!--绑定方法(bindtap)-->
+  <view  bindtap="bindViewTap" class="userinfo" wx:if="{{userLogoShow}}" >
+    <image class="userinfo-avatar"  src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  
+  <view class="usermotto">
+    <button type="primary" wx:for="{{nicknamitems}}" bindtap="btnclick">{{mylogobtn}}</button>
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

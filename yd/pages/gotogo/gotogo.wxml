@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="article-list">
+    <block wx:for="{{gotogos}}" wx:key="cid">
+      <navigator url="../article/article?id={{item.cid}}">
+        <!-- 不用反转数组了，根据索引倒序指定z-index即可保证gotogos数组中的第一个在最上面，最后一个在最下面 -->
+        <!-- item.cid == currentCid ? animationData : null 更新之后报错了！故最后的null改为'' -->
+        <view class="article-box" style="z-index:{{gotogos.length - index}};" animation="{{item.cid == currentCid ? animationData : ''}}">
+          <image src="{{item.cover_image_url}}"></image>
+          <view class="article-info">
+            <text class="article-title">{{item.title}}</text>
+            <text class="price">{{item.price}}</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+  <view class="operate-area">
+    <view bindtap="like"><image src="icon/like.png"></image></view>
+    <view bindtap="dislike"><image class="dislike" src="icon/dislike.png"></image></view>
+  </view>
+</view>

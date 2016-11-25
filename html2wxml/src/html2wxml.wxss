@@ -1,0 +1,104 @@
+.h2, .h3, .p, .div, .table, .tbody, .tr, .td, .ul, .li {
+  color: #333;
+}
+
+.h2 {
+  display: block;
+  font-size: 36rpx;
+  color: #39f;
+  font-weight: 400;
+}
+
+.h3 {
+  display: block;
+  margin: 30rpx 30rpx 0 0;
+  font-size: 30rpx;
+  font-weight: 400;
+}
+
+.ul {
+  display: block;
+  list-style-type: disc;
+  padding: 0;
+  margin: 0;
+  line-height: 40rpx;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40rpx;
+}
+
+.li {
+  position: relative;
+  display: list-item;
+  padding: 0;
+  margin: 0;
+  line-height: 40rpx;
+}
+
+.p {
+  display: block;
+  line-height: 40rpx;
+  padding: 0;
+  margin-top: 0;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+.div {
+  display: block;
+  line-height: 40rpx;
+}
+
+.table {
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: auto;
+  border-right: 2rpx solid #ededed;
+  margin: 20rpx 0 20rpx;
+  padding: 0;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.tbody {
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.tr {
+  display: table-row;
+  margin: 0;
+  padding: 0;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.tr:first-child {
+  border-top: 2rpx #ededed solid;
+}
+
+.td {
+  display: table-cell;
+  vertical-align: inherit;
+  min-width: 200rpx;
+  line-height: 40rpx;
+  margin: 0;
+  padding: 14rpx 10rpx 10rpx;
+  border: 2rpx solid #ededed;
+  border-right: none;
+  border-top: none;
+  font-size: 24rpx;
+  text-align: justify;
+  color: #666;
+}

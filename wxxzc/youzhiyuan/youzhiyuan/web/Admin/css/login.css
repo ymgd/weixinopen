@@ -1,0 +1,16 @@
+body{background:#d0dee3;}
+#loginBox{
+	width:496px;
+	height:300px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-248px;
+	margin-top:-120px;
+}
+#loginBox h1{
+	font-size:25px;
+	text-align:center;
+	color:#333;
+	text-shadow:0px 2px 3px #ddd;
+}

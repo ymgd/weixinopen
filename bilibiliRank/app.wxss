@@ -1,0 +1,32 @@
+/**app.wxss**/
+.container {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", Monaco;
+	height: 100%;
+} 
+
+.header {
+	height: 140px;
+	width: 100%;
+
+	background-image: url(images/logo.jpg);
+	background-size: 100%;
+}
+
+.cmds {
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+.cmds navigator:first-child .cmd-list {
+	border-top: none;
+}
+
+.cmd-list {
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	border-top: 1px solid #ddd;
+}

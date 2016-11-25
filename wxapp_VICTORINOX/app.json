@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/MusicHome/MusicHome",
+    "pages/WeatherHome/WeatherHome",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "white",
+    "backgroundColor": "#e0e0e0",
+    "navigationBarBackgroundColor": "#38373d",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#2ca26d",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "pagePath": "pages/MusicHome/MusicHome",
+        "iconPath": "images/icon_menubar_music.png",
+        "selectedIconPath": "images/icon_menubar_music_hl.png",
+        "text": "音乐"
+      },
+      {
+        "pagePath": "pages/WeatherHome/WeatherHome",
+        "iconPath": "images/icon_menubar_weather.png",
+        "selectedIconPath": "images/icon_menubar_weather_hl.png",
+        "text": "天气"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/icon_menubar_wx.png",
+        "selectedIconPath": "images/icon_menubar_wx_hl.png",
+        "text": "日志"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

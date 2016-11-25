@@ -1,0 +1,25 @@
+
+<view class="page">
+<scroll-view scroll-y="true" style="height: 100%;">
+  <view class="page__bd">
+    <view class="section" style="margin-top: 5%;" >
+      <!--<icon type="search" size="25" />-->
+     <input  placeholder="输入字、成语" bindinput="bindSearchInput"  maxlength="50"/>
+    </view>
+    <view style="display:flex;">
+      <button bindtap="search" class = "searchbutton" type="primary">查询</button>
+      </view>
+    </view>
+   
+  <view class="container2" wx:if="{{showDetail}}">
+      <template is="detail" data="{{item}}" />
+  </view>
+  <view class="container2" wx:if="{{showChengyuDetail}}">
+      <template is="chengYuDetail" data="{{chengYuItem}}" />
+  </view>
+  </scroll-view>
+</view>
+<import src="../../template/detail.wxml"/>
+<import src="../../template/chengyu.wxml"/>
+
+

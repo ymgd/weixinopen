@@ -1,0 +1,22 @@
+<view class="container">
+    <view class="headerSwiper">
+        <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+            <block wx:for="{{banner}}">
+                <swiper-item class="swiper_item">
+                    <image class="swiper_image" src="{{item.pic_url}}"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view class="navigateView">
+        <view class="navigateViewtitle homtGoodsTitle">热卖商品</view>
+        <view class="navigateViewtitle moreGoodsTitle">更多></view>
+    </view>
+    <view class="allGoods">
+        <view class="goodItem" wx:for="{{hotgoods}}">
+            <view class="goodImageContainer"><image class="goodImage" src="{{item.pic_url}}"></image></view>
+            <view class="goodTitleContainer"><text class="goodTitle">{{item.name}}</text></view>
+        </view>
+    </view>   
+</view>

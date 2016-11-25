@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<view class="container log-list">
+    <block wx:for="{{rankLogs}}" wx:for-item="log">
+        <view class="log-item">
+            <image class="w60 h60" wx:if="{{index + 1 == 1}}" mode='scaleToFill' src="/images/rank-first.png"></image>
+            <view wx:if="{{index + 1 != 1}}" class="w60 text-center">{{index + 1}}</view>
+            <span>{{log.name}}</span>
+            <span>{{log.score}}</span>
+        </view>
+    </block>
+</view>

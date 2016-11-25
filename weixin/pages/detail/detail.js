@@ -1,0 +1,10 @@
+Page({
+  data:{
+    title:''
+  },
+  onLoad:function(options){
+      wx.setNavigationBarTitle({
+        "title":1111
+      })
+  }
+})

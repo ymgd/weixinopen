@@ -1,0 +1,21 @@
+.my-box {
+	margin: 0 auto;
+	text-align: center;
+}
+.my-footer,
+.my-header {
+	margin: 20px 0;
+}
+.my-body {
+	margin: 0 auto;
+	width: 280px;
+	height: 280px;
+}
+.body-img {
+	width: 100%;
+	height: 100%;
+}
+.my-footer {
+	font-size: 12px;
+	color: #9e9e9e;
+}

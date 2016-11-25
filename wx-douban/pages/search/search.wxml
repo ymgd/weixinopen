@@ -1,0 +1,27 @@
+<!--search.wxml-->
+<import src="../common/templates.wxml" />
+<template is="pageLoading" data="{{pageLoadingHide}}" />
+
+<view class="page">
+
+    <modal no-cancel comfirm-text="确定" hidden="{{modalHidden}}" bindconfirm="modalConfirm">请输入电影名称</modal>
+    
+    <view class="search-header">
+        <input class="txt" type="text" placeholder="请输入电影名称" auto-focus bindinput="changeSearchTag" />
+        <button class="btn" type="primary" plain bindtap="search"><icon type="search" color="#2aac5e" size="20"/></button>
+    </view>
+    
+    <block wx:if="{{searchHistory.length>0}}">
+        <view class="search-history">
+            <button class="clear" type="primary" plain bindtap="clearSearchStorage"><icon type="clear" color="#999" size="20" /></button>
+            <text class="title">搜索历史</text>
+            <view class="list">
+                <block wx:for="{{searchHistory}}">
+                    <!--<text data-tag="{{item}}" bindtap="historySearch">{{item}}</text>-->
+                    <navigator url="../list/list?tag={{item}}&start=0&count=10">{{item}}</navigator>
+                </block>
+            </view>
+        </view>
+    </block>
+
+</view>

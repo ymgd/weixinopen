@@ -1,0 +1,24 @@
+/**wxassert.wxss**/
+.wxassert-text {
+  margin-left: 10px;
+  font-family: 微软雅黑;
+  font-size: 16px;
+}
+
+.wxassert-icon{
+  vertical-align:-3px;
+}
+
+.wxassert-progress{
+  margin-bottom: 10px;
+}
+
+.wxassert-view{
+  padding-top: 5px;
+  padding-left: 40px;
+}
+
+.wxassert-title{
+  font-family: 微软雅黑;
+  font-size: 12px;
+}

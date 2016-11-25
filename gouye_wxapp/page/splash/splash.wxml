@@ -1,0 +1,2 @@
+<image src="{{splash_pic}}" class="cover" style="height:{{screenHeight}}px;width:{{screenWidth}}px"></image>
+

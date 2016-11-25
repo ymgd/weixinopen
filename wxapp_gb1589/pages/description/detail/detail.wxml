@@ -1,0 +1,11 @@
+<page>
+    <view class="detail">
+        <caption>{{caption}}</caption>
+        <view class="article">
+            <text>{{article}}</text>
+            <block wx:for="{{gallery}}">
+                <image src="{{item}}" mode="aspectFit" bindtap="previewGallery" id="{{index}}" />
+            </block>
+        </view>
+    </view>
+</page>

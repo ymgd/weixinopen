@@ -1,0 +1,5 @@
+<template name="errorview">
+<view class="errorview">
+    <button bindtap="loadAdDatas">reload</button>
+</view>
+</template>

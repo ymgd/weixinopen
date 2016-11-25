@@ -1,0 +1,6 @@
+<view class="content">
+<image class="main-bg" src="../asserts/img/bg.png"></image>
+    <block wx:for="{{logs}}">
+    <view class="item">{{item}}</view>
+    </block>
+</view>

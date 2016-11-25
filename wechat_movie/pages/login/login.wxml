@@ -1,0 +1,25 @@
+<view class="flex bg box box-tb box-pack-center">
+    <!--<view class="logo">
+        <image src="{{logo}}"></image>
+    </view>-->
+    <view class="flex box box-tb box-pack-center">
+        <view class="telephone box box-lr">
+            <input class="flex" type="digit" placeholder="手机号" placeholder-class="input-placeholder" maxlength="11" auto-focus></input>
+            <button size="mini" type="">获取验证码</button>
+        </view>
+        <view class="code box box-lr box-pack-start">
+            <input class="flex" placeholder="验证码"></input>
+        </view>
+        <view class="login">
+            <button type="primary" bindtap="login">登 录</button>
+        </view>
+    </view>
+    <view class="footer box box-center-center">
+        <text>
+            Copyright 2015, 版权所有VMENTE.COM
+        </text>
+        <text>
+            客服电话：400-000-0000
+        </text>
+    </view>
+</view>

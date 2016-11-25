@@ -1,0 +1,21 @@
+<import src="../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'Storage',desc:'每个微信小程序都可以有自己的本地缓存，可以通过 wx.setStorage（wx.setStorageSync）、wx.getStorage（wx.getStorageSync）、wx.clearStorage（wx.clearStorageSync）可以对本地缓存进行设置、获取和清理。本地缓存最大为10MB。'}}"/>
+        <view class="s-section flex">
+            <input  bindinput="bindKeyInput" placeholder="请输入key" placeholder-class="palceholder-c" value="{{key}}"/>
+            <view class="line">line</view>
+            <input  bindinput="bindDataInput" placeholder="请输入data" placeholder-class="palceholder-c" value="{{val}}"/>
+        </view>
+
+        <button type="primary" class="mt" bindtap="setStorage"> 存储数据 </button>
+        <button type="primary" class="mt" bindtap="getStorage"> 获取数据</button>
+        <button type="primary" class="mt" bindtap="removeStorage" data-val="{{key}}">移除数据</button>
+        <button type="primary" class="mt" bindtap="clearStorage">清理数据</button>
+        <view class="storage-show bgf mt {{show}}">获取{{key}} 的值是： {{val}}</view>
+
+
+    </view>
+</view>

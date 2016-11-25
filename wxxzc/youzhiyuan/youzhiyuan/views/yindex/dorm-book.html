@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/base.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/iconfont/iconfont.css"/>
+  <title>宿舍预定</title>
+	<body>
+		<div class="header">
+			<span>宿舍预定</span>
+			<a href="index.html" class="back"><i class="iconfont icon-left"></i></a>
+		</div>
+		<div class="banner">
+			<img src="img/self-report.png">
+		</div>
+		<div class="step">
+			<ul class="fs0">
+				<li>
+    			<span class="step-icon passbg">1</span>
+    			<p class="step-txt">个人信息</p>
+    		</li>
+    		<li>
+    		<span class="step-icon passbg">2</span>
+    			<p class="step-txt">宿舍预定</p>
+    		</li>
+    		<li>
+    			<span class="step-icon">3</span>
+    			<p>抵校登记</p>
+    		</li>
+    		<li>
+    			<span class="step-icon">4</span>
+    			<p>报到单</p>
+    		</li>
+    	</ul>
+    	<span class="pro-line"><img src="img/pro-line.png"></span>
+		</div>
+		<ul class="dorm-book">
+			<li>
+		    <span class="book-tit">校区</span>
+		    <input type="text" name="name" placeholder="请选择你所在的校区" id="xiaoqu"/>
+		    <span class="goin"><i class="iconfont icon-right"></i></span>
+			</li>
+			<li>
+				<span class="book-tit">楼栋号</span>
+		        <input type="text" name="name" placeholder="请填写您宿舍的楼栋号" id="dongid"/>
+		        <span class="goin"><i class="iconfont icon-right"></i></span>
+			</li>
+			<li>
+				<span class="book-tit">宿舍类型</span>
+		        <input type="text" name="name" placeholder="请填写您的宿舍类型" id="dormattr"/>
+		        <span class="goin"><i class="iconfont icon-right"></i></span>
+			</li>
+			<li>
+				<span class="book-tit">房间号</span>
+		        <input type="text" name="name" placeholder="请选择您的房间号" id="roomid"/>
+		        <span class="goin"><i class="iconfont icon-right"></i></span>
+			</li>
+			<li>
+				<span class="book-tit">铺位</span>
+		        <input type="text" name="name" placeholder="请选择您的床铺位置" id="puid"/>
+		        <span class="goin"><i class="iconfont icon-right"></i></span>
+			</li>
+			
+		</ul>
+		<div class="step-btn">
+				<a href="?r=yindex/userinfo">上一步</a>
+				<a href="javascript:void(0)" id="next">下一步</a>
+		</div>
+	  <script src="js/jquery-1.10.2.min.js"></script>
+      <script type="text/javascript" src="js/rem.js"></script>	
+	</body>
+</html>
+
+<script>
+    $(function(){
+        $('#next').click(function(){
+            var xiaoqu=$('#xiaoqu').val()
+            var dongid=$('#dongid').val()
+            var dormattr=$('#dormattr').val()
+            var roomid=$('#roomid').val()
+            var puid=$('#puid').val()
+            //var sign= $.cookie("sign")
+
+            var url="http://www.hefei.com/public/youdormbook?callback=?";
+
+            $.getJSON(url,{xiaoqu:xiaoqu,dongid:dongid,dormattr:dormattr,roomid:roomid,puid:puid},
+                    function (e) {
+
+                        if (e == 1) {
+                            location.href = "http://www.you.com/web/index.php?r=yindex/arrive";
+                        }
+                    })
+
+
+
+        })
+
+    })
+</script>

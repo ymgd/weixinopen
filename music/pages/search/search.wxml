@@ -1,0 +1,13 @@
+<import src="../common/tab.wxml" />
+<import src="../common/list.wxml" />
+
+<view class="container">
+    <scroll-view scroll-y="true">
+        <template is="nav" data="{{nav_list: nav_list,tabActive: tabActive}}" />
+        <view class="search">
+            <input type="text" bindinput="inputKeyword" value="{{keyword}}" placeholder="请输入关键词" />
+            <button bindtap="searchSong" type="primary">立即搜索</button>
+        </view>
+        <template is="search_list" data="{{search_list: search_list}}" />
+    </scroll-view>
+</view>

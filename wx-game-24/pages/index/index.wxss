@@ -1,0 +1,27 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.welcome {   
+    z-index: 3;   
+    white-space: nowrap;
+    font-size: 40rpx;
+    color: #ec9601;
+    top:150rpx;
+    margin-bottom: 30rpx;
+}
+.specification-box{   
+    margin: 100rpx 2rem 200rpx;
+    color: #333;
+    font-size: 24rpx;
+    line-height:1.5;
+}
+.grade-box{
+    margin: 30rpx 0 10rpx;    
+}
+label{margin: 10rpx;}
+radio{vertical-align: middle; margin-right: 10rpx}

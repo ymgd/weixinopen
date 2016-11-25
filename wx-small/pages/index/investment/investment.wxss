@@ -1,0 +1,76 @@
+
+
+.investment-area{
+    margin-top: 20rpx;
+}
+
+.investment-top{
+    padding-left: 32rpx;
+    padding-top: 37rpx;
+    height: 120rpx;  
+    font-family: PingFangSC-Medium;
+    font-size: 32rpx;
+    color: #333333;  
+    align-content: center;   
+    box-sizing: border-box;     
+}
+
+.investment-top-icon{    
+    width: 30rpx;
+    height: 30rpx;
+    padding-top: 8rpx;
+    margin-right: 18rpx;
+}
+
+.investment-desp1{    
+    font-family: PingFangSC-Medium;
+    font-size: 32rpx;
+    color: #333333;
+    line-height: 46rpx;
+}
+
+
+.investment-grid{
+    height: 159rpx;
+    border-bottom: 1rpx solid #eee;
+}
+
+.investment-item{
+    padding-top: 32rpx;
+    padding-left: 32rpx;
+    box-sizing: border-box;
+}
+
+.investment-item1{
+    width: 300rpx;
+}
+
+.investment-item2{
+    flex:1;
+}
+
+.investment-desp2{
+    font-family: SanFranciscoDisplay-Medium;
+    font-size: 48rpx;
+    color: #FF801A;
+}
+
+.investment-desp3{
+    margin-top: 4rpx;  
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    line-height: 33rpx;    
+    color: #999999;
+}
+
+.investment-desp4,.investment-desp5{
+    margin-top: 6rpx;
+    margin-bottom: 10rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 32rpx;
+    color: #666666;
+}
+
+.investment-desp5{   
+    color: #FF801A;
+}

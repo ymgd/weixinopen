@@ -1,0 +1,51 @@
+.celebrityview {
+    width: 100%;
+    background-color: white;
+    padding: 34rpx 0 28rpx 0;
+}
+
+.celebrityview .titleview {
+    display: flex;
+    flex-direction: row;
+    padding: 0 28rpx;
+}
+
+.celebrityview .titleview .titlelbl {
+    color: #333333;
+    font-size: 14px;
+    margin-right: auto;
+}
+
+.celebrityview .titleview .alllbl {
+    color: #969696;
+    font-size: 12px;
+    margin-right: 10rpx;
+}
+
+.celebrityview .cardsview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 29rpx;
+    padding: 0 28rpx;
+}
+
+.celebrityview .cardsview .cardview .adimage {
+    width: 220rpx;
+    height: 220rpx;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.celebrityview .cardsview .cardview .titlelbl {
+    color: #333333;
+    font-size: 14px;
+    margin-top: 26rpx;
+}
+
+.celebrityview .cardsview .cardview .commonlbl {
+    font-size: 12px;
+    color: #969696;
+    margin-top: 10rpx;
+}

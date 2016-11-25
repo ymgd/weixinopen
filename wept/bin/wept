@@ -1,0 +1,101 @@
+#!/usr/bin/env node
+var os = require('os')
+var exec = require('child_process').exec
+var program = require('commander')
+var json = require('../package.json')
+var UpdateNotifier = require('update-notifier').UpdateNotifier
+var fs = require('fs')
+var open = require('open')
+var chalk = require('chalk')
+var net = require('net')
+var boxen = require('boxen')
+
+program.version(json.version + ' 112200')
+  .usage('[app root]')
+  .option('-o, --open', '使用 Chrome 打开小程序，仅对 Mac 有效')
+  .option('-l, --list', '使用默认浏览器打开更新历史')
+  .option('-p, --port <n>', '指定服务端口，默认 3000', parseInt)
+
+program.parse(process.argv)
+
+var notifier = new UpdateNotifier({
+  pkg: json,
+  callback: function (err, result) {
+    if (err) return
+    if (result.current !== result.latest) {
+      var message = 'Update available ' + chalk.dim(result.current) + chalk.reset(' → ') +
+        chalk.green(result.latest) + ' \nRun ' + chalk.cyan('npm i -g ' + json.name) + ' to update'
+      var msg = '\n' + boxen(message, {
+        padding: 1,
+        margin: 1,
+        align: 'center',
+        borderColor: 'yellow',
+        borderStyle: 'round'
+      })
+      console.log(msg)
+    }
+  }
+})
+
+notifier.check()
+
+if (program.list) {
+  open('https://github.com/chemzqm/wept/blob/master/history.md')
+  process.exit()
+}
+
+var folder = program.args[0]
+if (folder) {
+  var stats
+  try {
+    stats = fs.statSync(folder)
+  } catch(e) {}
+  if (!stats || !stats.isDirectory()) {
+    console.log('指定目录不存在或者不是目录，请检查')
+    process.exit()
+  }
+  try {
+    process.chdir(folder)
+  } catch(err) {
+    console.log('切换目录失败: ' + err)
+  }
+}
+
+if (!fs.existsSync('./app.json')) {
+  console.log(chalk.red('无法找到 app.json 文件，请检查'))
+  process.exit()
+}
+
+var server = require('../build/server')
+var startPort = 3000
+
+getPort(function (port) {
+  if (os.platform() == 'darwin' && program.open) {
+    exec('osascript chrome.scpt ' + port, {cwd: __dirname}, function () { })
+  }
+  server.listen(port, function () {
+    console.log('listening on port ' + port)
+  })
+})
+
+function getPort(cb) {
+  if (program.port) return cb(program.port)
+  var port = startPort
+
+  var server = net.createServer()
+  server.listen(port, function () {
+    server.once('close', function () {
+      cb(port)
+    })
+    server.close()
+  })
+  server.on('error', function () {
+    startPort += 1
+    getPort(cb)
+  })
+}
+
+process.on('uncaughtException', function (e) {
+  console.log(chalk.red('发生了未知错误'))
+  console.error(e.stack)
+})

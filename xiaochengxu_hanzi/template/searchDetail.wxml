@@ -1,0 +1,26 @@
+<template name="searchDetail">
+  <view class="item" style="margin-bottom:5px" catchtap="Detail" id="{{item.id}}">
+        <view class="info">
+            <!--<image class="avatar" src="{{item.member.avatar_mini}}"></image>-->
+            <text class="searchword" style="margin-top:130px;">{{item.zi}}</text>
+            <text class="reply"><text style="color:grey">拼音：</text>{{item.py}}</text>
+            <text class="reply" style="margin-left:10px"><text style="color:grey">读音：</text>{{item.pinyin}}</text>
+        </view>
+        <view class="info" style="margin-left:70px;margin-top:10px;">
+            <text class="reply" ><text style="color:grey">部首：</text>{{item.bushou}}</text>
+            <text class="reply" style="margin-left:14px"><text style="color:grey">五笔：</text>{{item.wubi}}</text>
+        </view>
+        <view class="info" style="margin-left:70px;margin-top:10px;">
+            <text class="reply"><text style="color:grey">笔画：</text>{{item.bihua}}</text>
+        </view>
+
+        <!--<view class="titleBox">
+            <text class="title">{{item.wubi}}</text>
+            
+        </view>-->
+
+        <!--<view class="node">
+            <text class="node">{{item.pinyin}}</text>
+        </view>-->
+    </view>
+</template>

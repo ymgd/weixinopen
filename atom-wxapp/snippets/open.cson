@@ -1,0 +1,51 @@
+'.source.js':
+  '登录':
+    'prefix': 'wxlogin'
+    'body': '''
+    wx.login({
+      success: function(res){
+        $1// success
+      },
+      fail: function() {
+        $2// fail
+      },
+      complete: function() {
+        $3// complete
+      }
+    })
+    '''
+  '获取用户信息':
+    'prefix': 'wxgetUserInfo'
+    'body': '''
+    wx.getUserInfo({
+      success: function(res){
+        $1// success
+      },
+      fail: function() {
+        $2// fail
+      },
+      complete: function() {
+        $3// complete
+      }
+    })
+    '''
+  '发起微信支付':
+    'prefix': 'wxrequestPayment'
+    'body': '''
+    wx.requestPayment({
+      timeStamp: +new Date(),
+      nonceStr: '${1:String1}',
+      package: '${2:String2}',
+      signType: 'MD5',
+      paySign: '${3:String3}',
+      success: function(res){
+        $4// success
+      },
+      fail: function() {
+        $5// fail
+      },
+      complete: function() {
+        $6// complete
+      }
+    })
+    '''

@@ -1,0 +1,36 @@
+<view class="rank-page">
+    <view class="page-head">
+        <view class="page-title">掘金排行榜</view>
+    </view>
+
+    <view class="rank-types">
+        <view
+            class="rank-type {{currentRankType == rankType ? 'true' : null }}"
+            data-rank-type="{{rankType}}" bindtap="changeRankType"
+            wx:for="{{rankTypes}}" wx:key="idx" wx:for-item="rankType">{{rankType}}</view>
+    </view>
+
+    <view class="rank-items">
+        <block wx:for="{{rankItems}}" wx:key="idx" wx:for-index="idx" wx:for-item="rank">
+            <view class="rank">
+                <view class="rank-num">{{rank.serial}}</view>
+                <view class="user-avatar-container">
+                    <image class="user-avatar" src="{{rank.user.avatarLarge}}"></image>
+                </view>
+                <view class="rank-data">
+                    <view class="user-meta">
+                        <text class="user-name">{{rank.user.username}}</text>
+                        <text class="user-job">{{rank.user.jobTitle}}@{{rank.user.company}}</text>
+                    </view>
+                    <text class="rank-meta" wx:if="{{currentRankType == '原创'}}">原创{{rank.postNum}}篇，获得{{rank.collectedNum}}次收藏，被阅读{{rank.readedNum}}次</text>
+                    <text class="rank-meta" wx:if="{{currentRankType == '分享'}}">分享{{rank.shareNum}}篇，获得{{rank.collectedNum}}次收藏，被阅读{{rank.readedNum}}次</text>
+                    <text class="rank-meta" wx:if="{{currentRankType == '阅读'}}">阅读{{rank.readNum}}篇，收藏{{rank.collectionNum}}篇</text>
+                </view>
+            </view>
+        </block>
+    </view>
+
+    <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalHide" bindcancel="modalHide">
+        <view> 请求发生错误 </view>
+    </modal>
+</view>

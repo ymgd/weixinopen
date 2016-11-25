@@ -1,0 +1,54 @@
+page{
+    display: block;
+    height: 100%;
+
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    height: 100%;
+}
+
+/* 左侧分类标签--开始*/
+.flex-left{    
+    display: flex;
+    flex-direction: column;
+    width: 250rpx;
+    height: 100%;
+    padding-left: 15rpx;
+    padding-right: 15rpx;
+    background: #aa4400;
+}
+.category{
+    font-size: 16px;
+}
+.category-item{
+    padding-top: 20rpx;
+}
+/* 左侧分类标签--结束*/
+
+/* 右侧分类标签--开始*/
+.flex-right{
+    display: flex;
+    flex-direction: column;
+    width: 500rpx;
+    height: 100%;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    background: #00ffff;
+}
+.subCategory{
+    font-size: 14px;
+}
+.subCategory-item{
+    padding-top: 15rpx;
+}
+/* 右侧分类标签--结束*/
+
+.line{
+    margin-top: 10rpx;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}

@@ -1,0 +1,25 @@
+@import "../../component/button.wxss";
+
+.container {
+    padding-top: 10rem;
+}
+.chepai {
+    border: 1px solid rgb(41, 41, 41);
+    display: inline-block;
+    padding: .1rem .4rem;
+    padding-right: 1.5rem;
+    border-radius: .1rem;
+    position: relative;
+    height: 1.1rem;
+}
+.chepai:after {
+    content: '\f107';
+    position: absolute;
+    right: .5rem;
+    color: #9d9d9d;
+    font-family: fontAwesome;
+}
+
+.search_btn {
+    margin-top: 1rem;
+}

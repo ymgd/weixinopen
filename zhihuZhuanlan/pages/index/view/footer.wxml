@@ -1,0 +1,13 @@
+<view class="footer">
+
+    <view class="edit-post" bindtap="onForwardEditPost">
+        <image src="../../imgs/write.png" class="edit-icon" />
+    </view>
+    
+    <!--<view class="footer-tips bbox">
+          <text >
+            在知乎创作
+        </text>
+    </view>-->
+
+</view>

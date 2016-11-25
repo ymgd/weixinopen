@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="item">
+                <image class="big-rect" src="{{big_rect_png.src}}"></image>
+            </view>
+            <view class="item">
+                <image class="big-rect" src="{{big_rect_png.src}}"></image>
+            </view>
+            <view class="item">
+                <image class="loading" src="{{loading_png.src}}"></image>
+                <text>加载中...</text>
+            </view>
+        </view>
+    </view>
+</view>

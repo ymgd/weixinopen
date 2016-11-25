@@ -1,0 +1,39 @@
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000rpx;
+  padding: 30rpx 20rpx;
+}
+
+.poster {
+  width: 90%;
+  height: 80%;
+  margin: 10rpx;
+}
+
+.title {
+  font-style: 42rpx;
+  color: #444;
+}
+
+.info {
+  font-size: 30rpx;
+  color: #888;
+  margin-top: 20rpx;
+  width: 90%;
+}
+
+.summary {
+  width: 90%;
+  margin: 30rpx 40rpx;
+}
+
+.label {
+  display: block;
+}
+
+.content {
+  color: #666;
+  font-size: 25rpx;
+}

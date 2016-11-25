@@ -1,0 +1,16 @@
+<view class="content">
+    <view class="">
+        <image src="{{movie.images.large}}" mode="aspectFit" class="movie-img"></image>
+        <view class="detail">
+            <text class="rating">评分：{{movie.rating.average}}\n</text>
+            <text>{{movie.text}}</text>
+        </view>
+        <view class="casts">
+        <block wx:for="{{movie.casts}}">
+            <image src="{{item.avatars.medium}}" mode="aspectFit"></image>
+        </block>
+        </view>
+        <view class="detail summary">
+            <text>{{movie.summary}}</text>
+        </view>
+</view>

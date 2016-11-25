@@ -1,0 +1,18 @@
+/** 子组件样式 **/
+
+.component-container{
+    width: 90%;
+    height: 30%;
+    border: 1px solid #cdcdcd;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 70px;
+}
+.desc{
+    margin-top: 10px;
+    text-align: center;
+}
+input{
+  width: 100%;
+  margin-top: 20px;
+}

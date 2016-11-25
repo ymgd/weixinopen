@@ -1,0 +1,76 @@
+<view class="container">
+    <view class="main">
+        <view class="content gap-top">
+            <form bindsubmit="formSubmit">
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>收货人</text>
+                            </view>
+                            <view class="col col2">
+                                <input type='text' name='name' placeholder='姓名' placeholder-class='plh' bindinput="inputName"/>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>联系电话</text>
+                            </view>
+                            <view class="col col2">
+                                <input type='text' name='phone-number' placeholder='手机或固话' placeholder-class='plh'/>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                  <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>选择地区</text>
+                            </view>
+                            <view class="col col2">
+                                <picker type='selector'>
+                                    <view class='plh'><text>地区信息</text></view>
+                                </picker>
+                                <image class="col-icon" src="{{chevron_png.src}}" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row large-row">
+                            <view class="col col1">
+                                <text>详细地址</text>
+                            </view>
+                            <view class="col col2">
+                                <textarea name='address1' placeholder='街道门牌信息' placeholder-class='plh' auto-height='true'/>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>邮政编码</text>
+                            </view>
+                            <view class="col col2">
+                                <input type='text' name='zipcode' />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section btn-area">
+                    <view class="section-row">
+                        <button type="primary" form-type='submit' disabled="{{button.disabled}}">{{button.content}}</button>
+                    </view>
+                </view>
+            </form>
+        </view>
+    </view>
+</view>

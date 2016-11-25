@@ -1,0 +1,40 @@
+.publish{
+    position: fixed;
+    background-image: url('../../images/发布背景.png');
+    height: 100%;
+    padding-top: 500rpx;
+}
+
+
+.backgroundImg{
+    width: 750rpx;
+    position: fixed;
+    border-bottom: solid;
+    border-bottom-color: #e6e6e6;
+    border-bottom-width: 0.5rpx;
+}
+
+.top{
+    float: left;
+    width: 250rpx;
+    height: 200rpx;
+    text-align: center;
+}
+
+.img{
+    height: 150rpx;
+    width: 150rpx;
+}
+
+.bottom{
+    float: left;
+    width: 250rpx;
+    height: 50rpx;
+    text-align: center;
+    margin-bottom: 50rpx;
+}
+
+.text{
+    color: #8a8a8a;
+    font-size: 36rpx;
+}

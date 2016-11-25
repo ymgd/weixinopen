@@ -1,0 +1,178 @@
+.merchandise{
+    padding: 4rpx;
+    height: 400rpx;
+    margin: 10rpx;
+    border: solid;
+    border-color: #d5d5d5;
+    border-radius: 2px;
+    border-width: 0.5px;
+}
+.merchandise_top{
+    border-color: #d5d5d5;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1px;
+    height: 82rpx;
+}
+
+/*.merchandise_middle{
+    margin-top: 2rpx;
+    border-color: #d5d5d5;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1px;
+    height: 240rpx;
+}*/
+
+.merchandise_middle{
+    margin-top: 2rpx;
+    border-color: #d5d5d5;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1px;
+    height: 240rpx;
+}
+
+.userName{
+    float: left;
+    margin-left: 5rpx;
+    color: #5e5e5e;
+    font-family: STKaiti;
+    font-size: 30rpx;
+    margin-top: 25rpx;
+    width: 10rem;
+}
+.portraitPath{
+    margin-left: 2rpx;
+    float: left;
+    width: 82rpx;
+}
+
+.portraitPath_img{
+    float: left;
+    height: 80rpx;
+    width: 80rpx;
+    border-radius: 40rpx;
+}
+
+.currentPrice{
+    float: right;
+    font-size: 40rpx;
+    margin-top: 20rpx;
+    margin-right: 10rpx;
+    color: #FF4500;
+}
+
+.rmb{
+    float: right;
+    height: 80rpx;
+}
+
+.rmb_img{
+    float: right;
+    margin-top: 25rpx;
+    height: 30rpx;
+    width: 1rem;
+}
+
+.merchandise_bottom{
+    border-bottom-style: solid;
+    border-bottom-width: 0.1px;
+    border-color: #d5d5d5;
+    height: 78rpx;
+}
+
+.college{
+    margin-left: 2rpx;
+    width: 82rpx;
+}
+
+.college_img{
+    float: left;
+    height: 60rpx;
+    width: 80rpx;
+    margin-top: 20rpx;
+    margin-left: 2rpx;
+}
+
+.collegeName{
+    color: #5e5e5e;
+    float: left;
+    font-size: 28rpx;
+    font-family: Microsoft yahei;
+    margin-top: 45rpx;
+    margin-left: 2rpx;
+}
+
+.img_1{
+    float: left;
+    height: 240rpx;
+    width: 100%;
+}
+
+.merchandise_img_1{
+    float: left;
+    height: 240rpx;
+    width: 96%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 10rpx;
+}
+
+.img_2{
+    float: left;
+    height: 240rpx;
+    width: 100%;
+}
+
+.merchandise_img_2{
+    float: left;
+    height: 240rpx;
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 10rpx;
+}
+
+.img_3{
+    float: left;
+    height: 240rpx;
+    width: 100%;
+}
+
+.merchandise_img_3{
+    float: left;
+    height: 240rpx;
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 10rpx;
+}
+
+
+.merchandise_img{
+    float: left;
+    height: 240rpx;
+    width: 5rem;
+}
+
+.goToTop_show{
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+    right: 10rpx;
+    height: 80rpx;
+    width: 80rpx;
+    display: block;
+}
+
+.goToTop_hidden{
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+    right: 10rpx;
+    height: 80rpx;
+    width: 80rpx;
+    display: none;
+}
+
+/*.test_scroll{
+    height: 660px;
+}*/

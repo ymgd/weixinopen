@@ -1,0 +1,36 @@
+@import "../index/index.wxss";
+page{
+    height:100%;
+}
+.search{
+    display:flex;
+    flex-direction:row;
+    padding-left:20px;
+    padding-top:20px;
+    font-size:14px;
+}
+.search button{
+    height:60rpx;
+    line-height:60rpx;
+    margin-left:10px;
+    background:#DD5E0E;
+    color:#fff;
+    text-shadow:black 0px 1px 0px;
+}
+
+.input{
+    width:60%;
+    border:1px solid #ccc;
+    box-shadow:inset 0 0 10px #ccc;
+    color:#000;
+    background:#fff
+}
+.input-show{
+    padding-left:20px;
+    color:#fff;
+    text-align:center;
+    font-size:12px;
+}
+.btnClick{
+    background:#000;
+}

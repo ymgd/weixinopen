@@ -1,0 +1,31 @@
+<view class="container doc">
+    <view class="main">
+        <view class="content">
+            <view class="a-title">
+                <text>大标题</text>
+            </view>
+            <view class="pag">
+                <view class="section p-title">
+                    <text>章标题</text>
+                </view>
+                <view class="section">
+                    <text>{{section_1_text}}</text>
+                </view>
+                <view class="section">
+                    <text>{{section_2_text}}</text>
+                </view>
+            </view>
+            <view class="pag">
+                <view class="section p-title">
+                    <text>章标题</text>
+                </view>
+                <view class="section">
+                    <text>{{section_1_text}}</text>
+                </view>
+                <view class="section">
+                    <text>{{section_2_text}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

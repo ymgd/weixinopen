@@ -1,0 +1,89 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="section">
+            <view class="row split card1 card-text-type">
+                    <view class="row-main">
+                        <view class="flex-col">
+                            <text class="main-title">卡片标题</text>
+                            <text class="sub">副标题非必填</text>
+                        </view>
+                        <image class="row-chevron" src="{{chevron_png.src}}"></image>
+                    </view>
+                </view>
+                </view>
+                <view class="section">
+                    <view class="row split card1 card-text-icon-type">
+                        <view class="row-main">
+                            <view class="flex-row">
+                                <image src="{{starbak_png.src}}" class="card-icon"></image>
+                                <view class="flex-col card-content">
+                                    <text class="little-title">小标题</text>
+                                    <text class="big-content">100元代金券</text>
+                                </view>
+                            </view>
+                            <image class="row-chevron" src="{{chevron_png.src}}"></image>
+                        </view>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="row split card2 card-text-icon-source-type">
+                        <view class="row-main">
+                            <view class="flex-row">
+                                <image src="{{starbak_png.src}}" class="card-icon"></image>
+                                <view class="flex-col card-content">
+                                    <text class="little-title">小标题</text>
+                                    <text class="big-content">100元代金券</text> 
+                                    
+                                </view>
+                            </view>
+                        </view>
+                        <view class="card-footer">
+                            <text>野菜菜子分享</text>
+                            <text>200米</text>
+                        </view> 
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="row split card-img-big-detail-type">
+                        <view class="row-main top">
+                            <image class="big-rect-img" src="{{big_rect_png.src}}"></image>
+                        </view>
+                    </view>
+                    <view class="row split">
+                        <view class="row-main list">
+                            <text>可以是单行</text>
+                            <image class="small-rect-img" src="{{rectangle_png.src}}"></image>
+                        </view>
+                    </view>
+                    <view class="row split">
+                        <view class="row-main list">
+                            <text class="long">{{content}}</text>
+                            <image class="small-rect-img" src="{{rectangle_png.src}}"></image>
+                        </view>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="row split card-img-big-detail-type">
+                        <view class="row-main top">
+                            <image class="big-rect-img" src="{{big_rect_png.src}}"></image>
+                        </view>
+                    </view>
+                    <view class="row split">
+                        <view class="row-main row-md">
+                            <text class='tf-size-16'>查看详情</text>
+                            <image class="row-chevron" src="{{chevron_png.src}}"></image>
+                        </view>
+                    </view>
+                </view>
+                <view class="section">
+                    <view class="row split">
+                        <view class="row-main row-md">
+                            <text class='tf-size-16'>查看详情</text>
+                            <image class="img-sm" src="{{detail_disclosure_png.src}}"></image>
+                        </view>
+                    </view>
+                </view>
+        </view>
+    </view>
+</view>

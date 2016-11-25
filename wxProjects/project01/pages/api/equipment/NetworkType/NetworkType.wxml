@@ -1,0 +1,16 @@
+
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'wx.getNetworkType',desc:'获取网络类型。'}}"/>
+
+        <view class="section-show bgf flex">
+            <text> {{netWorkType}}  </text>
+        </view>
+
+        <button type="primary" class="mt" bindtap="getNetworkType"> 获取网络类型 </button>
+      
+    </view>
+</view>

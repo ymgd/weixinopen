@@ -1,0 +1,216 @@
+.index{
+    background-color: #FBF9FE;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 32rpx;
+}
+.header{
+    line-height: 1;
+    height:74rpx;
+    padding:12rpx 15rpx;
+    box-sizing: border-box;
+    background:#fe5400;
+    position:relative;
+}
+.header image{
+    width:68rpx;
+    height:74rpx;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.header input{
+    position:absolute;
+    left:70rpx;
+    top:12rpx;
+    height:50rpx;
+    width:88%;
+    background:#b52600;
+    box-sizing: border-box;
+}
+
+.header .search{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 13px;
+    display: block;
+    color: #F0E0DC;
+    height:50rpx;
+}
+.header .search image{
+    display: inline-block;
+    width:38rpx;
+    height:38rpx;
+    line-height:38rpx;
+    margin-top:6rpx;
+}
+.header .search text{
+    display:inline-block;
+    padding-left:38rpx;
+    line-height:50rpx;
+}
+.body{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    overflow: hidden;
+}
+.title{
+    font-size: 52rpx;
+    color:#e4393c;
+    font-weight:bold;
+}
+.desc{
+    margin-top: 10rpx;
+    color: #888888;
+    font-size: 28rpx;
+}
+.banner{
+    width:100%;
+    height:234rpx;
+}
+.banner swiper{
+    height:100%;
+}
+.slide-image{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.banner-2{
+    display:block;
+    width:100%;
+    height:224rpx;
+}
+.menu-wrp {
+  width:100%;
+  margin-top:20rpx;
+}
+.menu-wrp:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.menu-list{
+    float:left;
+    width:20%;
+    box-sizing: border-box;
+    padding-bottom:10px;
+}
+
+.menu-img{
+    width:120rpx;
+    height:84rpx;
+    display:block;
+    margin:0 auto;
+    margin-bottom:5px;
+}
+.menu-desc{
+    background-color:#ffffff;
+    color:#333333;
+    width:100%;
+    text-align: center;
+    display:block;
+    font-size:12px;
+}
+.gap-1,.gap-2{
+    width:100%;
+    height:10rpx;
+    background:rgb(238, 238, 238);
+}
+
+.tb-toppest{
+    width:100%;
+    height:70rpx;
+    padding:5rpx 10rpx;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.tb-toppest image{
+    display:inline-block;
+    width:130rpx;
+    height:40rpx;
+    vertical-align: middle;
+    margin-left:20rpx;
+    margin-top:20rpx;
+}
+.tb-toppest .btn{
+    border:1px solid #e4393c;
+    color:#e4393c;
+    text-align:center;
+    display: inline-block;
+    font-size:11px;
+    width:70rpx;
+    height:40rpx;
+    margin-top:14rpx;
+    line-height:37rpx;
+    margin-left:30rpx;
+    border-radius:4px;
+}
+.tb-toppest .content{
+    display: inline-block;
+    font-size:12px;
+    width:486rpx;
+    height:70rpx;
+    line-height:70rpx;
+    border-radius:3px;
+    margin-left:18rpx;
+}
+.banner-3{
+    background:#fd1c2f;
+    width:100%;
+    padding-bottom:20rpx;
+}
+.banner-3 .title{
+    display:block;
+    width:330rpx;
+    height:70rpx;
+    margin:0 auto;
+}
+.banner-3 .content{
+   width:100%;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-content: center;
+}
+.banner-3 .content .item{
+    width:177rpx;
+    background:#fff;
+    display:inline-block;
+    padding:10rpx 0 20rpx;
+
+}
+.banner-3 .content .item ._title{
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 48rpx;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    margin-top: 0.053rem;
+    width: 100%;
+    height: 48rpx;
+    background-color: transparent;
+}
+.banner-3 .content .item ._img_box{
+    padding:0 22rpx;
+}
+.banner-3 .content .item ._img{
+    display: block;
+    width:133rpx;
+    height:129rpx;
+    transform:translateX(22 rpx);
+}
+._desc_bg{
+    color:#fff;
+    font-size:11px;
+    padding:5rpx 2rpx;
+    text-align:center;
+    background-image: url("//gw.alicdn.com/tps/TB1ADLrNXXXXXauXFXXXXXXXXXX-239-54.png"); background-color: transparent; background-size: contain; background-position: 50% 50%;
+     background-repeat: no-repeat;
+}

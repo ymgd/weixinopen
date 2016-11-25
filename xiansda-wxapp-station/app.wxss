@@ -1,0 +1,332 @@
+
+/**app.wxss**/
+
+.page{
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Microsoft Yahei, 'Roboto', sans-serif;
+  font-size:30rpx;
+  line-height: 1.4;
+  color:#333;
+  letter-spacing: 1rpx;
+}
+.page.toolbar{
+  padding-bottom: 120rpx;
+}
+
+.page-toolbar{
+  position: fixed;
+  height: 120rpx;
+  bottom:0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.page-toolbar .title{
+  line-height: 120rpx;
+}
+
+.page-image{
+  background: url(http://xiansda.sinaapp.com/public/img/bg/noimg.jpg) center center no-repeat;
+  background-color: #C9C9C9;
+  width:100%;
+  height: 150px;
+}
+
+.pane{
+  padding:30rpx;
+  background: white;
+}
+.pane-error{
+  padding: 20rpx;
+  background: #ee5f5b;
+  color:white;
+  text-align: center;
+}
+.pane-tip{
+  padding: 20rpx;
+  color:#aaa;
+}
+.pane-hero{
+  padding: 60rpx;
+}
+
+.pane .border{
+  margin:30rpx 0;
+  border-top: 1px solid #e7e7e9;
+}
+.border.dashed{
+  border-top: 1px dashed #e7e7e9;
+}
+
+.section{
+  margin:30rpx;
+}
+
+.border-box{
+  box-sizing: border-box;
+}
+
+.toolbar-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding:20rpx;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+.full-size{
+  position: fixed;
+  width:100%;
+  height: 100%;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+}
+.flex-column{
+  display: flex;
+  flex-direction:column;
+}
+
+.flex-center{
+  align-items:center;
+  justify-content:center;
+}
+
+.flex-auto{
+  flex: auto;
+}
+
+.border-top{
+  border-top: 1rpx solid #e7e7e9;
+}
+.border-bottom{
+  border-bottom: 1rpx solid #e7e7e9;
+}
+
+.font-number{
+  font-family: Montserrat;
+}
+
+.single-line{
+    text-overflow:ellipsis;white-space:nowrap;overflow:hidden
+}
+
+.list-item{
+  display: flex;
+  flex-direction:row;
+  align-items:top;
+
+  padding: 30rpx;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 4rpx;
+  cursor: pointer;
+}
+.list-item-thumbnail{
+  background-color: #eee;
+  width:120rpx;
+  height:90rpx;
+}
+.list-item-content{
+  padding-left:30rpx;
+  width:400rpx;
+}
+.list-item-content .single-line{
+  display: inline-block;
+  width:400rpx;
+}
+
+.input-field{
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+}
+.input-field .label{
+  width:180rpx;
+}
+.input-field .input{
+  flex:auto;
+  font-size:32rpx;
+}
+
+
+.p10{
+  padding:10rpx;
+}
+.p20{
+  padding:20rpx;
+}
+.p30{
+  padding:30rpx;
+}
+.p40{
+  padding:40rpx;
+}
+.pr10{
+  padding-right: 10rpx;
+}
+.pl10{
+  padding-left: 10rpx;
+}
+.plr10{
+  padding:0 10rpx;
+}
+.pr20{
+  padding-right: 20rpx;
+}
+.pl20{
+  padding-left: 20rpx;
+}
+.plr20{
+  padding:0 20rpx;
+}
+
+.mb5{
+  margin-bottom:5rpx;
+}
+.mb10{
+  margin-bottom:10rpx;
+}
+.mb20{
+  margin-bottom:20rpx;
+}
+.mb30{
+  margin-bottom:30rpx;
+}
+.mb40{
+  margin-bottom:40rpx;
+}
+
+.text-center{
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+.text-ls{
+  letter-spacing: 1px;
+}
+.text-big{
+  font-size:40rpx;
+}
+.text-title{
+  font-size:32rpx;
+}
+.text-desc{
+  font-size:28rpx;
+}
+.text-small{
+  font-size:24rpx;
+}
+.text-gray{
+  color:#888;
+}
+.text-light{
+  color:#b2b2b2;
+}
+
+.text-h1{
+  font-size:40rpx;
+}
+.text-h2{
+  font-size:34rpx;
+}
+.text-h3{
+  font-size:28rpx;
+}
+.text-h4{
+  font-size:24rpx;
+}
+.text-h5{
+  font-size:20rpx;
+}
+
+.c-primary{
+  color:#09bb07;
+}
+.c-red{
+  color:#e64340;
+}
+.c-black{
+  color:#000;
+}
+.c-semi{
+  color:#353535;
+}
+.c-gray{
+  color:#888888;
+}
+.c-light{
+  color:#b2b2b2;
+}
+.c-white{
+  color:white;
+}
+
+
+.bg-white{
+  background: white;
+}
+.bg-soft{
+  background: #f1f1f1;
+}
+.bg-red{
+  background: #e64340;
+}
+
+.ib{
+  display: inline-block;
+}
+
+.btn:active{
+  opacity: .5;
+}
+
+.avatar{
+  background-color: #eee;
+  background-image: url(http://xiansda.sinaapp.com/public/img/icon/user_original.jpg);
+  background-size:120rpx 120rpx;
+
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.avatar.small{
+  background-size:80rpx 80rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.avatar.big{
+  background-size:160rpx 160rpx;
+  width: 160rpx;
+  height: 160rpx;
+}
+
+
+.square{
+  width:120rpx;
+  height:120rpx;
+}
+
+.icon{
+  width:64rpx;
+  height:64rpx;
+}
+.icon.small{
+  width:32rpx;
+  height:32rpx;
+}
+

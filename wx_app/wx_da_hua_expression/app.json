@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/private/private",
+    "pages/category/category",
+    "pages/public/public",
+    "pages/painter/painter",
+    "pages/watermark/watermark",
+    "pages/join/join"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#24292c",
+    "navigationBarTitleText": "表情乾坤袋",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"false"
+  },
+  "tabBar": {
+    "backgroundColor":"#fcfcfc",
+    "color":"#000",
+    "selectedColor":"#56abe4",
+    "borderStyle":"black",
+    "list": [{
+      "pagePath": "pages/private/private",
+      "text": "我的",
+      "iconPath":"images/icon_smile.png",
+      "selectedIconPath":"images/icon_big_my.png"
+    },{
+      "pagePath": "pages/public/public",
+      "text": "热图",
+      "iconPath":"images/icon_smile.png",
+      "selectedIconPath":"images/icon_big_hot.png"
+    }]
+  },
+  "debug": true
+}
+
+

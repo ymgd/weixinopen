@@ -1,0 +1,31 @@
+<view class="section section_gap">
+  <text class="section__title">设置left/right icon</text>
+  <view class="body-view">
+    <slider bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle"/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title">设置step</text>
+  <view class="body-view">
+    <slider bindchange="slider2change" step="5"/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title">显示当前value</text>
+  <view class="body-view">
+    <slider bindchange="slider3change" show-value/>
+  </view>
+</view>
+
+<progress percent="40" stroke-width="12" />
+<text >显示当前</text>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>

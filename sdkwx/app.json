@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/article/index",
+    "pages/article/view"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0be",
+    "navigationBarTitleText": "SDK.cn",
+    "navigationBarTextStyle":"black"
+  }
+}

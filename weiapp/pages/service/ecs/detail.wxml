@@ -1,0 +1,103 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-form-preview">
+                <view class="list_line"> </view>
+                <view class="weui-form-preview__hd">
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__value">{{info.InstanceId}}</view>
+                    </view>
+                </view>
+                <view class="weui-form-preview__bd">
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">显示名称</view>
+                        <view class="weui-form-preview__value">{{info.InstanceName}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">状态</view>
+                        <view class="weui-form-preview__value">{{status_name[info.Status]}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">公网 IP</view>
+                        <view class="weui-form-preview__value">
+                            <block wx:for="{{info.PublicIpAddress.IpAddress}}">
+                                {{item}} | 
+                            </block>
+                        </view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">内网 IP</view>
+                        <view class="weui-form-preview__value">
+                            <block wx:for="{{info.InnerIpAddress.IpAddress}}">
+                                {{item}} | 
+                            </block>
+                        </view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">网络类型</view>
+                        <view class="weui-form-preview__value">{{internet_type_name[info.InternetChargeType]}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">镜像ID</view>
+                        <view class="weui-form-preview__value">{{info.ImageId}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">CPU</view>
+                        <view class="weui-form-preview__value">{{info.Cpu}}核</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">内存</view>
+                        <view class="weui-form-preview__value">{{info.Memory}} MB</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">实例资源规格</view>
+                        <view class="weui-form-preview__value">{{info.InstanceType}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">规格族</view>
+                        <view class="weui-form-preview__value">{{info.InstanceTypeFamily}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">机器名称</view>
+                        <view class="weui-form-preview__value">{{info.HostName}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">序列号</view>
+                        <view class="weui-form-preview__value">{{info.SerialNumber}}</view>
+                    </view>
+                    <!--<view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">实例所属安全组的集合</view>
+                        <view class="weui-form-preview__value">{{info.SecurityGroupIds}}</view>
+                    </view>-->
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">公网出入带宽</view>
+                        <view class="weui-form-preview__value">{{info.InternetMaxBandwidthOut}}/{{info.InternetMaxBandwidthIn}}</view>
+                    </view>
+                    <block wx:if="{{info.DeviceAvailable}}">
+                        <view class="weui-cells">
+                            <view class="weui-cell weui-cell_access" >
+                                <view class="weui-cell__bd"  >
+                                    <view>挂载磁盘</view>
+                                </view>
+                                <view class="weui-cell__ft"  >
+                                    
+                                </view>
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:if="{{!info.DeviceAvailable}}">
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">不能挂载磁盘</view>
+                        <view class="weui-form-preview__value"></view>
+                    </view>
+                    </block>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">过期时间</view>
+                        <view class="weui-form-preview__value">{{info.ExpiredTime}}</view>
+                    </view>
+                </view>
+            
+        </view>
+
+
+    </view>
+</view>

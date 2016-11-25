@@ -1,0 +1,5 @@
+<template name="Kbutton">
+    <view class="kbutton" hover-class="kbutton_hover">
+        <text>{{value}}</text>
+    </view>
+</template>

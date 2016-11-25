@@ -1,0 +1,57 @@
+<view class="container">
+
+  <view class="circle blockView">
+  
+     <view class="circle circleView">
+       
+       <text class="jvzi-title">桔子信用</text>
+       <!--<view class="hr"></view>-->
+       <view class="white-Circle">
+         <view class="red-circle">
+           <view class="text-view">
+             <text class="first-text">本期应还金额(元)</text>
+             <text>1030.0</text>
+             <text>2016-05-16 还款</text>
+           
+           </view>
+         </view>
+       </view>
+     </view>
+     
+     <view class="tapView">
+      
+       <navigator class="tapOne">
+        <view class="nav-view">
+          <text style="background:white">剩余:</text>
+          <text style="background:white">10300.0</text>
+        </view> 
+        
+        <progress percent="90" stroke-width="9" color="rgb(238,62,37)" active="true" />
+        
+       
+       </navigator>
+       
+       <!--分隔线-->
+       <view class="hr"></view>
+       
+       <navigator class="tapTwo" url="repayDetail/repayDetail">
+       
+         <text class="widget__name">用户名</text>
+         <image class="widget__arrow" src="../../images/arrowright.png" background-size="cover" />
+       
+       </navigator>
+       
+       
+     
+     
+     </view>
+
+
+  </view>
+
+</view>
+
+
+
+
+

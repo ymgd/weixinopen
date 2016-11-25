@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view  >
+
+
+  <!-- 头部-->
+  <include src="view/header.wxml" />
+  <!-- 内容 -->
+  <include src="view/content.wxml" /> 
+  <!-- 底部 -->
+  <include src="view/footer.wxml" />
+  
+ 
+</view>

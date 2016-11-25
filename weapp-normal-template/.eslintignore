@@ -1,0 +1,8 @@
+# /node_modules/* and /bower_components/* ignored by default
+
+/dist/*
+/develop/*
+/release/*
+weapp_modules
+
+# gulpfile.js

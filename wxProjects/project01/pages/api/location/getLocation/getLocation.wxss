@@ -1,0 +1,8 @@
+.showLocation text{
+    display: flex;
+    align-items: center;
+    height:80rpx;
+    background-color:#fff;
+    margin-top:20rpx;
+    padding:0 20rpx;
+}

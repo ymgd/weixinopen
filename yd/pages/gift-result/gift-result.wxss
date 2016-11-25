@@ -1,0 +1,284 @@
+/**index.wxss**/
+/*
+ 1. 不认ID
+ 2. 不认属性选择符
+ 3. 不认相邻兄弟选择符
+*/
+
+.search-box{
+  padding-top: 38.647rpx;
+}
+
+
+/* 顶部tab */
+.category-tabs {
+  padding-top: 10rpx;
+  display: -webkit-flex;
+  display: flex;
+
+  background-color: rgb(46,46,47);
+  color: #fff;
+  height: 60rpx;
+}
+
+.tab{
+  -webkit-flex:1;
+  flex:1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-size: 26rpx;
+}
+
+.tab-title{
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-display: flex;
+  display: flex;
+}
+
+.tab-title text {
+  -webkit-flex: 1;
+  flex: 1;
+  padding: 14rpx 0;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.line{
+  position: absolute;
+  right: 0;
+  width: 1px;
+  background-color: rgb(81,81,81);
+  height: 20rpx;
+  top: 50%;
+  margin-top: -10rpx;
+}
+
+.arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15rpx;
+  right: 20rpx;
+  font-family: Helvetica, Arial, sans-serif;
+  /* 三角旋转动画 */
+  transition: all .2s ease-in-out;
+}
+
+.active{
+  color:#ef4438;
+}
+
+.active .arrow{
+  transform: rotate(180deg);
+  margin-top: -14rpx;
+}
+
+.no-border {
+  border:none;
+}
+
+.arrow-right {
+  transform: rotate(90deg);
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+}
+
+.arrow-red {
+  color:#ff685c;
+}
+/*// 620 / 6.9 = 89.85507246376811*/
+@media screen and (max-width:359px) {
+  .arrow{
+    right: 10rpx;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .arrow{
+    right: 40rpx;
+  }
+}
+
+.section-sep{
+  padding:20rpx 30rpx 0 30rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  line-height: 1;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.section-sep-container{
+  -webkit-flex: 1;
+  flex: 1;
+  padding-bottom: 20rpx;
+  border-bottom:1px #eaeaea solid;
+}
+
+.first-section-sep{
+  margin-top: 0;
+  /*padding-top: 20px;*/
+}
+
+/* 上部横条结构卡片 */
+.up-list{
+  -webkit-display: flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.up-list-item navigator{
+  padding: 30rpx 30rpx 0 30rpx;
+}
+
+.item-desc-container{
+  -webkit-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 1px rgb(237,237,237) solid;
+  padding-bottom: 30rpx;
+}
+
+.item-img{
+  width: 240rpx;
+  height: 160rpx;
+}
+
+.info-view{
+  -webkit-flex: 1;
+  flex: 1;
+  margin-left:30rpx;
+  font-size: 24rpx;
+  color:#999;
+}
+
+.title{
+  font-size:28rpx;
+  line-height: 1.45;
+  max-height: 82rpx;
+  color:#080808;
+  margin-bottom: 20rpx;
+  word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: start;
+  -webkit-line-clamp: 2;
+}
+
+.title, .price, .footer-desc {
+    -webkit-flex:1;
+    flex:1;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.target-word{
+  margin-top: 20rpx;
+}
+.keyword{
+  color: #ff685c;
+}
+.other-word{
+  margin-left: 12rpx;
+  color:#999;
+}
+.source-from{
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-flex:1;
+    flex:1;
+    -webkit-display: flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+.source{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+.datetime{
+    margin-left:24rpx;
+}
+
+/* 下方左右结构文章卡片 */
+.down-list{
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: -webkit-space-between;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 30rpx 30rpx 0 30rpx;
+}
+
+.down-list-item{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: -webkit-column;
+  flex-direction: column;
+  width: 330rpx;
+}
+
+.image-container{
+  background-color: #eee;
+  border:1px rgb(221,221,221) solid;
+  width: 330rpx;
+  height: 330rpx;
+}
+
+.image-container image{
+  /* 注意这个。终于解决了在小程序中图片尺寸的问题了*/
+  width: 330rpx;
+  height: 330rpx;
+}
+
+.info-container{
+  padding:16rpx;
+  color:#080808;
+  background-color: #fff;
+  font-size: 28rpx;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.info-container .price{
+  color:#f14538;
+  margin-top: 16rpx;
+  line-height: 1;
+}
+
+.info-container .info{
+  margin-top: 16rpx;
+  line-height: 1;
+}
+
+.selected {
+  color:#ef4438;
+  position: relative;
+}
+
+.selected:after{
+  font-size: 28rpx;
+  position: absolute;
+  right: 18rpx;
+  content:'√';
+}

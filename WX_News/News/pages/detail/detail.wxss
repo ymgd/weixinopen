@@ -1,0 +1,23 @@
+
+.detail-page {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    line-height: 25px;
+}
+
+.title {
+    color: #333;
+    font-size: 18px;
+}
+
+.info {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #999;
+}
+
+.date {
+    margin-left: 10px;
+}
+

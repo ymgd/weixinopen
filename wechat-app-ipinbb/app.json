@@ -1,0 +1,60 @@
+{
+  "pages": [
+      "page/index/index",
+      "page/hot/hot", 
+      "page/search/search",
+      "page/eval/eval",
+      "page/user/user",
+      "page/activity/discount/discount",
+      "page/activity/lists/lists",
+      "page/activity/tenGroup/tenGroup",
+      "page/component/group/group",
+      "page/component/detail/detail"
+  ],
+  "window": {
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "爱拼宝宝",
+    "navigationBarBackgroundColor": "#fb5d5d",
+    "backgroundColor": "#fb5d5d"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#fb5d5d",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "page/index/index",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home_active.png",
+      "text": "爱拼宝宝"
+    },{
+      "pagePath": "page/hot/hot",
+      "iconPath": "image/hot.png",
+      "selectedIconPath": "image/hot_active.png",
+      "text": "热拼"
+
+    },{
+      "pagePath": "page/search/search",
+      "iconPath": "image/search.png",
+      "selectedIconPath": "image/search_active.png",
+      "text": "搜索"
+    },{
+      "pagePath": "page/eval/eval",
+      "iconPath": "image/motherSaid.png",
+      "selectedIconPath": "image/motherSaid_active.png",
+      "text": "妈妈说"
+    },{
+      "pagePath": "page/user/user",
+      "iconPath": "image/user.png",
+      "selectedIconPath": "image/user_active.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

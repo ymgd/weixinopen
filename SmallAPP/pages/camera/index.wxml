@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="{{imgsrc}}" style="width:320px;height:240px;margin-left: auto; margin-right: auto;margin-top:100px;"/>
+  <text style="margin-left: auto; margin-right: auto;margin-top:80px;">{{source}}</text>
+</view>

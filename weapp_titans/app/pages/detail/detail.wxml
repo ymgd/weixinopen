@@ -1,0 +1,8 @@
+<view class="btn-area">
+  <view class="title-view">
+    <text class="title">{{title}}</text>
+  </view>
+  <view class="body-view">
+    <text class="content">{{text}}</text>
+  </view>
+</view>

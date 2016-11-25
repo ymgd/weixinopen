@@ -1,0 +1,37 @@
+<view class="container">
+
+<view class="search">
+    <view class="search-input" bindtap="handerSearch">
+        <view class="placeholder">搜索</view>
+    </view>
+</view>
+
+<view class="ul-list">
+    <!-- 暂不做侧滑动作 -->
+    <view class="li-item" wx:for="{{messages}}" data-xtype="{{item.xtype}}" data-id="{{item.userId}}" bindtap="onItemClickListener">
+        <view class="message-left">
+            <image src="{{item.icon}}"></image>
+        </view>
+        <view class="message-middle">
+            <view class="title">
+                 {{item.title}}
+            </view>
+            
+            <view class="time">
+                 {{item.time}}
+            </view>
+        </view>
+        <view class="message-right">
+            <view class="content">
+                 {{item.content}}
+            </view>
+            <view wx:if="{{item.xtype=='qq_user' && item.msgCount>0}}" class="msgCount">
+                 {{item.msgCount}}
+            </view>
+            <view wx:elif="{{item.msgCount>0}}" class="red-point" style="margin-top:6px;">
+            </view>
+        </view>
+    </view>
+    
+</view>
+</view>

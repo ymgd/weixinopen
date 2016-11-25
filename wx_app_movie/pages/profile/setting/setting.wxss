@@ -1,0 +1,16 @@
+.settings {
+  background-color: #fff;
+}
+.setting-item {
+  padding: 0 20rpx;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 32rpx;
+}
+.settings .icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+.settings .item-icon {
+  margin-right: 20rpx;
+}

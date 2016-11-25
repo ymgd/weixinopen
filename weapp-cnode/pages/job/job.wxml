@@ -1,0 +1,4 @@
+<!-- job.wxml -->
+<view class="container">
+  <include src="../tpl/news.wxml" />
+</view>

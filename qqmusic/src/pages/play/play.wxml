@@ -1,0 +1,61 @@
+
+
+<view class="play-view">
+    <view class="main-box">
+        <view class="song-info">
+            <text class="song-title">{{playingMusic.name}}</text>
+            <text class="song-subtitle">
+                <block wx:for="{{playingMusic.singer}}" wx:key="unique"><block wx-if="{{index!=0}}">*</block>{{item.name}}</block>
+            </text>
+        </view>
+        <view class="cd-info">
+            <view class="cd-gan"></view>
+            <view class="cd-inner cd-animation">
+                <image class="cd-img" src="{{playingMusic.img}}"></image>
+            </view>
+        </view>
+    </view>
+    <view class="ctre-box">
+        <view class="slider-box">
+            <text class="slider-text st-l" >{{currTimeStr}}</text>
+            <view class="slider">
+                <view class="slider-inner" style="width: {{playPro}};"></view>
+                <view class="slider-btn" style="left: {{playPro}};"></view>
+            </view>
+            <text class="slider-text st-r">{{musicTimeStr}}</text>
+        </view>
+        <view class="music-ctr">
+            <block wx-if="{{playType==0}}">
+                <view class="music-sort ms-loop" data-type="{{playType}}" bindtap="changePlayType"></view>
+            </block>
+            <block wx-if="{{playType==1}}">
+                <view class="music-sort ms-shuffle" data-type="{{playType}}" bindtap="changePlayType"></view>
+            </block>
+            <block wx-if="{{playType==2}}">
+                <view class="music-sort ms-one" data-type="{{playType}}" bindtap="changePlayType"></view>
+            </block>
+            <view class="mc-inner">
+                <view class="mci-icon mci-prev" bindtap="playPrevMusic"></view>
+                <view class="mci-icon mci-play" bindtap="pauseTap"></view>
+                <view class="mci-icon mci-next" bindtap="playNextMusic"></view>
+            </view>
+            <view class="music-list-btn" bindtap="showPlayList"></view>
+        </view>
+    </view>
+    <view class="play-list" hidden="{{showPlayList}}">
+        <view class="play-list-header">
+            <text>播放列表（185）</text>
+            <text class="play-list-clear">清空</text>
+        </view>
+        <view class="play-list-inner">
+            <block wx:for="{{playList}}" wx:key="unique">
+            <view class="play-item">
+                {{item.name}} <text class="play-item-sub">- <block wx:for="{{item.singer}}" wx:key="unique"> <block wx-if="{{index != 0}}">·</block>{{item.name}}</block></text>
+                <view class="play-item-close"></view>
+            </view>
+            </block>
+        </view>
+        <view class="play-list-bottom" bindtap="closePlayList">关闭</view>
+    </view>
+    <view class="bg blur" style="background-image:url('{{playingMusic.img}}');"></view>
+</view>

@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/good/good",
+    "pages/share/share",
+    "pages/ask/ask",
+    "pages/topic/topic"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#34495e",
+    "navigationBarTitleText": "CNode",
+    "navigationBarTextStyle": "#ebedef",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#1aad19",
+    "backgroundColor": "#f9f9f9",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home_on.png",
+      "text": "主页"
+    }, {
+      "pagePath": "pages/good/good",
+      "iconPath": "image/good.png",
+      "selectedIconPath": "image/good_on.png",
+      "text": "精华"
+    }, {
+      "pagePath": "pages/share/share",
+      "iconPath": "image/share.png",
+      "selectedIconPath": "image/share_on.png",
+      "text": "分享"
+    }, {
+      "pagePath": "pages/ask/ask",
+      "iconPath": "image/ask.png",
+      "selectedIconPath": "image/ask_on.png",
+      "text": "问答"
+    }],
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "debug": true
+}

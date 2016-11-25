@@ -1,0 +1,33 @@
+<import src="../../component/button.wxml"/>
+
+<view class="container">
+    <view class="content_group">
+        <view class="title">输入车牌号 :</view>
+        <view class="content">
+            <picker range="{{array}}" bindchange="bindPickerChange">
+                <view class="piker">当前选择 : <view class="chepai">{{array[index]}}</view></view>
+            </picker>
+            <input class="form-input" id="plate" maxlength="6" bindinput="bindPlateChange" placeholder="车牌后6位"/>
+        </view>
+    </view>
+    <view class="content_group">
+        <view class="title">输入手机号 :</view>
+        <view class="content">
+            <view class="flex-column">
+                <view class="flex-row">
+                    <input class="form-input" id="phone" maxlength="11" bindinput="bindPhoneChange" placeholder="完整的手机号"/>
+                    <view bindtap="sendSms">
+                        <template is="Kbutton" class="smsbtn"  data="{{value: clockNum === 61 ? clockTxt : clockNum + clockTxt}}"/>
+                    </view>
+                </view>
+            <input class="form-input" id="smscode" maxlength="11" bindinput="bindSmsChange" placeholder="短信验证码"/>
+            </view>
+        </view>
+    </view>
+    <view class="search_btn" bindtap="query">
+        <template is="Kbutton"  data="{{value:'保存车主信息'}}"/>
+    </view>
+    <toast hidden="{{toastHidden}}" icon="clear" duration="2000" bindchange="toastChange">
+        {{msg}}
+    </toast>
+</view>

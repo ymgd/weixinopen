@@ -1,0 +1,28 @@
+
+
+<!--news.wxml
+日报列表模板
+-->
+<template name="news_item">
+    <view class="news_item" id="{{id}}" bindtap="dailyDetail">
+    <!--{{images == null?"a":"b"}}{{images}}-->
+    <!--判断是否有图片-->
+        <block wx:if="{{images != null}}">
+                <view class="fl_left" style="width:200px">
+                {{title}}
+                </view>
+                <view class="fl_right">
+                    <image style="width:78px;height:78px;" src="{{images}}"></image>
+                </view>
+                <view class="clearfix"></view>
+        </block>
+        <block wx:else>
+                <view style="width:100%;padding:18px 0;">
+                {{title}}
+                </view>
+        </block>
+    </view>
+
+</template>
+
+

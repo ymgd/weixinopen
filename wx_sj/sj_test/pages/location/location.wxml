@@ -1,0 +1,33 @@
+<view>
+<button class='top_button' bindtap='showProvinceList'>
+  <view class='default'>{{selectedInfo.provinceName}}</view>
+</button>
+<button class='top_button' bindtap='showCityList'>
+  <view class='default'>{{selectedInfo.cityName}}</view>
+</button>
+<button class='top_button' bindtap='showCollegeList'>
+  <view class='default'>{{selectedInfo.collegeName}}</view>
+</button>
+</view>
+
+
+<scroll-view scroll-y='true' class='middle'>
+<view  wx:for='{{provinceList}}' wx:key='*' wx:if='{{showed.provinceShowed}}'>
+  <button class='select' bindtap='getCityList'  data-index='{{index}}' 
+  data-provinceID='{{item.provinceID}}' data-provinceName='{{item.provinceName}}'>
+    {{item.provinceName}}
+  </button>
+</view>
+<view  wx:for='{{cityList}}' wx:key='*'  wx:if='{{showed.cityShowed}}'>
+  <button  class='select' bindtap='getCollegeList' data-index='{{index}}'
+  data-cityID='{{item.cityID}}' data-cityName='{{item.cityName}}'>
+    {{item.cityName}}
+  </button>
+</view>
+
+<view  wx:for='{{collegeList}}' wx:key='*' wx:if='{{showed.collegeShowed}}'>
+  <button class='select' bindtap='goToconfirm' data-collegeID='{{item.collegeID}}' data-collegeName='{{item.collegeName}}'>
+    {{item.collegeName}}
+  </button>
+</view>
+</scroll-view>

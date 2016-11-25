@@ -1,0 +1,5 @@
+<view class="header">
+  <image class="header-bg" src="./imgs/bg.png" mode="aspectFill"></image>
+  <image class="header-logo"  src="./imgs/poster.png"></image>
+  <text class="header-title">随心写作，自由表达</text>
+</view>

@@ -1,0 +1,29 @@
+page {
+    height: 100%;
+}
+
+.container {
+    background: #EFEFF4;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    background: #F7F7FA;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.top-bar-item {
+    font-size: 30rpx;
+    text-align: center;
+    padding: 30rpx 0;
+    width: 100%;
+}
+
+.top-bar-item.current {
+    color: #1AAD19;
+    border-bottom: 4rpx solid #1AAD19;
+}
+

@@ -1,0 +1,24 @@
+<!--
+  book: object
+-->
+<template name="list">
+  <view style="postion:relative;display:flex;flex-direction:row;height:100px;padding:10px 0 10px 10px;border-top: 1px solid #ccc;border-bottom:1px solid #ccc;">
+    <view style="with:80px;height:100px;margin-right:10px;background-color: #e00;">
+      <image style="width: 80px;height:100%;" mode="aspectFill" src="{{book.cover.small}}"></image>
+    </view>
+    <view>
+      <view style="font-size: 14px;">
+        <text>书名：</text>
+        <text style="font-wight:500;">{{book.title}}</text>
+      </view>
+      <view style="font-size: 14px;">
+        <text>简介：</text>
+        <text>{{book.description}}</text>
+      </view>
+      <view style="font-size: 14px;">
+        <text>语言：</text>
+        <text>{{book.language}}</text>
+      </view>
+    </view>
+  </view>
+</template>

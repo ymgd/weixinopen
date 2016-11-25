@@ -1,0 +1,34 @@
+
+<view style="overflow: hidden;">
+
+<view class="top-tab flex-wrp flex-tab">
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+
+<view class="tab_con {{currentNavtab==1 ? 'list_active1' : ''}} {{currentNavtab==2 ? 'list_active2' : ''}}" catchtouchstart="oTs" catchtouchend="oTe">
+	<view>
+		<text>通知</text>
+	</view>
+	<view>
+		<text>赞赏</text>
+	</view>
+	<view>
+		<text>关注</text>
+	</view>
+</view>
+</view>
+
+
+	<!--<view hidden="{{currentNavtab==0 ? '' : true}}">
+		<text>通知</text>
+	</view>
+	<view hidden="{{currentNavtab==1 ? '' : true}}">
+		<text>赞赏</text>
+	</view>
+	<view hidden="{{currentNavtab==2 ? '' : true}}">
+		<text>关注</text>
+	</view>-->
+
+  

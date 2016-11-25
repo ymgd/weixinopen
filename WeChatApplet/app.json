@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/settings/settings",
+    "pages/request/request",
+    "pages/requestform/requestform"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "工单管理",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "iconPath": "images/List_64.png",
+      "selectedIconPath": "images/List_64_selected.png",
+      "pagePath": "pages/index/index",
+      "text": "请求"
+    }, {
+      "iconPath": "images/Settings_64.png",
+      "selectedIconPath": "images/Settings_64_selected.png",
+      "pagePath": "pages/settings/settings",
+      "text": "设置"
+    }],
+    "borderStyle": "white"
+  }
+}

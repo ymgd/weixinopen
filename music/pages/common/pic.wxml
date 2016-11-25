@@ -1,0 +1,5 @@
+<template name="pic">
+    <view class="song_pic">
+        <image src="{{url}}" />
+    </view>
+</template>

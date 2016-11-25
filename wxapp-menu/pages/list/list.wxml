@@ -1,0 +1,13 @@
+<view class="content">
+    <view class="item" wx:for="{{list}}" wx:key="list" bindtap="navToDetail" id="{{item.id}}">
+        <view class="item-img">
+            <image src="{{item.albums}}"/>
+        </view>
+        <view class="item-text">
+            <view class="title">{{item.title}}</view>
+            <view class="tags">{{item.tags}}</view>
+            <view class="imtro">{{item.imtro}}</view>
+        </view>
+        <view class="line"></view>
+    </view>        
+</view>

@@ -1,0 +1,23 @@
+<template name="first-day">
+    <view>这个古老的故事从一个宁静的白天开始。</view>
+</template>
+<template name="not-one-killed">
+    <view>没有玩家死亡</view>
+</template>
+<template name="vote">
+    <view>
+        <view wx:for="{{people}}" style="display: inline-block;padding-right:10px">{{item}} </view>投票给了{{target.name}}。
+    </view>
+</template>
+<template name="execute">
+    <view>村民们处决了{{player.name}}。</view>
+</template>
+<template name="dead">
+    <view>{{player.name}}死亡。</view>
+</template>
+<template name="hunter">
+    <view>{{player.name}}是猎人，他报复杀死了{{target.name}}。</view>
+</template>
+<template name="lover">
+    <view>{{player0.name}}和{{player1.name}}是情侣，{{player0.name}}为{{player1.name}}殉情。</view>
+</template>

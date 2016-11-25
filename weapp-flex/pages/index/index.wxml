@@ -1,0 +1,57 @@
+<view class="container">
+    <view class="row">
+        <view class="box box1">
+            <view class="dot"></view>
+        </view>
+        <view class="box box2">
+            <view class="dot dot1"></view>
+            <view class="dot dot2"></view>
+        </view>
+    </view>
+    <view class="row">
+        <view class="box box3">
+            <view class="dot dot1"></view>
+            <view class="dot dot2"></view>
+            <view class="dot dot3"></view>
+        </view>
+        <view class="box box4">
+            <view class="line line1">
+                <view class="dot dot1"></view>
+                <view class="dot dot2"></view>
+            </view>
+            <view class="line line2">
+                <view class="dot dot1"></view>
+                <view class="dot dot2"></view>
+            </view>
+        </view>
+    </view>
+    <view class="row">
+        <view class="box box5">
+            <view class="line line1">
+                <view class="dot dot1"></view>
+                <view class="dot dot2"></view>
+            </view>
+            <view class="line line2">
+                <view class="dot dot1"></view>
+            </view>
+            <view class="line line3">
+                <view class="dot dot1"></view>
+                <view class="dot dot2"></view>
+            </view>
+        </view>
+        <view class="box box6">
+            <view class="line line1">
+                <view class="dot dot1"></view>
+                <view class="dot dot2"></view>
+            </view>
+            <view class="line line2">
+                <view class="dot dot1"></view>
+                <view class="dot dot2"></view>
+            </view>
+            <view class="line line3">
+                <view class="dot dot1"></view>
+                <view class="dot dot2"></view>
+            </view>
+        </view>
+    </view>
+</view>

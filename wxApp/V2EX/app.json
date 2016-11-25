@@ -1,0 +1,35 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/nodes/nodes",
+        "pages/about/about",
+        "pages/topic/topic",
+        "pages/node/node"
+    ],
+    "window": {
+        "navigationBarTitleText": "V2EX",
+        "navigationBarBackgroundColor": "#fff"
+    },
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "icons/index_1.png",
+            "selectedIconPath": "icons/index_2.png"
+        }, {
+            "pagePath": "pages/nodes/nodes",
+            "text": "节点",
+            "iconPath": "icons/nodes_1.png",
+            "selectedIconPath": "icons/nodes_2.png"
+        }, {
+            "pagePath": "pages/about/about",
+            "text": "关于",
+            "iconPath": "icons/about_1.png",
+            "selectedIconPath": "icons/about_2.png"
+        }],
+        "color": "#445",
+        "selectedColor": "#000",
+        "backgroundColor": "#f2f2f2",
+        "borderStyle": "white"
+    }
+}

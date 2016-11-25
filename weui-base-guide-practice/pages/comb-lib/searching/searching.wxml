@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="top-bar-wrp">
+                <view class="top-bar">
+                    <view class="search-bar-wrp">
+                        <view class="search-bar {{input.searching}}">
+                            <image class="search-icon" src="{{search_png.src}}" />
+                            <input class="search" type="text" auto-focus="{{input.auto_focus}}" placeholder-class="search-ph"   b
+                        bindinput="{{input.bindinput}}" value="{{input.value}}"/> 
+                            <icon type="clear" class="clear {{input.cancelHidden}}" size="15" bindtap="{{clearIcon.bindtap}}" />
+                        </view>
+                        <view class="search-tail {{input.cancelHidden}}" bindtap="{{clearIcon.bindtap}}">
+                            <text>取消</text>
+                        </view>
+                     </view>                                     
+                </view>
+            </view>
+            <view class="matching-bar">
+                <view class="section" wx:for="{{input.matchingTexts}}" bindtap="selectText" data-search-text="{{item}}">
+                    <text>{{item}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

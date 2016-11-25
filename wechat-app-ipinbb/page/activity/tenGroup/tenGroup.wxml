@@ -1,0 +1,22 @@
+<!-- banner start -->
+<view class="banner">
+    <image mode="aspectFit" src="{{bannerUrl}}"></image>
+</view>
+<!-- / banner end -->
+
+<!-- article start -->
+<view class="ten-box">
+    <view class="ten-item-box"  wx:for="{{lists}}"  wx:key="">
+        <image src="{{item.imgUrl}}"  class="ten-item-img"></image>
+        <text class="ten-item-title">{{item.title}}</text>
+        
+        <view class="ten-item-content">
+            <text class="fn-right font12">{{item.groupSize}}</text>
+            <text class="ten-price">¥{{item.groupPrice}}</text>
+        </view>
+
+        <view class="ten-btn">立即抢购<view class=""></view></view>
+    </view>
+
+</view>
+<!-- / article end -->

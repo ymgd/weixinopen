@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container square">
+  <view class="item" wx:for="{{news}}" wx:key="{{index}}" bindtap="bindViewTap" id="{{item.id}}">
+    <view class="title">{{item.title}}</view>
+  </view>
+</view>

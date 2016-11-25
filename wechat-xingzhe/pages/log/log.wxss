@@ -1,0 +1,19 @@
+.mainView {
+    margin: 20rpx;
+}
+
+.title {
+    margin-bottom: 30rpx;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.show-meters, .show-time {
+    margin-bottom: 40rpx;
+}
+
+.item {
+    margin-bottom: 10rpx;
+    font-size: 14px;
+}

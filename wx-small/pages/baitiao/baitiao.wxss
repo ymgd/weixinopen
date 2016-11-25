@@ -1,0 +1,8 @@
+/*用户信息*/
+@import "limitarea/limitarea.wxss";
+/*主广告位*/
+@import "mainad/mainad.wxss";
+/*频道入口*/
+@import "channel/channel.wxss";
+/*频道底部*/
+@import "channelbottom/channelbottom.wxss";

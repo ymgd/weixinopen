@@ -1,0 +1,36 @@
+<!--
+  电影列表组件
+    供每一个列表展示的页面使用
+-->
+<import src="movie-item.wxml"/>
+
+
+<!--列表页面-->
+<template name="item1">
+  <navigator url="../item/item?id={{item.id}}">
+    <view class="item">
+      <image class="poster" src="{{item.images.small}}"></image>
+      <view class="meta">
+        <text class="title">{{item.title}}</text>
+        <text class="sub-title">{{item.original_title}}({{item.year}})</text>
+        <view class="artists"><text wx:for="{{item.directors}}">{{item.name}} </text></view>
+      </view>
+      <view class="rating">
+        <text>{{item.rating.average}}</text>
+      </view>
+    </view>
+  </navigator>
+</template>
+
+
+
+<template name="movie-list">
+  <scroll-view scroll-y="true" class="page-body">
+    <block wx:for="{{movies}}">
+      <template is="item1" data="{{item}}"/>
+    </block>
+  </scroll-view>
+  <loading hidden="{{!loading}}">
+    加载中...
+  </loading>
+</template>

@@ -1,0 +1,5 @@
+<!--detail.wxml-->
+<view class="container detail">
+  <view>{{news.title}}</view>
+  <view>{{news.content}}</view>
+</view>

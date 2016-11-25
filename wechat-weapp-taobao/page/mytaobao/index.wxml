@@ -1,0 +1,35 @@
+<view class="index">
+    <view class="header">
+        <view class="title">您需要登录才能访问</view>
+        <view class="desc">关闭</view>
+    </view>
+
+    <view class="main">  </view>
+        <view class="field">
+            <text>账户</text>
+            <input placeholder="手机号/邮箱/会员"></input>
+        <view />
+         <view class="field">
+            <text>登录密码</text>
+            <input placeholder="请输入密码"></input>
+        <view />
+   
+
+        <button class="btn_login" bindtap="login">{{btn_login}}</button>
+        
+        <view class="reg_forget">
+            <text class="btn_reg">免费注册</text>
+            <text class="btn_forget">忘记密码</text>
+        <view /> 
+
+
+      <view >
+     <view /> 
+
+      <view >
+     <view /> 
+
+      <view >
+     <view />
+</view>
+

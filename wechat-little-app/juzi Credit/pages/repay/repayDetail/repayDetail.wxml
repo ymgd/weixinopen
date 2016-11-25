@@ -1,0 +1,58 @@
+<view class="container">
+
+    <view class="sectionOne">
+      <view class="textView">贷款总额(元)</view> 
+      <view class="textView__number">10300.0</view>
+    </view>  <!--sectionOne-->
+    
+    
+    <view class="sectionTwo">
+       
+       <block wx:for-items="{{info}}" wx:for-item="item">
+      
+                 <view class="item-container">
+                      <text class="item-title">{{item.title}}</text>
+                      <text class="item-detail">{{item.detail}}</text>
+                </view>
+                <!--分割线-->
+                <view class="hr"></view>
+   
+       </block>
+
+
+    </view>  <!--sectionTwo-->
+    
+    
+    <view class="sectionThree">
+       
+        
+          <view class="menu"><!--菜单栏点击部分-->
+
+                <view class="menu-main" bindtap="tapMenu">
+                    <text>{{name}}</text>
+                    <image class="menu-main-arrow {{opened ? 'open' : 'close'}}" src="../../../images/arrowright.png"></image>
+                </view>
+              
+                <!--下来收缩的部分-->
+                <view class="menu-list {{opened ? 'open' : 'close'}}">
+                    <block wx:for-items="{{dateList}}" wx:for-item="dateItem">
+                      
+                        <view class="menu-item">
+                              
+                              <!--左边的日期-->
+                              <text class="menu-item-content">{{dateItem.date}} </text>
+                              
+                              <!--中间的进度条-->
+                              <progress percent="90" color="#16A11A" show-info="false" stroke-width="40" active="false"/>
+                              <!--右边的金额-->
+                              <text class="menu-item-content">{{dateItem.amount}}</text>
+
+                        </view>
+                      
+                    </block>
+                </view>
+          </view>  <!--菜单栏点击部分-->
+    
+    </view>  <!--sectionThree-->
+
+</view>

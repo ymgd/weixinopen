@@ -1,0 +1,9 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <view>内容：{{data.value}}</view>
+  <view>时间：{{data.time}}</view>
+  <view>状态:
+    <text wx:if="{{data.status}}">已完成</text>
+    <text wx:if="{{!data.status}}">未完成</text>
+  </view>
+</view>

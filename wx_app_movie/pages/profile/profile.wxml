@@ -1,0 +1,72 @@
+<scroll-view  scroll-y="true">
+    <view class="user box box-tb">
+        <view class="box box-lr box-pack-start box-align-center">
+            <image bindtap="chooseAvatar" class="avatar" src="{{userInfo.avatarUrl || '../../images/hot-actived.png'}}"></image>
+            <view bindtap="toLogin" class="flex box box-tb nick-name">
+                <text>{{userInfo.nickName || "您尚未登陆"}}</text>
+                <view class="box box-lr situation">
+                    <text>在线时长 {{userInfo.onlineTime || 0}} 小时</text>
+                    <text>|</text>
+                    <text>经验 {{userInfo.experience || 0}}</text>
+                </view>
+            </view>
+        </view>
+        
+        <view class="flex box box-lr box-pack-between arround">
+            <text class="flex">关注 {{userInfo.attention || 0}}</text>
+            <text class="flex">粉丝 {{userInfo.fans || 0}}</text>
+            <text class="flex">积分 {{userInfo.grades || 0}}</text>
+        </view>
+    </view>
+
+    <view class="box box-lr box-pack-between box-align-center about-me">
+        <view wx:for="{{tabs}}" data-type="{{item.types}}" class="flex box box-tb box-pack-center box-align-center each-item">
+            <image class="img" src="{{item.icon}}"></image>
+            <text class="tit">{{item.tit}}</text>
+        </view>
+    </view>
+
+    <view class="flex box box-tb settings">
+        <view wx:for="{{others}}" data-type="{{item.types}}" bindtap="othersClicked" class="box box-lr box-align-center setting-item">
+            <image class="icon item-icon" src="{{item.icon}}"></image>
+            <text class="flex">{{item.tit}}</text>
+            <image class="icon right-arrow" src="../../images/right-arrow.png"></image>
+        </view>
+        <!--<view class="box box-lr box-align-center setting-item">
+            <image class="icon item-icon" src="{{item.icon}}"></image>
+            <text class="flex">{{item.tit}}</text>
+            <image class="icon right-arrow" src="../../images/right-arrow.png"></image>
+        </view>
+        <view class="box box-lr box-align-center setting-item">
+            <image class="icon item-icon" src="{{item.icon}}"></image>
+            <text class="flex">{{item.tit}}</text>
+            <image class="icon right-arrow" src="../../images/right-arrow.png"></image>
+        </view>
+        <view class="box box-lr box-align-center setting-item">
+            <image class="icon item-icon" src="{{item.icon}}"></image>
+            <text class="flex">{{item.tit}}</text>
+            <image class="icon right-arrow" src="../../images/right-arrow.png"></image>
+        </view>
+        <view class="box box-lr box-align-center setting-item" bindtap="callMe">
+            <image class="icon item-icon" src="{{item.icon}}"></image>
+            <text class="flex">{{item.tit}}</text>
+            <image class="icon right-arrow" src="../../images/right-arrow.png"></image>
+        </view>
+        <view class="box box-lr box-align-center setting-item" bindtap="callMe">
+            <image class="icon item-icon" src="{{item.icon}}"></image>
+            <text class="flex">{{item.tit}}</text>
+            <image class="icon right-arrow" src="../../images/right-arrow.png"></image>
+        </view>-->
+        <!--<view class="box box-lr box-align-center setting-item">
+            <image class="icon item-icon" src="../../images/hot.png"></image>
+            <text class="flex">夜间模式</text>
+            <switch bindchange="lightAode"/>
+        </view>
+        <view class="box box-lr box-align-center setting-item" bindtap="chooseAvatar">
+            <image class="icon item-icon" src="../../images/hot.png"></image>
+            <text class="flex">设置头像</text>
+            <image class="icon right-arrow" src="../../images/right-arrow.png"></image>
+        </view>-->
+    </view>
+</scroll-view>
+    

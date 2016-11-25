@@ -1,0 +1,24 @@
+
+/*index style*/
+
+/** news.wxss样式文件引入 **/
+@import "../../components/news/news.wxss";
+
+
+/*banner轮播*/
+swiper {
+    height:198px;
+}
+swiper swiper-item{
+    height:100%;
+}
+swiper .slide_title{
+    position:absolute;top:108px;color:#fff;font-size:20px;padding:10px;
+}
+
+
+/*新闻列表*/
+/*.news_list{}
+.news_list .news_item{
+    padding:5px;background-color:#fff;margin:5px;
+}*/

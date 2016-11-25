@@ -1,0 +1,35 @@
+.celebrityuserview {
+    padding: 40rpx 28rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.celebrityuserview .avatar {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 70rpx;
+}
+
+.celebrityuserview .userview {
+    margin-left: 18rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.celebrityuserview .userview .topview {
+    color: #4D4D4D;
+    font-size: 38px;
+    display: flex;
+    flex-direction: row;
+}
+
+.celebrityuserview .userview .topview .markimage {
+    width: 36rpx;
+    height: 36rpx;
+}
+
+.celebrityuserview .userview .desclbl {
+    color: #657B86;
+    font-size: 14px;
+}

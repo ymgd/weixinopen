@@ -1,0 +1,16 @@
+<import src="../common/tab.wxml" />
+
+<view class="container">
+    <scroll-view scroll-y="true">
+        <template is="nav" data="{{nav_list: nav_list, tabActive: tabActive}}" />
+
+        <view class="classify_list">
+            <block wx:for="{{classify_list}}" wx:key="*this">
+                <view class="classify_item">
+                    <navigator url="{{item.url}}">{{item.name}}</navigator>
+                    <view class="arrow"></view>
+                </view>
+            </block>
+        </view>
+    </scroll-view>
+</view>

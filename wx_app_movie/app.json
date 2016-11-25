@@ -1,0 +1,59 @@
+{
+	"pages": [
+		"pages/hot/hot",
+		"pages/approve/approve",
+		"pages/movie/movie",
+		"pages/search/search",
+		"pages/cinema/cinema",
+		"pages/profile/profile",
+		"pages/profile/setting/setting",
+		"pages/login/login"
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#e50150",
+		"navigationBarTextStyle": "#fff",
+		"navigationBarTitleText": "猎影",
+		"backgroundColor": "#fff",
+		"backgroundTextStyle": "dark",
+		"enablePullDownRefresh": true
+	},
+	"tabBar": {
+		"color": "#ccc",
+		"selectedColor": "#35495e",
+		"borderStyle": "#fff",
+		"backgroundColor": "#fafafa",
+		"list": [
+			{
+				"text": "热映",
+				"pagePath": "pages/hot/hot",
+				"iconPath": "images/hot.png",
+				"selectedIconPath": "images/hot-actived.png"
+			},
+			{
+				"text": "影院",
+				"pagePath": "pages/cinema/cinema",
+				"iconPath": "images/cinema.png",
+				"selectedIconPath": "images/cinema-actived.png"
+			},
+			{
+				"text": "推荐",
+				"pagePath": "pages/approve/approve",
+				"iconPath": "images/approve.png",
+				"selectedIconPath": "images/approve-actived.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/profile/profile",
+				"iconPath": "images/profile.png",
+				"selectedIconPath": "images/profile-actived.png"
+			}
+		]
+	},
+	"networkTimeout": {
+		"request": 10000,
+		"connectSocket": 10000,
+		"uploadFile": 10000,
+		"downloadFile": 10000
+	},
+	"debug": false
+}

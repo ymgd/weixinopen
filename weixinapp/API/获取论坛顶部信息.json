@@ -1,0 +1,47 @@
+
+/**
+
+获取帖子顶部信息
+
+id = 3
+
+*/
+
+{
+	"result": true,
+	"msg": "查询成功",
+	"obj": {
+		"BackMap": "http://i.pengxun.cn/images/bms1/2005_app[1].jpg",
+		"LogoUrl": "http://i.pengxun.cn/upload/forum/2016725164254913.jpg",
+		"ArticleCount": 2136,
+		"ClickCount": 87683,
+		"IsSign": false,
+		"IsConcern": true,
+		"Notices": [{
+			"Announcement": "这个",
+			"AnnouncementLink": "",
+			"ColorCode": "#fc5002"
+		}, {
+			"Announcement": "普通黑色公告",
+			"AnnouncementLink": "",
+			"ColorCode": ""
+		}],
+		"Categories": [{
+			"Id": 223738,
+			"Title": "新板块12"
+		}, {
+			"Id": 1213,
+			"Title": "首页隐藏"
+		}, {
+			"Id": 1145,
+			"Title": "帅哥1"
+		}, {
+			"Id": 31880,
+			"Title": "报表生活"
+		}, {
+			"Id": 1173,
+			"Title": " 美女你好"
+		}]
+	},
+	"errcode": 0
+}

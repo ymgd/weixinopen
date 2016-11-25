@@ -1,0 +1,7 @@
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <map longitude="{{longi}}" latitude="{{lati}}" markers="{{markers}}" covers="{{covers}}" style="width: 375px; height: 200px;"></map>
+</view>

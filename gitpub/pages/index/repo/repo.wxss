@@ -1,0 +1,30 @@
+.repo-body{
+	padding: 15rpx;
+	font-size: 26rpx;
+	color: #666;
+}
+.repo-des{
+	margin-bottom: 15rpx;
+}
+.repo-list{
+	border: 1px solid #ddd;
+	border-radius: 2px;
+}
+.repo-list-item{
+	display: flex;
+	padding: 10rpx;
+	border-bottom: 1px solid #eee;
+}
+.repo-list-text{
+	flex: 1;
+	margin-left: 15rpx;
+	color: #4078c0;
+}
+.ico{
+	width: 26rpx;
+	height: 26rpx;
+}
+
+.a{
+	color: #abc;
+}

@@ -1,0 +1,10 @@
+<view class="main_body">
+    <block wx:for="{{games.titles}}">
+        <view class="item" catchtap="tapgame" data-product="{{item.serviceConfigId}}">
+            <view class="data-box">
+                <view class="name-box">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="clear"></view>
+    </block>
+</view>

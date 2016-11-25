@@ -1,0 +1,22 @@
+<view class="flex box box-tb">
+	<view class="video box box-lr">
+		<video class="flex" id="video" src="{{videoSrc}}" binderror="videoErrorCallback" 
+				danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+	</view>
+	<view class="danmu box box-lr" style="margin: 15rpx;">
+		<input class="flex" value="{{inputValue}}" bindblur="bindInputBlur"/>
+		<button size="mini" type="primary" bindtap="bindSendDanmu">发送弹幕</button>
+	</view>
+
+	<!--<view class="flex video-stream-box box box-lr wrap">
+		<view wx:for="{{videos}}" class="video-stream box box-tb">
+			<image src="{{item.imgSrc}}"></image>
+			<text>{{item.tit}}</text>
+		</view>
+	</view>-->
+
+	<view class="novel_block_left"><image 
+	src="http://img.diaobao.in/diaobaoimg/x4/hf/qP99TK_ndXinDtBkKa_ae-QVSsWvOe4BqRHNIuQZpFnMWSir5PbvlyvpKFMk.jpg" model="aspectFit" /></view>
+</view>
+
+

@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+                <modal class="modal1" title="{{modal1.title}}" no-cancel="{{modal1.no_cancel}}" confirm-text="{{modal1.confirm_text}}"  hidden="{{modal1.hidden}}" bindconfirm="{{modal1.change}}">
+                    <view class="modal-cust-content">
+                        <text>{{modal1.content_text}}</text>
+                    </view>
+                </modal>
+                <modal class="modal2" title="{{modal2.title}}" no-cancel="{{modal2.no_cancel}}" confirm-text="{{modal2.confirm_text}}"  hidden="{{modal2.hidden}}" bindconfirm="{{modal2.change}}">
+                    <view class="modal-cust-content">
+                        <text>{{modal2.content_text}}</text>
+                    </view>
+                </modal>
+            <view class="header">
+                <text class="title">Dialog</text>
+            </view>
+            <view class="body">
+                <button type="primary" bindtap="modal1Tap">只有标题的对话框</button>
+                <button type="primary" bindtap="modal2Tap">带有文字的弹框</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+<!--my.wxml-->
+<view class="container my">
+  <view class="block login">
+    <view class="item button" bindtap="login" wx:if="{{ !username }}">登录/注册</view>
+    <view class="item username" wx:if="{{ !!username }}">{{ username }}</view>
+  </view>
+  <view class="block">
+      <view class="item">我的C币</view>
+      <view class="item">添加好友</view>
+      <view class="item">附近的人</view>
+  </view>
+  <view class="block">
+    <view class="item">情景相机</view>
+    <view class="item">拼图</view>
+  </view>
+  <view class="block">
+    <view class="item">设置</view>
+  </view>
+  <view class="block">
+    <view  wx:for="{{systemInfo}}" wx:key="{{index}}">{{index}}:{{item}}</view>
+  </view>
+</view>

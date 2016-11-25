@@ -1,0 +1,11 @@
+<view class="jrm-flex-column jrm-w100p jrm-bg-fff mainad-area">
+   <view class="section_gap jrm-pl32 jrm-pr32 swiper">
+     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+       <block wx:for="{{imgUrls}}" wx:key="*this">
+           <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%" height="100%"/>
+           </swiper-item>
+       </block>
+      </swiper>
+   </view> 
+</view>

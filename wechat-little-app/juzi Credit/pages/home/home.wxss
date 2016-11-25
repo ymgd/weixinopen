@@ -1,0 +1,53 @@
+page{
+  background-color: rgb(241, 145, 89);
+}
+
+
+.time{
+    height: 100%;
+    text-align: center;
+ 
+    
+}
+
+.big-circle{
+    width: 430rpx;
+    height: 430rpx;
+    border-radius: 50%;
+    background: rgb(179, 167, 157);
+   
+    margin-top:160rpx; 
+    position: absolute;
+    margin-left: 160rpx;
+
+    text-align: center;
+}
+
+.date{
+  width: 430rpx;
+  height: 100rpx;
+  margin-top:165rpx;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+
+}
+
+.middleCircle{
+
+    width: 400rpx;
+    height: 400rpx;
+    border-radius: 50%;
+    background: rgb(241, 145, 89);
+
+    margin-top:15rpx; 
+    position: absolute;
+    margin-left: 15rpx;
+}
+
+/*按钮布局*/
+button{
+  margin-top:800rpx;
+}
+

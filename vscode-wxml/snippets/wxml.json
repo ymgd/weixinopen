@@ -1,0 +1,214 @@
+{
+  "view": {
+    "prefix": "view",
+    "body": [
+      "<view>",
+      "\t$2",
+      "</view>$3"
+    ],
+    "description": "视图容器"
+  },
+  "scroll-view": {
+    "prefix": "scroll-view",
+    "body": [
+      "<scroll-view scroll-${1:x}=\"$2\">",
+      "\t$3",
+      "</scroll-view>$4"
+    ],
+    "description": "可滚动视图区域：scroll-x 横向滚动\n\nscroll-y 纵向滚动\n\nupper-threshold 距顶部/左边多远时（单位px），触发 scrolltoupper 事件\n\nlower-threshold 距底部/右边多远时（单位px），触发 scrolltolower 事件\n\nscroll-left 设置横向滚动条位置\n\nscroll-top 设置纵向滚动条位置"
+  },
+  "swiper": {
+    "prefix": "swiper",
+    "body": [
+      "<swiper indicator-dots=\"{{${1:indicatorDots}}}\" autoplay=\"{{${2:autoplay}}}\" interval=\"{{${3:interval}}}\" duration=\"{{${4:duration}}}\">",
+      "\t<block wx:for=\"{{${5:imgUrls}}}\">",
+      "\t\t<swiper-item>",
+      "\t\t\t<image src=\"{{${6:item}}}\" class=\"slide-image\" />",
+      "\t\t</swiper-item>",
+      "\t</block>",
+      "</swiper>$7"
+    ],
+    "description": "indicator-dots 是否显示面板指示点\n\nautoplay	是否自动切换\n\ncurrent 当前所在页面的 index\n\ninterval 自动切换时间间隔\n\nduration 滑动动画时长\n\nbindchange current 改变时会触发 change 事件"
+  },
+  "icon": {
+    "prefix": "icon",
+    "body": "<icon type=\"$1\" size=\"$2\" color=\"$3\" />$4",
+    "description": "icon的类型，有效值：success, success_no_circle, info, warn, waiting, cancel, download, search, clear"
+  },
+  "text": {
+    "prefix": "text",
+    "body": "<text>$1</text>$2",
+    "description": "文本"
+  },
+  "textarea": {
+    "prefix": "textarea",
+    "body": "<textarea placeholder=\"${1:placeholder}\" />$2",
+    "description": "文本区域"
+  },
+  "progress": {
+    "prefix": "progress",
+    "body": "<progress percent=\"$1\" color=\"$2\" stroke-width=\"${3:6}\" ${4:active} ${5:show-info} />$6",
+    "description": "percent 百分比0~100\n\nshow-info 在进度条右侧显示百分比\n\nstroke-width 进度条线的宽度，单位px\n\ncolor	进度条颜色\n\nactive 进度条从左往右的动画"
+  },
+  "button": {
+    "prefix": "button",
+    "body": "<button type=\"${1:default}\" size=\"${2:defaultSize}\" loading=\"${3:loading}\" plain=\"${4:plain}\" disabled=\"${5:disabled}\" bindtap=\"${6:defaultTap}\" hover-class=\"${6:other-button-hover}\">${7:Button}</button>$8",
+    "description": "size 有效值 default, mini\n\ntype 按钮的样式类型，有效值 primary, default, warn\n\nplain 按钮是否镂空，背景色透明\n\ndisabled 是否禁用\n\nloading 名称前是否带 loading 图标\n\nform-type 有效值：submit, reset，用于 <form/> 组件，点击分别会触发 submit/reset 事件\n\nhover-class 指定按钮按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果"
+  },
+  "checkbox-group": {
+    "prefix": "checkboxGroup",
+    "body": [
+      "<checkbox-group>",
+      "\t<label wx:for=\"{{${1:item}}}\">",
+      "\t\t<checkbox value=\"${1:item}.${3:name}\" />{{${1:item}.${4:value}}}",
+      "\t</label>",
+      "</checkbox-group>$5"
+    ],
+    "description": "多项选择器"
+  },
+  "radio-group": {
+    "prefix": "radioGroup",
+    "body": [
+      "<radio-group>",
+      "\t<label class=\"$1\" wx:for=\"{{${2:item}}}\">",
+      "\t\t<radio value=\"${2:item}.${3:name}\" />{{${2:item}.${4:value}}}",
+      "\t</label>",
+      "</checkbox-group>$5"
+    ],
+    "description": "多项选择器"
+  },
+  "form": {
+    "prefix": "form",
+    "body": "<form bindsubmit=\"$1\" bindreset=\"$2\">$3</form>$4",
+    "description": "表单"
+  },
+  "input": {
+    "prefix": "input",
+    "body": "<input type=\"$1\" placeholder=\"$2\" ${3:auto-focus} ${4:password} />$5",
+    "description": "value 输入框的初始内容\n\ntype 定义 input 的类型，有效值：text, number, idcard, digit, time, date\n\npassword 是否是密码类型\n\nplaceholder 输入框为空时占位符\n\nplaceholder-style 指定placeholder的样式\n\nplaceholder-classinput-placeholder 指定 placeholder 的样式类\n\ndisabled 是否禁用\n\nmaxlength 最大输入长度，设置为0的时候不限制最大长度\n\nauto-focus 自动聚焦，拉起键盘。页面中只能有一个 <input/> 或 <textarea/> 设置 auto-focus 属性\n\nfocus 获取焦点（开发工具暂不支持）\n\nbindinput 除了 date/time 类型外的输入框，当键盘输入时，触发input 事件，event.detail={value: value}，处理函数可以直接 return 一个字符串，将替换输入框的内容。\n\nbindfocus 输入框聚焦时触发，event.detail={value: value}\n\nbindblur 输入框失去焦点时触发，event.detail={alue: value}"
+  },
+  "picker-time": {
+    "prefix": "pickerTime",
+    "body": [
+      "<picker mode=\"time\" start=\"${1:xx:xx}\" end=\"${2:xx:xx}\">$3</picker>$4"
+    ],
+    "description": "时间选择器"
+  },
+  "picker-date": {
+    "prefix": "pickerDate",
+    "body": [
+      "<picker mode=\"date\" start=\"${1:xxxx-xx-xx}\" end=\"${2:xxxx-xx-xx}\">$3</picker>$4"
+    ],
+    "description": "日期选择器"
+  },
+  "slider": {
+    "prefix": "slider",
+    "body": "<slider min=\"$1\" max=\"$2\" step=\"$3\" />$4",
+    "description": "滑动选择器"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": "<switch checked=\"${1:false}\" />$2",
+    "description": "开关选择器"
+  },
+  "actoin-sheet": {
+    "prefix": "actionSheet",
+    "body": [
+      "<action-sheet>",
+      "\t<block wx:for=\"{{${1:actionSheetItems}}}\">",
+      "\t\t<action-sheet-item class=\"item\" data-name=\"{{${2:item}}}\" />{{${2:item}}}</action-sheet-item>",
+      "\t</block>",
+      "</action-sheet>$3"
+    ],
+    "description": "从屏幕底部出现的菜单表"
+  },
+  "modal": {
+    "prefix": "modal",
+    "body": "<modal title=\"$1\" confirm-text=\"$2\" cancel-text=\"$3\" bindconfirm=\"$4\" bindcancel=\"$5\">$6</modal>$7",
+    "description": "模态弹窗"
+  },
+  "toast": {
+    "prefix": "toast",
+    "body": "<toast>$1</toast>$2",
+    "description": "消息提示框"
+  },
+  "loading": {
+    "prefix": "loading",
+    "body": "<loading>$1</loading>$2",
+    "description": "加载提示"
+  },
+  "navigator": {
+    "prefix": "navigator",
+    "body": "<navigator url=\"$1\" ${2:redirect} hover-class=\"${3:className}\">$4</navigator>$5",
+    "description": "url 应用内的跳转链接 \n\nredirect 是否关闭当前页面\n\nhover-class navigator-hover	指定点击时的样式类，当hover-class=\"none\"时，没有点击态效果"
+  },
+  "audio": {
+    "prefix": "audio",
+    "body": "<audio src=\"$1\" ${2:controls} ${3:loop}></audio>$2",
+    "description": "id 组件的唯一标识符\n\nsrc 要播放音频的资源地址\n\nloop 是否循环播放\n\ncontrols 是否显示默认控件\n\nposter 默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效\n\nname 默认控件上的音频名字，如果 controls 属性值为 false 则设置 name 无效\n\nauthor 默认控件上的作者名字，如果 controls 属性值为 false 则设置 author 无效\n\nbinderror 当发生错误时触发 error 事件，detail = {errMsg: MediaError.code}\n\nbindplay 当开始/继续播放时触发play事件\n\nbindpause 当暂停播放时触发 pause 事件\n\nbindtimeupdate 当播放进度改变时触发 timeupdate 事件，detail = {currentTime, duration}\n\nbindended 当播放到末尾时触发 ended 事件"
+  },
+  "image": {
+    "prefix": "image",
+    "body": "<image src=\"$1\" />$2",
+    "description": "src 图片资源地址\n\nmode 图片裁剪、缩放的模式\n\nbinderror 当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}\n\nbindload 当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}"
+  },
+  "video": {
+    "prefix": "video",
+    "body": "<video src=\"$1\">$2</video>$3",
+    "description": "src 要播放视频的资源地址\n\ncontrols 是否显示默认播放控件（播放/暂停按钮、播放进度、时间）\n\ndanmu-list 弹幕列表\n\ndanmu-btn 是否显示弹幕按钮，只在初始化时有效，不能动态变更\n\nenable-danmu 是否展示弹幕，只在初始化时有效，不能动态变更\n\nautoplay 是否自动播放\n\nbindplay 当开始/继续播放时触发play事件\n\nbindpause 当暂停播放时触发 pause 事件\n\nbindended 当播放到末尾时触发 ended 事件\n\nbinderror 当发生错误时触发error事件，event.detail = {errMsg: 'something wrong'}"
+  },
+  "map": {
+    "prefix": "map",
+    "body": "<map longitude=\"$1\" latitude=\"$2\"></map>$3",
+    "description": "longitude 中心经度\n\nlatitude 中心纬度\n\nscale 缩放级别\n\nmarkers 标记点\n\ncovers 覆盖物"
+  },
+  "canvas": {
+    "prefix": "canvas",
+    "body": "<canvas canvas-id=\"$1\"></canvas>",
+    "description": "canvas-id 组件的唯一标识符\n\ndisable-scroll 当在 canvas 中移动时，禁止屏幕滚动以及下拉刷新\n\nbindtouchstart 手指触摸动作开始\n\nbindtouchmove手指触摸后移动\n\nbindtouchend 手指触摸动作结束\n\nbindtouchcancel 手指触摸动作被打断，如来电提醒，弹窗\n\nbinderror 当发生错误时触发 error 事件，detail={errMsg: 'somethingwrong'}"
+  },
+  "template": {
+    "prefix": "template",
+    "body": [
+      "<template name=\"$1\">",
+      "\t$2",
+      "</template>"
+    ],
+    "description": "模板"
+  },
+  "wx:for": {
+    "prefix": "wxfor",
+    "body": "wx:for=\"{{${1:items}}}\"",
+    "description": "列表渲染"
+  },
+  "wx:if": {
+    "prefix": "wxif",
+    "body": "wx:if=\"{{condition}}\"",
+    "description": "条件渲染if"
+  },
+  "wx:elif": {
+    "prefix": "wxelif",
+    "body": "wx:elif=\"{{condition}}\"",
+    "description": "条件渲染else if"
+  },
+  "wx:key": {
+    "prefix": "wxkey",
+    "body": "wx:key=\"$1\"",
+    "description": "wx:key"
+  },
+  "bindtap": {
+    "prefix": "bindtap",
+    "body": "bindtap=\"${1:tapname}\"",
+    "description": "绑定事件"
+  },
+  "import": {
+    "prefix": "import",
+    "body": "<import is=\"$1\" src=\"$2\" />",
+    "description": "import 导入模版文件"
+  },
+  "include": {
+    "prefix": "include",
+    "body": "<include src=\"$1\">",
+    "description": "include 导入模版文件"
+  }
+}

@@ -1,0 +1,52 @@
+<text>唱片</text>
+<view wx:for="{{array}}"> {{item}} </view>
+
+
+<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view wx:elif="{{view == 'APP'}}"> APP </view>
+<view wx:else="{{view == 'SUCESS'}}"> MINA </view>
+
+
+<view wx:for="{{[zero,1,2,3,4]}}">{{item}}</view>
+
+<view wx:for="{{recordList}}">
+  {{index}}:{{item.message}}
+</view>
+
+<view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view>
+
+<block wx:for="{{['狗头', '羊头', '牛头']}}">
+  <view> {{index}}: </view>
+  <view> {{item}} </view>
+</block>
+
+
+<!--模板-->
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+
+</template>
+<!--使用模板-->
+<template is="staffName" data="{{...staffA, ...staffB}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+
+<template name="odd">
+  <view> odd </view>
+</template>
+<template name="even">
+  <view> even </view>
+</template>
+
+<block wx:for="{{[1, 2, 3, 4, 5]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+</block>

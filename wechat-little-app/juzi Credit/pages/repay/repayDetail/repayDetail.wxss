@@ -1,0 +1,148 @@
+page{
+    background: rgb(230, 230, 230);
+}
+
+.container{
+    
+}
+/*第一部分设置*/
+.sectionOne{
+    background: white;
+    text-align: center;
+    display: flex;
+    flex-flow:column; 
+    height: 100rpx;
+}
+
+/*第一部分文字*/
+.textView{
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/*第一部分数字*/
+.textView__number{
+    color: red;
+    font-size: 14px;
+}
+
+/*第二部分设置*/
+.sectionTwo{
+
+    margin-top: 50rpx;
+    background: white;
+    height: 300rpx;
+
+}
+
+/*分隔线*/
+.hr{
+    height: 1px;
+    background: rgb(230, 230, 230);
+}
+
+
+.item-container{
+    height: 80rpx;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx 20rpx 20rpx 0;
+    align-items: center;
+
+}
+/*文字样式*/
+.item-title{
+    color: rgb(188, 188, 188);
+    font-size: 30rpx;
+    margin-left: 20rpx;
+}
+/*箭头样式*/
+.item-detail{
+    color: rgb(200, 200, 200);
+    font-size: 30rpx;
+    margin-right: 20rpx;
+}
+
+
+/*第三部分设置*/
+.sectionThree{
+
+    margin-top: 100rpx;
+    
+
+}
+
+/*横幅样式*/
+.menu{
+  color: #000000;
+  background-color: white;
+  
+}
+
+/*横幅内标题图片布局*/
+.menu-main {
+  display: flex;
+  height: 100rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  align-items: center;
+  font-size: 32rpx;
+  justify-content: space-between;
+}
+
+/*箭头样式设置*/
+.menu-main-arrow {
+  width: 32rpx;
+  height: 32rpx;
+  transition: 400ms;
+}
+.menu-main-arrow.open {
+  transform: rotate(-90deg);
+}
+.menu-main-arrow.close {
+  transform: rotate(90deg);
+}
+.menu-main-arrow.url {
+  transform: rotate(0deg);
+}
+
+/*下拉菜单设置*/
+
+
+  /*展开 mintcream*/
+.menu-list {
+  transition: 200ms;
+  height: auto;
+  border-top: 1px solid rgb(228, 228, 228);
+  
+}
+
+/*收起*/
+.menu-list.close {
+  display: none;
+  height: 0;
+}
+
+  /*具体内容设置*/
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  padding: 20rpx 20rpx 20rpx 0;
+  margin-left: 20rpx;
+  align-items: center;
+  border-top: 1px solid rgb(228, 228, 228);
+}
+.menu-item-content {
+  font-size: 30rpx;
+}
+
+/*进度条*/
+progress{
+  width: 60%;
+}
+
+
+

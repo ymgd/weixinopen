@@ -1,0 +1,116 @@
+/**ks.wxss**/
+.container{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    background-color: #f7f7f7;
+}
+.ks-header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50rpx 0;
+}
+.ks-text{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding-left: 25rpx;
+}
+.ks-header-title{
+    font-size: 20pt;
+    font-weight: bold;
+    line-height: 150%;
+    margin-bottom: 15rpx;
+    color: #222;
+}
+.ks-header-info,.ks-header-info-ksName{
+    font-size: 11pt;
+    line-height: 160%; 
+    color: #888;
+}
+
+.ks-bg{
+    display: block;
+    width: 200rpx;
+    height: 200rpx;
+    padding-right: 5rpx;
+    opacity: .3;
+}
+
+.ks-class-ctn{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    box-sizing: border-box;
+}
+.ks-class-box{
+    width: 100%;
+    /*height: 100%;*/
+    background: rgb(255, 255, 255);
+    margin-bottom: 21rpx;
+    overflow: hidden;
+}
+.ks-class-show{
+    /*height: 100%;*/
+}
+.ks-class{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /*height: 492rpx;*/
+    padding-left: 44rpx;
+    padding-right: 44rpx;
+    transition: .3s;
+}
+.ks-class-name{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.ks-class-name text{
+    font-size: 30rpx;
+    color: rgb(0,0,0);
+    line-height: 137rpx;
+}
+.ks-class-arrow{
+    width: 32rpx;
+    height: 18rpx;
+    background: url("imgs/arrow_down.png");
+    background-size: 100% 100%;
+    transform: rotateX(0);
+    transition: .3s;
+}
+.ks-class-items{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    font-size: 32rpx;
+    color: rgb(0,0,0);
+    line-height: 90rpx;
+}
+.ks-class-date,.ks-class-time,.ks-class-place{
+    border-bottom: 2rpx rgb(212, 212, 212) solid;
+}
+.ks-class-name-show text{
+    opacity: 0.4;
+}
+.ks-class-name-show .ks-class-arrow{
+    transform: rotateX(180deg);
+}
+.ks-class-items-box{
+    max-height: 700rpx;
+    height: auto;
+    transition: max-height 0.3s ease-in;
+}
+.ks-class-items-hide{
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}

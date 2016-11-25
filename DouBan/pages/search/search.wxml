@@ -1,0 +1,33 @@
+<!--搜索页面-->
+<view class="container">
+    <view class="search_form">
+        <form bindsubmit="onsubmit">
+            <view class="form-input">
+                <input placeholder="{{ placeholder_data }}" name="search_key"></input>
+            </view>
+            <view class="form-btn">
+                <button type="primary" formType="submit">搜索</button>
+            </view>
+        </form>
+    </view>
+    <scroll-view class="searchsearch-list" scroll-y="true">
+		<text class="header">{{ title }}</text>
+        <navigator wx:for="{{ list }}" url = "../item/item?id={{ item.id }}">
+		    <view class="list-item">
+				<view class="list-image">
+				<image src="{{ item.images.large }}"></image>
+				</view>
+				<view class="info">
+					<text class="title">{{ item.title }}</text>
+					<text class="year"> ({{ item.year }})</text>
+					<text class="average">{{ item.rating.average }}分</text>
+					<text class="director">导演：<block wx:for="{{ item.directors }}">
+						{{ item.name }}
+					</block>
+					</text>
+				</view>
+			</view>
+			
+		</navigator>
+    </scroll-view>
+</view>

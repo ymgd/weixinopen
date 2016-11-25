@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="main">
+    <view class="content">
+      <view class="msg-area">
+        <view class="msg-item">
+          <action-sheet hidden="{{com.action_sheet.hidden}}" bindchange="actionSheetChange">
+            <block wx:for="{{com.action_sheet.items}}">
+              <action-sheet-item class="item" bindtap="actionSheetBindItemTap" data-name="{{item}}">{{item}}</action-sheet-item>
+            </block>
+            <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+          </action-sheet>
+        </view>
+        <view class="msg-item">
+            <modal title="标题" confirm-text="确认" cancel-text="取消" hidden="{{com.modal.hidden}}" bindconfirm="modalChange" bindcancel="modalChange">
+                这是对话框的内容。
+            </modal>
+            <modal class="modal" hidden="{{com.modal2.hidden}}" no-cancel bindconfirm="modal2Change">
+                <view> 内容可以插入节点 </view>
+            </modal>
+        </view>
+        <view class="msg-item">
+            <toast hidden="{{com.toast1.hidden}}" bindchange="toast1Change">
+                默认
+            </toast>
+            <toast hidden="{{com.toast2.hidden}}" duration="5000" bindchange="toast2Change">
+                设置 duration
+            </toast>
+        </view>
+        <view class="msg-item">
+            <loading hidden="{{com.loading.hidden}}" bindchange="loadingChange">
+                加载中...
+            </loading>
+        </view>
+      </view>
+      <view class="btn-area">
+        <view class="a-row">
+          <text class='title'>action sheet: 从屏幕底部出现的菜单表</text>
+          <button type="default" bindtap="actionSheetTap">弹出 action sheet</button>
+        </view>
+        <view class="a-row">
+          <text class='title'>modal: 模态弹窗</text>
+          <button type="default" bindtap="modalTap">弹出 modal1</button>
+          <button type="default" bindtap="modal2Tap">弹出 modal2</button>
+        </view>
+        <view class="a-row">
+          <text class='title'>toast: 消息提示框</text>
+          <button type="default" bindtap="toast1Tap">弹出默认 toast</button>
+          <button type="default" bindtap="toast2Tap">弹出设置 duration 的 toast</button>
+        </view>
+        <view class="a-row">
+          <text class='title'>loading: 加载提示</text>
+          <button type="default" bindtap="loadingTap">弹出 loading</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

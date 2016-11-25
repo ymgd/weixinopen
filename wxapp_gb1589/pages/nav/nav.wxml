@@ -1,0 +1,17 @@
+<page>
+    <view class="title">
+        <text>{{title}}</text>
+    </view>
+    <view class="catalogue-list">
+    	<view class="catalogue-item" wx:for="{{catalogue}}">
+            <text class="num">0{{index+1}}</text>
+            <caption>{{item.caption}}</caption>
+            <list>
+                <list-item wx:for="{{item.list}}">{{item}}</list-item>
+            </list>
+    	</view>
+    </view>
+    <navigator url="{{commentUrl}}" class="to-comment">
+        <text>提问</text>
+    </navigator>
+</page>

@@ -1,0 +1,44 @@
+<view class="page">
+<!--
+    <view class="page__hd">
+        <view class="page__title">Loadmore</view>
+        <view class="page__desc">加载更多</view>
+    </view>
+-->
+   
+    <view class="page__bd">
+        <scroll-view scroll-y="true" style="height:{{windowHeight}}" bindscrolltolower="loadMore" class="loadMoreBox">
+            <view class="loadMoreItem">
+               11111111
+            </view>
+            <view class="loadMoreItem">
+               222
+            </view>
+            <view class="loadMoreItem">
+              333
+            </view>
+            <view class="loadMoreItem">
+              333
+            </view>
+            <view class="loadMoreItem">
+              333
+            </view>
+              <view class="weui-loadmore" hidden="{{loadingHidden}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">加载中...</view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line" hidden="{{noDataHidden}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+        </view>
+        </scroll-view>
+      
+
+        
+
+        <!--
+        <view class="weui-loadmore weui-loadmore_line weui-loadmore_dot">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line weui-loadmore__tips_in-dot"></view>
+        </view>
+        -->
+    </view>
+</view>

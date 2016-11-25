@@ -1,0 +1,17 @@
+<view class="container">
+    <view class="section">
+    <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" />
+    </view>
+    <view class="section">
+    <textarea placeholder="placeholder颜色是红色的" placeholder-style="color:red;"  />
+    </view>
+    <view class="section">
+    <textarea placeholder="这是一个可以自动聚焦的textarea" auto-focus />
+    </view>
+    <view class="section">
+    <textarea placeholder="这个只有在按钮点击的时候才聚焦" focus="{{focus}}" />
+    <view class="btn-area">
+        <button bindtap="bindButtonTap">使得输入框获取焦点</button>
+    </view>
+    </view>
+</view>

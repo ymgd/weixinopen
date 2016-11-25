@@ -1,0 +1,30 @@
+<import src="../common/templates.wxml" />
+<template is="pageLoading" data="{{pageLoadingHide}}" />
+
+<view class="page">
+    <block wx:if="{{fail}}">
+        <view class="errorTips">{{data}},请刷新重试</view>
+    </block>
+    <block wx:else>
+        <view class="header">一共有 <text class="c-red">{{total}}</text> 条结果</view>
+        <scroll-view scroll-y="true" bindscrolltolower="loadMore" class="list">
+            <block wx:for="{{data}}" wx:for-item="item">
+                <navigator url="../detail/detail?id={{item.id}}" class="listItem">
+                    <view class="img"><image src="{{item.images.medium}}" mode="aspectFit"></image></view>
+                    <view class="info">
+                        <view class="title">{{item.title}}</view>
+                        <view class="txt">
+                            <block wx:for="{{item.casts}}" wx:for-item="castsItem">{{castsItem.name}} / </block>
+                        </view>
+                        <view class="txt">
+                            <block wx:for="{{item.genres}}" wx:for-item="genresItem">{{genresItem}} / </block>
+                        </view>
+                        <view class="txt">评分: <text class="c-red">{{item.rating.average}}</text></view>
+                    </view>
+                </navigator>
+            </block>
+            <view class="loading" hidden="{{loadingHidden}}"></view>
+            <view class="errorTips" hidden="{{loadingHidden === false}}">-- 没有更多了 --</view>
+        </scroll-view>
+    </block>
+</view>

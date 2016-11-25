@@ -1,0 +1,39 @@
+<!--adview模板-->
+<!--data: infos[{avatar, name, time, content, adimages}]-->
+<template name="adview">
+<view class="adview" bindtap="clickOnAdView" data-index="{{index}}" id="{{index}}" style="margin-top:{{vinteval}}rpx;">
+    <view class="userview">
+        <image class="avatarview" src="{{user.avatar.square}}"></image>
+        <view class="introview">
+            <text class="namelabel">{{user.nick}}</text>
+            <text class="introlabel">{{date}}</text>
+        </view>
+    </view>
+    <view class="contentview">
+        <text>{{description}}</text>
+    </view>
+    <scroll-view wx:if="{{images.length>0}}" scroll-x="true" class="imagesview">
+        <block wx:for="{{images}}" wx:key="imageshey">
+            <image class="imageview" src="{{item.square}}"></image>
+        </block>
+    </scroll-view>
+    <view class="extroview">
+        <view class="leftview">
+            <image src="../../resource/images/icon-location.png"></image>
+            <text>{{city}}</text>
+        </view>
+        <view class="rightview">
+            <image src="../../resource/images/icon-applicant.png"></image>
+            <text>{{applicationCount}}</text>
+        </view>
+        <view class="rightview">
+            <image src="../../resource/images/icon-comment.png"></image>
+            <text>{{commentNum}}</text>
+        </view>
+        <view class="rightview">
+            <image src="../../resource/images/icon-heart.png"></image>
+            <text>{{likeCount}}</text>
+        </view>
+    </view>
+</view>
+</template>

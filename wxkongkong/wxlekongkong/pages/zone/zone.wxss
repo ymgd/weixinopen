@@ -1,0 +1,7 @@
+@import "../../templates/adview.wxss";
+@import "../../templates/loadingmoreview.wxss";
+
+.bannerimage {
+    width: 100%;
+    height: 180rpx;
+}

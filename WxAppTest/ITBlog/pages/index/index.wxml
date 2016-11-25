@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="list">
+    <!--文章列表模板 begin-->
+    <template name="listitem">
+        <navigator url="../../pages/detail/detail?title=navigate" hover-class="navigator-hover">
+            <view class="imgs">
+                <image src="{{fistImg}}" class="in-img" background-size="cover" model="scaleToFill"></image>
+            </view>
+            <view class="infos">
+                <view class="title">{{title}}</view>
+                <view class="date">更新:{{date}}</view>
+                <view class="classification">分类:{{category}}</view>
+            </view>
+        </navigator>
+    </template>
+    <!--文章列表模板 end-->
+    <!--循环输出列表 begin-->
+    <block wx:for="{{newList}}" class="cell">
+        <template is="listitem" data="{{...item}}" />
+    </block>
+    <!--循环输出列表 end-->
+</view>

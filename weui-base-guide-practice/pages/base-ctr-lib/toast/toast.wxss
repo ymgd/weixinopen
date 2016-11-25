@@ -1,0 +1,32 @@
+.container {
+    background:#ffffff;
+}
+.main {
+    padding:16rpx;
+}
+.header {
+    border-bottom: 2rpx solid;
+    height: 50rpx;
+    line-height:50rpx;
+    opacity: .4;
+}
+
+.content{
+    margin:20rpx 40rpx;
+}
+
+.a-row {
+    margin:37rpx 13rpx;
+}
+
+.title {
+    text-transform: capitalize;
+    display:inline-block;
+    padding: 7rpx;
+    opacity: .4;
+    font-size:26rpx;
+}
+
+button {
+    margin: 7rpx;
+}

@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="pane-hero text-center bg-soft flex-column">
+    <view class="mb10">
+      <image src="{{supplier.img}}" class="avatar" mode="aspectFill"></image>
+    </view>
+    <text class="text-h2 mb5">{{supplier.name}}</text>
+    <text class="text-h4 c-gray">{{supplier.address}}</text>
+  </view>
+  <navigator url="item?id={{item.id}}" wx:for="{{items}}" wx:key="id">
+  	<view class="list-item border-top">
+  	  <image class="list-item-thumbnail" src="{{item.img}}" mode="aspectFill"></image>
+  	  <view class="list-item-content flex-column">
+  	  	<text class="text-h3 single-line">{{item.title}}</text>
+  	  	<view>
+  	  		<text class="text-h4 c-gray">售价：</text><text class="text-h4 text-bold c-red">￥{{item.price}}</text>
+  	  	</view>
+  	  </view>
+  	</view>
+  </navigator>
+</view>

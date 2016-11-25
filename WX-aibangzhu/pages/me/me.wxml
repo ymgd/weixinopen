@@ -1,0 +1,75 @@
+<view class="container">
+  <!--<include src="../template/profile.wxml" />
+  -->
+  <view class="profile-main">
+    <image class="profile-photo" src="/image/Default Avatar.png"></image>
+    <text class="main-content">小叮当</text>
+  </view>
+  <view class="table-block">
+    <view class="table-row">
+      <image class="small-mark" src="/image/Rectangle.png"></image>
+      <text class="main-description">邻里活动</text>
+      <view class="rigth-wrap">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+    <view class="table-row">
+      <image class="small-mark" src="/image/Rectangle.png"></image>
+      <text class="main-description">社区通知</text>
+      <view class="rigth-wrap">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+    <view class="table-row">
+      <image class="small-mark" src="/image/Rectangle.png"></image>
+      <text class="main-description">邻里求助</text>
+      <view class="rigth-wrap">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="table-block">
+    <view class="table-row">
+      <image class="small-mark" src="/image/Rectangle.png"></image>
+      <text class="main-description">邻里活动</text>
+      <view class="rigth-wrap">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="table-block">
+    <view class="table-row">
+      <image class="small-mark" src="/image/Rectangle.png"></image>
+      <text class="main-description">我的帮助</text>
+      <view class="rigth-wrap">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+    <view class="table-row">
+      <image class="small-mark" src="/image/Rectangle.png"></image>
+      <text class="main-description">我的社区</text>
+      <view class="rigth-wrap">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+    <view class="table-row">
+      <image class="small-mark" src="/image/Rectangle.png"></image>
+      <text class="main-description">我的验证</text>
+      <view class="rigth-wrap">
+        <view class="info-mark">12</view>
+        <image class="arrow-right-img" src="/image/Chevron.png"></image>
+      </view>
+    </view>
+    <view class="table-row">
+      <image class="small-mark" src="/image/Rectangle.png"></image>
+      <text class="main-description">关于爱帮助</text>
+      <image class="arrow-right-img" src="/image/Chevron.png"></image>
+    </view>
+  </view>
+</view>

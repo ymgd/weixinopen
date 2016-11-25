@@ -1,0 +1,9 @@
+Page({
+    data:{
+        type:'default',
+        status:'false'
+    },
+    inputChange:function(e){
+        console.log(e.detail);
+    }
+})

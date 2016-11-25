@@ -1,0 +1,34 @@
+.mod-test {
+    height: 100%;
+}
+.mod-test .title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 80rpx;
+}
+.mod-test .title .tab {
+    position: relative;
+    height: 80rpx;
+    color: #ccc;
+    line-height: 80rpx;
+}
+.mod-test .title .tab.active {
+    color: #515151;
+    transition: all 0.5s ease-in;
+}
+.mod-test .title .tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5rpx;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.mod-test .pages {
+    height: 100%;
+    margin-top: 20rpx;
+}

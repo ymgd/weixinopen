@@ -1,0 +1,7 @@
+<view class="component-container">
+    <view class="desc">子组件</view>
+    <input 
+        value="{{childInputVal}}"
+        placeholder="输入内容后自动更新父容器文本内容"
+        bindinput="inputChange" />
+</view>

@@ -1,0 +1,44 @@
+/*.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.textStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer {
+  margin-top: 200px;
+}*/
+
+.profile-photo{
+  width: 120rpx;
+  height: 120rpx;
+}
+.profile-main{
+  padding-top: 70rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.small-mark{
+  width: 72rpx;
+  height: 72rpx;
+}
+.rigth-wrap{
+  display: flex;
+  align-items: center;
+  padding-left: 230rpx;
+  justify-content: flex-end;
+}
+.main-description{
+  padding-left: 20rpx;
+}

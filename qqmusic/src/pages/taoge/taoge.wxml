@@ -1,0 +1,43 @@
+
+<view class="tg-img">
+    <view class="tg-top-info">
+        <view class="tg-top-info-inner">
+            <view class="tg-top-info-text">
+                <view class="tg-top-info-title">{{dissname}}</view>
+                <view class="tg-top-info-base">
+                    <text>{{visitnum}} 万人播放</text>
+                    <text> 来自：{{nick}}</text>
+                </view>
+            </view>
+            <view class="tg-top-play" bindtap="mainTopTap"></view>
+        </view>
+    </view>
+    <image class="tg-img-i" mode="aspectFit" src="{{imgUrl}}"></image>
+    <view class="tg-top-b"></view>
+</view>
+<view class="song-list" style="background:{{listBgColor}}">
+    <view class="song-item" wx:for="{{songList}}" wx:key="unique" data-data="{{item}}" data-index="{{index}}" bindtap="musicItemTap">
+        <view class="song-item-title">{{item.title}}</view>
+        <view class="song-item-text">
+            <block wx:for="{{item.singer}}"  wx:key="unique">
+                <block wx:if="{{index!=0}}">|</block>
+                {{item.name}}
+            </block>
+            ·{{item.album.title}}·{{item.album.subtitle}}
+        </view>
+    </view>
+</view>
+
+<view class="lable-box" style="background:{{listBgColor}}">
+    <view class="lable-title">
+        标签
+    </view>
+    <view class="lable-box-inner">
+        <text class="labedl-item">流行</text>
+        <text class="labedl-item">经典好歌</text>
+    </view>
+</view>
+<view class="short-info-box" style="background:{{listBgColor}}">
+    <view class="short-info-title">简介</view>
+    <view class="short-info-inner">{{desc}}</view>
+</view>

@@ -1,0 +1,109 @@
+
+.carousel_img{
+    width: 100%;
+    height: 400rpx;
+}
+
+.merchandiseName{
+    text-align: center;
+    border-bottom: solid;
+    border-color: #d5d5d5;
+    border-radius: 2px;
+    border-width: 0.5px;
+    padding: 2rpx;
+}
+
+.merchandiseName_text{
+    font-family: STKaiti;
+    font-size: 40rpx;
+    color: #5e5e5e;
+}
+
+/*.price{
+    width: 100%;
+    float: left;
+    border-bottom: solid;
+    border-color: #d5d5d5;
+    border-radius: 2px;
+    border-width: 0.5px;
+    padding: 5rpx;
+}*/
+
+.price{
+    width: 100%;
+    float: left;
+    border-bottom: solid;
+    border-color: #d5d5d5;
+    border-radius: 2px;
+    border-width: 0.5px;
+    padding: 5rpx;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.currentPrice{
+    margin: 1rpx;
+    width: 32%;
+    float: left;
+}
+.currentPrice_img{
+    height: 70rpx;
+    width: 70rpx;
+}
+
+.currentPrice_text{
+    font-size: 40rpx;
+    color: #FF4500;
+    font-weight: 100;
+    margin-left: 10rpx;
+}
+
+.description{
+    width: 750rpx;
+    border-top: solid;
+    border-color: #d5d5d5;
+    border-radius: 2px;
+    border-width: 0.5px;
+    padding: 2rpx;
+}
+
+.description_title{
+    font-size: 35rpx;
+    color: #5e5e5e;
+    width: 700rpx;
+    float: left;
+    margin-bottom: 10rpx;
+    padding: 5rpx;
+}
+
+.description_content{
+    font-size: 30rpx;
+    color: #5e5e5e;
+    width: 50%;
+    margin: 10rpx;
+}
+
+.description_img{
+    height: 40rpx;
+    width: 40rpx;
+    float: left;
+}
+
+.userName_img{
+    height: 70rpx;
+    width: 70rpx;
+    float: left;
+}
+
+.userName{
+    float: left;
+    height: 100rpx;
+    width: 50%;
+    margin-top: 10rpx;
+}
+.userName_text{
+    font-family: STKaiti;
+    color: #5e5e5e;
+    font-size: 35rpx;
+    margin-top: 40rpx;
+}

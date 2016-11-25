@@ -1,0 +1,8 @@
+<page>
+    <view class="comment">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <textarea type="type" placeholder="在这里描述你的问题!" name="message" maxlength="140" bindinput="inputChange" auto-focus />
+            <button form-type="submit" type="{{type}}" disabled="{{status}}">发表</button>
+        </form>
+    </view>
+</page>

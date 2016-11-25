@@ -1,0 +1,24 @@
+.kbutton {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#44403f), to(#474342));
+    height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+    border-radius: 10rpx;
+    border: 1px solid #2e2c2b;
+    border-top-color: #605a59;
+    color: #dcd9d8;
+    width: 18rem;
+    margin-bottom: .5rem;
+
+}
+.kbutton:active {
+    background: #423e3d;
+}
+.kbutton text {
+    width: 100%;
+    text-align: center;
+    font-size: .7rem;
+    text-shadow: 1px 1px 1px #343231;
+}

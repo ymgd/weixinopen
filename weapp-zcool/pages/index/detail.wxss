@@ -1,0 +1,15 @@
+.detail-image {
+  width: 100%;
+  height: 3378rpx;
+}
+.detail-title {
+  font-size: 32rpx;
+  padding: 30rpx 20rpx;
+}
+.detail-author {
+  padding: 10rpx 20rpx 25rpx;
+  margin-bottom: 30rpx;
+  font-size: 26rpx;
+  color: #b6b6b6;
+  border-bottom: 1px solid #e4e6e6;
+}

@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/order/order",
+    "pages/personal/personal",
+    "pages/home/goodInfo"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#f9443e",
+    "navigationBarTitleText": "红领巾早餐",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath":"images/tab_home_normal@2x.png",
+      "selectedIconPath":"images/tab_home_selected@2x.png"
+    }, {
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath":"images/tab_order_normal@2x.png",
+      "selectedIconPath":"images/tab_order_selected@2x.png"
+    },{
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath":"images/tab_person_normal@2x.png",
+      "selectedIconPath":"images/tab_person_selected@2x.png"
+    }]
+  }
+}

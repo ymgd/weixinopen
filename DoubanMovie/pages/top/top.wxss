@@ -1,0 +1,61 @@
+.content {
+    width: 550rpx;
+    height: 300rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.hot-item{
+    width: 750rpx;
+    height: 300rpx;
+    border-top: 1rpx solid #ccc;
+    margin-top: 5rpx;
+    display: flex;
+    background: #ffffff;
+    flex-wrap: wrap;
+}
+.hot-item image {
+    width: 200rpx;
+    height: 300rpx;
+}
+.title {
+    width: 450rpx;
+    padding-left: 10rpx;
+    padding-top: 20rpx;
+    font-family: "sans-serif";
+}
+.image {
+    width: 200rpx;
+    height: 300rpx;
+}
+.average {
+    width: 50rpx;
+    height: 50rpx;
+    padding-top: 20rpx;
+    color: crimson;
+    text-align: right;
+}
+.genres-title {
+    width: 80rpx;
+    height: 50rpx;
+    padding-left: 10rpx;
+    padding-top: 20rpx;
+    font-size: 25rpx;
+    font-family: "sans-serif";
+    color: black;
+}
+.genres {
+    width: 450rpx;
+    height: 50rpx;
+    padding-top: 20rpx;
+    font-size: 25rpx;
+    font-family: "sans-serif";
+    color: #ccc;
+}
+.casts {
+    height: 50rpx;
+    padding-left: 10rpx;
+    font-size: 25rpx;
+    font-family: "sans-serif";
+    color: #ccc;
+}

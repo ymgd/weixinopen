@@ -1,0 +1,45 @@
+<!--latest.wxml-->
+<import src="../../template/emoticon.wxml"/><!--menu模板-->
+<import src="../../template/menu.wxml"/><!--menu模板-->
+<!--<view class="mask" catchtap="eventBase" data-action="mask"  wx:if="{{displayMask}}"   ></view>-->
+<view class="container"  catchtap="eventBase" data-action="all" >
+    
+    <!--表情图-->
+    <template is="emoticon" data="{{emoticon,windowHeight}}"></template>
+ 
+    <!--表情目录-->
+    <view class="category">
+            <view catchtap="eventBase"  data-action="selectAllCategory" >
+                <label  class=" {{selectCategory.category_id == null ? 'select' : ''}}">全部</label> 
+            </view>
+            <scroll-view  scroll-x="true" >
+                <block wx:for="{{category}}" 
+                    wx:for-item="c_name">
+                    <label catchtap="eventBase"  data-action="selectCategory" data-select_category_id="{{c_name.category_id}}"
+                    class="{{selectCategory.category_id == c_name.category_id ? 'select' : ''}}">{{c_name.name}}</label>
+                </block>
+                <label catchtap="eventBase"  data-action="navigateToCategory">+</label>
+                <!--</view>-->
+            </scroll-view>
+        </view>
+
+   
+    <!--点击表情，弹出菜单-->
+    <template is="menu" data="{{menuType,MENU_TYPE,menuWidth,menuHeight,selectEmoticon,pageName}}"></template>
+
+    <!--图片、视频上传-->
+    <view class="upload">
+        <view wx:if="{{isUpload}}">
+            <image  src="../../images/upload.gif" background-size="cover" 
+             catchtap="eventBase"  data-action="btnIsUpload"></image>
+        </view>
+        <view wx:else>
+            <image  src="../../images/ic_action_add.png" background-size="cover" 
+             catchtap="eventBase"  data-action="btnUploadV2"></image>
+        </view>
+    </view>
+  
+    
+</view>
+
+

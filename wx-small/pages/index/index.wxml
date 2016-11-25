@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container main-content">
+  <!--<view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>-->
+  <!--用户信息-->
+  <include src="userinfo/userinfo.wxml" />
+  <!--日历-->
+  <include src="calendar/calendar.wxml" />
+  <!--用户资产-->
+  <include src="userassets/userassets.wxml" />
+  <!--白条-->
+  <include src="baitiao/baitiao.wxml" />
+  <!--投资-->
+  <include src="investment/investment.wxml" />
+  <!--你的全部服务-->
+  <include src="servicearea/servicearea.wxml" />
+  <!--新闻-->
+  <include src="newsarea/newsarea.wxml" />
+</view>

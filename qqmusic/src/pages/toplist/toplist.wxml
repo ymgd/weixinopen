@@ -1,0 +1,29 @@
+<view class="tl-top">
+    <view class="tl-top-info">
+        <view class="tl-top-info-inner">
+            <view class="tl-top-info-text">
+                <view class="tl-top-info-title">{{topinfo.ListName}}</view>
+                <view class="tl-top-info-base">
+                    <text>{{update_time}}  更新</text>
+                </view>
+            </view>
+            <view class="tl-top-play" bindtap="mainTopTap"></view>
+        </view>
+    </view>
+    <image class="tl-img"  mode="aspectFit" src="{{topinfo.pic_album}}"></image>
+    <view class="tl-top-b"></view>
+</view>
+
+<view class="song-list" style="background:{{listBgColor}}">
+    <view class="song-item" wx:for="{{songList}}" wx:key="unique" data-data="{{item.data}}" data-index="{{index}}" bindtap="musicItemTap">
+        <text class="song-index">{{index+1}}</text>
+        <view class="song-item-title">{{item.name}}</view>
+        <view class="song-item-text">
+            <block wx:for="{{item.singer}}"  wx:key="unique">
+                <block wx:if="{{index!=0}}">|</block>
+                {{item.name}}
+            </block>
+            ·{{item.album.name}}
+        </view>
+    </view>
+</view>

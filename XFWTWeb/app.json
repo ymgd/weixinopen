@@ -1,0 +1,40 @@
+{
+    "pages":[
+             "pages/index/index",
+             "pages/course/index",
+             "pages/msg/index",
+             "pages/me/index",
+             "pages/logs/logs"
+             ],
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "学富网",
+        "navigationBarBackgroundColor": "red",
+        "backgroundColor": "#fbf9fe",
+        "enablePullDownRefresh":true
+    },
+    "tabBar": {
+        "color": "gray",
+        "selectedColor": "red",
+        "borderStyle": "white",
+        "backgroundColor": "#ffffff",
+        "list": [{
+                 "pagePath": "pages/index/index",
+                 "iconPath": "image/0225chooseD.png",
+                 "selectedIconPath": "image/0225chooseS.png",
+                 "text": "首页"
+                 }, {
+                 "pagePath": "pages/course/index",
+                 "iconPath": "image/0226courseD.png",
+                 "selectedIconPath": "image/0226courseS.png",
+                 "text": "课程"
+                 },  {
+                 "pagePath": "pages/me/index",
+                 "iconPath": "image/0225mineD.png",
+                 "selectedIconPath": "image/0225mineS.png",
+                 "text": "我的"
+                 }]
+    },
+    "debug": true
+}

@@ -1,0 +1,11 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <view class="top-bar">
+                <view wx:for="{{tabs}}" wx:for-item="tab" id="{{tab.id}}" class="top-bar-item {{tab.current}}" bindtap="tabTap">
+                    <text>{{tab.name}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/toplist/toplist",
+    "pages/cdinfo/cdinfo",
+    "pages/play/play",
+    "pages/taoge/taoge"
+  ],
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#31c27c",
+    "navigationBarTitleText": "QQ Music",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#f7f7f7"
+  }
+}

@@ -1,0 +1,32 @@
+page {
+    height: 100%;
+}
+
+.main {
+    margin-top:0;
+}
+
+.content {
+    padding:30rpx;
+}
+
+.body {
+    margin-top: 114rpx;
+}
+
+.header {
+    text-align: center;
+}
+
+.title {
+    font-size:80rpx;
+    color:#3DC61F;
+}
+
+button {
+    margin: 30rpx;
+}
+
+.modal-cust-content {
+    text-align: center;
+}

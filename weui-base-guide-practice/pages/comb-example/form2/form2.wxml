@@ -1,0 +1,56 @@
+<view class="container">
+    <view class="main">
+        <view class="content gap-top">
+            <form bindsubmit="formSubmit">
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>国家/地区</text>
+                            </view>
+                            <view class="col col2">
+                                <view>
+                                    <picker mode="selector" range="{{country_picker.items}}" value="{{country_picker.index}}" bindchange="pickerChange">
+                                        <text>{{country_picker.items[country_picker.index]}}</text>
+                                    </picker>
+                                </view>
+                                <view>
+                                    <image class="col-icon" src="{{chevron_png.src}}"/>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1 bd-right">
+                                <text>+ 86</text>
+                            </view>
+                            <view class="col col2">
+                                <input type="text" placeholder="请填写手机号码" placeholder-class="plh"/>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section-wrp">
+                    <view class="section">
+                        <view class="section-row">
+                            <view class="col col1">
+                                <text>选项</text>
+                            </view>
+                            <view class="col col2">
+                                <input type="text" placeholder="Wording可配置" placeholder-class="plh"/>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="section btn-area">
+                    <view class="section-row">
+                        <button type="primary" disabled="{{button.disabled}}">{{button.content}}</button>
+                    </view>
+                </view>
+            </form>
+        </view>
+    </view>
+</view>

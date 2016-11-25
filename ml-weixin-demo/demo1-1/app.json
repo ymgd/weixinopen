@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f33446",
+    "navigationBarTitleText": "旺财谷微信小程序",
+    "navigationBarTextStyle":"white"
+  }
+}

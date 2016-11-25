@@ -1,0 +1,11 @@
+.container {
+    /*margin: 20rpx;*/
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+
+.page-head {
+    display: flex; 
+    align-items: center;
+    flex-direction: column; 
+    margin: 50rpx;
+}

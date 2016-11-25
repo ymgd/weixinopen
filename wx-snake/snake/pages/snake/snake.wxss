@@ -1,0 +1,62 @@
+.score {
+    display: flex;
+}
+
+.title{
+    flex:1;
+    height: 150rpx;
+    line-height: 150rpx;
+    background:deepskyblue;
+    margin: 40rpx 20rpx 40rpx 40rpx;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 8rpx;
+}
+
+
+.scoredetail{
+    flex:1;
+    height: 150rpx;
+    background:#eee4da;
+    margin: 40rpx 20rpx;
+    text-align: center;
+    border-radius: 8rpx;
+}
+
+.scoredetail:last-child{
+    margin-right: 40rpx;
+}
+
+.scoredesc{
+    font-size: 0.8rem;
+    line-height: 60rpx;
+}
+.scorenumber{
+    line-height: 70rpx;
+}
+.ground{
+    width: 660rpx;
+    height:840rpx;
+    margin-left: 40rpx;
+}
+.block{
+    width:30rpx;
+    height:30rpx;
+    float: left;
+    background: #ccc;
+}
+.rows{
+    width: 660rpx;
+    height:30rpx;
+}
+.control{
+    width: 100%;
+    height: 100%;
+}
+.block_1{
+    background:#f00;
+}
+.block_2{
+    background:#0f0;
+}

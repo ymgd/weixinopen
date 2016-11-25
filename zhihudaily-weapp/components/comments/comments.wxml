@@ -1,0 +1,21 @@
+
+<!--评论模板-->
+<template name="comments_item">
+    <view class="comments_item">
+        <view class="fl_left avatar">
+            <image class="userinfo_avatar" src="{{avatar}}"></image>
+        </view>
+        <view class="fl_left author_content">
+            <view>
+                <view class="fl_left">{{author}}</view>
+                <view class="fl_right">
+                    <image src="../../images/ic_answer_like_normal.png" style="width:22px;height:22px;"></image>
+                    {{likes}}
+                </view>
+                <view class="clearfix"></view>
+            </view>
+            <view>{{content}}</view>
+        </view>
+        <view class="clearfix"></view>
+    </view>
+</template>

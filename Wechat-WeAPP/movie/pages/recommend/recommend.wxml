@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="content">
+ <import src="../template/movietpl.wxml"/>
+ <block wx:for="{{movie}}">
+    <template is="movie" data="{{item}}"/>
+ </block>
+ <view class="movie-end" hidden="{{hiddenEnd}}">:-(这已经是最后一条数据了:-(</view>
+</view>

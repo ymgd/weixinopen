@@ -1,0 +1,51 @@
+{
+  "name": "ness-tool",
+  "version": "0.0.9",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "babel-node src/index.js",
+    "build": "babel src --out-dir lib"
+  },
+  "author": {
+    "name": "jackyon",
+    "email": "jackyon.com@gmail.com",
+    "url": "http://www.findjo.com"
+  },
+  "bin": {
+    "ness": "lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackyon/ness"
+  },
+  "preferGlobal": "true",
+  "license": "ISC",
+  "description": "在微信小程序中使用cssnext",
+  "devDependencies": {
+    "babel-cli": "^6.7.5",
+    "babel-core": "^6.7.6",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-remove-comments": "^2.0.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.6.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.7.4",
+    "babel-plugin-transform-es2015-parameters": "^6.7.0",
+    "babel-plugin-transform-es2015-spread": "^6.6.5",
+    "babel-plugin-transform-strict-mode": "^6.6.5",
+    "babel-preset-es2015": "^6.13.2"
+  },
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "minimatch": "^3.0.3",
+    "recursive-readdir": "^2.1.0",
+    "rimraf": "^2.5.4",
+    "yargs": "^6.4.0"
+  },
+  "keywords": [
+    "微信小程序",
+    "nextcss",
+    "scss",
+    "sass",
+    "ness"
+  ]
+}

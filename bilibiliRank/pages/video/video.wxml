@@ -1,0 +1,16 @@
+<view class="container">
+	<view class="header">
+		<image src="{{info.cover}}"></image>
+	</view>
+	<view class="content">
+		<view class="title">{{info.title}}</view>
+		<span class="type">{{info.type}}</span>
+		<view class="up">UP主: {{info.author}}</view>
+		<view class="desc">{{info.desc}}</view>
+	</view>
+	<view class="info">
+		<view class="info-list play"><view class="icon icon-play"></view><view class="info-text">{{info.play}}</view></view>
+		<view class="info-list danmu"><view class="icon icon-danmu"></view><view class="info-text">{{info.danmaku}}</view></view>
+		<view class="info-list coins"><view class="icon icon-coins"></view><view class="info-text">{{info.coins}}</view></view>
+	</view>
+</view>

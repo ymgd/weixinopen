@@ -1,0 +1,23 @@
+<View class="page">
+
+    <view class="container" style="align-items: center">
+        <icon class="section" type="success" size="70"></icon>
+        <view class="text_area">
+        <text >
+            查询城市: {{city}}
+        </text>
+        <text>
+            空气质量指数: {{aqi}}
+        </text>
+        <text >
+            空气质量等级: {{level}}
+        </text>
+        <text>
+            主要污染物: {{core}}
+        </text>
+       <text >
+            查询时间: {{time}}
+        </text>
+        </view>
+    </view>
+</View>

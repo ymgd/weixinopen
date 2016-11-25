@@ -1,0 +1,22 @@
+@import "../../../public/android_diff.wxss";
+
+.section.section-list {
+    padding: 0;
+}
+
+.section-list .row{
+    display: flex;
+    align-items: center;
+    height: 88rpx;
+    padding-left: 40rpx;
+    padding-right: 30rpx;
+    border-bottom: 2rpx solid #e8e8e8;
+}
+
+.section-list .row:last-child {
+    border-bottom: none;
+}
+
+.row.with-2cols {
+    justify-content: space-between;
+}

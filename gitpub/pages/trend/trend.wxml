@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+
+<view class="section wrap" wx:if="{{!loading}}">
+    <view class="section-lan">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{language}}" class="picker">
+        <view>
+         {{language[lanIndex]}}
+         <image class="trend-ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC" />
+        </view>
+      </picker>
+      <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{language}}" class="picker">
+        <view>
+         {{language[index]}}
+         <image class="trend-ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC" />
+        </view>
+      </picker> -->
+    </view>
+
+
+    <view class="flex-item" wx:for="{{trendData}}" wx:key="unique">
+
+    	<!-- <image class="trend-ico" src="https://avatars1.githubusercontent.com/u/9892522?v=3&s=40" /> -->
+    	<view class="trend-cen-text">
+	    	<text class="trend-text">{{item.full_name}}</text>
+	    	<view class="trend-detail">{{item.description}}</view>
+    	</view>
+    	<view class="trend-star">
+    		<text class="trend-star-text">{{item.stargazers_count}}</text>
+    		<image class="trend-star-img" src="../../img/star_hover.png"/>
+    	</view>
+
+    </view>
+</view>

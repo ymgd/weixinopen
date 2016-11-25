@@ -1,0 +1,11 @@
+<view class="index">
+  <block wx:for="{{categories}}" wx:key="cateName">
+    <view class="main_cate" bindtap="categoryToggle" id="{{item._id}}">
+      <text>{{item.cateName}}</text>
+    </view>
+    <view class="sub-cates {{item.open ? 'sub-cates-open' : ''}}">
+      查看全部
+      <view class="close-panel" bindtap="closeSubCate" id="{{item._id}}">收起</view>
+    </view>
+  </block>
+</view>

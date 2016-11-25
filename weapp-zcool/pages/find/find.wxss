@@ -1,0 +1,69 @@
+.tab-nav {
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  white-space: nowrap;
+  border-bottom: 1px solid #e4e6e6;
+}
+.scroll-view-item {
+  display: inline-block;
+  width: 120rpx;
+  height: 76rpx;
+  font-size: 28rpx;
+  line-height: 76rpx;
+  text-align: center;
+}
+.tab-nav-active {
+  border-bottom:4rpx solid #ffd102;
+}
+.find-content {
+  height: 1085rpx;
+}
+.find-list {
+  padding: 15rpx;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #e4e6e6;
+}
+.find-image {
+  float: left;
+  width: 260rpx;
+  height: 195rpx;
+  margin-right: 25rpx;
+}
+.find-info {
+  position: relative;
+  overflow: hidden;
+  height: 195rpx;
+}
+.find-title {
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+.find-author {
+  font-size: 28rpx;
+  color: #666;
+}
+.find-number {
+  position: absolute;
+  bottom: 0;
+  font-size: 26rpx;
+  color: #b6b6b6;
+}
+.icon-look, .icon-like {
+  position: relative;
+  top: 5rpx;
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 10rpx;
+}
+.ml20 {
+  margin-left: 20rpx;
+}
+.load-more {
+  text-align: center;
+  margin: 30rpx 0;
+  font-size: 26rpx;
+  color: #b6b6b6;
+}

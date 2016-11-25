@@ -1,0 +1,27 @@
+{
+  "name": "html-to-wxml",
+  "main": "index.js",
+  "description": "html内容转成微信小程序可以展示的结构",
+  "version": "0.0.1",
+  "author": {
+    "name": "kevenfeng",
+    "email": "ke7infeng@gmail.com"
+  },
+  "contributors": [
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevenfeng/html-to-wxml.git"
+  },
+  "keywords": [
+    "html",
+    "wxml"
+  ],
+  "dependencies": {
+  },
+  "bugs": {
+    "url": "https://github.com/kevenfeng/html-to-wxml/issues"
+  },
+  "homepage": "http://kevenfeng.com"
+}

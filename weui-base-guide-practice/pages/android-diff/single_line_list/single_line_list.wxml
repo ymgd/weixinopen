@@ -1,0 +1,45 @@
+<view class="container">
+    <view class="main">
+        <view class="content gap-top">
+            <view class="section-wrp">
+                <view class="section section-list">
+                    <view class="row">
+                        <text>标为未读</text>
+                    </view>
+                    <view class="row">
+                        <text>置顶聊天</text>
+                    </view>
+                    <view class="row">
+                        <text>删除该聊天</text>
+                    </view>
+                </view>
+            </view>
+            <view class="section-wrp">
+                <view class="section section-list">
+                    <view class="row">
+                        <text>退出当前帐号</text>
+                    </view>
+                    <view class="row">
+                        <text>关闭微信</text>
+                    </view>
+                </view>
+            </view>
+             <view class="section-wrp">
+                <view class="section section-list">
+                    <view class="row with-2cols">
+                        <text>单行列表</text>
+                        <switch class='android-sw' checked />
+                    </view>
+                    <view class="row with-2cols">
+                        <text>单行列表</text>
+                        <switch class='android-sw' />
+                    </view>
+                    <view class="row with-2cols">
+                        <text>单行列表</text>
+                        <text class="sub">备注</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

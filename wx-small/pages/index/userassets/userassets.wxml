@@ -1,0 +1,33 @@
+ <view class="jrm-flex-column jrm-w100p userassets-area bg-fff">
+   <view class="jrm-flex-row jrm-w100p userassets-top">
+     <view class="jrm-flex-column userassets-num-area">
+       <text class="userassets-desp1">我的资产</text>
+       <text class="userassets-desp2">115,599.00</text>
+       <text class="userassets-desp3">今日收益 +385.00</text>
+    </view>
+      
+    <view class="userassets-right">
+      <image class="userassets-right-icon" src="./images/eye@2x.png" background-size="cover"></image>
+    </view>
+   </view>
+   <view class="jrm-flex-row jrm-w100p userassets-grid">
+     <view class="jrm-flex-column userassets-grid-item border-right-1rpx">
+       <text class="userassets-desp5">定期</text>
+       <text class="userassets-desp6">102,000.00</text>      
+     </view>      
+     <view class="jrm-flex-column userassets-grid-item">
+       <text class="userassets-desp5">基金</text>
+       <text class="userassets-desp6">5,599.00</text>      
+     </view>   
+   </view>
+   <view class="jrm-flex-row jrm-w100p userassets-grid">
+     <view class="jrm-flex-column userassets-grid-item border-right-1rpx">
+       <text class="userassets-desp5">京东小金库</text>
+       <text class="userassets-desp6">立即开通</text>      
+     </view>      
+     <view class="jrm-flex-column userassets-grid-item">
+       <text class="userassets-desp5">小白理财</text>
+       <text class="userassets-desp6">1,571.00</text>      
+     </view>   
+   </view>
+  </view>

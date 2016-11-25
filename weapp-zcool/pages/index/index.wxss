@@ -1,0 +1,54 @@
+/**index.wxss**/
+swiper {
+  height: 300rpx;
+}
+.slide-image {
+  width: 100%;
+  height: 300rpx;
+}
+.index-list {
+  background: #fff;
+}
+.acticle-item {
+  padding: 12px 12px;
+  overflow: hidden;
+  border-bottom: 1px solid #d6d6d6;
+}
+.no-bottom {
+  border-bottom: none;
+}
+.acticle-image {
+  float: left;
+  width: 251rpx;
+  height: 189rpx;
+  margin-right: 20rpx;
+}
+.acticle-info {
+  position: relative;
+  height: 189rpx;
+  overflow: hidden;
+}
+.acticle-title {
+  font-size: 32rpx;
+  margin-bottom: 30rpx;
+}
+.acticle-author {
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  color: #b6b6b6;
+}
+.acticle-look {
+  position: absolute;
+  bottom: 0;
+  color: #b6b6b6;
+  font-size: 26rpx;
+}
+.acticle-icons {
+  position: relative;
+  top: 3rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.ml10 {
+  margin-left: 10rpx;
+}

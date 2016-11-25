@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="page-head">
+        <text>商品查看</text>
+    </view>
+    <view class="item-display">
+        <image src="/image/{{item.image}}.jpg"></image>
+        <text>{{item.name}}</text>
+        <text>￥{{item.price}}</text>
+        <text>“{{item.description}}”</text>
+        <view class="status">
+            <label id="label-in-favorite">
+                <icon type="{{item.inFavorite ? 'success' : 'cancel'}}" size="20" color="{{item.inFavorite ? 'green' : grayColor}}"></icon>
+                <text class="{{item.inFavorite? '' : 'text-nonactive'}}">已收藏</text>
+            </label>
+            <label id="label-in-cart">
+                <icon type="{{item.inCartQuantity > 0 ? 'success' : 'cancel'}}" size="20" color="{{item.inCartQuantity > 0 ? 'green' : grayColor}}"></icon>
+                <text class="{{item.inCartQuantity > 0 ? '' : 'text-nonactive'}}">已在购物车{{
+                    item.inCartQuantity > 0 ? '(' + item.inCartQuantity + ')' : ''}}</text>
+            </label>
+        </view>
+        <button type="primary" bindtap="addToCart">放进购物车</button>
+        <button type="primary" bindtap="addToFavorite">{{item.inFavorite? "取消收藏" : "收藏一下"}}</button>
+    </view>
+    
+</view>

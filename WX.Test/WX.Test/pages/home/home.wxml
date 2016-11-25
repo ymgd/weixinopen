@@ -1,0 +1,36 @@
+<view class="page">
+    <!--header-->
+    <view class="user_header">
+        <view class="user_info" bindtap="userIconClicked">
+            <image class="user_icon" src="{{userInfo.avatarUrl}}" ></image>
+            <text class="user_nickName">{{userInfo.nickName}}</text>
+        </view>
+    </view>
+    <!--三个操作按钮-->
+    <view class="items_action" style="flex-direction: row; display: flex">
+        <view class="flex_item {{item.classes}}" wx:for="{{items}}">
+            <navigator url="{{item.navigatePage}}?title={{item.pageMessage}}" hover-class="navigator-hover">
+                <image class="action_icon" src="{{item.imageUrl}}"></image>
+                <text class="action_title">{{item.title}}</text>
+            </navigator>
+        </view>
+    </view>
+    <!--cell-->
+    <view class="cells">
+        <view class="cell_content" wx:for="{{cells}}">
+            <!--<view data-cellType="{{item.cellType}}" bindtap="cellClicked">-->
+            <navigator url="{{item.navigatePage}}?title={{item.pageMessage}}" hover-class="navigator-hover">
+                <text class="cell_title">{{item.title}}</text>
+                <image class="cell_arrow" src="{{item.imageUrl}}"></image>
+            </navigator>
+            <!--</view>-->
+        </view>
+    </view>
+ <!--actionSheet选取头像-->
+    <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+        <block wx:for="{{actionSheetItems}}">
+          <action-sheet-item class="item" bindtap="actionSheetClicked" data-actionSheetItemStr="{{item}}">{{item}}</action-sheet-item>
+        </block>
+        <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+    </action-sheet>
+</view>

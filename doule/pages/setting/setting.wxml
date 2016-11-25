@@ -1,0 +1,3 @@
+<view>
+	<text>{{pageName}}</text>
+</view>

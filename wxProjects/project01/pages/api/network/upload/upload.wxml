@@ -1,0 +1,21 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+        <template is="header" 
+        data="{{title:'wx.uploadFile',desc:'将本地资源上传到开发者服务器。如页面通过 wx.chooseImage 等接口获取到一个本地资源的临时文件路径后，可通过此接口将本地资源上传到指定服务器。客户端发起一个 HTTPS POST 请求，其中 Content-Type 为 multipart/form-data 。'}}"/>
+      
+        <button type="primary"  bindtap="uploadImage"> uploadImage </button>
+         <text class="api-txt col3 f32">
+            路径：{{msg}}
+        </text>
+
+         <text class="api-titile bgf mt">wx.downloadFile</text>
+        <text class="api-txt col3 f32">
+        下载文件资源到本地。客户端直接发起一个 HTTP GET 请求，返回文件的本地临时路径。
+        </text>
+         <button type="primary"  bindtap="download"> download </button>
+         <text class="api-txt col3 f32">
+            路径：{{msg}}
+        </text>
+    </view>
+</view>

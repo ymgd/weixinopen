@@ -1,0 +1,19 @@
+<template name="item">
+	<view class="item" bindtap="gotoDetail" data-itemid="{{item.number}}">
+		<view class="item-info">
+			<view class="item-title">
+				{{item.title}}
+			</view>
+			<view class="item-desc">
+				{{item.summary}}
+			</view>
+		</view>
+	</view>
+</template>
+
+<template name="list">
+	<view class="list" wx:if="{{list.length > 0}}">
+		<template wx:for="{{list}}" wx:key="number" is="item" data="{{item: item}}" />
+	</view>
+	<loading wx:else>加载中...</loading>
+</template>

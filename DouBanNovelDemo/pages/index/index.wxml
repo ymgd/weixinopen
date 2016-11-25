@@ -1,0 +1,23 @@
+
+<loading hidden="{{!loading}}">
+	{{title}}
+</loading>
+
+<scroll-view scroll-y="true" class="page-body" >
+	<navigator url="../book/book?id={{item.id}}" wx:for="{{books}}">
+		<view class="item">
+			<image class="poster" src="{{item.images.small}}"></image>
+			<view class="meta">
+				<text class="title">{{item.title}}</text>
+				<view class="author">
+					<text wx:for="{{item.author}}">{{item}}</text>
+				</view>
+				<text class="subtitle">{{item.publisher}} / {{item.pubdate}}</text>
+			</view>
+			<view class="rating">
+				<text>{{item.rating.average}}</text>
+			</view>
+		</view>
+	</navigator>
+
+</scroll-view>

@@ -1,0 +1,16 @@
+.banner{width:100%;height:7.547rem;overflow: hidden;}
+.banner .pic{width:100%;height:100%;}
+.banner .title{font-size:1.467rem;color:#fff;width:100%;top:2rem;left:0;z-index: 1;}
+.banner .tag{font-size:0.747rem;color:#fff;width:100%;top:4.3rem;left:0;z-index: 1;}
+
+.yuyue_box image{width:12.667rem;height:3.68rem;background: none;margin:1rem auto 1rem;display: block;}
+
+.content{display:block;margin-top:2rem;}
+.content title{display: block;font-size:16px;color:#333;}
+.content subtitle{display: block;font-size:12px;}
+.content .box{margin-top: 0.5rem;text-align: center;font-size:14px;color:#fff;}
+.content .box text{display:block;}
+.content .box .t1{margin-top:1rem;}
+.content .box1{line-height: 4.2rem;}
+.content .flex1{height:4.2rem;background: #eee;background-size:cover;}
+.content image{width:680rpx;height:376rpx;}

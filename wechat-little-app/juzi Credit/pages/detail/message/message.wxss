@@ -1,0 +1,48 @@
+
+.scroll-view_H{
+     white-space: nowrap;
+     
+ }
+/*.scroll-view-item{
+    height: 500px;
+}*/
+.scroll-view-item_H{
+    display: inline-block;
+    width: 100%;
+    height: 1200rpx;
+}
+
+/*顶部标题布局*/
+.page__hd{
+    display: flex;
+    justify-content: space-between;
+    height: 50rpx;  
+    
+}
+
+
+.page__title{
+  
+  width: 100%;  
+  text-align: center;
+}
+
+
+
+
+/*几个子视图背景色*/
+.bc_green{
+    background-color: #09BB07;
+}
+.bc_red{
+    background-color: #F76260;
+}
+.bc_blue{
+    background-color: #10AEFF;
+}
+.bc_yellow{
+    background-color: #FFBE00;
+}
+.bc_gray{
+    background-color: #C9C9C9;
+}

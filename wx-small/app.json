@@ -1,0 +1,114 @@
+{
+  "pages":[
+    "pages/index/index",     
+    "pages/licai/licai",        
+    "pages/touzi/touzi",
+    "pages/baitiao/baitiao",
+    "pages/zhongchou/zhongchou",    
+    "pages/logs/logs",
+
+    "page/component/index",
+    "page/component/component-pages/action-sheet/action-sheet",
+    "page/component/component-pages/audio/audio",
+    "page/component/component-pages/button/button",
+    "page/component/component-pages/canvas/canvas",
+    "page/component/component-pages/checkbox/checkbox",
+    "page/component/component-pages/form/form",
+    "page/component/component-pages/icon/icon",
+    "page/component/component-pages/image/image",
+    "page/component/component-pages/input/input",
+    "page/component/component-pages/map/map",
+    "page/component/component-pages/modal/modal",
+    "page/component/component-pages/navigator/navigator",
+    "page/component/component-pages/progress/progress",
+    "page/component/component-pages/radio/radio",
+    "page/component/component-pages/scroll-view/scroll-view",
+    "page/component/component-pages/slider/slider",
+    "page/component/component-pages/switch/switch",
+    "page/component/component-pages/text/text",
+    "page/component/component-pages/toast/toast",
+    "page/component/component-pages/video/video",
+    "page/component/component-pages/view/view",
+    "page/component/component-pages/swiper/swiper",
+    "page/component/component-pages/slide-tab/slide-tab",
+    "page/component/component-pages/label/label",
+    "page/component/component-pages/loading/loading",
+    "page/component/component-pages/navigator/navigate",
+    "page/component/component-pages/navigator/redirect",
+    "page/component/component-pages/picker/picker",
+
+    "page/API/index/index",
+
+    "page/API/login/login",
+    "page/API/get-user-info/get-user-info",
+    "page/API/request-payment/request-payment",
+
+    "page/API/set-navigation-bar-title/set-navigation-bar-title",
+    "page/API/navigation-bar-loading/navigation-bar-loading",
+    "page/API/navigator/navigator",
+    "page/API/pull-down-refresh/pull-down-refresh",
+    "page/API/animation/animation",
+
+    "page/API/get-network-type/get-network-type",
+    "page/API/get-system-info/get-system-info",
+    "page/API/on-compass-change/on-compass-change",
+
+    "page/API/request/request",
+    "page/API/web-socket/web-socket",
+    "page/API/upload-file/upload-file",
+    "page/API/download-file/download-file",
+    
+
+    "page/API/image/image",
+    "page/API/voice/voice",
+    "page/API/file/file",
+    "page/API/on-accelerometer-change/on-accelerometer-change",
+    "page/API/canvas/canvas",
+    "page/API/background-audio/background-audio",
+    "page/API/video/video",
+
+    "page/API/get-location/get-location",
+    "page/API/open-location/open-location",
+
+    "page/API/storage/storage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#999",
+    "selectedColor":"#508CEE",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "position":"bottom",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "我",
+      "iconPath":"images/icon/wo-normal.png",
+      "selectedIconPath":"images/icon/wo-select.png"
+    },{
+      "pagePath": "pages/baitiao/baitiao",
+      "text": "白条",
+      "iconPath":"images/icon/bt-normal.png",
+      "selectedIconPath":"images/icon/bt-select.png"
+    },{
+      "pagePath": "page/API/index/index",
+      "text": "接口",
+      "iconPath":"images/icon/tz-normal.png",
+      "selectedIconPath":"images/icon/tz-select.png"
+    }, {
+      "pagePath": "page/component/index",
+      "text": "WXUI",
+      "iconPath":"images/icon/zc-normal.png",
+      "selectedIconPath":"images/icon/zc-select.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

@@ -1,0 +1,13 @@
+<import src="../../../templates/header.wxml"/>
+<view class="container">
+    <view class="section mt">
+       
+         <template is="header" 
+        data="{{title:'导航跳转测试页面',desc:'导航'}}"/>
+
+        <view class="showLocation">
+            <text>参数: {{query}}</text>
+        </view>
+      
+    </view>
+</view>

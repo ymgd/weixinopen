@@ -1,0 +1,9 @@
+{
+    "pages":[
+        "page/page"
+    ],
+    "window":{
+        "navigationBarBackgroundColor": "#202020"
+    },
+    "debug": false
+}

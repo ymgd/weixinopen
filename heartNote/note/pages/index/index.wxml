@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="banner" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view class="scrollArea" scroll-y="true" scroll-top="{{scrollTop}}">
+  <block wx:for="{{noteData}}">
+    <view class="list">
+      <view class="title">{{item.title}}</view>
+      <view class="content">{{item.content}}</view>
+      <view class="date">{{item.date}}</view>
+    </view>
+  </block>
+</scroll-view>
+<view >
+  <button class="write-btn" bindtap="goWrite"> 抒写心情,记录美好 </button>
+</view>
+<button class="float-btn" bindtap="clear">清<button/>

@@ -1,0 +1,28 @@
+<!--
+  topics: Array
+-->
+<template name="topicsList">
+  <view class="topic-list">
+    <block wx:for="{{topics}}" wx:key="id" wx:for-item="topic">
+      <navigator url="../topic/topic?id={{topic.id}}" hover-class="navigator-hover">
+        <view class="item-content">
+          <view class="item-media">
+            <image mode="aspectFill" src="{{topic.author.avatar_url}}"></image>
+          </view>
+          <view class="item-inner">
+            <view class="item-title">{{topic.title}}</view>
+            <view class="item-title-row">
+              <view>{{topic.reply_count}}/{{topic.visit_count}}</view>
+              <view>
+                <text class="ui-pl20">{{topic.tab}}</text>
+                <text wx:if="{{topic.good}}" class="ui-color-green">精</text>
+                <text wx:if="{{topic.top}}" class="ui-color-red">顶</text>
+              </view>
+              <view>{{topic.create_at}}</view>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</template>

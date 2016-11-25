@@ -1,0 +1,18 @@
+/** 父容器样式 **/
+
+.button-container {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.value-container {
+  margin-top: 30px;
+  width: 90%;
+  padding: 5px;
+  border: 1px solid #cdcdcd;
+  border-radius: 15px;
+  color: #333;
+}
+
+/** 引入子组件样式 **/
+@import "../../components/myComponent/index.wxss"

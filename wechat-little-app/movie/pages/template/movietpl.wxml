@@ -1,0 +1,24 @@
+<template name="movies">
+
+<block wx:for="{{movies}}">
+<!--分割线-->
+   <view class="hr"></view>
+
+    <view class="movie" bindtap="detail" id="{{item.id}}">
+      <view class="pic">
+          <image src="{{item.images.medium}}" mode="aspectFit"/>
+      </view>
+      
+      <view class="movie-info">
+          <view class="base-info">
+          <text>{{item.text}}</text>
+          </view>
+      </view>
+    </view>
+
+   <!--分割线-->
+   <view class="hr"></view>
+</block>
+
+
+</template>

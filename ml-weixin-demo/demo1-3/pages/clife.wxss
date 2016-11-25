@@ -1,0 +1,51 @@
+.clife{
+    width: 100%;
+    height: 100%;
+    background-color: #F1BA30;
+}
+.risk_score{
+    /*min-width:300px;*/
+    height: 17rem;
+
+/* iphone4\5 */
+    /*width: 90%;*/
+    /*margin-left: 15%;*/
+    
+    /*background: limegreen;*/
+    /*display: flex;*/
+    flex-direction: column;
+    /*justify-content:center;*/
+    /*align-items: center;*/
+
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+
+}
+/*view .risk_score {
+    margin-left: 5%;
+}*/
+.xinyong{
+    /*margin-left: 3.5rem;*/
+    float: left;
+    color:white;
+    font-size:20;
+    font-family:微软雅黑;
+}
+.shenghuo{
+    /*margin-left:5rem;*/
+    float:right;
+    color:white;
+    font-size:20;
+    font-family:微软雅黑;
+}

@@ -1,0 +1,81 @@
+<view>
+    <scroll-view scroll-y="true" bindscroll="scroolTop" bindscrolltolower="downLoad" scroll-top="{{scrollTop}}" class="layout"> <!--  scroll-top="{{scrollTop}}" -->
+        <!-- banner start -->
+        <view class="banner">
+            <swiper indicator-dots="{{bannerConfig.indicatorDots}}" autoplay="{{bannerConfig.autoplay}}" interval="{{bannerConfig.interval}}" duration="{{bannerConfig.duration}}">
+                <block wx:for="{{bannerItems}}" wx:key="">
+                    <swiper-item>
+                        <navigator url="../component/detail/detail?id={{item.goodId}}&platformId={{item.platformId}}">
+                            <image src="{{item.imgUrl}}" class="slide-image" mode="{{bannerConfig.mode}}" width="750" height="300"/>
+                        </navigator>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <!-- / banner end -->
+
+        <!-- activity start -->
+        <view class="home-hot">
+            <navigator class="hot-left" url="../hot/hot">
+                <image mode="" src="{{activityUrls[0]}}"></image>
+            </navigator>
+
+            <view class="hot-right">
+                <navigator class="hot-right-top" url="../activity/tenGroup/tenGroup">
+                    <image mode="aspectFit" src="{{activityUrls[1]}}"></image>
+                </navigator>
+
+                <view class="hot-right-btm">
+                    <navigator class="hot-right-btm-left" url="../activity/discount/discount">
+                        <image mode="aspectFit" src="{{activityUrls[2]}}"></image>
+                    </navigator>
+                    
+                    <navigator class="hot-right-btm-right" url="../activity/lists/lists">
+                        <image mode="aspectFit" src="{{activityUrls[3]}}"></image>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+        <!-- / activity end -->
+
+        <!-- navbar start -->
+        <view class="navbar-box" id="navbar-box">
+            <scroll-view class="navbar scroll-view_H {{fixed ? fixed : ''}}" scroll-x="true" style="width: 100%;">
+                <navigator wx:for="{{navItems}}" wx:key="" class="{{item.className != '' ? item.className : ''}}" 
+                data-tabIndex="{{item.tabIndex}}" data-category="{{item.category}}" bindtap="navLink">{{item.text}}</navigator>
+            </scroll-view>
+        </view>
+        <!-- / navbar end -->
+
+        <!-- list start -->
+        <view class="lists-box">
+            <navigator wx:for="{{list}}" wx:key="" class="item-box" url="../component/detail/detail?id={{item.goods_id}}">
+                <view class="item-img">
+                    <image src="{{item.goods_img}}"></image>
+                </view>
+                <text class="item-title">{{item.goods_title}}</text>
+                <text class="item-content">{{item.goods_promote_info}}</text>
+                <view class="item-btm">
+                    <view class="item-buy-people">
+                        <view class="iconfont icon-people"></view>
+                        {{item.goods_group_size}}人团
+                    </view>
+                    <view class="item-price">¥{{item.goods_group_price}}</view>
+                </view>
+            </navigator>
+        </view>
+        <!-- / list end -->
+
+        <!-- loading start -->
+        <view class="body-view">
+            <loading hidden="{{hidden}}">
+                加载中...
+            </loading>
+        </view>
+        <!-- / loading end -->
+
+        <!-- prompt message start -->
+        <text class="{{tipShow ? 'promptShow' : 'promptHide'}}">没有更多内容了</text>
+        <!-- / prompt message end -->
+    </scroll-view>
+</view>

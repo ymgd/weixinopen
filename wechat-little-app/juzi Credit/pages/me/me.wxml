@@ -1,0 +1,35 @@
+<navigator class="widget" url="../detail/userInfo/userInfo">
+    <image class="widget__leftIcon" src="../../images/testHead.png" background-size="cover" />
+    <text class="widget__name">用户名</text>
+    <image class="widget__arrow" src="../../images/arrowright.png" background-size="cover" />
+    
+</navigator>
+
+<navigator class="widget" url="../detail/schedule/schedule">
+    <image class="widget__leftIcon" src="../../images/icon-schedule.png" background-size="cover" />
+    <text class="widget__name">审批进度</text>
+    <image class="widget__arrow" src="../../images/arrowright.png" background-size="cover" />
+    
+</navigator>
+
+<navigator class="widget" url="../detail/message/message">
+    <image class="widget__leftIcon" src="../../images/icon-message.png" background-size="cover" />
+    <text class="widget__name">消息中心</text>
+    <image class="widget__arrow" src="../../images/arrowright.png" background-size="cover" />
+    
+</navigator>
+
+
+<navigator class="widget" url="../detail/question/question">
+    <image class="widget__leftIcon" src="../../images/icon-question.png" background-size="cover" />
+    <text class="widget__name">常见问题</text>
+    <image class="widget__arrow" src="../../images/arrowright.png" background-size="cover" />
+    
+</navigator>
+
+<navigator class="widget" url="../detail/aboutUs/aboutUs">
+    <image class="widget__leftIcon" src="../../images/icon-info.png" background-size="cover" />
+    <text class="widget__name">关于我们</text>
+    <image class="widget__arrow" src="../../images/arrowright.png" background-size="cover" />
+    
+</navigator>

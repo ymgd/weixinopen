@@ -1,0 +1,53 @@
+/**app.wxss**/
+text{
+    font-family: "微软雅黑";
+}
+.nav {
+    position: fixed;
+    z-index: 999;
+    width: 752rpx;
+    height: 180rpx;
+    bottom: 0rpx;
+    left: -1rpx;
+    padding: 10rpx 25rpx 0;
+    box-sizing:border-box;
+}
+.navCont{
+    float: left;
+    height: 80rpx;
+    width: 210rpx;
+    margin: 0 10rpx;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+    color: #fff;
+    box-sizing:border-box;
+    font-family: "微软雅黑";
+}
+.nav_hover{
+    border-bottom: 5rpx solid #333;
+}
+/*public end*/
+.red{
+    background-color: rgb(235, 110, 98);
+}
+.orange{
+    background-color: rgb(249, 163, 108);
+}
+.yellow{
+    background-color: rgb(245, 173, 85);
+}
+.green{
+    background-color: rgb(50, 184, 176);
+}
+.navy{
+    background-color: rgb(130, 148, 160);
+}
+.blue{
+    background-color: rgb(129, 210, 238);
+}
+.purple{
+    background-color: rgb(193,153,209);
+}
+/*color end*/

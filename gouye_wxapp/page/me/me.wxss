@@ -1,0 +1,28 @@
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbf9fe;
+  margin-top: 10rpx;
+}
+.me-item {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  padding: 20rpx 20rpx 20rpx 0;
+  margin-left: 40rpx;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+}
+.me-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.me-item-text-name {
+  font-size: 30rpx;
+}
+.me-item-arrow {
+  width: 32rpx;
+  height: 32rpx;
+}

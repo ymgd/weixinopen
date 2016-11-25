@@ -1,0 +1,42 @@
+<view class="pageContainer">
+    <view class="container"  wx:for="{{items}}">
+        <!--用户信息和内容-->
+        <view class="userInfoContainer">
+            <view class="userInfo">
+                <image class="userIcon" src="{{item.u.header[0]}}"></image>
+                <view class="userNameAndTime">
+                    <view class="userName">{{item.u.name}}</view>
+                    <view class="time">{{item.passtime}}</view>
+                </view>
+            </view>
+            <view class="content">{{item.text}}</view>
+        </view>
+        <!--中间四个按钮-->
+        <view class="operrationContainer">
+            <view class="operrationButton" data-Index="{{index}}" bindtap="likeOperration">
+                <image class="operrationIcon" src="/resource/images/like.png"></image>
+                <view class="operrationTitle">{{item.up}}</view>
+            </view>
+            <view class="operrationButton" data-Index="{{index}}" bindtap="dowmOperration">
+                <image class="operrationIcon" src="/resource/images/noLike.png"></image>
+                <view class="operrationTitle">{{item.down}}</view>
+            </view>
+            <view class="operrationButton" data-Index="{{index}}" bindtap="shareOperration">
+                <image class="operrationIcon" src="/resource/images/share.png"></image>
+                <view class="operrationTitle">{{item.forward}}</view>
+            </view>
+            <view class="operrationButton" data-Index="{{index}}" bindtap="commentOperration">
+                <image class="operrationIcon" src="/resource/images/command.png"></image>
+                <view class="operrationTitle">{{item.comment}}</view>
+            </view>
+        </view>
+        <!--评论-->
+        <view class="allCommentsContainer">
+            <view class="comments" wx:for="{{item.top_comments}}">
+                 <view class="commentContainer"><text class="commentUser">{{item.u.name}}</text>:{{item.content}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<button class="loadMoreDataButton" loading="{{isShowLoadMoreAnimation}}" style="visibility:{{isShowLoadMoreButton}}">{{loadMoreDataTitle}}</button>
+<toast hidden="{{toastHidden}}" bindchange="toastChange">{{shareUserName}}</toast>

@@ -1,0 +1,6 @@
+<scroll-view scroll-y="true" class="list" bindscrolltolower="handleLoadMore">
+    <text>{{message}}</text>
+  <view class="lll"  wx:for="{{massage}}" wx:for-item="item" bindtap="bindViewTap" bindtap="tapName">
+	  <!--<image style=" width: 80rpx;height: 80rpx;margin: 20rpx;" src="http://tnfs.tngou.net/image{{item.img}}" mode="aspectFill"></image>-->
+  </view>
+</scroll-view>

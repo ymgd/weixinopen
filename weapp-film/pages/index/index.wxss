@@ -1,0 +1,96 @@
+/**index.wxss**/
+.flex-box{
+	display: flex;
+}
+.flex-btn{
+	flex: 1;
+}
+.list{
+	border-bottom: 1rpx solid #e5e5e5;
+	padding: 30rpx;
+}
+.list-img{
+	width: 130rpx;
+	height: 180rpx;
+	margin-right: 20rpx;
+	position: relative;
+}
+.list-img .img{
+	width: 130rpx;
+	height: 180rpx;
+}
+.list-play{
+	position: absolute;
+	left: 45rpx;
+	top: 70rpx;
+	width: 40rpx;
+	height: 40rpx;
+}
+.list-title{
+	height: 52rpx;
+}
+.list-title text{
+	font-size: 18px;
+	line-height: 52rpx;
+	color: #000;
+}
+.i-imax{
+	width: 52rpx;
+	height: 28rpx;
+	margin-left: 10rpx;
+}
+.list-size{
+	height: 40rpx;
+	font-size: 14px;
+	color: #8a869e;
+}
+.list-size .star{
+	width: 100rpx;
+	height: 20rpx;
+	background: url(../../images/i-star.png) no-repeat;
+	background-size: 100rpx;
+	display: inline-block;
+	margin-right: 10rpx;
+}
+.stars{
+	width: 100rpx;
+	height: 20rpx;
+	background: url(../../images/i-stars.png) no-repeat;
+	background-size: 100rpx;
+	float: left;
+	margin-right: 10rpx;
+}
+.list-brief{
+	font-size: 12px;
+	line-height: 48rpx;
+	color: #666;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 400rpx;
+}
+.list-brief .wish{
+	color: #108ee9;
+	border-right: 1rpx solid #666;
+	padding-right: 10rpx;
+	margin-right: 10rpx;
+}
+.list-main{
+	position: relative;
+}
+.list-sale{
+	position: absolute;
+	right: 10rpx;
+	top: 70rpx;
+}
+.list-sale text{
+	padding: 10rpx 18rpx;
+	border: 1rpx solid #37b7ff;
+	font-size: 14px;
+	color: #37b7ff;
+	border-radius: 6rpx;
+}
+.list-sale .pre-sale{
+	border: 1rpx solid #fea54c;
+	color: #fea54c;
+}

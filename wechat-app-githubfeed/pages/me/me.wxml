@@ -1,0 +1,17 @@
+<view class="container col me">
+  <view class="item">
+    <image src="{{avatar_url}}" class="avatar"></image>
+    <text class="flex1">{{username}}</text>
+    <image src="/images/me/angle-right.png" class="icon-right"></image>
+  </view>
+  <view class="item">
+    <image src="/images/me/edit.png" class="icon"></image>
+    <text class="flex1">Edit Profile</text>
+    <image src="/images/me/angle-right.png" class="icon-right"></image>
+  </view>
+  <view class="item" bindtap="goRouteSettings">
+    <image src="/images/me/cog.png" class="icon"></image>
+    <text class="flex1">Settings</text>
+    <image src="/images/me/angle-right.png" class="icon-right"></image>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="clife">
+    <view style="text-align:center;width:100%;padding-top:40px;">
+        <text style="font-size:1rem;color:white;font-family:微软雅黑">-- 因为信用  所以简单 --</text>
+    </view>
+    <view style="width:100%;margin-top:10%;"> 
+        <canvas class="risk_score" style="width:80%;margin:0 10%;" canvas-id="scoreCanvas" binderror="scoreCanvasOnError"></canvas>
+    </view>
+
+    <view style="width:100%;" >
+        <view style="width:70%;margin:0 15%;">
+            <!--<image class="xinyong" style="width: 80px; height: 40px;"  src="../img/xinyong.png"></image>-->
+            <text class="xinyong " bindTap="bindToApply">信用提升</text>
+            <text class="shenghuo ">信用生活</text>
+        </view>
+    </view>
+    
+
+
+
+</view>

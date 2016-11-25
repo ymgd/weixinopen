@@ -1,0 +1,56 @@
+@import "../../component/button.wxss";
+/**index.wxss**/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.title {
+    color: #fff;
+}
+
+.btns {
+    margin-top: 100rpx;
+}
+
+.btns button {
+    margin-bottom: 100rpx;
+}
+
+.btns .btn_one {
+    color:#999;
+    border:1px solid #999;
+    background-color: #1e1c1d;
+}
+.btns .btn_two {
+    color: #999;
+    border: 1px solid #999;
+    background-color: #005a9a;
+}
+.button-hover{
+    opacity:0.5;
+}
+
+swiper {
+    width: 100%;
+}
+
+swiper swiper-item  image{
+    width: 100%;
+}
+
+.logo {
+    width: 200rpx;
+    height: 200rpx;
+    /*box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);*/
+    border-radius: 50%;
+}
+
+.btn_group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150rpx;
+    width: 100%;
+}

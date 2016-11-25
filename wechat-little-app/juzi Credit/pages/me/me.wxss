@@ -1,0 +1,46 @@
+/*每一个导航条样式*/
+page{
+    background: rgb(217, 217, 217);
+}
+.widget{
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: white;
+    height: 16px;
+
+    margin-top: 20px;
+
+}
+
+.widget__name{
+
+    position: absolute;
+    top: 14px;
+    left: 50px;
+    width: 100px;
+   
+
+}
+
+/*右边箭头样式*/
+.widget__arrow{
+    position: absolute;
+    top: 14px;
+    right: 22px;
+    width: 14px;
+    height: 16px;
+}
+
+/*左边图标样式*/
+.widget__leftIcon{
+
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    width: 20px;
+    height: 20px;
+
+}

@@ -1,0 +1,25 @@
+<view class="add_box">
+	<view class="add_bt_box">
+		<button class="concel" type="default" size="mini" plain="true">取消</button>
+		<button class="submit" type="primary" size="mini" bindtap="addNew">发送</button>
+	</view>
+	<textarea placeholder="分享新鲜事" auto-focus auto-height placeholder-style="color:#9e9e9e;" bindblur="textContent" />
+	<!--
+	<view class="pic_box">
+		<view class="pic_list">
+			<image class="pic_list_img" src="../../images/add.png"></image>
+		</view>
+		<view class="pic_list">
+			<image class="pic_list_img" src="../../images/add.png"></image>
+		</view>
+		<view class="pic_list">
+			<image class="pic_list_img" src="../../images/add.png"></image>
+		</view>		
+	</view>
+	-->
+</view>
+<!--
+<view class="footer">
+	<image class="add_img" src="../../images/add.png"></image>
+</view>
+-->

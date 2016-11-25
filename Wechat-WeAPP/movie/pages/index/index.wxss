@@ -1,0 +1,27 @@
+.content{
+  background: #3a3a3a;
+  min-height: 100%;
+}
+.movie{
+  display:flex;
+  flex-direction:row;
+  padding:10rpx 20rpx;
+  border-bottom: 1px rgba(255,255,255,.2) solid;
+}
+.pic{
+  float:left;
+}
+.pic image{
+  width:210rpx;
+  height:315rpx;
+}
+.movie-info{
+  padding-left: 40rpx;
+  float:left;
+  width:460rpx;
+}
+.base-info{
+  color:#fff;
+  font-size:12px;
+  line-height:20px;
+}

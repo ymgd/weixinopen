@@ -1,0 +1,62 @@
+{
+ "pages":[
+    "pages/news/newsIndex",
+    "pages/private/privateIndex",
+    "pages/holeInone/holeinoneindex",
+    "pages/discover/discover",
+    "pages/user/userCenterIndex"
+  ],
+  "window":{
+     "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "每日高尔夫",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/news/newsIndex",
+      "text": "新闻",
+      "iconPath": "images/news.png",
+      "selectedIconPath": "images/news-actived.png"
+    },
+    {
+      "pagePath": "pages/private/privateIndex",
+      "text": "订场服务",
+      "iconPath": "images/private.png",
+      "selectedIconPath": "images/private-actived.png"
+    },
+    {
+      "pagePath": "pages/holeInone/holeinoneindex",
+      "text": "一杆进洞",
+      "iconPath": "images/hole.png",
+      "selectedIconPath": "images/hole-actived.png"
+    },
+    {
+      "pagePath": "pages/discover/discover",
+      "text": "发现",
+      "iconPath": "images/discover.png",
+      "selectedIconPath": "images/discover-actived.png"
+    },
+    {
+      "pagePath": "pages/user/userCenterIndex",
+      "text": "我",
+      "iconPath": "images/user.png",
+      "selectedIconPath": "images/user-actived.png"
+    }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+
+}

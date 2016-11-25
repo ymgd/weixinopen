@@ -1,0 +1,46 @@
+<view class="container">
+
+  <!-- 播放控制区  bindlongtap="playNext"-->
+  <view class="music-main" bindtouchstart="catchtouchstart" bindtouchmove="catchtouchmove" bindtouchend="catchtouchend">
+      <view style="width:100%;">
+           <view class="music-section__ctn">
+             <image class="singer-pic" style="width: 420rpx;height:420rpx;transform:rotate({{singerPicRotate}}deg);" 
+             src="{{singerpic}}" mode="aspectFill" binderror="loadErrorHandler" bindtap="playOrPauseHandler"></image>
+           </view>
+           <view style="font-size:15px;margin:20rpx 0;">{{songname}}</view>
+           <view style="font-size:11px;">{{singername}}</view>
+           <view style="padding-top:20rpx;visibility:{{sliderVisibility}};color:#F7941D;font-size:11px;" >{{curPosition}}</view>
+           
+      </view>
+  
+  </view>
+  <!-- 底部情绪选择区 -->
+  <view class="music-bottom">
+
+    <view style="text-align:center;padding:16rpx 0;border-bottom:1px solid #eee;">
+      <text class="music-type-title">{{musicTypeTitle}}</text>
+    </view>
+  
+    <view wx:for="{{musicTypes}}">
+       
+        <view class="music-section" bindtap="musicTypeHandler" data-index="{{index}}"  wx:if="{{index == selectIndex}}">
+            <view class="music-section__ctn">
+               <image src="{{item.src}}_select.png"></image>
+            </view>            
+            <view class="music-section__title" wx:if="{{index == selectIndex}}"> 
+                <text style="color:#F7941D;">{{item.title}}</text>
+            </view>
+        </view>
+        <view class="music-section" bindtap="musicTypeHandler" data-index="{{index}}"  wx:else>
+             <view class="music-section__ctn">
+               <image src="{{item.src}}.png"></image>
+            </view>
+            <view class="music-section__title"> 
+                <text>{{item.title}}</text>
+            </view>
+        </view>
+           
+    </view>
+
+  </view>
+</view>

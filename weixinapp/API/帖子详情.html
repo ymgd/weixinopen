@@ -1,0 +1,1410 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="telephone=no" name="format-detection" />
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>测试投票帖子</title>
+        <script>
+        var _hmt = _hmt || [];
+        var vzanBrowser = {
+            versions: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {/*移动终端浏览器版本信息*/
+                    trident: u.indexOf('Trident') > -1, /*IE内核*/
+                    presto: u.indexOf('Presto') > -1, /*opera内核*/
+                    webKit: u.indexOf('AppleWebKit') > -1, /*苹果、谷歌内核*/
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,/*火狐内核*/
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), /*是否为移动终端*/
+                    ios: !!u.match(/i[^;]+;( U;)? CPU.+Mac OS X/), /*ios终端*/
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, /*android终端或者uc浏览器*/
+                    iPhone: u.indexOf('iPhone') > -1 || (u.indexOf('Mac') > -1 && u.indexOf('Macintosh') < 0), /*是否为iPhone或者QQHD浏览器*/
+                    iPad: u.indexOf('iPad') > -1, /*是否iPad*/
+                    webApp: u.indexOf('Safari') == -1, /*是否web应该程序，没有头部与底部*/
+                    WindowsWechat: u.indexOf('WindowsWechat') > 0/*是否web应该程序，没有头部与底部*/
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        if (!(vzanBrowser.versions.WindowsWechat || vzanBrowser.versions.android || vzanBrowser.versions.iPhone || (vzanBrowser.versions.android && String(navigator.platform).indexOf("Linux") > -1))) {
+            var result = window.location.toString();
+            self.location = result.replace("//vzan", "//www.vzan");
+        }
+    
+        </script>
+        <script src="http://j.pengxun.cn/scripts/jquery2.1.4/jquery.min.js?v=160819"></script>
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script>
+        if ('' != '') {
+            wx.config({ debug: false, appId: "", timestamp: "", nonceStr: "", signature: "", jsApiList: ["checkJsApi", "onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareQZone", "onMenuShareWeibo", "hideMenuItems", "showMenuItems", "hideAllNonBaseMenuItem", "showAllNonBaseMenuItem", "translateVoice", "startRecord", "stopRecord", "onRecordEnd", "playVoice", "pauseVoice", "stopVoice", "uploadVoice", "downloadVoice", "chooseImage", "previewImage", "uploadImage", "downloadImage", "getNetworkType", "openLocation", "getLocation", "hideOptionMenu", "showOptionMenu", "closeWindow", "scanQRCode", "chooseWXPay", "openProductSpecificView", "addCard", "chooseCard", "openCard"] });
+        }
+    </script>
+        <script src="http://j.pengxun.cn/scripts/??layer.m/layer.m2.js,min/0407/utils-min.js,min/forummaster-min.js"></script>
+        <style>
+        .advtable {
+            background-color: white;
+        }
+
+            .advtable a {
+                color: #0c6ad4;
+                font-size: 14px;
+            }
+
+        .content-phoneNumber, .content-url {
+            color: #5a85ce;
+        }
+        /*投票开始*/
+        .index-vote-li {
+            height: 70px;
+            background: #f7f7f7;
+            margin: 10px 5px;
+        }
+
+        .index-vote {
+            width: 70px;
+            height: 70px;
+        }
+
+            .index-vote i {
+                width: 70px;
+                height: 70px;
+                display: inline-block;
+                background: url(http://i.pengxun.cn/content/images/vote_pic.jpg) no-repeat 0 0;
+                background-size: 100%;
+            }
+        /*投票结束*/
+        .index-templet-li {
+            height: 70px;
+            background: #f7f7f7;
+            margin: 10px 5px;
+        }
+
+        .index-templet {
+            width: 70px;
+            height: 70px;
+        }
+
+            .index-templet i {
+                width: 70px;
+                height: 70px;
+                display: inline-block;
+                background: url(http://i.pengxun.cn/content/tpl/templet_pic.jpg) no-repeat 0 0;
+                background-size: 100%;
+            }
+
+        .weui_actionsheet_menu {
+            max-height: 300px;
+            overflow: auto;
+        }
+    </style>
+        <style>
+            * {
+                max-width: 100%;
+            }
+
+            video {
+                width: 100% !important;
+                height: auto;
+            }
+        </style>
+        <link href="http://j.pengxun.cn/content/??css/layer/layer.css,weui/style/weui.min.css,css/min/0407/paytop-min.css,css/min/voice.min.css,css/min/base.min.css,css/min/0407/post-min.css,css/min/qqubb/qqbuu.min.css,css/min/0407/index-min.css,css/min/post-detail.min.css,css/min/0407/donation.min.css?v=0617" rel="stylesheet">
+
+    </head>
+    <body>
+        <input id="hidwsqurl" type="hidden" />
+        <input id="hidwxappid" type="hidden" />
+        <input id="currentVoiceId" type="hidden" value="" />
+        <input id="checkIsWeiXin" type="hidden" value="1" />
+        <style>
+    .bz .concern i {
+        background-image: url(http://i.pengxun.cn/content/images/concern.png);
+        background-size: 100%;
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+    }
+
+    .bz .concern p {
+        color: #858585;
+    }
+
+    .bz .concerned i {
+        background-image: url(http://i.pengxun.cn/content/images/concerned.png);
+        background-size: 100%;
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+    }
+
+    .bz .concerned p {
+        color: #17B5EE;
+    }
+
+    .slideBox {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .slideBox .hd {
+            height: 15px;
+            overflow: hidden;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            z-index: 1;
+        }
+
+            .slideBox .hd ul {
+                overflow: hidden;
+                zoom: 1;
+                float: left;
+            }
+
+                .slideBox .hd ul li {
+                    float: left;
+                    margin-right: 2px;
+                    width: 15px;
+                    height: 15px;
+                    line-height: 14px;
+                    text-align: center;
+                    background: #fff;
+                    cursor: pointer;
+                }
+
+                    .slideBox .hd ul li.on {
+                        background: #ff6699;
+                        color: #fff;
+                    }
+
+        .slideBox .bd {
+            position: relative;
+            height: 100%;
+            z-index: 0;
+        }
+
+            .slideBox .bd li {
+                zoom: 1;
+                vertical-align: middle;
+            }
+
+            .slideBox .bd img {
+                width: 100%;
+                border: none;
+                height: 90px;
+            }
+</style>
+        <!--模板文章样式-->
+        <style>
+    /*引导语紧跟*/
+    .instruct_0 {
+        display: inline-block;
+    }
+    /*引导语换行*/
+    .instruct_1 {
+        display: block;
+    }
+
+    #art_main {
+        width: 100%;
+        height: 100%;
+    }
+
+    #header {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 25px;
+        padding: 5px;
+    }
+</style>
+        <input id="hidShareInfo" type="hidden" value='{"title":"测试投票帖子","desc":"测试3号论坛。哈哈哈哈哈四婶是实话实说四婶实话实说","link":"/t/d-8554402","imgUrl":"http://i.pengxun.cn/upload/forum/2016725164254913.jpg"}' />
+        <input type="hidden" id="tplsectioncss" value="" />
+        <input type="hidden" id="tplartcss" value="" />
+        <input type="hidden" id="hiduserId" value="0" />
+        <input type="hidden" id="hidfId" value="3" />
+        <input type="hidden" id="hidisOauth" value="1" />
+        <input type="hidden" id="hidArtId" value="8554402" />
+        <input type="hidden" id="hidvoteId" value="0" />
+        <input type="hidden" id="artUserId" value="42962090" />
+        <!--顶部头条帖子详情-->
+        <div class="post-detail-title d-flex bz">
+            <div style="width:22px;">
+                <a style="display:block;" class="post-back-02" href="/f/s-3?vPageIndex=1&vSeeId=8554402"></a>
+            </div>
+            <p class="flex f-15rem" style="text-align:left;padding-left:8px;">
+                <a class="wzsl post-detail-title-f" href="/f/s-3?vPageIndex=1&vSeeId=8554402">测试微赞3号</a>
+                <i style="display: inline-block;overflow: hidden;">&#8722;</i>
+                <a class="wzsl post-detail-title-f" href="/f/s-3?vPageIndex=1&vSeeId=8554402&typeId=223738">新板块12</a>
+            </p>
+            <div style="text-align: right;">
+                <a href="javascript:;" class="f-12rem post-detail-focus temp-showqrcode-btn" data-qrcodeimg="http://i.pengxun.cn/upload/forum/2015101920732784.jpg">关注</a>
+            </div>
+        </div>
+        <div class="base-wrap" style="padding-bottom:50px;">
+            <!--首页帖子头像昵称-->
+            <div style="margin-bottom: 10px;margin-top:54px;">
+                <div id="slideBox" class="slideBox" style="display:none;">
+                    <div class="bd">
+                        <ul>
+                            <li>
+                                <img src="http://i.pengxun.cn/images/bms1/guanzhu/guanzhu_1.png" style="width:100%;" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-fff" id="conart-8554402">
+                    <!--帖主头像昵称时间浏览-->
+                    <ul style="padding: 8px 12px 8px;">
+                        <li class="fl" style="width: 40px;height: 40px;overflow:hidden;">
+                            <a href="/u/i-42962090">
+                                <img src="http://wx.qlogo.cn/mmopen/7hINACNJlZjQmHibJCwAVwCmzzZiaElXV6icSCWEvAJUEcGIicrrKQNYTULl3uhKQAWUUaFPU55oNzNiaEFPXHwypRwaicOd3dicIUp/132" style="width:100%;height:100%">
+                            </a>
+                        </li>
+                        <li style="padding-left: 10px;overflow: hidden;">
+                            <div class="f-14rem rel" style="padding-right: 15px;height: 20px;margin-top: 1px;">
+                                <label class="cleafix" style="display: block;">
+                                    <span class="index-poster-name fl wzsl" style="max-width:110px;height:20px;">美美144</span>
+                                    <div class="index-poster-kind" id="topic-state-8554402">
+                                        <span class="color-block f-11rem" style="background: #5bc3ff;">V.3</span>
+                                        <span class="icon-top-post"></span>
+                                    </div>
+                                </label>
+                                <span class="abs jiantouzhankai" data-setfrom="2" style="cursor:pointer;" data-artid="8554402" data-cphref="/cp/i-3?returl=%2ft%2fd-8554402%3fpageIndex%3d1&artid=8554402"></span>
+                            </div>
+                            <label class="f-11rem" style="display: block;margin-top: 2px;color: #cccccc;">
+                                <span>9-12</span>&nbsp;&nbsp;
+                                <span>浏览3234</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <!--帖主头像昵称时间浏览结束-->
+                    <!--帖子正文内容-->
+                    <!--投票-->
+                    <ul style="padding: 0 12px;">
+                        <li class="clearfix word-break" style="line-height: 150%;margin-bottom: 8px;">
+                            <p class="f-18rem" style="line-height: 180%;font-weight: bold;">测试投票帖子</p>
+                            <!--表单 begin-->
+                            <!--表单  end-->
+                            <div class="f-16rem temp-text-content" style="line-height:165%;">
+                                测试投票帖子
+                            </div>
+                        </li>
+                        <!--语音-->
+                        <!--照片-->
+                        <!--本地位置-->
+                        <!--赏一个-->
+                        <li style="text-align: center;padding-bottom:5px;">
+                                                    </li>
+                    </ul>
+                </div>
+                <div class="write-pl-bar temp-reply-hide">
+                    <div style="cursor:pointer;" class="fr f-12rem write-pl temp-reply-btn" nickname="" pComtId="0" artId="8554402" duid="0" floorId="0" data-artfrom="2">写评论
+                        <i></i>
+                    </div>
+                </div>
+                <script type="text/juicer" id="TemplateArtComment">
+    {#each CommentList as Comment,index}
+    {#if (Comment.State > 0 || Comment.State==-2) && Comment.User!=null}
+    
+                    <ul class="detail-index-pl rel" id="comms_${Comment.Id}" style="padding-left: 0;">
+                        <li class="word-break" style="padding: 12px 12px 4px 12px;">
+                            <div class="fl" style="width: 35px;height: 35px;">
+                                <a href="/u/i-${Comment.User.Id}">
+                                    <img src="${Comment.User.Headimgurl}" style="width:100%">
+                                </a>
+                            </div>
+                            <ul class="temp-reply-btn rel" style="padding-left:6px;margin-bottom: 4px;overflow: hidden;cursor:pointer;" nickname="${Comment.User.Nickname}" baseline="${Comment.Id}" pComtId="${Comment.Id}" artId="${Comment.ArticleId}" duid="${Comment.User.Id}" floorId="0" data-artfrom="2">
+                                <li style="height: 35px;margin-bottom: 6px;">
+                                    <div class="clearfix" style="margin-top: 1px;">
+                                        <label class="fl wzsl" style="color: #5a85ce;max-width:100px;margin-right:4px;line-height:16px;">${Comment.User.Nickname}</label>
+                                        <div style="height: 16px;overflow: hidden;" id="comment-state-${Comment.Id}">
+                                            <span class="color-block f-11rem" style="background: #5bc3ff;">V.${Comment.Score}</span>
+                            {#if Comment.SignDay>= 7}
+                                            <span class="color-block f-11rem" style="background: #fec84c;">铁杆粉</span>
+                            {#/if}
+                            {#if Comment.User.Id==Article.UserId}
+                                            <span class="color-block f-11rem" style="background: #59d40e;">楼主</span>
+                            {#/if}
+                            {#if BestCmtId!=0&& Comment.Id ==BestCmtId}
+                                            <span class="best-answer"></span>
+                            {#/if}
+                                        </div>
+                                    </div>
+                                    <p class="clearfix">
+                                        <span class="f-11rem" style="color:#cccccc;">${Comment.CreateDate}</span>
+                        &nbsp;
+                                        <span class="f-11rem" style="color:#cccccc;">${Comment.ComIndex}楼</span>
+                                    </p>
+                                </li>
+                {#if Comment.Content!='' || Comment.PUserId>0}
+                                <li class="clearfix temp-text-content" style="line-height:1.5;">
+                    {#if Article.IsGuerdon==34&&Comment.Floor!=''&&Comment.Floor!='0'}
+                        
+                                    <span class="color-block f-11rem" style="background: #ff8822;">支持${Comment.Floor}元</span>
+                    {#/if}
+                    {#if Comment.PUserId>0}
+                                    <span class="fl">回复</span>
+                                    <a href="/u/i-${Comment.PUserId}" class="fl wzsl" style="color:#5a85ce;max-width:70px;">${Comment.PUserName}</a>
+                                    <text>:</text>
+                    {#/if}
+                                    <div style="display:inline;">$${Comment.Content}</div>
+                                </li>
+                {#/if}
+                {#if Comment.Voice!=null}
+                                <li style="margin-bottom:10px;">
+                                    <div class="voice-box-rp voice-box" ServerId="${Comment.Voice.ServerId}" id="voiceplay-${Comment.Voice.Id}" data-state="${Comment.Voice.ConvertState}">
+                                        <div class="voice-box-pause"></div>
+                        {#if Comment.Voice.ConvertState == 1}
+                                        <audio preload="none" id="audio-${Comment.Voice.Id}" voiceId="${Comment.Voice.Id}">
+                                            <source src="${Comment.Voice.TransFilePath}" type="audio/mpeg">
+                        
+                                            </audio>
+                        {#else}
+                            {#if Comment.Voice.DownLoadFile!=''}
+                                            <audio preload="none" id="audio-${Comment.Voice.Id}" voiceId="${Comment.Voice.Id}">
+                                                <source src="${Comment.Voice.DownLoadFile}" type="audio/mpeg">
+                            
+                                                </audio>
+                            {#/if}
+                        {#/if}
+                                            </div>
+                                            <div class="rp-voice-time rel">${Comment.Voice.VoiceTime}"</div>
+                                        </li>
+                {#/if}
+                {#if Comment.Images!=null && Comment.Images.length > 0 &&Comment.IsPc!=1}
+                                        <li class="clearfix temp-imagebox" style="margin-top: 2px;">
+                    {#each Comment.Images as Image,index}
+                    
+                                            <span class="fl" style="width: 100%;margin-top:6px;">
+                                                <img src="${Image.Filepath}" fullsrc="${Image.Filepath}" style="width:100%;" />
+                                            </span>
+                    {#/each}
+                                        </li>
+                {#/if}
+                                        <li class="abs jiantouzhankai-comment" style="cursor:pointer;" data-commentid="${Comment.Id}" data-setfrom="2"></li>
+                                    </ul>
+                                </li>
+                                <!--赏转评赞-->
+                                <li class="c858 clearfix f-12rem index-icon-bt" style="padding: 10px 12px 10px 53px;">
+            {#if Comment.IsPraise==1}
+            
+                                    <span class="fr" style="width: 33.3%;text-align: right;">
+                                        <i class="zaned"></i>
+                                        <em style="color: #5a85ce;">赞${Comment.Praise}</em>
+                                    </span>
+            {#else}
+                                    <span class="fr temp-zan-btn" id='replybtn-2zan${Comment.Id}' style="width: 33.3%;text-align:right;cursor:pointer;" data-itemid="${Comment.Id}" data-typeid="2">
+                                        <i class="icon-zan"></i>
+                                        <em>赞${Comment.Praise}</em>
+                                    </span>
+            {#/if}
+                                    <span class="fr temp-reply-btn" style="width:33.3%;text-align:center;cursor:pointer;" nickname="${Comment.User.Nickname}" baseline="${Comment.Id}" pComtId="${Comment.Id}" artId="${Comment.ArticleId}" duid="${Comment.User.Id}" fid="0" data-artfrom="2">
+                                        <i class="icon-ping"></i>
+                                        <em>评</em>
+                                    </span>
+            {#if IsReward == 1}
+                                    <span class="fr tmp-reward-button" style="width: 33.3%;text-align: left;cursor:pointer;" data-type="1" data-artid="${Comment.Id}" data-clickfrom="1" data-ischeck="0">
+                                        <i class="icon-reward"></i>
+                                        <em>赏${Comment.Reward}</em>
+                                    </span>
+            {#/if}
+                                </li>
+        {#if IsReward ==1&& Comment.RewardUsers!=null &&Comment.RewardUsers.length> 0}
+                                <li style="margin-top:-2px;">
+                                    <ul class="detail-reward-touxiang" style="padding:0;padding-left:53px;text-align:left;padding-bottom: 5px;">
+                                        <li class="clearfix rel">
+                                            <i class="abs" style="margin-left: -22px;"></i>
+                    {#each Comment.RewardUsers as RUser,index}
+                                            <span class="bz reward-touxiang-span">
+                                                <img src="${RUser.Headimgurl}" style="width:100%;height:100%;" />
+                                            </span>
+                    {#/each}
+                                        </li>
+                                    </ul>
+                                </li>
+        {#/if}
+
+ {#if Comment.Comments!=null&&Comment.Comments.length>0}
+                                <li id="divcomms_${Comment.Id}" class="rel reply-again clearfix word-break">
+    {#each Comment.Comments as Cmt,index}
+            
+                                    <ul id="comms_${Cmt.Id}" style="padding-top: 6px;cursor:pointer;" class="temp-comment-menu rel" data-commentid="${Cmt.Id}" data-setfrom="2">
+                                        <li class="clearfix" style="line-height: 1.5;">
+                                            <a href="/u/i-${Cmt.User.Id}" class="fl wzsl" style="color:#5a85ce;max-width:70px;">${Cmt.User.Nickname}</a>
+                    {#if Cmt.User.Id == Article.UserId}
+                                            <span class="f-11rem fl louzhu">楼主</span>
+                    {#/if}
+                  {#if Cmt.PUserId!=0&&Cmt.PUserName!=''}
+                                            <span class="fl">回复</span>
+                                            <a href="/u/i-${Cmt.PUserId}" class="fl wzsl" style="color:#5a85ce;max-width:70px;">${Cmt.PUserName}</a>
+                        {#if Cmt.PUserId ==Article.UserId}
+                                            <span class="f-11rem fl louzhu">楼主</span>
+                        {#/if}
+                    {#/if}
+                                            <span>:</span>  
+                        {#if Cmt.Content!=''}
+                                            <div class="temp-text-content" style="margin-right:10px; display:inline;">$${Cmt.Content}</div>
+                        {#/if}
+                                            <span class="f-11rem" style="color: #cccccc;margin-top: 2px;">${Cmt.CreateDate}</span>
+                                        </li>
+                {#if Cmt.State > 0 || Cmt.State == -2}
+                    {#if Cmt.Voice !=null}
+                                        <li style="margin-bottom:10px;" class="clearfix">
+                                            <div class="voice-box-rp voice-box" ServerId="${Cmt.Voice.ServerId}" id="voiceplay-${Cmt.Voice.Id}" data-state="${Cmt.Voice.ConvertState}">
+                                                <div class="voice-box-pause"></div>
+                            {#if Cmt.Voice.ConvertState == 1}
+                                                <audio preload="none" id="audio-${Cmt.Voice.Id}" voiceId="${Cmt.Voice.Id}">
+                                                    <source src="${Cmt.Voice.TransFilepath}" type="audio/mpeg">
+                            
+                                                    </audio>
+                            {#else}
+                            {#if Cmt.Voice.DownLoadFile!=''}
+                                                    <audio preload="none" id="audio-${Cmt.Voice.Id}" voiceId="${Cmt.Voice.Id}">
+                                                        <source src="${Cmt.Voice.DownLoadFile}" type="audio/mpeg">
+                            
+                                                        </audio>
+                            {#/if}
+                            {#/if}
+                                                    </div>
+                                                    <div class="rp-voice-time rel">${Cmt.Voice.VoiceTime}"</div>
+                                                </li>
+                    {#/if}
+                    {#if Cmt.Images!=null && Cmt.Images.length > 0 && Cmt.IsPc!= 1}
+                                                <li class="clearfix temp-imagebox" style="margin-top: 2px;">
+                        {#each Cmt.Images as Image,index}
+                        
+                                                    <span class="fl" style="width: 100%;margin-top: 6px;">
+                                                        <img src="${Image.Filepath}" fullsrc="${Image.Filepath}" style="width:100%">
+                        
+                                                    </span>
+                        {#/each}
+                                                </li>
+                    {#/if}
+               {#/if}
+                                            </ul>
+    {#/each}
+                                        </li>
+        {#if Comment.Comments.length==5}
+                                        <p id="m2_${Comment.Id}" class="c858" style="margin: 10px 0;text-align: center;display:none;">正在加载...</p>
+                                        <p id="m3_${Comment.Id}" class="c858" style="margin: 10px 0;text-align: center;display:none;">已加载全部数据</p>
+                                        <p style="text-align:center;margin-bottom:10px;padding-bottom:10px;">
+                                            <span  class="f-12rem post-detail-focus temp-showqrcode-btn" pageidx="2" pcmtid="${Comment.Id}" pcmtuserid="${Comment.User.Id}" onclick="getsubcmt(this)">点击加载更多</span>
+                                        </p>
+        {#/if}
+ {#else}
+                                        <li id="divcomms_${Comment.Id}" class="rel reply-again clearfix word-break" style="display:none;">
+    </li>
+ {#/if}
+                                    </ul>
+{#/if}
+{#/each}
+                                </script>
+                                <script type="text/juicer" id="SubTemplateArtComment">
+    {#if Comments.length>0}
+        {#each Comments as Cmt,index}
+        
+                                    <ul id="comms_${Cmt.Id}" style="padding-top: 6px;cursor:pointer;" class="temp-comment-menu rel" data-commentid="${Cmt.Id}" data-setfrom="2">
+                                        <li class="clearfix" style="line-height: 1.5;">
+                                            <a href="/u/i-${Cmt.User.Id}" class="fl wzsl" style="color:#5a85ce;max-width:70px;">${Cmt.User.Nickname}</a>
+                    {#if Cmt.User.Id == ArtUserId}
+                                            <span class="f-11rem fl louzhu">楼主</span>
+                    {#/if}
+                {#if Cmt.PUserId!=0&&Cmt.PUserName!=''}
+                                            <span class="fl">回复</span>
+                                            <a href="/u/i-${Cmt.PUserId}" class="fl wzsl" style="color:#5a85ce;max-width:70px;">${Cmt.PUserName}</a>
+                    {#if Cmt.PUserId ==ArtUserId}
+                                            <span class="f-11rem fl louzhu">楼主</span>
+                    {#/if}
+                {#/if}
+                                            <span>:</span>           
+                    {#if Cmt.Content!=''}
+                                            <div class="temp-text-content" style="margin-right:10px; display:inline;">$${Cmt.Content}</div>
+                    {#/if}
+                                            <span class="f-11rem" style="color: #cccccc;margin-top: 2px;">${Cmt.CreateDate}</span>
+                                        </li>
+            {#if Cmt.State > 0 || Cmt.State == -2}
+            {#if Cmt.Voice !=null}
+                                        <li style="margin-bottom:10px;" class="clearfix">
+                                            <div class="voice-box-rp voice-box" ServerId="${Cmt.Voice.ServerId}" id="voiceplay-${Cmt.Voice.Id}" data-state="${Cmt.Voice.ConvertState}">
+                                                <div class="voice-box-pause"></div>
+                    {#if Cmt.Voice.ConvertState == 1}
+                                                <audio preload="none" id="audio-${Cmt.Voice.Id}" voiceId="${Cmt.Voice.Id}">
+                                                    <source src="${Cmt.Voice.TransFilepath}" type="audio/mpeg">
+                    
+                                                    </audio>
+                    {#else}
+                    {#if Cmt.Voice.DownLoadFile!=''}
+                                                    <audio preload="none" id="audio-${Cmt.Voice.Id}" voiceId="${Cmt.Voice.Id}">
+                                                        <source src="${Cmt.Voice.DownLoadFile}" type="audio/mpeg">
+                    
+                                                        </audio>
+                    {#/if}
+                    {#/if}
+                                                    </div>
+                                                    <div class="rp-voice-time rel">${Cmt.Voice.VoiceTime}"</div>
+                                                </li>
+            {#/if}
+            {#if Cmt.Images!=null && Cmt.Images.length > 0 && Cmt.IsPc!= 1}
+                                                <li class="clearfix temp-imagebox" style="margin-top: 2px;">
+                {#each Cmt.Images as Image,index}
+                
+                                                    <span class="fl" style="width: 100%;margin-top: 6px;">
+                                                        <img src="${Image.Filepath}" fullsrc="${Image.Filepath}" style="width:100%">
+                
+                                                    </span>
+                {#/each}
+                                                </li>
+            {#/if}
+            {#/if}
+                                            </ul>
+        {#/each}
+    {#/if}
+                                        </script>
+                                        <!--猜你喜欢-->
+                                        <!--帖子详情二维码-->
+                                        <ul class="wx t_c f14">
+                                            <li>
+                                                <img src="http://i.pengxun.cn/upload/forum/2015101920732784.jpg" style="width:100%" class="ewm">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--侧边栏刷新、顶部-->
+                                <div class="temp-reply-hide" style="background-color:rgba(0,0,0,0.4);bottom: 200px;color: #E6AE13;position: fixed;right: -5px;font-size: 16px;opacity: 0.6;width:auto; height:auto; border-radius:5px;">
+                                    <a style="color:white;margin-left: 2px;padding: 4px 12px 0 7px;display:block;" href="/f/s-3?vPageIndex=1&vSeeId=8554402">
+                                        <i class="detail-index-back-icon"></i>
+                                    </a>
+                                    <div class="reflesh" style="color:white;margin-left: 2px;padding:7px 12px 4px 7px;cursor:pointer;border-top:#FFF 1px solid;">刷新</div>
+                                    <div class="gotop" style="color:white;border-top: 1px white solid;margin-left: 2px;padding: 7px 12px 4px 7px;cursor:pointer;display:none;">顶部</div>
+                                </div>
+                                <!--回复-->
+                                <script id="ReplyTemplate" type="text/html">
+                                    <div id="textbox-replay" >
+                                        <input type="hidden" id="hidrecordId" name="hidrecordId" value="">
+                                        <input type="hidden" id="hidrecordSerId" name="hidrecordSerId" value="">
+                                        <input type="hidden" id="hidrecordTime" name="hidrecordTime" value="0">
+                                        <input type="hidden" id="hidrecordText" name="hidrecordText" value="">
+                                        <div class="post-ping-kuang rel">
+                                            <!--评论图片-->
+                                            <ul class="post-wrap-pic-select clearfix bz" id="imgList" style="display:none;">
+                                                <li class="fl rel temp-upload-img" id="btn-addimg" style="cursor:pointer;width:18%;">
+                                                    <img src="http://i.pengxun.cn/content/images/imgpost2/success-select-column-close-add02.png" style="width:100%;">
+                                                </li>
+                                            </ul>
+                                            <!--评论语音-->
+                                            <div class="clearfix post-voice-all" id="reclist" style="display:none;padding-top: 2px;">
+            </div>
+                                            <!--评论输入框-->
+                                            <div class="post-ping-kuang-bottom-content bz">
+                                                <div class="post-ping-kuang-textarea rel">
+                                                    <textarea style="resize:none;" id="txtContentAdd" name="txtContentAdd" class="rel" placeholder="回复帖子："></textarea>
+                                                </div>
+                                                <div class="bt-list">
+                                                    <span id="send-repley-button" style="cursor:pointer;" class="post-ping-bt-send">发表</span>
+                                                    <span id="cancle-reply-button" style="cursor:pointer;" class="post-ping-bt-cancel">取消</span>
+                                                    <i class="bt-voice" id="reply-show-voice-btn" style="cursor:pointer;"></i>
+                                                    <i class="bt-face" id="btn-qqface" style="cursor:pointer;"></i>
+                                                    <i class="bt-img temp-upload-img" id="reply-upload-img-btn" style="cursor:pointer;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--评论qq表情-->
+                                        <div id="div-qqfaces" class="post-qq-face-all rel bz" style="display: none;">
+                                            <!--qq表情-->
+                                            <div class="post-qq-face bz clearfix">
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="微笑" code="[微笑]" style="background-position: left 0;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="撇嘴" code="[撇嘴]" style="background-position: left -29px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="色" code="[色]" style="background-position: left -58px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="发呆" code="[发呆]" style="background-position: left -87px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="得意" code="[得意]" style="background-position: left -116px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="流泪" code="[流泪]" style="background-position: left -145px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="害羞" code="[害羞]" style="background-position: left -174px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="闭嘴" code="[闭嘴]" style="background-position: left -203px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="睡" code="[睡]" style="background-position: left -232px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="大哭" code="[大哭]" style="background-position: left -261px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="尴尬" code="[尴尬]" style="background-position: left -290px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="发怒" code="[发怒]" style="background-position: left -319px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="调皮" code="[调皮]" style="background-position: left -348px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="呲牙" code="[呲牙]" style="background-position: left -377px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="惊讶" code="[惊讶]" style="background-position: left -406px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="难过" code="[难过]" style="background-position: left -435px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="酷" code="[酷]" style="background-position: left -464px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="冷汗" code="[冷汗]" style="background-position: left -493px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="抓狂" code="[抓狂]" style="background-position: left -522px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="吐" code="[吐]" style="background-position: left -551px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="偷笑" code="[偷笑]" style="background-position: left -580px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="可爱" code="[可爱]" style="background-position: left -609px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="白眼" code="[白眼]" style="background-position: left -638px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="傲慢" code="[傲慢]" style="background-position: left -667px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="饥饿" code="[饥饿]" style="background-position: left -696px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="困" code="[困]" style="background-position: left -725px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="惊恐" code="[惊恐]" style="background-position: left -754px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="流汗" code="[流汗]" style="background-position: left -783px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="憨笑" code="[憨笑]" style="background-position: left -812px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="大兵" code="[大兵]" style="background-position: left -841px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="奋斗" code="[奋斗]" style="background-position: left -870px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="咒骂" code="[咒骂]" style="background-position: left -899px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="疑问" code="[疑问]" style="background-position: left -928px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="嘘" code="[嘘]" style="background-position: left -957px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="晕" code="[晕]" style="background-position: left -986px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="折磨" code="[折磨]" style="background-position: left -1015px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="哀" code="[哀]" style="background-position: left -1044px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="骷髅" code="[骷髅]" style="background-position: left -1073px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="敲打" code="[敲打]" style="background-position: left -1102px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="再见" code="[再见]" style="background-position: left -1131px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="擦汗" code="[擦汗]" style="background-position: left -1160px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="抠鼻" code="[抠鼻]" style="background-position: left -1189px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="鼓掌" code="[鼓掌]" style="background-position: left -1218px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="糗大了" code="[糗大了]" style="background-position: left -1247px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="坏笑" code="[坏笑]" style="background-position: left -1276px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="左哼哼" code="[左哼哼]" style="background-position: left -1305px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="右哼哼" code="[右哼哼]" style="background-position: left -1334px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="哈欠" code="[哈欠]" style="background-position: left -1363px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="鄙视" code="[鄙视]" style="background-position: left -1392px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="委屈" code="[委屈]" style="background-position: left -1421px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="快哭了" code="[快哭了]" style="background-position: left -1450px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="阴险" code="[阴险]" style="background-position: left -1479px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="亲亲" code="[亲亲]" style="background-position: left -1508px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="吓" code="[吓]" style="background-position: left -1537px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="可怜" code="[可怜]" style="background-position: left -1566px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="菜刀" code="[菜刀]" style="background-position: left -1595px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="西瓜" code="[西瓜]" style="background-position: left -1624px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="啤酒" code="[啤酒]" style="background-position: left -1653px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="篮球" code="[篮球]" style="background-position: left -1682px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="乒乓" code="[乒乓]" style="background-position: left -1711px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="咖啡" code="[咖啡]" style="background-position: left -1740px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="饭" code="[饭]" style="background-position: left -1769px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="猪头" code="[猪头]" style="background-position: left -1798px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="玫瑰" code="[玫瑰]" style="background-position: left -1827px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="凋谢" code="[凋谢]" style="background-position: left -1856px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="示爱" code="[示爱]" style="background-position: left -1885px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="爱心" code="[爱心]" style="background-position: left -1914px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="心碎" code="[心碎]" style="background-position: left -1943px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="蛋糕" code="[蛋糕]" style="background-position: left -1972px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="闪电" code="[闪电]" style="background-position: left -2001px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="炸弹" code="[炸弹]" style="background-position: left -2030px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="刀" code="[刀]" style="background-position: left -2059px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="足球" code="[足球]" style="background-position: left -2088px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="瓢虫" code="[瓢虫]" style="background-position: left -2117px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="便便" code="[便便]" style="background-position: left -2146px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="月亮" code="[月亮]" style="background-position: left -2175px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="太阳" code="[太阳]" style="background-position: left -2204px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="礼物" code="[礼物]" style="background-position: left -2233px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="拥抱" code="[拥抱]" style="background-position: left -2262px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="强" code="[强]" style="background-position: left -2291px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="弱" code="[弱]" style="background-position: left -2320px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="握手" code="[握手]" style="background-position: left -2349px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="胜利" code="[胜利]" style="background-position: left -2378px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="抱拳" code="[抱拳]" style="background-position: left -2407px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="勾引" code="[勾引]" style="background-position: left -2436px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="拳头" code="[拳头]" style="background-position: left -2465px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="差劲" code="[差劲]" style="background-position: left -2494px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="爱你" code="[爱你]" style="background-position: left -2523px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="no" code="[no]" style="background-position: left -2552px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="ok" code="[ok]" style="background-position: left -2581px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="爱情" code="[爱情]" style="background-position: left -2610px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="飞吻" code="[飞吻]" style="background-position: left -2639px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="跳跳" code="[跳跳]" style="background-position: left -2668px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="发抖" code="[发抖]" style="background-position: left -2697px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="怄火" code="[怄火]" style="background-position: left -2726px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="转圈" code="[转圈]" style="background-position: left -2755px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="磕头" code="[磕头]" style="background-position: left -2784px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="回头" code="[回头]" style="background-position: left -2813px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="跳绳" code="[跳绳]" style="background-position: left -2842px;"></a>
+                                                </span>
+                                                <span class="fl">
+                                                    <a href="javascript:;" class="qqface-img" title="挥手" code="[挥手]" style="background-position: left -2871px;"></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </script>
+                                <script id="post_img_html_one" type="text/html">
+                                    <li class="fl rel" style="width:18%;max-height:60px;overflow:hidden;">
+                                        <img class="temp_img_one" src="{FILEPATH}" id="{IMGID}" imgid="0" style="width:100%;">
+                                        <i class="abs temp_clear_img" style="cursor:pointer;"></i>
+                                        <div class="img_loading" id="{IMG_LOADING_ID}">
+                                            <div class="img_loading-bar"></div>
+                                            <img src="http://i.pengxun.cn/static/vzan/web/img_loading.gif" class="img_upload_loading">
+        
+                                        </div>
+                                    </li>
+                                </script>
+                                <script id="ReplyVoiceOne" type="text/html">
+                                    <div>
+                                        <div class="post-voice-box-rp rel" data-localid="{LOCALID}">
+                                            <div class="post-voice-box-pause"></div>
+                                            <span class="abs post-voice-close temp-voice-close"></span>
+                                        </div>
+                                        <div class="post-rp-voice-time rel">{TIME}</div>
+                                    </div>
+                                </script>
+                                <script src="http://j.pengxun.cn/scripts/min/0407/voices-reply-min.js"></script>
+                                <script id="VoiceTemplateReply" type="text/html">
+                                    <!--录音弹窗 开始-->
+                                    <div class="voice-record-bg bz pressnone">
+                                        <div style="display:none;" class="press-model-tips" id="press-model-tips">
+                                            <div>如遇到不能录音,切换点击模式试试</div>
+                                        </div>
+                                        <div id="slide-btn-group" class="slide-btn-group">
+                                            <div id="slide-to-click" style="display:none;">切换点击模式</div>
+                                            <div id="slide-to-press">切换长按模式</div>
+                                        </div>
+                                        <p class="bz clearfix">
+                                            <span id="actionsheet_cancel" class="fr">取消</span>
+                                        </p>
+                                        <!--长按模式录音 start-->
+                                        <div id="voice-press-box" style="display:none;" class="slidein">
+                                            <div class="abs voice-record-volume-bg">
+                                                <p class="bz">
+                                                    <span class="voice-record-volume-bg-p-span"></span>
+                                                </p>
+                                            </div>
+                                            <div class="voice-record-bt-position clearfix">
+                                                <div class="voice-record-bt bz rel">
+                                                    <div class="voice-record-bt-white bz" id="voice-start-button" style="cursor:pointer;">
+                                                        <i class="voice-record-bt-white-i"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="f14" style="margin-top:6px;" id="press-msg-tips">按住录音</p>
+                                            </div>
+                                        </div>
+                                        <!--长按模式录音 end-->
+                                        <!--长按模式录音 start-->
+                                        <div id="voice-click-box" style="display:block;" class="slidein">
+                                            <div class="abs voice-record-volume-bg">
+                                                <p class="bz">
+                                                    <span class="voice-record-volume-bg-p-span"></span>
+                                                </p>
+                                            </div>
+                                            <div class="voice-record-bt-position clearfix">
+                                                <div class="voice-record-bt bz rel">
+                                                    <div class="voice-record-bt-white bz" id="voice-start-button-click" style="cursor:pointer;">
+                                                        <i class="voice-record-bt-white-i"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="f14" style="margin-top:6px;" id="click-msg-tips">点一下录音</p>
+                                            </div>
+                                        </div>
+                                        <!--长按模式录音 end-->
+                                        <!--录音ing start-->
+                                        <!--录音ing end-->
+                                        <!--录音结束 start-->
+                                        <!--录音结束 end-->
+    
+                                    </div>
+                                    <!--录音弹窗 结束-->  
+
+                                </script>
+                                <!--BEGIN actionSheet-->
+                                <div id="article-setting-btn" style="display:none;">
+</div>
+                                <!--END actionSheet-->
+                                <!--回复-->
+                                <div id="guanzhu-qrcode-box" style="display:none;">
+                                    <div id="guanzhu-tips-title" style="display: block;width: 100%;height: 4rem;background-color:#17b5ee;color: #fff;font-size: 1.6rem;text-align: center;line-height:4rem;white-space: nowrap;">{#MsgTitle#}</div>
+                                    <img src="http://oss.vzan.cc/image/jpg/openqrcode/gh_63e7a64bea07_3.jpg" style="display:block;margin:0 auto; width:250px; height:250px;margin-top: 10px;">
+                                    <div style="display: block;width: 100%;padding: 0;border-top: solid 1px #eee;white-space: nowrap;">
+                                        <a style="display: block;height: 4rem;line-height: 4rem;font-size: 1.5rem;margin: 0 0;text-align: center;color: #00acff;" href="javascript:;" class="windows_close">关闭</a>
+                                    </div>
+                                </div>
+                                <div style="width: 100%;height: 48px;position: fixed;bottom: 49px;left: 0;z-index: 5;display:none;" id="qrcode_attention_block">
+                                    <ul id="guanzhu-qrcode-tips" class="base-wrap bz d-flex d-flex-center" style="background: rgba(0,0,0,.5);width: 100%;height: 100%;padding: 0 12px;">
+                                        <li style="width: 32px;height: 32px;overflow: hidden;">
+                                            <img src="http://wx.qlogo.cn/mmopen/sLA4X9C0opa2gKtibs3QseyUicX1kj8BICjeb97VJQuGuhJYS4cs2SzxqCd4YdGKmibibiaiac0leUSFLwAvlgUd2ria7RRiblJkcPlK/0" style="width: 100%;">
+        
+                                        </li>
+                                        <li class="f-14rem flex" style="color: #fff;padding: 0 10px;">打赏、回复实时提醒，点关注</li>
+                                        <li>
+                                            <a class="qrcode_attention_popup" href="javascript:;" style="width: 55px;height: 25px;background: #17b5ee;color: #fff;display: block;line-height: 25px;text-align: center;border-radius: 2px;">关注</a>
+                                        </li>
+                                        <li>
+                                            <a class="qrcode_attention_close" href="javascript:;" style="width: 21px;height: 21px;background: url(http://j.pengxun.cn/content/images/imgpost2/01/post-big-pic-03.png) no-repeat 0 -21px;background-size: 100%;display: block;margin-left: 15px;"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <script src="http://j.pengxun.cn/scripts/min/juicer-min.js"></script>
+                                <script src="http://j.pengxun.cn/scripts/min/0407/jquery.superslide.2.1.1.js"></script>
+                                <script>
+    $(function () {
+        //模板文章处理逻辑
+        if($('#tplsectioncss').val()!="")
+        {
+            var classInfo="";
+            var sectioncss = $('#tplsectioncss').val().split('vzan&&');
+            var len=sectioncss.length;
+
+            //段落样式
+            for (var i = 0; i < len; i++) {
+                var css=eval("("+sectioncss[i]+")");
+                classInfo+= makeSectionCss(css,i);
+            }
+            //文章样式
+            if($('#tplartcss').val()!="")
+            {
+                classInfo+= makeTplCss();
+
+            }
+            $('
+                                    <style type="text/css">' + classInfo+  "</style>").appendTo("head");
+        }
+        $.ajax({
+            url: '/minisnsapp/setViewAndCCStatDpage',
+            type: "POST",
+            data: {fid:3,typeid:223738,artid:8554402,uid:0,url:window.location.href},
+            success:function (data) {
+
+            }
+        })
+        juicer.set({
+            'tag::operationOpen': '{#',
+            'tag::operationClose': '}',
+            'tag::interpolateOpen': '${',
+            'tag::interpolateClose': '}',
+            'tag::noneencodeOpen': '$${',
+            'tag::noneencodeClose': '}',
+            'tag::commentOpen': '{##',
+            'tag::commentClose': '}'
+        });
+        loadMoreComment();
+        if(document.getElementById("TemplateDonnationProgress")!=undefined){
+            loadMoreCommentByType();
+        }
+        //绑定顺序倒序按钮
+        $("#commentsort").click(function () {
+            sortComment();
+        });
+        $(document).on("click", ".temp-OtherMoreBtn", function (e) {
+            var moreid = $(this).attr("moreid");
+            if ($("#" + moreid).is(":hidden")) {
+                $("#" + moreid).show();
+            } else {
+                $("#" + moreid).hide();
+            }
+            $(this).children().each(function () {
+                if ($(this).is(":hidden")) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+            e.stopPropagation();
+        });
+        $(".temp-showqrcode-btn").click(function () {
+            var qrcodeimg = $(this).data("qrcodeimg");
+            layer.open({
+                type: 1,
+                content: '
+                                    <div style="text-align:center;width:100%">
+                                        <img style="width:100%" src="' + qrcodeimg + '" border="0" />
+                                    </div>',
+                style: "width:100%;"
+            });
+        });
+        $(".temp-concern-btn").click(function () {
+            var opertype=1;
+            var ccount=parseInt($("#concerncount").html());
+            if($(".temp-concern-btn").hasClass("concern")){
+                opertype=1;
+                $(".temp-concern-btn").removeClass("concern");
+                $(".temp-concern-btn").addClass("concerned");
+                $("#concerncount").html(ccount+1);
+                var qrcodeimg=$("#concernqrcode").val();
+                if(qrcodeimg&&qrcodeimg.length>0){
+                    layer.open({
+                        type: 1,
+                        content: $("#guanzhu-qrcode-box").html().replace("{#MsgTitle#}","实时获取该众筹动态，长按关注"),
+                        style: "width:80%;",
+                        success: function () {
+                            $("#qrcode_attention_block").remove();
+                            GetCookies("is_show_guanzhu_3", '', { path: "/", domain: ".vzan.cc", expires: 0 });
+                            $(".windows_close").click(function () {
+                                layer.closeAll();
+                            });
+                        }
+                    });
+                }
+            }
+            else{
+                opertype=0;
+                $("#concerncount").html(ccount-1);
+                $(".temp-concern-btn").removeClass("concerned");
+                $(".temp-concern-btn").addClass("concern");
+            }
+            ajaxOper("/minisnsapp/ConcernOper/" + $('#hidfId').val(), "POST",{itemid:$("#donationid").val(),concerntype:3,opertype:opertype}, "json", function (data) {
+            });
+        });
+        setTimeout(function () {
+            var is_show_guanzhu = GetCookies("is_show_guanzhu_3");
+            if (is_show_guanzhu != "1") {
+                if(is_show_guanzhu=="2"){
+                    $("#concernqrcode").val("");
+                    $("#qrcode_attention_block").remove();
+                }
+                else if(is_show_guanzhu=="0"){
+                    $("#qrcode_attention_block").show();
+                }else{
+                    $.get("/minisnsapp/getfocus",{ fid: 3},function(data){
+                        if (data && data.isok) {
+                            GetCookies("is_show_guanzhu_3", "2", { path: "/", domain: ".vzan.cc", expires: 7 });
+                            $("#concernqrcode").val("");
+                            $("#qrcode_attention_block").remove();
+                        }
+                        else{
+                            GetCookies("is_show_guanzhu_3", "0", { path: "/", domain: ".vzan.cc", expires: 1 });
+                            $("#qrcode_attention_block").show();
+                        }
+                    });
+                }
+            }
+            $(".qrcode_attention_popup").click(function () {
+                layer.open({
+                    type: 1,
+                    content: $("#guanzhu-qrcode-box").html().replace("{#MsgTitle#}","回复,打赏实时提醒,长按关注"),
+                    style: "width:80%;",
+                    success: function () {
+                        $("#qrcode_attention_block").remove();
+                        GetCookies("is_show_guanzhu_3", '', { path: "/", domain: ".vzan.cc", expires: 0 });
+                        $(".windows_close").click(function () {
+                            layer.closeAll();
+                        });
+                    }
+                });
+            });
+            $(".qrcode_attention_close").click(function () {
+                $("#qrcode_attention_block").remove();
+                GetCookies("is_show_guanzhu_3", "1", { path: "/", domain: ".vzan.cc", expires: 1 });
+            });
+        }, 1000);
+        if($("#slideBox li").length>0){
+            $("#slideBox").show();
+            if($("#slideBox li").length>1){
+                $(".slideBox").slide({ mainCell: ".bd ul", autoPlay: true, delayTime: 700,mouseOverStop:false });
+            }
+        }
+    });
+    function sortComment() {
+        if (sort==0) {//0是顺序，1是倒序
+            sort = 1;
+        }else {
+            sort = 0;
+        }
+        pageIndex = 1; getcomFlag = 1;
+        loadMoreComment();
+    }
+    $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        var scrollHeight = $(document).height();
+        var windowHeight = $(this).height();
+        if ((scrollTop + windowHeight) >= (scrollHeight * 0.9)) {
+            loadMoreComment();
+        }
+    });
+    var pageIndex = 1; var getcomFlag = 1; var sort = 0;
+    var pageIndextype = 1; var getcomFlagtype = 1; var sorttype =1;
+    function loadMoreCommentByType(){
+        if (getcomFlagtype == 1) {
+            getcomFlagtype = 0;
+            ajaxOper("/minisnsapp/getcmt/" + $('#hidArtId').val(), "GET",{ fid: 3, pageIndex: pageIndextype, sort: sorttype,uid:0,bestid:0,commentype:-7 }, "json", function (data) {
+                getcomFlagtype = 1;
+                $("#donationcount").html(data.CommentCount);
+                if (data == ""||data.CommentList.length
+                                    <1) {
+                    getcomFlagtype = 0;
+                    $("#loadmoredonation").hide();
+                    return false;
+                }
+                if(data.CommentList.length==10){
+                    $("#loadmoredonation").show();
+                }
+                else{
+                    $("#loadmoredonation").hide();
+                }
+                pageIndextype += 1;
+                var tpl = document.getElementById("TemplateDonnationProgress").innerHTML;
+                var html = juicer(tpl, data);
+                if (pageIndextype ==2) {//如果是第一页先清空本来有的
+                    $("#ul-content-donation").empty().append(html);
+                } else {
+                    $("#ul-content-donation").append(html);
+                }
+            })
+        }
+    }
+    function loadMoreComment() {
+        if (getcomFlag == 1) {
+            getcomFlag = 0;
+            $("#m2").show();
+            ajaxOper("/minisnsapp/getcmt/" + $('#hidArtId').val(), "GET",{ fid: 3, pageIndex: pageIndex, sort: sort,uid:0,bestid:0 }, "json", function (data) {
+                getcomFlag = 1;
+                if (data == ""||data.CommentList.length
+                                        <1) {
+                    getcomFlag = 0;
+                    $("#m2").hide();
+                    $("#m3").show();
+                    return false;
+                }
+                $("#m2").hide();
+                pageIndex += 1;
+                if (sort == 0) {//0是顺序，1是倒序
+                    $("#commentsort span").text("顺序");
+                    $("#commentsort i").removeClass("detail-daoxu");
+                } else {
+                    $("#commentsort span").text("倒序");
+                    $("#commentsort i").addClass("detail-daoxu");
+                }
+                var tpl = document.getElementById("TemplateArtComment").innerHTML;
+                var html = juicer(tpl, data);
+                if (pageIndex ==2) {//如果是第一页先清空本来有的
+                    $("#ul-content-d").empty().append(html);
+                } else {
+                    $("#ul-content-d").append(html);
+                }
+            })
+        }
+    }
+    function getfirstsubcmt(){
+        loadMoreCommentByType();
+    }
+    //加载更多子回复
+    function getsubcmt(target) {
+        var pidx=$(target).attr("pageidx");
+        var parentCommentId=$(target).attr("pcmtid");
+        var pcmtuserid=$(target).attr("pcmtuserid");
+        var artid=$('#hidArtId').val();
+        var fid=$('#hidfId').val();
+        var artuserid=$('#artUserId').val();
+        jQuery.ajax({
+            type: "get",
+            url: "/minisnsapp/getsubcmt/"+parentCommentId,
+            async: true,
+            data: { pageindex: pidx,artid:artid,pcmtuserid:pcmtuserid,fid:fid,artuserid:artuserid },
+            beforeSend: function () {
+                $("#m2_"+parentCommentId).show();
+            },
+            success: function (data) {
+                //隐藏loading
+                if (data != "" && data.Comments.length > 0) {
+                    $("#m2_"+parentCommentId).hide();
+                    pidx++;
+                    $(target).attr("pageidx",pidx)
+                    var tpl = document.getElementById("SubTemplateArtComment").innerHTML;
+                    var html = juicer(tpl,data);
+
+                    $('#divcomms_'+parentCommentId).append(html);
+
+                }
+                else
+                {
+                    $("#m2_"+parentCommentId).hide();
+                    $("#m3_"+parentCommentId).show();
+                    $(target).hide();
+                }
+            }
+        });
+    }
+    function makeSectionCss(css,index) {
+        //与上段距离
+        var  paddingtop=0;
+        var  paddingbottom=0;
+        var  bordersize=0;
+        switch (css.margintop) {
+            case"s":
+                paddingtop="10px";
+                break;
+            case"m":
+                paddingtop="20px";
+                break;
+            case"l":
+                paddingtop="30px";
+                break;
+            default:
+        }//与下段距离
+        switch (css.marginbottom) {
+            case"s":
+                paddingbottom="10px";
+                break;
+            case"m":
+                paddingbottom="20px";
+                break;
+            case"l":
+                paddingbottom="30px";
+                break;
+            default:
+        }///边框大小
+        switch (css.bordersize) {
+            case"s":
+                bordersize="1px";
+                break;
+            case"m":
+                bordersize="3px";
+                break;
+            case"l":
+                bordersize="6px";
+                break;
+            default:
+        }
+        //模板样式
+        var tplcss=eval("("+$('#tplartcss').val()+")");
+        var classInfo = "";
+        //如果没有文章模板设置背景颜色和背景图片就采用段落的背景颜色
+        if(tplartcss.backgroundaddart!="1"&&tplcss.wb=="ffffff")
+        {
+            classInfo = "#section_"+index+"{background-color:#" + css.mainbgcolor + ";}";
+        }
+        classInfo+= "#section_"+index+"{padding-top:"+paddingtop+";padding-bottom:"+paddingbottom+";"+"color:#"+css.fontcolor+";font-family:"+css.fontfamily+";font-size:"+css.fontsize+"px;";
+        if(css.fontbold=="true")
+            classInfo += "font-weight:bold;";
+        if(css.borderstyle!="no")
+            classInfo += "border:"+css.borderstyle+" "+bordersize+" #"+ css.bordercolor+";";
+        return classInfo+"}";
+    }
+    function makeTplCss() {
+        var css=eval("("+$('#tplartcss').val()+")");
+        var classInfo = "";
+        classInfo = "#art_main{background-color:#"+css.wb+";color:#"+css.fb;
+        if(css.backgroundaddart=="1")
+        {
+
+            classInfo+=";background-image:url("+css.bgimg+")"+"!important;";
+            if("repeat"!=css.bgimgtype)
+            {
+                classInfo+="background-size:100% 100%;}";
+            }
+            else
+            {
+                classInfo+="background-repeat:"+css.bgimgtype+";}"
+            }
+
+        }
+        else
+        {
+            classInfo+="}";
+        }
+        classInfo+="#header{background-color:#"+css.hb+";color:#"+css.ht+"}";
+        return classInfo;
+
+    }
+
+                                        </script>
+                                        <script src="http://j.pengxun.cn/scripts/??min/0407/voiceplay-min.js,min/0407/vzanreplymuti-min.js,min/0407/weui-main-min.js,min/d_js_ui-min.js,min/wx_uploadimg-min.js?v=160819"></script>
+                                        <div style="display:none;">
+                                            <script>
+        var _hmt = _hmt || [];
+        var hm = document.createElement("script");
+        (function () {
+            hm.src = "//hm.baidu.com/hm.js?5c88f64ce16c5100a4a8509273257ce4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+                                        </div>
+                                    </body>
+                                </html>

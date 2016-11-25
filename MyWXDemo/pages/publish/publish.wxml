@@ -1,0 +1,45 @@
+<text>发布</text>
+
+<view id="tapTest" data-hi="MINA" bindtap="tapName"> Click me! </view>
+<!--冒泡和不冒泡-->
+<view id="outter" bindtap="handleTap1">
+  outer view
+  <view id="middle" catchtap="handleTap2">
+    middle view
+    <view id="inner" bindtap="handleTap3">
+      inner view
+    </view>
+  </view>
+</view>
+
+<view id="what-touch" bindtouchstart="touchListener">
+普通的触摸事件
+</view>
+
+
+<view class="section">
+  <view class="section__title">vertical scroll</view>
+  <scroll-view scroll-y="true" style="height:200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="scroll-view-item bc_green"></view>
+    <view id="red"  class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to scroll into view </button>
+    <button size="mini" bindtap="tapMove">click me to scroll</button>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <view class="section__title">horizontal scroll</view>
+  
+  <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+    <view id="green" class="scroll-view-item_H bc_green"></view>
+    <view id="red"  class="scroll-view-item_H bc_red"></view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow"></view>
+    <view id="blue" class="scroll-view-item_H bc_blue"></view>
+  </scroll-view>
+  
+</view>

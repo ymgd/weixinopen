@@ -1,0 +1,77 @@
+.page-user-background-green{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    background-color: #eeeeee; 
+}
+
+.page-user-background-green-image{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    /*background-color: #eeeeee; */
+}
+
+.page-user-user-avator{
+    height: 60px;
+    width: 60px;
+    margin-left: 35px;
+    margin-top: -80px;
+}
+
+.page-user-user-avator .page-user-user-avator-image{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    border-radius: 30px;
+    
+}
+
+.page-user-login-view .page-user-login{
+    display: flex;
+    color: #fff;
+    margin-left: 105px;
+    width: 100px;
+    height: 60px;
+    margin-top: -60px;
+    align-items: center;
+}
+.page-center-gray-line{
+    margin: 0px;
+    width: 100%;
+    height: 20px;
+    background: #f4f4f4;
+}
+.page-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  /*padding: 15rpx 40rpx;*/
+  height: 44px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item .poster {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.sub-title {
+  display: flex;
+  margin: 0px;
+  height: 20px;
+  margin-top: 12px;
+  font-size: 16px;
+  text-align: center;
+}

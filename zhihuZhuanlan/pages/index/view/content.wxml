@@ -1,0 +1,48 @@
+<import src="../../../component/titleBar/title_bar.wxml"/>
+  
+<view class="content">
+  
+
+   
+<!-- 专栏 -->
+ <template is="titleBar" data="{{...barInfo.column}}"></template>
+ 
+    <view class="column-list"> 
+        <view   catchtap="onForwardColumn"  data-slug="{{item.slug}}" class="fx-row fx-row-center column-item" wx:for="{{columnList}}" wx:key="{{index}}">
+            <image  mode="aspectFill"  class="column-head" src="{{item.avatar.src}}"></image>
+            <view class="fx"> 
+                    <view class="column-title mu-2">{{item.name}}</view>
+                    <view class="column-desc mu-2">{{item.description}}</view>
+            </view>
+            <view class="column-enter fx-col-center">进入专栏</view>
+        </view>
+    </view> 
+ 
+    <view class="text-center">
+            <button  data-btn-type="column" bindtap="onChangeData" class="btn-change" size="mini">换一换</button>
+    </view>
+    
+  
+
+  <!-- 文章 -->
+ <template is="titleBar" data="{{...barInfo.post}}"></template>
+ 
+
+   <view class="column-list">
+        <view class="fx-row fx-row-center column-item" wx:for="{{postList}}" wx:key="{{index}}">
+            <image mode="aspectFill"  class="column-head" src="{{item.image_url}}"></image>
+            <view class="fx"> 
+                    <view class="column-title mu-1">{{item.title}}</view>
+                    <view class="column-desc mu-2">{{item.summary}}</view>
+            </view>
+            <view class="column-enter fx-col-center">{{item.column.name}}</view>
+        </view>
+    </view> 
+
+    <view class="text-center">
+            <button  data-btn-type="post" bindtap="onChangeData" class="btn-change" size="mini">换一换</button>
+    </view>
+
+
+
+</view>

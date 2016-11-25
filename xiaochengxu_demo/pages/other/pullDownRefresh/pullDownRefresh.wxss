@@ -1,0 +1,10 @@
+.page{
+    background-color: #FFFFFF;
+    padding:20rpx;
+}
+.loadMoreItem{
+    padding:50px 0px;
+    background-color:antiquewhite;
+    border-bottom:2rpx solid #ccc;
+    margin-bottom:5px;
+}

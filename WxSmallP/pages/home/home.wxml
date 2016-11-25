@@ -1,0 +1,46 @@
+<view class="page">
+  <scroll-view scroll-y="true"
+               style="height: 100%;" 
+               bindscrolltoupper="upper" 
+               bindscrolltolower="lower" 
+               bindscroll="scroll" 
+               scroll-into-view="{{toView}}" 
+               scroll-top="{{scrollTop}}">
+    
+    <view class="section section_gap swiper">
+      <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{brannerlist}}">
+          <swiper-item>
+            <image src="{{item.path}}" style="width:100%; height:150px"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    
+    <view class="goodlistcell" wx:for="{{goodlists}}" bindtap="goodinfo">
+       <image class="headImage" src="{{item.headimg}}" />
+       <view class="cellText">
+          <text class="name text">{{item.name}}</text>
+          <text class="saled text">已售{{item.saled}}份</text>
+          <text class="brief text">{{item.brief}}</text>
+          <text class="price text">￥{{item.price}}</text>
+         <view class="addsubTap" >
+            <image src="../../images/subActivate@2x.png"
+                 style="width:20px; height:20px;" bindtap="subCount"
+                 data-goodid="{{item.id}}"
+                 data-goodnum="{{item.num}}"
+                 wx:if="{{item.num}}"/>
+           <text class="countnum"
+                  wx:if="{{item.num}}">  {{item.num}}  </text>
+           <image src="../../images/addActivate@2x.png" 
+                 style="width:20px; height:20px;" 
+                 data-goodid="{{item.id}}"
+                 data-goodnum="{{item.num}}"
+                 bindtap="addCount"/>
+         </view>
+          
+       </view>
+    </view>
+  </scroll-view>
+</view>

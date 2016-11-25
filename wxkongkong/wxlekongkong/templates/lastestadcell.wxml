@@ -1,0 +1,16 @@
+<!--空空动态模板-->
+<!--adimage:物品图像地址，-->
+<template name="lastestadcell">
+<view class="lastestadcell">
+    <image class="adimage" src="{{image}}"></image>
+    <view class="adinfoview">
+        <view class="userinfoview">
+            <image class="avatar" src="{{user.avatar.square}}"></image>
+            <text class="name">{{user.nick}}</text>
+            <text class="extro">{{title}}</text>
+            <text class="date">{{date}}</text>
+        </view>
+        <text class="content">{{content}}</text>
+    </view>
+</view>
+</template>

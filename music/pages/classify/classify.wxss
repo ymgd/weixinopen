@@ -1,0 +1,17 @@
+.classify_item{
+    position: relative;
+    height: 120rpx;
+    padding-left: 20rpx;
+    line-height: 120rpx;
+    border-bottom: 1px solid #ddd;
+}
+.classify_item .arrow{
+    position: absolute;
+    right: 20rpx;
+    top: 50rpx;
+    width: 20rpx;
+    height: 20rpx;
+    border-top: 2rpx solid #666;
+    border-right: 2rpx solid #666;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for-items="{{items}}">
+    <view class="l-r l-c item">
+      <view class="image" catchtap="go">
+        <image src="{{item.imgs[0]}}!/fwfh/330x330/quality/80"/>
+      </view>
+      <view class="l_auto item-right">
+        <view class="title"><text>{{item.title}}</text></view>
+        <text>{{item.quantity}}{{item.unit}}/份</text>
+        <text class="c-1">￥{{item.price/100}}</text>
+      </view>
+    </view>
+  </block>
+</view>

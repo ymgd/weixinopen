@@ -1,0 +1,8 @@
+.ofo-button {
+    background: #fed52f;
+    color: #222;
+}
+
+.section__ctn{
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+.channel-bottom-top{
+    height: 230rpx;
+    text-align: center;
+}
+
+.channel-bottom-icon{
+    margin-right: 16rpx;
+    width: 218rpx;
+    height: 230rpx;
+}
+
+.channel-bottom-icon:last-child{
+    margin-right: 0rpx;
+}
+
+.channel-bottom-bottom{
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #508CEE;    
+}

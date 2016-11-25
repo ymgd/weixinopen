@@ -1,0 +1,38 @@
+{
+  "pages":[
+   "pages/message/message",
+   "pages/contacts/contacts",
+   "pages/dynamic/dynamic",
+
+   "pages/module/singlechat/singlechat",
+   "pages/module/music/music"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#13b7f6",
+    "navigationBarTitleText": "QQ-小程序版",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#9E9BAC",
+    "selectedColor": "#00BBF4",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [{
+      "pagePath": "pages/message/message",
+      "iconPath": "res/image/message_normal.png",
+      "selectedIconPath": "res/image/message_selected.png",
+      "text": "消息"
+    }, {
+      "pagePath": "pages/contacts/contacts",
+      "iconPath": "res/image/contact_normal.png",
+      "selectedIconPath": "res/image/contact_selected.png",
+      "text": "联系人"
+    }, {
+      "pagePath": "pages/dynamic/dynamic",
+      "iconPath": "res/image/dynamic_normal.png",
+      "selectedIconPath": "res/image/dynamic_selected.png",
+      "text": "动态"
+    }]
+  }
+}

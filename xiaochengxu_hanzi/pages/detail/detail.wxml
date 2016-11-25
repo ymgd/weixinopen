@@ -1,0 +1,25 @@
+<!--<scroll-view   scroll-y="true" bindscrolltoupper="pullDownRefresh" bindscrolltolower="pullUpLoad" >
+  <navigator url="../../newDetail/newDetail?id={{item.menuId}}" redirect="false" wx:for="{{list}}" hover-class="navigator-hover">
+    
+      <view class="info">
+            <text class="zi" style = "padding-top:10px">{{item.zi}}</text>
+            <text class="reply"><text style="color:grey">拼音：</text>{{item.py}}</text>
+            <text class="reply" style="margin-left:10px;line-height:20px"><text style="color:grey">读音：</text>{{item.pinyin}}</text>
+        </view>
+        <view class="info" style="margin-left:70px;margin-top:10px;">
+            <text class="reply"><text style="color:grey">五笔：</text>{{item.wubi}}</text>
+            <text class="reply" style="margin-left:10px"><text style="color:grey">部首：</text>{{item.bushou}}</text>
+        </view>
+        <view class="info" style="margin-left:70px;margin-top:10px;">
+            <text class="reply"><text style="color:grey">笔画：</text>{{item.bihua}}</text>
+        </view>
+         <view style = "padding-bottom:8px;padding-top:8px;border-bottom: 1px solid #e2e2e2;"></view>
+
+ </navigator>
+</scroll-view>-->
+<scroll-view   scroll-y="true" bindscrolltoupper="pullDownRefresh" bindscrolltolower="pullUpLoad" >
+  <block wx:for="{{list}}" wx:key="*.this">
+      <template is="searchDetail" data="{{item}}" id="{{index}}"  style="cursor: pointer;"/>
+  </block>
+ </scroll-view>
+<import src="../../template/searchDetail.wxml"/>

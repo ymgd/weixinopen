@@ -1,0 +1,12 @@
+<view class="container">
+    <block wx:for="{{tagArr}}" wx:for-index="idx" wx:for-item="tgarr">
+    <view class="tags-box">
+        <view class="tags_title">{{tgarr.title}}</view>
+        <block wx:for="{{tgarr.tags}}" wx:for-index="index" wx:for-item="titem">
+        <navigator style="display:inline-block" hover-class="tag-hover" url="../search/index?tag={{titem}}">
+            <text class="tag">{{titem}}</text>
+        </navigator>
+        </block>
+    </view>
+    </block>
+</view>

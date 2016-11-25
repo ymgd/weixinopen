@@ -1,0 +1,8 @@
+<!--登录界面-->
+<view class='log_in'> 
+<image class='log_in_img' src='../../images/我的背景图片.png' mode='scaleToFill'></image>
+<image class='portrait_false_img' src='../../images/未登录.png' mode='scaleToFill'></image>
+<view class='log_in_text' bindtap='goToLogIn'> 
+    <text class='not_log_in_text'>请点击登录 ></text>   
+</view>
+</view>

@@ -1,0 +1,9 @@
+//index.js
+Page({
+  data:{
+      usersList:[{name:"童俊豪",src:"http://www.tuling123.com/resources/web/v4/img/personalCen/icon40.png",time:"12:00"}]
+  },
+  chat:function(){
+      wx.navigateTo({url:"../chat/chat"})
+  }
+})

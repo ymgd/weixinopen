@@ -1,0 +1,54 @@
+
+.api-list{
+    
+}
+.api-item{
+ background-color:#fff;
+}
+.api-title{
+    padding:0 20rpx;
+    height:80rpx;
+
+}
+.api-t{
+    flex:1;
+}
+.api-web{
+    height:0;
+    overflow:hidden;
+    opacity:0;
+    transform:translateX(100px);
+    transition:all 1s ;
+   
+}
+.api-web.show{
+    height:auto;
+    opacity:1;
+    transform:translateX(0);
+}
+.arrow{
+    transform:rotate(135deg);
+    transform-origin: center center;
+    transition:all .3s ;
+}
+.show .arrow{
+    transform:rotate(-45deg);
+}
+.api-web .arrow{
+    transform:rotate(45deg);
+}
+
+.api-web-n{
+    height:100rpx;
+    padding-right:20rpx;
+    margin-left:20rpx;
+}
+.api-web-v{
+    flex:1;
+}
+.api-web-n text{
+    display:block;
+}
+.api-desc{
+    margin-top:10rpx;
+}

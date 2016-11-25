@@ -1,0 +1,31 @@
+page {
+  background-color: #fbf9fe;
+  height: 100%;
+  font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.page-head {
+    padding: 80rpx;
+    line-height: 1;
+}
+.page-title {
+    font-size: 52rpx;
+}
+.page-desc {
+    margin-top: 10rpx;
+    color: #888888;
+    font-size: 28rpx;
+}
+.picker {
+    font-size: 28rpx;
+    background-color: #fff;
+    padding: 10rpx 20rpx;
+}

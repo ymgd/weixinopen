@@ -1,0 +1,9 @@
+<view class="welcome">
+    <image animation="{{animationData}}" class="" src="../../img/logo.png"></image>
+    <view animation="{{animationData}}" class="title">豆豉读书</view>
+    <view animation="{{animationData}}" class="slogan">一起重拾阅读的价值</view>
+    <view class="f8 n mb5">数据版权来源：豆瓣读书</view>
+    <view class="f8 fa n mt10">开发者微信公众号：mryou-web</view>
+    <view class="f8 fa n mt10">联系方式:youzenghua@163.com</view>
+</view>
+<include src="../templete/loading.wxml"/>

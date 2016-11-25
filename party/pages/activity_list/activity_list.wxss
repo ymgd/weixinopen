@@ -1,0 +1,6 @@
+.activity-item {
+  background-color: white;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  padding: 15rpx;
+}

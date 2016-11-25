@@ -1,0 +1,43 @@
+<scroll-view class="section" scroll-y="true">
+    <view class="banner">
+        <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="content">
+        <view class="prices">￥{{goods.price}}</view>
+        <text class="name">{{goods.name}}</text>
+        <text class="ts">温馨提示：</text>
+        <text class="tsnr">此商品不可以使用优惠券抵扣</text>
+        <text class="kc">商品库存：125</text>
+        <view class="bt">
+            <text class="count">购买数量：</text>
+            <button type="default" size="mini" bindtap="delCount">-</button>
+            <input  value="{{count}}"/>
+            <button type="default" size="mini" bindtap="addCount">+</button>
+        </view>
+    </view>
+    <view class="goods_img">
+        <view class="goods_tit">商品详情</view>
+        <image src="http://www.laojiupd.com/images/upload/20160128/14539736749847.jpg"/>
+        <image src="http://www.laojiupd.com/images/upload/20160128/14539736743580.jpg"/>
+        <image class="img3" src="http://www.laojiupd.com/images/upload/20160128/14539736745201.jpg"/>
+        <image src="http://www.laojiupd.com/images/upload/20160128/14539736753069.jpg"/>
+        <image class="img5" src="http://www.laojiupd.com/images/upload/20160128/1453973675995.jpg"/>
+        <image src="http://www.laojiupd.com/images/upload/20160128/14539736759907.jpg"/>
+    </view>
+
+</scroll-view>
+<view class="bottom_bar">
+    <view class="bar" bindtap="addcart">加入购物车</view>
+</view>
+<view class="body-view">
+  <toast hidden="{{toastHidden}}" bindchange="toastChange">
+    加入购物车~
+  </toast>
+</view>

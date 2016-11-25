@@ -1,0 +1,17 @@
+.container {
+  padding: 10rpx;
+}
+.title {
+  font-size: 36rpx;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.info {
+  margin: 10rpx 0;
+  color: #999;
+  font-size: 26rpx;
+}
+.content {
+  font-size: 32rpx;
+  line-height: 1.5;
+}

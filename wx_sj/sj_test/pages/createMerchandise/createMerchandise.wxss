@@ -1,0 +1,320 @@
+.title_description{
+    float: left;
+    width: 750rpx;
+    margin-bottom: 30rpx;
+}
+
+.title{
+    float: left;
+    margin-left: 45rpx;
+    width: 705rpx;
+    color:#707070;
+    margin-top: 5rpx;
+    margin-bottom: 5rpx;
+}
+
+.title_input{
+    font-size: 30rpx;
+    color: #bfbfbf;
+}
+
+.camera{
+    float: left;
+    width: 740rpx;
+    height: 150rpx;
+    margin-bottom: 50rpx;
+}
+
+.camera_text{
+    font-size: 30rpx;
+    color: #bfbfbf;
+    margin-top: 100rpx;
+}
+
+.camera_img{
+    float: left;
+    width: 150rpx;
+    height: 100rpx;
+    margin-left: 25rpx;
+    margin-top: 50rpx;
+}
+
+.location{
+    float: left;
+    width: 740rpx;
+    height: 150rpx;
+    margin-bottom: 50rpx;
+}
+
+.location_text{
+    float: left;
+    height: 60rpx;
+    border-radius: 10rpx;
+    padding: 20rpx 20rpx 0 20rpx;
+    margin-top: 70rpx;
+    margin-left: 25rpx;
+    font-size: 34rpx;
+    color: white;
+    background-color: #06ccb6;
+}
+
+
+
+.location_img{
+    float: left;
+    width: 150rpx;
+    height: 100rpx;
+    margin-left: 25rpx;
+    margin-top: 50rpx;
+}
+
+.img_list{
+    width: 750rpx;
+    float: left;
+}
+
+.preview{
+    float: left;
+    width: 150rpx;
+    margin-left: 27rpx;
+    margin-bottom: 30rpx;
+}
+
+.preview_img{
+    width: 150rpx;
+    height: 151rpx;
+    border-radius: 0.5rpx;
+}
+
+.rent_price{
+    float: left;
+    width: 750rpx;
+    margin-top: 20rpx;
+}
+
+.price_text{
+    float: left;
+    width: 200rpx;
+    height: 58rpx;
+    padding-top: 22rpx;
+    color: #06ccb6;
+}
+.input_class{
+    font-size: 36rpx;
+    color:#06ccb6;
+}
+
+.price{
+    float:left;
+    border: solid;
+    border-width: 0.5rpx;
+    border-color: #06ccb6;
+    border-radius: 10rpx;
+    width: 200rpx;
+    height: 140rpx;
+    text-align: center;
+    margin-left: 35rpx;
+}
+
+.price_img{
+    float: left;
+    font-size: 40rpx;
+    height: 50rpx;
+    width: 200rpx;
+    color: white;
+    background-color: #06ccb6;
+    padding-top: 10rpx;
+}
+
+
+.key_button_symbol{
+    margin-top: 25rpx;
+    margin-left: 25rpx;
+    float: left;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 65rpx;
+    border: solid;
+    border-color: #06ccb6;
+    border-width: 0.5rpx;
+    font-size: 50rpx;
+}
+
+.key_button_number{
+    margin-top: 25rpx;
+    margin-left: 25rpx;
+    float: left;
+    width: 120rpx;
+    height: 120rpx;
+    border: solid;
+    border-color: #06ccb6;
+    border-width: 0.5rpx;
+    font-size: 50rpx;
+}
+.key_discount{
+    float: left;
+    width: 750rpx;
+    margin-top: 20rpx;
+    margin-bottom: 5rpx;
+}
+
+.key_button_discount{
+    float: left;
+    width: 200rpx;
+    margin-left: 25rpx;
+    margin-right: 25rpx;
+}
+.key_symbol{
+    float: left;
+    width: 150rpx;
+}
+
+.key_number{
+    float: left;
+    width: 450rpx;
+}
+
+.key_other{
+    float: left;
+    width: 750rpx;
+    height: 130rpx;
+}
+
+.key_input{
+    float: left;
+    width: 750rpx;
+    height: 130rpx;
+}
+
+.key_button_img{
+    margin-left: 25rpx;
+    margin-top: 25rpx;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 60rpx;
+}
+
+.key_button_free{
+    margin-left: 25rpx;
+    margin-top: 25rpx;
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.key_free{
+    float:left;
+    width: 80rpx;
+    height: 80rpx;
+    margin-top: 20rpx;
+    margin-left:-10rpx;
+}
+
+.key_img{
+    float:left;
+    width: 80rpx;
+    height: 80rpx;
+    margin-top: 20rpx;
+    margin-left:-10rpx;
+}
+
+.price_input_img{
+    float: left;
+    margin-top: 70rpx;
+    width: 60rpx;
+    height: 60rpx;
+    margin-left: 50rpx;
+}
+
+.price_input_text{
+    float: left;
+    margin-top: 70rpx;
+    width: 600rpx;
+    height: 55rpx;
+    font-size: 55rpx;
+    border-bottom: solid;
+    border-bottom-color: #06ccb6;
+    border-bottom-width: 5rpx;
+}
+
+
+.file{
+    margin-top: 100rpx;
+    float: left;
+    width: 375rpx;
+    height: 300rpx;
+    color: #06ccb6;
+}
+
+.file_button{
+    height: 300rpx;
+    background-color: #06ccb6;
+}
+
+.type_rent{
+    float: left;
+    width: 750rpx;
+}
+
+.type{
+    float: left;
+    width: 375rpx;
+}
+
+
+
+.type_img{
+    float: left;
+    width: 110rpx;
+    height: 100rpx;
+    margin-left:25rpx;
+}
+
+
+
+
+.type_text{
+    float: left;
+    font-size: 34rpx;
+    height: 60rpx;
+    margin-top: 20rpx;
+    margin-left: 60rpx;
+    padding: 20rpx 20rpx 0 20rpx;
+    color: white;
+    background-color: #06ccb6;
+    border-radius: 10rpx;
+
+}
+
+.rent_img{
+    width: 100rpx;
+    height: 100rpx;
+    float: right;
+    margin-right: 40rpx;
+}
+
+.rent_text{
+    float: right;
+    font-size: 30rpx;
+    color: #bfbfbf;
+    margin-top: 40rpx;
+}
+
+.signature{
+    float: left;
+    width: 750rpx;
+}
+
+.signature_img{
+    float: left;
+    width: 100rpx;
+    height: 100rpx;
+    margin-left: 25rpx;
+    margin-right: 65rpx;
+}
+
+.signature_text{
+    font-size: 30rpx;
+    color: #bfbfbf;
+    margin-top: 60rpx;
+}
+

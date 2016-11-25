@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="col user">
+    <view class="row user_info">
+      <view class="user_info_left">
+        <image mode="aspectFit" src="{{user.avatar_url}}" />
+      </view>
+      <view class="col user_info_right">
+        <view class="user_name">{{user.name}}</view>
+        <view class="user_login">{{user.login}}</view>
+        <view class="user_location">{{user.location}}</view>
+        <view class="user_email">{{user.email}}</view>
+        <view class="user_blog">{{user.blog}}</view>
+        <view class="user_created_at">{{user.created_at}}</view>
+      </view>
+    </view>
+    <view class="col user_organizations">
+      <view class="user_organizations_title">Organizations</view>
+      <view class="row user_organizations_list">
+        {{user.organizations_url}}
+      </view>
+    </view>
+    <view class="follow_btn">
+      <button type="primary">Follow</button>
+    </view>
+    <view class="user_follow">
+      user_follow
+    </view>
+  </view>
+</view>

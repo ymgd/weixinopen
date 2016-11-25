@@ -1,0 +1,22 @@
+<view class="container set-bg">
+    <view class="section">
+        <view class="set-list f14 mt">
+            <view class="set-item">
+                <text class="set-t">收货地址</text>
+                <view class="arrow"></view>
+            </view>
+             <view class="set-item">
+                <text class="set-t">修改密码</text>
+                <view class="arrow"></view>
+            </view>
+             <view class="set-item">
+                <text class="set-t">绑定新浪微博</text>
+                <view class="arrow"></view>
+            </view>
+        </view>
+        <view class="set-btn">
+         <button type="primary" size="mini" class="btn mt f14" hover-class="button-hover"> 退出当前账号 </button>
+        </view>
+
+    </view>
+</view>

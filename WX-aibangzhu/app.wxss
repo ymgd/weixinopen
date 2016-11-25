@@ -1,0 +1,88 @@
+/**app.wxss**/
+/*.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}*/
+
+page{
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  background-color: #EFEFF4;
+  height: 100%;
+}
+.big-title{
+  font-size: 20px;
+  color: #000;
+}
+.main-content{
+  font-size: 17px;
+  color: #000;
+}
+.main-description{
+  font-size: 16px;
+  color: #5B5B5B;
+}
+.sub-content{
+  font-size: 14px;
+  color: #888;
+}
+.sub-info{
+  font-size: 14px;
+  color: #B2B2B2;
+}
+.link-textStyle{
+  font-size: 14px;
+  color: #576b95;
+}
+.bottom-textstyle{
+  font-size: 10px;
+  color: #B2B2B2;
+}
+.info-mark{
+  background-color: #C9C9C9;
+  color: #fff;
+  padding:10rpx 40rpx; 
+  border-radius:15rpx;
+  font-size: 13pt;
+  margin: 0 20rpx;
+  vertical-align: middle;
+}
+.arrow-right-img{
+  width: 19.2rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+.img-flex-wrap{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+}
+.table-block{
+  margin-top: 40rpx;
+  background-color: #fff;
+}
+.table-row{
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  border-bottom: 2rpx solid #F6F6F6;
+}
+.table-row-title{
+  width: 170rpx;
+}
+.input-content, .textarea-content{
+  width: 480rpx;
+  padding: 0 20rpx 0 5rpx;
+  float: right;
+}
+.button-group{
+  width: 670rpx;
+}
+.button-cell{
+  margin: 20rpx 0;
+}

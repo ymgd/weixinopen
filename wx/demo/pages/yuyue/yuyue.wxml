@@ -1,0 +1,65 @@
+<view class="banner pr tc">
+	<image class="pic" src="http://icon.carimg.com/m/0201/yuyue_bg2.jpg"></image>
+	<text class="title pa">互联网装修建材一站式平台</text>
+	<text class="tag pa">装修就找家居在线，省心省钱更放心！</text>
+</view>
+<view class="w yuyue_box">
+	<image class="pic" src="http://icon.carimg.com/weixin/0100/201610181101.png"></image>
+	<input id="userName" bindchange="bindChange" placeholder="您的称呼" value="{{userName}}"/>
+	<input id="userPhone" bindchange="bindChange" placeholder="手机号码" maxlength="11" type="number" value="{{userPhone}}"/>
+
+	<view class="box">
+		<picker bindchange="pChange" value="{{province_index}}" range="{{province.txt}}" class="flex1">
+			<view class="picker">{{province.txt[province_index]}}</view>
+		</picker>
+		<view style="width:10px;"></view>
+		<picker bindchange="cChange" value="{{city_index}}" range="{{city.txt}}" class="flex1">
+			<view class="picker">{{city.txt[city_index]}}</view>
+		</picker>
+	</view>
+
+	<input id="xiaoqu" bindchange="bindChange" placeholder="小区名称" value="{{xiaoqu}}"/>
+
+	<view class="box">
+		<picker bindchange="areaChange" value="{{area_index}}" range="{{area.txt}}" class="flex1">
+			<view class="picker">{{area.txt[area_index]}}</view>
+		</picker>
+		<view style="width:10px;"></view>
+		<picker bindchange="priceChange" value="{{price_index}}" range="{{price.txt}}" class="flex1">
+			<view class="picker">{{price.txt[price_index]}}</view>
+		</picker>
+	</view>
+
+	<button type="warn" bindtap="yuyueSubmit" class="mt20">立即预约</button>
+</view>
+
+
+<view class="content border_t w">
+	<title class="tc mt40">在家居在线 装修更省心</title>
+	<subtitle class="tc">资深金牌工长 施工全程保障</subtitle>
+	<view class="box box1">
+		<view class="flex1" style="background:#ff4049;">三大免费</view>
+		<view style="width:0.5rem"></view>
+		<view class="flex1" style="background-image:url(http://icon.carimg.com/m/0201/yuyue_mini1.jpg)">免费测量</view>
+		<view style="width:0.5rem"></view>
+		<view class="flex1" style="background-image:url(http://icon.carimg.com/m/0201/yuyue_mini2.jpg)">免费设计</view>
+		<view style="width:0.5rem"></view>
+		<view class="flex1" style="background-image:url(http://icon.carimg.com/m/0201/yuyue_mini3.jpg)">免费报价</view>
+	</view>
+	<view class="box">
+		<view class="flex1" style="line-height: 4.2rem;background:#ff4049;">五年质保</view>
+		<view style="width:0.5rem"></view>
+		<view class="flex1" style="background-image:url(http://icon.carimg.com/m/0201/yuyue_mini4.jpg)"><text class="t1">基础工程</text><text>2年质保</text></view>
+		<view style="width:0.5rem"></view>
+		<view class="flex1" style="background-image:url(http://icon.carimg.com/m/0201/yuyue_mini5.jpg)"><text class="t1">隐蔽工程</text><text>5年质保</text></view>
+		<view style="width:0.5rem"></view>
+		<view class="flex1" style="background-image:url(http://icon.carimg.com/m/0201/yuyue_mini6.jpg)"><text class="t1">24h内</text><text>售后响应</text></view>
+	</view>
+	<title class="tc mt40">在家居在线 装修更省钱</title>
+	<subtitle class="tc">F2C任性主材包 工厂直供没有中间价</subtitle>
+	<image class="mt15" src="http://icon.carimg.com/m/0201/yuyue_text4.jpg" mode="aspectFit"></image>
+	<title class="tc mt40">在家居在线 装修更放心</title>
+	<subtitle class="tc">精选品牌商家 劲爆底价服务不掉价</subtitle>
+	<image class="mt15" src="http://icon.carimg.com/m/0201/yuyue_text5.jpg"></image>
+</view>
+<include src="../../template/footer.wxml"/>

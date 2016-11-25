@@ -1,0 +1,38 @@
+//index styles
+page {
+  background: #ffda6a;
+}
+
+.index {
+  background: #ffda6a;
+  padding: 20px 10px
+}
+.main_cate {
+  font-size: .8em;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #444;
+  padding: 25px
+}
+.sub-cates {
+  text-align: center;
+  font-size: .7em;
+  height: 0;
+  overflow: hidden;
+  transition: .3s;
+  position: relative;
+  .close-panel {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #0e2a42;
+    color: #ffda6a;
+    padding: 5px 0
+  }
+}
+
+.sub-cates-open {
+  border: 1px solid #444;
+  border-top: none;
+  height: 100px;
+}

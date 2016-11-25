@@ -1,0 +1,62 @@
+.lastestview {
+    width: 100%;
+    background-color: white;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    padding: 28rpx;
+}
+
+.lastestview .adimage {
+    width: 80rpx; 
+    height: 80rpx;
+}
+
+.lastestview .adinfoview {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24rpx;
+    width: 590rpx;
+}
+
+.lastestview .adinfoview .userinfoview {
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+}
+
+.lastestview .adinfoview .userinfoview .avatar {
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 20rpx;
+}
+
+.lastestview .adinfoview .userinfoview .name {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 14px;
+    margin-left: 16rpx;
+}
+
+.lastestview .adinfoview .userinfoview .extro {
+    font-size: 14px;
+    font-weight: 14px;
+    color: #969696;
+}
+
+.lastestview .adinfoview .content {
+    font-size: 14px; 
+    color: #969696;
+    margin: 9rpx;
+    word-break: break-all;    
+    text-overflow: ellipsis;    
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 1;    
+    overflow: hidden; 
+}
+
+.lastestview .arrowimage {
+    width: 10rpx;
+    height: 18rpx;
+}

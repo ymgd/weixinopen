@@ -1,0 +1,26 @@
+
+.servicearea-area{
+    margin-top: 20rpx;
+}
+
+.servicearea-grid{
+    height: 235rpx;
+}
+
+.servicearea-item{
+    flex: 1;
+}
+
+.servicearea-item-icon{
+    width: 114rpx;
+    height: 114rpx;
+    border-radius: 50%;
+}
+
+.servicearea-item-desp{
+    margin-top: 16rpx;  
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    line-height: 37rpx;
+    color: #333333;
+}

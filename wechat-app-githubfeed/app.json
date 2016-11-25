@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/explore/explore",
+    "pages/famous/famous",
+    "pages/me/me",
+    "pages/settings/settings",
+    "pages/auth/onboard/onboard",
+    "pages/repo/repo",
+    "pages/user/user"
+  ],
+
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "wx-github-feed",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#4078C0",
+    "enablePullDownRefresh": true
+  },
+
+  "tabBar": {
+    "color": "#9A9A9A",
+    "selectedColor": "#4078c0",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Feed",
+        "iconPath": "images/tab/feed.png",
+        "selectedIconPath": "images/tab/feed1.png"
+      },
+      {
+        "pagePath": "pages/explore/explore",
+        "text": "Explore",
+        "iconPath": "images/tab/explore.png",
+        "selectedIconPath": "images/tab/explore1.png"
+      },
+      {
+        "pagePath": "pages/famous/famous",
+        "text": "Famous",
+        "iconPath": "images/tab/famous.png",
+        "selectedIconPath": "images/tab/famous1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "Me",
+        "iconPath": "images/tab/me.png",
+        "selectedIconPath": "images/tab/me1.png"
+      }
+    ]
+  }
+}

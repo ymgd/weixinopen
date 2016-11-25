@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="section section_gap" style="width:100%">
+        <text class="section_title">设置left/right icon</text>
+        <slider bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle" show-value step='5' min='0' max='100' disabled="{{disabled}}"  />
+        <button type="default" bindtap="setDefault">点我设置不可用</button> 
+    </view>
+</view>

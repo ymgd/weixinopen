@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<import src="../common/templates.wxml" />
+<template is="pageLoading" data="{{pageLoadingHide}}" />
+
+<view class="page">
+    <!-- 轮播图 -->
+    <block wx:if="{{banner.fail}}">
+        <view class="errorTips">{{banner.data}},请刷新重试</view>
+    </block>
+    <block wx:elif="{{banner.loading}}">
+        <view class="loading"></view>
+    </block>
+    <block wx:else>
+        <swiper class="index-banner" indicator-dots="{{banner.indicatorDots}}" autoplay="{{banner.autoplay}}" interval="{{banner.interval}}" duration="{{banner.duration}}">
+            <block wx:for="{{banner.data}}">
+                <swiper-item bindtap="goDetail" data-id="{{item.id}}"><image src="{{item.images.large}}" mode="aspectFill"></image></swiper-item>
+            </block>
+        </swiper>
+    </block>
+
+    <!-- 正在热映 -->
+    <template is="index-list-col" data="{{...hot, title: '正在热映'}}" />
+    
+    <!-- 即将上映 -->
+    <template is="index-list-col" data="{{...coming, title: '即将上映'}}" />
+
+</view>

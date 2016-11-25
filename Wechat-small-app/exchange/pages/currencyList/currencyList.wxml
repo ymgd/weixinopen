@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="currencyTitle">热门货币</view>
+
+    <view class="currencyItem" wx:for="{{tradeListHot}}" wx:for-item="hotCurrency" wx:for-index="index" id="hot-{{hotCurrency.name}}-{{hotCurrency.description}}-{{hotCurrency.comments}}" bindtap="changeCurrency">
+        {{hotCurrency.name+' '+hotCurrency.description+', '+hotCurrency.comments}}
+    </view>
+
+    <view wx:for="{{capitalList}}" wx:for-item="cap">
+        <view class="zimuTitle">{{cap}}</view>
+        <view class="currencyItem" wx:for="{{tradeListAll[cap]}}" wx:for-item="currency" wx:for-index="index" id="{{cap}}-{{currency.name}}-{{currency.description}}-{{currency.comments}}" bindtap="changeCurrency">
+            {{currency.name+' '+currency.description+', '+currency.comments}}
+        </view>
+    </view>
+</view>

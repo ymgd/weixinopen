@@ -1,0 +1,12 @@
+<view class="page">
+    <view class="form">
+        <form catchsubmit="formSubmit">
+            <input name='username' placeholder="请输入你的账号" type="text" value="maydaypple" auto-focus/>
+            <input name='passwords' password='true' placeholder="请输入你的密码"/>
+            <button formType="submit">登录</button>
+        </form>
+    </view>
+    <toast class="toast" hidden="{{isHiddenLoginToast}}" bindchange="handleToast">
+        <view>{{loginMessage}}</view>
+    </toast>
+</view>

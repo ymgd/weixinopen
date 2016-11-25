@@ -1,0 +1,13 @@
+.group{
+margin-left: 30rpx;
+width: 500rpx;
+height: 250rpx;
+}
+.bottomButton{
+   margin-left: 5%;
+   margin-top: 10rpx;
+}
+.bottomView{
+    width: 90%;
+    height: 50rpx;
+}

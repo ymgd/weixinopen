@@ -1,0 +1,8 @@
+<view>
+  <view class="section_title">request</view>
+  <form bindsubmit="formSubmit">
+    <input name="aNum" placeholder="please input aNum" />
+    <input name="bNum" placeholder="please input bNum" />
+    <button type="primary" formType="submit">发起请求</button>
+  </form>
+</view>

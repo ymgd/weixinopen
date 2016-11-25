@@ -1,0 +1,3 @@
+<import src="../src/html2wxml.wxml/"/>
+
+<template is="html2Wxml" data="{{innerHTML}}"></template>

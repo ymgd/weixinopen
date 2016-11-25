@@ -1,0 +1,17 @@
+<view class="container">
+    <loading hidden="{{ hidden }}">加载中</loading>
+    <view class="topics">
+        <block wx:for="{{ topics }}">
+            <view class="topic" id="{{ item.id }}" bindtap="goTopic">
+                <image class="avatar" src="{{ item.member.avatar_normal }}"></image>
+                <view class="topic-info">
+                    <view class="topic-title"><text>{{ item.title }}</text></view>
+                    <view class="topic-desc">
+                        <text class="node-name">{{ item.node.name }}</text>
+                        <text class="username">{{ item.member.username }}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

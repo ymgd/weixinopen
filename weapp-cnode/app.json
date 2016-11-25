@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/good/good",
+    "pages/share/share",
+    "pages/ask/ask",
+    "pages/job/job",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "CNode社区",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "",
+        "iconPath": "../icons/home.png",
+        "selectedIconPath": "../icons/home-s.png"
+      },
+      {
+        "pagePath": "pages/good/good",
+        "text": "",
+        "iconPath": "../icons/good.png",
+        "selectedIconPath": "../icons/good-s.png"
+      },
+      {
+        "pagePath": "pages/share/share",
+        "text": "",
+        "iconPath": "../icons/share.png",
+        "selectedIconPath": "../icons/share-s.png"
+      },
+      {
+        "pagePath": "pages/ask/ask",
+        "text": "",
+        "iconPath": "../icons/ask.png",
+        "selectedIconPath": "../icons/ask-s.png"
+      },
+      {
+        "pagePath": "pages/job/job",
+        "text": "",
+        "iconPath": "../icons/job.png",
+        "selectedIconPath": "../icons/job-s.png"
+      }
+    ]
+  }
+}
