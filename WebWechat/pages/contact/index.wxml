@@ -1,0 +1,9 @@
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<view class="page-header">
+  <text class="page-header-text">{{title}}</text>
+</view>
+<scroll-view scroll-y="true" class="page-body">
+  
+</scroll-view>

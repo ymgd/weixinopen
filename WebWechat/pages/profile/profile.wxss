@@ -1,0 +1,8 @@
+.notice {
+text-align: right;
+}
+
+.recharge{
+    text-align: right,buttom;
+
+}

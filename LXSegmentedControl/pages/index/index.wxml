@@ -1,0 +1,6 @@
+<view class="segmentedControl">
+	<!-- 循环遍历 -->
+	<block wx:for="{{radioValues}}">
+		<text data-index="{{index}}" bindtap="indexChanged" class="{{clazz[index]}}">{{item.value}}</text>
+	</block>
+</view>

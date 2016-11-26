@@ -1,0 +1,17 @@
+/**index.wxss**/
+.body {
+  width: 90%;
+  margin:0 auto;
+}
+.phoneInput {
+  margin-top: 60px;
+  border: 1px solid #dedede;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.btnQuery {
+  width: 100px;
+  float: right;
+  margin-top: 20px;
+}

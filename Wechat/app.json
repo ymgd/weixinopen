@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"#fff",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "60秒倒计时",
+    "navigationBarTextStyle":"white"
+  }
+}

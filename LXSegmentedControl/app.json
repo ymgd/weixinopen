@@ -1,0 +1,10 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#48C23D",
+    "navigationBarTitleText": "LXSegmentedControl分段组件",
+    "navigationBarTextStyle":"white"
+  }
+}

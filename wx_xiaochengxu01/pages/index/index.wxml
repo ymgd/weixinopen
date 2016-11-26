@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="body">
+  <input type="number" maxlength="11" auto-focus class="phoneInput" bindinput="listenPhoneInput" />
+  <button type="primary"  bindtap="queryHome4Phone" class="btnQuery"> 查询 </button>
+  <text class="result" wx:if="{{province != ''}}">
+    {{message}}
+  </text>
+</view>
+

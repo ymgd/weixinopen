@@ -1,0 +1,49 @@
+{
+  "pages": [
+      "pages/contact/index",
+      "pages/piggy/index",
+      "pages/profile/profile",
+      "pages/friend/friend"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "shaking Piggy Bank",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#1c1615",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/contact/index",
+      "iconPath": "image/weixin_normal.png",
+      "selectedIconPath": "image/weixin_pressed.png",
+      "text": "存钱罐组"
+    }, {
+      "pagePath": "pages/friend/friend",
+      "iconPath": "image/contact_list_normal.png",
+      "selectedIconPath": "image/contact_list_pressed.png",
+      "text": "通讯录"
+    }, {
+      "pagePath": "pages/piggy/index",
+      "iconPath": "image/find_normal.png",
+      "selectedIconPath": "image/find_pressed.png",
+      "text": "加入组"
+      }, {
+      "pagePath": "pages/profile/profile",
+      "iconPath": "image/profile_normal.png",
+      "selectedIconPath": "image/profile_pressed.png",
+      "text": "我"
+      }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
+

@@ -1,0 +1,75 @@
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<view class="page-header">
+  <text class="page-header-text">{{title}}</text>
+</view>
+<scroll-view scroll-y="true" class="page-body">
+  <!--<navigator url="../movie/movie?id={{item.id}}" wx:for="{{piggys}}">
+    <view class="item">
+    <view class="meta">
+      <text class="title">总金额：{{item.totalmoney}}</text>
+      <text class="artists">基本金额：{{item.basemoney}} 红包个数：{{item.totalamount}} 参与人数：{{item.baseamount}}</text>
+    </view>
+    </view>
+  </navigator>-->
+<view class="setting notice" style="flex-direction:row;">
+<view class="setting" style="display: inline-block"><button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary">设置</button> </view>
+<view class="notice" style="display: inline-block"> <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary">通知</button></view>
+</view>
+
+<view class="item" style="flex-direction:row;">
+    <image class="poster" src='../../image/gr.png'></image>
+    <view class="meta">
+      <text class="title">用户名：{{info.name}}</text>
+      <view class="artists">积分：{{info.jifen}}</view>
+      <view class="artists">余额：{{info.balance}}</view>
+      
+    </view>
+    <view class="recharge" style="display: inline-block"> <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary">充值</button></view>
+    </view>
+
+    <view class="item" style="flex-direction:row;">
+      <view  style="flex-direction:column;">
+      <image class="poster" src='../../image/profile_normal.png'></image>
+      <text>正在进行</text>
+      </view>
+      <view style="flex-direction:column;">
+      <image class="poster" src='../../image/profile_normal.png'></image>
+      <text>已揭晓</text>
+      </view>
+      <view style="flex-direction:column;">
+      <image class="poster" src='../../image/profile_normal.png'></image>
+      <text>多期参与</text>
+      </view >
+     </view>
+
+     <view class="item" style="flex-direction:row;">
+     <image class="poster" src='../../image/v2.png'></image>
+      <text class="artists">testItem1</text>
+     </view>
+     <view  class="item" style="flex-direction:row;">
+     <image class="poster" src='../../image/v2.png'></image>
+      <text class="artists">testItem2</text>
+     </view>
+     <view class="item" style="flex-direction:row;">
+     <image class="poster" src='../../image/v2.png'></image>
+      <text class="artists">testItem3</text>
+     </view>
+     <view class="item" style="flex-direction:row;">
+     <image class="poster" src='../../image/v2.png'></image>
+      <text class="artists">testItem3</text>
+     </view>
+     <view class="item" style="flex-direction:row;">
+     <image class="poster" src='../../image/v2.png'></image>
+      <text class="artists">testItem3</text>
+     </view>
+     <view class="item" style="flex-direction:row;">
+     <image class="poster" src='../../image/v2.png'></image>
+      <text class="artists">testItem3</text>
+     </view>
+
+</scroll-view>

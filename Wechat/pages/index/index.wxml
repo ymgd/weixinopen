@@ -1,0 +1,2 @@
+<!--index.wxml-->
+<canvas canvas-id = "canvas" class="canvas" />

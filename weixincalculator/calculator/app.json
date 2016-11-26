@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "page/index/index",
+    "page/history/history"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0e90d2",
+    "navigationBarTitleText": "小程序计算器",
+    "navigationBarTextStyle":"white"
+  }
+}

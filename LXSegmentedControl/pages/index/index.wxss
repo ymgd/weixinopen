@@ -1,0 +1,47 @@
+/*LXSegmentedControl容器*/
+.segmentedControl {
+	/*水平居中*/
+	margin: 30px auto;
+	/*边框为2px 主色调为蓝*/
+	border: 2px solid #39f;
+	/*圆角6px*/
+	border-radius: 6px;
+	/*控件宽度*/
+	width: 240px;
+	/*控件高度*/
+	height: 30px;
+}
+
+/*普通文本*/
+.segmentedControl text {
+	/*水平排列*/
+	float: left;
+	/*宽度为控件宽度的1/3 再减去2px的右边框*/
+	width: 78px;
+	/*字体大小*/
+	font-size: 14px;
+	/*主色调*/
+	color: #39f;
+	/*行高，与控件高度相等*/
+	line-height: 30px;
+	/*文本水平居中*/
+	text-align: center;
+	/*右边距*/
+	border-right: 2px solid #39f;
+}
+
+/*选中状态文本*/
+.segmentedControl text.selected {
+	/*同主色调*/
+	background-color: #39f;
+	/*前景色为白色*/
+	color: white;
+}
+
+/*最后一个分组按钮*/
+.segmentedControl text.last {
+	/*不必右边框*/
+	border-right: 0;
+	/*高度也不必减少2px，就是控件高度的1/3*/
+	width: 80px;
+}

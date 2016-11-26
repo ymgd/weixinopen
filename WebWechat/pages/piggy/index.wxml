@@ -1,0 +1,21 @@
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<view class="page-header">
+  <text class="page-header-text">{{title}}</text>
+</view>
+<scroll-view scroll-y="true" class="page-body">
+  <navigator url="../movie/movie?id={{item.id}}" wx:for="{{piggys}}">
+    <view class="item">
+    <!--<image class="poster" src="{{item.subject.images.small}}"></image>-->
+    <view class="meta">
+      <text class="title">总金额：{{item.totalmoney}}</text>
+      <text class="artists">基本金额：{{item.basemoney}} 红包个数：{{item.totalamount}} 参与人数：{{item.baseamount}}</text>
+      <!--<view class="artists"><text wx:for="{{item.subject.directors}}">{{item.name}} </text></view>-->
+    </view>
+    <!--<view class="rating">
+      <text>{{item.subject.rating.average}}</text>
+    </view>-->
+    </view>
+  </navigator>
+</scroll-view>

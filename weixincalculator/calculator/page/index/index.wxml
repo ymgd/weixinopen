@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="hamm-box">
+    <view class="hamm-result">
+      {{left}}{{center}}{{right}}{{result}}
+    </view>
+    <view class="hamm-box-ctrl">
+      <view class="hamm-ctrl">
+        <view id="ac" class="hamm-ctrl-item" bindtap="evt_touch">C</view>
+        <view id="cheng" class="hamm-ctrl-item" bindtap="evt_touch">*</view>
+        <view id="chu" class="hamm-ctrl-item" bindtap="evt_touch">/</view>
+        <view id="jia" class="hamm-ctrl-item" bindtap="evt_touch">+</view>
+        
+      </view>
+      <view class="hamm-ctrl">
+        <view id="7" class="hamm-ctrl-item" bindtap="evt_touch">7</view>
+        <view id="8" class="hamm-ctrl-item" bindtap="evt_touch">8</view>
+        <view id="9" class="hamm-ctrl-item" bindtap="evt_touch">9</view>
+        <view id="jian" class="hamm-ctrl-item" bindtap="evt_touch">-</view>
+      </view>
+      <view class="hamm-ctrl">
+        <view id="4" class="hamm-ctrl-item" bindtap="evt_touch">4</view>
+        <view id="5" class="hamm-ctrl-item" bindtap="evt_touch">5</view>
+        <view id="6" class="hamm-ctrl-item" bindtap="evt_touch">6</view>
+        <view id="0" class="hamm-ctrl-item" bindtap="evt_touch">0</view>
+      </view>
+      <view class="hamm-ctrl">
+        <view id="1" class="hamm-ctrl-item" bindtap="evt_touch">1</view>
+        <view id="2" class="hamm-ctrl-item" bindtap="evt_touch">2</view>
+        <view id="3" class="hamm-ctrl-item" bindtap="evt_touch">3</view>
+        <view id="dengyu" class="hamm-ctrl-item" bindtap="evt_touch">=</view>
+        
+      </view>
+      
+    </view>
+    <view class="hamm-button">
+      <button type="default" bindtap="bindViewTap" hover-class="other-button-hover"> 查看记录 </button>
+    </view>
+  </view>
+</view>
