@@ -1,0 +1,32 @@
+
+<loading hidden="{{loadingHidden}}"> 
+    加载中...
+</loading>
+
+<scroll-view scroll-y="true" style="height: 100%;" scroll-into-view="{{toView}}" upper-threshold="5" lower-threshold="5" bindscrolltoupper="refresh" bindscrolltolower="loadMore">
+
+    <swiper indicator-dots="true" id="swiper-view" autoplay="true" interval="2000">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+                <image src="{{item}}" width="100%" height="150"/>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view id="top-id"> </view>
+    <view id="top-id2"> </view>
+    <block wx:for="{{renderData}}">
+        <view class="container">  
+            <view class="title">
+                <text class="title-text">{{item.title}}</text>
+            </view>
+        
+            <view class="images"  wx:if="{{item.imageurls.length > 0}}">
+                <block wx:for="{{item.imageurls}}" wx:for-item="imgItem" wx:for-index="imgIndex">
+                    <image wx:if="{{imgIndex <= 2}}"  src="{{imgItem.url}}"></image>
+                </block>
+            </view>
+            <view class="source">{{item.source}}  {{item.pubDate}}</view>
+        </view>
+    </block>
+</scroll-view>

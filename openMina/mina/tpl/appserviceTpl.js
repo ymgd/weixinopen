@@ -1,0 +1,2 @@
+"use strict";
+module.exports = '\n<!DOCTYPE html>\n<html>\n\n<head>\n  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n  <link href="https://res.wx.qq.com/mpres/htmledition/images/favicon218877.ico" rel="Shortcut Icon">\n  <script>\n  var __wxAppData = {}\n  var __wxRoute\n  var __wxRouteBegin\n  global = {}\n  </script>\n  <script></script>\n</head>\n\n<body>\n  <script>\n    window._____sendMsgToNW({\n      sdkName: \'APP_SERVICE_COMPLETE\'\n    })\n  </script>\n</body>\n\n</html>\n  ';

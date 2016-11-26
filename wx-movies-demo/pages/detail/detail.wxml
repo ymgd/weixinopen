@@ -1,0 +1,39 @@
+
+<scroll-view scroll-y="true" style="height: 100%" wx:if="{{hasResult}}" >
+
+    <image src="{{mIcon}}" class="movie-image" mode="scaleToFill"></image>
+    <text class="movie-des" bindtap="onDesClick">{{movieDesc}}</text>
+    <view class="title">演员列表</view>
+    <scroll-view scroll-x="true" id="acts-wrap">
+        <view class="acts-container" style="width: {{acts.length*33}}%">
+            <block wx:for="{{acts}}">
+                <view class="acts-view">
+                    <image src="{{item.image}}"></image>
+                    <textview>{{item.name}}</textview>
+                </view>
+            </block>
+
+        </view>
+
+    </scroll-view>
+    <view class="title">相关视频推荐</view>
+    <scroll-view scroll-x="true" id="recommend-wrap">
+
+        <view class="recommend-container">
+            <block wx:for="{{recommends}}">
+                <view class="recommend-view" bindtap="onRItemClick" data-name="{{item.title}}">
+                    <image src="{{item.image}}"></image>
+                    <textview>{{item.title}}</textview>
+                </view>
+            </block>
+        </view>
+
+    </scroll-view>
+
+
+</scroll-view>
+<view wx:else id="noresult-wrap" >
+    <text>暂无该影片信息!</text>
+    <image src="image/sorry.gif"></image>
+    <button type="primary" size="mini" bindtap="onSearchClick">搜一搜</button>
+</view>

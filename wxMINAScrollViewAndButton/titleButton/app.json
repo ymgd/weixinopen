@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/example/example"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"orange",
+    "navigationBarTitleText": "按钮联动",
+    "navigationBarTextStyle":"black"
+  }
+}

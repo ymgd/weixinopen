@@ -1,0 +1,9 @@
+<!--s_list_tasks.wxml-->
+<view class="tasks-list">
+  <block wx:for="{{tasks}}" wx:for-item="task">
+    <view bindtap="answer"  class="tasks-item">
+       <text>{{index + 1}}. {{task.time}}</text>
+       <text>{{ task.details}}</text>
+    </view>
+  </block>
+</view>

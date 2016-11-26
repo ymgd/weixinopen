@@ -1,0 +1,126 @@
+/**app.wxss**/
+@font-face
+{
+font-family: iconfont;
+src: url('res/iconfont.ttf')
+}
+/* Row
+----------------------------------------------*/
+.flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.flex-row:after {
+  clear: both; }
+
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* Container
+----------------------------------------------*/
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32rpx;
+  box-sizing: border-box; } 
+
+/* List
+----------------------------------------------*/
+.ui-list {
+    background-color: #fff;
+    width: 100%; }
+    
+.ui-list-item {
+    position: relative;
+    margin-left: 15px;
+    display: -webkit-box; }
+
+.ui-pure-item {
+    display: block; 
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    -webkit-box-align: center; }
+
+.ui-item-content {
+    font-size: 16px; 
+    padding-left: 32rpx; }
+
+.ui-item-span {
+    font-size: 14px;
+    padding-left: 32rpx;
+    color: #777; }
+
+.ui-list-item:after {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    line-height: 44px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    display: block;
+    color: #c7c7c7;
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -22px;
+    margin-right: -10px; }
+
+.ui-list-item {
+    padding-right: 30px; }
+
+/* Border
+----------------------------------------------*/
+.ui-border-t {
+    border-top: 1px solid #e0e0e0; }
+
+.ui-border-b {
+    border-bottom: 1px solid #e0e0e0; }
+
+/* No Wrap
+----------------------------------------------*/
+.ui-nowrap {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+
+/* Tips
+----------------------------------------------*/
+.ui-tips {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #c7c7c7; }
+
+/* Detail
+----------------------------------------------*/
+.ui-title {
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 8px; }
+
+.ui-content {
+    margin-bottom: 16px; 
+}
+
+.ui-pic-title {
+    font-size: 28rpx;
+    font-weight: normal;
+    text-align: center;
+    color: #c7c7c7; }

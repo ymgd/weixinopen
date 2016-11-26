@@ -1,0 +1,19 @@
+<!--userinfo.wxml-->
+<view class="container">
+  <view class="userinfo">
+  <text>{{userInfo.login}}</text>
+  <block wx:if="{{useInfo.login == 1}}">
+    <image class="userinfo-avatar" mode="aspectFit" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="changeAvatar"></image>
+  </block>
+  <block wx:else>
+    <image class="userinfo-avatar" mode="aspectFit" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </block>
+    <text class="userinfo-items">昵称：{{userInfo.nickName}}</text>
+    <text class="userinfo-items" wx:if="{{userInfo.gender == 0}}">性别：未知</text>
+    <text class="userinfo-items" wx:elif="{{userInfo.gender == 1}}">性别：男</text>
+    <text class="userinfo-items" wx:else>性别：女</text>
+    <text class="userinfo-items">地区：{{userInfo.province}}</text>
+    <text class="userinfo-items">城市：{{userInfo.city?userInfo.city:'未知'}}</text>
+  </view>
+  <button class="button" type="warn" plain bindtap="onLogout">切换用户</button>
+</view>

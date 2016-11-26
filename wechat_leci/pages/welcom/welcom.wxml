@@ -1,0 +1,16 @@
+<view class="wcontainer">
+    <swiper class="welcom-list" indicator-dots="{{swiper.indicatorDots}}" duration="{{swiper.duration}}" >
+        <block>
+            <swiper-item>
+                <image src="/images/first_load_1.png" mode="scaleToFill"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/first_load_2.png" mode="scaleToFill"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/first_load_3.png" mode="scaleToFill"></image>
+                <view class="in" bindtap="inleci">进入乐词</view>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

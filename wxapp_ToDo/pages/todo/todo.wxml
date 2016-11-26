@@ -1,0 +1,46 @@
+<!--todo.wxml-->
+<view class="container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+  <view class="not-todo" wx:if="{{!textShow}}">
+    <view class="text">当前没有ToDo, 点击+号创建一个吧</view>
+  </view>
+  <view class="add" bindtap="addHandle">+</view>
+
+  <view class="todos">
+    <block wx:for="{{todo}}">
+      <view class="todo {{item.bgCls}}">
+        <view class="t-text">
+          <view class="t-title">{{item.name}}</view>
+          <view class="t-time">{{item.time}}分钟</view>
+          <view class="cover" bindlongtap="changeTodo" data-index="{{index}}"></view>
+        </view>
+        <button class="t-btn" style="border: none; color: #ffffff;" plain="true" bindtap="startTodo" data-index="{{index}}">开始</button>
+      </view>
+    </block>
+  </view>
+
+  <modal title="增加一个ToDo" no-cancel="true" bindconfirm="modalChange" hidden="{{modalHidden}}">
+    <view class="input">
+      <input class="i-input" type="text" bindchange="inputChange" placeholder="请输入事件名称" />
+    </view>
+    <view class="time">
+      <radio-group bindchange="rChange">
+        <label class="label" wx:for="{{defaults.time}}">
+          <radio class="radio" value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </modal>
+</view>
+
+<toast bindchange="toastChange" duration="2200" hidden="{{toastHidden}}">
+暂不提供{{not_active}}功能
+</toast>
+
+<action-sheet hidden="{{actionTodo}}">
+  <block wx:for="{{actionSheetItems}}">
+    <action-sheet-item class="item" bindtap="todoItem" data-index="{{index}}">{{item}}</action-sheet-item> 
+  </block>
+  <action-sheet-cancel class="cancel" bindtap="cancelTodo">取消</action-sheet-cancel>
+</action-sheet>
+
+

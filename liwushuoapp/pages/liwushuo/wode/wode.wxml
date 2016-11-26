@@ -1,0 +1,27 @@
+<view>
+    <header>
+      <ul>
+        <li>  <image src="/images/11.png" ></image></li>
+        <li>  <image src="/images/12.png" ></image></li>
+        <li>  <image src="/images/13.png" ></image></li>
+        <li>  <image src="/images/14.png" ></image></li>
+      </ul>
+        <image  class="tou" src="/images/boy.png" ></image>
+        <p class="login">请登录</p>
+    </header>
+    <ul class="erjinav">
+      <li>  <image src="/images/15.png" ></image><b>购物车</b></li>
+      <li>  <image src="/images/16.png" ></image><b>订单</b></li>
+      <li>  <image src="/images/17.png" ></image><b>礼券</b></li>
+      <li>  <image src="/images/18.png" ></image><b>关注</b></li>
+      <li>  <image src="/images/19.png" ></image><b>客服</b></li>
+    </ul>
+    <ul class="sanjinav">
+      <li  class="danpin">单品</li>
+      <li class="gonglue">攻略</li>
+    </ul>
+    <ul>
+      <image  class="tou" src="/images/xin.png" ></image>
+      <p class="login" style="color:#ccc; font-size:12px;">登陆以享受更更多功能</p>
+    </ul>
+</view>

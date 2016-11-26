@@ -1,0 +1,6 @@
+<!--comingSoon.wxml-->
+<view>
+    <import src="../template/template.wxml"/>
+    <template is="moviesList" data="{{movies}}"></template>
+</view>
+<loading hidden="{{loading}}">加载中</loading>

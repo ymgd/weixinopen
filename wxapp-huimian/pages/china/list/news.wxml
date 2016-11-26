@@ -1,0 +1,70 @@
+<!--china.wxml-->
+<view class="page">
+    <!--引入导航条-->
+    <include src="/pages/tag/tag.wxml"/>
+    <view class="page__bd">
+
+        <block wx:if="{{RecommendPic.length>0}}">
+          <!-- 如果有轮播图显示-->
+          <view class="section section_gap swiper">
+              <swiper indicator-dots="true" 
+                      autoplay="false" interval="3000" duration="1200">
+                  <block wx:for-items="{{RecommendPic}}">
+                      <swiper-item>
+                          <image src="{{item.PicUrl}}" class="slide-image" width="355" height="150"/>
+                      </swiper-item>
+                  </block>
+              </swiper>
+          </view>
+        </block>
+  
+        <!--scroll-view 滚动滑块-->
+        <scroll-view scroll-y="true" style="height:1200rpx;" bindscrolltolower="lower">
+          
+            <view class="data-list">
+                <block wx:for="{{newsArray}}">
+                  <block wx:if="{{item.Type==1}}">
+                    <view class="data">
+                        <view class="news-item" data-newsid="{{item.NewsId}}" bindtap="bindViewTap">
+                          <image src="{{item.PicUrl}}" mode="aspectFill" class="list-image"/>
+                          <view class="news-text">
+                            <text class="news-title">{{item.Title}}</text>
+                            <view class="news-stamp">
+                              <text>{{item.CategoryName}}</text>
+                              <text>{{item.Time}}</text>
+                            </view>
+                          </view>
+                        </view>
+
+
+                    </view>
+                  </block>
+
+                  <block wx:elif="{{item.Type==2}}">
+                    <view class="data">
+                        <view class="news-item" data-title="{{item.Title}}" data-url="{{item.NewsUrl}}" bindtap="bindViewTap">
+                          <image src="{{item.PicUrl}}" mode="aspectFill" class="list-image"/>
+                          <view class="news-text">
+                            <text class="news-title">{{item.Title}}</text>
+                            <view class="news-stamp">
+                            </view>
+                          </view>
+                        </view>
+
+                    </view>
+                  </block>          
+                </block>
+            </view>
+        </scroll-view>
+
+        
+
+        
+        
+    </view>
+
+    <!--加载提示-->
+    <loading hidden="{{hidden}}">
+      加载中...
+    </loading>
+</view>

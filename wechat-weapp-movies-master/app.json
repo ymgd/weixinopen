@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/movies/movies",
+    "pages/detail/detail",
+    "pages/gallery/gallery",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "black",
+    "backgroundColor": "#fafafa",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/movies/movies",
+        "iconPath": "pages/res/images/filmstrip_normal.png",
+        "text": "电影",
+        "selectedIconPath": "pages/res/images/filmstrip_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "pages/res/images/home_normal.png",
+        "text": "我的",
+        "selectedIconPath": "pages/res/images/home_selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 30000,
+    "uploadFile": 30000,
+    "downloadFile": 30000
+  },
+  "debug": true
+
+}

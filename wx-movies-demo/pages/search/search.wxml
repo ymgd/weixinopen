@@ -1,0 +1,9 @@
+<view class="text">请输入查询内容</view>
+<input class="input" bindinput="onTextInput" value="{{hotSearch}}"></input>
+<button class="button" disabled="{{buttonDisable}}" bindtap="onSearchClick">查询</button>
+<view class="text">最近搜索</view>
+<view class="hisContainer">
+    <block wx:for="{{searchHistory}}" wx:for-item="hItem" >
+        <text class="hisItem" bindtap="onNavToResult" data-text="{{hItem}}">{{hItem}} </text>
+    </block>
+</view>

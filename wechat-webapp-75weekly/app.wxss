@@ -1,0 +1,23 @@
+/**app.wxss**/
+@import "/wxParse/wxParse.wxss";
+.container {
+  height: 100%;
+}
+page{
+	background-color: #f5f5f5;
+}
+.g-clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.load-more{
+	margin: 10rpx 0;
+	text-align: center;
+	color: #666;
+	font-size: 24rpx;
+}
+

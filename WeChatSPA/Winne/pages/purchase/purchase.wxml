@@ -1,0 +1,14 @@
+<!--purchase.wxml-->
+<view class="container">
+    <view class="goodsect">
+    <text class="text reminder">您即将购买以下商品：</text>
+        <image class="pic" src="{{good.pic}}" />
+            <view>
+                <text class="text good">{{good.good}} ({{good.description}})</text>
+                <text class="text info">选择数量：</text><slider min="1" max="10" step="1" show-value bindchange="onChange"/>
+                <text class="text info">价格： ￥ {{price}}</text>
+            </view>
+    </view>
+    <button plain type="primary" class="paybut" bindtap="onPay">确认支付</button>
+</view>
+<modal hidden="{{modal}}" confirm-text="返回" no-cancel bindconfirm="onConfirm">获取商品数据失败！</modal>

@@ -1,0 +1,180 @@
+.mine-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 130rpx;
+  background-size: auto, auto;
+  background: url(https://bayewechat.oss-cn-shanghai.aliyuncs.com/rassets/revision/icon-bg1-31089b3b52ad92a9bf410ade08221b538a7bfd69ef65303eca4d227731972a33.png) no-repeat;
+  padding-top: 15px;
+  padding-bottom: 15rpx;
+}
+
+.xunzhang {
+  margin-right: 70rpx;
+}
+
+.xunzhang image {
+  width: 110rpx;
+  height: 120rpx;
+}
+
+.xunzhang .rank {
+  position: relative;
+  top: -47px;
+  left: 30rpx;
+  font-size: 25rpx;
+  width: 50rpx;
+  text-align: center;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.userinfo-avatar {
+  width: 85rpx;
+  height: 85rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+
+.separate {
+  height: 18rpx;
+  background-color: #f2f2f2;
+}
+
+.zichan {
+  display: flex;
+  flex-direction: column;
+}
+
+.zichan .first-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 27rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.zichan .second-line {
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  border-top: 1rpx solid #F6F6F6;
+  border-bottom: 1rpx solid #F6F6F6;
+}
+
+.long-view {
+  display: flex;
+  flex-direction: row;
+  width: 1850rpx;
+}
+
+.zichan .second-line .item {
+  width: 560rpx;
+  height: 137px;
+  margin-left: 20rpx;
+}
+
+.zichan .second-line .item .image{
+  height: 137px;
+}
+
+.zichan .second-line .desc {
+  position: relative;
+  top: -137px;
+  left: 0;
+  width: 560rpx;
+  height: 137px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25rpx;
+}
+
+.desc-line {
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+
+.desc-line.asset-count {
+  font-size: 32rpx;
+  color: #FFC800;
+}
+
+.slide-img {
+  border-radius: 5px;
+  width: 560rpx;
+  height: 137px;
+}
+
+/*.zichan .third-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 27rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}*/
+
+.check {
+  height: 72rpx;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.check text {
+  margin-left: 15rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  width: auto;
+}
+
+.check input {
+  width: auto;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  border: 1rpx solid #66B2FF;
+  padding-left: 10rpx;
+}
+
+.check button {
+  width: 230rpx;
+  margin-left: 10rpx;
+  margin-right: 0;
+  font-size: 30rpx;
+}
+
+.check-code {
+  font-size: 30rpx;
+  display: flex;
+}
+.check input {
+  min-width: 230rpx;
+  width: 290rpx;
+}
+.check-code text {
+
+}
+.check-code text {
+
+}
+.check-code text {
+
+}

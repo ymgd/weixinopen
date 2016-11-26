@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view id='header'>
+    <view class='current_date clear'>
+      <text class="date">{{ldate}}</text>
+      <text class="week">{{week}}</text>
+      <image id='{{locationImageId}}' class='lcaimg' src='{{locationImage}}' bindtap='bindEvent'></image>  
+    </view>
+    <view id='search'>
+      <form bindsubmit='bindEvent' id='{{formId}}'>
+        <input class='search_text' type='text' name='text'placeholder='city'/>
+        <button class='search_btn' formType="submit">GO</button>
+      </form>
+    </view>
+  </view>
+  <view id="content">
+    <view class="place">{{location.name}}</view>
+    <view>
+      <view class="weather">
+        <image src='{{currentWeatherImg}}'></image>
+        <text>{{now.text}}</text>
+      </view>
+      <text class="temperature">{{now.temperature}}</text>      
+     </view>  
+  </view>
+  <view id='footer'>
+      <block wx:for='{{weathers}}'>
+        <view class="bitem{{index}}">
+          <view >{{item.date}}</view>
+          <view class="light_font">{{item.low}}℃~{{item.high}}℃</view>
+          <view >{{item.wind_direction}}</view>   
+          <view class='day'><image src='{{item.code_day}}'  mode='aspectFit'></image> <text>白天：{{item.text_day}}</text>  </view>
+          <view class='night'><image src='{{item.code_night}}' mode='aspectFit'></image><text>夜晚：{{item.text_night}}</text></view> 
+        </view>
+      </block>
+  </view>
+</view>

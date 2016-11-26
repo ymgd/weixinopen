@@ -1,0 +1,39 @@
+page {
+    background-color : #FBF9FE;
+    height : 100%;
+}
+
+.container {
+    display : flex;
+    flex-direction : column;
+    min-height : 100%;
+    justify-content : space-between;
+}
+
+.page-header {
+    display : flex;
+    font-size : 32rpx;
+    color : #aaa;
+    margin-top : 50rpx;
+    flex-direction : column;
+    align-items : center;
+}
+
+.page-header-text {
+    padding : 20rpx 40rpx;
+}
+
+.page-header-line {
+    width : 150rpx;
+    height : 1px;
+    border-bottom : 1px solid #CCCCCC; 
+}
+
+.page-body {
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    flex-grow : 1;
+    overflow-x : hidden;
+}

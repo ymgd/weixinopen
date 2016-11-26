@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/flex/flex"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },"tabBar":{
+    "color":"#dddddd",
+    "selectdColor":"#3cc51f",
+    "borderStyle":"black",
+    "backgroundColor":"#ffffff"
+  ,"list":[
+    {
+      "pagePath":"pages/index/index",
+      "iconPath":"image/wechat.png",
+      "selectedIconPath":"image/wechatHL.png",
+      "text":"秒表"
+      },{
+    "pagePath":"pages/logs/logs",
+    "iconPath":"image/wechat.png",
+    "selectedIconPath":"image/wechatHL.png",
+    "text":"倒计时"
+  }]
+},"networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },"debug": true
+}

@@ -1,0 +1,57 @@
+.index {
+    background-color : #FBF9FE;
+    font-family : -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex : 1;
+    min-height : 100%;
+    font-size : 32rpx;
+}
+
+.head {
+    padding : 80rpx;
+    line-height : 1;
+}
+
+.title {
+    font-size : 52rpx;
+    text-align : center;
+}
+
+.desc {
+    margin-top : 10rpx;
+    color : #888888;
+    font-size : 28rpx;
+    font-family : 'Consolas'
+}
+
+.body {
+    height : 900rpx;
+    padding-left : 30rpx;
+    padding-right : 30rpx;
+    overflow-y : scroll;
+}
+
+.widgets-item {
+    margin-top : 20rpx;
+    margin-bottom : 20rpx;
+    background-color : #FFFFFF;
+    overflow : hidden;
+    border-radius : 4rpx;
+    cursor : pointer;
+}
+
+.widgets-info {
+    display : flex;
+    padding : 40rpx;
+    align-items : center;
+    flex-direction : row;
+}
+
+.widgets-info-name {
+    flex : 1;
+}
+
+.widgets-info-img {
+    width : 32rpx;
+    height : 32rpx;
+    transition : transform .4s;
+}

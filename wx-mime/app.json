@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/entry/entry",
+    "pages/gameover/gameover",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2a292e",
+    "navigationBarTitleText": "掘金",
+    "navigationBarTextStyle":"white"
+  }
+}

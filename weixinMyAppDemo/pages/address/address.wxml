@@ -1,0 +1,43 @@
+<view class="container" style="overflow-y:{{containerOverflowY}}">
+    <view class="search">
+        <image src="../images/icon_search_black.png" class="search-image"> </image>
+        <input  placeholder="输入城市名称" bindinput="searchCity" class="search-input" placeholder-class="search-input-placeholder" maxlength="20" />
+    </view>
+    <block wx:if="{{!searchInputValue}}">
+        <view class="widgets">
+            <view class="widgets__item">
+                <view class="widgets__list  ">
+                    <view   class="widget widget-province" wx:for="{{provinces}}"  bindtap="selectProvince" data-province="{{item}}">
+                        <text class="widget__name">{{item}}</text>
+                        <image class="widget__arrow" src="../images/arrow-right.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="cover" style="left:{{coverLeft}}%"  catchtap="coverTap" >
+            <view class="widgets cover-widgets " catchtap="cityTap">
+                <view class="widgets__item">
+                    <view class="widgets__list  ">
+                        <view   class="widget widget-city" wx:for="{{citys}}"  bindtap="selectCity" data-city="{{item}}">
+                            <text class="widget__name">{{item}}</text>
+                            <view class="widget__line"></view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+    <block wx:else>
+        <view class="widgets search-widgets " catchtap="cityTap">
+            <view class="widgets__item">
+                <view class="widgets__list  ">
+                    <view   class="widget widget-city" wx:for="{{searchResCitys}}"  bindtap="selectCity" data-city="{{item}}">
+                        <text class="widget__name">{{item}}</text>
+                        <view class="widget__line"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

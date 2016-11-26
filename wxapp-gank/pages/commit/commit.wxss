@@ -1,0 +1,39 @@
+form{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.section{
+	border-width: 0 0 1rpx;
+	border-style: solid;
+	border-color: #b2b2b2;
+	padding: 10px 5px;
+	height: 25px;
+}
+
+.section_title{
+	display: inline-block;
+	width: 85px;
+	font-size: 17pt;
+	height: 100%;
+	position: relative;
+	bottom: 5px;
+	left: 5px;
+}
+
+.input{
+	display: inline-block;
+	font-family: "Microsoft YaHei";
+	font-size: 17pt;
+	height: 100%;
+}
+
+.btn-area{
+	margin-top: 50px;
+}
+
+.button{
+	height: 44px;
+	margin: 10px 15px;
+}

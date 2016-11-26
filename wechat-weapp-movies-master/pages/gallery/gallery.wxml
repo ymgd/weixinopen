@@ -1,0 +1,5 @@
+<view class="container" style="height: {{screenHeight}}px">
+
+    <image mode="aspectFit" src="{{url}}" bindtap="onImgClick" bindlongtap="onImgLongClick"/>
+
+</view>

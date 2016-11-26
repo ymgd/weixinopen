@@ -1,0 +1,32 @@
+<!--news.wxml-->
+<view class="page">
+    <view class="page__bd">
+        
+        <block wx:if="{{errorMsg==''}}">
+            <view class="data">
+                <view class="news-item">
+                  <view class="news-text">
+                    <text class="info-title">{{newsinfo.Title}}</text>
+                    <view class="info-stamp">
+                      <text>{{newsinfo.source}}</text>
+                      <text>{{newsinfo.Category}}</text>
+                      <text>{{newsinfo.PublishTime}}</text>
+                    </view>
+                    <view class="info-content">
+                      <text>{{newsinfo.Content}}</text>
+                    </view>
+                  </view>
+                </view>
+            </view>
+        </block>
+        <block wx:else>
+            <view  class="tip">
+              <icon type="warn" size="45" />
+              <view>
+                {{errorMsg}}
+              </view>
+            </view>
+            
+        </block>
+    </view>
+</view>

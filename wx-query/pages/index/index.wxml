@@ -1,0 +1,21 @@
+<view class="index">
+     <view class="head">
+        <view class="title">wxQuery</view>
+        <view class="desc">对 Page.prototype.setData() 函数的封装</view>
+    </view>
+
+    <view class="body">
+        <view class="widgets">
+            <block wx:for="{{list}}">
+                <view class="widgets-item">
+                    <view id="{{item.id}}" class="widgets-info" data-index="{{index}}" data-url="{{item.url}}" bindtap="eventManage">
+                        <text class="widgets-info-name">{{item.name}}</text>
+                        <image class="widgets-info-img" src="/images/arrowright.png"/>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+
+    <modal id="modal" hidden="{{modal.hidden}}" no-cancel="true" bindconfirm="eventManage">{{modal.text}}</modal>
+</view>

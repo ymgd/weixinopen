@@ -1,0 +1,27 @@
+<!--news.wxml-->
+<view class="page">
+    <!--引入导航条-->
+    <include src="/pages/tag/tag.wxml"/> 
+    <view class="page__bd">  
+        <view class="data-list">
+            <block wx:for="{{radioList}}">
+                <view class="data">
+                    <view class="news-item" data-radioid="{{item.RadioId}}" catchtap="bindViewTap" id="{{item.RadioId}}">
+                      <image src="{{item.PicUrl}}" mode="aspectFill" class="list-image"/>
+                      <view class="news-text">
+                        <text class="news-title">{{item.Title}}</text>
+                        <view class="news-stamp">
+                          <text>正在直播:{{item.CurrentProgram}}</text>
+                        </view>
+                      </view>
+                    </view>
+                </view>     
+            </block>
+        </view>    
+    </view>
+
+    <!--加载提示-->
+    <loading hidden="{{hidden}}">
+      加载中...
+    </loading>
+</view>

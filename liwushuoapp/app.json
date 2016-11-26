@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/liwushuo/main/main",
+    "pages/liwushuo/bangdan/bangdan",
+    "pages/liwushuo/fenlei/fenlei",
+    "pages/liwushuo/wode/wode",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#058",
+    "navigationBarTitleText": "礼物说首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#f00",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/liwushuo/main/main",
+        "text": "首页",
+        "iconPath": "images/ic_tab_home_normal.png",
+        "selectedIconPath": "images/ic_tab_home_selected.png"
+      },
+      {
+        "pagePath": "pages/liwushuo/bangdan/bangdan",
+        "iconPath": "images/ic_tab_gift_normal.png",
+        "selectedIconPath": "images/ic_tab_gift_selected.png",
+        "text": "榜单"
+      },
+      {
+        "pagePath": "pages/liwushuo/fenlei/fenlei",
+        "iconPath": "images/ic_tab_category_normal.png",
+        "selectedIconPath": "images/ic_tab_category_selected.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/liwushuo/wode/wode",
+        "iconPath": "images/ic_tab_profile_normal.png",
+        "selectedIconPath": "images/ic_tab_profile_selected.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

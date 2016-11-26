@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/study/study",
+        "pages/happy/happy",
+        "pages/find/find",
+        "pages/my/my",
+        "pages/words/words",
+        "pages/levideo/levideo",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "rgb(31, 194, 255)",
+        "navigationBarTitleText": "乐词",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "rgb(45, 144, 236)",
+        "backgroundColor": "#fff",
+        "borderStyle": "white",
+        "list": [{
+            "pagePath": "pages/study/study",
+            "text": "学词",
+            "iconPath": "images/home.png",
+            "selectedIconPath": "images/home_click.png"
+        }, {
+            "pagePath": "pages/happy/happy",
+            "text": "乐学",
+            "iconPath": "images/tab_happy_learn_day.png",
+            "selectedIconPath": "images/tab_happy_learn_day_press.png"
+        }, {
+            "pagePath": "pages/find/find",
+            "iconPath": "images/find_icon.png",
+            "selectedIconPath": "images/find_icon_p.png",
+            "text": "发现"
+        }, {
+            "pagePath": "pages/my/my",
+            "iconPath": "images/me_icon_p.png",
+            "selectedIconPath": "images/me_icon.png",
+            "text": "我"
+        }]
+    }
+}

@@ -1,0 +1,26 @@
+.nodeTitleBG{
+    background-color: #f2f2f2;
+    width:100%;
+    padding: 10px;
+}
+.nodeTitle{
+    font-size: 18px;
+    margin-left:10px;
+    line-height: 20px;
+    float: left;
+}
+.nodeItemBg{
+    width: 100%;
+}
+.nodeItem{
+    background-color: #f5f5f5;
+    font-size: 15px;
+    line-height: 10px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #555;
+    float: left;
+    margin:8px;
+}

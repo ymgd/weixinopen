@@ -1,0 +1,22 @@
+<view class="mymoneybox">
+  <view class="lowmoney">
+    <text>{{t1}}</text>
+    <b>{{money}}</b>
+  </view>
+  <view class="addmoney">
+    <input type="text" value="{{add}}" placeholder="{{t2}}" bindinput="input"/>
+    <button type="submit" name="button" bindtap="chongzhi">{{t3}}</button>
+  </view>
+  <view class="moneydata" id="moneydata">
+    <ul class="data1" id="add">
+        <li class="time">{{t4}}</li>
+        <li class="do">{{t5}}</li>
+        <li class="change">{{t6}}</li>
+    </ul>
+    <ul class="data2">
+       <li class="time">{{arr.itime}}</li>
+       <li class="do">{{arr.ch}}</li>
+       <li class="change">{{arr.add1}}</li>
+   </ul>
+  </view>
+</view>

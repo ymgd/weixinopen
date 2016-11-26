@@ -1,0 +1,18 @@
+<!--login.wxml-->
+<view class="container">
+    <view class="reminder">
+        <text>{{remind}}</text>
+    </view>
+    <form bindsubmit="onSubmit">
+        <view class="section">
+                <input class="input" type="text" name="username" placeholder="账户"/>
+                <input class="input"  password name="password" placeholder="密码"/>
+        </view>
+        <view class="spacesect"></view>
+        <view class="butsect">
+            <button class="but" type="primary" formType="submit" >登陆</button>
+            <button class="but" type="primary" bindtap="wxLogin">使用微信账户登录</button>
+        </view>
+    </form>
+</view>
+<toast hidden="{{toast}}" bindchange="onToast">{{errmsg}}</toast>

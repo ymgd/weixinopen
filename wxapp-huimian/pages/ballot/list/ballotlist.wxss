@@ -1,0 +1,67 @@
+.swiper-item{
+    display: block;
+    height: 150px;
+}
+.data-list{ display: flex; flex-flow: row wrap;}
+.data-list .data { 
+	flex-basis: 100%;
+	text-align: center; 
+	font-size:0.6rem; 
+	overflow-x: hidden;  
+	
+}
+.data-list .data .image-url{
+	width:100%;
+}
+
+
+
+
+
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: row;
+  height:200rpx;
+}
+
+.news-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-stamp {
+    font-size: 25rpx;
+    color:darkgray;
+    padding: 0 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.news-title {
+  margin: 10rpx;
+  font-size: 30rpx;
+}
+
+
+.container {
+  height: 5000rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*padding: 200rpx 0;*/
+  box-sizing: border-box;
+} 
+
+.list-image {
+  width:150rpx;
+  height:100rpx;
+}

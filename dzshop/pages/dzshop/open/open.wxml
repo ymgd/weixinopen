@@ -1,0 +1,18 @@
+ <view class="openbox">
+   <view class="opimg">
+     <image src="{{sq.opImg}}"></image>
+   </view>
+   <view class="opin">
+     <input type="text" name="name" value="" placeholder="{{sq.name}}" />
+     <input type="text" name="tel" value="" placeholder="{{sq.tel}}"/>
+     <input type="text" name="dress" value="" placeholder="{{sq.dress}}"/>
+      <view class="checkd">
+       <checkbox value="{{sq.text}}" checked="{{sq.text}}"/>
+       <text>{{sq.text}}</text>
+       <a href="###">{{sq.a}}</a>
+     </view> 
+     </view>
+     <view class="opbt"><button  type="{{sq.bttype}}" size="{{sq.primarysize}}" form-type="{{sq.ftype}}" hover-class="{{sq.bthover}}"  >申请成为合伙人</button>
+</view>
+        </view>
+ 

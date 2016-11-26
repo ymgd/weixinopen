@@ -1,0 +1,30 @@
+<form bindsubmit="formSubmit">
+ <scroll-view class="scroll-select">
+    <view class="section-title">选择学生：</view>
+    <checkbox-group name="checkbox">
+      <block wx:for="{{students}}">
+        <view class="section-checkbox">
+        <label><checkbox value="{{item.id}}"/>{{item.name}}</label>
+        </view>
+      </block>
+    </checkbox-group>
+  </scroll-view>
+  <view class="section">
+    <view class="section-title">作业要求：</view>
+    <view class="section-input">
+        <input name="input" type="text" placeholder="在此输入" />
+    </view>
+  </view>
+  <view class="btn-area">
+    <button formType="submit" type="primary">布置</button>
+  </view>
+</form>
+<toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+    还没选择学生呢
+</toast>
+<toast hidden="{{toast2Hidden}}" bindchange="toast2Change">
+    别发空白信息呀
+</toast>
+<toast hidden="{{toast3Hidden}}" bindchange="toast3Change">
+    成功布置了作业
+</toast>

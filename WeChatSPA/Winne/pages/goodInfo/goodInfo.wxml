@@ -1,0 +1,14 @@
+<!--goodInfo.wxml-->
+<view class="container">
+    <view class="goodsect">
+        <image class="pic" src="{{good.pic}}" />
+            <view>
+                <text class="text good">商品： {{good.good}}</text>
+                <text class=" text info">描述： {{good.description}}</text>
+                <text class="text info">价格： ￥ {{good.price}}</text>
+                <text class="text info">销量： {{good.sale}}</text>
+                <text class="text info">库存： {{good.stock}}</text>
+            </view>
+    </view>
+    <button id="{{count}}" class="purchasebut" size="default" type="primary" plain bindtap="onPurchase">购买</button>
+</view>

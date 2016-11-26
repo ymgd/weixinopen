@@ -1,0 +1,29 @@
+
+<!-- 购物车 -->
+
+<template name="shoppcart">
+  <navigator url="../item/item?id={{item.subject.id}}">
+    <view class="item">
+      <image class="poster" src="{{item.productPicPath}}"></image>
+      <view class="meta">
+        <text class="title">{{item.productName}}</text>
+        <text class="sub-title">{{item.count}}({{item.unit}})</text>
+        <view class="artists"><text>共计:￥</text><text> {{item.count * (item.marketPrice)}} 元 </text></view>
+      </view>
+      <view class="rating">
+        <text>{{item.type_name}}</text>
+      </view>
+    </view>
+  </navigator>
+</template>
+
+
+
+
+<!--  供每一个列表展示的页面使用 -->
+<template name="movie-list">
+  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <template is="shoppcart" data="{{item}}" wx:for="{{products}}"/>
+  </scroll-view>
+  <loading hidden="{{!loading}}">加载中...</loading>
+</template>

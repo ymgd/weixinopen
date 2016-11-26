@@ -1,0 +1,50 @@
+@import "../css/widgets.wxss";
+.search{
+    margin: 20rpx;
+    background-color: #fff;
+    border-radius:10rpx;
+    height: 60rpx;
+    padding-top: 8rpx ;
+    padding-left: 10rpx;
+}
+.search-input{
+    height: 50rpx;
+    float:left;
+    width: 650rpx;
+    font-size: 26rpx;
+}
+.search-input-placeholder{
+    opacity: 0.4;
+    font-size: 26rpx;
+}
+.search-image{
+    float:left;
+    width: 50rpx;
+    height: 50rpx;
+}
+.widget__name{
+    margin-left: 0rpx;
+}
+.cover{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top:0;
+    left:0;
+    width:20rem;
+    height: 100%;
+    overflow: scroll;
+    transition:left 0.8s;
+}
+.cover-widgets{
+    margin-left: 8rem;
+    height: 100%;
+    background-color: #fff;
+}
+.widget-province:hover,.widget-city:hover{
+    color: #e02e25;
+}
+.search-widgets{
+    height: 100%;
+    background-color: #fff;
+}
+ 

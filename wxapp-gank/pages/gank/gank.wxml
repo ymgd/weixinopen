@@ -1,0 +1,18 @@
+<scroll-view scroll-y="true" style="height:100%" bindscrolltolower="loadMore">
+	<view class="body-view">
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+	</view>
+	<view>
+		<view class="list-block" wx:for="{{gank}}" wx:for-item="gank" data-block-time="{{gank.publishedAt}}" bindtap="clickBlock">
+			<image class="list-img" src="{{gank.url}}" mode="aspectFill"></image>
+			<text class="time">{{gank.publishedAt}}</text>
+			<text class="title">{{gank.title}}</text>
+		</view>
+	</view>
+	<text class="load" style="display:{{display}}">{{loadMoreText}}</text>
+</scroll-view>
+<view class="plus-holder" bindtap="jmpToSetting" animation="{{animationData}}">
+	<image src="/image/plus.png" class="plus" style="display:{{img}}"></image>
+</view>

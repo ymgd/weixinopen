@@ -1,0 +1,339 @@
+
+@import "../../wxss/base.wxss";
+page {
+    background: #efe9de;
+}
+.banner {
+    height: 470rpx;
+    overflow: hidden;
+}
+.user-bg {
+    width: 100%;
+}
+.info-link .info {
+    color: #969591;
+    text-align: center;
+    margin: 36rpx auto 20rpx;
+    line-height: 1.3em;
+}
+.info-link .addr {
+    font-size: 38rpx;
+}
+.info-link .time {
+    font-size: 24rpx;
+}
+.info-link .link {
+    background: #fff;
+    padding: 30rpx 20rpx;
+    margin: 20rpx;
+    font-size: 28rpx;
+    color: #7C7C7C;
+}
+.right-icon {
+    width: 20rpx;
+    height: 30rpx;
+    vertical-align: middle;
+    float: right;
+    line-height: 34rpx;
+}
+/* verified img */
+.verified-img {
+    margin: 20rpx 20rpx;
+    position: relative;
+}
+.verified-img .title-wrap {
+    display: flex;
+}
+.verified-img .title-wrap text {
+    flex: 1;
+    line-height: 40rpx;
+    text-align: center;
+    font-size: 32rpx;
+    color: #969591;
+}
+.verified-img .title-wrap image {
+    flex: 1;
+    height: 40rpx;
+    padding: 6rpx 10rpx;
+}
+.verified-img .pic {
+    width: 100%;
+    margin-top: 40rpx;
+}
+.verified-img .tag {
+    position: absolute;
+    width: 150rpx;
+    height: 60rpx;
+    right: 0;
+    bottom: 45rpx;
+}
+
+/* photos */
+.photos {
+    margin: 20rpx;
+    background: #fff;
+}
+.photos .item {
+    position: relative;
+    padding: 10rpx 10rpx 0;
+}
+.photos .item .pic {
+    width: 100%;
+    height: 266rpx;
+    line-height: 266rpx;
+}
+.photos .item .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    text-align: left;
+}
+.photos .item .info text {
+    display: block;
+    line-height: 1.5em;
+    text-shadow: -1px 1px 0px #000;
+    color: #fff;
+    padding: 0 20rpx;
+    font-size: 40rpx;
+}
+.photos .more {
+    margin: auto;
+    background: #fff;
+    text-align: center;
+}
+.photos .more image {
+    width: 240rpx;
+    height: 113rpx;
+}
+/* detail */
+.detail {
+    margin-top: 60rpx;
+}
+.detail .sub-title {
+    font-size: 40rpx;
+    font-weight: bolder;
+    text-align: center;
+    color: #6D6D6D;
+}
+    /* user */
+.detail .user-base { 
+    text-align: center;
+    position: relative;
+    height: 220rpx;
+    width: 260rpx;
+    margin: 30rpx auto 20rpx;
+}
+.detail .user-base .user-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.detail .user-base .user-name text {
+    position: absolute;
+    bottom: 26rpx;
+    left: 0;
+    font-size: 28rpx;
+    width: 100%;
+    color: #fff;
+}
+.detail .user-base .avatar {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 200rpx;
+    border: 4rpx #fff solid;
+}
+.detail .user-base .tag {
+    height: 60rpx;
+}
+.detail .job {
+    color: #969591;
+    font-size: 24rpx;
+    text-align: center;
+}
+    /* about */
+.detail .about {
+    margin: 60rpx 20rpx 30rpx;
+}
+.detail .about .sub-title2 {
+    font-size: 32rpx;
+    line-height: 2.3em;
+    color: #333;
+}
+.detail .about .intro {
+    font-size: 28rpx;
+    line-height: 2em;
+    color: #666;
+}
+.detail .about .more {
+    text-align: center;
+}
+.detail .about .arrow {
+    width: 30rpx;
+    height: 30rpx;
+    margin: 30rpx auto;
+}
+.detail .about .toggle {
+    color: #71B2BE;
+    font-size: 24rpx;
+}
+/* recommend */
+.recommend {
+    background: #fff;
+    margin: 50rpx auto;
+    padding: 30rpx;
+}
+.recommend .txt {
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 1.5em;
+}
+.recommend .sub-title {
+    color: #4C4D4F;
+}
+.recommend .desc {
+    color: #848484;
+}
+.recommend .pics {
+    display: flex;
+    margin-top: 30rpx;
+}
+.recommend .pics .pic{
+    width: 150rpx;
+    height: 150rpx;
+    margin: 10rpx;
+}
+/* services */
+.services {
+    margin-top: 60rpx;
+    padding: 0 20rpx;
+    border-top: 1rpx #eee solid;
+}
+.services .sub-title {
+    font-size: 28rpx;
+    text-align: center;
+    margin: 20rpx auto;
+}
+.services .desc1 {
+    font-size: 24rpx;
+    color: #868789;
+    line-height: 2em;
+    border-top: 1rpx #ddd solid;
+    border-bottom: 1rpx #ccc solid;
+    padding: 20rpx 0;
+}
+.services .item {
+    border-bottom: 1rpx #ccc solid;
+    padding: 20rpx 0;
+    font-size: 32rpx;
+    display: flex;
+}
+.services .item .icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 10rpx;
+    vertical-align: middle;
+}
+.services .item .desc2 {
+    color: #89847E;
+}
+.services .item .link {
+    color: #71b2be;
+    flex: 1;
+    padding: 10rpx;
+}
+.services .item view {
+    flex: 2;
+}
+.services .item .mid {
+    text-align: center;
+}
+.services .item .right {
+    text-align: right;
+}
+    /* stats */
+.services .stats {
+    display: flex;
+    padding: 20rpx 10rpx;
+    border-bottom: 1rpx #ccc solid;
+}
+.services .stat {
+    flex: 1;
+    font-size: 28rpx;
+    line-height: 1.5em;
+    padding: 10rpx;
+    border-left: 2rpx #ccc solid;
+    text-align: center;
+}
+.services .stat:first-child {
+    border-left: 0;
+}
+.services .stat text {
+    display: block;
+}
+.services .stat text:first-child {
+    color: #ADA9A8;
+}
+.services .stat text:last-child {
+    color: #89847E;
+}
+
+/* passport */
+.passport {
+    position: relative;
+    margin: 80rpx 0;
+}
+.passport .bg-wrap image:first-child {
+    width: 100%;
+    height: 426rpx;
+}
+.passport .bg-wrap image:last-child {
+    width: 192rpx;
+    height: 148rpx;
+    position: absolute;
+    top: 30rpx;
+    right: 30rpx;
+}
+.passport .cert-desc {
+    position: absolute;
+    top: 110rpx;
+    left: 0;
+    display: flex;
+    color: #fff;
+    line-height: 2em;
+    font-size: 28rpx;
+    width: 100%;
+    padding: 20rpx;
+}
+.passport .cert-desc .sep {
+    width: 10%;
+}
+.passport .cert-desc .user {
+    text-align: center;
+    width: 30%;
+    padding: 20rpx;
+}
+.passport .user .avatar {
+    width: 160rpx;
+    height: 160rpx;
+    display: block;
+    margin: auto;
+}
+.passport .user text {
+    margin-top: 20rpx;
+}
+.passport .cert-desc .info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+/* bottom finish img */
+.finished {
+    width: 100%;
+    height: 138rpx;
+}

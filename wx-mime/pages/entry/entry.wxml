@@ -1,0 +1,9 @@
+<!--entry.wxml-->
+<view class="container">
+    <view class="wrap">
+        <text class="title">请填入房间号开始游戏</text>
+        <input placeholder="数字，小于10位" type="primary" 
+            bindinput="roomNoChanged" class="room-no"/>
+        <button bindtap="startGame" class="start-game">开始游戏</button>
+    </view>
+</view>

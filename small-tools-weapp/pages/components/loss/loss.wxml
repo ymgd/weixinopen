@@ -1,0 +1,13 @@
+
+<view class="loss">
+  
+ <view class="loss_query">
+        <view class="line_flag">挂失查询</view>
+         <input  bindinput="bindKeyInput" placeholder="请输入要查询的身份证号" value="{{inputValue}}"/>
+    </view>
+     <view class="btn-area">
+        <button type="primary" loading="{{loading}}"
+                disabled="{{disabled}}" bindtap="search"> 查询
+        </button>
+        </view>
+</view>

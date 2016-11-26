@@ -1,0 +1,92 @@
+<template name="social-list-item">
+    <view class="huati-content-option-bg dynamic_click">
+        <view class="huati-content-option">
+            <view class="huati-content-option-head">
+                <view class="head-img-bg">
+                    <image class="head-img"  src="{{profile}}"></image>
+                </view>
+            </view>
+            <view class="huati-content-font">
+                <view >
+                    <view class="huati-content-name">
+                        {{nickname}}
+                    </view>
+                    <view class="icon-down " wx:if="{{isself==0}}">
+                        <view class="icon-down-btn right_bars" href="javascript:;">
+                            <image class="icon-down-img" src="../../images/icon-down.png" alt=""></image>
+                        </view>
+
+                        <view class="drop-down none">
+                            <view class="arrow-little"></view>
+                            <view class="addfocus addfocus_dny_u_{{userid}} " href="javascript:;">
+                                <view class="drop-down-option">关注</view>
+                            </view>
+                            <view class="cancelfocus cancelfocus_dny_u_{{userid}} " href="javascript:;">
+                                <view class="drop-down-option">取消关注</view>
+                            </view>
+                            <view href="javascript:;" class="addreport">
+                                <view class="drop-down-option">举报</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="main-content ">
+                    {{content}}
+                </view>
+                <view class="main-img-group">
+                    <block wx:for="{{photos}}">
+                        <view>
+                            <image class="main-img-group-image" src="{{item.thumb}}" itemprop="thumbnail" wx:if="{{item.thumb}}" mode="scaleToFill"  
+                                bindtap="previewSocialImage" data-photos="{{photosStr}}" data-current-item-seq="{{index}}"  >
+                            </image>
+                            <image class="main-img-group-image" src="{{item.image}}" itemprop="thumbnail"  wx:elif="{{item.image}}" mode="scaleToFill"
+                                bindtap="previewSocialImage" data-photos="{{photosStr}}" data-current-item-seq="{{index}}"  >
+                            </image>
+                        </view>
+                    </block>
+                    <view class="clear"></view>
+                </view>
+                <view class="main-time-bt">
+                    <view class="main-time">{{commtime}}</view>
+                    <block wx:if="{{isself ==1}}">
+                        <view class="huati-content-delete dyndelete" data-id="{{id}}">删除</view>
+                    </block>
+                    <view class="main-btn">
+                        <view class="dz-btn">
+                            <view class="main-btn-img addlike" data-taruserid="{{userid}}"
+                                data-id="{{id}}" data-islike="{{islike}}">
+                                <image class="dz-img dz" wx:if="{{islike ==0}} 
+                                    src="../../images/agree.png" alt=""></image>
+                                <image class="dz-img dz-active  "  wx:if="{{islike !=0}} 
+                                    src="../../images/agree-active.png" alt=""></image>
+                            </view>
+                            <view class="main-btn-num-plus none">+1</view>
+                            <view class="main-btn-num-pause none">-1</view>
+                            <view class="main-btn-num dz-num" >
+                                <block wx:if="{{likesum!=0}}">
+                                    {{likesum}}
+                                </block>
+                            </view>
+                            <view class="clear"></view>
+                        </view>
+                        <view class="comment-btn" data-id="{{id}}" data-userid="{{userid}}">
+                            <view class="main-btn-img " data-taruserid="{{userid}}" data-tarstatus="0"
+                                data-nickname="{{member.nick}}">
+                                <image class="pl" src="../../images/comment.png" alt=""></image>
+                            </view>
+                            <view class="main-btn-num pl-num commsum">
+                                <block wx:if="{{commsum!=0}}">
+                                    {{commsum}}
+                                </block>
+                            </view>
+                            <view class="clear"></view>
+                        </view>
+                    </view>
+                    <view class="clear"></view>
+                </view>
+            </view>
+            <view class="clear"></view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,12 @@
+li {
+  width: 100%;
+}
+
+li image {
+  width: 100%;
+}
+
+li .info-box {
+  padding: 4px;
+  box-sizing: border-box;
+}

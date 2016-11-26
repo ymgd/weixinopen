@@ -1,0 +1,25 @@
+<!--detail.wxml-->
+<view class="detail-pic">
+    <image src="{{movie.images.large}}"></image>
+</view>
+<view class="hr"></view>
+<view class="detail-info">
+    <text>{{movie.text}}</text>
+</view>
+<view class="hr"></view>
+<scroll-view scroll-x="true" class="casts-pic">
+    <block wx:for="{{movie.casts}}" wx:for-item="cast">
+        <view class="cast-pic">
+            <view class="cast-img">
+                <image src="{{cast.avatars.medium}}"></image>
+            </view>
+            <view class="cast-name">
+                <text>{{cast.name}}</text>
+            </view>
+        </view>
+    </block>
+</scroll-view>
+<view class="summary">
+    <text class="summary">{{movie.summary}}</text>
+</view>
+<loading hidden="{{loading}}">加载中</loading>

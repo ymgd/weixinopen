@@ -1,0 +1,73 @@
+.banner{  
+    height: 200px;  
+} 
+.slide-image{  
+    width: 100%;  
+} 
+.subject-text{
+ width: 100%; 
+ background-color: #efefef;
+ padding-top: 10px;
+ padding-bottom: 10px
+}
+.subject-text .label{
+    font-size: 14px;
+    margin-left:10px;
+    color: #666; 
+}
+.subject_group1 .img{
+  width: 25px;
+  height: 25px;
+ margin-top: 12.5px; 
+}
+.subject_group1 .label{
+    font-size: 11px;
+    color: #666;
+    text-align: center
+}
+.image_bg{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.flex-wrp{
+    display: block;
+}
+.flex-item{
+    display: inline-block;
+    width: 25%;
+    margin-top: 10px;
+}
+
+
+.viewpager{
+   height: 800px; 
+}
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 1rpx solid #eeeeee;  
+    text-align: center;  
+    line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 33.1%;  
+    color: #333333;  
+}  
+.on{ color: #00b7ee;  
+    border-bottom: 5rpx solid #00b7ee;} 
+.tab-group{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1rpx solid #eeeeee;  
+}
+.index-tab{
+    margin: 0 auto;
+    border-bottom: 2rpx solid #00b7ee;  
+}
+.tab-text{
+    font-size: 14px;
+    color: #666;
+    text-align: center 
+}

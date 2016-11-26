@@ -1,0 +1,47 @@
+{
+  "name": "wx-compile-key",
+  "version": "1.0.4-alpha.10",
+  "description": "微信小程序全局编译快捷键",
+  "bin": "./bin/index.js",
+  "main": "./src/index.js",
+  "scripts": {
+    "compile": "./src/index.js"
+  },
+  "keywords": [
+    "wx",
+    "weixin",
+    "微信",
+    "微信小程序gulp",
+    "微信小程序webpack loader",
+    "小程序",
+    "微信小程序",
+    "wechat"
+  ],
+  "author": "Ailun She",
+  "license": "ISC",
+  "dependencies": {
+    "chmod": "^0.2.1",
+    "es6-promise": "^4.0.4",
+    "inquirer": "^1.2.1",
+    "portastic": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jf3096/wx-compile-key.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jf3096/wx-compile-key/issues"
+  },
+  "homepage": "https://github.com/jf3096/wx-compile-key#readme",
+  "wxtools": {
+    "path": "c:/Program Files (x86)/Tencent/微信web开发者工具",
+    "relativeShortcutPath": "package.nw/app/dist/app.js"
+  },
+  "port": {
+    "min": 8000,
+    "max": 8080
+  },
+  "devDependencies": {
+    "request": "^2.75.0"
+  }
+}

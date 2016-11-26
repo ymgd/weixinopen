@@ -1,0 +1,69 @@
+<view class="container">
+    <!-- <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+    </view> -->
+    <import src='/tpls/signin.wxml' />
+    <template is='signin' data="{{modalHidden,...userInfo}}"></template>
+    <view class="userinfo" bindtap="login" >
+        <image  class="userinfo-avatar" src="{{avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{nickName}}</text>
+    </view>
+
+    <view class="learn">
+        <ul>
+            <li class="lli1">
+                <p>累计学习</p>
+                <b><i>44</i>天</b>
+            </li>
+            <li>
+                <p>已学词汇</p>
+                <b><i>1016</i>个</b>
+            </li>
+        </ul>
+    </view>
+    <scroll-view scroll-y="true" class="option">
+        <ul>
+            <li class="mb">
+                <image src="/images/tz.png"></image>系统通知
+            </li>
+            <li  class="mb">
+                <image src="/images/qh.png"></image>我的词库
+            </li>
+            <li>
+                <image src="/images/yx.png"></image>已学/已掌握单词
+            </li>
+            <li>
+                <image src="/images/yx.png"></image>我的课程
+            </li>
+            <li class="mb">
+                <image src="/images/mp.png"></image>我的活动
+            </li>
+            <li>
+                <image src="/images/moon.png"></image>夜间模式
+                <switch bindchange="switchChange"/>
+            </li>
+            <li>
+                <image src="/images/sj.png"></image>数据管理
+            </li>
+            <li class="mb">
+                <image src="/images/jl.png"></image>记录迁移
+            </li>
+            <li>
+                <image src="/images/yj.png"></image>意见反馈
+            </li>
+            <li>
+                <image src="/images/yx.png"></image>版本更新
+            </li>
+            <li>
+                <image src="/images/gy.png"></image>关于乐词
+            </li>
+            <li class="mb">
+                <image src="/images/sz.png"></image>设置
+            </li>
+        </ul>
+    </scroll-view>
+</view>

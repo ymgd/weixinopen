@@ -1,0 +1,198 @@
+ 
+.huati-content-option-head {
+    float: left;
+    margin-right: .5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0;
+    padding: .02rem;
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.head-img-bg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.head-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+.huati-content-name, .comment-name {
+    color: #0092ff;
+    font-size: 24rpx;
+    z-index: 3;
+    padding-top: 10rpx;
+}
+ 
+
+.icon-down {
+    float: right;
+    z-index: 5;
+    position: absolute;
+    right: -.2rem;
+    top: -.2rem;
+}
+.icon-down:focus{
+    z-index: 10;
+}
+.icon-down-img {
+    width: 26rpx;
+}
+ 
+.main-content {
+    font-size: 32rpx;
+    margin-top: .24rem;
+    line-height: 1.5;
+}
+ 
+
+.main-img-group {
+    margin-top: .22rem;
+    margin-bottom: -.15rem;
+    font-size: 0;
+}
+.main-img-group-image {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    float: left;
+    margin-right: .2rem;
+    margin-bottom: .2rem;
+}
+ 
+.main-time-btn {
+    font-size: 22rpx;
+    color: #999;
+    padding: .15rem 0;
+}
+
+.main-time {
+    float: left;
+    margin-top: .08rem;
+    padding-top: .15rem;
+    width: 3rem;
+    height: 2rem;
+    color:#0092ff;
+}
+.main-btn-img{
+    float: left;
+    margin-right: .08rem;
+    z-index: 2;
+}
+.main-btn {
+    float: right;
+}
+.dz-btn,.comment-btn {
+    color: #999;
+    float: left;
+    padding: .15rem;
+    z-index: 2;
+}
+.dz-btn.active{
+    color: #ff6275;
+}
+.main-btn-num{
+    float: left;
+    margin-top: 6rpx;
+}
+.dz-img{
+    height: 19px;
+    width: auto;
+    margin-top: -6rpx;
+}
+.pl{
+    height: 15px;
+    width: auto;
+}
+ 
+.huati-content-option {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+    padding-top: .29rem;
+    margin: auto;
+    border-bottom: 2rpx solid #e3e3e3;
+    
+}
+.huati-content-font {
+    float: left;
+    width: 16.4rem;
+    margin-top: .1rem;
+}
+.huati-content-option-bg{
+    background-color: #fff;
+    padding: 0 20rpx 20rpx 20rpx;
+}
+ 
+ 
+.huati-content-delete{
+    font-size: 22rpx;
+    border: none;
+    background: none;
+    color: #e02e25;
+    margin-top: .08rem;
+    float: left;
+    z-index: 2;
+    padding: .15rem;
+    padding-left: 0;
+}
+ 
+
+.icon-down {
+    float: right;
+}
+.icon-down-btn{
+    display: inline-block;
+    padding: .3rem;
+    padding-top: .2rem;
+}
+
+.icon-down-img {
+    width: 26rpx;
+}
+.drop-down{
+    position: absolute;
+    z-index: 5;
+    background-color: #fbfcfd;
+    padding: 0 30rpx;
+    width: 95px;
+    box-sizing: border-box;
+    right: .2rem;
+    border-radius: 6rpx;
+    font-size: 28rpx;
+    color: #666;
+    margin-right: -10rpx;
+    margin-top: 0px;
+}
+.arrow-little{
+    position: absolute;
+    display: block;
+    margin-top: -16rpx;
+    top: 0;
+    right: 20rpx;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-bottom: 16rpx solid #fbfcfd;
+    border-right: 12rpx solid transparent;
+    border-left: 12rpx solid transparent;
+}
+.drop-down-option{
+    padding: 18rpx 0;
+    text-align: center;
+    border-bottom: 2rpx solid #f2f2f2;
+    color: #666;
+}
+
+ 
+ 

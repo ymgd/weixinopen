@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/courseDetail/courseDetail",
+    "pages/teacherList/teacherList",
+    "pages/center/center"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "课程列表",
+    "backgroundColor": "#eeeeee",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"white",
+    "selectedColor":"#228B22",
+    "backgroundColor":"#000",
+    "borderStyle":"black",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"课程",
+        "iconPath":"./images/course.png",
+        "selectedIconPath":"./images/selectedCourse.png"
+      },
+      {
+        "pagePath":"pages/teacherList/teacherList",
+        "text":"导师",
+        "iconPath":"./images/teacher.png",
+        "selectedIconPath":"./images/selectedTeacher.png"
+      },
+      {
+        "pagePath":"pages/center/center",
+        "text":"我的",
+        "iconPath":"./images/center.png",
+        "selectedIconPath":"./images/selectedCenter.png"
+      }
+    ]
+  }
+}

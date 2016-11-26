@@ -1,0 +1,16 @@
+.unlogin{
+    text-align: center;
+}
+.unlogin .img{
+    margin-top: 160px;
+    width: 100px;
+    height: 160px;
+}
+.unlogin .desc{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.unlogin .action{
+    font-size: 15px;
+    color: #00b7ee;
+}

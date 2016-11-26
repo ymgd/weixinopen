@@ -1,0 +1,27 @@
+{
+  "name": "wxapp",
+  "version": "1.0.3",
+  "description": "A simple CLI for scaffolding wxapp projects.",
+  "main": "index.js",
+  "bin": {
+    "wxapp": "./wxapp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeCKodo/wxapp-cli.git"
+  },
+  "keywords": [
+    "wx",
+    "cli"
+  ],
+  "author": "kodo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeCKodo/wxapp-cli/issues"
+  },
+  "homepage": "https://github.com/MeCKodo/wxapp-cli#readme",
+  "dependencies": {
+    "download-git-repo": "^0.1.2",
+    "ora": "^0.3.0"
+  }
+}

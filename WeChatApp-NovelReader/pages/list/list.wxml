@@ -1,0 +1,5 @@
+<view class="container root">
+    <block wx:for="{{datas}}" wx:for-item="data">
+        <view class="item" id="{{index+currSize}}" bindtap="clickShowContent">{{data}}</view>
+    </block>
+</view>

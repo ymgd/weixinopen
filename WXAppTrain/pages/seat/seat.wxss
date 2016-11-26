@@ -1,0 +1,9 @@
+.seat-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.seat-item {
+  margin: 10rpx;
+  font-size: 15px;
+}

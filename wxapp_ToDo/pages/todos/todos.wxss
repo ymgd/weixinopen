@@ -1,0 +1,11 @@
+/**todos.wxss**/
+.not-todo {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  font-size: 28rpx;
+  color: #999999;
+}

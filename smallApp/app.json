@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/find/find",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微信小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#F44336",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/find/find",
+      "iconPath": "image/price_normal.png",
+      "selectedIconPath": "image/price_select.png",
+      "text": "发现"
+    }, {
+      "pagePath": "pages/mine/mine",
+      "iconPath": "image/mine_normal.png",
+      "selectedIconPath": "image/mine_select.png",
+      "text": "我的"
+    }]
+  },
+   "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

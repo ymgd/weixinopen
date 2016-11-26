@@ -1,0 +1,22 @@
+.search-area {
+  background: #f4f4f4;
+  padding: 1rem .5rem;
+}
+.search-area input {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  line-height: 2rem;
+  margin-bottom: .5rem;
+  padding-left: .5rem;
+  font-size: .8rem;
+  overflow: hidden;
+  min-height: 2rem;
+  white-space: nowrap;
+  text-overflow: clip;
+  height: 2rem;
+}
+.search-area button {
+  width: 100%;
+}

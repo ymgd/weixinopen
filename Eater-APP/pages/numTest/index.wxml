@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="index">
+    <view class="userinfo">
+        <text class="query_result_tips">{{result_tips}}</text>
+        <text class="query_result">{{query_result}}</text>
+        <input class="ipt_phone" placeholder="请输入查询的手机号" bindinput="bindKeyInput"/>
+        <button class="btnQueryPhone" type="primary" bindtap="btnPhone">手机号查吉凶</button>
+        <loading hidden="{{!loading}}"></loading>
+    </view>
+</view>

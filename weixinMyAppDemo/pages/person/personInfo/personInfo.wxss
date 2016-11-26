@@ -1,0 +1,36 @@
+@import "../../css/widgets.wxss";
+@import "../../css/button.wxss";
+.widget__right{
+    float: right;
+    width: 400rpx;
+    height: 32rpx;
+    text-align:right;
+    margin-right: 50rpx;
+}
+.widget__right__image{
+    width: 100rpx;
+    height: 100rpx;
+    border: 6rpx solid rgba(0,0,0,.1);
+    border-radius: 80rpx;
+    overflow: hidden;
+}
+.widget__name__only__left{
+    margin-top: 37rpx;
+    float: left;
+}
+.widgets__item__top{
+    margin-bottom: 20rpx;
+    margin-top: 20rpx;
+    padding-bottom: 26rpx;
+}
+.widget__arrow{
+    float: right;
+    position: relative;
+    top: 0rpx;
+    right: 0rpx;
+    width: 16rpx;
+    height: 32rpx;
+}
+.person-btn-group{
+    margin-top: 40rpx;
+}

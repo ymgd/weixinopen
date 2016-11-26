@@ -1,0 +1,16 @@
+<import src="../common/loadingMore.wxml"/>
+<view class="container">
+	<!--  要先设置height: 100%才可以-->
+  <scroll-view style="height:{{scrollHeight}}px;width:100%;" scroll-y="true"  bindscrolltolower="lower">
+  	<view class="list-wrap">
+  		<block wx:for="{{listData}}" wx:for-item="itemList">
+  			<view class="list" data-iid="{{itemList.iid}}" bindtap="bindToDetailList">
+  				<view class="title">奇舞周刊第{{itemList.iid}}期</view>
+  				<view class="time">{{itemList.date}}</view>
+  			</view>
+  		</block>
+  	</view>
+  </scroll-view>
+  
+  <template is="loadingMore" data="{{ laddingHidden }}"/>
+</view>

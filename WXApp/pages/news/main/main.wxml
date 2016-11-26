@@ -1,0 +1,98 @@
+<view class="main-container">
+    <nav class="main-nav">
+        <ul>
+            <li wx:for="{{nav}}" class="{{current ==item.index ? 'active' : ''}}" catchtap="switchSlider" data-index="{{item.index}}">{{item.name}}</li>
+        </ul>
+    </nav>
+    <view class="list-loading">
+        <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+    </view>
+    <swiper class="main-list" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}" bindchange="changeSlider">
+        <swiper-item class="index">
+            <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+                <view hidden="{{refreshHidden}}">
+                    <button plain="true" loading="true">努力刷新中...</button>
+                </view>
+                <swiper class="banner" indicator-dots="{{banner.indicatorDots}}" autoplay="{{banner.autoplay}}" interval="{{banner.interval}}" duration="{{banner.duration}}" current="{{banner.current}}">
+                    <swiper-item wx:for="{{banner.items}}">
+                        <image src="{{item}}" class="slide-image" width="355" height="150" />
+                    </swiper-item>
+
+                </swiper>
+                <ul>
+                    <navigator url="../detail/detail?id={{item.id}}" wx:for="{{indexList}}" wx:for-item="item">
+                        <li>
+                            <image src="{{item.img}}" mode="aspectFill"></image>
+                            <view class="info-box">
+                                <span>{{item.title}}</span>
+                                <span class="time">{{item.time}}</span>
+                            </view>
+                        </li>
+                    </navigator>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                    <button plain="true" loading="true">努力加载中...</button>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item class="second">
+            <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+                <view hidden="{{refreshHidden}}">
+                    <button plain="true" loading="true">努力刷新中...</button>
+                </view>
+                <ul>
+                    <li wx:for="{{secondList}}" wx:for-item="item">
+                        <image src="{{item.img}}" mode="aspectFill"></image>
+                        <view class="info-box">
+                            <span>{{item.title}}</span>
+                            <span class="time">{{item.time}}</span>
+                        </view>
+                    </li>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                    <button plain="true" loading="true">努力加载中...</button>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item class="third">
+            <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+                <view hidden="{{refreshHidden}}">
+                    <button plain="true" loading="true">努力刷新中...</button>
+                </view>
+                <ul>
+                    <li wx:for="{{thirdList}}" wx:for-item="item">
+                        <image src="{{item.img}}" mode="aspectFill"></image>
+                        <view class="info-box">
+                            <span>{{item.title}}</span>
+                            <span class="time">{{item.time}}</span>
+                        </view>
+                    </li>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                    <button plain="true" loading="true">努力加载中...</button>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item class="fouth">
+            <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+                <view hidden="{{refreshHidden}}">
+                    <button plain="true" loading="true">努力刷新中...</button>
+                </view>
+
+                <ul>
+                    <li wx:for="{{fouthList}}" wx:for-item="item">
+                        <image src="{{item.img}}" mode="aspectFill"></image>
+                        <view class="info-box">
+                            <span>{{item.title}}</span>
+                            <span class="time">{{item.time}}</span>
+                        </view>
+                    </li>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                    <button plain="true" loading="true">努力加载中...</button>
+                </view>
+            </scroll-view>
+        </swiper-item>
+
+    </swiper>
+</view>

@@ -1,0 +1,71 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.searchMusci {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.searchMusci input {
+  text-align: left;
+  height:2rem;
+  width:90%;
+  border:.1rem solid #ccc;
+  display:inline-block;
+  border-radius:.2rem;
+  padding:.5rem;
+}
+.musicscroll {
+  text-align: center;
+  width: 100%;
+  height: 15rem;
+  padding-bottom:2.5rem;
+}
+
+.musicscroll .musiclist {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  padding: .5rem 1rem;
+  width: 70%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid #ccc;
+  margin: .5rem auto;
+  border-radius: .2rem;
+}
+.playshow {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+}
+
+.playshow audio {
+  width: 80%;
+}
+.scBtn {
+  background-color: #48C23D;
+  color: #fff;
+  width: 50%;
+  margin: .5rem auto;
+}

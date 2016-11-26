@@ -1,0 +1,11 @@
+<!--news.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view  class="tip">
+          <icon type="warn" size="45" />
+          <view>
+            活动无效，或者无法展示HTML页面
+          </view>
+        </view>
+    </view>
+</view>

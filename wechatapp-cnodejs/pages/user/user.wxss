@@ -1,0 +1,49 @@
+.box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+    overflow: hidden;
+}
+.user-avatar{
+    padding:6px;
+    width: 100px;
+    margin: 10px auto;
+    border-radius: 6px;
+    border:1px solid #13beec;
+}
+.img{
+    width: 100px;
+    height: 100px;
+}
+.login{
+    width: 100px;
+    margin: 10px auto;
+    padding: 6px;
+    display: block;
+}
+.user-info{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    text-indent: 100px;
+    padding: 20px 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #13beec;
+}
+.user-loginname,.createAt,.score{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin: 12px;
+}
+.topic-title{
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 10px 0 0 12px;
+    color: #13beec;
+}

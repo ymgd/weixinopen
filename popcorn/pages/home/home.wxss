@@ -1,0 +1,8 @@
+/**home.wxss**/
+.slide-image{  
+    width: 100%;  
+}
+.swiper-style{
+    padding: 0 25px;
+    padding-top: 2px;
+}

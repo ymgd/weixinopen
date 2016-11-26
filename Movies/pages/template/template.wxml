@@ -1,0 +1,11 @@
+<!--template.wxml-->
+<template name="moviesList">
+    <block wx:for="{{movies}}" wx:for-item="movie">
+        <view class="movies" catchtap="detail" data-id="{{movie.id}}">
+            <view class="pic"><image src="{{movie.images.medium}}"></image></view>
+            <view class="movies-info">
+                <text>{{movie.text}}</text>
+            </view>
+        </view>
+    </block>
+</template>

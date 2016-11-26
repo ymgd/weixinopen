@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="userinfo">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="container">
+  <input type="number" placeholder="请输入QQ号" value="" bindinput="bindChange"/>
+  <button type="primary" bindtap="submitQQ" class="btn" loading="{{loading}}"> 查询 </button>
+</view>
+<text class="empty" wx:if="{{isEmpty}}">不能为空！</text>
+<view class="content">
+  <view class="textContent">分析：{{analysis}}</view>
+  <view class="textContent">结论：{{conclusion}}</view>
+</view>

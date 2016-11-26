@@ -1,0 +1,19 @@
+
+.advertise-option{
+    background-color: #fff;
+    padding: 10rpx 20rpx;
+    margin-top: 10rpx;
+    display: table;
+    width: 19rem;
+    vertical-align: middle;
+    position: relative;
+}
+.advertise-option-image{
+    width: 19rem;
+    height: 170rpx;
+}
+.advertise-option-title{
+    text-align: center;
+    width: 19rem;
+    font-size: 40rpx;
+}

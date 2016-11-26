@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/recommend/recommend",
+    "pages/search/search",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2B2B2B",
+    "navigationBarTitleText": "电影APP",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#2B2B2B",
+    "list": [{
+      "pagePath": "pages/movie/movie",
+      "text": "影院热映",
+      "iconPath": "assets/img/dy-1.png",
+      "selectedIconPath": "assets/img/dy.png"
+    }, {
+      "pagePath":"pages/recommend/recommend",
+      "text": "电影推荐",
+      "iconPath": "assets/img/tj-1.png",
+      "selectedIconPath": "assets/img/tj.png"
+      },{
+      "pagePath":"pages/search/search",
+      "text": "查询电影",
+      "iconPath": "assets/img/search-1.png",
+      "selectedIconPath": "assets/img/search.png"
+      }]
+  }
+}

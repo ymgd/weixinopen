@@ -1,0 +1,47 @@
+.wcontainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wsearchbox {
+    flex:1;
+    width: 100%;
+    background: rgb(31, 194, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.wsearchbox .wsearch {
+    width: 650rpx;
+    height: 50rpx;
+    background: #14387c;
+    border-radius: 40rpx;
+    display: flex;
+}
+.wsearchbox .wsearch icon {
+    padding: 5rpx 10rpx 0;
+}
+.wsearchbox .wsearch input {
+    width: 590rpx;
+    height: 30rpx;
+    font-size: 30rpx;
+    line-height: 40rpx;
+    text-indent: 10rpx;
+    color: #fff;
+}
+.jieguo{
+    flex: 10;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.jieguo text{
+    box-sizing: border-box;
+    height: 500rpx;
+    padding: 40rpx;
+    color: #57ec1a;
+    font-size: 50rpx;
+    font-weight: bold;
+}

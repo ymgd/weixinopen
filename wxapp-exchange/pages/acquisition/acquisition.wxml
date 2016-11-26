@@ -1,0 +1,108 @@
+<view class="container">
+  <view class="navagitorbar">
+    <image src="../../images/back2x.png"></image>
+    <text>债权收购</text>
+    <image src="../../images/filter2x.png" bindtap="onContentFilterClick"></image>
+  </view>
+
+  <view class="content-tab">
+    <block wx:for="{{tabItems}}">
+      <view class="tab-item {{item.selected ? 'selected' : ''}}" bindtap='onTabChange' data-index="{{index}}">
+        <view class="tab-item_text">
+          <text>{{item.text}}</text>
+        </view>
+        <view wx:if="{{index > 0 }}" class="tab-item_img">
+            <image src="{{item.upflag ? '../../images/upblack2x.png' : '../../images/up2x.png'}}"></image>
+            <image src="{{item.downflag ? '../../images/downblack2x.png' : '../../images/down2x.png'}}"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <scroll-view class="contentinfo" scroll-y="true">
+    <block wx:for="{{contentItems}}">
+      <view class="content-item {{index == 0 ? 'first' : ''}}">
+        <view class="item-title">
+          <image wx:if="{{item.recommend}}"  src="../../images/recommend2x.png"></image>
+          <text>{{item.name}}</text>
+        </view>
+        <view class="item-detail">
+            <view class="item-detail_text">
+              <text class="money">{{item.totalTransfer}}</text>
+              <text class="desp">转让总额</text>
+            </view>
+            <view class="item-detail_text">
+              <text class="money">{{item.dateReturnRate}}</text>
+              <text class="desp">到期净收益率</text>
+            </view>
+            <view class="item-detail_text last">
+              <text class="money">{{item.remainingDate}}{{item.dateUnit == '月' ? '个月' : item.dateUnit }} </text>
+              <text class="desp">剩余期数</text>
+            </view>
+            <view class="item-detail_text">
+              <text class="money1">{{item.originalMoney}}</text>
+              <text class="desp">原始本金</text>
+            </view>
+            <view class="item-detail_text">
+              <text class="money1">{{item.originalRate}}</text>
+              <text class="desp">原始利率</text>
+            </view>
+            <view class="item-detail_text last">
+              <text class="money1">{{item.totalDate}}</text>
+              <text class="desp">总期数{{item.dateUnit == '月' ? '个月' : item.dateUnit }} </text>
+            </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+  <view class="{{opacityFlag ? 'opacity' : ''}}" bindtap="onCancelTap">
+  </view>
+
+  <view animation="{{animationData}}" class="filter-content" >
+    <view class="filter-type">
+      <view class="filter-type_title">
+        <text>还款方式</text>
+      </view>
+      <view class="filter-type_detail">
+          <text>按月分期</text>
+          <text>按季分期</text>
+          <text>按月到期</text>
+          <text>按天一次性还款</text>
+          <text class="last">按天计算利息</text>
+      </view>
+    </view>
+
+    <view class="filter-type">
+      <view class="filter-type_title">
+        <text>借款期限</text>
+      </view>
+      <view class="filter-type_detail">
+          <text class="selected">30天内</text>
+          <text>1个月</text>
+          <text>1-3个月</text>
+          <text>3-6个月</text>
+          <text class="last">6-12个月</text>
+          <text class="last">12个月以上</text>
+      </view>
+    </view>
+
+    <view class="filter-type">
+      <view class="filter-type_title">
+        <text>标的类型</text>
+      </view>
+      <view class="filter-type_detail">
+        <block wx:for="{{targetTypes}}">
+          <text class="{{item.isSelected ? 'selected' : ''}}" bindtap="onSelected" data-index="{{index}}">{{item.typeName}}</text>
+        </block>
+      </view>
+    </view>
+
+    <view class="submit" bindtap="onFilterSubmit">
+      <text>确定</text>
+    </view>
+  </view>
+
+
+  
+</view>

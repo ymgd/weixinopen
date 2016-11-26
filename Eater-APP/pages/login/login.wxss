@@ -1,0 +1,13 @@
+.btn_Login{
+    margin-top: 20px
+}
+.page__bd{
+    width: 80%;
+    margin: 150rpx auto;
+}
+.page__bd input{
+    border-bottom: 1px solid #ccc;
+}
+.section{
+    margin-top: 10rpx;
+}

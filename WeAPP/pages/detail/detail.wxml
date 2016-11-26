@@ -1,0 +1,39 @@
+<!--detail.wxml-->
+<view class="container">
+    <!--消息提示框-->
+    <modal title="提示" confirm-text="确定" no-cancel hidden="{{modalHidden}}" bindconfirm="modalChange">
+        {{modalValue}}
+    </modal>
+    <!--加载动画-->
+    <loading hidden="{{loadingHidden}}">
+        拼命加载中...
+    </loading>
+    <!--图书封面banner-->
+    <view class="book-banner">
+        <image class="book-cover" mode="scaleToFill" src="{{bookcover}}"></image>
+    </view>
+    <!--图书简要信息-->
+    <view class="book-brief">
+        <view class="book-info">
+            <text class="book-name">{{bookname}}</text>
+            <text class="book-author">作者：{{bookauthor}}</text>
+            <text class="book-translator" wx:if="{{isTranslator}}">译者：{{booktranslator}}</text>
+            <text class="book-publisher">出版社：{{bookpublisher}}</text>
+            <text class="book-pubdate">出版日期：{{bookpubdate}}</text>
+        </view>
+        <view class="book-rate">
+            <text class="book-average">{{bookaverage}}</text>
+            <text class="book-numRaters">{{booknumRaters}}人</text>
+        </view>
+    </view>
+    <!--图书简介-->
+    <view class="book-abstract">
+        <text class="abstract-title">简介</text>
+        <text class="abstract-content">{{bookabstract}}</text>
+    </view>
+    <!--作者简介-->
+    <view class="author-abstract">
+        <text class="abstract-title">作者简介</text>
+        <text class="abstract-content">{{authorabstract}}</text>
+    </view>
+</view>

@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3e3e3e",
+    "navigationBarTitleText": "历史今日",
+    "navigationBarTextStyle":"white"
+  },
+  "debug": true
+}

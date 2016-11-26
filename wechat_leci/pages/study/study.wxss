@@ -1,0 +1,162 @@
+.scontainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ff0;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #eee;
+}
+.studytop {
+    flex: 5;
+    width: 100%;
+    background: rgb(31, 194, 255);
+    color: #fff;
+    position: relative;
+}
+@media screen and (max-width: 321px) {
+    .studytop {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 322px) and (max-width: 400px) {
+    .studytop {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .studytop {
+        font-size: 16px;
+    }
+}
+.studytop .words {
+    height: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.studytop .words p {
+    width: 30px;
+    height: 100%;
+}
+.studytop .words .title {
+    width: 120px;
+    height: 100%;
+    text-align: center;
+}
+.studytop .words i {
+    width: 30px;
+    height: 100%;
+    position: relative;
+}
+.studytop .words i image {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+}
+.studytop .daysbox {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.studytop .daysbox .days {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid rgb(77, 214, 21);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: -40px;
+}
+.studytop .daysbox .days p {
+    width: 100%;
+    height: 16px;
+    text-align: center;
+}
+.studytop .daysbox .days .dpeven{
+    height: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.studytop .jinxing{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    background:rgb(31, 194, 255);
+}
+.studytop .jinxing p{
+    width: 140px;
+    text-align: center;
+}
+.studybottom .week{
+    height: 22px;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.studybottom .week li{
+    color: #999;
+    text-align: center;
+    width: 14%;
+    height: 100%;
+}
+.studybottom .dai{
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+.studybottom .dai li{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #888;
+    text-align: center;
+}
+.studybottom .dai li i{
+    font-size: 26px;
+}
+.studybottom .xuefu{
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+.studybottom .xuefu li{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.studybottom .xuefu li p{
+    width: 60px;
+    height: 60px;
+    background: rgb(57, 114, 190);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+}
+.studybottom .xuefu li .fuxi{
+    background:rgb(19, 193, 146);
+}
+.studybottom {
+    flex: 4;
+    width: 100%;
+    background: #fff;
+}

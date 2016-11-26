@@ -1,0 +1,45 @@
+.page_list {
+    height:100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    padding: 20rpx 40rpx;
+    border-bottom: 1rpx solid #eee;
+    cursor: pointer;
+}
+
+.item image{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.item text {
+    margin-left: 20px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.tips {
+    font-size: 28rpx;
+    text-align: center;
+    padding: 50rpx;
+    color: #ccc;
+}
+.tips image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 20rpx;
+}
+
+.tips image,
+.tips text {
+    vertical-align: middle;
+}

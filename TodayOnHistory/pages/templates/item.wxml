@@ -1,0 +1,8 @@
+<template name="tItem">
+    <navigator url="../detail/detail?id={{item.e_id}}">
+        <view class="ui-list-item ui-pure-item ui-border-b">
+            <view class="ui-item-span"><text>{{item.date}}</text></view>
+            <view class="ui-item-content ui-nowrap"><text>{{item.title}}</text></view>
+        </view>
+    </navigator>
+</template>

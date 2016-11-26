@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+    <image style="width:100%;" mode="aspectFit" src="../../image/007.png"></image>
+    <view url="/pages/bg-audio/bg-audio" hover-class="navigator-hover" class="bgaudioplaystage weui-cell {{current_play_id>0 ? 'show' : 'hide'}}" >
+        <image class="image-button image-button-play" src="../../image/music_d.png" alt="" />
+        <text>正在播放【{{currentMusic.lyindex}}】{{currentMusic.title}}</text>
+    </view>
+
+    <view class="page_body">
+      <scroll-view scroll-y="true" style="height: 300px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+        <view bindtap="bindViewTapMenu" wx:key="categoryIndex" wx:for-items="{{lylist_categorys}}" wx:for-item="categoryItem" wx:for-index="categoryIndex" id="{{categoryIndex}}" class="ul category-item {{categoryItem.opened ? 'open' : 'close'}}">
+            <view class="weui-flex weui-cell ly_category_list">
+                <text class="weui-flex__item">{{categoryItem.name}}</text>
+                <div class="weui-cell__ft"></div>
+                <image class="image-button image-button-list" src="../../image/arrowright.png" alt="" />
+            </view>
+            <view class="page__category ly_subcategory_list">
+                <view wx:if="{{categoryItem.name==lylistItem.category}}" class="lylist" wx:for="{{lylist_data}}" wx:for-item="lylistItem" wx:key="lylistIndex" wx:for-index="lylistIndex">
+                    <view  class="category weui-cell" >
+                        <icon class="widgets__info-img download-button" catchtap="{{lylistItem.downloaded==lylistIndex?'bindViewTapPlay':'bindViewTapDownload'}}" id="{{lylistIndex}}" data-key="{{lylistItem.key}}" data-playstate="{{current_play_id==lylistIndex?0:1}}" data-downloadad="{{current_downloaded_id==lylistIndex?1:0}}" data-title="{{lylistItem.title}}" data-lyindex="{{lylistItem.index}}"  type="download" color="{{current_downloaded_id==lylistIndex?'grey':'#BDBDC0'}}"/>
+
+                        <icon class="widgets__info-img fav-button" catchtap="bindViewTapFav" id="{{lylistIndex}}" data-key="{{lylistItem.key}}" data-playstate="{{current_play_id==lylistIndex?0:1}}" data-downloadad="{{current_downloaded_id==lylistIndex?1:0}}" data-title="{{lylistItem.title}}" data-lyindex="{{lylistItem.index}}"  type="success" color="{{current_downloaded_id==lylistIndex?'grey':'#BDBDC0'}}"/>
+
+                        <text class="widgets__info-name">【{{lylistItem.index}}】{{lylistItem.title}}</text>
+
+                        <image catchtap="bindViewTapPlay" id="{{lylistIndex}}" data-title="{{lylistItem.title}}" data-key="{{lylistItem.key}}"  data-lyindex="{{lylistItem.index}}" data-playstate="{{current_play_id==lylistIndex?0:1}}" class="image-button d-button d-button-img d-button-play {{lylistItem.opened ? 'play' : 'stop'}}" src="../../image/playerbar_{{current_play_id==lylistIndex?'pause':'play'}}.png" background-size="cover" />
+                    </view>
+                </view>
+            </view>
+        </view>
+      </scroll-view>
+    </view>
+</view>

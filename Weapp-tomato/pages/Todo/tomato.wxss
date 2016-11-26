@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  line-height: 100px;
+}
+
+.count {
+  margin: 40px auto 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 36px;
+  color: #999;
+  text-align: center;
+  border: 2px solid #df3031;
+  border-radius: 2px;
+}
+
+.task25min {
+  margin: 0 0 20px;
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+}
+
+.doingTask {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content:center;
+}
+
+.enterTaskName {
+  margin: 20px;
+  padding: 5px 10px;
+  background: #e5ebf1;
+  color: #5b9cf5;
+}
+
+.startBtn {
+  font-size: 16px;
+  background: #fff;
+  border: 2px solid #df3031;
+}
+
+.stopBtn {
+  font-size: 16px;
+  color: #fff;
+  background: #df3031;
+  margin: 20px auto;
+}
+
+.breakBtn {
+  margin-top: 20px;
+  color: #fff;
+  background: #5b9cf5;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  width: 150px;
+}
+
+.compltBtn, .uncompltBtn {
+  background: #e5ebf1;
+  border: 1px solid #bad3ec;
+  color: #5b9cf5;
+}
+
+.compltBtn {
+  margin-right: 10px;
+}
+
+.uncompltBtn {
+  margin-left: 10px;
+}

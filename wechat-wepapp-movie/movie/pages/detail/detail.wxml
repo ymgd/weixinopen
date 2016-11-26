@@ -1,0 +1,21 @@
+<view class="content">
+    <view>
+        <image mode="aspectFit" src="{{movie.images.large}}"></image>
+    </view>
+    <view class="hr"></view>
+    <view class="detail">
+        <text>{{movie.text}}</text>
+    </view>
+
+    <view class="casts">
+        <block wx:for="{{movie.casts}}">
+            <image  mode="aspectFit" src="{{item.avatars.medium}}"></image>
+        </block>
+    </view>
+    <view class="hr"></view>
+
+    <view class="detail">
+        <text>{{movie.summary}}</text>
+    </view>
+
+</view>

@@ -1,0 +1,19 @@
+.detail_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail_item image{
+    width: 200px;
+    height: 200px;
+    clear: both;
+    display: block;
+    margin: 20px auto;
+}
+.detail_item text{
+    margin-top: 10rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    margin-bottom: 30rpx;
+}

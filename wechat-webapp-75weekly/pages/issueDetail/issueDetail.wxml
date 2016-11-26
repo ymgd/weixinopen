@@ -1,0 +1,4 @@
+<import src="../common/issue.wxml"/>
+<view class="container">
+  <template is="issue" data="{{ list }}"/>
+</view>

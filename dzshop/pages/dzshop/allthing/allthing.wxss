@@ -1,0 +1,199 @@
+page{
+    height: 100%;
+}
+.allthingbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.thingbox{
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.box{
+
+}
+.allimg image{
+    width: 100%;
+}
+.buybox{
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    border-top: 1rpx solid #ddd;
+    background: #eef;
+}
+.buybox image{
+    width:70rpx;
+    height: 70rpx;
+}
+.buybox button{
+    width: 300rpx;
+    height: 60rpx;
+    font-size: 36rpx;
+    line-height: 60rpx;
+    font-weight: 600;
+    color: #fff;
+    background: #f00;
+}
+
+.allimg{
+    width: 100%;
+     
+}
+.allt1{
+    width: 100%;
+    height:120rpx;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10rpx;
+    border-bottom: 1rpx solid #eee;
+    border-top: 1rpx solid #eee;
+}
+.allt1 text{
+    flex: 1;
+    box-sizing: border-box;
+    width: 100%;
+    padding:5rpx  30rpx;
+    font-weight:800;
+}
+.allt1 b{
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    padding:5rpx  30rpx;
+    font-weight:800;
+}
+.allt1 b{
+    color:#f00;
+    font-weight:800;
+}
+.allt2{
+    width: 100%;
+    height: 200rpx;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.allt2 .allt2_1{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.allt2 .allt2_2{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.allt2_1 text{
+    width: 17%;
+    height: 100%;
+    font-size: 34rpx;
+    padding: 20rpx 20rpx;
+    font-weight: 600;
+    color:#d63;
+}
+
+.allt2_1 b{
+    width: 82%;
+    font-size: 34rpx;
+    padding: 20rpx 20rpx;
+    font-weight:800;
+}
+.allt2_2 text{
+    width: 17%;
+    height: 100%;
+    font-size: 34rpx;
+    padding: 20rpx 20rpx;
+    font-weight: 600;
+    color:#d63;
+}
+
+.allt2_2 b{
+    width: 82%;
+    font-size: 34rpx;
+    padding: 20rpx 20rpx;
+    font-weight:800;
+}
+.allt3{
+    width: 100%;
+    height:500rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+.allt3 .thing1{
+    width: 17%;
+    height: 100%;
+    font-size: 34rpx;
+    padding: 20rpx 20rpx;
+    font-weight: 600;
+    color:#d63;
+}
+.allt3 .thing2{
+    width: 82%;
+    height: 100%;
+    font-size: 34rpx;
+    padding: 20rpx 20rpx;
+    display: flex;
+    flex-direction: column;
+     justify-content: flex-start;
+
+}
+.thing2 .price1{
+    width: 240rpx;
+    height: 100rpx;
+    border: 1rpx solid #ddd;
+    border-radius: 20rpx;
+    margin-top: 30rpx;
+    padding: 30rpx;
+}
+
+.allt4{
+    width: 100%;
+    height: 600rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30rpx;
+}
+.allt4 .thing1{
+    width:15%;
+    height: 100%;
+    font-size: 34rpx;
+    padding: 20rpx 20rpx;
+    font-weight: 600;
+    color:#d63;
+
+}
+.allt4 .thing2{
+    width: 75%;
+    height: 100%;
+    padding-top: 50rpx;
+    background: lightyellow;
+    border-radius: 20rpx;
+    font-size: 36rpx;
+}
+.images image{
+    width: 100%;
+}

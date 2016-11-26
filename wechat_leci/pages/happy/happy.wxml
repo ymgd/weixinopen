@@ -1,0 +1,67 @@
+<view class="hcontainer">
+    <view class="htop">
+        <p></p>
+        <p class="title">乐学</p>
+        <i><image src="/images/my_course_icon.png"></image>我的课程</i>
+    </view>
+    <view class="list-loading">
+        <loading hidden="{{loadingHidden}}">loadinginging......</loading>
+    </view>
+    <scroll-view class="lunbo" scroll-y="true" bindscrolltolower="actionTolower">
+        <swiper class="happy-list" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}">
+            <block>
+                <swiper-item>
+                    <image src="/images/23.png" mode="scaleToFill"></image>
+                </swiper-item>
+                <swiper-item>
+                    <image src="/images/25.png" mode="scaleToFill"></image>
+                </swiper-item>
+                <swiper-item>
+                    <image src="/images/27.png" mode="scaleToFill"></image>
+                </swiper-item>
+                <swiper-item>
+                    <image src="/images/30.png" mode="scaleToFill"></image>
+                </swiper-item>
+                <swiper-item>
+                    <image src="/images/31.png" mode="scaleToFill"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+        <scroll-view class="scrbot" scroll-y="true">
+            <view class="zhuanlanbox">
+                <ul class="zhuanlan">
+                    <li>
+                        <image src="/images/tab_special_course.png" mode="scaleToFill"></image>
+                        <p>专题课程</p>
+                    </li>
+                    <li>
+                        <image src="/images/tab_speak_course.png" mode="scaleToFill"></image>
+                        <p>讲词课程</p>
+                    </li>
+                    <li>
+                        <image src="/images/tab_learn_column.png" mode="scaleToFill"></image>
+                        <p>学习专栏</p>
+                    </li>
+                    <li>
+                        <image src="/images/tab_leci_teacher.png" mode="scaleToFill"></image>
+                        <p>乐词名师</p>
+                    </li>
+                </ul>
+            </view>
+            <view class="jctui"><b><p>精彩推荐</p></b></view>
+            <view class="bookbox">
+                <ul class="book">
+                    <li wx:for="{{list}}" wx:for-item="item" bindtap="levideo">
+                        <image src="{{item.img}}" mode="scaleToFill"></image>
+                        <p>{{item.title}}</p>
+                        <b>{{item.fee}}</b>
+                    </li>
+                </ul>
+                <!-- <view hidden="{{loadmoreHidden}}">
+                  <button plain="true" loading="true">努力加载中...</button>
+                </view> -->
+            </view>
+        </scroll-view>
+    </scroll-view>
+
+</view>

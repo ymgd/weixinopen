@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "white",
+  "navigationBarTitleText": "网难新闻",
+  "navigationBarTextStyle": "red",
+  "enablePullDownRefresh": true
+}

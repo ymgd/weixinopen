@@ -1,0 +1,21 @@
+<view class="container">
+    <text>LeanCloud Login Page</text>
+    <form bindsubmit="formSubmit">
+        <view class="section">
+            <view >用户名</view>
+            <input name="username" placeholder="点击输入帐号" auto-focus	/>
+        </view>
+        <view class="section">
+            <view >密码</view>
+            <input password  name="password" placeholder="点击输入密码"/>
+        </view>
+        <view class="btn-area">
+            <button type="primary" formType="submit">登陆</button>
+        </view>
+    </form>
+    <button type="primary" catchtap="DirectSignUp">注册</button>
+</view>
+
+<toast hidden="{{toastHidden}}">
+    登陆成功
+</toast>

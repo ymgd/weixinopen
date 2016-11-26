@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/topic/topic",
+    "pages/birthdate/birthdate",
+     "pages/about/about",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1E90FF",
+    "navigationBarTitleText": "指尖书香",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#9B9DB1",
+    "selectedColor": "#1E90FF",
+    "borderStyle": "#CCCCCC",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/topic/topic",
+      "iconPath": "images/tab_message_normal.png",
+      "selectedIconPath": "images/tab_message_selected.png",
+      "text": "频道"
+    }, {
+      "pagePath": "pages/birthdate/birthdate",
+      "iconPath": "images/tab_contact_normal.png",
+      "selectedIconPath": "images/tab_contact_selected.png",
+      "text": "站点"
+    },{
+      "pagePath": "pages/about/about",
+      "iconPath": "images/tab_dynamic_normal.png",
+      "selectedIconPath": "images/tab_dynamic_selected.png",
+      "text": "我的"
+    }]
+  }
+}

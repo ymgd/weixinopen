@@ -1,0 +1,26 @@
+<!-- tag模板-->
+<template name="commonTag">
+
+	<scroll-view class="top-bar" scroll-x="true" style="width: 100%">
+        <view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+        <view class="top-bar-item" id="news" catchtap="turnToTag">新闻</view>
+		<view class="top-bar-item" id="audio" catchtap="turnToTag">直播</view>
+		<view class="top-bar-item" id="china" catchtap="turnToTag">中华</view>
+		<view class="top-bar-item" id="zhengzhou" catchtap="turnToTag">郑州</view>
+		<view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+		<view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+		<view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+		<view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+		<view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+		<view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+    </scroll-view>
+</template>
+<template name="commonTag2">
+	<view class="top-bar">
+		<view class="top-bar-item" id="news" catchtap="turnToTag">新闻</view>
+		<view class="top-bar-item" id="audio" catchtap="turnToTag">直播</view>
+		<view class="top-bar-item" id="china" catchtap="turnToTag">中华</view>
+		<view class="top-bar-item" id="zhengzhou" catchtap="turnToTag">郑州</view>
+		<view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+	</view>
+</template>

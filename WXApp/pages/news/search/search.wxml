@@ -1,0 +1,7 @@
+<li wx:for="{{indexList}}" wx:for-item="item">
+    <image src="{{item.img}}" mode="aspectFill"></image>
+    <view class="info-box">
+        <span>{{item.title}}</span>
+        <span class="time">{{item.time}}</span>
+    </view>
+</li>

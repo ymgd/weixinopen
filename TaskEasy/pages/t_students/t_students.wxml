@@ -1,0 +1,37 @@
+<!--s_answer.wxml-->
+<view class="task">
+    <view class="item">
+        <text class="title">布置时间：</text>
+        <text class="details">{{task.time}}</text>
+    </view>
+    <view class="item">
+        <text class="title">作业要求：</text>
+        <text class="details">{{task.details}}</text>
+    </view>
+</view>
+<view class="status">
+    <view class="list">
+        <text class="title">最新消息：</text>
+        <block wx:for="{{students}}">
+             <view class="item" bindtap="t_mark">
+                 <text>{{item.student}}{{item.time}}</text>
+             </view>
+        </block>
+    </view>
+    <view class="list">
+        <text class="title">已经完成作业的人：</text>
+        <block wx:for="{{f_students}}">
+            <view class="item" bindtap="t_mark">
+                <text>{{item.student}}{{item.time}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="list">
+        <text class="title">未完成作业的人：</text>
+        <block wx:for="{{unf_students}}">
+             <view class="item">
+                 <text> {{item.name}}</text>
+             </view>
+        </block>
+    </view>
+</view>

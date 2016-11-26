@@ -1,0 +1,9 @@
+/**主页的样式**/
+.wellcomeinfo{
+    color: #000000;
+    margin: 40px;
+    font-size: 18px;
+}
+.btnwellcome{
+    margin-top: 100px;
+}

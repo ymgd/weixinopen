@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "rgb(31, 194, 255)",
+  "navigationBarTitleText": "FIND",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle":"light"
+}

@@ -1,0 +1,56 @@
+<view class="mebox">
+<import src='/tpls/signin.wxml' />
+    <template is='signin' data="{{modalHidden,...userInfo}}"></template>
+    <view class="mybox" bindtap="login">
+        <image src="{{shop.meimg}}"></image>
+        <text >{{inputname}}</text>
+    </view>
+    <view class="myshop">
+        <ul>
+            <li>
+                <text>{{shop.t1}}</text>
+                <b>{{myshop.shop1}}</b>
+            </li>
+            <li>
+                <text>{{shop.t2}}</text>
+                <b>{{myshop.shop2}}</b>
+            </li>
+            <li>
+                <text>{{shop.t3}}</text>
+                <b>{{myshop.shop3}}</b>
+            </li>
+            <li>
+                <text>{{shop.t4}}</text>
+                <b>{{myshop.shop4}}</b>
+            </li>
+        </ul>
+    </view>
+    <view class="v1 mymoney" bindtap="mymoney">
+      <image src="{{v1.mymoney[1]}}"></image>
+      <text>{{v1.mymoney[0]}}</text>
+    </view>
+    <view class=" v1 mytel" bindtap="mytel">
+      <image src="{{v1.mytel[1]}}"></image>
+      <text>{{v1.mytel[0]}}</text>
+    </view>
+    <view class="v1  mycard" bindtap="mycard">
+      <image src="{{v1.mycard[1]}}"></image>
+      <text>{{v1.mycard[0]}}</text>
+    </view>
+    <view class="v1 myinfo" bindtap="myinfo">
+      <image src="{{v1.myinfo[1]}}"></image>
+      <text>{{v1.myinfo[0]}}</text>
+    </view>
+    <view class="v1 mydress">
+      <image src="{{v1.mydress[1]}}"></image>
+      <text>{{v1.mydress[0]}}</text>
+    </view>
+    <view class="v1 myself" bindtap="myself">
+      <image src="{{v1.myself[1]}}"></image>
+      <text>{{v1.myself[0]}}</text>
+    </view>
+    <view class="v1 myout" >
+      <image src="{{v1.myout[1]}}"></image>
+      <text>{{v1.myout[0]}}</text>
+    </view>
+</view>

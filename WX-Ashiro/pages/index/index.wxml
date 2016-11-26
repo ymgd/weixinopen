@@ -1,0 +1,34 @@
+<view class="main">
+  <view class="top">
+    <button type="default" size="mini" bindtap="block">{{listName}} 页数：{{pageId}}</button>
+  </view>
+  <modal class="modal" hidden="{{blockShow}}" no-cancel confirm-text="关闭" bindconfirm="blockClose">
+    <scroll-view style="height:300px" scroll-y="true">
+      <block wx:for="{{list}}">
+        <view>{{item.name}}</view>
+        <block wx:for="{{item.forums}}">
+          <button type="default" size="mini" bindtap="redictBlock" id="{{item.id}}" data-name="{{item.name}}">{{item.name}}</button>
+        </block>
+      </block>
+    </scroll-view>
+  </modal>
+  <scroll-view class="list" style="height:93%" scroll-y="true" bindscrolltolower="next" bindscrolltoupper="last">
+  	<block wx:for="{{listItems}}">
+      <view class="listItem" index="{{index}}" id="{{item.id}}" catchtap="redictDetail">
+        <view class="itemInfo">
+          <view class="itemId">No.{{item.id}}</view>
+          <view class="itemUser">{{item.userid}}</view>
+        </view>
+        <view class="itemContent">{{item.content}}</view>
+        <image class="itemImg" wx-if="{{item.img != ''}}" mode="aspectFit" src="{{'http://img1.nimingban.com/image/'+item.img+item.ext}}"></image>
+        <view class="itemInfo">
+          <view class="itemReplyCount">回复：{{item.replyCount}}</view>
+          <view class="itemDate">{{item.now}}</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

@@ -1,0 +1,28 @@
+.list {
+	font-size: 14px;
+	padding: 10px;
+}
+.list text {
+	display: block;	
+}
+.list_content {
+	text-indent: 2em;
+	line-height: 26px;
+	margin-bottom: 50px;
+}
+image {
+	height: 150px;
+	width: 100%;
+}
+.list_course {
+	margin-top: 10px;
+}
+.list_course text {
+	margin: 5px 0;
+}
+.list_btn {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	margin-top: 80px;
+}

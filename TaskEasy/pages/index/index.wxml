@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view  bindtap="s_list_tasks" class="entrance">
+      <text class="user-motto">我的作业</text>
+  </view>
+  <view  bindtap="t_assignment" class="entrance">
+      <text>布置作业</text>
+  </view>
+  <view  bindtap="t_tasks" class="entrance">
+      <text>批改作业</text>
+  </view>
+</view>

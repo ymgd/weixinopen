@@ -1,0 +1,3 @@
+<view class="expressNum">
+  <input placeholder="请输入快递单号" />
+</view>

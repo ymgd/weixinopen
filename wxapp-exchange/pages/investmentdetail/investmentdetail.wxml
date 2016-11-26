@@ -1,0 +1,123 @@
+<view class="container">
+  
+  <view class="top-content">
+    <view class="navagitorbar">
+      <image src="../../images/back2x.png" bindtap="onBackClick"></image>
+      <text>项目详情</text>
+      <image src=""></image>
+    </view>
+    <view class="top-content_detail">
+      <view class="top-content_title">  
+        <image wx:if="{{info.recommend}}" src="{{info.recommend ? '../../images/recommend2x.png' : ''}}"></image>
+        <text>{{info.name}}</text>
+      </view>
+      <view class="top-content_data">
+        <text class="first">预计年化利率</text>
+        <text>{{info.interestrate}}%</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="mid-content">
+    <view class="mid-content_left">
+      <canvas canvas-id="rate" style="width: 116rpx; height: 116rpx;"></canvas>
+    </view>
+    <view class="mid-content_right">
+      <view class="text">
+        <text>借款金额</text>
+        <text class="last">¥{{info.borrowMoney}}</text>
+      </view>
+      <view class="text last">
+        <text>剩余金额</text>
+        <text class="last">¥{{info.remaining}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="content-info">
+    <view>
+      <text>借款期限</text>
+      <text class="last">{{info.borrowTerm}}{{info.borrowUnit == '月' ? '个月' : info.borrowUnit}} </text>
+    </view>
+    <view>
+      <text>还款方式</text>
+      <text class="last">{{info.repaymentType}}</text>
+    </view>
+    <view>
+      <text class="letter">借款人</text>
+      <text class="last">杰哥</text>
+    </view>
+    <view class="last">
+      <text>可投范围</text>
+      <text class="last">$50~{{info.remaining}}</text>
+    </view>
+  </view>
+
+  <view class="record">
+    <view  class="record-tab">
+      <view class="record-tab_item">
+        <text>投标记录</text>
+      </view>
+      <view class="record-tab_item">
+        <text>待还记录</text>
+      </view>
+      <view class="record-tab_item">
+        <text>借款人信息</text>
+      </view>
+    </view>
+    <scroll-view class="record-content" scroll-y="true">
+      <view class="record-content_item">
+        <text>杰哥</text>
+        <text>2016-05-20</text>
+        <text>¥12000000</text>
+      </view>
+      <view class="record-content_item">
+        <text>杰哥</text>
+        <text>2016-05-20</text>
+        <text>¥12000000</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="submit" bindtap="onTenderClick">
+    <view>
+      距离结束<text class="remark">{{'30'}}</text>天<text class="remark">{{'22'}}</text>小时
+    </view>
+    <view class="submit-btn">
+      <text>立即投标</text>
+    </view>
+  </view>
+
+
+  <view class="{{opacityFlag ? 'opacity' : ''}}" bindtap="onCancelTap">
+  </view>
+
+  <view class="tenderDetail" animation="{{animationData}}">
+    <view class="tender-range">
+      <text>可投范围 $50~{{info.remaining}}</text>
+      <image src="../../images/close2x.png" bindtap="onTenderCloseClick"></image>
+    </view>
+    <view class="tender-bank">
+      <view class="tender-bank_left">
+        <image src="../../images/chinaxin.png"></image>
+        <view class="tender-bank_text">
+          <text class="top">中信银行(尾号8837)</text>
+          <text>单笔限额1万,单日限额1万</text>
+        </view>
+      </view>
+      <image class="right" src="../../images/right.png"></image>
+    </view>
+    <view class="tender-money">
+      <view class="tender-money_input">
+        <input placeholder="请输入投标金额" />
+      </view>
+      <view class="tender-money_submit">
+        确认
+      </view>
+    </view>
+
+  </view>
+
+
+  
+</view>

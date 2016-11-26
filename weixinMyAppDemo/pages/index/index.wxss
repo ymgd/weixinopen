@@ -1,0 +1,6 @@
+/**index.wxss**/
+@import "../template/match/match-list-item.wxss";
+@import "../template/advertise/advertise-banner-mid.wxss";
+.slide-image {
+   width:20rem;
+}

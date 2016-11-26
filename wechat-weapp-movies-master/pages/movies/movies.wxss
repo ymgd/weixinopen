@@ -1,0 +1,43 @@
+
+.itemContainer {
+    display: flex;
+    padding: 20rpx;
+    border-bottom: 1px solid darkgray;
+}
+
+.item-image {
+    width: 128px;
+}
+
+.item-image image {
+    width: 130px;
+    height: 180px;
+}
+
+.content {
+    flex: auto;
+    position: relative;
+    left: 20rpx;
+}
+
+.content view {
+    padding: 5px;
+}
+
+.content .label {
+    color: #555;
+}
+
+.content .score {
+    color:deeppink;
+}
+
+.loadMore {
+    padding: 20rpx;
+    text-align: center;
+}
+
+.loadMore image {
+    width: 70rpx;
+    height: 70rpx;
+}

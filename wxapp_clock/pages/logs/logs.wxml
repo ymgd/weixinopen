@@ -1,0 +1,51 @@
+<!--logs.wxml-->
+<view class="{{screenStyle}}">
+  <text class="heading">{{screenText}}</text>
+  <view class="input-container">
+    <picker bindchange="hhBindPickerChange" value="{{hh}}" range="{{hhArr}}">
+      <view class="picker">
+        {{hhArr[hh]}} 小时
+      </view>
+    </picker>
+
+    <picker bindchange="mmBindPickerChange" value="{{mm}}" range="{{mmArr}}">
+      <view class="picker">
+        {{mmArr[mm]}} 分钟
+      </view>
+    </picker>
+
+    <picker bindchange="ssBindPickerChange" value="{{ss}}" range="{{ssArr}}">
+      <view class="picker">
+        {{ssArr[ss]}} 秒
+      </view>
+    </picker>
+    <!--<input  maxlength="2" placeholder="时" class="time-input" type="digit" bindchange="onHHChange" />：
+    <input  maxlength="2" placeholder="分" class="time-input" type="digit" bindchange="onMMChange" />：
+    <input  maxlength="2" placeholder="秒" class="time-input" type="digit" bindchange="onSSChange" />-->
+  </view> 
+  <audio src="{{alarmSrc}}" action="{{action}}" loop></audio>
+
+  <!--<toast hidden="{{toast2Hidden}}" duration="3000" bindchange="toast2Change">
+    设置duration
+  </toast>-->
+
+  <view>
+    <button type="primary" size="default"
+         bindtap="onSetHandler"> 设置 </button>
+  </view>
+  <view class="display-container">
+    <text class="count-down">{{displayTime}}</text>
+  </view>
+
+  <view class="button-container">
+
+    <view class="button-start" bindtap="onStartHandler">
+      <text class="button-text">Start</text>
+    </view>
+
+    <view class="button-stop" bindtap="onStopHandler">
+      <text class="button-text">Stop</text>
+    </view>
+
+  </view>
+</view>

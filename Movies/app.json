@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/hitmovies/hitmovies",
+    "pages/comingSoon/comingSoon",
+    "pages/search/search",
+    "pages/detail/detail"
+  ],
+  "tabBar":{
+    "backgroundColor":"#000",
+    "color":"#fff",
+    "list":[{
+      "pagePath":"pages/hitmovies/hitmovies",
+      "iconPath":"images/play.jpg",
+      "selectedIconPath":"images/play.jpg",
+      "text":"正在热映"
+    },
+    {
+      "pagePath":"pages/comingSoon/comingSoon",
+      "iconPath":"images/play.jpg",
+      "selectedIconPath":"images/play.jpg",
+      "text":"即将上映"
+    },
+    {
+      "pagePath":"pages/search/search",
+      "iconPath":"images/search.jpg",
+      "selectedIconPath":"images/search.jpg",
+      "text":"影片搜索"
+    }]
+  }
+}

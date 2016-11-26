@@ -1,0 +1,71 @@
+/**index.wxss**/
+/**.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.display-container {
+  
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+**/
+.count-down {
+  font-size: 3.4em;
+  font-weight: 500;
+  align-self: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  width: 100%;
+  align-items: space-around;
+  padding-top: 70rpx;
+}
+
+.button-start{
+  background-color: green;
+  height: 228rpx;
+  width: 228rpx;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-stop{
+  display: flex;
+  background-color: red;
+  height: 228rpx;
+  width: 228rpx;
+  border-radius: 50%;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-text {
+  font-size: 1.5em;
+  font-weight: 600;
+}

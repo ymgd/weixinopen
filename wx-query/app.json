@@ -1,0 +1,13 @@
+{
+    "pages" : [
+        "pages/index/index",
+        "pages/example/example"
+    ],
+    "window" : {
+        "backgroundTextStyle" : "light",
+        "navigationBarBackgroundColor" : "#1AAD16",
+        "navigationBarTitleText" : "wxQuery",
+        "navigationBarTextStyle" : "white"
+    },
+    "debug" : true
+}

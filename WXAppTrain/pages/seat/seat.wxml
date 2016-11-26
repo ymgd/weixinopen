@@ -1,0 +1,11 @@
+<!--seat.wxml-->
+<view class="container seat-list">
+	<text class="seat-item">车次：{{trainNo}}</text>
+    <view class="line"></view>
+    <block wx:for="{{seatList}}" wx:for-item="seat">
+        <text class="seat-item">{{index+1}}. 类型：{{seat.seat}}</text>
+        <text class="seat-item">价格：{{seat.seatPrice}}</text>
+        <text class="seat-item">余票：{{seat.remainNum}}</text>
+        <view class="line"></view>
+    </block>
+</view>

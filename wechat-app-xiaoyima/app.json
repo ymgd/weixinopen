@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/monthly/monthly"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#FF999A",
+    "navigationBarTitleText": "小姨妈",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#fefdee"
+  }
+}

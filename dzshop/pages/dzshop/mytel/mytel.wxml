@@ -1,0 +1,16 @@
+<view class="mytelbox">
+  <view class="mytel1">
+    <text class="tel1_1">{{title1}}</text>
+    <text class="tel1_2">{{username}}</text>
+  </view>
+  <view class="mytel2">
+    <text>{{title2}}</text>
+    <input type="text"  value="" placeholder="请输入手机号码"/>
+  </view>
+  <view class="mytel3">
+    <text>{{title3}}</text>
+    <input type="text"  value="" placeholder="请输入验证码"/>
+    <button type="button" name="button">发送验证码</button>
+  </view>
+  <button type="button"  class="bt1">确认修改手机</button>
+</view>

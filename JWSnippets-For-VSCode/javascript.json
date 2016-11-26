@@ -1,0 +1,550 @@
+{
+	"创建App实例": {
+		"prefix": "jw - app",
+		"body": [
+			"App({",
+			"	onLaunch:function(){",
+			"		//监听小程序初始化(当小程序初始化完成时，会触发onLaunch（全局只触发一次））",
+			"	},",
+			"	onShow:function(){",
+			"		//监听小程序显示（当小程序启动，或从后台进入前台显示，会触发onShow）",
+			"	},",
+			"	onHide:function(){",
+			"		//监听小程序隐藏（当小程序从前台进入后台，会触发onHide）",
+			"	}",
+			"})"
+		],
+		"description": "创建app实例"
+	},
+	"创建Page实例": {
+		"prefix": "jw - page",
+		"body": [
+			"Page({",
+			"	data:{",
+			"		//页面数据初始化",
+			"		$1",
+			"	},",
+			"	onLoad:function(options){",
+			"		//监听页面加载，页面初始化，options为页面跳转所带来的参数",
+			"	},",
+			"	onReady:function(){",
+			"		//监听页面渲染完成",
+			"	},",
+			"	onShow:function(){",
+			"		//监听页面显示",
+			"	},",
+			"	onHide:function(){",
+			"		//监听页面隐藏",
+			"	},",
+			"	onUnload:function(){",
+			"		//监听页面卸载",
+			"	}",
+			"})"
+		],
+		"description": "创建Page实例"
+	},
+	"创建普通方法": {
+		"prefix": "jw - function",
+		"body": [
+			"$1: function () {",
+			"	console.log('$1')",
+			"},"
+		],
+		"description": "创建普通方法"
+	},
+	"创建事件方法": {
+		"prefix": "jw - event",
+		"body": [
+			"$1: function (e) {",
+			"	console.log('$1:' + e)",
+			"},"
+		],
+		"description": "创建事件方法"
+	},
+	"创建数组": {
+		"prefix": "jw - array",
+		"body": [
+			"$1: [",
+			" $2",
+			"],"
+		],
+		"description": "创建数组"
+	},
+	"日志输出": {
+		"prefix": "jw - log",
+		"body": [
+			"console.log($1)"
+		],
+		"description": "日志输出"
+	},
+	"同步视图层数据": {
+		"prefix": "jw - setData",
+		"body": [
+			"this.setData({",
+			"	$1",
+			"})"
+		],
+		"description": "同步视图层数据"
+	},
+
+	/*
+	 *
+	 *	以下为API的代码段
+	 *
+	 */
+
+	 "创建wx.request API 网络-发起请求": {
+		"prefix": "jw - wx.requst",
+		"body": [
+			"wx.request({",
+			"	url: '$1', // 开发者服务器接口地址",
+			"	data: {$2}, // 请求的参数",
+      		"	header: { 'Content-Type': 'application/json' }, // HTTP Header , header 中不能设置 Referer",
+      		"	method:'GET', // 默认为 GET，有效值：OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT",
+			"	success (res) { // 接口调用成功的回调函数",
+        	"		console.log(res.data)",
+      		"	},",
+      		"	fail (e) { // 接口调用失败的回调函数",
+        	"		console.error(e)",
+      		"	}",
+    		"})"
+		],
+		"description": "创建wx.request API 网络-发起请求"
+	},
+	"创建wx.uploadFile API 网络-上传": {
+		"prefix": "jw - wx.uploadFile",
+		"body": [
+			"wx.uploadFile({",
+			"	url: '$1', // 开发者服务器 url",
+			"	filePath: '$2', // 要上传文件资源的路径",
+      		"	name: 'file', // 文件对应的 key , 开发者在服务器端通过这个 key 可以获取到文件二进制内容",
+			"	header: { 'Content-Type': 'multipart/form-data' }, // HTTP Header , header 中不能设置 Referer",
+			"	formData:{ // HTTP 请求中其他额外的 form data",
+			"		$3",
+			"	},",
+      		"	success (res) { // 接口调用成功的回调函数",
+        	"		console.log(res)",
+      		"	},",
+      		"	fail (e) { // 接口调用失败的回调函数",
+        	"		console.error(e)",
+      		"	}",
+    		"})"
+		],
+		"description": "创建wx.uploadFile API 网络-上传"
+	},
+	"创建wx.downloadFile API 网络-下载": {
+		"prefix": "jw - wx.downloadFile",
+		"body": [
+			"wx.downloadFile({",
+			"	url: '$1', // 下载资源的 url",
+			"	type: '$2', // 下载资源的类型，用于客户端识别处理，有效值：image/audio/video",
+			"	header: { 'Content-Type': 'multipart/form-data' }, // HTTP Header , header 中不能设置 Referer",
+      		"	success (res) { // 接口调用成功的回调函数",
+			"		// 注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用wx.saveFile，在小程序下次启动时才能访问得到。",
+        	"		console.log(res.tempFilePath)",
+      		"	},",
+      		"	fail (e) { // 接口调用失败的回调函数",
+        	"		console.error(e)",
+      		"	}",
+    		"})"
+		],
+		"description": "创建wx.downloadFile API 网络-下载"
+	},
+	"创建wx.webSocket API(全局唯一) 网络": {
+		"prefix": "jw - wx.webSocket",
+		"body": [
+			"wx.connectSocket({",
+			"	url: '$1', // 开发者服务器接口地址，必须是 HTTPS 协议，且域名必须是后台配置的合法域名",
+			"	data: {$2}, // 请求的数据",
+      		"	header: { 'Content-Type': 'application/json' }, // HTTP Header , header 中不能设置 Referer",
+      		"	method:'GET', // 默认是GET，有效值为： OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT",
+			"	success (res) { // 接口调用成功的回调函数",
+        	"		console.log(res)",
+      		"	},",
+      		"	fail (e) { // 接口调用失败的回调函数",
+        	"		console.error(e)",
+      		"	}",
+    		"})",
+			"wx.onSocketOpen(function(res) {",
+			"	console.log('WebSocket连接已打开！')",
+			"	wx.sendSocketMessage({ // 需要发送的内容",
+			"		data:'$3',",
+			"		success (res) { // 接口调用成功的回调函数",
+        	"			console.log(res)",
+      		"		},",
+      		"		fail (e) { // 接口调用失败的回调函数",
+        	"			console.error(e)",
+      		"		}",
+			"	})",
+			"	wx.closeSocket() // //必须在 WebSocket 打开期间调用 wx.closeSocket 才能关闭。",
+			"})",
+			"wx.onSocketError(function(res) {",
+			"	console.log('WebSocket连接打开失败，请检查！')",
+			"})",
+			"wx.onSocketMessage(function(res) {",
+			"	console.log('收到服务器内容：' + res.data) // 服务器返回的消息",
+			"})",
+			"wx.onSocketClose(function(res) {",
+			"	console.log('WebSocket 已关闭！')",
+			"})"
+		],
+		"description": "创建wx.webSocket API(全局唯一) 网络"
+	},
+	"创建wx.chooseImage API 媒体-图片": {
+		"prefix": "jw - wx.chooseImage",
+		"body": [
+			"wx.chooseImage({",
+			"	count: 1, // 默认9",
+			"	sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有",
+			"	sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有",
+			"	success: function (res) { // 接口调用成功的回调函数",
+			"		// 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片",
+			"		// 注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用wx.saveFile，在小程序下次启动时才能访问得到。",
+			"		console.log(res.tempFilePath)",
+			"	}",
+			"})"
+		],
+		"description": "创建wx.chooseImage API 媒体-图片"
+	},
+	"创建wx.previewImage API 媒体-图片": {
+		"prefix": "jw - wx.previewImage",
+		"body": [
+			"wx.previewImage({",
+			"	current: '', // 当前显示图片的链接，不填则默认为 urls 的第一张",
+			"	urls: [] // 需要预览的图片链接列表",
+			"	success (res) {	// 接口调用成功的回调函数",
+        	"		console.log(res)",
+      		"	},",
+      		"	fail (e) { // 接口调用失败的回调函数",
+        	"		console.error(e)",
+      		"	}",
+			"})"
+		],
+		"description": "创建wx.previewImage API 媒体-图片"
+	},
+	"创建wx.start&stop Record API 媒体-录音": {
+		"prefix": "jw - wx.record",
+		"body": [
+			"wx.startRecord({",
+			"	success (res) {	// 接口调用成功的回调函数",
+        	"		// 注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用wx.saveFile，在小程序下次启动时才能访问得到。",
+        	"		console.log(res.tempFilePath)",
+      		"	},",
+      		"	fail (e) { // 接口调用失败的回调函数",
+        	"		console.error(e)",
+      		"	}",
+			"})",
+			"setTimeout(function() {",
+  			"	//结束录音"  ,
+  			"	wx.stopRecord()",
+			"}, 10000)"
+		],
+		"description": "创建wx.start&stop Record API 媒体-录音"
+	},
+	"创建wx.play&pause&stop Vioce API 媒体-音频播放控制": {
+		"prefix": "jw - wx.voice",
+		"body": [
+			"wx.playVoice({",
+        	"	filePath: '$1', // 需要播放的语音文件的文件路径",
+        	"	complete: function(){ // 接口调用结束的回调函数（调用成功、失败都会执行）",
+      		"		$2",
+			"	}",
+      		"})",
+        	"wx.pauseVoice() // 暂停正在播放的语音。再次调用wx.playVoice播放同一个文件时，会从暂停处开始播放。如果想从头开始播放，需要先调用 wx.stopVoice。",
+      		"wx.stopVoice() // 结束播放语音。"
+		],
+		"description": "创建wx.play&pause&stop Vioce API 媒体-音频播放控制"
+	},
+	"创建wx.get&play&pause&seek&stop Audio API 媒体-音乐播放控制": {
+		"prefix": "jw - wx.audio",
+		"body": [
+			"wx.getBackgroundAudioPlayerState({ // 获取音乐播放状态。",
+        	"	success: function(res) {",
+			"		var duration = res.duration // 选定音频的长度（单位：s），只有在当前有音乐播放时返回",
+        	"		var currentPosition = res.currentPosition // 选定音频的播放位置（单位：s），只有在当前有音乐播放时返回",
+			"		var status = res.status // 播放状态（2：没有音乐在播放，1：播放中，0：暂停中）",
+			"		var dataUrl = res.dataUrl // 歌曲数据链接，只有在当前有音乐播放时返回",
+			"		var downloadPercent = res.downloadPercent // 音频的下载进度（整数，80 代表 80%），只有在当前有音乐播放时返回",
+			"	}",
+			"})",
+			"wx.playBackgroundAudio({ // 播放音乐，同时只能有一首音乐正在播放。",
+			"	dataUrl: '$1', // 音乐链接",
+			"	title: '$2', // 音乐标题",
+			"	coverImgUrl: '$3' // 封面URL",
+			"})",
+			"wx.pauseBackgroundAudio() // 暂停播放音乐。",
+			"wx.seekBackgroundAudio({ // 控制音乐播放进度。",
+			"	position: 30 // 音乐位置，单位：秒",
+			"})",
+			"wx.stopBackgroundAudio() // 停止播放音乐。"
+		],
+		"description": "创建wx.get&play&pause&seek&stop Audio API 媒体-音乐播放控制"
+	},
+	"创建wx.saveFile API 媒体-文件": {
+		"prefix": "jw - wx.saveFile",
+		"body": [
+			"wx.saveFile({",
+        	"	tempFilePath: '$1', // 需要保存的文件的临时路径",
+        	"	success: function(res) { // 返回文件的保存路径，res = {savedFilePath: '文件的保存路径'}",
+      		"		console.log(res.savedFilePath)",
+			"	}",
+      		"})"
+		],
+		"description": "创建wx.saveFile API 媒体-文件"
+	},
+	"创建wx.chooseVideo API 媒体-视频": {
+		"prefix": "jw - wx.chooseVideo",
+		"body": [
+			"wx.chooseVideo({",
+            "	sourceType: ['album','camera'], // album 从相册选视频，camera 使用相机拍摄，默认为：['album', 'camera']",
+            "	maxDuration: 60, // 拍摄视频最长拍摄时间，单位秒。最长支持60秒",
+            "	camera: ['front','back'], // 前置或者后置摄像头，默认为前后都有，即：['front', 'back']",
+            "	success: function(res) { // 接口调用成功，返回视频文件的临时文件路径",
+            "        console.log(res.tempFilePath)",
+            "	}",
+        	"})"
+		],
+		"description": "创建wx.chooseVideo API 媒体-视频"
+	},
+	"创建wx.setStorage API(异步) 数据-缓存": {
+		"prefix": "jw - wx.setStorage",
+		"body": [
+			"wx.setStorage({",
+            "	key:'$1', // 本地缓存中的指定的 key",
+            "	data:'$2' // 需要存储的内容",
+        	"})"
+		],
+		"description": "创建wx.setStorage API(异步) 数据-缓存"
+	},
+	"创建wx.setStorageSync API(同步) 数据-缓存": {
+		"prefix": "jw - wx.setStorageSync",
+		"body": [
+			"wx.setStorageSync({",
+            "	key:'$1', // 本地缓存中的指定的 key",
+            "	data:'$2' // 需要存储的内容",
+        	"})"
+		],
+		"description": "创建wx.setStorageSync API(同步) 数据-缓存"
+	},
+	"创建wx.getStorage API(异步) 数据-缓存": {
+		"prefix": "jw - wx.getStorage",
+		"body": [
+			"wx.getStorage({",
+            "	key:'$1', // 本地缓存中的指定的 key",
+            "	success: function(res) { // 接口调用的回调函数,res = {data: key对应的内容}",
+			"		console.log(res.data)",
+			"	}",
+        	"})"
+		],
+		"description": "创建wx.getStorage API(异步) 数据-缓存"
+	},
+	"创建wx.getStorageSync API(同步) 数据-缓存": {
+		"prefix": "jw - wx.getStorageSync",
+		"body": [
+			"wx.getStorageSync({",
+            "	key:'$1', // 本地缓存中的指定的 key",
+            "	success: function(res) { // 接口调用的回调函数,res = {data: key对应的内容}",
+			"		console.log(res.data)",
+			"	}",
+        	"})"
+		],
+		"description": "创建wx.getStorageSync API(同步) 数据-缓存"
+	},
+	"创建wx.clearStorage API 数据-缓存": {
+		"prefix": "jw - wx.getStorageSync",
+		"body": [
+			"wx.clearStorage() // 清理本地数据缓存。"
+		],
+		"description": "创建wx.clearStorage API 数据-缓存"
+	},
+	"创建wx.clearStorageSync API 数据-缓存": {
+		"prefix": "jw - wx.clearStorageSync",
+		"body": [
+			"wx.clearStorageSync() // 清理本地数据缓存。"
+		],
+		"description": "创建wx.clearStorageSync API 数据-缓存"
+	},
+	"创建wx.getLocation API 位置-获取": {
+		"prefix": "jw - wx.getLocation",
+		"body": [
+			"wx.getLocation({",
+			"	type: 'wgs84', // 默认为 wgs84 返回 gps 坐标，gcj02 返回可用于wx.openLocation的坐标",
+			"	success: function(res) {",
+			"		var latitude = res.latitude // 纬度，浮点数，范围为-90~90，负数表示南纬",
+			"		var longitude = res.longitude // 经度，浮点数，范围为-180~180，负数表示西经",
+			"		var speed = res.speed // 速度，浮点数，单位m/s",
+			"		var accuracy = res.accuracy // 位置的精确度",
+			"	}",
+			"})"
+		],
+		"description": "创建wx.getLocation API 位置-获取"
+	},
+	"创建wx.openLocation API 位置-查看": {
+		"prefix": "jw - wx.openLocation",
+		"body": [
+			"wx.getLocation({",
+			"	type: 'gcj02', //返回可以用于wx.openLocation的经纬度",
+			"	success: function(res) {",
+			"		var latitude = res.latitude // 纬度，浮点数，范围为-90~90，负数表示南纬",
+			"		var longitude = res.longitude // 经度，浮点数，范围为-180~180，负数表示西经",
+			"		wx.openLocation({",
+			"			latitude: latitude,",
+			"			longitude: longitude,",
+			"			scale: 28",
+			"		})",
+			"	}",
+			"})"
+		],
+		"description": "创建wx.openLocation API 位置-查看"
+	},
+	"创建wx.getNetworkType API 设置-网络状态": {
+		"prefix": "jw - wx.getNetworkType",
+		"body": [
+			"wx.getNetworkType({",
+			"	success: function(res) {",
+			"		var networkType = res.networkType // 返回网络类型2g，3g，4g，wifi",
+			"	}",
+			"})"
+		],
+		"description": "创建wx.getNetworkType API 设置-网络状态"
+	},
+	"创建wx.getSystemInfo API 设置-系统信息": {
+		"prefix": "jw - wx.getSystemInfo",
+		"body": [
+			"wx.getSystemInfo({",
+			"	success: function(res) {",
+			"		console.log(res.model) // 手机型号",
+			"		console.log(res.pixelRatio) // 设备像素比",
+			"		console.log(res.windowWidth) // 窗口宽度",
+			"		console.log(res.windowHeight) // 窗口高度",
+			"		console.log(res.language) // 微信设置的语言",
+			"		console.log(res.version) // 微信版本号",
+			"	}",
+			"})"
+		],
+		"description": "创建wx.getSystemInfo API 设置-系统信息"
+	},
+	"创建wx.onAccelerometerChange API 设置-重力感应": {
+		"prefix": "jw - wx.onAccelerometerChange",
+		"body": [
+			"wx.onAccelerometerChange(function(res) {",
+			"		console.log(res.x) // X 轴",
+			"		console.log(res.y) // Y 轴",
+			"		console.log(res.z) // Z 轴",
+			"})"
+		],
+		"description": "创建wx.onAccelerometerChange API 设置-重力感应"
+	},
+	"创建wx.onCompassChange API 设置-罗盘": {
+		"prefix": "jw - wx.onCompassChange",
+		"body": [
+			"wx.onCompassChange(function(res) {",
+			"		console.log(res.direction)",
+			"})"
+		],
+		"description": "创建wx.onCompassChange API 设置-罗盘"
+	},
+	"创建wx.setNavigationBarTitle API 界面-导航条": {
+		"prefix": "jw - wx.setNavigationBarTitle",
+		"body": [
+			"wx.setNavigationBarTitle({",
+			"		title: '$1' // 页面标题",
+			"})"
+		],
+		"description": "创建wx.setNavigationBarTitle API 界面-导航条"
+	},
+	"创建wx.navigateTo API 界面-导航": {
+		"prefix": "jw - wx.navigateTo",
+		"body": [
+			"wx.navigateTo({",
+			"		url: '$1' // 需要跳转的应用内页面的路径",
+			"})"
+		],
+		"description": "创建wx.navigateTo API 界面-导航"
+	},
+	"创建wx.redirectTo API 界面-导航": {
+		"prefix": "jw - wx.redirectTo",
+		"body": [
+			"wx.redirectTo({",
+			"		url: '$1' // 需要跳转的应用内页面的路径",
+			"})"
+		],
+		"description": "创建wx.redirectTo API 界面-导航"
+	},
+	"创建wx.navigateBack API 界面-导航": {
+		"prefix": "jw - wx.navigateBack",
+		"body": [
+			"wx.navigateBack()"
+		],
+		"description": "创建wx.navigateBack API 界面-导航"
+	},
+	"创建wx.hideKeyboard API 界面-键盘": {
+		"prefix": "jw - wx.hideKeyboard",
+		"body": [
+			"wx.hideKeyboard() // 收起键盘"
+		],
+		"description": "创建wx.hideKeyboard API 界面-键盘"
+	},
+	"创建wx.stopPullDownRefresh API 界面-刷新": {
+		"prefix": "jw - wx.stopPullDownRefresh",
+		"body": [
+			"wx.stopPullDownRefresh() // 停止当前页面下拉刷新"
+		],
+		"description": "创建wx.stopPullDownRefresh API 界面-刷新"
+	},
+	"创建wx.login API 登录": {
+		"prefix": "jw - wx.login",
+		"body": [
+			"wx.login({",
+			"	success: function(res) {",
+			"		if (res.code) {",
+			"			//发起网络请求",
+			"			wx.request({",
+			"				url: 'https://test.com/onLogin',",
+			"				data: {",
+			"					code: res.code",
+			"				}",
+			"			})",
+			"		} else {",
+			"			console.log('获取用户登录态失败！' + res.errMsg)",
+			"		}",
+			"	}",
+			"})"
+		],
+		"description": "创建wx.login API 登录"
+	},
+	"创建wx.getUserInfo API 用户信息": {
+		"prefix": "jw - wx.getUserInfo",
+		"body": [
+			"wx.getUserInfo({",
+			"	success: function(res) {",
+			"		var userInfo = res.userInfo",
+			"		console.log(userInfo.nickName) // 昵称",
+			" 		console.log(userInfo.avatarUrl) // 头像url",
+			" 		console.log(userInfo.gender) // 性别 0：未知、1：男、2：女 ",
+			" 		console.log(userInfo.province) // 省份",
+			" 		console.log(userInfo.city) // 城市",
+			" 		console.log(userInfo.country) // 国家",
+			"	}",
+			"})"
+		],
+		"description": "wx.getUserInfo API 用户信息"
+	},
+	"创建wx.requestPayment API 微信支付": {
+		"prefix": "jw - wx.requestPayment",
+		"body": [
+			"wx.requestPayment({",
+			"	'timeStamp': '', // 时间戳从1970年1月1日00:00:00至今的秒数,即当前的时间",
+			"	'nonceStr': '', // 随机字符串，长度为32个字符以下。",
+			"	'package': '', // 统一下单接口返回的 prepay_id 参数值，提交格式如：prepay_id=*",
+			" 	'signType': 'MD5', // 签名算法，暂支持 MD5",
+			" 	'paySign': '',",
+			" 	'success':function(res){",
+			" 	},",
+			" 	'fail':function(res){",
+			"	}",
+			"})"
+		],
+		"description": "wx.requestPayment API 微信支付"
+	}
+}

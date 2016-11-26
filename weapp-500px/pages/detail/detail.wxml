@@ -1,0 +1,49 @@
+<!--detail.wxml-->
+<loading hidden="{{!loading}}">
+    Loading
+</loading>
+
+<modal class="modal" hidden="{{hideInfo}}" no-cancel bindconfirm="closeInfo">
+    <view hidden="{{hideCamera}}"> <text>Camera: {{photo.camera}}</text> </view>
+    <view hidden="{{hideLens}}"> <text>Lens: {{photo.lens}}</text> </view>
+    <view hidden="{{hideAperture}}"> <text>Aperture: {{photo.aperture}}</text> </view>
+    <view hidden="{{hideISO}}"> <text>ISO: {{photo.iso}}</text> </view>
+    <view hidden="{{hideRate}}"> <text>Rate: {{photo.rating}}</text> </view>
+    <view hidden="{{hideVote}}"> <text>Vote: {{photo.votes_count}}</text> </view>
+    <view hidden="{{hideView}}"> <text>View: {{photo.times_viewed}}</text> </view>
+</modal>
+
+<view class="container">
+    <view class="topic-detail">
+        <view class="topic-owner">
+            <image class="owner-avatar" src="{{photo.user.userpic_url}}" id="{{photo.user.id}}" bindtap="loadUser"></image>
+            <view class="topic-tit">{{photo.user.fullname}} ({{photo.user.username}})</view>
+        </view>
+        <image style="width: 750rpx; height: {{height}}rpx; background-color: #ffffff;" src="{{photo.images[0].url}}" mode="aspectFit" bindtap="showPhotoInfo"></image>
+        <view class="topic-desc">
+            <text>{{photo.description}}</text>
+        </view>
+        <view class="topic-tags">
+            <block wx:for="{{tags}}">
+                #{{item}}
+            </block>
+        </view>
+        <!--<block wx:for="{{pages}}">-->
+            <!--<text>{{item[0]}} ({{item[1]}})</text>-->
+        <!--</block>-->
+    </view>
+    <view class="replies">
+        <block wx:for="{{comments}}">
+            <view class="replies-item" id="{{item.id}}">
+                <view class="reply-owner">
+                    <image class="reply-avatar" src="{{item.user.userpic_url}}" id="{{item.user.id}}" bindtap="loadUser"></image>
+                    <text class="reply-name">{{item.user.fullname}}</text>
+                    <!--<text class="reply-time">{{item.created_at}}</text>-->
+                </view>
+                <view class="reply-content">
+                    {{item.body}}
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

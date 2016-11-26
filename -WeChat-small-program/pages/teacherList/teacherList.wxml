@@ -1,0 +1,9 @@
+<view class="teacher">
+	<view wx:for="{{ teacherList }}">
+		<view class="teacher_box">
+			<image src="{{ item.pic }}" class="teacher_icon"></image>
+			<text class="teacher_name">讲师：{{ item.name }}</text>
+		</view>
+		<text class="teacher_info">介绍：{{ item.info }}...</text>
+	</view>
+</view>

@@ -1,0 +1,29 @@
+{
+    "pages":[
+        "myPages/page01/page01",
+        "myPages/page02/page02"
+    ],
+    "window":{
+        "enablePulldownRefresh":true,
+        "navigationBarBackgroundColor": "#333",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "快递单号查询"
+    },
+    "tabBar":{
+       "list":[{
+            "pagePath":"myPages/page01/page01",
+            "iconPath":"images/icon2.png",
+            "selectedIconPath":"images/icon1.png",
+            "text":"搜索"
+       },{
+           "pagePath":"myPages/page02/page02",
+           "iconPath":"images/icon2.png",
+           "selectedIconPath":"images/icon1.png",
+           "text":"查看"
+       }
+       ],
+       "backgroundColor":"#fff",
+       "color":"#333",
+       "selectedColor":"#f2dd00"
+    }
+}

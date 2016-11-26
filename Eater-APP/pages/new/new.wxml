@@ -1,0 +1,22 @@
+<scroll-view class="page_list" scroll-y="true" bindscrolltolower="loadMore"
+             bindscrolltoupper="refresh"
+
+>
+    <!--对于ListView总结就是，navigator外一层布局，然后navigator里边只有一个组件-->
+    <view wx:for="{{caiItems}}">
+        <navigator url="../newDetail/newDetail?id={{item.menuId}}">
+            <view class="item">
+                <image src="{{item.thumbnail}}" mode="scaleToFill"></image>
+                <text>{{item.name}}</text>
+            </view>
+        </navigator>
+    </view>
+    <view class="tips">
+        <view wx:if="{{hasMore}}">
+            <image src="../img/loading.gif" mode="aspectFill"/>
+            <text>玩了命的加载中...</text>
+        </view>
+        <!--<view wx:else><text>没有更多内容了</text></view>-->
+    </view>
+</scroll-view>
+<loading hidden="{{loading}}">加载中...</loading>

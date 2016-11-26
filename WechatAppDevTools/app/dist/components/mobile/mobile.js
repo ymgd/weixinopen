@@ -1,0 +1,20 @@
+"use strict";
+
+function init() {
+    var e = require("../../lib/react.js"),
+        t = require("../../cssStr/cssStr.js"),
+        l = e.createClass({
+            displayName: "Mobile",
+            getInitialState: function() {
+                return {}
+            },
+            componentDidMount: function() {},
+            render: function() {
+                var l = "mobile" === this.props.show ? {} : t.displayNone;
+                return e.createElement("div", { className: "mobile", style: l }, e.createElement("div", { className: "mobile-hd" }, e.createElement("div", { className: "mobile-hd-item" }, e.createElement("div", { className: "mobile-hd-item-logo" }, e.createElement("i", { className: "mobile-hd-item-logo-apple" })), e.createElement("label", { className: "mobile-hd-item-option", htmlFor: "platformIOS" }, e.createElement("input", { type: "radio", name: "platform", id: "platformIOS" }), e.createElement("i", { className: "mobile-radio" }), " iOS 设备调试")), e.createElement("div", { className: "mobile-hd-item" }, e.createElement("div", { className: "mobile-hd-item-logo" }, e.createElement("i", { className: "mobile-hd-item-logo-android" })), e.createElement("label", { className: "mobile-hd-item-option", htmlFor: "platformAndroid" }, e.createElement("input", { type: "radio", name: "platform", id: "platformAndroid" }), e.createElement("i", { className: "mobile-radio" }), " Android 设备调试"))), e.createElement("div", { className: "mobile-bd" }, e.createElement("div", { className: "mobile-bd-step" }, e.createElement("h3", { className: "mobile-bd-title" }, "调试方式"), e.createElement("div", { className: "mobile-bd-type" }, e.createElement("label", { className: "mobile-bd-type-label", htmlFor: "typeX5" }, e.createElement("input", { type: "radio", name: "type", id: "typeX5" }), e.createElement("i", { className: "mobile-radio" }), "X5 Blink 内核调试"), e.createElement("p", { className: "mobile-bd-type-desc" }, "推荐，包括脚本断点在内的原生调试功能，", e.createElement("a", { href: "javascript:;" }, "点击验证"), "移动设备是否支持")), e.createElement("div", { className: "mobile-bd-type" }, e.createElement("label", { className: "mobile-bd-type-label", htmlFor: "typeCommon" }, e.createElement("input", { type: "radio", name: "type", id: "typeCommon" }), e.createElement("i", { className: "mobile-radio" }), "普通调试"))), e.createElement("div", { className: "mobile-bd-step" }, e.createElement("h3", { className: "mobile-bd-title" }, "调试步骤"), e.createElement("div", { className: "mobile-bd-step-img" }), e.createElement("p", null, e.createElement("a", { href: "javascript:;" }, "点击阅读 X5 Blink 调试的详细文档"))), e.createElement("div", { className: "mobile-bd-step", style: t.displayNone }, e.createElement("h3", { className: "mobile-bd-title" }, "调试步骤"), e.createElement("ul", null, e.createElement("li", null, "1. 选择调试的无线网卡", e.createElement("select", { name: "", id: "" }, e.createElement("option", { value: "1" }, "127.0.0.1"), e.createElement("option", { value: "1" }, "127.0.0.1"), e.createElement("option", { value: "1" }, "127.0.0.1"), e.createElement("option", { value: "1" }, "127.0.0.1"))), e.createElement("li", null, "2. 确保本机和移动设备在同一个局域网网段"), e.createElement("li", null, "3. 请按照如下步骤将移动设备的网络代理配置到: http://127.0.0.1 端口: 9973", e.createElement("br", null), e.createElement("span", { className: "mobile-bd-step-desc" }, "Android: 设置——WLAN——长按选中网络——修改网络——高级——代理设置——手动")), e.createElement("li", null, "4. 重启微信, 并在微信中访问网页")))), e.createElement("div", { className: "mobile-ft" }, e.createElement("a", { href: "javascript:;", className: "mobile-debug-button" }, "开始调试")), e.createElement("div", { className: "mobile-verify-x5-wrapper", style: t.displayNone }, e.createElement("div", { className: "mobile-verify-x5-mask" }), e.createElement("div", { className: "mobile-verify-x5" }, e.createElement("img", { src: "https://team.weui.io/avatar/jf.jpg", alt: "", className: "mobile-verify-x5-qrcode" }), e.createElement("p", { className: "mobile-verify-x5-tips" }, "扫码验证设备是否支持X5 Blink调试"))))
+            }
+        });
+    _exports = l
+}
+var _exports;
+init(), module.exports = _exports;

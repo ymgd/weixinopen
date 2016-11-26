@@ -1,0 +1,59 @@
+
+.match-option{
+    background-color: #fff;
+    padding: 10rpx 20rpx;
+    margin-top: 10rpx;
+    display: table;
+    width: 19rem;
+    vertical-align: middle;
+    position: relative;
+}
+.match-option-left{
+    width: 180rpx;
+    height: 130rpx;
+    display: table-cell;
+}
+.match-option-right{
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 40rpx;
+    padding-left: 24rpx;
+}
+.match-option-title{
+    font-size: 30rpx;
+    color: #999;
+}
+.match-option-name{
+    font-size: 24rpx;
+    color: #999;
+}
+.match-option-data{
+    font-size: 24rpx;
+    color: #999;
+}
+.match-option.active{
+    padding-right: 80rpx;
+}
+.match-option.active .match-option-title{
+    color: #333;
+}
+.match-option-flag{
+    background-color: #1b9efc;
+    width: 25rpx;
+    height: 130rpx;
+    color: #fff;
+    text-align: center;
+    font-size: 24rpx;
+    line-height: 1.4;
+    border-radius: 0 0 25rpx 25rpx;
+    position: absolute;
+    right: 30rpx;
+    top: -4rpx;
+    padding: 0 7rpx;
+    padding-top: 16rpx;
+ 
+    overflow: hidden;
+}
+.match-option.active .match-option-flag{
+    display: block;
+}

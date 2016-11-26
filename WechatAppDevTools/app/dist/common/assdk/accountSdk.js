@@ -1,0 +1,1 @@
+"use strict";function init(){function e(e,t){i.sendASSDK("login",e,t)}function t(e,t){i.sendASSDK("getUserInfo",e,t)}var i=require("../../actions/webviewActions.js");require("../../stores/webviewStores");_exports={login:e,getUserInfo:t}}var _exports;init(),module.exports=_exports;

@@ -1,0 +1,71 @@
+.me-top{
+    width: 375px;
+    height: 160px;
+    text-align: center;
+    background: -webkit-linear-gradient(#1ebafd,#5f44fc);
+    background: -moz-linear-gradient(#1ebafd,#5f44fc);
+    background: linear-gradient(#1ebafd,#5f44fc);
+}
+.userinfo-avatar {
+  width: 70px;
+  height: 70px;
+  margin-top: 45px;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+    text-align: center;
+    
+}
+.me_account{
+    height: 60px;
+    border-top: 1px solid #ccc0fe;
+    background: -webkit-linear-gradient(#6947fc,#7e21fc);
+    background: -moz-linear-gradient(#6947fc,#7e21fc);
+    background: linear-gradient(#6947fc,#7e21fc);
+    color: #fff;
+    padding: 10px;
+}
+.me_account .account-detail{
+    
+}
+.account-type{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.order{
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+.order .icon{
+    width: 25px;
+    height: 25px;
+}
+.divider-personal{
+    width: 100%;
+    height: 10px;
+    background-color: #efefef;
+}
+.order-all{
+    padding: 10px;
+    height:38px; 
+}
+.order-all .icon-personal-little{
+    margin-top: 10px;
+}
+.menu{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.my-menu .icon{
+    width: 25px;
+    height: 25px;
+}
+.my-menu .icon{
+    width: 25px;
+    height: 25px;
+}
+.menu .account-type{
+    font-size: 14px;
+}

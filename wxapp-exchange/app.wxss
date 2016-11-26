@@ -1,0 +1,16 @@
+/**app.wxss**/
+page {
+  font-family: 微软雅黑 ,Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+} 
+
+
+
+
+

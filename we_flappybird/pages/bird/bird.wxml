@@ -1,0 +1,6 @@
+<view>
+    <canvas canvas-id="birdId" class="canvas" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd"></canvas>
+    <modal title="像素鸟大战分数" class="modal" hidden="{{modalHidden}}" confirm-text="继 续" no-cancel bindconfirm="startGame">  
+        <view class="content"> {{score}} </view>
+    </modal>
+</view>

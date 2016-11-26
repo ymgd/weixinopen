@@ -1,0 +1,28 @@
+<!--列表list组件 -->
+<template name="issue">
+	<scroll-view scroll-y="true" style="height:100%;width:100%;">
+	  <view class="category-list" wx:if="{{list.status == 1}}">
+	    <block wx:for="{{list.article}}" wx:for-item="itemCategory">
+	      <view class="category-item">
+	        <text class="category-title">{{itemCategory.title}}</text>
+	        <block wx:for="{{itemCategory.data}}" wx:for-item="itemArticle">
+	          	<view class="article" data-url="{{itemArticle.url}}" bindtap="bindToDetailPage">
+	            <view class="article-title">
+	              <text>{{itemArticle.title}}</text>
+	            </view>
+	            <view class="article-des">
+	              <text>{{itemArticle.description}}</text>
+	            </view>
+	            <view class="g-clearfix" >
+	              <block wx:for="{{itemArticle.tags}}" wx:for-item="itemTag">
+	                <text class="article-label">{{itemTag}}</text>
+	              </block>
+	              <text class="article-provider">{{itemArticle.provider || '奇舞'}}推荐</text>
+	            </view>
+	          </view>
+	        </block>
+	      </view>
+	    </block>
+	  </view>
+	</scroll-view>
+</template>

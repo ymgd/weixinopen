@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.filmitem{
+  padding: 10px;
+  display: flex;
+}
+.filmimage{
+  width: 128px;
+}
+.filmimage image{
+  width: 100%;
+  height: 180px;
+}
+.filminfo{
+  padding-left: 10px;
+  flex: 1;
+}
+.filminfo view{
+  margin-bottom: 10px;
+}
+
+.filmimage{
+  width: 128px;
+}
+.filmimage image{
+  width: 100%;
+  height: 180px;
+}
+
+.filmdetail .filminfo{
+    line-height: 1.2;
+}
+.filmdetail .filminfo view{
+  margin-bottom: 6px;
+}
+
+.filminfo .label{
+  margin-right: 5px;
+  color: #666;
+}
+.filminfo .rating{
+  color: #e09015;
+}
+.filmtitle{
+ font-size: 18px;
+ margin-right: 10px;
+}
+.filmyear{
+  font-size: 16px;
+  color: #999;
+}
+
+.summary{
+    padding: 0 10px;
+}
+.summary .title{
+    font-size: 16px;
+    margin: 15px 0;
+}
+.summary .content{
+    text-indent: 2em;
+}
+.collectwish view{
+    display: inline-block;
+}
+.collectwish view:first-child{
+    margin-right: 5px;
+}
+.collectwish text{
+    color: #666;
+}
+

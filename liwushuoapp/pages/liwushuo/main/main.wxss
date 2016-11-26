@@ -1,0 +1,119 @@
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  height: 40px;
+  width: 100%;
+  background: white; }
+
+header ul {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+header ul li {
+  width: 44px;
+  height: 20px; }
+
+header ul .head-l image {
+  width: 24px;
+  height: 20px;
+  margin: 0 5px 0 10px; }
+
+header ul .head-r image {
+  width: 24px;
+  height: 20px;
+  margin: 0 10px 0 5px; }
+
+header ul .head-c {
+  flex: 1;
+  height: 26px;
+  background: #fff;
+  border-radius: 13px; }
+
+header ul .head-c .btn {
+  float: left;
+  width: 20px;
+  height: 26px; }
+
+header ul .head-c .btn image {
+  width: 14px;
+  height: 14px;
+  margin: 6px; }
+
+header ul .head-c input {
+  float: left;
+  font-size: 12px;
+  line-height: 26px;
+  margin-left: 5px;
+  color: #ccc; }
+
+  .scroll-view-x {
+      width: 100%;
+      height: 34px;
+  }
+  .scroll-view-y {
+      width: 100%;
+      height: 100%;
+  }
+  .hengxiangul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      white-space: nowrap;
+  }
+    .hengxiangul li{
+      line-height: 34px;
+      padding: 0 10px;
+      color: #666;
+      font-size: 12px;
+    }
+
+  .mainul{
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+      background: #e7dede;
+    flex-direction: column;
+  }
+  .mainul li{
+    margin-top: 10px;
+    padding: 5px;
+      background: #fff;
+  }
+    .mainul li image{
+      width: 100%;
+
+    }
+  .mainul li  .title{
+    font-family: "微软雅黑";
+    white-space: nowrap;
+    line-height: 24px;
+    font-size: 16px;
+    color: #000;
+    display: block;
+  }
+  .mainul li  .xiangqing{
+    margin-bottom: 5px;
+    padding: 10px 0;
+    line-height: 16px;
+    font-size: 12px;
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+    display: block;
+  }
+  .mainul li  .lanmu{
+      font-size: 12px;
+    text-align: left;
+  color: #000;
+  }
+  .mainul li  .guanzhu{
+    float: right;
+    text-align: right;
+  color: #ccc;
+  }

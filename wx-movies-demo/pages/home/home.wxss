@@ -1,0 +1,127 @@
+@import "template/template.wxss";
+/*seach*/
+.search-container {
+    height: 55rpx;
+    width: 85%;
+    margin: 20rpx auto;
+    box-shadow: 1px 1px 2px 1px #565656;
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10rpx 30rpx 10rpx 30rpx;
+
+}
+
+.search-container view {
+    flex-grow: 1;
+    padding: 10rpx 10rpx;
+    height: 40rpx;
+    border-radius: 8rpx;
+    color: #969696;
+    font-size: 30rpx;
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-container image{
+    height: 30rpx;
+    width: 50rpx;
+}
+
+
+/*banner*/
+.swiper-view {
+    width: 95%;
+    margin: 0px auto;
+}
+
+.swiper-view image {
+    width: 100%;
+
+}
+
+/*导航标题布局*/
+#nav-wrap {
+    width: 100%;
+    height: 55rpx;
+    margin-top: 20rpx;
+
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.title-text {
+    font-size: 25rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-container {
+    margin-top: 20rpx;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 6rpx;
+}
+
+.nav-line {
+    height: 2rpx;
+    background-color: #969696;
+    width: 100%;
+}
+
+.nav-line2 {
+    position: absolute;
+    height: 6rpx;
+    background-color: #24b0fc;
+
+}
+
+/*body内容*/
+#body-wrap {
+    height: 100%;
+    width: 100%;
+}
+/*模板内容*/
+#template-wrap{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+
+.template-container{
+    width: 50%;
+    height: 500rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/*加载更多fooger*/
+.refresh-footer {
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    color: #969696;
+    font-size: 15px;
+    margin :5px 0px;
+
+}

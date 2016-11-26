@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<view class="search">
+  <!--搜索音乐框-->
+  <view class="search-bar" >
+    <view class="search-bar-warper">
+      <icon type="search"  size="20" />
+      <input bindchange="toSearch" placeholder="歌曲/歌手/专辑/MV"></input>
+    </view>
+  </view>
+
+<!--查询结果显示-->
+<view class="result" style="display:{{display}}" bindtap="closeResult">
+    <view class="result-group" wx:if="{{searchRes.song != null}}">
+        <view class="group">
+          <image class="group-image" src="../assets/image/icon-music.png"/>
+          <text class="group-text">单曲</text>
+        </view>
+        <!--单曲-->
+        <view class="result-item" wx:for="{{searchRes.song.itemlist}}" bindtap="play" data-num="{{index}}">
+          <text class="result-title">{{item.name}}</text>
+            <text class="result-author">{{item.singer}}</text>
+        </view>
+    </view>
+    <!--专辑-->
+    <view class="result-group"  wx:if="{{searchRes.album!=null}}">
+            <view class="group">
+                <image class="group-image"  src="../assets/image/icon-album.png"></image>
+                <text class="group-text" >专辑</text>
+            </view>
+            <view class="album-item"  wx:for="{{searchRes.album.itemlist}}" >
+                <image class="album-image" src="{{item.pic}}"></image>
+                <view class="album-info">
+                    <text class="album-name">{{item.name}}</text>
+                    <text class="album-author">{{item.singer}}</text>
+                </view>
+            </view>
+        </view>
+      <!--歌手-->
+      <view class="result-group"  wx:if="{{searchRes.singer!=null}}">
+          <view class="group">
+              <image class="group-image"  src="../assets/image/icon-singer.png"></image>
+              <text class="group-text" >歌手</text>
+          </view>
+          <view class="singer-item" wx:for="{{searchRes.singer.itemlist}}">
+              <image class="singer-image" src="{{item.pic}}"></image>
+              <view class="singer-text">
+                  <text>{{item.name}}</text>
+              </view>
+          </view>
+      </view>
+      <!--MV-->
+      <view class="result-group last"  wx:if="{{searchRes.mv!=null}}">
+          <view class="group">
+              <image class="group-image"  src="../assets/image/icon-mv.png"></image>
+              <text class="group-text" >MV</text>
+          </view>
+          <view class="mv-item"  wx:for="{{searchRes.mv.itemlist}}">
+          </view>
+      </view>
+</view>
+
+<!--音乐列表显示-->
+  <view class="music-root">
+    <!--单个Item父布局-->
+    <view class="music-item-root" wx:for="{{songsList}}" bindtap="playMusic" data-num="{{index}}">
+        <image src="{{item.coverImgUrl}}" />
+        <text class="music-item-name">{{item.name}}</text>
+        <text class="music-item-author">{{item.singer}}</text>
+    </view>
+  </view>
+
+
+  <!--音乐播放-->
+  <audio
+    action="{{action}}"
+    src="{{playBar.dataUrl}}"
+    poster="{{playBar.coverImgUrl}}"
+    controls="true"
+    class="audio"
+    name="{{playBar.name}}"
+    author="{{playBar.singer}}" />
+    
+</view>

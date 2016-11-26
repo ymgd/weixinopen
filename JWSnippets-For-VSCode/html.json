@@ -1,0 +1,291 @@
+{
+	"创建view组件": {
+		"prefix": "jw - view",
+		"body": [
+			"<view bindtap=\"$1\">",
+			"	$2",
+			"</view>"
+		],
+		"description": "创建view组件"
+	},
+	"创建scroll-view组件": {
+		"prefix": "jw - scroll view",
+		"body": [
+			"<scroll-view scroll-x=\"false\" scroll-y=\"false\" upper-threshold=\"50\" lower-threshold=\"50\" scroll-top=\"{{$1}}\" scroll-left=\"{{$2}}\" scroll-into-view=\"{{$3}}\" bindscrolltoupper=\"$4\" bindscrolltolower=\"$5\" bindscroll=\"$6\">",
+			"	$7",
+			"</scroll-view>"
+		],
+		"description": "创建scroll-view组件"
+	},
+	"创建swiper组件": {
+		"prefix": "jw - swiper",
+		"body": [
+			"<swpier indicator-dots=\"true\" autoplay=\"true\" interval=\"3000\" duration=\"1200\" bindchange=\"$1\">",
+			"	<block wx:for=\"{{$2}}\">",
+			"		<swpier-item>",
+			"			<image src=\"{{item}}\" mode=\"scaleToFill\"/>",
+			"		</swpier-item>",
+			"	</block>",
+			"</swpier>"
+		],
+		"description": "创建swiper组件"
+	},
+	"创建icon组件": {
+		"prefix": "jw - icon",
+		"body": [
+			"<icon type=\"$1\" size=\"$2\" color=\"{{$3}}\"/>"
+		],
+		"description": "创建icon组件"
+	},
+	"创建test组件": {
+		"prefix": "jw - test",
+		"body": [
+			"<text>$1</text>"
+		],
+		"description": "创建test组件"
+	},
+	"创建progress组件": {
+		"prefix": "jw - progress",
+		"body": [
+			"<progress percent=\"$1\" show-info stroke-width=\"6\" color=\"#09BB07\" active/>"
+		],
+		"description": "progress"
+	},
+	"创建button组件": {
+		"prefix": "jw - button",
+		"body": [
+			"<button type=\"default\" size=\"default\" plain=\"false\" disabled=\"false\" loading=\"false\" bindtap=\"$1\" formType=\"submit\" hover-class=\"button-hover\">button</button>"
+		],
+		"description": "创建button组件"
+	},
+	"创建check-group组件": {
+		"prefix": "jw - check group",
+		"body": [
+			"<checkbox-group bindchange=\"$1\">",
+			"	<label class=\"checkbox\" wx:for=\"{{$2}}\">",
+			"		<checkbox value=\"{{item.name}}\" checked=\"{{item.checked}}\"/>{{item.value}}",
+			"	</label>",
+			"</checkbox-group>"
+		],
+		"description": "创建check-group组件"
+	},
+	"创建check组件": {
+		"prefix": "jw - check",
+		"body": [
+			"<checkbox value=\"$1\" checked=\"checked\"/>$2"
+		],
+		"description": "创建check组件"
+	},
+	"创建form组件": {
+		"prefix": "jw - form",
+		"body": [
+			"<form bindsubmit=\"$1\" bindreset=\"$2\">",
+			"	$3",
+			"</form>"
+		],
+		"description": "创建form组件"
+	},
+	"创建input组件": {
+		"prefix": "jw - input",
+		"body": [
+			"<input value=\"$1\" type=\"text\" placeholder=\"$2\" placeholder-style=\"\" placeholder-class=\"\" maxlength=\"140\" auto-focus focus=\"false\" bindchange=\"\" bindinput=\"\" bindfocus=\"\" bindblur=\"\" />"
+		],
+		"description": "创建input组件"
+	},
+	"创建label组件": {
+		"prefix": "jw - label",
+		"body": [
+			"<label>",
+			"	$1",
+			"</label>"
+		],
+		"description": "创建label组件"
+	},
+	"创建picker-selector组件": {
+		"prefix": "jw - picker selector",
+		"body": [
+			"<picker mode=\"selector\" range=\"{{$1}}\" value=\"{{$2}}\" bindchange=\"$3\">",
+			"	<view>选择：</view>",
+			"</picker>"
+		],
+		"description": "创建picker-selector组件"
+	},
+	"创建picker-time组件": {
+		"prefix": "jw - picker time",
+		"body": [
+			"<picker mode=\"time\" value=\"{{$1}}\" start=\"{{$2}}\" end=\"{{$3}}\" bindchange=\"$3\">",
+			"	<view>选择时间：</view>",
+			"</picker>"
+		],
+		"description": "创建picker-time组件"
+	}
+	,
+	"创建picker-date组件": {
+		"prefix": "jw - picker date",
+		"body": [
+			"<picker mode=\"date\" value=\"{{$1}}\" start=\"{{$2}}\" end=\"{{$3}}\" bindchange=\"$3\">",
+			"	<view>选择日期：</view>",
+			"</picker>"
+		],
+		"description": "创建picker-date组件"
+	},
+	"创建radio-group组件": {
+		"prefix": "jw - radio group",
+		"body": [
+			"<radio-group bindchange=\"$1\">",
+			"	<label class=\"radio\" wx:for=\"{{$2}}\">",
+			"		<radio value=\"{{item.name}}\" checked=\"{{item.checked}}\"/>{{item.value}}",
+			"	</label>",
+			"</radio-group>"
+		],
+		"description": "创建radio-group组件"
+	},
+	"创建radio组件": {
+		"prefix": "jw - radio",
+		"body": [
+			"<radio value=\"$1\" checked=\"checked\"/>$2"
+		],
+		"description": "创建radio组件"
+	},
+	"创建slider组件": {
+		"prefix": "jw - slider",
+		"body": [
+			"<slider min=\"0\" max=\"100\" step=\"1\" value=\"0\" how-values bindchange=\"$1\"/>"
+		],
+		"description": "创建slider组件"
+	},
+	"创建switch组件": {
+		"prefix": "jw - switch",
+		"body": [
+			"<switch checked bindchange=\"$1\"/>"
+		],
+		"description": "创建switch组件"
+	},
+	"创建action-sheet组件": {
+		"prefix": "jw - action sheet",
+		"body": [
+			"<action-sheet hidden=\"{{$1}}\" bindchange=\"$2\">",
+			"	<block wx:for=\"{{$3}}\">",
+			"		<action-sheet-item bindtap=\"$4\" data-name=\"{{item}}\">{{item}}</action-sheet-item>",
+			"	</block>",
+			" <action-sheet-cancel class=\"cancel\">取消</action-sheet-cancel>",
+			"</action-sheet>"
+		],
+		"description": "创建action-sheet组件"
+	},
+	"创建modal组件": {
+		"prefix": "jw - modal",
+		"body": [
+			"<modal hidden=\"{{$1}}\" title=\"$2\" confirm-text=\"确定\" cancel-text=\"取消\" bindconfirm=\"$3\" bindcancel=\"$4\">",
+			"	$5",
+			"</modal>"
+		],
+		"description": "创建modal组件"
+	},
+	"创建toast组件": {
+		"prefix": "jw - toast",
+		"body": [
+			"<toast hidden=\"{{$1}}\" duration=\"1500\" bindchange=\"$2\">",
+			"	$3",
+			"</toast>"
+		],
+		"description": "创建toast组件"
+	},
+	"创建loading组件": {
+		"prefix": "jw - loading",
+		"body": [
+			"<loading hidden=\"{{$1}}\" bindchange=\"$2\">",
+			"	加载中...",
+			"</loading>"
+		],
+		"description": "创建loading组件"
+	},
+	"创建navigator组件": {
+		"prefix": "jw - navigator",
+		"body": [
+			"<navigator url=\"{{$1}}\" redirect=\"{{$2}}\" hover-class=\"\">跳转/打开页面</navigator>"
+		],
+		"description": "创建navigator组件"
+	},
+	"创建audio组件": {
+		"prefix": "jw - audio",
+		"body": [
+			"<audio action=\"{{$1}}\" src=\"{{$2}}\" loop controls poster=\"{{$3}}\" name=\"{{$4}}\" author=\"{{$5}}\"></audio>"
+		],
+		"description": "创建audio组件"
+	},
+	"创建image组件": {
+		"prefix": "jw - image",
+		"body": [
+			"<image src=\"{{$1}}\" mode=\"{{$2}}\"></image>"
+		],
+		"description": "创建image组件"
+	},
+	"创建video组件": {
+		"prefix": "jw - video",
+		"body": [
+			"<video src=\"$2\"></video>"
+		],
+		"description": "创建video组件"
+	},
+	"创建map组件": {
+		"prefix": "jw - map",
+		"body": [
+			"<map longitude=\"{{$1}}\" latitude=\"{{$2}}\" scale=\"18\" markers=\"{{$3}}\" covers=\"{{$4}}\"></map>"
+		],
+		"description": "创建map组件"
+	},
+	"创建canvas组件": {
+		"prefix": "jw - canvas",
+		"body": [
+			"<canvas canvas-id=\"$1\"></canvas>"
+		],
+		"description": "创建canvas组件"
+	},
+	"创建block组件": {
+		"prefix": "jw - block",
+		"body": [
+			"<block wx:for=\"{{$1}}\" wx:for-index=\"index\">",
+			"	$2",
+			"</block>"
+		],
+		"description": "创建block组件"
+	},
+
+	/*
+	 *
+	 *	以下为非组件标记的代码段
+	 *
+	 */
+
+	"创建template模板": {
+		"prefix": "jw - template",
+		"body": [
+			"<template name=\"$1_tmlp\">",
+			"	$2",
+			"</template>"
+		],
+		"description": "创建template模板"
+	},
+	"创建template组件": {
+		"prefix": "jw - template is",
+		"body": [
+			"<template is=\"$1\" data=\"{{$2}}\"/>"
+		],
+		"description": "创建template组件"
+	},
+	"import wxml文件": {
+		"prefix": "jw - import wxml",
+		"body": [
+			"<import src=\"$1\"/>"
+		],
+		"description": "import wxml - 不可嵌套调用"
+	},
+	"include wxml文件": {
+		"prefix": "jw - include wxml",
+		"body": [
+			"<include src=\"$1\"/>"
+		],
+		"description": "include wxml - 可嵌套调用"
+	}
+}

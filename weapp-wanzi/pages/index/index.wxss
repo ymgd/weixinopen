@@ -1,0 +1,22 @@
+@import "../../wxss/base.wxss";
+
+.scroll-wrapper {
+    height: 100%;
+    box-sizing: border-box;
+}
+.scroll-wrapper .scroll-view-item {
+    box-sizing: border-box;
+    height: 560rpx;
+    position: relative;
+    display: block;
+}
+.scroll-wrapper .scroll-view-item image {
+    height: 560rpx;
+    width: 100%;
+}
+.scroll-wrapper .data-item {
+    height: 470rpx;
+}
+.scroll-wrapper .data-item image {
+    height: 470rpx;
+}

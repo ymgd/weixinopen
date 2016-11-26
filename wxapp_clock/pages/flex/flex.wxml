@@ -1,0 +1,17 @@
+
+<view >
+    <view class="flex-row" style="display: flex;flex-direction: row">
+        <view class="flex-view-item">1</view>
+        <view class="flex-view-item">2</view>
+        <view class="flex-view-item">3</view>
+
+    </view>
+
+   
+    <view class="flex-column" style="display:flex;flex-direction: column;" >
+        <view class="flex-view-item">1</view>
+        <view class="flex-view-item">2</view>
+        <view class="flex-view-item">3</view>
+        
+    </view>
+</view>

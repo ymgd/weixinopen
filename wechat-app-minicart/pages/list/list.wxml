@@ -1,0 +1,6 @@
+<import src="../common/movie-list.wxml"/>
+
+<template is="movie-list" data="{{ products, loading, hasMore, loadMore }}"/>
+<view class="page-header">
+  <text class="page-header-text">{{subtitle}}</text>
+</view>

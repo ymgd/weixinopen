@@ -1,0 +1,24 @@
+<view class="container">
+   <!--顶部按钮标题栏-->
+   <view class="titleView" style="height: {{titleHeight}}rpx;background: {{titleColor}};font-size:{{fontSize}}px;">
+       <!--循环创建四个按钮-->
+       <block wx:for-items="{{titles}}" wx:for-item="title">
+           <view class="title-item" id="{{index}}" bindtap="titleClick" style="width:{{divideWidth}}%; line-height:{{titleHeight}}rpx;color:{{title.fontColor}};">{{title.name}}</view> 
+       </block>
+   </view>
+   <!--指示横条-->
+   <view class="indicator" style=" height: {{indicatorHeight}}rpx;"> 
+       <block wx:for-items="{{titles}}" wx:for-item="title">
+           <view class="indicator-item" style="width:{{divideWidth}}%; background-color:{{title.color}};" ></view> 
+       </block>
+   <view>
+   <!--底部滚动视图-->
+   <view class="scrollView-section">
+       <!--这里输入想要加入的scrollscrollView子视图-->
+   
+   </view>
+</view>
+
+
+
+

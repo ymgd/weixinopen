@@ -1,0 +1,63 @@
+<!--主页-->
+<swiper class="swiper-style" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item bindtap="isShowToast">
+      <image src="{{item}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<toast hidden="{{isHiddenToast}}" stytle="display:flex  width:100rpx" duration="1000" bindchange="toastChange">
+    程序猿努力搬砖中...
+</toast>
+
+<view>
+<text class="font-style">欧美剧</text>
+</view>
+
+<view class="row-view" style="flex-direction:row;">
+  <view bindtap="showDetails">
+    <image class="image-style" src="/image/westworld.jpg"/>
+  </view>
+  <view bindtap="isShowToast">
+    <image class="image-style" src="/image/shield.jpg"/>
+  </view>
+</view>
+
+<view>
+<text class="font-style">港台剧</text>
+</view>
+
+<view class="row-view" style="flex-direction:row;">
+  <view bindtap="isShowToast">
+    <image class="image-style" src="/image/ywlyj.jpg"/>
+  </view>
+  <view bindtap="isShowToast">
+    <image class="image-style" src="/image/lzqr.jpg"/>
+  </view>
+</view>
+
+<view>
+<text class="font-style">大陆剧</text>
+</view>
+
+<view class="row-view" style="flex-direction:row;">
+  <view bindtap="isShowToast">
+    <image class="image-style" src="/image/zxqyz.jpg"/>
+  </view>
+  <view bindtap="isShowToast">
+    <image class="image-style" src="/image/jhzblr.jpg"/>
+  </view>
+</view>
+
+<view>
+<text class="font-style">影评</text>
+</view>
+
+<!--<view class="row-view" style="flex-direction:row;">
+  <button type="primary">想看</button>
+  <button type="warn">不想看</button>
+</view>-->
+
+<button>马上进入</button>

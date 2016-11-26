@@ -1,0 +1,31 @@
+.teacher {
+	padding: 20rpx 40rpx;
+	display: flex;
+	flex-direction:column;
+}
+.teacher_box {
+	flex:1;
+	display: flex;
+}
+.teacher_icon {
+	width: 160rpx;
+	height: 160rpx;
+	border-radius: 50%;
+	margin: 20rpx 0;
+}
+.teacher_name {
+	flex:1;
+	line-height: 160rpx;
+	margin-left: 40rpx;
+	font-weight: 600;
+}
+.teacher_box text {
+	display: block;
+}
+.teacher_info {
+	color: #666;
+	font-size: 14px;
+	text-indent: 2em;
+	display: block;
+	line-height: 60rpx;
+}

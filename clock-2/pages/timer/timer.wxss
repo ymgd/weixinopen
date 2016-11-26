@@ -1,0 +1,104 @@
+page{
+    background: #336699;
+    color: white;
+}
+
+.config{
+
+}
+
+.configTitle{
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    background: orange;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    box-shadow: 3px 3px 1px #888888; 
+}
+
+.desc{
+    margin-top: 25rpx;
+    font-size: 0.9em;
+    color: white;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+
+.actionSheet{
+    color: black;
+}
+
+.circleContainer{
+    display: inline-block;
+    width: 100%;
+}
+
+.leftTime{
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 85rpx;
+}
+
+.rightTime{
+    height: 160px;
+    margin-top: 30rpx;
+    margin-left: 420rpx;
+    margin-right: 25rpx;
+}
+
+.bigCircle{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.right{
+    clip: rect(0, auto, auto, 75px);
+}
+
+.blue{
+    background-color: blue;
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.btnGroup{
+    margin-top: 40rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftBtn{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.rightBtn{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.smallCircle{
+    margin-top:15px;
+    margin-left: 15px;
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.white{
+    background-color: white;
+}
+.leftTimeTextContainer{
+    margin-top: 50px;
+    margin-left: 45px;
+}
+.rightTimeTextContainer{
+    margin-top: 50px;
+    margin-left: 45px;
+}

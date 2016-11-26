@@ -1,0 +1,104 @@
+<view id="body">
+<!--用户信息区域开始-->
+    <view id="head">
+        <!--头像姓名区开始-->
+        <view id="head-top">
+        <image id="userphoto" src="{{userphotoImg}}"/>
+        <image id="setting" src="{{settingImg}}"/>
+        <text id="username">{{username}}</text>
+        </view>
+        <!--头像姓名区结束-->
+        <!--钱包红包代金券开始-->
+        <view id="head-bottom">
+            <view id="mypurse">
+                <view class="top">{{mypurse}}元</view>
+                <view class="bottom">
+                    <image src="{{mypurseImg}}"></image>我的钱包
+                </view>
+            </view>
+            <view id="redpacket">
+                <view class="top">{{redpacket}}元</view>
+                <view class="bottom">
+                    <image src="{{redpacketImg}}"></image>美团红包
+                </view>
+            </view>
+            <view id="coupon">
+                <view class="top">{{coupon}}元</view>
+                <view class="bottom">
+                    <image src="{{couponImg}}"></image>商家代金券  
+                </view>
+            </view>
+        </view>
+        <!--钱包红包代金券结束-->
+    </view>
+<!--用户信息区域结束-->
+<!--信息操作区域开始-->
+    <view id="center">
+        <view class="empty"></view>
+        <view class="contain1">
+            <view id="assess" class="box">
+               <image  class="img" src="{{assessImg}}"></image>
+                <text>我的评价</text>
+               <image class="arror" src="{{arror}}"></image>
+            </view>
+            <view id="friends" class="box">
+               <image  class="img" src="{{friendsImg}}"></image>
+                <text>我的好友</text>
+               <image class="arror" src="{{arror}}"></image>
+            </view>
+            <view id="conection" class="box">
+                <image  class="img" src="{{conectionImg}}"></image>
+                <text>我的收藏</text>
+               <image class="arror" src="{{arror}}"></image>
+            </view>
+            <view id="address" class="box">
+               <image  class="img" src="{{addressImg}}"></image>
+                <text>我的地址</text>
+               <image class="arror" src="{{arror}}"></image>
+             </view>
+        </view>
+       
+        <view class="empty"></view>
+       
+        <view class="contain2">
+             <view id="address" class="box">
+               <image  class="img" src="{{addressImg}}"></image>
+                <text>分享有礼</text>
+                <view id="getredpacket"> 一大波红包任你抢</view>
+               <image class="arror" src="{{arror}}"></image>
+             </view>
+             <view id="address" class="box">
+               <image  class="img" src="{{addressImg}}"></image>
+                <text>商家入驻</text>
+               <image class="arror" src="{{arror}}"></image>
+             </view>
+        </view>
+        
+        <view class="empty"></view>
+       
+        <view class="contain3">
+             <view id="address" class="box">
+               <image  class="img" src="{{addressImg}}"></image>
+                <text>帮助与反馈</text>
+               <image class="arror" src="{{arror}}"></image>
+             </view>
+             <view id="address" class="box">
+               <image  class="img" src="{{addressImg}}"></image>
+                <text>在线客服</text>
+                <text id="onlinehelp">{{onlinehelp}}</text>
+               <image class="arror" src="{{arror}}"></image>
+             </view>
+        </view>
+        
+         <view class="empty"></view>
+         
+         <view class="contain4">
+             <view id="address" class="box">
+               <image  class="img" src="{{addressImg}}"></image>
+                <text>更多</text>
+               <image class="arror" src="{{arror}}"></image>
+             </view>
+        </view>
+    </view>
+<!--信息操作区域结束-->
+</view>

@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "rgb(61,57,90)",
+    "navigationBarTitleText": "Weather",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="group" wx:for="{{jokeData}}">
+    <block class="jokeitem">{{item.content}} </block>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="appinfo">
+    <image class="appinfo-logo" modal="aspectFit" src="{{imgSrc}}"></image>
+    <text class="appinfo-name">豆瓣读书</text>
+  </view>
+  <view class="toapp">
+    <button type="primary" bindtap="handleButtonTap" >去体验吧 >></button>
+  </view>
+</view>

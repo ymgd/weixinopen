@@ -1,0 +1,8 @@
+<!-- 广告 中部  -->
+<template name="advertise-banner-mid">
+  <view class="advertise-option" >
+        <view  class="advertise-option-title">{{title}}</view>
+        <image class="advertise-option-image"  mode="scaleToFill"
+            style="background: url('{{sportPic}}') no-repeat center;background-size: cover"></image>
+    </view>
+</template>

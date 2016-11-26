@@ -1,0 +1,17 @@
+<view>
+    <view>数据绑定-{{name}}</view>
+    <view>数据绑定-{{item.name}}</view>
+    <view>数据绑定-{{item.age}}</view>
+    <view>数据绑定-{{100>10}}</view>
+     <view>数据绑定-{{item.age>=18?"成年":"未成年"}}</view>
+
+    <view wx:if="{{isCrated}}">我被创建出来</view>
+    <view hidden="{{isHidden}}">我被显示出来</view>
+
+    <view wx:for="{{list}}">每一项-{{item}}</view>
+    
+    <view wx:for="{{list}}" wx:for-item="myitem" bindtap="handleForEvent" 
+    class="{{current==index?'active':''}}" data-index="{{index}}">每一项-{{myitem}}</view>
+
+    <button type="warn" bindtap="handleTapEvent" >点击我改变数据</button>
+</view>

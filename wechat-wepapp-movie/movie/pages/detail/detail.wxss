@@ -1,0 +1,18 @@
+@import "../movie/movie.wxss";
+
+.detail{
+    padding-left: 20px;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+}
+.casts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.casts image{
+    width: 180rpx;
+    margin-right: 20rpx;
+    margin-left: 20px;
+}

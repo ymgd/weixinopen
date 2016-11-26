@@ -1,0 +1,48 @@
+<view class="container">
+    <view class="top_bar">
+        <button class="prev" bindtap="prev">上月</button>
+        <text>{{tomonth}}</text>
+        <button class="next" bindtap="next">下月</button>
+    </view>
+    <view class="calendar">
+        <view class="calendar_head">
+            <view wx:for="{{['日','一','二','三','四','五','六']}}" wx:for-item="day"  class="td">{{day}}</view>
+        </view>
+        <view class="calendar_body">
+            <view class="td {{day.love?'love':''}} {{day.monthly?'monthly':''}} {{day.ymd==ymd ? selected_action : ''}} {{day.ymd==ymd ? 'selected_day' : ''}}" wx:for="{{list}}" wx:for-key="id" wx:for-item="day" data-ymd="{{day.ymd}}" bindtap="selected_day">
+                <view wx:if="{{day.today}}" class="day now">{{day.date}}</view>
+                <view wx:else class="day">{{day.date}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="action">
+        <view class="explain">
+            <view class="item" wx:for="{{['来了','当前','爱过']}}">{{item}}</view>
+        </view>
+        <view class="switch">
+        
+            <block wx:if="{{monthly}}">
+            <view class="switch_item monthly transition selected" data-selected="1" bindtap="monthly"></view>
+            </block>
+            <block wx:else>
+            <view class="switch_item  transition monthly" data-selected="0" bindtap="monthly"><text>●</text></view>
+            </block>
+            
+            <view class="switch_item danger">{{ymd}}</view>
+            
+            <block wx:if="{{love}}">
+            <view class="switch_item love transition selected" data-selected="1" bindtap="love"></view>
+            </block>
+            <block wx:else>
+            <view class="switch_item transition" data-selected="0" bindtap="love"><text>×</text></view>
+            </block>
+            
+        </view>
+    </view>
+    
+</view>
+
+
+<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+  <view> 来就就别爱了 </view>
+</modal>

@@ -1,0 +1,35 @@
+<!--news.wxml-->
+<view class="page">
+    <view class="page__bd">
+        
+        <block wx:if="{{errorMsg==''}}">
+              <view class="data">
+                  <view class="news-item">
+                    <text class="news-title">{{radioInfo.RadioTitle}}</text>
+                    <!--<image src="{{radioInfo.RadioPic}}" mode="aspectFill" class="list-image"/>-->
+
+                    <audio poster="{{radioInfo.RadioPic}}" name="{{radioInfo.CurrentProgram}}" author="{{radioInfo.Host}}" src="{{radioInfo.RaidoUrl}}" action="play" controls loop>
+                    </audio>
+
+
+                    <view class="news-text">
+                      <scroll-view scroll-y="true" style="height:100%;">
+                        <view class="description">
+                          <text>{{radioInfo.Description}}</text>
+                        </view>
+                      </scroll-view>
+                    </view>
+                  </view>
+              </view>
+        </block>
+        <block wx:else>
+            <view  class="tip">
+              <icon type="warn" size="45" color="{{item}}"/>
+              <view>
+                {{errorMsg}}
+              </view>
+            </view>
+            
+        </block>
+    </view>
+</view>

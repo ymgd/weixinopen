@@ -1,0 +1,20 @@
+page{
+	background: #fff;
+}
+.list{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20rpx 30rpx;
+	border-bottom: 1px solid #eee;
+	font-size: 28rpx;
+}
+
+.title{
+	color: #333;
+	margin-bottom: 20rpx;
+}
+.time{
+	color: #999;
+	font-size: 24rpx;
+}

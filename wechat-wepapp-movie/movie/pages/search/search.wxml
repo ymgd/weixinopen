@@ -1,0 +1,24 @@
+<view class="content">
+    <view class="search">
+        <input class="input" placeholder="请输入电影名" maxlength="10" bindinput="bindKeyinput" />
+        <button bindtap="search" hover-class="btnclick">查询</button>
+    </view>
+    <text class="inputShow">你要搜索：{{inputVal}}</text>
+    <view class="hr"></view>
+    <import src="../template/movietpl"/>
+    <template is="movies" data="{{movies}}"/>
+</view>
+
+<view>
+    <loading hidden="{{hidden}}">
+        加载中．．．
+    </loading>
+</view>
+
+<modal no-cancel title="小提示" confirm-text="知道啦" hidden="{{modalHidden}}"  bindconfirm="hideModal">
+    请输入需要查询的关键词
+</modal>
+
+<modal no-cancel title="小提示" confirm-text="知道啦" hidden="{{mlHidden}}"  bindconfirm="hModal">
+    查询不到电影
+</modal>

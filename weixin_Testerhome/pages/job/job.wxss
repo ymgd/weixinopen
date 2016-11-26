@@ -1,0 +1,5 @@
+@import "../home/home.wxss";
+
+.posts-list {
+  margin-top: 5px;
+}

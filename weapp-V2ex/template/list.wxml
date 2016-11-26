@@ -1,0 +1,23 @@
+<template name="postList">
+  <view class="item" catchtap="Detail" id="{{item.id}}">
+        <view class="info">
+            <image class="avatar" src="{{item.member.avatar_mini}}"></image>
+            <text class="username">{{item.member.username}}</text>
+            <text class="reply">{{item.replies}}</text>
+        </view>
+
+        <view class="titleBox">
+            <text class="title">{{item.title}}</text>
+        </view>
+
+        <view class="node">
+            <text class="node">{{item.node.title}}</text>
+        </view>
+    </view>
+</template>
+
+<template name="nodeList">
+   
+        <text class="nodeItem" id="{{item.id}}" catchtap="NodeDetail">{{item.title}}</text>
+  
+</template>

@@ -1,0 +1,31 @@
+/**app.wxss**/
+.movies .pic,
+.movies .pic image{
+  width:100px;
+  height:150px;
+}
+.movies .movies-info{
+  color:#fff;
+  font-size:14px;
+  padding-top:20px;
+  line-height: 1.5em;
+  padding-left:20px;
+}
+page{
+  background:#3a3a3a;
+}
+.movies{
+  margin:10px 0;
+  display:flex;
+  flex-direction:row;
+}
+.hr{
+  margin:10px 0;
+  border-top:1px solid #ddd;
+}
+.swiper,
+.swiper .swiper-item,
+.swiper image{
+  height:200px;
+  width:100%;
+}

@@ -1,0 +1,13 @@
+<import src="../common/news_list.wxml" />
+<!--滚动菜单-->
+<scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+    <block wx:for="{{menu}}" >
+        <view class="scroll-view-item_H {{item.active ? 'active' : ''}}" bindtap="bindMenu" data-name="{{item.value}}">{{item.name}}</view>
+    </block>
+</scroll-view>
+<!--新闻列表-->
+<view class="contain" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" >
+    <template is="news_list" data="{{news:news,flag:flag}}" />
+</view>
+<!--loading-->
+<loading hidden="{{hidden}}" bindchange="loadingChange">加载中...</loading>

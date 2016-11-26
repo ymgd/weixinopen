@@ -1,0 +1,50 @@
+<!--detail.wxml-->
+<!--<view class="detail-main">-->
+  <view class="detail-post">
+    <view class="detail-post-header">
+      <view class="detail-post-ava">
+        <view class="detail-post-title">{{ detail.title }}</view>
+        <!--<view class="detail-post-avatar">-->
+        <image class="detail-post-avatar-img"  src="https://testerhome.com/{{detail.user.avatar_url}}"></image>
+        <!--</view>-->
+      </view>
+      <view class="detail-post-node">
+        <view class="detail-node-name">{{ detail.node_name }}.</view>
+        <view class="detail-post-author-name">{{ detail.user.login }}</view>
+      </view>
+      <view class="detail-post-node">
+        <view class="detail-node-name">{{ detail.created_at }}.</view>
+        <view class="detail-post-author-name">{{ detail.hits }}次阅读</view>
+      </view>
+    </view>
+
+    <view class="top-bar">
+      <view class="top-bar-item" style="color:{{topic_color}}" id="topic" catchtap="onTapTag">帖子</view>
+      <view class="top-bar-item" style="color:{{reply_color}}" id="reply" catchtap="onTapTag">评论</view>
+    </view>
+    <view class="flag-line" style="margin-left:{{flag_position}}"></view>
+    <view class="detail-post-content" wx:if= "{{content_hidden == false}}" >
+      <text class="content-info">{{ detail.body }}</text>
+    </view>
+
+    <scroll-view  wx:if= "{{reply_hidden == false}}" class="posts-list" style="height:100%" scroll-y="true" bindscrolltolower="lower" scroll-top="0">
+     <block wx:for-items="{{replies}}" wx:for-item="item">
+       <view wx:if="{{item.deleted === false}}" id="{{item.id}}" class="posts-item" bindtap="didSelectCell" >
+        <image class="cellimage"   mode="scaleToFill" src="{{item.user.avatar_url}}"/>
+        <view class="celllabel">
+          <text class="celltext" >{{item.body_html}}</text>
+          <view class="cellrow">
+            <text class="celldetail">{{item.user.login}}  </text>
+            <text class="celltip">{{item.created_at}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="deletefloor" wx:if="{{item.deleted === true}}">本楼层已删除</view>
+      </block>
+    </scroll-view>
+  <!--</view>-->
+
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

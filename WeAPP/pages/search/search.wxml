@@ -1,0 +1,22 @@
+<!--search.wxml-->
+<view class="container">
+    <!--搜索框-->
+    <input type="text" class="search-input" placeholder="搜索你喜爱的图书吧" 
+        placeholder-class="input-placeholder" auto-focus value="{{inputValue}}" 
+        bindinput="handleInput" bindblur="searchBook" />    
+    <!--推荐标签-->
+    <view class="recommend-container">
+        <text class="recommend-title">推荐标签</text>
+        <view class="recommend-tag">
+            <view class="tag-item" data-tag="java" bindtap="selectTag">
+                <text>java</text>
+            </view>
+            <view class="tag-item" data-tag="python" bindtap="selectTag">
+                <text>python</text>
+            </view>
+            <view class="tag-item" data-tag="javascript" bindtap="selectTag">
+                <text>javascript</text>
+            </view>
+        </view>
+    </view> 
+</view>

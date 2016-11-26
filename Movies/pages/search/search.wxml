@@ -1,0 +1,18 @@
+<!--search.wxml-->
+<view class="search">
+    <input type="text" class="searchInput" bindinput="inputChange" placeholder="搜索影片" placeholder-style="color:#fff;font-size:15px;"/>
+    <button type="button" class="searchBtn" bindtap="searchMovies">搜索</button>
+    <view class="history" wx:if="{{history}}">
+        <block wx:for="{{history}}">
+            <text catchtap="historySearch" data-name="{{item}}">{{item}}</text>
+        </block>
+    </view>
+</view>
+<modal hidden="{{modalHide}}" title="提示" no-cancel confirm-text="确定" bindconfirm="modalChange">
+    查询信息不能为空
+</modal>
+<view>
+    <import src="../template/template.wxml"/>
+    <template is="moviesList" data="{{movies}}"></template>
+</view>
+<loading hidden="{{loading}}">加载中</loading>

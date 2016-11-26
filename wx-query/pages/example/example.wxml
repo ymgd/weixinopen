@@ -1,0 +1,21 @@
+<import src="common/header.wxml"/>
+
+<view class="container">
+    <template is="header" data="{{title : '样例'}}"/>
+
+    <view class="page-body">
+        <view class="page-body-wrapper">
+            <view class="block-body">
+                <view id="block" class="block {{block.class}}" style="{{block.style}}" bindtap="eventManage"></view>
+            </view>
+
+            <view class="buttons" scroll-y="true">
+                <block wx:for-items="{{methods}}">
+                    <button id="{{item.id}}" class="button" bindtap="eventManage">{{item.name}}</button>
+                </block>
+            </view>
+        </view>
+    </view>
+
+    <modal id="modal" hidden="{{modal.hidden}}" no-cancel="true" bindconfirm="eventManage">{{modal.text}}</modal>
+</view>

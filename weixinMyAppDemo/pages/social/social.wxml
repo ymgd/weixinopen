@@ -1,0 +1,7 @@
+<import src="../template/social/social-list-item.wxml"/>
+<view   class="container">
+    <!--动态-->
+    <block wx:for="{{dynamics}}">
+        <template is="social-list-item" data="{{...item}}"/>
+    </block>
+</view>

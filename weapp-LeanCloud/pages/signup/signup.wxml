@@ -1,0 +1,24 @@
+<view class="container">
+    <text>LeanCloud SignUp Page</text>
+    <form bindsubmit="formSubmit">
+        <view class="section">
+            <view >用户名</view>
+            <input name="username" placeholder="点击输入帐号" auto-focus	/>
+        </view>
+        <view class="section">
+            <view >密码</view>
+            <input password  name="password" placeholder="点击输入密码"/>
+        </view>
+        <view class="btn-area">
+            <button type="primary" formType="submit">注册</button>
+        </view>
+    </form>
+</view>
+
+<toast hidden="{{toastHidden}}">
+    登陆成功
+</toast>
+
+<modal hidden="{{modalHidden}}" no-cancel title="注册失败！" bindconfirm="resetModal">
+  <view> {{errinfo}} </view>
+</modal>

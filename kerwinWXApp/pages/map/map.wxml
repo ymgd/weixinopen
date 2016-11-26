@@ -1,0 +1,4 @@
+<view>
+  <button type="primary" bindtap="handleTapEvent">打开地图</button>
+
+</view>

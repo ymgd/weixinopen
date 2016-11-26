@@ -1,0 +1,30 @@
+.wcontainer {
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #eee;
+}
+swiper.welcom-list {
+    height: 100%;
+    width: 100%;
+}
+swiper.welcom-list image {
+    height: 100%;
+    width: 100%;
+}
+swiper.welcom-list swiper-item {
+    position: relative;
+}
+swiper.welcom-list swiper-item .in {
+    font-size: 50rpx;
+    line-height: 100rpx;
+    height: 100rpx;
+    width: 300rpx;
+    text-align: center;
+    position: absolute;
+    bottom: 100rpx;
+    left: 225rpx;
+    color:#fff;
+    background: rgb(31, 194, 255);
+    border-radius: 50rpx;
+}

@@ -1,0 +1,13 @@
+.tip{
+	padding-top: 200rpx
+}
+.page__bd {
+	text-align:center;
+}
+.description {
+	text-align:left;
+	margin-top:85rpx;
+	margin-left:85rpx;
+	font-size:3rpx;
+	padding:0rpx;
+}

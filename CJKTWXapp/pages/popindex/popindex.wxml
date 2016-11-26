@@ -1,0 +1,45 @@
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <text class="weui-loading"/><text class="loading-text">玩命加载中</text>
+  </view>
+</block>
+<block wx:else>
+  <scroll-view style="height: 100%;" scroll-y="true" class="container film-list" bindscroll="scroll">
+    <block wx:for-items="{{courses}}" wx:for-item="course">
+      <view class="course-item" bindtap="viewDetail" data-id="{{course.id}}" data-title="{{course.title}}">
+        <view class="course-image">
+          <image src="{{course.img}}"></image>
+        </view>
+        <view class="course-info">
+          <view>
+            <text class="course-title">{{course.title}}</text>
+            
+          </view>
+          <view class="course-price">
+              <text class="label">价格</text>
+              <text class="price">{{course.price}}</text>
+          </view>
+        </view> 
+      </view>
+    </block>
+    <view class="load-more-wrap">
+        <block wx:if="{{hasMore}}">
+          <block wx:if="{{loadMoreLoading}}">
+            <view class="load-content">
+              <text class="weui-loading"/><text class="loading-text">玩命加载中</text>
+            </view>
+          </block>
+          <block wx:else>
+            <view class="btn-load-more" bindtap="loadMore">
+              <text>点击加载更多</text>
+            </view>
+          </block>
+        </block>
+        <block wx:else>
+          <view class="load-content">
+            <text>没有更多内容了</text>
+          </view>
+        </block>
+      </view>
+  </scroll-view>
+</block>

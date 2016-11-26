@@ -1,0 +1,14 @@
+
+@import "../../wxss/base.wxss";
+@import "../../wxss/search-box.wxss";
+@import "../../wxss/country-list-item.wxss";
+
+.right-icon {
+    width: 96rpx;
+    height: 96rpx;
+    padding: 36rpx;
+}
+.area .desc {
+    width: 630rpx;
+    margin-left: 10px;
+}

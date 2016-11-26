@@ -1,0 +1,4 @@
+<view id="first">
+<image id="inner" src="{{picture}}"></image>
+<text id="text">{{time}}s</text>
+</view>

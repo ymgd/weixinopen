@@ -1,0 +1,62 @@
+
+<!--搜索栏-->
+<view class="search-container" bindtap="onSearchClick">
+    <image src="image/menu.png" mode="scaleToFill" catchtap="onMenuClick"/>
+    <view>大家都在搜 "{{hotSearch}}"</view>
+    <icon type="search" size="20"/>
+</view>
+
+<!--轮播图banner-->
+<swiper class="swiper-view" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for-items="{{bannerItems}}">
+        <swiper-item class="swiper-item" bindtap="onBannerClick" data-name="{{item.name}}">
+            <image src="{{item.icon}}" mode='scaleToFill' class="swiper-image"/>
+        </swiper-item>
+    </block>
+</swiper>
+
+<view id="nav-wrap">
+    <view class="title-container">
+        <textview wx:for="{{tabTitles}}" class="title-text" style="color:{{item.bColor}} width: {{lineWidth}}%"
+                  data-index="{{index}}" bindtap="onTitleClick">{{item.title}}
+        </textview>
+
+    </view>
+    <view class="line-container">
+        <view class="nav-line2" style="width: {{lineWidth}}%;left:{{lineLeft}}% "></view>
+        <view class="nav-line"></view>
+
+    </view>
+
+</view>
+
+<view id="body-wrap">
+    <swiper bindchange="onPageChange"
+            current="{{currentPage}}" style="height: 100%">
+        <swiper-item wx:for="{{tabPages}}">
+            <scroll-view style="height: 100%" scroll-y="true" bindscrolltolower="onScroolBottom">
+                <import src="template/template.wxml"></import>
+                <view id="template-wrap">
+                    <block wx:for="{{item}}" wx:for-item="mItem">
+                        <view class="template-container">
+                            <template is="mListTem" data="{{mItem}}"></template>
+                        </view>
+                    </block>
+                    <view class="refresh-footer" wx:if="{{hasNext}}" hidden="{{hideFooter}}">
+                        <image src="image/loading.gif" mode="aspectFill"
+                               style="width: 30px;height: 30px;margin-right: 10px"/>
+                        <text>加载中...</text>
+                    </view>
+                    <view class="refresh-footer" wx:else>
+                        <textview>没有更多内容了!</textview>
+                    </view>
+                </view>
+
+            </scroll-view>
+
+        </swiper-item>
+
+    </swiper>
+
+</view>

@@ -1,0 +1,24 @@
+<template name="news_list">
+    <block wx:for="{{news}}" >
+        <view class="item">
+            <view class="left">
+                <view class="title">
+                    {{item.title}}
+                </view>
+                <view class="sub_title">
+                    <view wx:if="{{flag > 0}}"> 
+                        <text>[{{item.realtype}}] {{item.date}}</text>
+                    </view>
+                    <view wx:else>
+                        <text>[{{item.category}}] {{item.date}}</text>
+                    </view>
+                    
+                </view>
+            </view>
+            <view class="right">
+                <image src="{{item.thumbnail_pic_s03}}"/>
+            </view>
+            <view style="clear:both"></view>
+        </view>
+    </block>
+</template>

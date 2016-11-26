@@ -1,0 +1,40 @@
+/*purchase.wxss*/
+.container {
+    padding-top: 10rpx;
+    padding-bottom: 58rpx;
+}
+
+.goodsect {
+    width: 600rpx;
+}
+.pic {
+    width: 100%;
+    border-radius: 15rpx;
+}
+
+.text {
+    display: block;
+}
+
+.reminder {
+    margin: 40rpx 0rpx;
+    font-size: 50rpx;
+}
+
+.good {
+    margin-top: 30rpx;
+}
+
+.info {
+    margin-top: 15rpx;
+}
+
+.paybut {
+    width: 50%;
+    margin-top: 53rpx;
+}
+
+slider {
+    width: 400rpx;
+    display: inline;
+}

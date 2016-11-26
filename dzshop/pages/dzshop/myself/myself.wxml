@@ -1,0 +1,10 @@
+<view class="myselfbox" >
+    <view class="myself"wx:for="{{leter}}">
+        <b>{{item[0]}}</b>
+        <p>{{item[1]}}</p>
+    </view>
+    <view class="myself1">
+        <h>Copyright @2013-2018</h>
+        <h>苏州德泽微网络科技有限公司</h>
+    </view>
+</view>

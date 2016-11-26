@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/news/main/main",
+    "pages/news/search/search",
+    "pages/news/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "red",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/news/main/main",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_light.png"
+      },
+      {
+        "pagePath": "pages/news/search/search",
+        "text": "发现",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search_light.png"
+      },
+      {
+        "pagePath": "pages/news/my/my",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_light.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

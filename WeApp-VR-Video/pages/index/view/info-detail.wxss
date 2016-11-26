@@ -1,0 +1,34 @@
+.navigator-hover button{
+    background-color:blue;
+}
+.other-navigator-hover button{
+    background-color:red;
+}
+
+.info-view {
+
+}
+
+.info-img {
+    width:100%;
+    height: 200px;
+}
+.info-tag{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #cccccc;
+}
+.info-detail-title {
+    margin: 20px auto;
+    display: block;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.info-detail-con {
+    display:block;
+    color:#B5B5B5;
+    margin-bottom:4%;
+}

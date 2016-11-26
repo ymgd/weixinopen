@@ -1,0 +1,22 @@
+<!--tomato.wxml-->
+<view class="container">
+    <view class="count">
+        {{ remainTimeText }}
+    </view>
+    <view class="task25min">
+        25 分钟
+    </view>
+    <view class="doingTask">
+        <text wx:if="{{logName.length}}" class="taskName item">{{logName}}</text>
+        <input  wx:else class="enterTaskName item" bindinput="bindlogNameInput" placeholder="请输入任务名称" focus />
+        <button wx:if="{{!isRunning && !isStoped}}" class="btn startBtn item" bindtap="onStartTime" data-type="work">开始工作</button>
+        <view wx:if="{{isStoped}}" class="ifCompleted item">
+            <button class="btn compltBtn" bindtap="completed">完成任务</button>
+            <button class="btn uncompltBtn" bindtap="uncompleted">未完成任务</button>
+        </view>
+    </view>
+    <view wx:if="{{timerType == 'rest' && !isRunning}}" class="break">
+        <button class="breakBtn" bindtap="onStartTime" data-type="rest">我想休息5分钟</button>
+    </view>
+    <button wx:if="{{isRunning}}" class="btn stopBtn" bindtap="onStopTimer">{{stopText}}</button>
+</view>

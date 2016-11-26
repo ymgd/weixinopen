@@ -1,0 +1,21 @@
+<!-- banner部分开始 -->
+<view>
+	<swiper indicator-dots="true" autoplay="true" interval="8000" duration="1000">
+	  <block wx:for="{{imgUrls}}">
+	    <swiper-item>
+	      <image src="{{item}}" class="slide-image"  mode="aspectFill" height="150" width="100%"/>
+	    </swiper-item>
+	  </block>
+	</swiper>
+</view>
+<!-- banner部分结束 -->
+<!-- 课程列表开始 -->
+	<view class="course">
+		<view wx:for="{{courses}}" class="course-list">
+			<navigator url="../courseDetail/courseDetail?num={{ item.num }}" hover-class="none">
+				<image src="{{item.images}}" width="120px" mode="aspectFill" class="course-images"></image>
+				<text class="course-text">{{item.title}}</text>
+			</navigator>
+		</view>
+	</view>
+<!-- 课程列表结束 -->

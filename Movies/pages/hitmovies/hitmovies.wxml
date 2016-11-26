@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<swiper class="swiper" indicator-dots="{{dots}}" autoplay="{{autoplay}}">
+    <block wx:for="{{banners}}" wx:for-item="banner">
+        <swiper-item>
+            <image src="{{banner}}"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<view>
+    <import src="../template/template.wxml"/>
+    <template is="moviesList" data="{{movies}}"></template>
+</view>
+<loading hidden="{{loading}}">加载中</loading>

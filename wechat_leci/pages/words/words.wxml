@@ -1,0 +1,13 @@
+<view class='wcontainer'>
+    <view class="wsearchbox">
+        <view class="wsearch">
+            <icon type="search" size="20" color="#fff" bindtap="searchWord" />
+            <view>
+                <input class="wipt" type="text" bindinput="wsearchIput" placeholder="输入生词，即刻查询" auto-focus="true"/>
+            </view>
+        </view>
+    </view>
+    <view class="jieguo">
+        <text>{{text}}</text>
+    </view>
+</view>

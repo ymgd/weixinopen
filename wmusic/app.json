@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/setting/setting",
+    "pages/setting/about/about",
+    "pages/setting/download/download",
+    "pages/setting/guide/guide",
+    "pages/setting/history/history"
+  ],
+  "window":{ 
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "情绪网站 - Hoo作品",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  }
+}

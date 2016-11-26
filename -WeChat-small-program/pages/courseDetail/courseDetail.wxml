@@ -1,0 +1,19 @@
+<view class="container">
+	<view wx:for="{{ lists }}" class="list">
+		<image mode="aspectFill" src="{{item.imagesUrl}}"></image>
+		<view class="list_course">
+			<text>课程名称：{{ item.title }}</text>
+			<text>课程价格：{{ item.price }}</text>
+			<text>开课时间：{{ item.data }}</text>
+			<text>班级人数：{{ item.person }}</text>
+			<text style="display:inline-block">课程讲师：{{ item.teacher }}</text>
+			<navigator url="../teacherList/teacherList?num={{item.teacherNum}}" style="display:inline-block;color:#f00">（查看老师介绍）</navigator>
+			<view class="list_content">
+				{{ item.content }}
+			</view>
+		</view>
+	</view>
+	<view>
+		<button type="primary" size="default" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="primary" hover-class="none" class="list_btn" bindtap="btnClick"> 立即报名 </button>
+	</view>
+</view>

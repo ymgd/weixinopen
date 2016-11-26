@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/Small_tools",
+    "pages/components/loss/loss",
+    "pages/components/leak/leak",
+    "pages/components/loss/lossResult",
+    "pages/components/info/info",
+    "pages/components/info/infoResult",
+    "pages/components/telephone/telephone",
+    "pages/components/telephone/result",
+    "pages/components/air_quality/air_quality",
+    "pages/components/air_quality/result"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#5F9EA0",
+    "navigationBarTitleText": "开发测试",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#ff0000", 
+    "selectedColor":"#228B22",
+    "backgroundColor":"#FFB6C1",
+    "borderStyle": "white",
+    "list": []
+  },
+  "debug": false
+}

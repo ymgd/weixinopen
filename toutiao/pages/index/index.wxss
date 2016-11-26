@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border-bottom-width: 1rpx;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    padding: 25rpx;
+    margin-top: 10rpx;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rpx;
+}
+
+.images image{
+    flex:1;
+    margin-right: 10rpx;
+    width:180rpx; 
+    height:180rpx;
+}
+
+.source{
+    color: gray;
+    font-size: 0.4em;
+    margin-top: 20rpx;
+
+}
+ 

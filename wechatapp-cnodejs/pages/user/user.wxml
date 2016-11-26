@@ -1,0 +1,17 @@
+<view class="box">
+   <view class="user-avatar">
+     <image src="{{avatar}}" class="img"></image>
+   </view>
+   <view class="user-info">
+        <text class="user-loginname">ID:{{loginname}}</text>
+        <text class="createAt">创建于:{{createAt}}</text>
+        <text class="score">分数:{{score}}</text>
+   </view>
+   <text>最近话题</text>
+   <block wx:for="{{topics}}">
+        <view class="topic-title" id="{{item.id}}" catchtap="redirectDetail" >{{item.title}}</view>
+   </block>
+   <loading hidden="{{hidden}}">
+     Loading...
+   </loading>
+</view>

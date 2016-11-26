@@ -1,0 +1,21 @@
+<!--doing.wxml-->
+<view class="container">
+  <view class="wisdom">
+    {{wisdom}}
+  </view>
+  <view class="circle">
+    <view class="left">
+      <view id="l-after" animation="{{animateLeft}}">
+      </view>
+    </view>
+    <view class="right">
+      <view id="r-after" animation="{{animateRight}}">
+      </view>
+    </view>
+    <view id="label">{{time}}</view>
+  </view>
+  <view class="td-title">
+    <view class="title">{{tdTitle}}</view>
+    <view class="doing">进行中</view>
+  </view>
+</view>

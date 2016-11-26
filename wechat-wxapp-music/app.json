@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/online/index/index",
+    "pages/online/search/index",
+    "pages/local/play",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/online/index/index",
+      "text": "在线音乐",
+      "iconPath": "images/online.png",
+      "selectedIconPath": "images/online-s.png"
+    }, {
+      "pagePath": "pages/local/play",
+      "text": "正在播放",
+      "iconPath": "images/playing.png",
+      "selectedIconPath": "images/playing-s.png"
+    }]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "在线音乐",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true
+}

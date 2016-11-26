@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/todo/todo",
+    "pages/todos/todos",
+    "pages/doing/doing",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#393F4F",
+    "navigationBarTitleText": "ToDo",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#0e932e",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/todo/todo",
+        "iconPath": "images/icon_db.png",
+        "selectedIconPath": "images/icon_db_HL.png",
+        "text": "待办"
+      },
+      {
+        "pagePath": "pages/todos/todos",
+        "iconPath": "images/icon_dbj.png",
+        "selectedIconPath": "images/icon_dbj_HL.png",
+        "text": "待办集"
+      }
+    ]
+  }
+}

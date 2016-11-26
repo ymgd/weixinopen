@@ -1,0 +1,19 @@
+<view class="section tc">
+  <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="videoErrorCallback"></video>
+</view>
+
+<view class="section tc">
+  <video src="{{src}}"></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+  </view>
+</view>
+<!-- canvas.wxml -->
+<canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas"></canvas>
+<!-- 当使用绝对定位时，文档流后边的canvas的显示层级高于前边的canvas-->
+<canvas style="width: 400px; height: 500px;" canvas-id="secondCanvas"></canvas>
+<!-- 因为canvas-id与前一个canvas重复，该canvas不会显示，并会发送一个错误事件到AppService -->
+<canvas style="width: 400px; height: 500px;" canvas-id="secondCanvas" binderror="canvasIdErrorCallback"></canvas>
+ <button bindtap="bindViewTap" type="primary" size="{{primarySize}}">
+       <text>戳我看家族哦！！</text>
+ </button>

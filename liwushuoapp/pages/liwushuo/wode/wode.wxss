@@ -1,0 +1,75 @@
+view{
+  width: 100%;
+  height: 100%;
+  background-color:white;
+}
+header{
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url("/images/bg.png") center center;
+}
+header ul{
+  display: flex;
+}
+header ul li{
+  margin-top: 5px;
+
+  text-align: center;
+  flex: 1;
+  height: 24px;
+}
+header ul li image{
+  width: 24px;
+    height: 24px;
+}
+.tou{
+  width: 60px;
+  height: 60px;
+  margin: 50px 40% 0;
+}
+.login{
+  margin-top: 5px;
+  display: block;
+  color: white;
+  text-align: center;
+}
+.erjinav{
+    background-color: white;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.erjinav li{
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.erjinav li image{
+  margin-left: 15%;
+padding: 5px;
+  width: 40px;
+  height: 40px;
+}
+.erjinav li b{
+  font-size: 12px;
+  color: rgb(219, 193, 209);
+}
+.sanjinav{
+  border-top: 5px solid #ccc;
+  background-color: white;
+  margin-top: 6px;
+  width: 100%;
+  display: flex;
+}
+.sanjinav li{
+  flex: 1;
+  width: 50%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+.sanjinav .danpin{
+    border-bottom: 2px solid red;
+}

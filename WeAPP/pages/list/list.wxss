@@ -1,0 +1,49 @@
+/*list.wxss*/
+.container{
+    align-items: flex-start;
+}
+.noresult{
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30rpx;
+    color: #666666;
+    font-size: 12px;
+}
+.item-container{
+    width: 100%;
+    padding:20rpx;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom:1rpx solid #f2f3f4;
+}
+.book-cover{  
+    flex: 0 0 70px;
+    height: 90px;
+}
+.book-image{
+    width: 100%;
+    height: 100%;
+}
+.book-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 70rpx;
+}
+.book-name{
+    font-size: 16px;
+    word-wrap:  break-word;
+}
+.book-author,.book-rate,.book-publisher,.book-pubdate{
+    font-size: 12px;
+    margin-top: 10rpx;
+}
+.bottom-info{
+    height: 50rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}

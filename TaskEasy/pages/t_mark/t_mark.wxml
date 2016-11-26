@@ -1,0 +1,57 @@
+<view class="title">
+    <view class="item">
+        <text>{{task.student}}</text>
+        <button type="warn" bindtap="restart_homework" size="mini" wx:if="{{task.status == true}}" style="float: right;">开启任务</button>
+        <button type="warn" bindtap="finish_homework" size="mini" wx:if="{{task.status == false}}" style="float: right;">关闭任务</button>
+    </view>
+    <view class="item">
+     <text>布置时间：{{task.time}}</text>
+    </view>
+    <view class="item">
+        <text>任务详情：{{task.details}}</text>
+    </view>
+
+</view>
+<view class="body">
+<view>
+<block wx:for="{{answers}}">
+  <block wx:if="{{ item.user == 'student'}}">
+    <view class="dialog">
+    <view class="pull-left">
+        <text>{{item.time}}</text>
+    </view>
+    <view class="pull-left">
+        <text>{{item.content}}</text>
+    </view>
+    </view>
+    </block>
+    <block wx:elif="{{item.user == 'teacher'}}" >
+        <view class="dialog">
+        <view class="pull-right">
+            <text>{{item.time}}</text>
+        </view>
+        <view class="pull-right">
+            <text>{{item.content}}</text>
+        </view>
+        </view>
+    </block>
+</block>
+</view>
+</view>
+<view class="send">
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="send-section">
+      <input class="input"name="input" placeholder="在此输入" auto-focus="true" />
+      <button class="btn-min" formType="submit" type="primary" size="mini">发送</button>
+  </view>
+</form>
+</view>
+<toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+    别发空白信息呀
+</toast>
+<toast hidden="{{toast2Hidden}}" bindchange="toast2Change">
+    任务完成！
+</toast>
+<toast hidden="{{toast3Hidden}}" bindchange="toast3Change">
+    任务重启！
+</toast>

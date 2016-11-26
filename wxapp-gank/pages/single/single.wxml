@@ -1,0 +1,27 @@
+<view class="body-view">
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+</view>
+<view style="background-color:#ffffff;display:{{display}}">
+	<image src="{{img.url}}" mode="aspectFill" style="width:100%" bindtap="previewImg"></image>
+</view>
+<view class="list-detail" wx:for="{{results}}" style="display:{{display}}">
+	<text class="title">{{item.category}}</text>
+	<view class="link" wx:for="{{item.detail}}" data-url-href="{{item.url}}">
+	{{index+1}}.{{item.desc}}<text class="who">({{item.who}})</text>
+	</view>
+</view>
+<view class="list-detail" style="margin-bottom:0" style="display:{{display}}">
+	<text class="title">休息视频</text>
+	<video wx:if="{{video != null}}" src="{{video}}" style="width:100%"></video>
+</view>
+<view class="previewImage" style="display:{{previewImage}}" bindtap="closePrev">
+	<image src="{{img.url}}" mode="aspectFit" style="width:100%;height:100%;" catchlongtap="saveImg"></image>
+</view>
+<action-sheet hidden="{{saveImage}}" bindchange="actionSheetChange">
+    <block>
+        <action-sheet-item class="item" bindtap="downloadFile" data-image-href="{{img.url}}">保存图片</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>

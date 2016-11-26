@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="true" interval="3000" duration="1000">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="newsList" wx:for="{{newsList}}" >
+      <view id="{{item.uniquekey}}" bindtap="bindViewTap">
+         <block>{{item.title}}</block>
+         <image src="{{item.thumbnail_pic_s}}"></image>
+      </view>
+  </view>
+</view>

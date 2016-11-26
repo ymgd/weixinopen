@@ -1,0 +1,18 @@
+<!--goods.wxml-->
+<view class="container">
+    <block wx:for="{{goods}}" wx:for-index="id" wx:for-item="good">
+        <view class="goodsect" id="{{id}}" bindtap="onGoodInfo">
+            <image class="pic" src="{{good.pic}}" />
+            <view>
+                <text class="good">{{good.good}}</text>
+                <text class="description"> {{good.description}}</text>
+            </view>
+            <text>￥ {{good.price}}</text>
+        </view>
+    </block>
+    <button size="mini" class="pagebut" bindtap="onPrevPage">上一页</button>
+    <button size="mini" class="pagebut" bindtap="onNextPage">下一页</button>
+</view>
+<modal hidden="{{modal}}" confirm-text="返回" no-cancel bindconfirm="onConfirm">
+    <text>获取商品信息失败！</text>
+</modal>

@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.section label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section text {
+    width: 100px;
+}
+.section input {
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+.userinfo {
+    height: 250rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #40e0dc;
+}
+.userinfo-avatar {
+    width: 150rpx;
+    height: 150rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+.userinfo-nickname {
+    color: #333;
+    height:50rpx;
+    width: 400rpx;
+    text-align: center;
+}
+.tourist{
+    color: #999;
+}
+.usermotto {
+    text-align: center;
+    height: 100rpx;
+    width: 100%;
+    background: #40e0dc;
+}
+.user-motto {
+    display: block;
+    margin-bottom: 50px;
+}
+.learn {
+    width: 100%;
+    height: 120rpx;
+    background: #d4d1de;
+}
+.learn ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+}
+.learn ul li {
+    flex: 1;
+    height: 100rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(36, 135, 135);
+}
+.lli1 {
+    border-right: 1px solid #d4d1de;
+}
+.learn ul li p {
+    height: 30rpx;
+    line-height: 30rpx;
+    font-size: 24rpx;
+}
+.learn ul li b {
+    height: 70rpx;
+    font-size: 24rpx;
+    line-height: 100rpx;
+}
+.learn ul li b i {
+    font-size: 60rpx;
+    line-height: 70rpx;
+    font-weight: bold;
+}
+.option {
+    width: 100%;
+    background: #d4d1de;
+}
+.option ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.option li {
+    height: 80rpx;
+    border-top: 1rpx solid #d4d1de;
+    background: #fff;
+    box-sizing: border-box;
+    padding-left: 40rpx;
+    display: flex;
+    align-items: center;
+    line-height: 80rpx;
+    font-size: 30rpx;
+}
+.option li image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+}
+.option li switch{
+    margin-left:400rpx;
+    height:40rpx;
+    width: 60rpx;
+    margin-bottom: 40rpx;
+}
+.mb {
+    margin-bottom: 10rpx;
+}
+.c {}

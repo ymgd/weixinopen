@@ -1,0 +1,17 @@
+<view class="content">
+  <view class="info">
+    <view class="temp">{{weather.wendu}}℃</view>
+    <view class="weather">{{weather.ganmao}}</view>
+    <view class="city">{{addressComponent.city}}</view>
+  </view>
+  <view class="forecast" >
+    <view class="next-day"  wx:key="{{index}}" wx:for="{{weather.forecast}}" >
+      <view class="detail">{{item.type}}</view>
+      <view class="detail">{{item.hight}}</view>
+      <view class="detail">{{item.low}}</view>
+      <view class="detail">{{item.fengxiang}}</view>
+      <view class="detail">{{item.fengli}}</view>
+    </view>
+  </view>
+  
+</view>

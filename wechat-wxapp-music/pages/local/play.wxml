@@ -1,0 +1,18 @@
+<template name="play">
+  <view class="play">
+    <view class="banner">
+      <image class="image" src="{{item.url}}" />
+    </view>
+
+    <view class="content">
+      <view class="title">{{item.title}}</view>
+      <view class="subtitle">{{item.subtitle}}</view>
+      <view class="play-btn">
+        <image src="/images/pause.png" />
+      </view>
+    </view>
+  </view>
+</template>
+<view class="container">
+  <template is="play" data="{{item}}"></template>
+</view>

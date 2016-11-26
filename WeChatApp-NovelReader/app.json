@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/list",
+    "pages/content/content",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云图小说阅读器",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar":{
+        "color": "#dddddd",
+        "selectedColor": "#4a4a4a",
+        "backgroundColor": "#fff",
+        "borderStyle":"white",
+        "list":[{
+                "pagePath":"pages/index/index",
+                "iconPath":"pages/assets/img/tab1b.png",
+                "selectedIconPath":"pages/assets/img/tab1a.png",
+                "text":"首页"
+            },{
+                "pagePath":"pages/about/about",
+                "iconPath":"pages/assets/img/tab2a.png",
+                "selectedIconPath":"pages/assets/img/tab2b.png",
+                "text":"关于"
+            }]
+    }
+
+}

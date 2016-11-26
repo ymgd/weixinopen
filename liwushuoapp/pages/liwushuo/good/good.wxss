@@ -1,0 +1,53 @@
+.good .banner{
+  overflow: hidden;
+  height: 12rem;
+}
+.good .swiper,.swiper-item{
+    display: block;
+    height: 12rem;
+    text-align: center;
+}
+.good .slide-image{
+    width: 12rem;
+    height: 12rem;
+    margin:auto;
+}
+
+.gds-info{
+  padding:10rpx 20rpx;
+}
+.gds-info .gds-title{
+  display: block;
+  font-size: 28rpx;
+}
+.gds-info .gde-period{
+  margin-top: 10rpx;
+  display: block;
+  font-size: 26rpx;
+  color: #666;
+}
+.gds-info .gds-gap,
+.gds-info .gds-item{
+  margin-top: 10rpx;
+  display: block;
+}
+.gds-info .gds-item{
+  display: flex;
+  align-items:center;
+  font-size: 26rpx;
+  color: #666;
+}
+.gds-info .gds-total{
+  flex: 1;
+}
+.gds-info .gds-remain{
+  flex: 1;
+  text-align: right;
+}
+
+.gds-list{
+  border-top: 10rpx solid #eee;
+}
+.act{
+  color: #ff6666;
+}

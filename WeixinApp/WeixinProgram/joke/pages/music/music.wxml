@@ -1,0 +1,2 @@
+<audio src="{{src}}" controls></audio>
+<video src="{{videoSrc}}" controls></video>

@@ -1,0 +1,23 @@
+
+<view class="wrapper">
+    <import src="../../tpl/searchBox.wxml"/>
+    <template is="searchBox" data="{{placeholder: '请输入感兴趣的地区、城市'}}"/>
+
+    <navigator url="../area/area?cid={{country.id}}" 
+        class="scroll-view-item" hover-class="navigator-hover">
+        <view class="country">
+            <image src="{{country.img}}" class="country-icon"></image>
+            <view class="country-desc desc">{{country.nameCn}} | {{country.nameEn}}</view>
+            <image src="../../res/img/circle.png" class="right-icon"></image>
+        </view>
+    </navigator>
+
+    <navigator url="../area/area?aid={{area.id}}&cid={{country.id}}" 
+        wx:for="{{country.children}}" wx:for-item="area" wx:key="id"
+        class="scroll-view-item" hover-class="navigator-hover">
+        <view class="country area">
+            <view class="country-desc desc">{{area.nameCn}} | {{area.nameEn}}</view>
+            <image src="../../res/img/circle.png" class="right-icon"></image>
+        </view>
+    </navigator>
+</view>

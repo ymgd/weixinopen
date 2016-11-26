@@ -1,0 +1,80 @@
+
+<view class="container">
+    <view class="user-head-bg">
+        <navigator url="{{loginToUrl}}" >
+            <view class="user-head-logo-bg">
+                <view class="user-head-logo"
+                    style="background: url('{{userInfo.headimg}}') no-repeat center;background-size: cover">
+                </view>
+            </view>
+        </navigator>
+        <view class="user-head-bg-font-group">
+            <view class="user-head-bg-font-name">{{userInfo.nick}}</view>
+            <view class="user-head-bg-font-description">
+                年龄：<block wx:if="{{userInfo.age||userInfo.age==0}}">{{userInfo.age}}</block><block wx:else>--</block>
+                所在地：<block wx:if="{{userInfo.city}}">{{userInfo.city}}</block><block wx:else>--</block>
+            </view>
+        </view>
+    </view>
+    <view class="widgets">
+        <view class="widgets__item">
+            <view class="widgets__list widgets__list_show">
+                <navigator url="component-pages/wx-view/wx-view" class="widget">
+                    <image src="../images/icon_news.png" class="widgets__item__icon"></image>
+                    <text class="widget__name">我的消息</text>
+                    <image class="widget__arrow" src="../images/arrow-right.png" background-size="cover" />
+                    <view class="widget__line"></view>
+                </navigator>
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <image src="../images/icon_dynamic.png" class="widgets__item__icon"></image>
+                    <text class="widget__name">动态相册</text>
+                    <image class="widget__arrow" src="../images/arrow-right.png" background-size="cover" />
+                    <view class="widget__line"></view>
+                </navigator>
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <image src="../images/icon_attention.png" class="widgets__item__icon"></image>
+                    <text class="widget__name">我的关注</text>
+                    <image class="widget__arrow" src="../images/arrow-right.png" background-size="cover" />
+                </navigator>
+            </view>
+        </view>
+        <view class="widgets__item">
+            <view class="widgets__list widgets__list_show">
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <image src="../images/icon_data.png" class="widgets__item__icon"></image>
+                    <text class="widget__name">个人数据</text>
+                    <image class="widget__arrow" src="../images/arrow-right.png" background-size="cover" />
+                    <view class="widget__line"></view>
+                </navigator>
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <image src="../images/icon_game.png" class="widgets__item__icon"></image>
+                    <text class="widget__name">我的赛事</text>
+                    <image class="widget__arrow" src="../images/arrow-right.png" background-size="cover" />
+                    <view class="widget__line"></view>
+                </navigator>
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <image src="../images/icon_team.png" class="widgets__item__icon"></image>
+                    <text class="widget__name">我的球队</text>
+                    <image class="widget__arrow" src="../images/arrow-right.png" background-size="cover" />
+                </navigator>
+            </view>
+        </view>
+        <view class="widgets__item">
+            <view class="widgets__list widgets__list_show">
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <image src="../images/icon_attest.png" class="widgets__item__icon"></image>
+                    <text class="widget__name">实名认证</text>
+                    <image class="widget__arrow" src="../images/arrow-right.png" background-size="cover" />
+                    <view class="widget__line"></view>
+                </navigator>
+            </view>
+            <view class="widgets__list widgets__list_show">
+                <navigator url="setting/setting" class="widget" >
+                    <image src="../images/setting.png" class="widgets__item__icon"></image>
+                    <text class="widget__name">设置</text>
+                    <image class="widget__arrow" src="../images/arrow-right.png" background-size="cover" />
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

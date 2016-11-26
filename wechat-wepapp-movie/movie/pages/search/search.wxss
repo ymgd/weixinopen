@@ -1,0 +1,34 @@
+@import "../movie/movie.wxss";
+.search{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.search button{
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-left: 10px;
+    border-left: 0px;
+    background-color: orange;
+    color: white;
+    text-shadow: black;
+}
+.input{
+    width: 60%;
+    border: solid 1px #CCC;
+    box-shadow: inset 0 0 10px #CCC;
+    color: black;
+    background-color: white;
+}
+.inputShow{
+    color: white;
+    font-size: 12px;
+    padding-left: 20px;
+    text-align: center;
+}
+.btnclick{
+    background-color: forestgreen
+}

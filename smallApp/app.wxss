@@ -1,0 +1,16 @@
+/**app.wxss**/
+@import "../../utils/common.wxss";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: rpx 0;
+  box-sizing: border-box;
+} 
+
+
+page{
+  background: #F8F8F8;
+}

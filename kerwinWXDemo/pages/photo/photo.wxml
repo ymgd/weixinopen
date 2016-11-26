@@ -1,0 +1,29 @@
+<view >
+  <swiper indicator-dots="true">
+    <swiper-item >
+        <image src="images/img1.jpg"></image>
+    </swiper-item>
+     <swiper-item>
+        <image src="images/img2.png"></image>
+    </swiper-item>
+     <swiper-item>
+        <image src="images/img3.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <button type="primary" bindtap="handleTapEvent">action sheet</button>
+
+    <action-sheet hidden="{{isActionSheetHidden}}" bindtap="handleTapEvent">
+        <action-sheet-item>sheet1</action-sheet-item>
+        <action-sheet-item>sheet2</action-sheet-item>
+        <action-sheet-item>sheet3</action-sheet-item>
+        <action-sheet-cancel >取消</action-sheet-cancel>
+    </action-sheet>
+  <button type="primary" bindtap="handleModalEvent">modal</button>
+    <modal title="标题" hidden="{{isModalHidden}}" bindconfirm="handleModalEvent"><input type="text" placeholder="这是输入内容区域"/></modal>
+  <button type="primary" bindtap="handleLoadingEvent">loading</button>
+    <loading hidden="{{isLoadingHidden}}">正在加载数据中</loading>
+  <button type="primary" bindtap="handleToastEvent" >toast</button>
+    <toast hidden="{{isToastHidden}}" duration="2000" bindchange="doChange">下载完成</toast>
+  <button type="primary" bindtap="handleNextPageEvent">跳转下一个页面</button>
+</view>

@@ -1,0 +1,34 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/general/general",
+    "pages/basic/basic",
+    "pages/button/button",
+    "pages/background-color/background-color",
+    "pages/button-icon/button-icon",
+    "pages/list/list",
+    "pages/grid/grid",
+    "pages/input/input",
+    "pages/mark/mark",
+    "pages/grid-view/grid-view",
+    "pages/test/test",        
+    
+    "pages/start/start"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor":"#eee",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "weapp-ui",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

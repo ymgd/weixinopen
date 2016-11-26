@@ -1,0 +1,27 @@
+
+<view class="container">
+	<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalConfirm">
+		<view>{{modelContent}}</view>
+	</modal>
+    <view class="login-group">
+		<view class="login-option">
+			<image class="login-image" src="../../images/icon_login_head1.png"></image>
+			<input class="login-input" type="text" value="{{mobile}}"  maxlength="32" bindinput="inputMobile"
+					name="realname" placeholder="请输入手机号码"></input>
+			<view class="clear"> </view>
+		</view>
+		<view class="login-line"></view>
+		<view class="login-option">
+			<image class="login-image" src="../../images/icon_login_lock.png"></image>
+			<input class="login-input" type="password" maxlength="32" password="true" 
+					placeholder="请输入密码"  value="{{password}}"  bindinput="inputPassword"
+					name="mobile"></input>
+			<view class="clear"> </view>
+		</view>
+	</view>
+	<view class="buttons-group login-btn-group">
+		<button type="button" class="buttons"  id="submit" bindtap="login"  >
+			登录
+		</button>
+	</view>
+</view>

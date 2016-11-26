@@ -1,0 +1,123 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.newTopView {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*  头部样式上半部分*/
+.topView {
+  flex-direction: column;
+  align-self: center;
+  margin-top: -450rpx;
+}
+/*当前度数样式*/
+.degreeView {
+  flex-direction: row;
+  position: relative;
+}
+/*当前温度度数图标*/
+.circle {
+  width: 35rpx;
+  height: 35rpx;  
+  position: absolute;
+  left: 130rpx;
+} 
+/*当前度数数组*/
+.degree {
+  color: white;
+  font-size: 130rpx
+}
+
+/*详细View样式*/
+.detailInfoView {
+  flex-direction: row;
+}
+/*当前最高和最低温度度数图标*/
+.detailInfoCircle {
+  width: 20rpx;
+  height: 20rpx;  
+  position: absolute;
+  left: 30rpx;
+} 
+
+/*当前度数数组*/
+.detailInfoDegree {
+  color: white;
+  font-size: 30rpx
+}
+
+/*斜线*/
+.detailInfoLine {
+  color: white;
+  margin-left: 15rpx;
+  font-size: 30rpx;
+}
+/*比如阴天 晴天，暴雨*/
+.detailInfoName {
+  font-size: 30rpx;
+  color: white;
+  margin-left: 20rpx;
+  align-self: center
+}
+
+/*中间view样式*/
+.centerView {
+  display: flex;
+  flex-direction: row;
+  margin-top: -550rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+/*中间view分为两个view*/
+.centerItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/*Item中图片样式*/
+.centerItemImage {
+  width: 25rpx;
+  height: 25rpx;
+}
+/*文字样式*/
+.centerItemText {
+  font-size: 28rpx;
+  color: white;
+}
+
+/*底部view样式*/
+.bottomView {
+  margin-top: -200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.bottomItemView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200rpx;
+}
+
+/*最近七天样式*/
+.bottomImage {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.bottomText {
+  font-size: 28rpx;
+  color: white;
+}

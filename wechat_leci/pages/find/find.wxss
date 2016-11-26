@@ -1,0 +1,102 @@
+.fcontainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+}
+.searchbox {
+    height: 60rpx;
+    width: 100%;
+    background: rgb(31, 194, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.searchbox .search {
+    width: 650rpx;
+    height: 50rpx;
+    background: #14387c;
+    border-radius: 40rpx;
+    display: flex;
+}
+.searchbox .search icon {
+    padding: 5rpx 10rpx 0;
+}
+.searchbox .search input {
+    width: 590rpx;
+    height: 30rpx;
+    font-size: 30rpx;
+    line-height: 30rpx;
+    text-indent: 10rpx;
+    color: #fff;
+}
+.searchbox .search text {
+    width: 590rpx;
+    height: 50rpx;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    text-indent: 10rpx;
+    color: #fff;
+}
+
+.happy-listbox{
+    height: 360rpx;
+    width: 100%;
+}
+.happy-list {
+    width: 100%;
+    height: 100%;
+}
+.happy-list swiper-item {
+    position: relative;
+}
+.happy-list image {
+    width: 100%;
+    height: 360rpx;
+}
+.happy-list .title {
+    height: 60rpx;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(26, 25, 24, 0.52);
+    color: #fff;
+    font-size: 40rpx;
+    line-height: 60rpx;
+    text-indent: 20rpx;
+}
+.list {
+    flex: 1;
+    width: 100%;
+}
+.list ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.list ul li{
+    flex: 1;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #aaa;
+}
+.list ul li b{
+    height: 12rpx;
+    width: 100%;
+    background: #ddd;
+}
+.list ul li i{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.list ul li i image{
+    width: 80rpx;
+    height: 80rpx;
+    padding:0 40rpx;
+}

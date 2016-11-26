@@ -1,0 +1,8 @@
+<!--home.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="../../images/profile.png" background-size="cover"></image>
+    <text class="userinfo-nickname">寒江独钓</text>
+     <text class="userinfo-focus">欢迎扫一扫，添加我为微信好友</text>
+  </view>
+</view>

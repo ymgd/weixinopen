@@ -1,0 +1,3 @@
+<view id="exit">
+<image id="adver" src="{{picture}}"></image>
+</view>

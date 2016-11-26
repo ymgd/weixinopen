@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="display-container">
+    <text class="count-down">{{displayTime}}</text>
+  </view>
+
+  <view class="button-container">
+
+    <view class="button-start" bindtap="onStartHandler">
+      <text class="button-text">Start</text>
+    </view>
+
+    <view class="button-stop" bindtap="onStopHandler">
+      <text class="button-text">Stop</text>
+    </view>
+
+  </view>
+
+</view>

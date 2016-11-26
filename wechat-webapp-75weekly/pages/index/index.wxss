@@ -1,0 +1,18 @@
+/**index.wxss**/
+/**不能少了import后面的分号**/
+@import "/pages/common/issue.wxss";
+
+.issue-wrap{
+  margin-bottom: 20rpx;
+  padding: 20rpx 10rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #666;
+}
+.issue{
+  float: left;
+  font-weight: bold;
+}
+.issue-time{
+  float: right;
+}

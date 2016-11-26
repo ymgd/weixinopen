@@ -1,0 +1,15 @@
+.group{
+  width:88%;
+  padding: 3%;
+  text-align: center;
+  margin: 10px auto;
+  background: #111;
+  border-radius:5px;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color:#fefefe;
+}
+image{
+    margin:5px auto;
+    width: 100%;
+}

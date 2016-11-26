@@ -1,0 +1,14 @@
+<!--赛事列表项-->
+<template name="match-list-item">
+  <view class="match-option" >
+        <image class="match-option-left"  mode="scaleToFill"
+            style="background: url('{{sportPic}}') no-repeat center;background-size: cover"></image>
+        <view class="match-option-right">
+            <view  class="match-option-title">{{title}}</view >
+            <view  class="match-option-name">{{orgName}}</view >
+            <view  class="match-option-data">比赛时间：{{sportBTime}}至{{sportETime}}</view >
+        </view>
+      <!--  <view wx:if="{{status == 'applying'}}" class="match-option-flag red">报名中 </view>
+        <view wx:else="{{status == 'start'}}"  class="match-option-flag">进行中</view>-->
+    </view>
+</template>

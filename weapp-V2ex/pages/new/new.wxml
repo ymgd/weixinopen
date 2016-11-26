@@ -1,0 +1,13 @@
+<import src="../../template/list.wxml"/>
+<view class="container">
+    <block wx:for="{{datas}}">
+        <template is="postList" data="{{item}}" />
+    </block>
+
+    <loading hidden="{{loadingHidden}}">
+        加载中...
+    </loading>
+    <modal title="啊哦！" confirm-text="重新加载！" no-cancel  hidden="{{modalHidden}}" bindconfirm="Request">
+        <icon type="warn" size="20" />加载失败！
+    </modal>
+</view>

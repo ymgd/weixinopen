@@ -1,0 +1,7 @@
+/**index.wxss**/
+.container{
+	padding: 0;
+}
+image{
+	flex: 1;
+}

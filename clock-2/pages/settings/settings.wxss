@@ -1,0 +1,27 @@
+page{
+    background: #336699;
+    color: white;
+}
+.sectionTitle{
+    font-size: 1.2em;
+    background-color: #0099CC;
+    height: 100rpx;
+    line-height: 100rpx;
+    box-shadow: 1px 1px 2px #888888;
+    padding-left: 15rpx;
+}
+
+.setTimeContainer{
+    margin-top: 15rpx;
+    margin-left: 15rpx;
+}
+
+.notificationContainer{
+    margin-left: 15rpx;
+}
+
+.notificationRatioGroup label{
+    margin-left: 15rpx;
+}
+
+

@@ -1,0 +1,61 @@
+<view id="body">
+<view id="head">
+<!--搜索部分开始-->
+    <view id="search">
+    <view id="searchinput">
+        <image id="positionpicture" src="{{position}}"></image>
+        <input type="text" placeholder="{{address}}" placeholder-class="placeholder"/>
+        <image id="arror" src="{{arror}}"></image>
+    </view>
+    <view id="searchsmall">
+        <image id="searchbutton" src="{{searchbutton}}"/>
+        <input type="text" placeholder="{{search}}" placeholder-class="placeholder"/>
+    </view>
+    <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+             <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<!--搜索部分结束-->
+<!--菜单部分开始-->
+    <view id="menu">
+        <view wx:for="{{details}}" class="detail">
+            <image src="{{item.imgurl}}"/>
+            <text>{{item.text}}</text>
+        </view>
+    </view>
+<!--菜单部分结束-->
+</view>
+<!--点餐入口开始-->
+<view id="center">
+    <view class="empty"></view>
+    <view id="orderlist">
+        <view id="left">
+            <view id="words"></view>
+            <image src="{{leftpicture}}" id="leftpicture"/>
+        </view>
+        <view id="right">
+            <view id="right-top">
+                <view id="right-words"></view>
+                <image src="{{righttoppicture}}" id="righttoppicture"/>
+            </view>
+            <view id="right-bottom">
+                <view id="right-bottom-left">
+                      <view id="right-bottom-left-words"></view>
+                      <image src="{{rightbottomleft}}" id="rightbottomleft"/>
+                </view>
+                <view id="right-bottom-right">
+                      <view id="right-bottom-right-words"></view>
+                      <image src="{{rightbottomright}}" id="rightbottomright"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!--点餐入口结束-->
+<view id="foot"></view>
+</view>

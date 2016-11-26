@@ -1,0 +1,21 @@
+/***app.wxss***/
+page{
+    height: 100%;
+    font-family: Microsoft YaHei,KaiTi;
+    background-color: #DCDCDC;
+}
+.container {
+  height: 100%;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  
+} 
+.clear {
+    display: block;
+    clear: both;
+}
+.none{
+    display: none;
+}

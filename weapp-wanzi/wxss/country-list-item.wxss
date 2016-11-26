@@ -1,0 +1,28 @@
+
+.country {
+    background: #efe9de;
+    display: flex;
+    height: 120rpx;
+    border-bottom: 1px #ccc solid;
+    padding: 12rpx;
+    overflow: hidden;
+}
+.country-desc {
+    color: #333;
+    font-size: 32rpx;
+    line-height: 96rpx;
+    width: 580rpx;
+}
+.country-icon {
+    width: 96rpx;
+    height: 96rpx;
+    vertical-align: middle;
+    margin: 0 20rpx;
+}
+.right-icon {
+    width: 66rpx;
+    height: 96rpx;
+    vertical-align: middle;
+    padding: 28rpx 20rpx;
+    line-height: 96rpx;
+}

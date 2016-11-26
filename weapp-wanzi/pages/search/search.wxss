@@ -1,0 +1,19 @@
+
+@import "../../wxss/base.wxss";
+@import "../../wxss/search-box.wxss";
+@import "../../wxss/country-list-item.wxss";
+
+.scroll-wrapper .desc {
+    font-size: 32rpx;
+    padding: 0 20rpx;
+    font-family: "微软雅黑";
+}
+.continent {
+    background: rgba(113, 178, 190, 1);
+}
+.continent-desc {
+    color: #fff;
+    font-size: 36rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+}

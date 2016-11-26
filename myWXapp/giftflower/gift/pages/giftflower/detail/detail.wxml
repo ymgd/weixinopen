@@ -1,0 +1,32 @@
+<view class="bigImg">
+	 <image src="{{imgSrc}}"/>
+</view>
+<view class="title">{{title}}-19支香槟玫瑰<text>特价</text></view>
+<view class="price">{{price}}</view>
+<view class="clickbox">
+	<text class='tel'>APP专享</text><text class='less'>比PC端省3元</text>
+</view>
+<view class="detail">
+	<view class="content">
+		<view class="title">材料：<text>红玫瑰11支，满天星围绕，栀子叶0.5扎</text></view>
+
+	</view>
+	<view class="flower">
+	<view class="title">花语：<text>很爱你，想把你捧在手心，放在心里</text></view>
+	</view>
+	<view class="send">
+	<view class="title">配送：<text>全国(可配送至全国100多城市)</text></view>
+	</view>
+
+	<button size='mini' type="default">更多图文详情</button>
+
+</view>
+<view class="btns">
+	<view class="fource" bindtap="colorchange" style="background:{{bg}}">
+		<text>关注</text>
+	</view>
+	<view class="fource">
+		<text>购物车</text>
+	</view>
+	<button>加入购物车</button>
+</view>

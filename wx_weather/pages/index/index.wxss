@@ -1,0 +1,97 @@
+/**index.wxss**/
+.current_date{
+  /*height:100%;*/
+  padding:10px;
+  font-size: 1rem;
+}
+.current_date .date{
+  padding-right:30px;
+}
+.lcaimg{
+  width:24px;
+  height:24px;
+  float:right;
+}
+#search{
+  text-align: center;
+  padding-top:5%;
+}
+.search_text{
+  display: inline-block;
+  padding-left:5px;
+  margin-right:10px;
+  width:100px;
+  height:30px;
+  border: 1px solid darkgray;
+  border-radius: 5px; 
+  vertical-align: middle; 
+}
+.search_btn{
+  display: inline-block;
+  height:30px;  
+  border: 1px solid darkgray;
+  border-radius:15px;
+  font-size:12px;
+  text-align:center;
+  line-height: 30px;
+  vertical-align: middle; 
+}
+
+#content{
+  text-align:center;
+}
+#content .place{
+  padding:10% 0% 15%;
+  font-size:4rem;
+}
+#content .temperature{
+  vertical-align:top;
+  font-size:4rem;
+  color:aquamarine;
+  padding-left:15px;
+}
+#content .weather{
+  display:inline-block;
+  text-align: center;
+  font-size:2rem;
+}
+#content .weather image{
+  display: block;
+  width:120px;
+  height:120px;
+}
+#footer{
+  position: absolute;
+  bottom:0px;
+  width:100%;
+  height:140px;
+  font-size: 12px;
+  color:#2F3B3D;
+  background: rgba(0,0,0,0.2);
+}
+#footer .bitem0,#footer .bitem1{
+  display: inline-block;
+  width: 47%;
+  height:100%;
+  border-right:1px dotted rgba(0,0,0,0.2);
+  padding:10px 0px 0px 10px;
+}
+#footer view{
+  margin-bottom:5px;
+}
+#footer .bitem1{
+  border:none;
+}
+.day,.night{
+  margin-top:5px;
+  text-align: center;
+  width:50%;
+  float:left;
+}
+.day text,.night text{
+  display:block;
+}
+#footer image{
+  width:50px;
+  height: 50px;
+}

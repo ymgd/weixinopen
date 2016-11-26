@@ -1,0 +1,3 @@
+<template name="loading">
+    <loading isHidden="{{isLoading}}">loading.....</loading>
+</template>

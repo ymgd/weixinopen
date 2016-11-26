@@ -1,0 +1,88 @@
+
+<view class="main-container">
+    <nav class="main-nav">
+        <ul>
+            <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">每日推荐</li>
+            <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">TOP100</li>
+            <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">独立原创榜</li>
+              <li class="{{current == 3 ? 'active' : ''}}" catchtap="switchSlider" data-index="3">新星榜</li>
+        </ul>
+    </nav>
+
+    <view class="list-loading">
+      <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+    </view>
+
+    <swiper class="main-list" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}" bindchange="changeSlider">
+        <block>
+            <swiper-item>
+              <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{refreshHidden ? 1 : 0}}">
+                <view hidden="{{refreshHidden}}">
+                  <button plain="true" loading="true">努力刷新中...</button>
+                </view>
+                <image src="http://img01.liwushuo.com/image/160928/w1tyv9dtu.jpg?imageView2/2/w/720/q/85/format/webp" mode="scaleToFill"></image>
+                <ul>
+                  <li wx:for="{{list}}" wx:for-item="item">
+                    <image src="{{item.img}}" mode="aspectFill"></image>
+                    <b>{{item.title}}</b>
+                  </li>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                  <button plain="true" loading="true">努力加载中...</button>
+                </view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item>
+            <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{refreshHidden ? 1 : 0}}">
+              <view hidden="{{refreshHidden}}">
+                <button plain="true" loading="true">努力刷新中...</button>
+              </view>
+              <image src="http://img01.liwushuo.com/image/160928/w1tyv9dtu.jpg?imageView2/2/w/720/q/85/format/webp" mode="scaleToFill"></image>
+              <ul>
+                <li wx:for="{{list}}" wx:for-item="item">
+                  <image src="{{item.img}}" mode="aspectFill"></image>
+                  <b>{{item.title}}</b>
+                </li>
+              </ul>
+              <view hidden="{{loadmoreHidden}}">
+                <button plain="true" loading="true">努力加载中...</button>
+              </view>
+            </scroll-view>
+            </swiper-item>
+            <swiper-item>
+            <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{refreshHidden ? 1 : 0}}">
+              <view hidden="{{refreshHidden}}">
+                <button plain="true" loading="true">努力刷新中...</button>
+              </view>
+              <image src="http://img01.liwushuo.com/image/160928/w1tyv9dtu.jpg?imageView2/2/w/720/q/85/format/webp" mode="scaleToFill"></image>
+              <ul>
+                <li wx:for="{{list}}" wx:for-item="item">
+                  <image src="{{item.img}}" mode="aspectFill"></image>
+                  <b>{{item.title}}</b>
+                </li>
+              </ul>
+              <view hidden="{{loadmoreHidden}}">
+                <button plain="true" loading="true">努力加载中...</button>
+              </view>
+            </scroll-view>
+            </swiper-item>
+            <swiper-item>
+            <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{refreshHidden ? 1 : 0}}">
+              <view hidden="{{refreshHidden}}">
+                <button plain="true" loading="true">努力刷新中...</button>
+              </view>
+              <image src="http://img01.liwushuo.com/image/160928/w1tyv9dtu.jpg?imageView2/2/w/720/q/85/format/webp" mode="scaleToFill"></image>
+              <ul>
+                <li wx:for="{{list}}" wx:for-item="item">
+                  <image src="{{item.img}}" mode="aspectFill"></image>
+                  <b>{{item.title}}</b>
+                </li>
+              </ul>
+              <view hidden="{{loadmoreHidden}}">
+                <button plain="true" loading="true">努力加载中...</button>
+              </view>
+            </scroll-view>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

@@ -1,0 +1,52 @@
+/**index.wxss**/
+/*.title{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}*/
+input{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  width:80%;
+  height: 40px;
+  font-size : 14px ;
+}
+button.btn {
+  width: 20%;
+  border-radius: 3px;
+  height: 35px;
+  font-size : 14px;
+  line-height: 35px;
+}
+.textContent{
+  line-height: 24px;
+  padding: 4px;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.empty{
+  color: red;
+  font-size: 14px;
+  padding: 4px;
+}

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view  class="greeting">
+    <text class="nick-label">What's your nickname?</text>
+    <input type="text" class="nickname" auto-focus="true" bindinput="inputNameEvent"/>
+    <button type="primary" class="type-btn" bindtap="enterRoom">进入聊天室</button>
+  </view>
+</view>

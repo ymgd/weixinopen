@@ -1,0 +1,12 @@
+<view class="header">
+	<view class="record"></view>
+	<input class="search" type="text" placeholder="搜索" />
+</view>
+<view class="content">
+	<view class="list-block" wx:for="{{lists}}" wx:for-item="list">
+		<view class="avator"></view>
+		<view class="name">{{list.name}}</view>
+		<view class="new-message-time">{{list.time}}</view>
+		<view class="new-message">{{list.message}}</view>
+	</view>
+</view>

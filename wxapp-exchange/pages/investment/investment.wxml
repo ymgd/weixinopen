@@ -1,0 +1,107 @@
+<view class="container">
+  
+  <view class="navagitorbar">
+    <image src="../../images/back2x.png"></image>
+    <text>项目投资</text>
+    <image src="../../images/filter2x.png"></image>
+  </view>
+
+  <view class="content-tab">
+    <block wx:for="{{tabItems}}">
+      <view class="tab-item {{item.selected ? 'selected' : ''}}" bindtap="orderClick" data-index="{{index}}">
+        <view class="tab-item_text">
+          <text>{{item.text}}</text>
+        </view>
+        <view wx:if="{{index > 0 }}" class="tab-item_img">
+            <image src="{{item.upflag ? '../../images/upblack2x.png' :'../../images/up2x.png' }}"></image>
+            <image src="{{item.downflag ? '../../images/downblack2x.png' : '../../images/down2x.png'}}"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <scroll-view scroll-y="true" class="contentinfo">
+    <block wx:for="{{contentItems}}">
+        <view class="content-item" bindtap="onItemClick" data-index="{{index}}">
+          <view class="content-item_title">
+            <view class="item-title_left">
+              <image wx:if="{{item.recommend}}" src="../../images/recommend2x.png"></image>
+              <text class="content-item_name">{{item.name}}</text>
+            </view>
+            <view class="item-title_right">
+              <text class="content-item_borrowtext">借款 ¥</text>
+              <text class="content-item_borrow">{{item.borrowMoney}}</text>
+            </view>
+          </view>
+          <view class="content-item_detail">
+            <view class="interestrate">
+              <text class="rate">{{item.interestrate + "%"}}</text>
+              <text class="text">年化利率</text>
+            </view>
+            <view class="term">
+              <text class="rate">{{item.borrowTerm}} {{item.borrowUnit == '月' ? '个月' : item.borrowUnit}}</text>
+              <text class="text">借款期限</text>
+            </view>
+            <view class="chart">
+              <canvas canvas-id="{{'canvasId-' + index}}" style="width: 80rpx; height: 80rpx;"></canvas>
+            </view>
+          </view>
+          <view class="content-item_remaining">
+            <view class="remaining-left">
+              <text>{{item.repaymentType}}</text>
+            </view>
+            <view class="remaining-right">
+              <text>剩余</text>
+              <text class="remainingmoney">{{item.remaining}}</text>
+            </view>
+          </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+
+<!--<modal no-cancel="true" class="content-filter" >
+  <view>
+    <view class="filter-type_title"> 
+      <text>还款方式</text> 
+    </view>
+    <view class="filter-detail">
+      <button>按月分期</button>
+      <button>按季分期</button>
+      <button>按月到期</button>
+      <button>按天一次性还款</button>
+      <button class="last">按天计算利息</button>
+    </view>
+  </view>
+
+  <view>
+    <view class="filter-type_title"> 
+      <text>还款期限</text> 
+    </view>
+    <view class="filter-detail">
+      <button>30天内</button>
+      <button>1个月</button>
+      <button>1-3个月</button>
+      <button>3-6个月</button>
+      <button>6-12个月</button>
+      <button class="last">12个月以上</button>
+    </view>
+  </view>
+
+  <view>
+    <view class="filter-type_title"> 
+      <text>标的类型</text> 
+    </view>
+    <view class="filter-detail">
+      <button>净</button>
+      <button>快</button>
+      <button>议</button>
+      <button>荐</button>
+      <button>秒</button>
+      <button class="last">特</button>
+    </view>
+  </view>
+
+
+
+</modal>-->

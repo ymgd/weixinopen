@@ -1,0 +1,54 @@
+<view class="page good">
+  <!--轮播banner-->
+  <view class="banner">
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{good.images}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"  />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+  <view class="gds-info">
+      <text class="gds-title">{{good.title}}</text>
+      <text class="gde-period">期号：{{good.nextPeriod}}</text>
+      <view class="gds-gap">
+        <progress class="progress" percent="50" active/>
+      </view>
+      <view class="gds-item">
+        <text class="gds-total">总需{{good.totalmember}}</text>
+        <view class="gds-remain">剩余<text class="act">{{good.remainmember}}</text>人次</view>
+      </view>
+      <view class="gds-cell">
+
+      </view>
+  </view>
+
+  <view class="gds-list">
+    <view class="view-cell view-cell-line">
+      <view class="view-cell-primary">
+        <image class="view-img" src="/image/pen.png" />
+        <text class="view-name">往期揭晓</text>
+      </view>
+      <view class="view-cell-arrow"></view>
+    </view>
+    <view class="view-cell view-cell-line">
+      <view class="view-cell-primary">
+        <image class="view-img" src="/image/record.png" />
+        <text class="view-name">晒单分享</text>
+      </view>
+      <view class="view-cell-arrow"></view>
+    </view>
+
+  <!-- <view class="">
+       {{ good.content | safe }}
+  </view> -->
+
+  <!-- loading  -->
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

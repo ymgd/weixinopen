@@ -1,0 +1,55 @@
+<view class="container" style="background-color:#f5f5f5;">
+
+<view class="hx-ul-group" style="margin:40rpx 0;">
+
+   <view class="hx-li" style="line-height:72rpx;height:72rpx;" bindtap="itemTapHandler" data-tag="history">
+        <view style="float:left;height:72rpx;line-height:72rpx;">
+             <image style="width: 40rpx; height: 40rpx; margin:16rpx 20rpx;" src="../../res/img/record.png"></image>
+        </view>
+        <text style="font-size:15px;">播放历史</text>
+        <view style="float:right;">
+             <image style="width: 24rpx; height: 24rpx; margin:0 16rpx;" src="../../res/img/arrow_right.png"></image>
+        </view>
+    </view>
+
+</view>
+
+<view class="hx-ul-group" style="margin-bottom:40rpx;">
+
+    <view class="hx-li" style="line-height:72rpx;height:72rpx;" bindtap="itemTapHandler" data-tag="guide">
+        <view style="float:left;height:72rpx;line-height:72rpx;">
+             <image style="width: 40rpx; height: 40rpx; margin:16rpx 20rpx;" src="../../res/img/gesture.png"></image>
+        </view>
+        <text style="font-size:15px;">操作说明</text>
+        <view style="float:right;">
+             <image style="width: 24rpx; height: 24rpx; margin:0 16rpx;" src="../../res/img/arrow_right.png"></image>
+        </view>
+    </view>
+
+    <view class="hx-li" style="line-height:72rpx;height:72rpx;" bindtap="itemTapHandler" data-tag="download">
+        <view style="float:left;height:72rpx;line-height:72rpx;">
+             <image style="width: 40rpx; height: 40rpx; margin:16rpx 20rpx;" src="../../res/img/download.png"></image>
+        </view>
+        <text style="font-size:15px;">系统设置</text>
+        <view style="float:right;">
+             <image style="width: 24rpx; height: 24rpx; margin:0 16rpx;" src="../../res/img/arrow_right.png"></image>
+        </view>
+    </view>
+
+</view>
+
+<view class="hx-ul-group">
+    
+       <view class="hx-li" style="line-height:72rpx;height:72rpx;" bindtap="itemTapHandler" data-tag="about">
+            <view style="float:left;height:72rpx;line-height:72rpx;">
+                <image style="width: 40rpx; height: 40rpx; margin:16rpx 20rpx;" src="../../res/img/about.png"></image>
+            </view>
+            <text style="font-size:15px;">关于作者</text>
+            <view style="float:right;">
+                <image style="width: 24rpx; height: 24rpx; margin:0 16rpx;" src="../../res/img/arrow_right.png"></image>
+            </view>
+    </view>
+    
+</view>
+
+</view>

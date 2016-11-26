@@ -1,0 +1,97 @@
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  height:40px;
+  width:100%;
+  background:green;
+}
+
+header ul{
+  width:100%;
+  height:50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header ul li{
+  width:44px;
+  height:20px;
+}
+header ul .head-l image{
+  width:24px;
+  height:20px;
+  margin: 0 5px 0 10px;
+}
+header ul .head-r image{
+  width:24px;
+  height:20px;
+  margin: 0 10px 0 5px;
+}
+
+header ul .head-c{
+  flex:1;
+  height:26px;
+  background: #fff;
+  border-radius: 13px;
+}
+header ul .head-c .btn{
+  float:left;
+    width: 20px;
+    height: 26px;
+}
+header ul .head-c .btn image{
+  width: 14px;
+    height: 14px;
+  margin:6px;
+}
+header ul .head-c input{
+  float:left;
+  font-size: 12px;
+  line-height:26px;
+  margin-left: 5px;
+  color:#ccc;
+}
+
+.main-list {
+  width:100%;
+  height:150px;
+  overflow: hidden;
+}
+.main-list swiper-item{
+  width:100%;
+  height:100%;
+}
+.main-list swiper-item image{
+  display: block;
+  width:100%;
+  height:150px;
+}
+
+
+@media screen and (max-width: 321px) {
+  .main-list ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 322px) and (max-width: 400px) {
+  .main-list ul li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .main-list ul li {
+    font-size: 16px;
+  }
+}
+
+
+.list-loading {
+
+}

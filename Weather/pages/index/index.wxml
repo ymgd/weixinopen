@@ -1,0 +1,69 @@
+<!--100%布局好像不好使-->
+<view class="container" style="background-image: url(../../image/bg.jpg); height: {{height}}px">
+<loading hidden="{{loadingHidden}}">加载天气...</loading>
+<view class="newTopView">
+<!--左边添加当前城市名字，点击跳转选择城市 右边添加刷新当前天气-->
+</view>
+  <view class="topView">
+    <view class="degreeView">
+    <!--当前温度-->
+      <text class="degree">{{currentTemperature}}</text>
+      <!--度数图标-->
+      <image class="circle" src="../../image/circle.png"></image>
+    </view>
+    <view class="detailInfo">
+      <view class="degreeView">
+      <!--夜间天气情况-->
+        <text class="detailInfoDegree">{{nightAirTemperature}}</text>
+        <image class="detailInfoCircle" src="../../image/circle.png" />
+        <text class="detailInfoLine">/</text>
+        <!--白天天气-->
+        <text class="detailInfoDegree">{{dayAirTemperature}}</text>
+        <!-- style优先级比class高会覆盖class中相同属性 -->
+        <image class="detailInfoCircle" style="margin-left: 57rpx; margin-right: 40rpx" src="../../image/circle.png" />
+        <!-- 当前天气名字 -->
+        <text class="detailInfoName">{{weather}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 中间部分 -->
+  <view class="centerView">
+    <view class="centerItem" style="margin-right: 25rpx;">
+      <image class="centerItemImage" src="../../image/leaf.png" />
+      <!-- 相同属性抽出来！ -->
+      <!--污染指数-->
+      <text class="centerItemText" style="margin-left: 10rpx; margin-right: 10rpx">{{aqi}}</text>
+      <!--污染指数对应name-->
+      <text class="centerItemText">{{quality}}</text>
+    </view>
+    <view class="centerItem" style="margin-left: 25rpx">
+      <image class="centerItemImage" src="../../image/wind.png" />
+      <text class="centerItemText" style="margin-left: 10rpx; margin-right: 10rpx">{{windPower}}</text>
+      <!--风-->
+      <text class="centerItemText">{{windDirection}}</text>
+    </view>
+  </view>
+  <!-- 底部view -->
+  <view class="bottomView">
+    <block wx:for-items="{{list}}">
+      <view class="bottomItemView">
+        <image class="bottomImage" src="{{item.day_weather_pic}}" style="margin-bottom: 15rpx;" />
+        <text wx:if="{{item.weekday == 1}}" class="bottomText">星期一</text>
+        <text wx:elif="{{item.weekday == 2}}" class="bottomText">星期二</text>
+        <text wx:elif="{{item.weekday == 3}}" class="bottomText">星期三</text>
+        <text wx:elif="{{item.weekday == 4}}" class="bottomText">星期四</text>
+        <text wx:elif="{{item.weekday == 5}}" class="bottomText">星期五</text>
+        <text wx:elif="{{item.weekday == 6}}" class="bottomText">星期六</text>
+        <text wx:else="{{item.weekday == 7}}" class="bottomText">星期日</text>
+        <view class="degreeView" style="margin-top: 20rpx;">
+          <text class="detailInfoDegree">{{item.night_air_temperature}}</text>
+          <image class="detailInfoCircle" src="../../image/circle.png" />
+          <text class="detailInfoLine">/</text> 
+          <text class="detailInfoDegree">{{item.day_air_temperature}}</text>
+          <!-- style优先级比class高会覆盖class中相同属性 -->
+          <image class="detailInfoCircle" style="margin-left: 57rpx; margin-right: 40rpx" src="../../image/circle.png" />
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

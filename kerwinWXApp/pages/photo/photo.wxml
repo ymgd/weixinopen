@@ -1,0 +1,7 @@
+<view>
+  <button type="primary" bindtap="handleTapEvent">选择一张照片</button>
+  <button type="warn" bindtap="handleTapClearEvent">清空照片</button>
+  <view wx:for="{{items}}">
+    <image src="{{item}}" mode="aspectFill"></image>
+  </view>
+</view>

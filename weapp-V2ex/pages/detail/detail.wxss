@@ -1,0 +1,75 @@
+/* Node Info CSS */
+.NodeInfoTitle{
+    width:100%;
+    display: block;
+    background-color: #c2c2c2;
+    padding: 10px;
+    font-size: 16px;
+}
+.NodeInfoHeader{
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+}
+.NodeInfoAvatar{
+    width: 73px;
+    height: 73px;
+    margin:0 auto;
+}
+.NodeInfoTopics{
+    font-size: 14px;
+}
+/* Post Info CSS */
+.PostTitle{
+    width:100%;
+    display: block;
+    background-color: #c2c2c2;
+    padding: 10px;
+    font-size: 16px;
+}
+.PostContent{
+    width:100%;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+}
+.PostNode{
+     width:100%;
+    display: block;
+    background-color: #c1c1c1;
+    padding: 3px 10px;
+    font-size: 16px;
+     line-height: 30px;
+}
+.PostUsername{
+     width:100%;
+    display: block;
+    background-color: #b0b0b0;
+    padding: 3px 10px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/*User Info CSS*/
+.UserUsername{
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+}
+.UserTagLink{
+    font-size: 14px;
+    color:#c2c2c2; 
+     display: block;
+}
+.UserAvatar{
+    width: 73px;
+    height: 73px;
+     display: block;
+     margin:0 auto;
+}
+.UserSocial{
+    display: block;
+    line-height: 20px;
+    font-size: 14px;
+}

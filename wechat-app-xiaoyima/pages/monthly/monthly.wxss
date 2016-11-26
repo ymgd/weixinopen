@@ -1,0 +1,39 @@
+.top_bar{height:25px; line-height:25px;}
+.top_bar button{height:25px; line-height:25px; color:#FFF; background:#FF9A9A; text-align:center; font-size:30rpx; width:60px;}
+.container{display:block; padding:10px 0; align-items:normal}
+
+.top_bar{display:flex; flex-driection:row; flex-wrap:nowrap;   justify-content: space-between; color:#FF999A; padding:0 10px 10px}
+.top_bar .prev{margin:0}
+.top_bar .next{margin:0}
+
+.calendar{}
+.calendar_head{height:20px;line-height:20px; display:flex; flex-wrap:nowrap; background:#FFF}
+.calendar_head .td{flex-grow:1; background:none; text-align:center; font-size:12px; color:#666;flex: 0 0 13.4%;margin:0 0.4%}
+.calendar_body{background:#f1f1f1; display:flex; flex-wrap:wrap; border-bottom:2px solid #f1f1f1; border-top:1px solid #f1f1f1}
+.calendar_body .td{flex-grow:1;  text-align:center; font-size:12px; color:#666;flex: 0 0 13.4%; height:30px; line-height:30px;background:#FFF; margin:0.4%; color:#FF999A}
+.calendar_body .td .day{background:#FFF; border-radius:10%; color:#FF999A}
+.calendar_body .td .now{background:#FF999A; border-radius:10%; color:#FFF}
+.calendar_body .td.monthly .day{background:#E86C71; color:#FFF}
+.calendar_body .td.love .day{background:#66B8BD; color:#FFF}
+.calendar_body .td.nolove .day{background:#FFF; color:#FF999A}
+.calendar_body .td.nomonthly .day{background:#FFF; color:#FF999A}
+.calendar_body .td.selected_day .day{background:#48C23D; color:#fff}
+
+.action{border-top:2px solid #fddedf; border-bottom:2px solid #fddedf; margin-top:10px}
+.action label{display:block; height:40px; line-height:40px; background:#FFF; border-top:1px solid #fddedf; border-bottom:1px solid #fddedf}
+.action label text{}
+.action label switch{}
+.action .explain{display:flex;}
+.action .explain .item{flex-grow:1;flex: 0 0 33.33%;  height:20px; line-height:20px; text-align:center; border-left:2px solid #fddedf; font-size:12px; background:#48C23D; border-bottom:1px solid #fddedf; color:#f3f3f3}
+.action .explain .item:first-child{border-left:none; background:#E86C71}
+.action .explain .item:last-child{ background:#66B8BD}
+.action .switch{display:flex;}
+.action .switch .switch_item{flex-grow:1;flex: 0 0 33.33%; height:50px; line-height:50px; text-align:center; border-left:2px solid #fddedf; font-size:12px; background:#48C23D; color:#F3F3F3; border-bottom:1px solid #fddedf; text-align:center}
+.action .switch .switch_item:first-child{border-left:none; background:#FFF}
+.action .switch .switch_item:last-child{ background:#FFF}
+.action .switch .switch_item:first-child text{height:20px; width:20px; color:#E86C71; font-size:20px; display:inline-block}
+.action .switch .switch_item:first-child.selected{background:#E86C71}
+.action .switch .switch_item:last-child.selected{background:#66B8BD}
+.action .switch .switch_item:last-child text{height:20px; width:20px; display:inline-block; font-size:20px; color:#66B8BD}
+
+

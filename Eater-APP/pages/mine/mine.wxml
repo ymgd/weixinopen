@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="user">
+        <image class="user-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"/>
+        <text class="user-nickname">{{userInfo.nickName}}</text>
+        <text class="user-des">{{des}}</text>
+    </view>
+</view>

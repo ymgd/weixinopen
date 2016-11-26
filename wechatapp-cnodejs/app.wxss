@@ -1,0 +1,31 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 240rpx 10prx;
+  box-sizing: border-box;
+} 
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 36px;
+    background-color: #fafafa;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.navbar-item{
+    display: inline-block;
+    width:19%;
+    color: #13beec;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    margin-left: 2px;
+}

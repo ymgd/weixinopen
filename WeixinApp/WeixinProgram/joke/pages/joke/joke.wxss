@@ -1,0 +1,10 @@
+.group{
+  width:80%;
+  padding: 5%;
+  margin: 10px auto;
+  background: #efefef;
+  border-radius:5px;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color:#888;
+}

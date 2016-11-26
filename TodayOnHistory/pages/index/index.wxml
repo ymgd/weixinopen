@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<import src="../templates/item.wxml"/>
+
+<scroll-view scroll-y="true" class="flex-row ui-list ui-border-t">
+    <template is="tItem" data="{{item}}" wx:for="{{events}}"/>
+    <view class="ui-tips">
+        <view wx:if="{{hidden}}"><text>没有更多内容了</text></view>
+        <view wx:else><text>内容加载中...</text></view>
+    </view>
+</scroll-view>
+
+<loading hidden="{{hidden}}">Loading...</loading>

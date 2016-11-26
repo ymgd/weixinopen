@@ -1,0 +1,92 @@
+<scroll-view style="height: 100%;" scroll-y="true" class="container " bindscroll="scroll">
+    <swiper indicator-dots="{{indicatorDots}}" class="banner"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+        <block wx:for="{{imgUrls}}">  
+            <swiper-item>  
+            <navigator url="{{item.link}}" hover-class="navigator-hover">  
+                <image src="{{item.url}}" class="slide-image" />  
+            </navigator>   
+            </swiper-item>  
+        </block>  
+    </swiper> 
+    <view class="subject-text">
+        <text class="label">科目</text>
+    </view>
+    <view class="subject_group1 section" >
+        <view class="flex-wrp" style="flex-direction:row;">
+            <block  wx:for-items="{{subject_icons}}" wx:for-item="subject_icon">
+                <view class="flex-item"  style="text-align: center">
+                    <view class="image_bg" style="background-color:{{subject_icon.color}}">
+                        <image class="img" src="../../images/{{subject_icon.image}}"></image>
+                    </view>
+                    <view>
+                        <text class="label">{{subject_icon.desc}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>  
+    </view>
+    <view class="divider"></view>
+    <view class="swiper-tab">  
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}} border-right" data-current="0" bindtap="swichNav">免费体验</view>  
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}} border-right" data-current="1" bindtap="swichNav">当月特价</view>  
+        <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">热门课程</view>  
+    </view>  
+    <swiper class="viewpager" current="{{currentTab}}" bindchange="swiperChange">
+        <swiper-item class="fragment">
+            <block wx:for-items="{{courses}}" wx:for-item="course">
+                <view class="course-item" bindtap="viewDetail" data-id="{{course.id}}" data-title="{{course.title}}">
+                    <view class="course-image">
+                        <image src="{{course.img}}"></image>
+                    </view>
+                    <view class="course-info">
+                        <view>
+                            <text class="course-title">{{course.title}}</text>
+                        </view>
+                        <view class="course-price">
+                            <text class="label">价格</text>
+                            <text class="price">{{course.price}}</text>
+                        </view>
+                    </view> 
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item class="fragment">
+            <block wx:for-items="{{courses}}" wx:for-item="course">
+                <view class="course-item" bindtap="viewDetail" data-id="{{course.id}}" data-title="{{course.title}}">
+                    <view class="course-image">
+                        <image src="{{course.img}}"></image>
+                    </view>
+                    <view class="course-info">
+                        <view>
+                            <text class="course-title">{{course.title}}</text>
+                        </view>
+                        <view class="course-price">
+                            <text class="label">价格</text>
+                            <text class="price">{{course.price}}</text>
+                        </view>
+                    </view> 
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item class="fragment">
+            <block wx:for-items="{{courses}}" wx:for-item="course">
+                <view class="course-item" bindtap="viewDetail" data-id="{{course.id}}" data-title="{{course.title}}">
+                    <view class="course-image">
+                        <image src="{{course.img}}"></image>
+                    </view>
+                    <view class="course-info">
+                        <view>
+                            <text class="course-title">{{course.title}}</text>
+                        </view>
+                        <view class="course-price">
+                            <text class="label">价格</text>
+                            <text class="price">{{course.price}}</text>
+                        </view>
+                    </view> 
+                </view>
+            </block>
+        </swiper-item>
+    </swiper>
+</scroll-view>
+ 

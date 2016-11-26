@@ -1,0 +1,31 @@
+<scroll-view class="posts-list" style="height:100%" scroll-y="true" bindscrolltoupper="pullDownRefresh" bindscrolltolower="lower">
+  <swiper wx:if="{{type=='recent'}}" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" class="banners" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banner}}">
+      <swiper-item  class="banner" >
+          <image src="https://testerhome.com/{{item.cover.url}}"  data-id="{{item.topic_id}}" bindtap="bindViewTap" class="banner-image" width="100%" height="100%"/>
+          <text class="banner-title">{{item.topic_title}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+    <block wx:for-items="{{datas}}" wx:for-item="item">
+      <view  id="{{item.id}}"  class="posts-item" bindtap="didSelectCell" >
+        <image class="cellimage" mode="scaleToFill" src="{{item.user.avatar_url}}"/>
+        <view class="celllabel">
+          <text class="celltext" >{{item.title}}</text>
+          <view class="cellrow">
+            <text class="celldetail">{{item.user.login}}</text>
+            <text class="celltip">{{item.created_at}}</text>
+          </view>
+          <view class="cellrow">
+            <text class="celldetail">{{item.node_name}}</text>
+            <view class="replycountBg">
+                {{item.replies_count}}
+            </view>
+          </view>
+        </view>
+      </view>
+
+      
+    </block>
+  </scroll-view>

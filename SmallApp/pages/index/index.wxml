@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<import src="../../template/item-template.wxml"/>
+<view class="container">
+
+    <view class="section section_gap swiper_box">
+        <template is="index_index_scroll_tmpl" data="{{...index_index_scroll_tmpl}}"/>
+    </view>
+    
+    <view class="section index-nav">
+       <template is="index_index_navs_tmpl" data="{{...index_index_navs_tmpl}}"/>
+    </view>
+
+    <view class="text">
+        <view class="line_y"></view>
+        <text>精品特价</text>
+    </view>
+
+    <template is="index_index_items_tmpl" data="{{...index_index_items_tmpl}}"/>
+
+</view>

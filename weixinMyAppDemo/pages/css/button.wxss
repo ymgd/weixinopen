@@ -1,0 +1,18 @@
+
+.buttons-group{
+    text-align: center;
+}
+.buttons{
+    width: 540rpx;
+    border: none;
+    background-color: #e02e25;
+    font-size: 30rpx;
+    height: 80rpx;
+    border-radius:10rpx;
+    margin: auto;
+    color: #fff;
+    padding-top:5rpx
+}
+.buttons:disabled{
+    background-color: #999;
+}

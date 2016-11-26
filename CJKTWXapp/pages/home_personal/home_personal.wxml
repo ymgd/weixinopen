@@ -1,0 +1,133 @@
+ <scroll-view style="height: 100%;" scroll-y="true" class="container" bindscroll="scroll">
+    <view class="me-top">
+        <view  bindtap="bindViewTap" class="userinfo">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <!--<text class="userinfo-nickname">{{userInfo.nickName}}</text>-->
+        </view>
+    </view>
+    <view class="me_account">
+        <view class=" flex-wrp">
+            <view class="account-detail col-8 border-right" style="text-align: center">
+                <view>
+                    <text class="account-value">1245</text>
+                </view>
+                 <view>
+                    <image class="icon-personal-little" src="../../images/cridits.png"></image>
+                     <text class="account-type">积分</text>
+                </view> 
+            </view>
+            <view class="account-detail col-8 border-right" style="text-align: center">
+                <view>
+                     <text class="account-value">13</text>
+                </view>
+                 <view>
+                    <image class="icon-personal-little" src="../../images/level.png"></image>
+                    <text class="account-type">等级</text>
+                </view>
+            </view>
+            <view class="account-detail col-8" style="text-align: center">
+                 <view>
+                    <text class="account-value">32</text>
+                </view>
+                 <view>
+                    <image class="icon-personal-little" src="../../images/coin.png"></image>
+                    <text class="account-type">超级币</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="divider-personal"></view>
+    <view>
+         <view class="order-all border-bottom">
+            <text class="account-type pull-left">我的订单</text>
+            <image class="icon-personal-little pull-right" src="../../images/icon_to_right.png"></image>
+            <text class="account-type pull-right">查看全部订单</text>  
+        </view>
+    </view>
+    <view>
+         <view class="order col-6 border-right border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/wait_pay.png"></image>
+            </view>
+            <view>
+                <text class="account-type">待支付</text>
+            </view>
+        </view>
+        <view class="order col-6 border-right border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/pay_success.png"></image>
+            </view>
+            <view>
+                <text class="account-type">支付成功</text>
+            </view>
+        </view>
+        <view class="order col-6 border-right border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/pay_cancel.png"></image>
+            </view>
+            <view>
+                <text class="account-type">订单取消</text>
+            </view>
+        </view>
+        <view class="order col-6 border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/refund.png"></image>
+            </view>
+            <view>
+                <text class="account-type">退款</text>
+            </view>
+        </view>
+    </view>
+    <view class="divider-personal"></view>
+    <view class="my-menu">
+        <view class="menu col-8 border-right border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/rank.png"></image>
+            </view>
+            <view>
+                <text class="account-type">排行榜</text>
+            </view>
+        </view>
+        <view class="menu col-8 border-right border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/task.png"></image>
+            </view>
+            <view>
+                <text class="account-type">任务</text>
+            </view>
+        </view>
+        <view class="menu col-8 border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/store.png"></image>
+            </view>
+            <view>
+                <text class="account-type">积分商城</text>
+            </view>
+        </view>
+        <view class="menu col-8 border-right border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/question.png"></image>
+            </view>
+            <view>
+                <text class="account-type">我的评价</text>
+            </view>
+        </view>
+        <view class="menu col-8 border-right border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/recharge.png"></image>
+            </view>
+            <view>
+                <text class="account-type">充值</text>
+            </view>
+        </view>
+        <view class="menu col-8 border-bottom" style="text-align: center">
+            <view>
+                <image class="icon" src="../../images/testbank.png"></image>
+            </view>
+            <view>
+                <text class="account-type">题库</text>
+            </view>
+        </view>
+    </view>
+   
+  </scroll-view>

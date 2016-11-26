@@ -1,0 +1,29 @@
+<view  stytle=" overflow-x: hidden; overflow-y: auto;">
+<view class="serach">
+<view class="serach_view_show" bindtap="bindtap"> 搜索</view>
+</view>
+  <view class="message__list">
+     <block wx:for="{{messages}}">
+        <navigator url="/pages/message/chat/chat">
+          <view class="item" >
+             <view class="item-left">
+                  <image src="{{item.url}}" class="image"/>
+             </view>
+             <view class="item-middle">
+                  <view>
+                       <text class="title">{{item.title}}</text>
+                  </view>
+                  <view>
+                      <text class="message">{{item.message}}</text>
+                  </view>
+            </view>
+            <view class="item_right">
+                <view><text class="time">{{item.time}}</text></view>
+                <view class="mark" wx:if="{{item.count>0}}"><text class="text">{{item.count}}</text></view>
+            </view>
+         </view>
+         <view  class="line"></view>
+       </navigator>
+    </block>
+  </view>
+</view>

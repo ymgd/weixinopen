@@ -1,0 +1,20 @@
+.hx-ul-group{
+   border-top: 1px solid #f7f7f7;
+   border-bottom: 1px solid #f7f7f7;
+   background-color: #fff;
+}
+
+.hx-ul-group .hx-li{
+    border-bottom: 1px solid #f7f7f7;
+    padding:2px 0;
+}
+.hx-ul-group .hx-li:active{
+    background-color: #f7f7f7;
+}
+.hx-ul-group .hx-li:last-child{
+    border-bottom: 0px;
+}
+.hx-p{
+   font-size: 26rpx;
+   line-height: 30rpx;
+}

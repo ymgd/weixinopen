@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/home_index/home_index",
+    "pages/home_mycourse/home_mycourse",
+    "pages/home_statics/home_statics",
+     "pages/home_personal/home_personal",
+    "pages/logs/logs",
+     "pages/index/index",
+    "pages/popindex/popindex",
+     "pages/Login/Login"
+  ],
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#00b7ee",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list": [{
+      "pagePath": "pages/home_index/home_index",
+      "iconPath": "images/home_zhuye2.png",
+      "selectedIconPath": "images/home_zhuye1.png",
+      "text": "主页"
+    },{
+      "pagePath": "pages/home_mycourse/home_mycourse",
+      "iconPath": "images/home_kecheng2.png",
+      "selectedIconPath": "images/home_kecheng1.png",
+      "text": "我的课程"
+    },{
+      "pagePath": "pages/home_statics/home_statics",
+      "iconPath": "images/home_rongyu2.png",
+      "selectedIconPath": "images/home_rongyu1.png",
+      "text": "学习轨迹"
+    },{
+      "pagePath": "pages/home_personal/home_personal",
+      "iconPath": "images/home_geren2.png",
+      "selectedIconPath": "images/home_geren1.png",
+      "text": "我"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00b7ee",
+    "navigationBarTitleText": "超级课堂",
+    "navigationBarTextStyle":"white"
+  }
+}

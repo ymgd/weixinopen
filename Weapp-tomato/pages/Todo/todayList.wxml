@@ -1,0 +1,29 @@
+<block wx:if="{{logs.length}}">
+    <scroll-view class="container" scroll-y="true">
+        <view class="log panel">
+            <view bindtap="onEditName" class="log_item" wx:for="{{logs}}" wx:for-index="$index" wx:for-item="log">
+                <text class="log_start">{{log.start}}</text>
+                <text class="log_action">{{log.name}}</text>
+            </view>
+        </view>
+
+    </scroll-view>
+    <!--<view class="clear">-->
+        <!--<button bindtap="switchModal" class="clear_btn" size="mini">清除记录</button>-->
+    <!--</view>-->
+    <modal
+        title="提示"
+        confirm-text="确定"
+        cancel-text="取消"
+        hidden="{{modalHidden}}"
+        bindconfirm="onChangeName"
+        bindcancel="onEditName">
+        <input class="enterTaskName item" bindinput="bindlogNameInput" placeholder="请输入任务名称" focus />
+    </modal>
+</block>
+<block wx:else>
+    <view class="nodata">
+        <text class="nodata_text">暂无记录</text>
+    </view>
+</block>
+<toast hidden="{{toastHidden}}" bindchange="hideToast">修改成功！</toast>

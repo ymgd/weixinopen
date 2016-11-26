@@ -1,0 +1,156 @@
+/* common */
+.primary-text
+{
+	font-size: 14px;
+	color: #cdc1b3;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.strong
+{
+	font-size: 20px;
+}
+
+/* override */
+page{
+	background-color: #faf8ef;
+}
+
+/*标题栏*/
+.info
+{
+	height: 49px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: : center;
+}
+
+.info .center
+{
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+}
+.info .restart
+{
+	/*flex: 1;*/
+	/*background-color: transparent;
+	border-color: transparent;*/
+	border-width: 0;
+}
+
+.info .restart Image
+{
+	width: 24rpx;
+	height: 24rpx;
+}
+
+.info .score,.best
+{
+	flex: 1;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.info .scoreContent,.bestContent
+{
+	display: inline-flex;
+	justify-content: center;
+	align-items: : center;
+	flex-direction: column;
+	background-color: #bbada0;
+	border-radius: 3px;
+	width: 60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.info .item
+{
+	text-align: center;
+}
+
+.info .titleItem
+{
+	color: #eee4da;
+	font-size: 14px;
+}
+
+.info .contentItem
+{
+	margin-top: 5rpx;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+/*棋盘*/
+.chessboard
+{
+	background-color: #bbada0;
+	margin: 50rpx;
+	height: 650rpx;
+	width: 650rpx;
+	border-radius: 15rpx;
+	display: flex;
+	flex-direction: column;
+	padding: 6rpx;
+}
+
+.chessboard .row
+{
+	display: flex;
+	flex: 1;
+}
+
+.chessboard .row .column
+{
+	font-size: 20px;
+	color: #776e65;
+	flex: 1;
+	margin: 12rpx;
+	background-color: #cdc1b4;
+	border-radius: 8rpx;
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+/* 控制键 */
+.direction
+{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+}
+
+.direction .directionBtn
+{
+	color: #fff;
+	display: inline-block;
+	border-width: 1px;
+	border-color: #bbada0;
+	background-color: #cdc1b4;
+}
+
+.direction .directionBtn-hover
+{
+	color: #000;
+	border-color: #cdc1b4;
+	background-color: #bbada0;
+}
+
+/* 提示 */
+.tips
+{
+	font-size: 14px;
+	color: #cdc1b3;
+	margin-top: 20px;
+}

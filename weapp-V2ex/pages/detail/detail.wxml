@@ -1,0 +1,56 @@
+<!--节点信息模板-->
+<block wx:if="{{NodeInfo != null }}">
+<view>
+    <text class="NodeInfoTitle">{{NodeInfo.title}}</text>
+    
+    <view style="text-align:center;margin:30px">
+    <image class="NodeInfoAvatar" src="{{NodeInfo.avatar_large}}" wx:if="{{NodeInfo.avatar_large != '/static/img/node_large.png'}}"></image>
+    </view>
+    <view style="text-align:center;padding:10px;">
+        <text class="NodeInfoHeader" wx:if="{{NodeInfo.header != null}}"> {{NodeInfo.header}}</text>
+        <text class="NodeInfoTopics">主题数{{NodeInfo.topics}}</text>
+        <button type="primary" class="margin-top:20px;" id="{{NodeInfo.id}}" catchtap="NodeTopics">查看主题</button>
+   </view>
+</view>
+</block>
+
+<!--主题信息模板-->
+<block wx:if="{{PostInfo != null }}">
+    <text class="PostTitle">{{PostInfo.title}}</text>
+    <text class="PostContent">{{PostInfo.content}}</text>
+    <text class="PostNode" id="{{PostInfo.node.id}}" catchtap="RedirectNode">{{PostInfo.node.title}}</text>
+    <view class="PostUsername" catchtap="RedirectUser" id="{{PostInfo.member.id}}">
+    <image class="avatar" src="{{PostInfo.member.avatar_mini}}"></image>
+    <text>{{PostInfo.member.username}}</text>
+    </view>
+</block>
+
+<!--用户信息模板-->
+<block wx:if="{{UserInfo != null }}">
+    <view style="text-align:center;padding:10px;">
+        <text class="UserUsername">{{UserInfo.username}}</text>
+        <text class="UserTagLink" wx:if="{{UserInfo.tagline != null}}">{{UserInfo.tagline}}</text>
+        <image class="UserAvatar" src="{{UserInfo.avatar_large}}"></image>
+        <text class="UserSocial" wx:if="{{UserInfo.github != null}}">Github:{{UserInfo.github}}</text>
+        <text class="UserSocial" wx:if="{{UserInfo.twitter != null}}">Twitter:{{UserInfo.twitter}}</text>
+        <text class="UserSocial" wx:if="{{UserInfo.location != null}}">Location:{{UserInfo.location}}</text>
+        <button type="primary" class="margin-top:20px;" id="{{UserInfo.username}}" catchtap="UserTopics">查看用户主题</button>
+    </view>
+</block>
+
+<!--主题列表-->
+<block wx:if="{{datas != null }}">
+<import src="../../template/list.wxml"/>
+<view class="container">
+    <block wx:for="{{datas}}">
+        <template is="postList" data="{{item}}" />
+    </block>
+</view>
+</block>
+
+    <loading hidden="{{loadingHidden}}">
+        加载中...
+    </loading>
+    <modal title="啊哦！" confirm-text="重新加载！" no-cancel  hidden="{{modalHidden}}" bindconfirm="Request">
+        <icon type="warn" size="20" />加载失败！
+    </modal>

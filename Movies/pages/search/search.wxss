@@ -1,0 +1,33 @@
+/*search.wxss*/
+.searchBtn{
+    display:inline-block;
+    width:4rem;
+    height:1.4rem;
+    line-height:1.4rem;
+    background-color:#333;color:#fff;
+}
+.searchInput{
+    width:10rem;
+    display: inline-block;
+    border:1px solid #fff;
+    padding:0 5px;
+    text-align: left;
+    color:#fff;
+    font-size:15px;
+}
+.search{
+    margin:20px auto;
+    text-align: center;
+}
+.history{
+    color:#fff;
+    font-size:15px;
+    margin: 10px 20px;
+    text-align:left;
+}
+.history text{
+    display:inline-block;
+    padding:5px;
+    border:1px solid #fff;
+    margin:0 5px;
+}

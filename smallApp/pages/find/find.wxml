@@ -1,0 +1,36 @@
+
+<import src="../../utils/template/menuButton.wxml"/>
+<view class="container">
+<loading hidden="{{loadingView_hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+<scroll-view style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true" >
+<toast hidden="{{banner_toast_show}}" bindchange="toastHide">
+   当前是：第{{current_index}}页
+  </toast>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="banner_index_change">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image id="{{current_index}}" bindtap="click_banner" src="{{item}}" class="banner_image" model='scaleToFill' />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="flex-wrp" style="flex-direction:row;">
+  <template is="menuButton" data="{{...menuItem1}}" />
+  <template is="menuButton" data="{{...menuItem2}}"/>
+  <template is="menuButton" data="{{...menuItem3}}"/>
+  <template is="menuButton" data="{{...menuItem4}}"/>
+</view>
+
+
+
+<block wx:for="{{results}}" wx:for-index="idx">
+<view wx:if="{{idx%2===0}}">
+<image src="{{results[idx].url}}"  bindtap="onItemClick" style="width:{{(systemInfo.windowWidth-2)/2}}px;height:{{(systemInfo.windowWidth-2)/2}}px;" mode="scaleToFill"></image>
+<image src="{{results[idx+1].url}}"bindtap="onItemClick"style="width:{{(systemInfo.windowWidth-2)/2}}px;height:{{(systemInfo.windowWidth-2)/2}}px;" mode="scaleToFill"></image>
+</view>
+</block>
+</scroll-view>  
+<view >
+

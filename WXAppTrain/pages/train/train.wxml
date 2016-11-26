@@ -1,0 +1,17 @@
+<!--train.wxml-->
+<view class="container train-list">
+	<text class="train-item">出发地：{{trainList[0].from}}</text>
+    <text class="train-item">目的地：{{trainList[0].to}}</text>
+    <view class="line"></view>
+    <block wx:for="{{trainList}}" wx:for-item="train">
+        <text class="train-item">{{index+1}}. 车次：{{train.trainNo}}</text>
+        <text class="train-item">车型：{{train.trainType}}</text>
+        <text class="train-item">起始时间：{{train.startTime}}</text>
+        <text class="train-item">到站时间：{{train.endTime}}</text>
+        <text class="train-item">总时长：{{train.duration}}</text>
+        <view id="trainindex-{{index}}" class="getseat-button" bindtap="getSeatInfo">
+            <text>点击查看座位信息</text>
+        </view>
+        <view class="line"></view>
+    </block>
+</view>

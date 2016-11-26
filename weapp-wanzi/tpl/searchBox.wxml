@@ -1,0 +1,9 @@
+<template name="searchBox">
+    <view class="search-wrapper">
+        <view class="inner">
+            <image src="../../res/img/search_icon.png" class="icon"></image>
+            <input class="search-input" placeholder="{{placeholder}}" 
+                maxlength="50" bindchange="searchTxtChanged"/>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,86 @@
+<view class="mycontainer">
+    <view class="nav">
+        <ul bindtap="handleNavEvent">
+            <li class="{{currentIndex==0?'active':''}}" data-index="0">正在上映</li>
+            <li class="{{currentIndex==1?'active':''}}" data-index="1">即将上映</li>
+        </ul>
+    </view>
+    <swiper class="myswiper" bindchange="handleSwiperChange" current="{{currentIndex}}">
+        <swiper-item>
+            <scroll-view scroll-y="true" class="myscroll" bindscrolltoupper="handleUpperEvent">
+                <view hidden="{{isTheatersHiddenLoading}}">
+                    <button loading="true" >正在加载</button>
+                </view>
+                <view wx:for="{{theaterssubjects}}" class="box" wx:for-item="film" bindtap="handleItemClick"
+                data-id="{{film.id}}" data-title="{{film.title}}">
+                    <image src="{{film.images.large}}" mode="aspectFill"></image>
+                    <view class="filminfo">
+                        <view>
+                            <text class="filmtitle">{{film.title}}</text>
+                            <text class="filmyear">{{film.year}}</text>
+                        </view>
+                        <view class="filmrating">
+                            <block wx:if="{{film.rating.average > 0}}">
+                                <text class="label">评分</text>
+                                <text class="rating">{{film.rating.average}}</text>
+                            </block>
+                            <block wx:else>
+                                <text class="label">暂无评分</text>
+                            </block>
+                        </view>
+                        <view class="directors">
+                            <text class="label">导演</text>
+                            <block wx:for-items="{{film.directors}}" wx:for-item="director">
+                                <text class="person">{{director.name}}</text>
+                            </block>
+                        </view>
+                        <view class="casts">
+                            <text class="label">主演</text>
+                            <block wx:for-items="{{film.casts}}" wx:for-item="cast">
+                                <text class="person">{{cast.name+" "}}</text>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y="true" class="myscroll" bindscrolltoupper="handleComingUpperEvent">
+                <view hidden="{{isComingHiddenLoading}}">
+                    <button loading="true" >正在加载</button>
+                </view>
+                <view wx:for="{{comingsubjects}}" class="box" wx:for-item="film" bindtap="handleItemClick"
+                data-id="{{film.id}}" data-title="{{film.title}}">
+                    <image src="{{film.images.large}}" mode="aspectFill"></image>
+                    <view class="filminfo">
+                        <view>
+                            <text class="filmtitle">{{film.title}}</text>
+                            <text class="filmyear">{{film.year}}</text>
+                        </view>
+                        <view class="filmrating">
+                            <block wx:if="{{film.rating.average > 0}}">
+                                <text class="label">评分</text>
+                                <text class="rating">{{film.rating.average}}</text>
+                            </block>
+                            <block wx:else>
+                                <text class="label">暂无评分</text>
+                            </block>
+                        </view>
+                        <view class="directors">
+                            <text class="label">导演</text>
+                            <block wx:for-items="{{film.directors}}" wx:for-item="director">
+                                <text class="person">{{director.name}}</text>
+                            </block>
+                        </view>
+                        <view class="casts">
+                            <text class="label">主演</text>
+                            <block wx:for-items="{{film.casts}}" wx:for-item="cast">
+                                <text class="person">{{cast.name+" "}}</text>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

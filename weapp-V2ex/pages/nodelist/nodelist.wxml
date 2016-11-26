@@ -1,0 +1,22 @@
+<import src="../../template/list.wxml"/>
+<view class="container">
+    
+
+    <view class="nodeTitleBG">
+        <text class="nodeTitle">全部节点</text>
+    </view>
+    
+    <view class="nodeItemBg">
+        <block wx:for="{{datas}}">
+            <template is="nodeList" data="{{item}}"/>
+        </block>
+    </view>
+
+    
+    <loading hidden="{{loadingHidden}}">
+        加载中...
+    </loading>
+    <modal title="啊哦！" confirm-text="重新加载！" no-cancel  hidden="{{modalHidden}}" bindconfirm="Request">
+        <icon type="warn" size="20" />加载失败！
+    </modal>
+</view>

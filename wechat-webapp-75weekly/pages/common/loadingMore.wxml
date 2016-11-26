@@ -1,0 +1,3 @@
+<template name="loadingMore">
+	<view class="load-more" hidden="{{laddingHidden}}">加载中..</view>
+</template>

@@ -1,0 +1,1 @@
+"use strict";function init(){function e(e,r){var s=e.args,a=s.tempFilePath;if(a){var t=i.saveFileForever(a);r(t===!1?{errMsg:"saveFile:fail"}:{errMsg:"saveFile:ok",savedFilePath:t})}else r({errMsg:"saveFile:fail"})}var i=(require("../../actions/webviewActions.js"),require("../../utils/file.js"));_exports={saveFile:e}}var _exports;init(),module.exports=_exports;

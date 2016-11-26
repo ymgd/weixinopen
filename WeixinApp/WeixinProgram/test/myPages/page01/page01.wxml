@@ -1,0 +1,15 @@
+<input type="text" placeholder="请输入运单号" bindinput="input"/>
+<view class="section">
+  <view class="section__title">快递选择</view>
+  <picker catchchange="catchPickerChange" value="{{index}}" range="{{expressCom[0]}}">
+    <view class="picker">
+      {{expressCom[0][index]}}
+    </view>
+  </picker>
+</view>
+<button type="primary"  bindtap="showInfo"> 查询 </button>
+<block wx:for="{{expressInfo}}">
+    <view class="container">{{item.time}}  
+        <view class="context">{{item.context}}</view>
+    </view>
+</block>

@@ -1,0 +1,41 @@
+<!--显示每部剧的详情-->
+<view>
+<!--<image src="{{item}}"/>-->
+<image class="image-style" src="/image/westworld.jpg"/>
+</view>
+
+<view>
+    <view>
+        <text class="font-style">简介：</text>
+    </view>
+    <view>
+        <text class="font-style">《西部世界》的故事发生在未来，人们已经不再热衷于玩网络游戏，而是创造了高科技成人乐园，体验更加真实刺激的游戏。里面有不少机器人接待员，他们过着设定好的剧情生活。而游客呢，现实中不敢的胡作非为，在公园里都能无限制放纵，嫖妓、追凶甚至滥杀无辜。</text>
+    </view>
+</view>
+
+<view class="row-view" style="flex-direction:row;">
+    <view>
+        <text class="font-style">类型：</text>
+    </view>
+    <view>
+        <text class="font-style">西部 惊悚 科幻 悬疑</text>
+    </view>
+</view>
+
+<view class="row-view" style="flex-direction:row;">
+    <view>
+        <text class="font-style">主演：</text>
+    </view>
+    <view>
+        <text class="font-style">埃文·蕾切尔·伍德 安东尼·霍普金斯</text>
+    </view>
+</view>
+
+<view class="row-view" style="flex-direction:row;">
+    <view>
+        <text class="font-style">影片评分：</text>
+    </view>
+    <view>
+        <text class="font-style">*****</text>
+    </view>
+</view>

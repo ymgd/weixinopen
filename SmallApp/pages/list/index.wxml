@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<import src="../../template/item-template.wxml" />
+
+<view class="container">
+    <template is="list_index_items_tmpl" data="{{...list_index_items_tmpl}}" />
+</view>

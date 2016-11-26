@@ -1,0 +1,18 @@
+<View class="page">
+
+    <view class="container" style="align-items: center">
+        <icon class="section" type="success" size="70"></icon>
+        <view class="text_area">
+        <text >
+            身份证号: {{cardno}}
+        </text>
+        <text>
+            结果: {{res}}
+        </text>
+        <text >
+            说明: {{tips  }}
+        </text>
+       
+        </view>
+    </view>
+</View>

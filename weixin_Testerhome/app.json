@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/job/job",
+    "pages/topics/topics",
+    "pages/detail/detail"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4342B6",
+    "navigationBarTitleText": "Testerhome",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#9B9DB1",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "iconPath": "images/tab_main_home.png",
+      "selectedIconPath": "images/tab_main_home.png",
+      "text": "社区"
+    }, {
+      "pagePath": "pages/topics/topics",
+      "iconPath": "images/tab_main_topic.png",
+      "selectedIconPath": "images/tab_main_topic.png",
+      "text": "话题"
+    },
+     {
+      "pagePath": "pages/job/job",
+      "iconPath": "images/tab_main_job.png",
+      "selectedIconPath": "images/tab_main_job.png",
+      "text": "招聘"
+    }
+    ]
+  }
+}

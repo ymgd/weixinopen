@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="wrapper">
+    <view class="top">
+        <text class="label my-score">我的得分：{{score}}</text>
+        <text class="label room-no">房间号：{{roomNo}}</text>
+        <text class="label my-score">剩余金子：{{leftGolds}}</text>
+    </view>
+    <view wx:for="{{mimeMap}}" wx:for-item="row" wx:for-index="i" 
+        class="flex-container">
+        <button wx:for="{{row}}" wx:for-item="cell" wx:for-index="j" 
+            class="flex-item {{cell<0?'gold':''}} {{cell<9?'open':''}}" 
+            bindtap="digGold" data-x="{{j}}" data-y="{{i}}" data-value="{{cell}}">
+            {{cell<9?(cell<0?'*':cell):"-"}}
+        </button>
+    </view>
+</view>

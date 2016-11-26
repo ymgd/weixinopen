@@ -1,0 +1,183 @@
+/*整体*/
+view{
+   
+}
+#body{
+    width: 750rpx;
+    height: 1608.3rpx;
+    background-color: #efefef;
+    font-family:Microsoft YaHei;
+}
+
+
+/*头部搜索框菜单开始*/
+#head{
+    height: 731rpx;
+     background-color: white;
+}
+#search{
+    height: 338rpx;
+}
+#search swiper{
+    z-index: -1;
+}
+#search swiper image{
+    width: 750rpx;
+    height: 338rpx
+}
+#searchinput{
+    width: 375rpx;
+    height: 65.2rpx;
+    position: absolute;
+    top: 13.8rpx;
+   left: 158.3rpx;
+    z-index: 2;
+    border-radius: 65.2rpx;
+    background: #832907;
+}
+#searchinput #positionpicture{
+    display: inline-block;
+    margin-left: 15.2rpx;
+    margin-bottom: 10rpx;
+    height: 38.8rpx;
+    width:33.3rpx;
+    z-index:5;
+}
+#searchinput #arror{
+    display: inline-block;
+    float: right;
+    margin-top: 12rpx;
+    margin-right: 8rpx;
+    height: 38.8rpx;
+    width:33.3rpx;
+    z-index:5;
+}
+#searchinput input{
+    display: inline-block;
+    width: 258.8rpx;
+    margin-left: 13.8rpx;
+    margin-top: 7.7rpx;
+    height: 55.5rpx;
+    color: white;
+}
+.placeholder{
+    color: white;
+}
+#searchsmall{
+    width: 170.8rpx;
+    height: 65.2rpx;
+    position: absolute;
+    top: 13.8rpx;
+    right: 8.3rpx;
+    z-index: 2;
+    border-radius: 65.2rpx;
+    background: #832907;
+}
+#searchsmall #searchbutton{
+    display: inline-block;
+    margin-left: 15.2rpx;
+    margin-bottom: 10rpx;
+    height: 38.8rpx;
+    width:33.3rpx;
+    z-index:5;
+}
+#searchsmall input{
+    display: inline-block;
+    width: 75rpx;
+    margin-left: 13.8rpx;
+    margin-top: 7.7rpx;
+    height: 55.5rpx;
+    color: white;
+}
+/*头部搜索框菜单结束*/
+/*菜单部分开始*/
+#menu{
+    background: white;
+}
+#menu view{
+    float: left;
+    width: 165rpx;
+    height: 152rpx;
+    margin-left: 14rpx;
+    margin-top: 5rpx;
+    text-align: center;
+}
+#menu image{
+    width: 112.5rpx;
+    height: 100rpx;
+    margin-left: 24rpx;
+    margin-top: 15rpx;
+}
+#menu text{
+    width: 112.5rpx;
+    margin:0 auto;
+}
+
+/*菜单部分结束*/
+
+
+
+
+/*点餐入口开始*/
+#center{
+    height: 465rpx;
+}
+.empty{
+    height: 25rpx;
+    width: 750rpx;
+}
+#orderlist{
+    width: 750rpx;
+    height: 441.6rpx;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    flex-grow: 217;
+    border-right: 2rpx solid #efefef
+}
+#leftpicture{
+    width: 227rpx;
+    height: 201rpx;
+    position: absolute;
+    left: 38.8rpx;
+    bottom: 40.2rpx;
+}
+#right{
+    flex-grow: 323;
+    display: flex;
+    flex-direction: column;
+}
+#right-top{
+    flex-grow: 139;
+    border-bottom: 2rpx solid #efefef;
+    position: relative;
+}
+#right-top #righttoppicture{
+    position: absolute;
+    right: 37.5rpx;
+    top:22.2rpx;
+    width: 127.7rpx;
+    height: 127.7rpx;
+
+}
+#right-bottom{
+    flex-grow: 180;
+    display: flex;
+    flex-direction: row;
+}
+#right-bottom-left,#right-bottom-right{
+    flex-grow: 1;
+    border-right: 2rpx solid #efefef;
+    position: relative;
+}
+
+#rightbottomleft,#rightbottomright{
+    position: absolute;
+    right: 37.5rpx;
+    bottom:11.2rpx;
+    width: 145.8rpx;
+    height: 116.7rpx;
+}
+/*点餐入口结束*/

@@ -1,0 +1,22 @@
+<!-- 
+<view class="top-bar">
+	<view class="top-bar-item" id="news" catchtap="turnToTag">新闻</view>
+	<view class="top-bar-item" id="audio" catchtap="turnToTag">直播</view>
+	<view class="top-bar-item" id="china" catchtap="turnToTag">中华</view>
+	<view class="top-bar-item" id="zhengzhou" catchtap="turnToTag">郑州</view>
+	<view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+</view>
+-->
+
+<scroll-view class="top-bar" scroll-x="true" style="width: 100%;overflow-x:hidden;overflow-y:auto;">
+    <view class="top-bar-item" id="news" catchtap="turnToTag">新闻</view>
+	<view class="top-bar-item" id="audio" catchtap="turnToTag">直播</view>
+	<view class="top-bar-item" id="china" catchtap="turnToTag">中华</view>
+	<view class="top-bar-item" id="zhengzhou" catchtap="turnToTag">郑州</view>
+	<view class="top-bar-item" id="ballot" catchtap="turnToTag">活动</view>
+	<view class="top-bar-item" id="ballot" catchtap="turnToTag">其他1</view>
+	<view class="top-bar-item" id="ballot" catchtap="turnToTag">其他2</view>
+	<view class="top-bar-item" id="ballot" catchtap="turnToTag">其他3</view>
+	<view class="top-bar-item" id="ballot" catchtap="turnToTag">其他4</view>
+	<view class="top-bar-item" id="ballot" catchtap="turnToTag">其他5</view>
+</scroll-view>

@@ -1,0 +1,34 @@
+<view class="myinfobox">
+  <view class="infoheader">
+    <text>头像：</text>
+    <image src="{{headimg}}"></image>
+  </view>
+  <view class="infoname">
+    <text>昵称：</text>
+    <b>{{info.name}}</b>
+  </view>
+  <view class="infosex">
+    <text>性别：</text>
+    <b>{{info.sex}}</b>
+  </view>
+  <view class="infoqq">
+    <text>Q Q：</text>
+    <input type="text"  value="" placeholder="在此输入QQ" bindinput="saveqq"/>
+  </view>
+  <view class="infowx">
+    <text>微信号：</text>
+    <input type="text"  value="" placeholder="在此输入微信号"bindinput="savewx"/>
+  </view>
+  <view class="infoem">
+    <text>邮箱：</text>
+    <input type="text"  value="" placeholder="在此输入邮箱" bindinput="saveem"/>
+  </view>
+  <view class="infotel">
+    <text>手机：</text>
+   <b>{{info.name}}</b>
+  </view>
+  <toast hidden="{{toast2Hidden}}" duration="3000" bindchange="toast2Change">
+   保存成功！
+ </toast>
+  <button type="primary" bindtap="saveinfo" class="save">保存个人资料</button>
+</view>

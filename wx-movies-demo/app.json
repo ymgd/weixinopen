@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#21282B",
+    "navigationBarTitleText": "影讯",
+    "navigationBarTextStyle": "white"
+  }
+}

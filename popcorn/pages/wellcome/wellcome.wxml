@@ -1,0 +1,9 @@
+<!--
+显示欢迎界面
+可以使广告图片
+-->
+<view class="wellcomeinfo">
+    <text>{{bodytext}}</text>
+</view>
+
+<button class="btnwellcome" bindtap="enter">马上进入</button>

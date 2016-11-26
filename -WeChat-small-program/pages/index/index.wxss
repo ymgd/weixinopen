@@ -1,0 +1,29 @@
+@charset "utf-8";
+image.slide-image {
+	width:100%;
+	max-height: 150px;
+}
+.course {
+	display: flex;
+	flex-direction:column;
+	cursor: pointer;
+}
+.course-list {
+	padding: 10rpx;
+	border-bottom: 1rpx dashed #666;
+}
+.course-list:last-child {
+	border: none;
+}
+.course-images {
+	width:160rpx;
+	height: 160rpx;
+	vertical-align: middle;
+	margin: 10px;
+	border-radius: 50%;
+	border:1rpx solid #228B22;
+}
+.course-text {
+	flex:1;
+
+}

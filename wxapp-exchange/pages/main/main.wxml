@@ -1,0 +1,53 @@
+
+<view class="container">
+    <view class="navagitorbar">
+        <image src="../../images/more2x.png" bindtap="toUserAccount"></image>
+        <text> </text>
+        <image src="../../images/message2x.png"></image>
+    </view>
+
+    <view class="titleView">
+        <view class="title-name">
+            <text class="cn-title">资产交易平台</text>
+            <text class="en-title">Property Rights Exchange Center </text>
+        </view>
+        <view class="title-exchangeMoney">
+            <text>平台已累计交易  {{ exchangeMoney}}</text>
+        </view>  
+            
+    </view>
+    
+    <view class="content-navigator">
+        <block wx:for="{{contentNavs}}">
+            <navigator url="{{item.url}}"> 
+                <view class="nav-item">
+                    <image class="nav-item_img" src="{{item.leftImage}}" background-size="cover"></image>
+                    <view class="nav-item_text">
+                        <text class="nav-item_tname">{{item.contentText}}</text>
+                        <text class="nav-item_bname">{{item.contentDesp}}</text>
+                    </view>
+                    <view class="nav-item_rimg">
+                        <image  src="../../images/right.png" background-size="cover"></image>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+
+    <view class="filling">
+    </view>
+
+    <view class="bottom-navigator">
+        <block wx:for="{{bottomNavs}}">
+            <navigator class="botnav-item" url="{{item.url}}">
+                <image class="botnav-item_img" src="{{item.image}}" ></image>
+                <view class="botnav-item_name">
+                    <text>{{item.contentText}}</text>
+                </view>
+            </navigator>    
+        </block>                
+    </view>
+
+
+
+</view>

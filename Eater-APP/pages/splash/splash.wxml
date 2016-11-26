@@ -1,0 +1,4 @@
+<view class="container" bindtap="skipToMain" animation="{{animationData}}">
+       <image class="img_splash" mode="scaleToFill" src="../img/mj_splash.jpg">
+       </image>
+</view>

@@ -1,0 +1,48 @@
+<View class="info">
+	<View class="score">
+		<View class="scoreContent">
+			<Text class="item titleItem">SCORE</Text>
+			<Text class="item contentItem" id="current_score">{{current_score}}</Text>
+		</View>
+	</View>
+
+		<Button class="restart center" bindtap="reset" plain="YES">
+			<Image src="../../images/restart.png"></Image>
+		</Button>
+
+	<View class="best">
+		<View class="bestContent">
+			<Text class="item titleItem">BEST</Text>
+			<Text class="item contentItem" id="best_score">{{best_score}}</Text>
+		</View>
+	</View>
+</View>
+
+<!-- View.chessboard>View.row*4>View.column*4 -->
+
+<View class="chessboard" catchtouchstart="touchstart" catchtouchend="touchend">
+	<View class="row" wx:for="{{chessboardDatas}}" wx:for-index="idx" wx:for-item="chessboardColumn">
+		<View class="column" wx:for="{{chessboardColumn}}" wx:for-item="chessboardRow">{{chessboardRow>0?chessboardRow:''}}</View>
+	</View>
+</View>
+
+<View class="direction">
+	<Button class="directionBtn" bindtap="turnUp" hover-class="directionBtn-hover">
+			上
+	</Button>
+	<Button class="directionBtn" bindtap="turnDown" hover-class="directionBtn-hover">
+		下
+	</Button>
+	<Button class="directionBtn" bindtap="turnLeft" hover-class="directionBtn-hover">
+		左
+	</Button>
+	<Button class="directionBtn" bindtap="turnRight" hover-class="directionBtn-hover">
+		右
+	</Button>
+</View>
+
+<View class="tips center">ps: 合并数字得到一个2048！</View>
+
+<toast hidden="{{toast2Hidden}}" duration="1500" bindchange="reset">
+	您已通关
+</toast>

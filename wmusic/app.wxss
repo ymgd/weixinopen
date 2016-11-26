@@ -1,0 +1,28 @@
+/**app.wxss  **/
+/**align-items: center;
+  padding: 200rpx 0;**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.weui-search-bar{
+    position: relative;
+    padding: 8px 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #EFEFF4;
+}
+.weui-search-bar input{
+  width: 100%;
+  font-size: 14px;
+  background-color: #ffffff;
+  padding: 0 8px;
+  border-radius:4px;
+}
+
+

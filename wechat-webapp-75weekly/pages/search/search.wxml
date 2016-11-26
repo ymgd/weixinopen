@@ -1,0 +1,36 @@
+<import src="../common/loadingMore.wxml"/>
+
+<view class="container">
+	<view class="search-wrap">
+		<input type="text" bindinput="searchInputEvent" placeholder=""></input><icon bindtap="searchClickEvent"  type="search" size="20"/>
+	</view>
+
+  <view class="has-no-res" wx:if="{{!isInit && !loadingMore && !listData.length}}"><text>Sorry, 没有找到相关文章, T_T</text></view>
+
+	<scroll-view scroll-y="true" style="width:100%;position:relative;top:60px;height:{{scrollHeight}}px"
+  bindscrolltolower="lower" wx:if="{{listData.length}}">
+    <view class="article-count">
+      <text>共找到{{count}}篇相关文章</text>
+    </view>
+  	<view class="article-list">
+  		<block wx:for="{{listData}}" wx:for-item="itemArticle">
+  		  	<view class="article" data-url="{{itemArticle.url}}" bindtap="bindToDetailPage">
+  		    <view class="article-title">
+  		      <text>{{itemArticle.title}}</text>
+  		    </view>
+  		    <view class="article-des">
+  		      <text>{{itemArticle.description}}</text>
+  		    </view>
+  		    <view class="g-clearfix" >
+  		      <text class="article-label">{{itemArticle.tags}}</text>
+  		      <text class="article-provider">{{itemArticle.provider || '奇舞'}}推荐</text>
+  		      <text class="article-issue" wx-if="{{itemArticle.iid > 0}}">第{{itemArticle.iid}}期</text>
+  		    </view>
+  		  </view>
+  		</block>
+  	</view>
+	</scroll-view>
+
+  <template is="loadingMore" data="{{ laddingHidden }}"/>
+</view>
+	

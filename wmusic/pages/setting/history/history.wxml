@@ -1,0 +1,13 @@
+<view class="container">
+
+    <view class="hx-ul-group">
+        <view class="hx-li" style="padding:8px;" wx:for="{{records}}" bindtap="clickItemHandler" data-index="{{index}}">
+                <view style="font-size:15px;color:#1f1f1f;">{{item.songname}}</view>
+                <view style="font-size:10px;color:#ccc;margin-top:16rpx;">
+                    <text style="background-color:#ec6e11;color:white;padding:2px 4px;border-radius:4rpx;">{{item.typeName}}</text> - {{item.singername}}
+                </view>
+        </view>
+        
+    </view>
+
+</view>

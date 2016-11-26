@@ -1,0 +1,31 @@
+.main{
+  height:100%;
+  background-color: #F5F5F5;
+}
+.listItem{
+  background-color: #fff;
+  margin: 0 5px 10px 5px;
+  padding:5px;
+  box-shadow: 3px 3px 2px #C9C9C9;
+}
+.itemInfo{
+  width: 100%;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+.itemContent{
+  width:100%;
+  clear: both
+}
+.itemUser{
+  float:left;
+  display: block;
+}
+.itemId,.itemDate,.itemReplyCount{
+  margin:0 10px 0 0;
+  float:right;
+  display: block;
+}
+.itemImg{
+  width:250px;
+}

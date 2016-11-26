@@ -1,0 +1,26 @@
+<!--list.wxml-->
+<import src="item.wxml"/>
+<view class="container">
+    <!--消息提示框-->
+    <modal title="提示" confirm-text="确定" no-cancel hidden="{{modalHidden}}" 
+            bindconfirm="modalChange">
+        {{modalValue}}
+    </modal>
+    <view wx:if="{{resultCondition}}" class="noresult">
+        <text>没有搜索到相关图书</text>
+    </view>
+    <!--加载动画-->
+    <loading hidden="{{loadingHidden}}">
+        拼命加载中...
+    </loading>
+    <scroll-view scroll-y="true" bindscrolltolower="handleToBottom" 
+                    style="height:{{deviceHeight}};">
+        <view wx:for="{{items}}" wx:key="id" class="item-container" bindtap="getBookDetail" 
+                data-id="{{item.id}}">
+            <template is="item" data="{{...item}}" />
+        </view>           
+    </scroll-view>
+    <view class="bottom-info" wx:if="{{bottomCondition}}">
+        <text>我是你的底线</text>
+    </view> 
+</view>

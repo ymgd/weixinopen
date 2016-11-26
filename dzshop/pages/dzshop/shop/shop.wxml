@@ -1,0 +1,16 @@
+
+<view class="shopbox">
+<scroll-view class="scrollbox" scroll-y="true" >
+    <view class="logoImg">
+            <image src="{{logoImg}}" mode="{{logomode}}"></image>
+
+    </view>
+    <view class="shopText">
+        <text>{{text}}</text>
+    </view>
+     <block wx:for="{{listimg}}">
+        <view class="listImg" bindtap="bbt"><image src="{{item}}" mode="{{listmode}}"></image></view>
+     </block>
+
+</scroll-view>
+</view>

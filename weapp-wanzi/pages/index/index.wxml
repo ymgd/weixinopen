@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="wrapper">
+    <scroll-view scroll-y="true" class="scroll-wrapper" 
+        style="height: {{winH}}px;">
+        <navigator url="../search/search" class="scroll-view-item">
+            <view>
+                <image src="http://wanzi.cc/mobile/public/images/earch-bg.jpg" class="item-bg"></image>
+            </view>
+        </navigator>
+        <navigator url="" class="scroll-view-item">
+            <view>
+                <image src="http://wanzi.cc/mobile/public/images/user_guid.jpg"></image>
+            </view>
+        </navigator>
+        <navigator wx:for="{{items}}" wx:key="id" url="../?index={{item.id}}"  class="scroll-view-item data-item"
+            hover-class="navigator-hover">
+            <view>
+                <image src="{{item.img}}@640w_1l_80Q" alt="{{item.desc}}"></image>
+            </view>
+        </navigator>
+    </scroll-view>
+</view>
+
+<loading hidden="{{!loading}}">
+    加载中...
+</loading>

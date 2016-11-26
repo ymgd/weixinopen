@@ -1,0 +1,27 @@
+.main{
+  height:100%;
+  background-color: #F5F5F5;
+}
+.Detail{
+  margin: 5px 5px 10px 5px;
+  box-shadow: 3px 3px 2px #C9C9C9;
+}
+.detailInfo,.Detail{
+  background-color: #fff;
+  width: 100%;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+.detailContent,.itemContent{
+  width:100%;
+  clear: both
+}
+.detailUser,.itemUser{
+  float:left;
+  display: block;
+}
+.detailId,.detailDate,.itemId,.itemDate{
+  margin:0 10px 0 0;
+  float:right;
+  display: block;
+}

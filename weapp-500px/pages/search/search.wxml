@@ -1,0 +1,30 @@
+<!--search.wxml-->
+<loading hidden="{{!loading}}">
+    Loading
+</loading>
+
+<view class="container">
+    <scroll-view class='section editor' style="height: 750px;" scroll-y="true" bindscrolltolower="loadMore">
+        <view class="search-bar">
+            <view class="search-bar-warper">
+                <icon type="search" size="16"/>
+                <input bindchange="search" placeholder="Keywords"/>
+            </view>
+        </view>
+        <view class="photo-list">
+            <block wx:for="{{photos}}">
+                <view class="photo-item" id="{{item.id}}" catchtap="lookPhoto">
+                    <image class="photo" src="{{item.images[0].url}}"></image>
+                </view>
+            </block>
+        </view>
+        <!--<view class="load-more-wrap">-->
+            <!--<block wx:if="{{hasMore}}">-->
+                <!--<text class="weui-loading"/><text class="load-content">Loading...</text>-->
+            <!--</block>-->
+            <!--<block wx:else>-->
+                <!--<view class="load-content"><text>No more...</text></view>-->
+            <!--</block>-->
+        <!--</view>-->
+    </scroll-view>
+</view>

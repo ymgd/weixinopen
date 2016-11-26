@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+var download = require('download-git-repo');
+var ora = require('ora');
+var spinner = ora('downloading template')
+
+if(process.argv[2] !== 'init') {
+	return help();
+}
+
+spinner.start();
+download('MeCKodo/wxapp',process.argv[3], function (err) {
+	spinner.stop()
+	if(err) {
+		return console.log('error   please try again.')
+	}
+	console.log()
+	console.log('    To get started:')
+	console.log()
+	console.log('      $ cd ' + process.argv[3])
+	console.log('      npm install')
+	console.log('      npm run dev')
+	console.log()
+	console.log('    Documentation can be found at https://github.com/MeCKodo/wxapp-cli')
+});
+
+function help() {
+	console.log('  Examples:')
+	console.log()
+	console.log('    # create a new project with an lightweight template')
+	console.log('    $ wxapp init my-project ')
+	console.log()
+}

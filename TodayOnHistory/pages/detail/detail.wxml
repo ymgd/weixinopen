@@ -1,0 +1,11 @@
+<view class="container">
+    <view class="ui-title ui-border-b"><text>{{detail.title}}</text></view>
+    <view class="ui-content"><text>{{detail.content}}</text></view>
+    <block wx:for="{{detail.picUrl}}">
+        <view>
+            <view><image mode="aspectFit" src="{{item.url}}"/></view>
+            <view class="ui-pic-title"><text>{{item.pic_title}}</text></view>
+        </view>
+    </block>
+</view>
+<loading hidden="{{hidden}}">Loading...</loading>

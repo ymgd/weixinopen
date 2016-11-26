@@ -1,0 +1,15 @@
+<view class="gridden-bg">
+    <image class="logo" src="../../images/login_logo.png"></image>
+    <view class="input">
+        <view>
+            <input class="input-content border-bottom" placeholder="请输入账号" />
+        </view>
+        <view>
+             <input class="input-content" password="true" placeholder="请输入密码" />
+        </view>
+    </view> 
+    <button class="button-custom" bindtap="login">登录</button>
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+    登陆成功
+    </toast>
+</view>

@@ -1,0 +1,48 @@
+<!--news.wxml-->
+<view class="page">
+    <!--引入导航条-->
+    <include src="/pages/tag/tag.wxml"/> 
+    <view class="page__bd">  
+        <view class="data-list">
+            <block wx:for="{{ballotList}}">
+              
+                <view class="data">
+                    <view class="news-item" data-ballotid="{{item.ballotId}}" data-ballotype="{{item.ballotType}}" catchtap="bindViewTap" id="{{item.ballotId}}">
+                      <image src="{{item.imgUrl}}" mode="aspectFill" class="list-image"/>
+                      <view class="news-text">
+                        <text class="news-title">
+                          <!--投票活动-->
+                          <block wx:if="{{item.ballotType==1}}">
+                          【投】{{item.ballotTitle}}
+                          </block>
+                          <!--宣传活动-->
+                          <block wx:elif="{{item.ballotType==2}}">
+                          【宣】{{item.ballotTitle}}
+                          </block>
+                          <!--用户参与-->
+                          <block wx:elif="{{item.ballotType==3}}">
+                          【参】{{item.ballotTitle}}
+                          </block>
+                          <!--外链活动-->
+                          <block wx:elif="{{item.ballotType==4}}">
+                          【链】{{item.ballotTitle}}
+                          </block>
+                          <block wx:else>
+                          【其他】{{item.ballotTitle}}
+                          </block>
+                        </text>
+                        <view class="news-stamp">
+                          <text>{{item.ballotContent}}</text>
+                        </view>
+                      </view>
+                    </view>
+                </view>     
+            </block>
+        </view>    
+    </view>
+
+    <!--加载提示-->
+    <loading hidden="{{hidden}}">
+      加载中...
+    </loading>
+</view>

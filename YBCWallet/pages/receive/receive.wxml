@@ -1,0 +1,15 @@
+<view clasclas="background">
+    <view class="zxing">
+        <image src="../../images/addresspng.png" class="erweima"></image>
+    </view>
+    <!--<view class="addressline">
+        <view class="addressk">
+            <text>dhahashfhfklhaslfhaklfhlahlal</text>
+        </view>
+    <view>
+    </view>-->
+<button class="address">dhahashfhfklhaslfhaklfhlahlal</button>
+
+    <button class="copybutton">复制地址</button>
+  
+</view>

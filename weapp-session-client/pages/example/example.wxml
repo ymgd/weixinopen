@@ -1,0 +1,3 @@
+<view>
+    <button type="primary" bindtap="doRequest">{{info}}</button>
+</view>

@@ -1,0 +1,23 @@
+<view class="calendar__wrp">
+  <view class="calendar__navbar">
+    <view class="calendar__arrow" data-type="0" bindtap="switchMonth">{{"<"}}</view>
+    <view class="calendar__date">{{date}}</view>
+    <view class="calendar__arrow" data-type="1" bindtap="switchMonth">{{">"}}</view>
+  </view>
+  <view class="calendar__head">
+    <view wx:for="{{week}}">
+      {{item}}
+    </view>
+  </view>
+  <view class="calendar__body">
+    <view wx:for="123456" class="calendar__rows" wx:for-index="row">
+      <view class="calendar__cols" wx:for="1234567" wx:for-index="col">
+        <view class="calendar__item" bindtap="clickItem" data-day="{{row * 7 - monthStart + col >-1 && row * 7 - monthStart + col < day ? row * 7 + col - monthStart + 1 : ''}}">
+          {{
+            row * 7 - monthStart + col >-1 && row * 7 - monthStart + col < day ? row * 7 + col - monthStart + 1 : ''
+          }}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

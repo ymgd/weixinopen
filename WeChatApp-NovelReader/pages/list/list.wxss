@@ -1,0 +1,17 @@
+.container{
+    align-items: center;
+    display: list-item;
+    padding-top: 30rpx;
+}
+.item{
+    border-radius: 5rpx;
+    height: 100rpx;
+     color: #fef4e9;
+    line-height: 100rpx;
+    text-align: center;
+    background-image: url("../assets/img/book-bg2.jpg");
+    background-size: cover;
+    margin: 10rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+}

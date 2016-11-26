@@ -1,0 +1,50 @@
+<view class="allthingbox">
+    <scroll-view scroll-y="true" class="thingbox" style="width:100%;">
+        <view class="box" style="width:100%;height:100%;">
+         <view class="allimg">
+            <image src="{{allimg}}"></image>
+        </view>
+        <view class="allt1">
+            <text>{{allt1}}</text>
+            <b>￥{{price}}</b>
+        </view>
+        <view class="allt2">
+            <view class="allt2_1">
+                <text>{{dress}}</text>
+                <b>{{dressinfo}}</b>
+            </view>
+            <view class="allt2_2">
+                <text>{{show}}</text>
+                <b>{{shownum}}</b>
+            </view>
+
+
+        </view>
+        <view class="allt3">
+            <view class="thing1">
+                {{thing1}}
+            </view>
+            <view class="thing2">
+                <view class="price1">
+                    {{thing2_1}}
+                </view>
+                <view class="price1">
+                    {{thing2_2}}
+                </view>
+            </view>
+        </view>
+        <view class="allt4">
+            <view class="thing1">{{info}}</view>
+            <view class="thing2">{{infothings}}</view>
+        </view>
+        <view class="images"wx:for="{{images}}">
+            <image src="{{item}}"></image>
+        </view>
+
+        </view>
+    </scroll-view>
+    <view class="buybox">
+        <image src="{{homeimg}}" bindtap="bbt1"></image>
+        <button type="text" name="button">立即购买</button>
+    </view>
+</view>

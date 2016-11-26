@@ -1,0 +1,178 @@
+.hcontainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+}
+@media screen and (max-width: 321px) {
+    .hcontainer {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 322px) and (max-width: 400px) {
+    .hcontainer {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .hcontainer {
+        font-size: 16px;
+    }
+}
+.hcontainer .htop {
+    width: 100%;
+    height: 70rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222;
+    line-height: 70rpx;
+}
+.hcontainer .htop p {
+    width: 180rpx;
+    height: 100%;
+}
+.hcontainer .htop .title {
+    width: 120rpx;
+    height: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 321px) {
+    .hcontainer .htop .title {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 322px) and (max-width: 400px) {
+    .hcontainer .htop .title {
+        font-size: 23px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .hcontainer .htop .title {
+        font-size: 24px;
+    }
+}
+.hcontainer .htop i {
+    width: 180rpx;
+    height: 100%;
+    text-indent: 30rpx;
+}
+.hcontainer .htop image {
+    position: absolute;
+    right: 160rpx;
+    top: 15rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+.hcontainer .lunbo {
+    flex: 1;
+    width: 100%;
+    height: 360rpx;
+}
+.hcontainer .lunbo .happy-list {
+    width: 100%;
+    height: 360rpx;
+}
+.hcontainer .lunbo .happy-list image {
+    width: 100%;
+    height: 360rpx;
+}
+.hcontainer .scrbot {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hcontainer .zhuanlanbox {
+    width: 720rpx;
+    height: 160rpx;
+    background: #fff;
+}
+.hcontainer .zhuanlanbox .zhuanlan {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.hcontainer .zhuanlanbox .zhuanlan li {
+    width: 140rpx;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hcontainer .zhuanlanbox .zhuanlan li image {
+    margin-top: 10rpx;
+    width: 100rpx;
+    height: 100rpx;
+}
+.hcontainer .zhuanlanbox .zhuanlan li p {
+    margin-top: 5rpx;
+    text-align: center;
+    height: 40rpx;
+    width: 100%;
+}
+.hcontainer .scrbot .jctui {
+    margin-top: 8rpx;
+    height: 40rpx;
+    width: 720rpx;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+}
+.hcontainer .scrbot .jctui p {
+    width: 120rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    color: #ed7513;
+    text-align: center;
+}
+.hcontainer .scrbot .bookbox {
+    flex: 1;
+    width: 720rpx;
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+}
+.hcontainer .scrbot .bookbox .book {
+    width: 710rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hcontainer .scrbot .bookbox view {
+    width: 710rpx;
+    height: 20px;
+    background: red;
+}
+.hcontainer .scrbot .bookbox view button {
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    border: 0;
+}
+.hcontainer .scrbot .book li {
+    box-sizing: border-box;
+    width: 344rpx;
+    height: 320rpx;
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+    display: flex;
+    flex-direction: column;
+}
+.hcontainer .scrbot .book li image {
+    width: 344rpx;
+    height: 200rpx;
+}
+.hcontainer .scrbot .book li p {
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.hcontainer .scrbot .book li b {
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #25df4e;
+}

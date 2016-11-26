@@ -1,0 +1,38 @@
+.container{
+    padding: 3%;
+    border-radius: 5px;
+    width:84%;
+    color: #999;
+    font-size: 14rpx;
+    line-height: 40rpx;
+    margin: 5px auto;
+    background: #eee;
+    font-weight: bold;
+}
+.section{
+    padding: 3%;
+    border-radius: 5px;
+    width:84%;
+    color: #666;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    margin: 5px auto;
+    background: #efefef;
+    font-weight: bold;
+}
+.context{
+    font-size: 18rpx;
+    font-weight: normal;
+    color: #444;
+}
+input{
+    width: 86%;
+    margin: 10px auto;
+    padding: 2%;
+    border: 1px solid #aaa;
+    color: #999;
+    vertical-align: middle;
+}
+button{
+    width:90%;
+}

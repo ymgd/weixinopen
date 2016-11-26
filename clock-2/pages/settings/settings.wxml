@@ -1,0 +1,136 @@
+<view>
+    <view class="sectionTitle">
+        <text>立论阶段</text>
+        <switch id="config1" class="pullRight" checked="{{configs.config1.isActive}}" bindchange="switchChangeHandler"/>
+    </view>
+
+    <view class="setTimeContainer">
+        <text>设置时间（秒）</text>
+        <view>
+            <slider id="config1" bindchange="timeSlideHandler" step="5" show-value="true" min="10" max="360" value="{{configs.config1.duration}}"/>
+        </view>
+    </view>
+
+    <view class="notificationContainer">
+        <text>提醒时间</text>
+        <radio-group id="config1" class="notificationRatioGroup" bindchange="notificationRadioHandler">
+            <label class="radio">
+                <radio value="5" checked="{{true}}"/>5秒
+            </label>
+            <label class="radio">
+                <radio value="10" checked="{{false}}"/>10秒
+            </label>
+            <label class="radio">
+                <radio value="15" checked="{{false}}"/>15秒
+            </label>
+        </radio-group>
+    </view>
+
+    <view class="sectionTitle">
+        <text>驳立论阶段</text>
+        <switch id="config2" class="pullRight" checked="{{configs.config2.isActive}}" bindchange="switchChangeHandler"/>
+    </view>
+
+    <view class="setTimeContainer">
+        <text>设置时间（秒）</text>
+        <view>
+            <slider id="config2" bindchange="timeSlideHandler" step="5" show-value="true" min="10" max="360" value="{{configs.config2.duration}}"/>
+        </view>
+    </view>
+
+    <view class="notificationContainer">
+        <text>提醒时间</text>
+        <radio-group id="config2" class="notificationRatioGroup" bindchange="notificationRadioHandler">
+            <label class="radio">
+                <radio value="5" checked="{{true}}"/>5秒
+            </label>
+            <label class="radio">
+                <radio value="10" checked="{{false}}"/>10秒
+            </label>
+            <label class="radio">
+                <radio value="15" checked="{{false}}"/>15秒
+            </label>
+        </radio-group>
+    </view>
+
+    <view class="sectionTitle">
+        <text>质辩环节</text>
+        <switch id="config3" class="pullRight" checked="{{configs.config3.isActive}}" bindchange="switchChangeHandler"/>
+    </view>
+
+    <view class="setTimeContainer">
+        <text>设置时间（秒）</text>
+        <view>
+            <slider id="config3" bindchange="timeSlideHandler" step="5" show-value="true" min="10" max="360" value="{{configs.config3.duration}}"/>
+        </view>
+    </view>
+
+    <view class="notificationContainer">
+        <text>提醒时间</text>
+        <radio-group id="config3" class="notificationRatioGroup" bindchange="notificationRadioHandler">
+            <label class="radio">
+                <radio value="5" checked="{{true}}"/>5秒
+            </label>
+            <label class="radio">
+                <radio value="10" checked="{{false}}"/>10秒
+            </label>
+            <label class="radio">
+                <radio value="15" checked="{{false}}"/>15秒
+            </label>
+        </radio-group>
+    </view>
+
+    <view class="sectionTitle">
+        <text>自由辩论</text>
+        <switch id="config4" class="pullRight" checked="{{configs.config4.isActive}}" bindchange="switchChangeHandler"/>
+    </view>
+
+    <view class="setTimeContainer">
+        <text>设置时间（秒）</text>
+        <view>
+            <slider id="config4" bindchange="timeSlideHandler" step="5" show-value="true" min="10" max="360" value="{{configs.config4.duration}}"/>
+        </view>
+    </view>
+
+    <view class="notificationContainer">
+        <text>提醒时间</text>
+        <radio-group id="config4" class="notificationRatioGroup" bindchange="notificationRadioHandler">
+            <label class="radio">
+                <radio value="5" checked="{{true}}"/>5秒
+            </label>
+            <label class="radio">
+                <radio value="10" checked="{{false}}"/>10秒
+            </label>
+            <label class="radio">
+                <radio value="15" checked="{{false}}"/>15秒
+            </label>
+        </radio-group>
+    </view>
+
+    <view class="sectionTitle">
+        <text>总结陈词</text>
+        <switch id="config5" class="pullRight" checked="{{configs.config5.isActive}}" bindchange="switchChangeHandler"/>
+    </view>
+
+    <view class="setTimeContainer">
+        <text>设置时间（秒）</text>
+        <view>
+            <slider id="config5" bindchange="timeSlideHandler" step="5" show-value="true" min="10" max="360" value="{{configs.config5.duration}}"/>
+        </view>
+    </view>
+
+    <view class="notificationContainer">
+        <text>提醒时间</text>
+        <radio-group id="config5" class="notificationRatioGroup" bindchange="notificationRadioHandler">
+            <label class="radio">
+                <radio value="5" checked="{{true}}"/>5秒
+            </label>
+            <label class="radio">
+                <radio value="10" checked="{{false}}"/>10秒
+            </label>
+            <label class="radio">
+                <radio value="15" checked="{{false}}"/>15秒
+            </label>
+        </radio-group>
+    </view>
+</view>

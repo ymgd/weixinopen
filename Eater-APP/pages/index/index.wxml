@@ -1,0 +1,23 @@
+<view class = 'banner'>
+	<swiper indicator-dots='true'
+  autoplay='true' interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image  src="{{item}}" class="slide-image" width='750'/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class='containbox'>
+  <text class='toptitle'>{{toptitle}}</text>
+  	<block wx:for="{{topcontain}}">
+	  <view class ='topitem'>
+	  	<image src = "{{item.src}}" class="topitemimg"/>
+	  	<view class ="right">
+	  		<view class ="title">{{item.title}}</view>
+	  		<view class="desc">{{item.desc}}</view>
+	  	</view>
+	  </view>
+	</block>
+</view>
+

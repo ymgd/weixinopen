@@ -1,0 +1,154 @@
+
+page {
+    background: #efe9de;
+}
+.top {
+    width: 100%;
+    position: relative;
+}
+.banner {
+    width: 100%;
+    height: 547rpx;
+}
+.top .info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 30rpx;
+}
+.top .info text {
+    display: block;
+    line-height: 1.5em;
+}
+.top .info .name {
+    font-size: 50rpx;
+    font-weight: bolder;
+}
+.top .info .tips {
+    font-size: 32rpx;
+}
+/* guide detail */
+.guide {
+    background: #efe9de;
+}
+.bg-wrap {
+    position: relative;
+    height: 470rpx;
+    overflow: hidden;
+}
+.bg-wrap .tag {
+    width: 105rpx;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bg-wrap .tag image {
+    width: 100%;
+    height: 181rpx;
+    opacity: 0.9;
+    z-index: 1;
+}
+.bg-wrap .tag .comments {
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 26rpx;
+    width: 100%;
+    padding-top: 20rpx;
+    line-height: 1.2em;
+}
+.bg-wrap .tag text {
+    display: block;
+}
+.user-bg {
+    width: 100%;
+}
+.guide-info {
+    padding: 50rpx 25rpx;
+    line-height: 1em;
+    position: relative;
+}
+.guide-info .desc {
+    font-size: 26rpx;
+}
+.guide-info .addr {
+    font-size: 24rpx;
+    color: rgb(198, 191, 181);
+}
+.guide-info .user {
+    position: absolute;
+    right: 0;
+    top: -65rpx;
+    width: 210rpx;
+    text-align: center;
+}
+.guide-info .avatar {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 130rpx;
+    display: block;
+    margin: auto;
+}
+.guide-info .user .tips {
+    display: block;
+    font-size: 24rpx;
+    line-height: 1.75em;
+}
+.guide-info .user .job {
+    color: #888880;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.loading-img {
+    background: #efe9de;
+    text-align: center;
+}
+.loading-img image {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+/* mid */
+.mid {
+    padding: 26rpx;
+}
+.mid .item {
+    display: flex;
+    padding: 20rpx;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+.mid .date {
+    flex: 1;
+    text-align: center;
+    padding: 6rpx;
+}
+.mid .date:first-child {
+    border-right: 1px #ccc solid;
+}
+.mid .date .picker text {
+    display: block;
+    font-size: 28rpx;
+    line-height: 1.75em;
+}
+.mid .date .picker .tips {
+    color: #ccc;
+}
+.mid .item .selector {
+    color: #7C7C7C;
+    font-size: 28rpx;
+    width: 100%;
+}
+.right-icon {
+    width: 20rpx;
+    height: 30rpx;
+    vertical-align: middle;
+    float: right;
+    line-height: 34rpx;
+}

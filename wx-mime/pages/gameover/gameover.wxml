@@ -1,0 +1,8 @@
+<!--gameover.wxml-->
+<view class="wrapper">
+    <image src="../../res/gameover.jpg" mode="aspectFit" class="banner"></image>
+    <view class="info">
+        <view class="item">我的得分：<text class="data">{{score}}</text></view>
+        <view class="item">房间号：<text class="data">{{roomNo}}</text></view>
+    </view>
+</view>

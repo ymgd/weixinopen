@@ -1,0 +1,13 @@
+<view class="wrapper">
+    <swiper class="playing" style="height: {{winH}}px;" bindchange="swiperChange"
+        indicator-dots="{{splashes.length>1?true:false}}" autoplay="{{false}}">
+        <block wx:for="{{splashes}}" wx:key="*this">
+            <swiper-item>
+                <view class="inner-wrapper">
+                    <image src="{{item}}" class="slide-image"
+                    mode="aspectFill" style="height: {{winH}}px;"></image>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

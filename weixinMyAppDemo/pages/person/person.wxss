@@ -1,0 +1,64 @@
+@import "../css/widgets.wxss";
+.user-head-bg{
+    background-color: #e02e25;
+    background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+    height: 350rpx;
+}
+ 
+.user-head-logo-bg{
+    width: 140rpx;
+    height: 140rpx;
+    border: 6rpx solid rgba(255,255,255,.3);
+    border-radius: 80rpx;
+    overflow: hidden;
+    position: absolute;
+    /*bottom: 1.85rem;*/
+    top: 1rem;
+    left: 50%;
+    margin-left: -70rpx;
+}
+.user-head-logo{
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+}
+.user-head-bg-font-group{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 5.5rem;
+}
+.user-head-bg-font-name{
+    font-size: 28rpx;
+    width: 6rem;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+}
+.user-head-bg-font-description{
+    font-size: 24rpx;
+    margin-top: .1rem;
+    text-align: center;
+}
+.user-head-bg-font-description-num,.user-head-bg-font-description-local{
+    margin: 0 10rpx;
+    float: left;
+}
+.user-head-btn-group{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: .3rem;
+}
+.user-head-btn{
+    background-color: transparent;
+    border: 2rpx solid #e3e3e3;
+    color: #fff;
+    font-size: 22rpx;
+    width: 160rpx;
+    height: 44rpx;
+    border-radius: 50rpx;
+}

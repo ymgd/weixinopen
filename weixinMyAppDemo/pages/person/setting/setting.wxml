@@ -1,0 +1,45 @@
+
+<view class="container">
+    <modal title="标题"   hidden="{{modalHidden}}" bindconfirm="modalConfim" bindcancel="modalCancel">
+        {{modalContent}}
+    </modal>
+     <loading hidden="{{loadingHidden}}" bindchange="loadingChange">
+    	{{loadingContent}}
+    </loading>
+    <view class="widgets">
+        <view class="widgets__item">
+            <view class="widgets__list widgets__list_show">
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <text class="widget__name__only">邀请好友</text>
+                    <image class="widget__arrow" src="../../images/arrow-right.png" background-size="cover" />
+                    <view class="widget__line"></view>
+                </navigator>
+            </view>
+            <view class="widgets__list widgets__list_show">
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <text class="widget__name__only">意见反馈</text>
+                    <image class="widget__arrow" src="../../images/arrow-right.png" background-size="cover" />
+                    <view class="widget__line"></view>
+                </navigator>
+            </view>
+            <view class="widgets__list widgets__list_show">
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <text class="widget__name__only">清空缓存</text>
+                    <image class="widget__arrow" src="../../images/arrow-right.png" background-size="cover" />
+                    <view class="widget__line"></view>
+                </navigator>
+            </view>
+            <view class="widgets__list widgets__list_show">
+                <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                    <text class="widget__name__only">关于我们</text>
+                    <image class="widget__arrow" src="../../images/arrow-right.png" background-size="cover" />
+                </navigator>
+            </view>
+        </view>
+    </view>
+    <view class="buttons-group setting-btn-group" wx:if="{{userInfo.has}}" >
+		<button type="button" class="buttons"  id="submit" bindtap="login"  plain="true" type="warn" bindtap="loginOut">
+			退出登录
+		</button>
+	</view>
+</view>

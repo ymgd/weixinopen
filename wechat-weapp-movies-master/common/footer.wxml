@@ -1,0 +1,12 @@
+<template name="footer">
+    <view class="footer" wx:if="{{isLoadMore}}">
+        
+        <image src='../res/images/refresh.png' mode="aspectFit" animation="{{animationData}}"/>
+        
+        <!--
+        <image src='../res/images/loading.gif' mode="aspectFit"/>
+        -->
+
+        <text>加载中.....</text>
+    </view>
+</template>

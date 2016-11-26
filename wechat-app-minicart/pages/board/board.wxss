@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 32rpx;
+}
+.head {
+  line-height: 1;
+}
+.body {
+  padding-top: 8rpx;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  flex: 1;
+  overflow: auto;
+  background-color:#EFEFEF
+}
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.header {
+  padding: 40rpx 80rpx 20rpx;
+}
+.title {
+  display: block;
+  font-size: 50rpx;
+}
+.description {
+  display: block;
+  margin-top: 30rpx;
+  color: #888;
+  font-size: 28rpx;
+}
+
+.board {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #FBF9FE;
+  overflow: hidden;
+  border-radius: 4rpx;
+  cursor: pointer;
+}
+.board-info {
+  display: flex;
+  padding: 40rpx;
+  align-items: center;
+  flex-direction: row;
+}
+.board-name {
+  flex: 1;
+}
+.board-img {
+  width: 32rpx;
+  height: 32rpx;
+}
+.my_item{
+   width: 100%;
+   background-color:white
+}
+.item_bigImage{
+  width: 100%;
+  height: 180px;
+  mode:scaleFill
+
+}
+.item-pro-name {
+  
+  color: red;
+ 
+
+}
+.item-subs{
+  display:flex;
+  margin-bottom: 10px;
+  justify-content: space-between
+
+}
+
+.sub-title-count{
+  margin-left: -50px;
+}
+.addBtn-image{
+
+margin-right:0;
+margin-bottom:00px;
+width:25px;
+height:25px;
+}
+
+.meta {
+  margin-bottom:10px;
+  background-color:white
+}

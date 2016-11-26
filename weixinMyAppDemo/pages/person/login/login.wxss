@@ -1,0 +1,44 @@
+@import "../../css/button.wxss";
+page{
+  background-color: #fff;
+}
+
+.login-group{
+    margin-top: 100rpx;
+    border:2rpx solid #DCDCDC;
+    margin:100rpx 50rpx 20rpx 50rpx;
+    border-radius: 5rpx;
+}
+.login-option{
+    line-height: 45px;
+    padding: 0 15px;
+    font-size: 13px;
+    display: block;
+    width: 590rpx;
+    
+    
+}
+.login-line{
+  border-bottom: 2rpx solid #e3e3e3;
+  margin: 0 15px;
+}
+ 
+.login-input{
+    text-align: right;
+    height: 45px;
+    float: left;
+    width:530rpx;
+}
+.login-image{
+  width:45rpx;
+  height: 45rpx;
+  float: left;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+}
+.login-btn-group{
+  margin-top:60rpx;
+}
+ 
+
+

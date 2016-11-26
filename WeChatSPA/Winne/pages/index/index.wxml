@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" mode="aspectFit" bindtap="onUserinfo" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-province">{{userInfo.province}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">选购一款属于自己的 Winne The Pool !</text>
+    <button class="startbut"  bindtap="onShop">马上开始！</button>
+  </view>
+</view>

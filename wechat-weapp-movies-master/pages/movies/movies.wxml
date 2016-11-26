@@ -1,0 +1,62 @@
+<import src="../../common/footer.wxml"/>
+
+    <!-- issue: 当scroll-view组件的高度设为100%时不会触发加载更多事件, 当设为屏幕高度时每次手指下滑总会触发下拉刷新事件-->
+    <scroll-view style="height: {{screenHeight}}px" class="container" scroll-y="true" bindscroll="scrollEvent" bindscrolltolower="loadMoreEvent">
+        <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+            <block wx:for="{{bannerUrls}}">
+                <swiper-item>
+                    <image style="width: 100%; height: 100%" src="{{item.url}}" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="onClickBannerListener"/>
+                </swiper-item>
+            </block>
+        </swiper>
+
+        <block wx:for="{{moveItems}}">
+            <view class="itemContainer" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="onItemClick">
+                <view class="item-image">
+                    <image src="{{item.img}}"/>
+                </view>
+                <view class="content">
+                    <view>
+                        <text class="label">电影:</text><text>{{item.title}}</text>
+                    </view>
+                    <view>
+                    <block wx:if="{{item.score}} > 0">
+                        <text class="label">评分:</text><text class="score">{{item.score}}</text>
+                    </block>
+                    <block wx:else>
+                        <text class="label">暂无评分</text>
+                    </block>
+                    </view>
+                    <view>
+                        <text class="label">收藏:</text><text>{{item.collect}}</text>
+                    </view>
+                    <view>
+                        <text class="label">导演:</text><text>{{item.director}}</text>
+                    </view>
+                    <view>
+                        <text class="label">主演:</text>
+                        <block wx:for="{{item.cast}}" wx:for-item="itemCast">
+                            <text>{{itemCast}}  </text>
+                        </block>
+                        <!-- tips: 多个连续的block组件布局显示为挤在一行排列, 一行显示不完才换行, 而多个连续的view组件布局显示为一个view标签就会占据一行.-->
+                    </view>
+                </view>
+            </view>
+        </block>
+
+        <!--
+        <view class="loadMore" wx:if="{{isLoadMore}}">
+            <image src='../res/images/refresh.png' mode="aspectFit" animation="{{animationData}}"/>
+        </view>
+        -->
+        
+        
+        <template is="footer" data="{{isLoadMore, animationData}}"/>
+        
+<!--
+        <view class="loadMore" wx:if="true">
+            <text>加载中.....</text>
+        </view>
+-->
+
+    </scroll-view>

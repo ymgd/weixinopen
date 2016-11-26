@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/new/new",
+    "pages/newDetail/newDetail"
+  ],
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/home1.jpg",
+        "selectedIconPath": "pages/img/home.jpg"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "菜谱",
+        "iconPath": "pages/img/book1.jpg",
+        "selectedIconPath": "pages/img/book.jpg"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/img/mine1.jpg",
+        "selectedIconPath": "pages/img/mine.jpg"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  }
+}

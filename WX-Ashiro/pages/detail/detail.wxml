@@ -1,0 +1,23 @@
+<view class="main">
+  <scroll-view  style="height:100%" scroll-y="true" bindscrolltolower="next" bindscrolltoupper="last">
+   <view class="detailInfo">
+          <view class="detailId">No.{{Detail.id}}</view>
+          <view class="detailUser">{{Detail.userid}}</view>
+          <view class="detailContent">{{Detail.content}}</view>
+          <image class="detailImg" wx-if="{{Detail.img != ''}}" mode="aspectFit" src="{{'http://img1.nimingban.com/image/'+Detail.img+Detail.ext}}"></image>
+          <view class="detailDate">{{Detail.now}}</view>
+    </view>
+  	<block wx:for="{{Detail.replys}}">
+      <view class="Detail" index="{{index}}" id="{{item.id}}" >
+        <view class="itemId">No.{{item.id}}</view>
+        <view class="itemUser">{{item.userid}}</view>
+        <view class="itemContent">{{item.content}}</view>
+        <image class="itemImg" wx-if="{{item.img != ''}}" mode="aspectFit" src="{{'http://img1.nimingban.com/image/'+item.img+item.ext}}"></image>
+        <view class="itemDate">{{item.now}}</view>
+      </view>
+    </block>
+  </scroll-view>
+    <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

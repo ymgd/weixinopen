@@ -1,0 +1,10 @@
+.log {
+  color: #999;
+}
+.log_item{
+  padding: 15px 5px;
+  border-bottom: 1px solid #ebebeb;
+}
+.log_item text {
+  padding-right: 20px;
+}

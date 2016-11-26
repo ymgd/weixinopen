@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "rgb(31, 194, 255)",
+  "navigationBarTitleText": "WORDS",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

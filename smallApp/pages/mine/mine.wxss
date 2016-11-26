@@ -1,0 +1,30 @@
+/** index.wxss**/
+.navbar{
+    display: flex;
+    border-bottom:1px solid #eee;
+}
+.navbar-item{
+    flex:1.0;
+    text-align:center;
+    font-size:14px;
+    color:#999;
+    margin-bottom:-1px;
+}
+.navbar-text{
+    display: block;
+    width:30px;
+    padding:10px;
+    margin:auto;
+}
+.navbar-text.active{
+    border-bottom:2px solid #000;
+    color:#000;
+    font-weight:bold;
+}
+/**position属性指定一个元素（静态的，相对的，绝对或固定）的定位方法的类型。*/
+.image-container{
+    position:relative;
+}
+.hidden {
+    display: none;
+}

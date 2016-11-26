@@ -1,0 +1,62 @@
+<!--news.wxml-->
+<view class="page">
+    <view class="page__bd">
+        
+        <block wx:if="{{errorMsg==''}}">
+              <view class="data">
+                  <view class="news-item">
+                    <text class="news-title">{{ballotInfo.ballotTitle}}</text>
+                    <view class="description">
+                      <text>{{ballotInfo.ballotContent}}</text>
+                    </view>
+                    <view class="news-text">
+                      <scroll-view scroll-y="true" style="height:100%;">
+                        <view class="description">
+                          <text>{{ballotInfo.contentData}}</text>
+                        </view>
+                      </scroll-view>
+                    </view>
+
+
+
+                    <block wx:for="{{ballotInfo.data}}">
+                        <view class="data">
+                            <view class="news-item" data-ballotid="{{item.ballotId}}" data-ballotype="{{item.ballotType}}" id="{{item.ballotId}}">
+                              <image src="{{item.imgurl}}" mode="aspectFill" class="list-image"/>
+                              <view class="news-text">
+                                <text class="news-title">
+                                  {{item.voteName}}
+                                </text>
+                                <view class="news-stamp">
+                                  <text>{{item.subject}}</text>
+
+                                  <text id="totalpoint">共{{item.totalpoint}}票</text>
+                                </view>
+                                <button type="primary" data-voteid ="{{item.voteid}}" data-index ="{{index}}" size="mini"  bindtap="primary">投票</button>
+                              </view>
+                            </view>
+                        </view>     
+                    </block>
+
+
+
+                  </view>
+              </view>
+        </block>
+        <block wx:else>
+            <view  class="tip">
+              <icon type="warn" size="45" color="{{item}}"/>
+              <view>
+                {{errorMsg}}
+              </view>
+            </view>
+            
+        </block>
+    </view>
+
+    <view class="body-view">
+        <toast hidden="{{toastHidden}}" icon="{{toastIcon}}" duration="2000" bindchange="hiddenToast">
+            {{toastMsg}}
+        </toast>
+    </view>
+</view>

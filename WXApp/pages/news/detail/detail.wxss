@@ -1,0 +1,21 @@
+view {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+view .title {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+view image {
+  width: 100%;
+}
+
+view .body {
+  font-size: 12px;
+}

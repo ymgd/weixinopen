@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+    <view bindtap="bindViewTap" class="userinfo">
+        <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+        <text class="userinfo-nickname">嗨! {{ userInfo.nickName }}</text>
+    </view>
+    <view class="task">
+        <view wx:if="{{ taskNumber == 0 }}" class="notask item">
+            今天你还没有开始做任务哦!
+        </view>
+        <view wx:else class="todayTask item">
+            今日创建任务: {{ taskNumber }} 个
+        </view>
+        <button class="btn gotask-btn" bindtap="goDoTask">开始任务</button>
+        <!--<navigator class="btn gotask-btn" url="./tomato">开始任务</navigator>-->
+    </view>
+    <view class="dates">
+        <text>{{ currentTime }}</text>
+        <text>{{ weekday }}</text>
+    </view>
+    <view class="weather">
+        <view class="current">
+            <text>{{ weather.city }}</text>
+            <text>{{ weather.curSummary }}</text>
+            <text>{{ weather.temperature }}℃</text>
+        </view>
+        <view class="summary">
+            <text>{{ weather.weekSummary }}</text>
+        </view>
+    </view>
+
+</view>

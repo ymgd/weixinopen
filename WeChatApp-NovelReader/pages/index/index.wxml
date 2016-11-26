@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container root">
+<block wx:for="{{datas}}" wx:for-item="data"> 
+  <!--单个Item-->
+  <view class="book-item-root">
+    <!--图书封面和背景显示-->
+    <view class="book-img-root">
+        <!--背景-->
+        <image class="book-img-bg" src="{{data.bg}}"></image>
+        <!--封面图片-->
+        <image class="book-img" src="{{data.large_cover}}" bindtap="clickShowList" id="{{index+1}}"></image>
+    </view>
+    <!--图书标题-->
+    <view class="book-title">{{data.title}}</view>
+    <!--图书内容-->
+    <view class="book-content">{{data.rec_description}}</view>
+    <!--图书标签-->
+    <view class="book-tags">{{data.tags}}</view>
+  <!--底部三个图标-->
+  <view class="book-info-root">
+    <!--显示观看过的人数-->
+    <view class="book-info">
+        <!--图标-->
+        <image class="book-info-icon" src="../assets/img/tab3.png"></image>
+        <!--文本-->
+        <view class="book-info-content">{{data.hits}}</view>
+    </view>
+     <!--显示收藏的人数-->
+    <view class="book-info">
+        <!--图标-->
+        <image class="book-info-icon" src="../assets/img/tab2.png"></image>
+        <!--文本-->
+        <view class="book-info-content">{{data.fav_count}}</view>
+    </view>
+     <!--显示参与评论的人数-->
+    <view class="book-info">
+        <!--图标-->
+        <image class="book-info-icon" src="../assets/img/tab1.png"></image>
+        <!--文本-->
+        <view class="book-info-content">{{data.comment_count}}</view>
+    </view>
+  </view>
+  </view>
+  </block>
+</view>

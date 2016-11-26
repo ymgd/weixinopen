@@ -1,0 +1,19 @@
+/** common.wxss **/
+.menuItem_name{
+   height: 20px;
+   width: 60px;
+   display: flex;
+   font-size: 15rpx;
+   justify-content: center;
+   align-items: center;
+}
+
+.menuItem_icon{
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+.flex-wrp{
+  display:flex;
+  background-color: #FFFFFF;
+}

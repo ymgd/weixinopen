@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+
+<view class="section">
+  <view class="section__title">快递公司选择器</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+
+  <input placeholder="请输入运单号" bindinput="input"/>
+  <button type="primary" bindtap="btnClick"> 查询 </button>
+  
+  <scroll-view scroll-y="true" style="height: 300px;" >
+    <view wx:for="{{expressInfo.result.list}}">
+    [{{item.datetime}}]
+    {{item.remark}}
+    </view>
+  </scroll-view>
+</view>

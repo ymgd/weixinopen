@@ -1,0 +1,48 @@
+.calendar__navbar {
+  height: 83rpx;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #e9a4dd;
+  color: #fff; }
+  .calendar__navbar .calendar__arrow {
+    width: 220rpx;
+    font-weight: bold; }
+  .calendar__navbar .calendar__date {
+    flex: 1;
+    font-size: 30rpx; }
+
+.calendar__head {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  height: 80rpx;
+  background: #f4e2f0;
+  font-size: 28rpx; }
+  .calendar__head view {
+    display: block;
+    flex: 1; }
+
+.calendar__body {
+  background: #f7e2f1; }
+
+.calendar__rows {
+  height: 98rpx;
+  display: flex;
+  overflow: hidden;
+  padding: 0 4rpx 8rpx;
+  align-items: center; }
+
+.calendar__cols {
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  padding: 0 4rpx;
+  display: flex; }
+
+.calendar__item {
+  background: #fff;
+  width: 100%;
+  height: 100%; }

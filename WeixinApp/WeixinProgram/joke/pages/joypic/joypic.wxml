@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="group" wx:for="{{jokepicData}}">
+    <block class="jokeitem">{{item.content}} </block>
+    <image mode="aspectFill" src="{{item.url}}"></image>
+  </view>
+</view>

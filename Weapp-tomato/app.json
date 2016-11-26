@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/Todo/index",
+    "pages/Todo/tomato",
+    "pages/Todo/todayList",
+    "pages/Todo/historyList",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#df3031",
+    "navigationBarTitleText": "一天",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#df3031",
+    "borderStyle": "white",
+    "backgroundColor": "#faf9f9",
+    "list": [
+      {
+        "pagePath": "pages/Todo/index",
+        "text": "主页",
+        "iconPath": "images/listIcon/home.png",
+        "selectedIconPath": "images/listIcon/home_s.png"
+      },
+      {
+        "pagePath": "pages/Todo/tomato",
+        "text": "任务",
+        "iconPath": "images/listIcon/clock.png",
+        "selectedIconPath": "images/listIcon/clock_s.png"
+      },
+      {
+        "pagePath": "pages/Todo/todayList",
+        "text": "今日",
+        "iconPath": "images/listIcon/list.png",
+        "selectedIconPath": "images/listIcon/list_s.png"
+      },
+      {
+        "pagePath": "pages/Todo/historyList",
+        "text": "历史",
+        "iconPath": "images/listIcon/history.png",
+        "selectedIconPath": "images/listIcon/history_s.png"
+      }
+    ]
+  },
+  "debug": true
+}

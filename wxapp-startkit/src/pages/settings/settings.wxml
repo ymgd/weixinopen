@@ -1,0 +1,5 @@
+<view class="container log-list">
+
+  <text class="log-item">设置</text>
+
+</view>

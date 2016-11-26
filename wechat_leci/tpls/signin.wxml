@@ -1,0 +1,17 @@
+<template name="signin">
+    <view>
+        <!-- <modal title="微信游客模式,点击头像登陆" hidden="{{modalHidden2}}" confirm-text="" cancel-text=""></modal> -->
+        <modal title="请登录乐词" confirm-text="confirm" cancel-text="cancel" hidden="{{modalHidden}}" bindconfirm="actionConfirm" bindcancel="actionCancel">
+            <view class="section">
+                <label>
+                    <text>name:</text>
+                    <input type="text" placeholder="输入用户名" value='{{username}}' bindinput="saveInput"/>
+                </label>
+                <label>
+                    <text>password:</text>
+                    <input type="text" placeholder="输入密码" value='{{password}}'/>
+                </label>
+            </view>
+        </modal>
+    </view>
+</template>

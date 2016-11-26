@@ -1,0 +1,29 @@
+.play .image {
+  width: 100%;
+}
+
+.play .image:after {
+  padding-top: 75%;
+}
+
+.content .title {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  font-size: 1rem;
+}
+.content .subtitle {
+  text-align: center;
+  padding: 10px;
+  color: #555;
+  font-size: .8rem;
+}
+.content .play-btn {
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+}
+.play-btn image {
+  width: 20vw;
+  height: 20vw;
+}

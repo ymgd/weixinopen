@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="indexbox">
+  <swiper class="index-list" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}"
+   duration="{{swiper.duration}}" current="{{current}}"  bindchange="changeSlider" >
+        <block wx:for="{{listimg}}" >
+            <swiper-item>
+                    <image src="{{item[0]}}" mode="aspectFill" data-index="{{item[1]}}"  catchtap="tap"></image>
+            </swiper-item>
+          </block>
+       </swiper>
+  </view>

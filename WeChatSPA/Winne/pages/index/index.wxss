@@ -1,0 +1,40 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #666;
+  margin-top:30rpx;
+}
+
+.userinfo-province {
+  color: #666;
+  margin-top:50rpx;
+}
+
+.usermotto {
+  margin-top: 190rpx;
+}
+
+.startbut {
+  margin-top: 20px;
+  margin-bottom: 160rpx;
+}
+
+.section {
+  width: 750rpx;
+  height: 200rpx;
+  margin: 10rpx;
+  background-color: blanchedalmond;
+  align-content: center;
+}

@@ -1,0 +1,39 @@
+/**t_mark.wxss**/
+.pull-right {
+    text-align: right;
+    color: blue;
+    }
+.pull-left {
+    color: red;
+}
+.title {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 7rpx 10px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.body {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.send {
+  height: 10%;
+  flex-direction: row;
+  align-items: left;
+  padding: 10rpx 5rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.send-section {
+  display: flex;
+}
+.input {width: 500rpx;}
+.btn-mini {width:250rpx;}

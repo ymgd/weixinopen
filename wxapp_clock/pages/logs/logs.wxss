@@ -1,0 +1,85 @@
+.container-countdown {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 80rpx 0;
+  box-sizing: border-box;
+  background-color: aqua;
+} 
+
+.heading {
+    font-size: 3.4em;
+    font-weight: 700;
+    align-self: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40rpx;
+    margin-top: 40rpx;
+}
+
+.picker {
+    width: 190rpx;
+    height: 60rpx;
+    margin-right: 23rpx;
+    display: inline-block;
+    font-size: 1.3em;
+}
+
+.count-down {
+  font-size: 3.4em;
+  font-weight: 500;
+  align-self: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  width: 100%;
+  align-items: space-around;
+  padding-top: 70rpx;
+}
+
+.button-start{
+  background-color: green;
+  height: 228rpx;
+  width: 228rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-stop{
+  display: flex;
+  background-color: red;
+  height: 228rpx;
+  width: 228rpx;
+  border-radius: 50%;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-text {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.time-up-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80rpx 0;
+    box-sizing: border-box;
+    background-color: pink;
+}

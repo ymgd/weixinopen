@@ -1,0 +1,17 @@
+<!--t_tasks.wxml-->
+<view class="tasks-list">
+  <block wx:for="{{tasks}}" wx:for-item="task">
+    <view bindtap="t_students" bindinglongtap="action_sheet"  class="tasks-item">
+       <text>{{index + 1}}. {{task.time}}</text>
+       <text>{{ task.details}}</text>
+    </view>
+  </block>
+</view>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <action-sheet-item class="item" bindtap="edit_task" data-name="edit">修改</action-sheet-item>
+    <action-sheet-item class="item" bindtap="delete_task" data-name="delete">删除</action-sheet-item>
+  <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>
+<toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+  作业删除成功
+</toast>

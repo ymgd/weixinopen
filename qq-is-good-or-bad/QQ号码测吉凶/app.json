@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+ "window":{
+   "backgroundTextStyle":"black",
+    "backgroundColor":"#fff",
+    "navigationBarBackgroundColor":"#000",
+    "navigationBarTitleText":"你的QQ号是吉是凶？",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"true"
+  }
+}

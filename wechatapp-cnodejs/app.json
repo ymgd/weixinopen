@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/topics/topics",
+    "pages/detail/detail",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"black",
+    "backgroundColor":"#fff",
+    "navigationBarBackgroundColor": "#3b6aa4",
+    "navigationBarTitleText": "CNode社区",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar":{
+    "color":"#434343",
+    "selectedColor":"#fff",
+    "borderStyle":"white",
+    "backgroundColor":"#3b6aa4",
+    "list":[
+      {
+        "pagePath":"pages/topics/topics",
+        "text":"首页",
+        "iconPath":"assets/tabBar/home.png",
+        "selectedIconPath":"assets/tabBar/home_sel.png"
+      },{
+        "pagePath":"pages/user/user",
+        "text":"我的",
+        "iconPath":"assets/tabBar/user.png",
+        "selectedIconPath":"assets/tabBar/user_sel.png"
+      }
+    ]
+  }
+}

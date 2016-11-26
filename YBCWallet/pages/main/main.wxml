@@ -1,0 +1,43 @@
+<view>
+    <view class="page-top">
+        <text class="coinnumber">10.16342323</text>
+        <text class="coinusetitle">可用余额(YBC)</text>
+    </view>
+    <view class="page-button">
+        <view class="in-button" bindtap="InButton">
+            <image src="../../images/icon_extract.png" class="icon-img"></image>
+            <text class="inout_text">充币</text>
+        </view>
+        <view class="out-button" bindtap="OutButton">
+            <image src="../../images/icon_recharge.png" class="icon-img"></image>
+             <text class="inout_text">提币</text>
+        </view>
+    </view>
+    <!--<view  stytle=" overflow-x: hidden; overflow-y: auto;">-->
+    <view class="message__list">
+     <block wx:for="{{messages}}">
+        <navigator >
+        <!--<navigator url="/pages/message/chat/chat">-->
+          <view class="item" >
+             <view class="item-left">
+                  <image src="{{item.url}}" class="image"/>
+             </view>
+             <view class="item-middle">
+                  <view>
+                       <text class="title">{{item.title}}</text>
+                  </view>
+                  <view>
+                      <text class="message">{{item.message}}</text>
+                  </view>
+            </view>
+            <view class="item_right">
+                <view><text class="time">{{item.time}}</text></view>
+                <view class="mark" wx:if="{{item.count>0}}"><text class="text">{{item.count}}</text></view>
+            </view>
+         </view>
+         <view  class="line"></view>
+       </navigator>
+    </block>
+  </view>
+  <!--</view>-->
+</view>

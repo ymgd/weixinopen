@@ -1,0 +1,17 @@
+<!--main.wxml-->
+<view class="page">
+    <view class="container">
+        <view class="section">
+            <view class="section__title">你要查询的是：{{inputValue}}</view>
+            <input  bindinput="bindKeyInput" placeholder="请输入要查询的城市名称" value="{{inputValue}}"/>
+        </view>
+        <view class="btn-area">
+        <button type="primary" loading="{{loading}}"
+                disabled="{{disabled}}" bindtap="search"> 查询
+        </button>
+        </view>
+        <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange" bindcancel="modalChange">
+            {{modalErrorText}}
+        </modal>
+    </view>
+</view>

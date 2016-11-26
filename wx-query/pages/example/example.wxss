@@ -1,0 +1,42 @@
+.page-body-wrapper {
+    flex-grow : 1;
+    margin-top : 50rpx;
+}
+
+.block-body {
+    min-height : 300rpx; 
+}
+
+.block {
+    width : 300rpx;
+    height : 300rpx;
+    margin : 0rpx auto;
+    background-color : #000000;
+}
+
+.buttons {
+    margin-top : 50rpx;
+    padding : 50rpx 50rpx 10rpx;
+    border-top : 1px solid #ccc;
+    display : flex;
+    flex-grow : 1;
+    overflow-y : scroll;
+    flex-direction : row;
+    flex-wrap : wrap;
+    width : 100%;
+    height : 700rpx;
+    box-sizing : border-box;
+}
+
+.button {
+    width : 300rpx;
+    margin : 20rpx auto; 
+}
+
+.round {
+    border-radius : 50rpx;
+}
+
+.transform {
+    transform : rotate(45deg);
+}

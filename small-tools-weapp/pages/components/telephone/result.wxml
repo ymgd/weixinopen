@@ -1,0 +1,29 @@
+<View class="page">
+
+    <view class="container" style="align-items: center">
+        <icon class="section" type="success" size="70"></icon>
+        <view class="text_area">
+         <text >
+            号码: {{inputValue}}
+        </text>
+        <text >
+            省份: {{province}}
+        </text>
+        <text>
+            城市: {{city}}
+        </text>
+        <text >
+            区号: {{areacode  }}
+        </text>
+        <text>
+            邮编: {{zip}}
+        </text>
+       <text >
+            运营商: {{company}}
+        </text>
+        <text >
+            卡类型: {{card}}
+        </text>
+        </view>
+    </view>
+</View>

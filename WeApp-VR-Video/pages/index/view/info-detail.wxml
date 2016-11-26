@@ -1,0 +1,12 @@
+<view class="page">
+    <view class="page__hd info-view">
+        <image class="info-img" src="{{info_detail.article.cover}}"></image>
+        <text class="info-tag">时长：{{info_detail.article.duration}}| 大小：{{info_detail.article.size}}| 标签：{{info_detail.article.tags}}</text>
+        <text class="info-detail-title">影片详情：</text>
+        <text class="info-detail-con">{{info_detail.article.desc}}</text>
+        <toast hidden="{{toast2Hidden}}" duration="3000" bindchange="toast2Change">
+            下载成功
+        </toast>
+        <button  class="info-btn" type="warn" size="default" bindtap="toast2Tap"> 下载 </button>
+    </view>
+</view>

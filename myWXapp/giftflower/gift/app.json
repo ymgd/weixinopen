@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/giftflower/home/home",
+    "pages/giftflower/class/class",
+    "pages/giftflower/find/find",
+    "pages/giftflower/my/my",
+    "pages/giftflower/shopping/shopping",
+    "pages/giftflower/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "debug":"true",
+  "tabBar":{  
+    "color": "#222",
+    "selectedColor": "#fff",
+    "borderStyle": "white",
+    "backgroundColor":"#ff6600",
+    "list":[
+      {
+         "pagePath": "pages/giftflower/home/home",
+        "text": "首页",
+        "iconPath": "icon/tab_home.png",
+        "selectedIconPath": "icon/tab_home_selected.png"
+      },
+      {
+         "pagePath": "pages/giftflower/class/class",
+        "text": "分类",
+        "iconPath": "icon/tab_class.png",
+        "selectedIconPath": "icon/tab_class_selected.png"
+      },
+      {
+         "pagePath": "pages/giftflower/find/find",
+        "text": "花现",
+        "iconPath": "icon/tab_found.png",
+        "selectedIconPath": "icon/tab_found_selected.png"
+      },
+      {
+         "pagePath": "pages/giftflower/shopping/shopping",
+        "text": "购物车",
+        "iconPath": "icon/tab_shopping.png",
+        "selectedIconPath": "icon/tab_shopping_selected.png"
+      },
+      {
+         "pagePath": "pages/giftflower/my/my",
+        "text": "我的",
+        "iconPath": "icon/tab_my.png",
+        "selectedIconPath": "icon/tab_my_selected.png"
+      }
+    ]
+  }
+}

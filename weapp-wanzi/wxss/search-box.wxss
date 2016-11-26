@@ -1,0 +1,26 @@
+.search-wrapper {
+    background: #efe9de;
+    padding: 10px;
+}
+.search-wrapper .inner {
+    width: 714rpx;
+    height: 90rpx;
+    display: flex;
+    text-align: center;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    background: #fff;
+}
+.search-wrapper .icon {
+    width: 90rpx;
+    height: 90rpx;
+    padding: 20rpx;
+    vertical-align: middle;
+}
+.search-wrapper .search-input {
+    width: 660rpx;
+    height: 90rpx;
+    text-align: left;
+    font-size: 28rpx;
+    line-height: 90rpx;
+}

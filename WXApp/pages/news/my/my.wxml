@@ -1,0 +1,15 @@
+<modal title="" confirm-text="登录" no-cancel wx:if="{{modalHidden}}" bindconfirm="signinConfirm" bindcancel="signinCancel">
+  <view class="section">
+    <label>
+      <text>用户名：</text>
+      <input placeholder="请输入用户名" bindinput="saveUsername" value="{{username}}"/>
+    </label>
+    <label>
+      <text>密码：</text>
+      <input password="{{true}}" placeholder="请输入密码" bindinput="savePassword" value="{{password}}"/>
+    </label>
+  </view>
+</modal>
+<view wx:if="{{!modalHidden}}">
+    <span>欢迎你{{username}}</span>
+</view>

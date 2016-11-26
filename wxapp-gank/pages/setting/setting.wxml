@@ -1,0 +1,25 @@
+<view class="body-view">
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        缓存已清空
+    </toast>
+</view>
+<view class="list-group">
+	<view class="list" bindtap="commitToGank">
+		<image src="/image/github.png" class="icon"></image>
+		<text>提交干货</text>
+		<image src="/image/arrowright.png" class="arrow"></image>
+	</view>
+</view>
+<view class="list-group">
+	<view bindtap="jmpToWX" class="list">
+		<image src="/image/icon64_appwx_logo.png" class="icon"></image>
+		<text>仿微信界面</text>
+		<image src="/image/arrowright.png" class="arrow"></image>
+	</view>
+	<view bindtap="jmpToInfo" class="list">
+		<image src="/image/technology.png" class="icon"></image>
+		<text>技术支持</text>
+		<image src="/image/arrowright.png" class="arrow"></image>
+	</view>
+</view>
+<button type="primary" class="clear" bindtap="clearStorage" loading="{{loading}}" disabled="{{disabled}}">清空缓存</button>

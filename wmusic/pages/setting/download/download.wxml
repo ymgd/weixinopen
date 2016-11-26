@@ -1,0 +1,30 @@
+<modal title="提示" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalChange">
+   确定清除本地缓存?(缓存会为您节省一些网络开支)
+</modal>
+
+<toast hidden="{{toastHidden}}" bindchange="toastChange">
+    已清除
+</toast>
+
+<view class="container" style="background-color:#f5f5f5;">
+
+    <view class="hx-li" style="background-color: #fff;line-height:72rpx;height:72rpx;margin:20px 0; border-top: 1px solid #f7f7f7;border-bottom: 1px solid #f7f7f7;" >
+        <text style="font-size:15px;margin-left:10px;">自动播放</text>
+        <view style="float:right;">
+            <switch checked="{{autoplay}}" style="margin:0 8px 0 0;" bindchange="changeHandler" data-tag="autoplay"/>
+        </view>
+    </view>
+
+    <view class="hx-ul-group">
+        <view class="hx-li" style="line-height:72rpx;height:72rpx;" >
+            <text style="font-size:15px;margin-left:10px;">wifi下自动下载</text>
+            <view style="float:right;">
+               <switch checked="{{autodown}}" style="margin:0 8px 0 0;" bindchange="changeHandler" data-tag="autodown"/>
+            </view>
+        </view>
+        <view class="hx-li" style="line-height:72rpx;height:72rpx;" bindtap="clearStorageHandler">
+            <text style="font-size:15px;margin-left:10px;">清除缓存</text>
+        </view>
+    </view>
+
+</view>

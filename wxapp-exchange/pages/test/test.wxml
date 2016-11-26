@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="textContainer">
+    <text class="textStyle">老王老王</text>
+    <text class="textStyle">老王老王</text>
+    <text class="textStyle">老王老</text>
+    <text class="textStyle">{{text}}</text>
+    <text class="textStyle">{{text}}</text>
+    <text class="textStyle">{{text}}</text>
+  </view>
+</view>

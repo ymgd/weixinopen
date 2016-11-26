@@ -1,0 +1,19 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 200rpx 0;
+  text-align: justify;
+}
+
+.textStyle {
+  display: flex;
+  flex-direction: column;
+  letter-spacing : 10px;
+  background-color: gold;
+}
+
+.textContainer {
+  margin-top: 200px;
+  text-align: justify;
+}

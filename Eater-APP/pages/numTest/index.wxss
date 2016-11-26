@@ -1,0 +1,32 @@
+/**index.wxss**/
+.index {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 200rpx;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.btnQueryPhone {
+    width: 60%;
+    margin-top: 160 rpx;
+}
+
+.ipt_phone {
+    width: 80%;
+    margin: 50px auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.query_result {
+    margin-top: 30px;
+}

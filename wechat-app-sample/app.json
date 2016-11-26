@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/themes/themes"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarBackgroundColor": "#48C23D",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"white",
+    "backgroundColor" : "#FFF"
+  },
+  "debug" : true
+}

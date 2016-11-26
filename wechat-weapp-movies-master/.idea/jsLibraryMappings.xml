@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/pages/detail/detail.js" libraries="{ECMAScript 6}" />
+    <file url="file://$PROJECT_DIR$/pages/movies/movies.js" libraries="{ECMAScript 6}" />
+    <includedPredefinedLibrary name="ECMAScript 6" />
+    <includedPredefinedLibrary name="Node.js Core" />
+  </component>
+</project>

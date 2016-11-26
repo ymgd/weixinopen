@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/joke/joke",
+    "pages/joypic/joypic",
+    "pages/music/music",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "笑话大全",
+    "navigationBarTextStyle":"#efefef"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/joke/joke",
+      "iconPath":"",
+      "text":"笑话",
+      "selectedIconPath":"",
+      "color":"",
+      "selectColor":""
+    },{
+      "pagePath":"pages/joypic/joypic",
+      "iconPath":"",
+      "text":"趣图",
+      "selectedIconPath":"",
+      "color":"",
+      "selectColor":""
+    }
+    ]
+  }
+}

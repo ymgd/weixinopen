@@ -1,0 +1,39 @@
+page{
+    height: 100%;
+}
+
+.content{
+    background-color: #3A3A3A;
+    min-height: 100%;
+}
+.movie{
+    display: flex;
+    flex-direction: row;
+}
+.pic image{
+    width:100px;
+    height:150px;
+}
+.movie-info{
+    padding-left:20px;
+}
+.base-info{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+.hr{
+    height:2px;
+    width: 100%;
+    background-color: black;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    opacity: 0.2;
+}
+.casts-info{
+    display: flex;
+    flex-direction: row;
+}

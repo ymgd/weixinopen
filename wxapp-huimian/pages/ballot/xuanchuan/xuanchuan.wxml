@@ -1,0 +1,32 @@
+<!--news.wxml-->
+<view class="page">
+    <view class="page__bd">
+        
+        <block wx:if="{{errorMsg==''}}">
+              <view class="data">
+                  <view class="news-item">
+                    <text class="news-title">{{ballotInfo.ballotTitle}}</text>
+                    <view class="description">
+                      <text>{{ballotInfo.ballotContent}}</text>
+                    </view>
+                    <view class="news-text">
+                      <scroll-view scroll-y="true" style="height:100%;">
+                        <view class="description">
+                          <text>{{ballotInfo.contentData}}</text>
+                        </view>
+                      </scroll-view>
+                    </view>
+                  </view>
+              </view>
+        </block>
+        <block wx:else>
+            <view  class="tip">
+              <icon type="warn" size="45" color="{{item}}"/>
+              <view>
+                {{errorMsg}}
+              </view>
+            </view>
+            
+        </block>
+    </view>
+</view>

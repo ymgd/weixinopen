@@ -1,0 +1,32 @@
+
+.section-title {
+    font-weight: bold;
+    padding: 10rpx 10rpx;
+}
+.scroll-select {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 7rpx 10rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.section-checkbox {
+    padding: 7rpx 2rem;
+
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 7rpx 10rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.section-input {
+    padding: 7rpx 10rpx;
+}
+.btn-area {
+    padding: 20rpx 10rpx;
+}

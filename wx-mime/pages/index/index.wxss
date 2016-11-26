@@ -1,0 +1,47 @@
+/**index.wxss**/
+.wrapper {
+    padding: 5px;
+}
+.flex-container {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    line-height:1em;
+    width: 90%;
+}
+.flex-item {
+    background: gray;
+    margin: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    flex: 1 0 auto;
+    height: auto;
+    font-family: "Lucida Console", Monaco, monospace
+}
+.open {
+    background: tomato;
+}
+.gold {
+    background: #fdff37;
+    color: #333;
+}
+.flex-item:before {
+    content: '';
+    display: block;
+    float: left;
+    padding-top:100%;
+}
+.top {
+    display: flex;
+    font-size: 14px;
+    line-height: 2.5em;
+    text-align: center;
+}
+.top .label {
+    flex: 1;
+}

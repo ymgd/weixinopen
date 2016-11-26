@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="page"  style="background-color: #EAEAEA">
+      <view class="page__bd">
+          
+          <!--Swiper-->
+          <view  class="section section_gap swiper">
+              <swiper style="height: 200px;" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+
+                  <block wx:for-items="{{swiper_list.data}}">
+                      <swiper-item>
+                        <navigator class="swiper_nav" url="view/info-detail?title={{item.article.title}}&id={{item.article._id}}&req_type=swiper" hover-class="navigator-hover">
+                            <text class="swiper_txt">{{item.article.title}}</text>
+                            <image class="swiper_img" src="{{item.article.cover}}"></image>
+                        </navigator>
+                      </swiper-item>
+                  </block>
+
+              </swiper>
+          </view>
+
+          <!--ScrollView-->
+          <view class="section section_gap">
+            <scroll-view class="widgets" scroll-y="true" style="height: 400px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+                
+                <block wx:for-items="{{vr_list.data}}">
+                    <navigator url="view/info-detail?title={{item.article.title}}&id={{item.article._id}}&req_type=vr_list" hover-class="navigator-hover">
+                        <view class="widgets__item scroll-view-item">
+                            <view id="form" class="widgets__info" bindtap="widgetsToggle">
+                                <text class="widgets__info-name">{{item.article.title}}</text>
+                                <image class="widgets__info-icon" src="resources/kind/form.png" background-size="cover" />
+                            </view>
+                            <image class="widgets__info-img" src="{{item.article.cover}}" />
+                        </view>
+                    </navigator>
+                </block>
+            
+            </scroll-view>
+        </view>
+
+      </view>
+  </view>
+
+</view>

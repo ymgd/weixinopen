@@ -1,0 +1,32 @@
+ <scroll-view scroll-y="true" height="90%">
+  <view class="head">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{movies}}" wx:for-index="index">
+        <swiper-item>
+          <image src="{{BASE_URL+item.img_url}}" class="slide-image" mode="scaleFill"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="body">
+      <block wx:for="{{productSources}}" wx:for-index="idx">
+        <navigator url="../list/list?type={{item.key}}&title={{item.name}}">
+         <view class="my_item">
+           <image class="item_bigImage" src="{{item.productPicPathRecommend}}"></image>
+           <view class="meta">
+            <text class="item-pro-name">{{item.productName}}</text>
+          </view>
+           <toast hidden="{{toastHidden}}" duration="500" bindchange="toast2Change">
+            添加到购物车成功
+            </toast>
+          <view class = "item-subs">  
+            <text class="sub-title-price">{{"￥"+item.marketPrice+"元"+ "     "}}</text>
+            <text class="sub-title-count">{{"剩余"+item.product_cur_quantity+ item.unit}}</text>
+           
+           <image src="../../images/ALLUI/addBtn.png" class="addBtn-image" mode="scaleFill" data-productName = "{{item.productName}}" data-productId = "{{item.productId}}" data-productPicPath = "{{item.productPicPath}}" data-idx="{{idx}}" catchtouchstart = "addToCart"/>
+         </view>
+       </view>
+        </navigator>
+      </block>
+  </view>
+ </scroll-view>

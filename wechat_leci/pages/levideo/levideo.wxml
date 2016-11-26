@@ -1,0 +1,68 @@
+<view class='lcontainer'>
+    <view class="section">
+        <video autoplay="true" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+            binderror="videoErrorCallback"></video>
+    </view>
+    <view class="letitle">
+        听金曲学英语
+    </view>
+    <nav class="main-nav">
+        <ul>
+            <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">目录</li>
+            <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">详情</li>
+            <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">评论</li>
+        </ul>
+    </nav>
+    <swiper class="main-list" duration="{{swiper.duration}}" current="{{current}}" bindchange="changeSlider">
+        <block>
+            <swiper-item>
+                <scroll-view scroll-y="true" class="option">
+                    <ul>
+                        <li class="mb">
+                            <image src="/images/play_round_white.png"></image>第一课
+                        </li>
+                        <li  class="mb">
+                            <image src="/images/play_round_white.png"></image>第二课
+                        </li>
+                        <li>
+                            <image src="/images/play_round_white.png"></image>第三课
+                        </li>
+                        <li>
+                            <image src="/images/play_round_white.png"></image>第四课
+                        </li>
+                        <li class="mb">
+                            <image src="/images/play_round_white.png"></image>第五课
+                        </li>
+                        <li>
+                            <image src="/images/play_round_white.png"></image>第六课
+                        </li>
+                        <li>
+                            <image src="/images/play_round_white.png"></image>第七课
+                        </li>
+                        <li class="mb">
+                            <image src="/images/play_round_white.png"></image>第七课
+                        </li>
+                        <li>
+                            <image src="/images/play_round_white.png"></image>第七课
+                        </li>
+                        <li>
+                            <image src="/images/play_round_white.png"></image>第七课
+                        </li>
+                        <li>
+                            <image src="/images/play_round_white.png"></image>第七课
+                        </li>
+                        <li class="mb">
+                            <image src="/images/play_round_white.png"></image>第七课
+                        </li>
+                    </ul>
+                </scroll-view>
+            </swiper-item>
+            <swiper-item>
+                good video
+            </swiper-item>
+            <swiper-item>
+                video good
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

@@ -1,0 +1,51 @@
+<!--user.wxml-->
+<loading hidden="{{!loading}}">
+    Loading
+</loading>
+
+<view class="container">
+    <view class="topic-detail">
+        <view class="topic-owner">
+            <image class="owner-avatar" src="{{user.userpic_url}}"></image>
+            <view class="topic-tit">{{user.fullname}} ({{user.username}})</view>
+        </view>
+        <view class="reply-content">
+            <view hidden="{{hideCity}}">City: {{user.city}}</view>
+	        <view hidden="{{hideCamera}}">
+                Cameras:
+                <block wx:for="{{user.equipment.camera}}">
+                    <text> {{item}}</text>
+                </block>
+            </view>
+	        <view hidden="{{hideLens}}">
+                Lens:
+                <block wx:for="{{user.equipment.lens}}">
+                    <text> {{item}}</text>
+                </block>
+            </view>
+        </view>
+        <!--<view wx:for="{{contacts}}">
+            <text class="reply-content">{{item[0]}}: {{item[1]}}</text>
+        </view>-->
+        <view class="topic-desc">
+            <text>{{user.about}}</text>
+        </view>
+    </view>
+    <scroll-view class='section photos' style="height: 750px;" scroll-y="true" bindscrolltolower="loadMore">
+        <view class="photo-list">
+            <block wx:for="{{photos}}">
+                <view class="photo-item" id="{{item.id}}" catchtap="lookPhoto">
+                    <image class="photo" src="{{item.images[0].url}}"></image>
+                </view>
+            </block>
+        </view>
+        <view class="load-more-wrap">
+            <block wx:if="{{hasMore}}">
+                <text class="weui-loading"/><text class="load-content">Loading...</text>
+            </block>
+            <block wx:else>
+                <view class="load-content"><text>No more...</text></view>
+            </block>
+        </view>
+    </scroll-view>
+</view>

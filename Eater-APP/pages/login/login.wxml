@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="page__bd">
+  <!--<text class="page__desc">用户名</text>-->
+    <view class="section">
+        <input placeholder="请输入用户名" bindinput="bindKeyInput1" />
+    </view>
+    <!--<text class="page__desc">密码</text>-->
+    <view class="section">
+        <input placeholder="请输入密码"  bindinput="bindKeyInput2" />
+    </view>
+     <button bindtap="login" class="btn_Login" type="primary">登录</button>   
+
+           <view class="body-view">
+                <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+                    登录成功
+                </toast>          
+            </view>
+    </view>
+
+</view>

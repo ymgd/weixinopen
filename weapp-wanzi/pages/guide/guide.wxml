@@ -1,0 +1,171 @@
+
+<view class="wrapper">
+    <view class="banner">
+        <image class="user-bg" src="{{imgBase+guide.userBg}}@640w"></image>
+    </view>
+    <view class="info-link">
+        <view class="info">
+            <view class="addr">{{guide.addr}}</view>
+            <view class="time">当地时间{{guide.localTime}}</view>
+        </view>
+        <view class="links">
+            <navigator url="" class="link">
+                <text>我的日历</text>
+                <image src="../../res/img/arrow.png" class="right-icon"></image>
+            </navigator>
+            <navigator url="" class="link">
+                <text>费用说明</text>                
+                <image src="../../res/img/arrow.png" class="right-icon"></image>
+            </navigator>
+        </view>
+    </view>
+    <view class="verified-img">
+        <view class="title-wrap">
+            <image src="../../res/img/left-line.png"></image>
+            <text>验证照</text>
+            <image src="../../res/img/right-line.png"></image>
+        </view>
+        <image src="{{imgBase+guide.verifiedImg}}@600w" class="pic" 
+            style="height: {{verifiedImgH*2}}rpx" bindload="verifiedImgLoaded"></image>
+        <image src="../../res/img/verified.png" class="tag"></image>
+    </view>
+    <view class="photos">
+        <view class="item" wx:if="{{guide.myPhoto.img}}">
+            <image src="{{imgBase+guide.myPhoto.img}}@720w_277h_1l_1c_1e_80Q" class="pic"></image>
+            <view class="info">
+                <view>
+                    <text>我的照片</text>
+                    <text>{{guide.myPhoto.cnt}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="item" wx:if="{{guide.traveller.img}}">
+            <image src="{{imgBase+guide.traveller.img}}@720w_277h_1l_1c_1e_80Q" class="pic"></image>
+            <view class="info">
+                <view>
+                    <text>我和旅行者</text>
+                    <text>{{guide.traveller.cnt}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="item" wx:if="{{guide.scenery.img}}">
+            <image src="{{imgBase+guide.scenery.img}}@720w_270h_1l_1c_1e_80Q" class="pic"></image>
+            <view class="info">
+                <view>
+                    <text>当地风景</text>
+                    <text>{{guide.scenery.cnt}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="item" wx:if="{{guide.carImg.img}}">
+            <image src="{{imgBase+guide.carImg.img}}@720w_270h_1l_1c_1e_80Q" class="pic"></image>
+            <view class="info">
+                <view>
+                    <text>我的车</text>
+                    <text>{{guide.carImg.cnt}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="more">
+            <image src="../../res/img/all_photo2.png"></image>
+        </view>
+    </view>
+    <view class="detail">
+        <view class="sub-title">特别的我</view>
+        <view class="user-base">
+            <image src="{{imgBase+guide.avatar}}@200w_1l_80Q" class="avatar"></image>
+            <view class="user-name">
+                <image src="../../res/img/figure_label.png" class="tag"></image>
+                <text>{{guide.name}}</text>
+            </view>
+        </view>
+        <view class="job">{{guide.job}}</view>
+        <view class="about">
+            <view class="sub-title2">关于这个城市的我</view>
+            <text class="intro">{{guide.introShort}}</text>
+            <view class="more">
+                <image src="../../res/img/arrow-down.png" class="arrow"></image>
+                <view class="toggle">展开自我介绍</view>
+            </view>
+        </view>
+    </view>
+    <view class="recommend" wx:if="{{guide.recommends.length > 0}}">
+        <view class="sub-title txt">我对当地的推荐</view>
+        <view class="desc txt">共{{guide.recommends.length}}个推荐</view>
+        <view class="pics">
+            <block wx:for="{{guide.recommends}}" wx:key="id">
+                <image src="{{imgBase+item.img}}" class="pic"></image>
+            </block>
+            <image src="../../res/img/local-recomm.png" class="pic"></image>
+        </view>
+    </view>
+    <view class="services">
+        <view class="sub-title">我的服务</view>
+        <view class="desc1">
+            <view>
+                优先接待：{{guide.priority}}
+            </view>
+            <view>
+                暂不接待：{{guide.notAccept}}
+            </view>
+        </view>
+        <view class="item">
+            <view>
+                <image src="../../res/img/icon1.png" class="icon"></image>
+                <text class="desc2">退款政策</text>
+            </view>
+            <navigator class="link mid">{{guide.refund.desc}}</navigator>
+            <navigator class="link right" url="../refund/refund?id={{guide.refund.id}}">查看</navigator>
+        </view>
+        <view class="item">
+            <view>
+                <image src="../../res/img/icon2.png" class="icon"></image>
+                <text class="desc2">基本信息</text>
+            </view>
+            <navigator class="link right">查看</navigator>
+        </view>
+        <view class="item">
+            <view>
+                <image src="../../res/img/icon3.png" class="icon"></image>
+                <text class="desc2">我的标签</text>
+            </view>
+            <navigator class="link right">查看</navigator>
+        </view>
+        <view class="stats">
+            <view class="stat">
+                <text>接受率</text>
+                <text>{{guide.acceptRate}}</text>
+            </view>
+            <view class="stat">
+                <text>回复率</text>
+                <text>{{guide.replyRate}}</text>
+            </view>
+            <view class="stat">
+                <text>平均回复时间</text>
+                <text>{{guide.avgReplyTime}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="passport">
+        <view class="bg-wrap">
+            <image src="../../res/img/logo_acc.png"></image>
+            <image src="../../res/img/passport_{{guide.passport.passImg}}.png"></image>
+        </view>
+        <view class="cert-desc">
+            <view class="user">
+                <image src="{{imgBase+guide.passport.img}}@200h_200w_1c_1e" class="avatar"></image>
+                <text>ID: {{guide.passport.id}}</text>
+            </view>
+            <view class="sep"></view>
+            <view class="info">
+                <text>姓名: {{guide.passport.name}}</text>
+                <text>手机号码: {{guide.passport.phone}}</text>
+                <text>身份证件: {{guide.passport.status}}</text>
+                <text>颁发时间: {{guide.passport.time}}</text>
+            </view>
+        </view>
+    </view>
+    <view>
+        <image src="../../res/img/finished.png" class="finished"></image>
+    </view>
+</view>

@@ -1,0 +1,95 @@
+
+.navagitorbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4b5566;
+}
+
+.navagitorbar text{
+  margin: 25rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+}
+
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4b5566;
+  height: 336rpx;
+}
+
+.userInfo_img {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: solid 20rpx #404857;
+  box-shadow: 0 0 0 12px #464f5e ;
+}
+
+.userInfo_name{
+  margin-top: 50rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.useraccountinfo {
+  flex: 1;
+  background-color: #39404d;
+  font-size: 32rpx;
+  color: #4b5566;
+}
+
+.useraccount_content {
+  margin-top: 100rpx;
+  padding-left: 40rpx;
+  padding-right: 80rpx;
+}
+
+.content_text {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40rpx;
+}
+
+.usermoney {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 40rpx 0 240rpx;
+}
+
+.userbalance{
+  padding-top: 40rpx;
+}
+
+.useroperating{
+  flex : 1 ;
+}
+
+.useroperating button{
+  font-size: 32rpx;
+  
+  height: 100rpx;
+
+  margin-left:36rpx;
+  margin-right: 36rpx;
+  line-height: 100rpx;
+}
+
+.recharge{
+  color: #fff;
+  background-color: #cba064;
+  margin-top: 100rpx;
+}
+
+.withdraw {
+  color: #fff;
+  background-color: #4b5566;
+  margin-top: 36rpx;
+  margin-bottom: 36rpx;
+}

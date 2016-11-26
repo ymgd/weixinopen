@@ -1,0 +1,9 @@
+@import "../../css/widgets.wxss";
+@import "../../css/button.wxss";
+.setting-btn-group{
+    margin-top: 40rpx;
+}
+.buttons{
+    padding-top: 1rpx;
+    color:  #e02e25;
+}

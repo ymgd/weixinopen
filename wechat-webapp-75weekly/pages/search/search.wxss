@@ -1,0 +1,66 @@
+/*seach*/
+.search-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: #FFF;
+  padding: 10rpx 20rpx;
+  z-index: 100;
+}
+.search-wrap input {
+  margin-top: 5px;
+  padding: 5px 10rpx;
+  height: 20px;
+  border-radius: 5rpx;
+  background: #FFF;
+  color: #AAA;
+  font-size: 28rpx;
+}
+.search-wrap icon {
+  position: absolute;
+  top: 18px;
+  right: 40rpx;
+}
+
+.article{
+  padding: 30rpx 30rpx;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  font-size: 24rpx;
+  color: #666;
+}
+.article-title{
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 1;
+}
+.article-des{
+  margin: 20rpx 0;
+}
+.article-label{
+  float: left;
+  color: #999;
+}
+.article-label:not(:first-child){
+  margin-left: 20rpx;
+}
+.article-issue,
+.article-provider{
+  float: right;
+  color: #999;
+}
+
+.has-no-res{
+  margin-top: 60px;
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+}
+
+.article-count{
+  margin: 0 0 20rpx 30rpx;
+  font-size: 28rpx;
+  color: #666;
+}

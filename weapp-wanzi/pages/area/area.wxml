@@ -1,0 +1,81 @@
+
+<view class="wrapper">
+    <view class="top">
+        <image class="banner" src="{{bannerPrefix}}{{base.id}}.jpg"></image>
+        <view class="info">
+            <text class="name">{{base.nameCn}}</text>
+            <text class="tips">{{guideCnt}}个丸子</text>
+        </view>
+    </view>
+    <view class="mid">
+        <view class="dates item">
+            <picker mode="date" value="{{date}}" start="{{today}}" 
+                class="date" bindchange="startDateChanged">
+                <view class="picker">
+                    <text>开始</text>
+                    <text class="tips">{{startDate}}</text>
+                </view>
+            </picker>
+            <picker mode="date" value="{{date}}" start="{{endDateStart}}" 
+                class="date" bindchange="endDateChanged">
+                <view class="picker">
+                    <text>结束</text>
+                    <text class="tips">{{endDate}}</text>
+                </view>
+            </picker>
+        </view>
+        <view class="item">
+            <picker bindchange="walkPicked"
+                class="selector" range="{{walkOpts}}">
+                <view class="picker">
+                    徒步向导:{{walkOpts[filters[0]]}}
+                    <image src="../../res/img/arrow.png" class="right-icon"></image>
+                </view>
+            </picker>
+        </view>
+        <view class="item">
+            <picker bindchange="carPicked"
+                class="selector" range="{{carOpts}}">
+                <view class="picker">
+                    带车向导:{{carOpts[filters[1]]}}
+                    <image src="../../res/img/arrow.png" class="right-icon"></image>
+                </view>
+            </picker>
+        </view>
+        <view class="item">
+            <picker bindchange="flyPicked"
+                class="selector" range="{{flyOpts}}">
+                <view class="picker">
+                    接送机:{{flyOpts[filters[2]]}}
+                    <image src="../../res/img/arrow.png" class="right-icon"></image>
+                </view>
+            </picker>
+        </view>
+    </view>
+    <navigator class="guide" wx:for="{{items}}" wx:key="id" url="../guide/guide?id={{item.id}}">
+        <block wx:if="{{item.status>0}}">
+        <view class="bg-wrap">
+            <view class="tag" wx:if="{{item.commentCnt>0}}">
+                <image src="../../res/img/lit_nor.png" mode="aspectFit"></image>
+                <view class="comments">
+                    <text>{{item.commentCnt}}</text>
+                    <text>评论</text>
+                </view>
+            </view>
+            <image src="{{item.bg}}@750w" class="user-bg"></image>
+        </view>
+        <view class="guide-info">
+            <view class="desc">{{item.title}}</view>
+            <view class="addr">{{item.area}}</view>
+            <view class="user">
+                <image src="{{item.avatar}}" class="avatar"></image>
+                <text class="name tips">{{item.name}}</text>
+                <text class="job tips">{{item.job}}</text>
+            </view>
+        </view>
+        </block>
+    </navigator>
+    <view class="loading-img" hidden="{{!hasMore}}">
+        <image src="../../res/img/reading2.gif"></image>
+    </view>
+</view>

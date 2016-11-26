@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/userinfo/userinfo",
+    "pages/goods/goods",
+    "pages/goodInfo/goodInfo",
+    "pages/purchase/purchase"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Winnie The Pool",
+    "navigationBarTextStyle":"white"
+  }
+}

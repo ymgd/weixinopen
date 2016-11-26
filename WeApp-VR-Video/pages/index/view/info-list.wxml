@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="page" style="background-color: #EAEAEA">
+      <view class="page__bd">
+          
+        <!--ScrollView-->
+        <view class="section section_gap widgets">
+
+            <block wx:for-items="{{vr_list.data}}">
+                <navigator url="info-detail?title={{item.article.title}}}&id={{item.article._id}}&req_type=vr_list" hover-class="navigator-hover">
+                    <view class="widgets__item scroll-view-item">
+                        <image class="widgets__info-img" src="{{item.article.cover}}" />
+                        <text class="widgets__info-name">{{item.article.title}}</text>
+
+                        <view class="widgets__item_comment">
+                            <image class="widgets__comment_icon" src="../../../image/up.png" />
+                            <image class="widgets__comment_icon" src="../../../image/wechat.png" />
+                        </view>
+                    </view>
+
+                </navigator>
+            </block>
+
+        </view>
+
+      </view>
+  </view>
+
+</view>

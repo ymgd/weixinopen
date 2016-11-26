@@ -1,0 +1,6 @@
+.tip{
+	padding-top: 200rpx
+}
+.page__bd {
+	text-align:center;
+}

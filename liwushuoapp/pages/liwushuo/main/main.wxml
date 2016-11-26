@@ -1,0 +1,45 @@
+<view class="main-container">
+
+    <header>
+      <ul>
+          <li class="head-l">
+            <image src="/images/icon_app.png"  mode="scaleToFill"></image>
+          </li>
+          <li class="head-c">
+              <span class="btn">
+                <image src="/images/lo.png"  mode="scaleToFill"></image>
+              </span>
+              <input type="text" id="txt" placeholder="选份走心礼物送给TA"/>
+          </li>
+          <li class="head-r">
+            <image src="/images/ys.png" mode="scaleToFill"></image>
+          </li>
+      </ul>
+    </header>
+    <scroll-view class="scroll-view-x" scroll-x="true" scroll-top="100">
+             <ul class="hengxiangul" >
+                 <li wx:for="{{ulli}}" wx:for-item="item">{{item}}</li>
+            </ul>
+  </scroll-view>
+    <scroll-view  class="scroll-view-y" scroll-y="true" scroll-top="100">
+  <swiper class="main-list" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image"/>
+          </swiper-item>
+      </block>
+  </swiper>
+            <ul class="mainul">
+                    <li wx:for="{{list}}" wx:for-item="item"  data-id="{{item.id}}">
+                    <navigator url="/pages/liwushuo/good/good?id={{item.id}}">
+                      <image src="{{item.img}}" mode="aspectFill"></image>
+                      <b class="title">{{item.title}}</b>
+                      <b class="xiangqing">{{item.xiangqing}}</b>
+                      <span class="lanmu">栏目  {{item.lanmu}}</span>
+                     <span class="guanzhu">♥ {{item.guanzhu}}</span>
+                     </navigator>
+                    </li>
+                  </ul>
+  </scroll-view>
+
+</view>

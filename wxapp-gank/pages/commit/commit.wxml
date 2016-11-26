@@ -1,0 +1,33 @@
+<form>
+    <view class="section">
+        <view class="section_title">URL</view>
+        <input class="input" id="url" placeholder="提交的网页地址" bindchange="bindChange"/>
+    </view>
+    <view class="section">
+        <view class="section_title">内容描述</view>
+        <input class="input" id="desc" placeholder="对干货内容的描述" bindchange="bindChange"/>
+    </view>
+    <view class="section">
+        <view class="section_title">提交者ID</view>
+        <input class="input" id="who" placeholder="提交者ID" bindchange="bindChange"/>
+    </view>
+    <view class="section">
+        <view class="section_title">类型</view>
+        <input class="input" id="type" placeholder="点击选择干货类型" bindtap="showSheet" value="{{typeName}}"/>
+    </view>
+    <view class="btn-area">
+        <button loading="{{loading}}" disabled="{{disabled}}" type="primary" class="button" bindtap="submitGank">(｡◕∀◕｡) 发射!</button>
+        <button formType="reset" class="button">重置</button>
+    </view>
+</form>
+<view class="body-view">
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        提交成功
+    </toast>
+</view>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for-items="{{actionSheetItems}}">
+        <action-sheet-item class="item" bindtap="bindName" data-type-name="{{item}}">{{item}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>

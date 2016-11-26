@@ -1,0 +1,10 @@
+<!--首页的列表模板-->
+<template name="mListTem">
+    <view id="mItem-wrap" bindtap="onListItemClick" data-name="{{mItem.name}}">
+        <image src="{{mItem.icon}}" mode="scaleToFill" class="item-image"></image>
+        <textview class="item-name">{{mItem.name}}</textview>
+        <textview class="item-sub">{{mItem.subHead}}</textview>
+        <textview class="item-grade">{{mItem.grade}}</textview>
+
+    </view>
+</template>

@@ -1,0 +1,52 @@
+<view>
+    <view class="config">
+        <view class="configTitle" bindtap="actionSheetTap">
+            <text class="pullLeft">{{"<<"}}</text>
+            <text>{{title}}</text>
+            <text class="pullRight">{{">>"}}</text>
+        </view>
+        <view class="desc">
+            <text>{{desc}}</text>
+        </view>    
+    </view>
+    <!-- <progress percent="{{percentage}}" stroke-width="38" color="#00ff00" />
+
+    <button bindtap="onStartBtnTap"> 点我加10 </button> -->
+    <view class="circleContainer">
+        <view class="leftTime">
+            <view class="bigCircle blue"></view>
+            <view class="bigCircle right aqua" animation="{{leftAnimationData}}"></view>
+            <view class="smallCircle" style="background-color: {{leftColor}}">
+                <view class="leftTimeTextContainer">
+                    <text>{{leftTime}} s</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="rightTime">
+            <view class="bigCircle blue"></view>
+            <view class="bigCircle right aqua" animation="{{rightAnimationData}}"></view>
+            <view class="smallCircle" style="background-color: {{rightColor}}">
+                <view class="rightTimeTextContainer">
+                    <text>{{rightTime}} s</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    
+    <view class="btnGroup">
+        <button class="leftBtn" bindtap="leftBtnPressHandler">{{leftBtnText}}</button>
+        <button class="rightBtn" bindtap="rightBtnPressHandler">{{rightBtnText}}</button>
+    </view>
+    
+    <view class="actionSheet">
+        <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+        <block wx:for="{{actionSheetItems}}">
+            <action-sheet-item class="item" bindtap="bindItemTap" data-name="{{item.name}}" id="{{item.id}}">{{item.name}}</action-sheet-item>
+        </block>
+        <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+        </action-sheet>
+    </view>
+    <audio src="{{warnSrc}}" action="{{warnAction}}" loop></audio>
+    <audio src="{{alarmSrc}}" action="{{alarmAction}}" loop></audio>
+</view>

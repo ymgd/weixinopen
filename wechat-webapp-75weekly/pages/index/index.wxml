@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<import src="../common/issue.wxml"/>
+
+<view class="container">
+  <view class="issue-wrap g-clearfix">
+    <text class="issue">Issue:{{issue}}</text>
+    <text class="issue-time">发布于{{issueTime}}</text>
+  </view>
+  <template is="issue" data="{{ list }}"/>
+</view>

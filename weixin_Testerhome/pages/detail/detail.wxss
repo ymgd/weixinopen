@@ -1,0 +1,144 @@
+.detail-post {
+  background-color: #eee;
+  overflow: hidden;
+  display: inline;
+}
+.detail-post-header {
+  background-color: #4342B6;
+  line-height: 40px;
+  padding: 15px 17px;
+  position: relative;
+
+  /*border-bottom: 1px #ccc solid;*/
+
+}
+
+.detail-post-ava{
+  display: flex;
+}
+.detail-post-node{
+  display: flex;
+}
+
+.detail-post-title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  margin-right: 50px;
+  color: #fff;
+  line-height:20px;
+}
+.detail-post-meta {
+  position: relative;
+  padding: 13px 18px 0 18px;
+
+}
+.detail-post-avatar, .detail-post-comment-avatar {
+  
+  width: 46px;
+  height: 46px;
+  display: block;
+  float: left;
+  margin-top: 3px;
+}
+.detail-post-avatar-img, .detail-post-comment-avatar-img {
+  position: absolute;
+  right: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.detail-post-info, .detail-post-comment-info, .detail-comment-content {
+  margin: 0 0 0 50px;
+  padding: 0 0 0 5px;
+  position: relative;
+  line-height: 20px;
+  overflow: hidden;
+}
+/*.detail-post-author-name, .detail-post-comment-author-name {
+  color: #6c6c6c;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 3px;
+}*/
+.detail-node-name, .detail-post-comment-time, .detail-post-author-name {
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+}
+.detail-post-content {
+  background-color: #fff;
+  padding: 13px 18px 25px 18px;
+  font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+}
+.content-info {
+  color: #6c6c6c;
+  font-size: 18px;
+  line-height: 20px;
+  word-wrap: break-word;
+  padding: 0;
+}
+
+.top-bar {
+  height: 36px;
+  background: #4342B6;
+  width:100%;
+}
+.top-bar-item {
+  display:inline-block;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+}
+
+.flag-line{
+  height: 2px;
+  width: 50%;
+  color: red;
+  background: red;
+}
+.cellrow {
+  position: absolute;
+  bottom: 10rpx;
+}
+.cellview {
+  background-color: white;
+  margin-top: 2rpx;
+  padding: 28rpx;
+  display: flex;
+  flex-direction: row;
+}
+.cellimage{
+  min-width: 120rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+}
+
+.celllabel {
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-bottom: 30rpx;
+}
+.celltext{
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.posts-item {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding: 10px 0 10px 10px;
+  font-size: 14px;
+  padding-right: 10px;
+  background: #fff;
+  border-bottom: 1px solid #E9EAEB;
+}
+.deletefloor {
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  border-bottom: 1px solid #E9EAEB;
+}

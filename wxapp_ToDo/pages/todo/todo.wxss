@@ -1,0 +1,123 @@
+/**todo.wxss**/
+.not-todo {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  font-size: 28rpx;
+  color: #999999;
+}
+.add {
+  position: fixed;
+  right: 40rpx;
+  bottom: 40rpx;
+  background: #393F4F;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 60rpx;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 16rpx; 
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 1px #666699;
+  z-index: 1000;
+}
+.input {
+  border-bottom: 3rpx solid black;
+  height: 50rpx;
+  padding-bottom: 3rpx;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14rpx;
+}
+.label {
+  font-size: 34rpx;
+  color: #393F4F;
+  margin: 0 36rpx;
+}
+.radio {
+  margin-right: 6rpx;
+}
+
+.todo {
+  border: 2rpx solid #ddd;
+  height: 110rpx;
+  box-shadow: 0 1px 1px #666;
+  margin-bottom: 6rpx;
+}
+.t-text {
+  box-sizing: border-box;
+  padding-left: 45rpx;
+  color: #ffffff;
+  width: 80%;
+  float: left;
+  position: relative;  
+}
+.cover {
+  position: absolute;
+  z-index: 1000;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.t-title {
+  font-weight: bold;
+  height: 40rpx;
+  font-size: 35rpx;
+  line-height: 40rpx;
+  width: 100%;
+  overflow: hidden;
+  margin: 20rpx 0 5rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.t-time {
+  font-size: 20rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+}
+.t-btn {
+  line-height: 110rpx;
+  width: 20%;
+  float: left;
+  height: 100%;
+}
+
+.item, .cancel {
+  font-size: 30rpx;
+  color: #3399cc;
+}
+.cancel {
+  color: #0099cc;
+}
+
+.bg1 {
+  background: #5C258D; 
+  background: -webkit-linear-gradient(to left, #5C258D , #4389A2);
+  background: linear-gradient(to left, #5C258D , #4389A2);  
+}
+.bg2 {
+  background: #085078; 
+  background: -webkit-linear-gradient(to left, #085078 , #85D8CE);
+  background: linear-gradient(to left, #085078 , #85D8CE);         
+}
+.bg3 {
+  background: #16222A;
+  background: -webkit-linear-gradient(to left, #16222A , #3A6073);
+  background: linear-gradient(to left, #16222A , #3A6073);
+}
+.bg4 {
+  background: #EB3349;
+  background: -webkit-linear-gradient(to left, #EB3349 , #F45C43);
+  background: linear-gradient(to left, #EB3349 , #F45C43);
+}
+.bg5 {
+  background: #1D976C;
+  background: -webkit-linear-gradient(to left, #1D976C , #93F9B9);
+  background: linear-gradient(to left, #1D976C , #93F9B9);
+}

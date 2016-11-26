@@ -1,0 +1,33 @@
+.filetab {
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  overflow-x: auto;
+}
+
+.filetab-list {
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 7px 10px 6px;
+  cursor: default;
+  i{
+    margin-left: 10px;
+  }
+  &:hover{
+    background-color: #ecf8eb;
+  }
+}
+
+.filetab-list_selected {
+  background-color: #ecf8eb;
+  &:before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid #48C23D;
+  }
+}

@@ -1,0 +1,6 @@
+<view class="mycardbox">
+   <image src="/images/card1.png" mode="scaleToFill"></image>
+   <image src="/images/card1.png" mode="scaleToFill"></image>
+   <image src="/images/card2.png" mode="scaleToFill"></image>
+   <image src="/images/card2.png" mode="scaleToFill"></image>
+</view>

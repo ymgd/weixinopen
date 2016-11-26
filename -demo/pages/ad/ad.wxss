@@ -1,0 +1,19 @@
+#first{
+  width: 100%;
+  height: 100%;
+  
+}
+#inner{
+  width: 100%;
+  height: 99%;
+  z-index: 1;
+}
+#text{
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+  color: black;
+  z-index: 2;
+}

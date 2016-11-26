@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/s_tasks/s_tasks",
+    "pages/s_answer/s_answer",
+    "pages/t_assignment/t_assignment",
+    "pages/t_tasks/t_tasks",
+    "pages/t_students/t_students",
+    "pages/t_mark/t_mark"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0000",
+    "navigationBarTitleText": "任务易",
+    "navigationBarTextStyle":"white"
+  }
+}

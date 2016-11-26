@@ -1,0 +1,111 @@
+
+<view class="container-home">
+<scroll-view scroll-y="true"  bindscrolltolower="{{load}}" lower-threshold="{{lowerNum}}" upper-threshold="{{0}}" bindscrolltoupper="loadingupdate" bindscroll="topshow" scroll-top="{{scroll_y}}">
+	<view class="loading" hidden="{{update}}" >
+	<button type="default" size="mini" loading="{{true}}" plain="true"
+       > 使劲加载中 </button>
+	</view>
+	<header >
+		<image  class="logo" src="../../../icon/nav_logo.png" mode="aspectFit"></image>
+		<image	class="search" src="../../../icon/search_fl640.png" mode="aspectFit"></image>
+	</header>
+	
+
+<swiper  indicator-dots="true" duration="300">
+	<block wx:for-items="{{imgUrls}}">
+	 <swiper-item>
+        <image src="{{item}}" ></image>
+    </swiper-item>
+
+    </block> 
+</swiper>
+<nav>
+	<ul>
+		
+		<li wx:for="{{nav}}"><image src="{{item.src}}" ></image>
+			<p>{{item.nav_name}}</p>
+		</li>
+	
+	</ul>
+</nav>
+<view class="title">
+	<ul>
+		<li wx:for="{{title_img}}">
+			
+			<image src="{{item}}"></image>
+		</li>
+		
+
+	</ul>
+</view >
+<view	class="hot">
+	<text class="hot_title">热卖鲜花</text>
+	<button type="default" size="mini" plain="true">更多</button>
+	<ul>
+	 <navigator url="../detail/detail?id={{item.id}}&&name={{item.name}}" wx:for="{{hot}}">
+		<li >
+			<image src="{{item.img}}"></image>
+			<view class="text">	<text class="name">{{item.name}}</text>
+			<text class="price">{{item.price}}</text></view>
+		
+		</li>
+	 </navigator>
+		
+
+	</ul>
+
+</view>
+	<view class="cake">
+		<view class="cake_title">生日蛋糕</view>
+		<button type="default" size="mini" plain="true">更多</button>
+		<image src="http://m.hua.com/images/home_nav_01.png"></image>
+		<ul>
+			<li wx:for="{{logos}}">
+				<image src="{{item}}"></image>
+			</li>
+		</ul>
+	</view>
+	<view class="gift">
+		<view class="title_box">
+		<view class="cake_title">特色礼品</view>
+		<button type="default" size="mini" plain="true">更多</button>
+		</view>
+		<ul>
+			<li wx:for="{{gift_img}}" >
+				<image src="{{item}}"></image>
+			</li>
+		</ul>
+	</view>
+	<view class="footer">
+		<ul>
+			<li wx:for="{{footer}}"><image src="{{item.img}}"></image>
+				<p>{{item.title}}</p>
+			</li>
+		</ul>
+
+	</view>
+	<view class="download">
+		
+			单品推荐
+		
+	</view>
+	<view class="loadmore">
+	<text class="title">热卖鲜花</text>
+	<button type="default" size="mini" plain="true">更多</button>
+	<ul>
+		<li wx:for="{{more}}">
+			<image src="{{item.img}}"></image>
+			<view class="text">	<text class="name">{{item.name}}</text>
+			<text class="price">{{item.price}}</text></view>
+		
+		</li>
+	</ul> 
+	</view>
+	<view class="loadfooter">
+		{{loadfooter}}
+	</view>
+	
+</scroll-view>
+	
+</view>
+<view class="toTop" hidden="{{tophidden}}" bindtap="totop">TOP</view>

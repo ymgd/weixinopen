@@ -1,0 +1,61 @@
+<view class='fcontainer'>
+    <view class="searchbox">
+        <view class="search" >
+            <!--  -->
+            <icon type="search" size="20" color="#fff"/>
+            <!-- <view><input class="ipt"  bindtap="qie" type="text" placeholder="输入生词，即刻查询"/></view> -->
+            <text  bindtap="qie">输入生词，即刻查询</text>
+        </view>
+    </view>
+    <view  class="happy-listbox">
+        <swiper class="happy-list" indicator-dots="false" autoplay="true" interval="2000" duration="300" current="{{current}}">
+            <block>
+                <swiper-item>
+                    <image src="/images/23.png" mode="scaleToFill"></image>
+                    <view class="title">麻辣教师随手拍，点滴学英语！</view>
+                </swiper-item>
+                <swiper-item>
+                    <image src="/images/25.png" mode="scaleToFill"></image>
+                    <view class="title">两个麻辣教师随手拍，点滴学英语！</view>
+                </swiper-item>
+                <swiper-item>
+                    <image src="/images/27.png" mode="scaleToFill"></image>
+                    <view class="title">三个麻辣教师随手拍，点滴学英语！</view>
+                </swiper-item>
+                <swiper-item>
+                    <image src="/images/30.png" mode="scaleToFill"></image>
+                    <view class="title">四个麻辣教师随手拍，点滴学英语！</view>
+                </swiper-item>
+                <swiper-item>
+                    <image src="/images/31.png" mode="scaleToFill"></image>
+                    <view class="title">五个麻辣教师随手拍，点滴学英语！</view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="list">
+        <ul>
+            <li>
+                <b></b>
+                <i><image src='/images/tools_lecihuodong.png' mode="scaleToFill"></image><p>乐词活动</p></i>
+            </li>
+            <li>
+                <b></b>
+                <i><image src='/images/tools_wordbook.png' mode="scaleToFill"></image><p>单词本</p></i>
+            </li>
+            <li>
+                <b></b>
+                <i><image src='/images/tools_kouyumalasong.png' mode="scaleToFill"></image><p>口语马拉松</p></i>
+            </li>
+            <li>
+                <b></b>
+                <i><image src='/images/tools_biantingbianxue.png' mode="scaleToFill"></image><p>边听边学</p></i>
+            </li>
+            <li>
+                <b></b>
+                <i><image src='/images/tools_game_lianliankan.png' mode="scaleToFill"></image><p>单词连连看</p></i>
+            </li>
+        </ul>
+    </view>
+
+</view>

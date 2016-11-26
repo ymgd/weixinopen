@@ -1,0 +1,163 @@
+/*整体*/
+#body{
+    width: 750rpx;
+    height: 1608.3rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #efefef;
+    font-family:Microsoft YaHei;
+}
+/*用户信息部分开始*/
+#head{
+    flex-grow: 333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#head-top{
+    flex-grow: 123;
+    background-size: 750rpx 325rpx;
+    background-image: url("../../../images/headbackground.png");
+   
+}
+
+#head-top #userphoto{
+    height: 143rpx;
+    width: 143rpx;
+    border-radius: 143rpx;
+    margin-left: 301.3rpx;
+    margin-top: 52.7rpx;
+}
+#head-top #setting{
+    height:41.6rpx;
+    width: 41.6rpx; 
+    float: right;
+    margin-top: 19.4rpx;
+    margin-right: 19.4rpx;
+}
+#head-top #username{
+    display: block;
+    position: absolute;
+    top:227rpx;
+    left: 336rpx;
+  
+}
+
+#head-bottom{
+    flex-grow: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+/*钱包红包优惠券开始*/
+#mypurse,#redpacket,#coupon{
+    background: #ffffff;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#mypurse .top,#redpacket .top,#coupon .top{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #939393
+}
+#mypurse .bottom,#redpacket .bottom,#coupon .bottom{
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mypurse image,#redpacket image,#coupon image{
+    width: 41.6rpx;
+    height: 34.7rpx;
+}
+/*钱包红包优惠券结束*/
+/*用户信息部分结束*/
+
+
+
+
+/*信息操作区域开始*/
+#center{
+    flex-grow: 821;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#center .empty{
+    flex-grow: 16
+}
+
+
+
+#center .contain1{
+    flex-grow: 274;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+}
+#center .contain2{
+    flex-grow: 137;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+}
+#center .contain3{
+    flex-grow: 137;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+}
+#center .contain4{
+    flex-grow: 137;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+}
+#center .box{
+    flex-grow: 1;
+}
+#center text{
+    margin-top: 61rpx;
+}
+#center .box .img{
+    height: 30.5rpx;
+    width: 38.7rpx;
+    margin-top: 30rpx;
+    margin-left: 33.3rpx;
+    margin-right: 15.2rpx;
+}
+#center .box .arror{
+    height: 30.5rpx;
+    width: 38.7rpx;
+    float: right;
+    margin-top: 30rpx;
+    margin-right: 30.5rpx;
+}
+#center .box #onlinehelp{
+margin-left: 204rpx;
+font-size: 31rpx;
+color: #828282;
+}
+#center .box #getredpacket{
+    display: inline-block;
+    width: 237.5rpx;
+    height: 37.1rpx;
+    border: 3rpx solid #ba6843;
+    border-radius: 4rpx;
+    margin-left: 186rpx;
+    font-size: 25rpx;
+}
+/*信息操作区域结束273px = 548*/

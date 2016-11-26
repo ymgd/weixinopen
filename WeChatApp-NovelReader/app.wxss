@@ -1,0 +1,6 @@
+.root{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 30rpx;
+  overflow-x: hidden;
+  }

@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/gank/gank",
+    "pages/apps/apps",
+    "pages/index/index",
+    "pages/single/single",
+    "pages/setting/setting",
+    "pages/commit/commit"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "干货集中营",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,44 @@
+.text{
+    font-size: 10px;
+    color: #969696;
+    margin-top: 30px;
+}
+.input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 10px;
+    color: #969696;
+    background: #FFFFFF;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2BB730;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 10px;
+}
+.hisItem{
+    background: #D2D2D2;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    color: #EEEEEE;
+    font-size: 10px;
+
+}
+.hisContainer{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+}

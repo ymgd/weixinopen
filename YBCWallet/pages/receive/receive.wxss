@@ -1,0 +1,39 @@
+.background{
+    background-color: #f6f6f6;
+}
+.zxing{
+width: 100%;
+height: 500rpx;
+}
+.erweima{
+    display: block;
+    width: 350rpx;
+   padding-top: 100rpx;
+    height: 350rpx;
+  margin:auto;
+}
+.addressline{
+    width: 100%;
+    height: 100rpx;
+}
+.addressk{
+width: 80%;
+display: block;
+background-color: #999;
+padding: 20rpx;
+  text-align:center;
+margin:auto;
+}
+.address{
+    margin-top: 100rpx;
+    background-color: #fff;
+    width: 80%;
+    color: #1bb3a8;
+    font-size: 30rpx;
+}
+.copybutton{
+    margin-top: 50rpx;
+    background-color: #1bb3a8;
+    width: 80%;
+    color: #fff;
+}

@@ -1,0 +1,7 @@
+<view class="container root">
+    <view class="title">
+        关于本程序
+    <view>
+     本案例由云图智联科技有限公司提供，仅供交流，学习   
+     微信小程序开发QQ交流群群:459502711 
+    <image src="../assets/img/qrcode.jpg">

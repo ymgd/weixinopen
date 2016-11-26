@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<import src="../template/match/match-list-item.wxml"/>
+<import src="../template/advertise/advertise-banner-mid.wxml"/>
+<view   class="container">
+  <!--顶部轮播-->
+  <swiper indicator-dots="{{swiper.indicatorDots}}"  autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}">
+    <block wx:for="{{swiper.imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"  mode="scaleToFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--通栏上面的赛事-->
+  <block wx:for="{{matchsFirst}}">
+    <template is="match-list-item" data="{{...item}}"/>
+  </block>
+  <!--通栏-->
+  <block wx:for="{{matchsSecond}}">
+    <template is="advertise-banner-mid" data="{{...item}}"/>
+  </block>
+  <!--通栏下面的赛事-->
+  <block wx:for="{{matchsLast}}">
+    <template is="match-list-item" data="{{...item}}"/>
+  </block>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#0dc441",
+"navigationBarTitleText": "礼物榜",
+"navigationBarTextStyle": "white",
+"enablePullDownRefresh": true
+}

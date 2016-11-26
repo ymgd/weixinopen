@@ -1,0 +1,102 @@
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-list {
+  flex: 1;
+  overflow: hidden;
+}
+
+.main-list scroll-view {
+  height: 100%;
+}
+
+.main-list scroll-view button {
+  font-size: 14px;
+  border: 0;
+}
+
+.main-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px 4px 4px 0;
+}
+
+.main-list ul navigator {
+  width: 100%;
+}
+
+.main-list ul li {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 4px;
+  vertical-align: middle;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 5px;
+}
+
+.main-list ul li image {
+  width: 27%;
+  height: 70px;
+}
+
+.main-list ul li .info-box {
+  height: 100%;
+  width: 72%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 321px) {
+  .main-list ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 322px) and (max-width: 400px) {
+  .main-list ul li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .main-list ul li {
+    font-size: 16px;
+  }
+}
+
+.main-nav {
+  height: 45px;
+  background-color: #fff;
+}
+
+.main-nav ul {
+  height: 100%;
+  display: flex;
+  border-top: 1px solid white;
+  background: red;
+}
+
+.main-nav ul li {
+  color: #eee;
+  height: 45px;
+  flex: 1;
+  line-height: 45px;
+  text-align: center;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.main-nav ul li.active {
+  font-size: 18px;
+  color: white;
+}
+
+.banner image {
+  width: 100%;
+  height: 100%;
+}

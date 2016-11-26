@@ -1,0 +1,6 @@
+<!--todos.wxml-->
+<view class="container">
+  <view class="not-todo" wx:if="{{!textShow}}">
+    <view class="text">当前没有ToDos, 点击+号创建一个吧</view>
+  </view>
+</view>

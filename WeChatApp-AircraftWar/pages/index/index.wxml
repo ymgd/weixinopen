@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <!--开始游戏页面布局-->
+  <view class="start" style="display:{{startDisplay}}">
+    <button bindtap="begin">开始游戏</button>
+  </view>
+  <!--主游戏操作界面布局-->
+  <view class="main" style="display:{{mainDisplay}}; background-position-y: {{backgroundPositionY}}px;">
+    <!--分数显示view -->
+    <view class="score">
+      <label>分数:</label>
+      <label class="label">{{scores}}</label>
+    </view>
+    <!--game over 显示出来的页面-->
+    <view class="end"  style="display:{{endDisplay}}">
+      <view class="plantext">飞机大战分数</view>
+      <view class="planscores">{{scores}}</view>
+      <view><button bindtap="jisu">继续</button></view>
+    </view>
+    <!--创建我方飞机-->
+    <image src="{{myAirPath}}" style="width:{{myAirWidth}}px;height:{{myAirHeight}}px;position:absolute;top:{{top}}px;left:{{left}}px;" bindtouchmove="mytouchmove"></image>
+
+    <!--创建我方战机发射子弹-->
+    <block wx:for="{{bullets}}" wx:for-item="data">
+      <image style="width:{{data.bulletsizeX}}px;height:{{data.bulletsizeY}}px;position:absolute;z-index:2;top:{{data.bulletY}}px;left:{{data.bulletX}}px" src="{{data.imagesrc}}"></image>
+    </block>
+
+    <!--创建敌方战机-->
+    <block wx:for="{{enemys}}" wx:for-item="data">
+      <image style="width:{{data.plansizeX}}px;height:{{data.plansizeY}}px;position:absolute;z-index:2;top:{{data.planY}}px;left:{{data.planX}}px" src="{{data.planimagesrc}}"></image>
+    </block>
+  </view>
+</view>

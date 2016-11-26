@@ -1,0 +1,18 @@
+<View class="page">
+
+    <view class="container" style="align-items: center">
+        <icon class="section" type="success" size="70"></icon>
+        <view class="text_area">
+        <text >
+            地区: {{area}}
+        </text>
+        <text>
+            性别: {{sex}}
+        </text>
+        <text >
+            出生日期: {{birthday}}
+        </text>
+       
+        </view>
+    </view>
+</View>

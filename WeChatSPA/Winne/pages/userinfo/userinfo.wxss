@@ -1,0 +1,27 @@
+/**userinfo.wxss**/
+.container {
+    padding-bottom: 127rpx;
+}
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 200rpx;
+    height: 200rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-items {
+    width: 137px;
+    color: #666;
+    margin-top:50rpx;
+    align-content: left;
+}
+
+.button {
+    margin-top: 233rpx;
+}

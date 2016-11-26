@@ -1,0 +1,32 @@
+.container{
+    margin-bottom: 20;
+    display:block;
+}
+.flex-row{
+    
+    background: #8e569e;
+    
+   
+}
+.flex-column{
+    
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    background: #8e569e;
+}
+.flex-view-item{
+    
+    color: snow;
+    background: #e4803a;
+    padding: 8rpx;
+    margin-right: 10rpx;
+    margin-top: 5rpx;
+    
+    
+}
+.text{
+
+    color: snow;
+    background: salmon;
+    padding: 8rpx;
+}
